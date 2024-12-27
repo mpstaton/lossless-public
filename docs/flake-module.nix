@@ -22,7 +22,7 @@ perSystem = { config, self', inputs', pkgs, lib, system, ... }: {
         runHook postInstall
       '';
 
-      npmDepsHash = "";
+      npmDepsHash = "sha256-cmlYGTS/RsOArg9H3y4tW6kuCTT4g3ZfkQMYvkubsTA=";
     };
   };
 }

@@ -1,3 +1,5 @@
 flake.lock
 
 docs/node_modules
+
+result*
