@@ -21,6 +21,7 @@
 
     imports = [
       ./flake-modules/nodejs-packages.nix
+      ./flake-modules/nodejs-devshell.nix
     ];
 
     flake = {
