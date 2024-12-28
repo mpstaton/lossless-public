@@ -1,5 +1,8 @@
 flake.lock
+result*
 
 docs/node_modules
+docs/.astro/
 
-result*
+site/.astro/
+
