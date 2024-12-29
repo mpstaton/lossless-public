@@ -1,0 +1,82 @@
+:root {
+    --elephant: hsl(191, 75%, 17%);
+    --bastille: #19141D;
+    --cyan-aqua--brightest: rgb(4, 229, 229);
+    --white-catskill: hsla(184, 35%, 92%, 1.00);
+    --purple-heart: hsla(272, 73%, 55%, 1.00);
+    --white--pure: #FFFFFF;
+    --white--pure--90p: hsla(0, 0%, 100%, .9);
+    --white--pure--80p: hsla(0, 0%, 100%, .8);
+    --white--pure--70p: hsla(0, 0%, 100%, .7);
+    --white--pure--60p: hsla(0, 0%, 100%, .6);
+    --white--pure--50p: hsla(0, 0%, 100%, .5);
+    --white--pure--40p: hsla(0, 0%, 100%, .4);
+    --white--pure--30p: hsla(0, 0%, 100%, .3);
+    --white--pure--20p: hsla(0, 0%, 100%, .2);
+    --white--pure--10p: hsla(0, 0%, 100%, .1);
+
+    --gr-white--90-10p: linear-gradient(120deg, var(--white--pure--90p), var(--white--pure--10p));
+    --gr-white--80-20p: linear-gradient(120deg, var(--white--pure--80p), var(--white--pure--20p));
+    --gr-white--70-30p: linear-gradient(120deg, var(--white--pure--70p), var(--white--pure--30p));
+    --gr-white--60-40p: linear-gradient(120deg, var(--white--pure--60p), var(--white--pure--40p));
+    --gr-white--80-40p: linear-gradient(120deg, var(--white--pure--80p), var(--white--pure--40p));
+
+
+
+    --clr-elephant-primary-dark: var(--elephant);
+    --clr-elephant-accent--brightest: var(--cyan-aqua--brightest);
+
+    --clr-lossless-primary-dark: var(--bastille);
+    --clr-lossless-accent--brightest: var(--cyan-aqua--brightest);
+    --clr-lossless-primary-light: var(--white-catskill);
+    --clr-lossless-primary-glass: hsla(184, 35%, 92%, .40);
+    --clr-lossless-primary-glass--lighter: hsla(184, 35%, 92%, .60);
+    --clr-lossless-primary-glass-gr--90-10p: var(--gr-white--90-10p);
+    --clr-lossless-primary-glass-gr--80-20p: var(--gr-white--80-20p);
+    --clr-lossless-primary-glass-gr--80-40p: var(--gr-white--80-40p);
+    --clr-lossless-primary-glass-gr--70-30p: var(--gr-white--70-30p);
+    --clr-lossless-primary-glass-gr--60-40p: var(--gr-white--60-40p);
+    --clr-lossless-attn-action: var(--purple-heart);
+    --clr-lossless-ui-btn-border: var(--clr-lossless-primary-light);
+
+
+    --clr-heading: var(--clr-lossless-accent--brightest);
+    --clr-body: var(--clr-lossless-primary-light);
+    --clr-link: var(--clr-lossless-accent--brightest);
+    --clr-btn-label: var(--clr-lossless-primary-light);
+    --clr-btn-hover: var(--clr-lossless-attn-action);
+
+    --ff-base: 'Poppins', sans-serif;
+    --ff-legible: 'Onest', sans-serif;
+
+    --fw-regular: 200; 
+    --fw-semi-bold: 400; 
+    --fw-bold: 600; 
+
+    --fs-300: .8rem;
+    --fs-350: .9rem;
+    --fs-400: 1rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-650: 1.7rem;
+    --fs-700: 2rem;
+    --fs-800: 2.5rem;
+    --fs-900: 3rem;
+
+    --flow-space: 1em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-800);
+    color: var(--clr-lossless-primary-light);
+}
+
+a, p {
+    font-family: var(--ff-base);
+    font-size: var(--fs-400);
+    text-decoration: none;
+    color: var(--clr-lossless-primary-light);
+}
