@@ -1,0 +1,54 @@
+---
+
+---
+
+<header>
+  <div class="header-container-row">
+    <img class="logo-box" src="/visuals/trademark__Lossless.svg" alt="" />
+    <span class="connect-with-us-icons">
+      <a href="/about/">About</a>
+      <a href="/reader">Reader</a>
+      <img src="/visuals/appIcon__Discord.svg" alt="" />
+      <img src="/visuals/appIcon__X-Twitter.svg" alt="" />
+      <img src="/visuals/appIcon__GitHub--Lighter.svg" alt="" />
+      <img src="/visuals/appIcon__LinkedIn.svg" alt="" />
+    </span>
+  </div>
+  <div class="separator--thin"></div>
+</header>
+
+<style>
+  .separator--thin {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-lossless-primary-light);
+  }
+  .logo-box {
+    width: auto;
+    height: clamp(34px, 8vw, 100px);
+  }
+  .header-container-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 3em;
+  }
+  .connect-with-us-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+
+    & img {
+      width: auto;
+      height: clamp(14px, 3vw, 100px);
+    }
+    & a {
+      text-decoration: none;
+      color: var(--clr-lossless-primary-light);
+      font-size: 1em;
+    }
+  }
+</style>
