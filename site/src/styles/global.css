@@ -80,3 +80,9 @@ a, p {
     text-decoration: none;
     color: var(--clr-lossless-primary-light);
 }
+
+.separator--thin {
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-lossless-primary-light);
+  }

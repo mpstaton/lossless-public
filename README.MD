@@ -34,7 +34,7 @@ The Astro site is in the site directory
 /site/
 ```
 
-To run the Astrop apps on local, you have to create two servers.
+To run the Astro apps on local, you have to create two servers.
 
 ```
 cd docs

@@ -1,0 +1,23 @@
+---
+import MainContent from "@components/MainContent.astro";
+import LeftPanel from "@components/nav/LeftPanel.astro";
+import RightPanel from "@components/nav/RightPanel.astro";
+
+//This is supposed to set up a three column
+// layout with a left and right panel, and a main column.
+---
+
+<div class="three-column-layout">
+  <div>
+    <LeftPanel />
+  </div>
+  <div><MainContent> Woohoo! </MainContent></div>
+  <div><RightPanel /></div>
+</div>
+
+<style>
+  .three-column-layout {
+    flex-direction: row;
+    width: 100vw;
+  }
+</style>
