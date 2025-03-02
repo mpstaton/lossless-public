@@ -21,7 +21,7 @@
     --gr-white--60-40p: linear-gradient(120deg, var(--white--pure--60p), var(--white--pure--40p));
     --gr-white--80-40p: linear-gradient(120deg, var(--white--pure--80p), var(--white--pure--40p));
 
-
+    --clr-stolen--github--dark:#0d1117;
 
     --clr-elephant-primary-dark: var(--elephant);
     --clr-elephant-accent--brightest: var(--cyan-aqua--brightest);
@@ -38,6 +38,8 @@
     --clr-lossless-primary-glass-gr--60-40p: var(--gr-white--60-40p);
     --clr-lossless-attn-action: var(--purple-heart);
     --clr-lossless-ui-btn-border: var(--clr-lossless-primary-light);
+
+    --clr-primary-bg: var(--clr-stolen--github--dark);
 
 
     --clr-heading: var(--clr-lossless-accent--brightest);
