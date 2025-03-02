@@ -1,6 +1,7 @@
 ---
 import "@styles/global.css";
 import Card from "@basics/Card.astro";
+import CardRow from "@basics/CardRow.astro";
 import { getEntry } from 'astro:content';
 
 type Card = {
@@ -9,6 +10,7 @@ type Card = {
   content: string;
   order?: number;
   tags?: string[];
+  imageUrl?: string;
 };
 
 const featuresData = await getEntry('cards', 'features');
@@ -18,13 +20,19 @@ const cards = featuresData?.data?.cards ?? [];
 <div id="main-content-col">
   <h1>Here is the Main Content</h1>
   {cards && cards.length > 0 ? (
-    cards
-      .sort((a: Card, b: Card) => (a.order ?? 0) - (b.order ?? 0))
-      .map((card: Card) => (
-        <Card title={card.title}>
-          {card.content}
-        </Card>
-      ))
+    <CardRow columns={3} gap="2rem">
+      {cards
+        .sort((a: Card, b: Card) => (a.order ?? 0) - (b.order ?? 0))
+        .map((card: Card) => (
+          <Card 
+            title={card.title}
+            imageUrl={card.imageUrl} 
+            imageAlt={card.title}
+          >
+            {card.content}
+          </Card>
+        ))}
+    </CardRow>
   ) : (
     <p>No cards found</p>
   )}
@@ -32,7 +40,16 @@ const cards = featuresData?.data?.cards ?? [];
 
 <style>
   #main-content-col {
+    display: flex;
     flex-direction: column;
-    width: 96vw;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    text-align: center;
   }
 </style>

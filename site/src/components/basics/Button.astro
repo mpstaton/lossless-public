@@ -15,7 +15,12 @@ const {
 ---
 
 <button
-  class:list={["btn", classes, btnVarieties[variety], { border: isBordered }]}
+  class:list={[
+    "btn",
+    classes,
+    btnVarieties[variety as keyof typeof btnVarieties],
+    { border: isBordered }
+  ]}
   {...rest}
 >
   <slot />

@@ -7,6 +7,7 @@ const cardCollection = defineCollection({
       id: z.string(),
       title: z.string(),
       content: z.string(),
+      imageUrl: z.string().optional(),
       order: z.number().optional(),
       tags: z.array(z.string()).optional()
     }))

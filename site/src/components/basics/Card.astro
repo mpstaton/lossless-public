@@ -2,12 +2,19 @@
 interface Props {
   title?: string;
   classes?: string;
+  imageUrl?: string;
+  imageAlt?: string;
 }
 
-const { title, classes } = Astro.props;
+const { title, classes, imageUrl, imageAlt = "" } = Astro.props;
 ---
 
 <div class:list={["card", classes]}>
+  {imageUrl && (
+    <div class="card-image">
+      <img src={imageUrl} alt={imageAlt} />
+    </div>
+  )}
   {title && <h2>{title}</h2>}
   <div class="card-content">
     <slot />
@@ -16,16 +23,39 @@ const { title, classes } = Astro.props;
 
 <style>
   .card {
-    background: var(--clr-lossless-primary-glass);
+    background: color-mix(in oklab, var(--clr-lossless-primary-glass), var(--clr-lossless-primary-dark) 90%);
     border: 1px solid var(--clr-lossless-ui-btn-border);
     padding: 1.5rem;
     border-radius: 8px;
     transition: all 0.2s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 2px;
+    box-sizing: border-box;
   }
 
   .card:hover {
-    background: var(--clr-lossless-primary-glass--lighter);
+    background: color-mix(in oklab, var(--clr-lossless-primary-glass), var(--clr-lossless-primary-dark) 20%);
     transform: translateY(-2px);
+    margin-bottom: 0;
+  }
+
+  .card-image {
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    max-width: calc(100% + 3rem);
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1em;
+    margin: 0.5em;
   }
 
   .card h2 {
@@ -39,6 +69,7 @@ const { title, classes } = Astro.props;
     font-family: var(--ff-legible);
     font-weight: var(--fw-regular);
     font-size: var(--fs-400);
+    flex: 1;
   }
 </style>
 

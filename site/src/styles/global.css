@@ -64,6 +64,7 @@
     --fs-900: 3rem;
 
     --flow-space: 1em;
+    --gap: .5em;
 
 }
 
@@ -86,3 +87,7 @@ a, p {
     height: 1px;
     background-color: var(--clr-lossless-primary-light);
   }
+
+*, *::before, *::after {
+box-sizing: border-box;
+}

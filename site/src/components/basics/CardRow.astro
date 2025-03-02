@@ -1,0 +1,36 @@
+---
+interface Props {
+  columns?: number;
+  gap?: string;
+}
+
+const { columns = 3, gap = "2rem" } = Astro.props;
+---
+
+<div class="card-row">
+  <slot />
+</div>
+
+<style define:vars={{ columns, gap }}>
+  .card-row {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: var(--gap);
+    row-gap: 2rem;
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  @media (max-width: 1200px) {
+    .card-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card-row {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+  }
+</style>
