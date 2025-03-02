@@ -1,9 +1,33 @@
 ---
 import "@styles/global.css";
+import Card from "@basics/Card.astro";
+import { getEntry } from 'astro:content';
+
+type Card = {
+  id: string;
+  title: string;
+  content: string;
+  order?: number;
+  tags?: string[];
+};
+
+const featuresData = await getEntry('cards', 'features');
+const cards = featuresData?.data?.cards ?? [];
 ---
 
 <div id="main-content-col">
   <h1>Here is the Main Content</h1>
+  {cards && cards.length > 0 ? (
+    cards
+      .sort((a: Card, b: Card) => (a.order ?? 0) - (b.order ?? 0))
+      .map((card: Card) => (
+        <Card title={card.title}>
+          {card.content}
+        </Card>
+      ))
+  ) : (
+    <p>No cards found</p>
+  )}
 </div>
 
 <style>

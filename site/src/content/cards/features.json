@@ -1,0 +1,18 @@
+{
+  "cards": [
+    {
+      "id": "performance",
+      "title": "Performance",
+      "content": "Built with speed and efficiency in mind",
+      "order": 1,
+      "tags": ["technical", "feature"]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "content": "Protecting your data and privacy",
+      "order": 2,
+      "tags": ["technical", "feature"]
+    }
+  ]
+}
