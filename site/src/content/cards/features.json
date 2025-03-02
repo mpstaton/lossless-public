@@ -12,9 +12,17 @@
       "id": "security",
       "title": "Security",
       "content": "Protecting your data and privacy",
-      "imageUrl": "public/visuals/Screenshot From 2024-11-23 22-41-45.png",
+      "imageUrl": "~/assets/Screenshot From 2024-11-23--22-41-45.png",
       "order": 2,
       "tags": ["technical", "feature"]
+    },
+    {
+      "id": "test",
+      "title": "Test Image",
+      "content": "This is a test to verify image paths",
+      "imageUrl": "https://placehold.co/300x200/png",
+      "order": 3,
+      "tags": ["test"]
     }
   ] 
 }

@@ -1,0 +1,53 @@
+---
+import Layout from "@layouts/Layout.astro";
+import ToolCard from "@components/tool-components/ToolCard.astro";
+import { getEntry } from "astro:content";
+
+interface Tool {
+  site_name?: string;
+  title?: string;
+  url: string;
+  image?: string;
+  favicon?: string;
+  description?: string;
+  tags?: string[];
+}
+
+const toolsData = await getEntry("tools", "tools");
+const allTools = toolsData?.data?.tools ?? [];
+---
+
+<Layout title="Tools">
+  <main class="container">
+    <h1>Tools</h1>
+    <div class="tools-grid">
+      {allTools.map((tool: Tool) => <ToolCard tool={tool} />)}
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .tools-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+</style>

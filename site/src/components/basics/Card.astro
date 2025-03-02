@@ -1,20 +1,82 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
 interface Props {
   title?: string;
   classes?: string;
-  imageUrl?: string;
+  imageUrl?: string | ImageMetadata;
   imageAlt?: string;
 }
 
 const { title, classes, imageUrl, imageAlt = "" } = Astro.props;
+
+// Determine if the imageUrl is a remote URL or a local path
+const isRemoteImage =
+  typeof imageUrl === "string" &&
+  (imageUrl?.startsWith("http") || imageUrl?.startsWith("https"));
+
+// Determine if the imageUrl is an imported image (ImageMetadata object)
+const isImportedImage = imageUrl && typeof imageUrl !== "string";
+
+// For importing images dynamically from src/assets
+const images = import.meta.glob<{ default: ImageMetadata }>([
+  "/src/assets/**/*",
+]);
+
+// Check if path starts with tilde (for src/assets)
+const isTildePath = typeof imageUrl === "string" && imageUrl.startsWith("~/");
+
+// Convert tilde path to src path
+let srcAssetsPath = imageUrl;
+if (isTildePath && typeof imageUrl === "string") {
+  srcAssetsPath = `/src${imageUrl.substring(1)}`;
+}
+
+// Check if it's a dynamic image that can be loaded via glob
+const isDynamicImage =
+  typeof srcAssetsPath === "string" &&
+  !isRemoteImage &&
+  srcAssetsPath in images;
+
+// For debugging
+console.log("Card imageUrl:", imageUrl);
+console.log("isRemoteImage:", isRemoteImage);
+console.log("isImportedImage:", isImportedImage);
+console.log("isTildePath:", isTildePath);
+console.log("srcAssetsPath:", srcAssetsPath);
+console.log("isDynamicImage:", isDynamicImage);
+console.log("Available images:", Object.keys(images));
 ---
 
 <div class:list={["card", classes]}>
-  {imageUrl && (
-    <div class="card-image">
-      <img src={imageUrl} alt={imageAlt} />
-    </div>
-  )}
+  {
+    imageUrl && (
+      <div class="card-image">
+        {isRemoteImage ? (
+          <img src={imageUrl} alt={imageAlt} />
+        ) : isImportedImage ? (
+          <Image
+            src={imageUrl as ImageMetadata}
+            alt={imageAlt}
+            width={200}
+            height={200}
+            class="astro-image"
+          />
+        ) : isDynamicImage && typeof srcAssetsPath === "string" ? (
+          <Image
+            src={images[srcAssetsPath]()}
+            alt={imageAlt}
+            width={200}
+            height={200}
+            class="astro-image"
+          />
+        ) : (
+          <img src={imageUrl as string} alt={imageAlt} />
+        )}
+      </div>
+    )
+  }
   {title && <h2>{title}</h2>}
   <div class="card-content">
     <slot />
@@ -22,10 +84,25 @@ const { title, classes, imageUrl, imageAlt = "" } = Astro.props;
 </div>
 
 <style>
+  .debug-path {
+    font-size: 10px;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
   .card {
-    background: color-mix(in oklab, var(--clr-lossless-primary-glass), var(--clr-lossless-primary-dark) 90%);
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 90%
+    );
     border: 1px solid var(--clr-lossless-ui-btn-border);
-    padding: .15em;
+    padding: 0.15em;
     border-radius: 1em;
     transition: all 0.2s ease-in-out;
     height: 100%;
@@ -35,23 +112,29 @@ const { title, classes, imageUrl, imageAlt = "" } = Astro.props;
     max-height: 100%;
     margin-bottom: 2px;
     box-sizing: border-box;
+    position: relative;
   }
 
   .card:hover {
-    background: color-mix(in oklab, var(--clr-lossless-primary-glass), var(--clr-lossless-primary-dark) 20%);
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 20%
+    );
     transform: translateY(-2px);
     margin-bottom: 0;
   }
 
   .card-image {
-    margin-top: .5em;
+    margin-top: 0.5em;
     border-radius: 8px 8px 0 0;
     overflow: hidden;
     max-width: calc(100% + 3rem);
     box-sizing: border-box;
   }
 
-  .card-image img {
+  .card-image img,
+  .card-image :global(.astro-image) {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -73,12 +156,3 @@ const { title, classes, imageUrl, imageAlt = "" } = Astro.props;
     flex: 1;
   }
 </style>
-
-
-
-
-
-
-
-
-

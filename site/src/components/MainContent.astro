@@ -1,41 +1,118 @@
 ---
 import "@styles/global.css";
 import Card from "@basics/Card.astro";
+import ToolCard from "@components/tool-components/ToolCard.astro";
 import CardRow from "@basics/CardRow.astro";
-import { getEntry } from 'astro:content';
+import { getEntry } from "astro:content";
+import { Image } from "astro:assets";
 
-type Card = {
-  id: string;
-  title: string;
-  content: string;
-  order?: number;
+// Import a test image directly - this is the proper way to use Astro's image optimization
+import testImage from "../assets/test-image.png";
+import testImage2 from "../assets/Screenshot-From_2024-12-24--16-24-26.png";
+
+type Tool = {
+  site_name?: string;
+  title?: string;
+  url: string;
+  image?: string;
+  favicon?: string;
+  description?: string;
   tags?: string[];
-  imageUrl?: string;
 };
 
-const featuresData = await getEntry('cards', 'features');
+const featuresData = await getEntry("cards", "features");
 const cards = featuresData?.data?.cards ?? [];
+const toolsData = await getEntry("tools", "tools");
+const tools = toolsData?.data?.tools ?? [];
 ---
 
 <div id="main-content-col">
-  <h1>Here is the Main Content</h1>
-  {cards && cards.length > 0 ? (
-    <CardRow columns={3} gap="2rem">
-      {cards
-        .sort((a: Card, b: Card) => (a.order ?? 0) - (b.order ?? 0))
-        .map((card: Card) => (
-          <Card 
-            title={card.title}
-            imageUrl={card.imageUrl} 
-            imageAlt={card.title}
-          >
-            {card.content}
-          </Card>
-        ))}
+  <section>
+    <h1>Here is the Main Content</h1>
+    {
+      cards && cards.length > 0 ? (
+        <CardRow columns={3} gap="2rem">
+          {cards
+            .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+            .map((card) => (
+              <Card
+                title={card.title}
+                imageUrl={card.imageUrl}
+                imageAlt={card.title}
+              >
+                {card.content}
+              </Card>
+            ))}
+        </CardRow>
+      ) : (
+        <p>No cards found</p>
+      )
+    }
+  </section>
+
+  <section>
+    <h2>Image Import Demo</h2>
+    <CardRow columns={2} gap="2rem">
+      <Card
+        title="Imported Image Demo"
+        imageUrl={testImage}
+        imageAlt="Imported test image"
+      >
+        This card uses an imported image directly
+      </Card>
+      <Card
+        title="Imported Image Demo 2"
+        imageUrl={testImage2}
+        imageAlt="Another imported test image"
+      >
+        This is another card with an imported image
+      </Card>
     </CardRow>
-  ) : (
-    <p>No cards found</p>
-  )}
+  </section>
+
+  <section>
+    <h2>Tools</h2>
+    {
+      tools && tools.length > 0 ? (
+        <CardRow columns={3} gap="2rem">
+          {tools.map((tool: Tool) => (
+            <ToolCard tool={tool} />
+          ))}
+        </CardRow>
+      ) : (
+        <p>No tools found</p>
+      )
+    }
+  </section>
+  <section>
+    <h2>Direct Image Test</h2>
+    <p>Testing direct image loading:</p>
+    <Image src={testImage} alt="Test" width={200} />
+    <Image src={testImage2} alt="Test" width={200} />
+    <!-- These won't work - public directory files don't exist -->
+    <!--
+    <img
+      src="/assets/Screenshot-From_2024-12-24--16-24-26.png"
+      alt="Test"
+      width="200"
+    />
+    <img src="/test-image.png" alt="Test" width="200" />
+    <img
+      src="/assets/Screenshot-From_2024-12-24--16-24-26.png"
+      alt="Test"
+      width="200"
+    />
+    -->
+
+    <!-- Use tilde notation for src/assets -->
+    <Card
+      title="Dynamic Import Test"
+      imageUrl="~/assets/Screenshot-From_2024-12-24--16-24-26.png"
+      imageAlt="Test"
+    >
+      Using tilde notation to dynamically import from src/assets
+    </Card>
+  </section>
 </div>
 
 <style>

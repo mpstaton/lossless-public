@@ -18,6 +18,9 @@
       "@components/*": [
         "./src/components/*"
       ],
+      "@visuals/*": [
+        "./src/assets/visuals/*"
+      ],
       "@layouts/*": [
         "./src/layouts/*"
       ],

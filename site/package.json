@@ -1,16 +1,19 @@
 {
   "name": "site",
-  "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "start": "astro dev",
+    "build": "node ./scripts/fetchOpenGraphData.js && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^9.1.2",
-    "astro": "^5.4.1",
-    "xml-to-json-util": "^1.0.1"
+    "@astrojs/node": "^7.0.2",
+    "astro": "^4.16.18",
+    "dotenv": "^16.3.1",
+    "glob": "^10.3.10",
+    "gray-matter": "^4.0.3",
+    "undici": "^5.28.2"
   }
 }

@@ -1,0 +1,166 @@
+---
+interface Tool {
+  site_name?: string;
+  title?: string;
+  url: string;
+  image?: string;
+  favicon?: string;
+  description?: string;
+  tags?: string[];
+}
+
+interface Props {
+  tool: Tool;
+  // Still support individual props for backward compatibility
+  site_name?: string;
+  title?: string;
+  url?: string;
+  image?: string;
+  favicon?: string;
+  description?: string;
+  tags?: string[];
+}
+
+const { tool, ...individualProps } = Astro.props;
+
+// Use tool props or individual props if provided
+const {
+  site_name = individualProps.site_name,
+  title = individualProps.title,
+  url = individualProps.url,
+  image = individualProps.image,
+  favicon = individualProps.favicon,
+  description = individualProps.description,
+  tags = individualProps.tags || [],
+} = tool || individualProps;
+
+const displayTitle = title || site_name || new URL(url).hostname;
+---
+
+<div class="tool-card">
+  <a href={url} target="_blank" rel="noopener noreferrer">
+    {
+      image && (
+        <div class="tool-card-image">
+          <img src={image} alt={displayTitle} />
+        </div>
+      )
+    }
+    <div class="tool-card-header">
+      {favicon && <img class="tool-favicon" src={favicon} alt="" />}
+      <h3>{displayTitle}</h3>
+    </div>
+    {description && <p class="tool-description">{description}</p>}
+    {
+      tags.length > 0 && (
+        <div class="tool-tags">
+          {tags.map((tag) => (
+            <span class="tool-tag">{tag}</span>
+          ))}
+        </div>
+      )
+    }
+  </a>
+</div>
+
+<style>
+  .tool-card {
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 90%
+    );
+    border: 1px solid var(--clr-lossless-ui-btn-border);
+    padding: 0.15em;
+    border-radius: 1em;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+  }
+
+  .tool-card a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5em;
+  }
+
+  .tool-card:hover {
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 20%
+    );
+    transform: translateY(-2px);
+    margin-bottom: 0;
+  }
+
+  .tool-card-image {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+  }
+
+  .tool-card-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5em;
+  }
+
+  .tool-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .tool-favicon {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+
+  .tool-card h3 {
+    color: var(--clr-heading);
+    font-size: var(--fs-500);
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .tool-description {
+    color: var(--clr-body);
+    font-family: var(--ff-legible);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-300);
+    margin-bottom: 0.75em;
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .tool-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: auto;
+  }
+
+  .tool-tag {
+    background: var(--clr-lossless-primary-dark);
+    color: var(--clr-lossless-primary-glass);
+    font-size: var(--fs-200);
+    padding: 0.2em 0.6em;
+    border-radius: 1em;
+    white-space: nowrap;
+  }
+</style>
