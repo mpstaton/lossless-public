@@ -3,7 +3,7 @@ import "@styles/global.css";
 import Card from "@basics/Card.astro";
 import ToolCard from "@components/tool-components/ToolCard.astro";
 import CardRow from "@basics/CardRow.astro";
-import { getEntry } from "astro:content";
+import { getEntry, getCollection } from "astro:content";
 import { Image } from "astro:assets";
 
 // Import a test image directly - this is the proper way to use Astro's image optimization
@@ -22,8 +22,12 @@ type Tool = {
 
 const featuresData = await getEntry("cards", "features");
 const cards = featuresData?.data?.cards ?? [];
-const toolsData = await getEntry("tools", "tools");
-const tools = toolsData?.data?.tools ?? [];
+
+// Get all entries from the tools collection
+const toolEntries = await getCollection("tools");
+// Extract and flatten tools from entries
+const tools = toolEntries.flatMap((entry) => entry.data.tools || []);
+console.log("Tools loaded:", tools);
 ---
 
 <div id="main-content-col">
@@ -51,26 +55,6 @@ const tools = toolsData?.data?.tools ?? [];
   </section>
 
   <section>
-    <h2>Image Import Demo</h2>
-    <CardRow columns={2} gap="2rem">
-      <Card
-        title="Imported Image Demo"
-        imageUrl={testImage}
-        imageAlt="Imported test image"
-      >
-        This card uses an imported image directly
-      </Card>
-      <Card
-        title="Imported Image Demo 2"
-        imageUrl={testImage2}
-        imageAlt="Another imported test image"
-      >
-        This is another card with an imported image
-      </Card>
-    </CardRow>
-  </section>
-
-  <section>
     <h2>Tools</h2>
     {
       tools && tools.length > 0 ? (
@@ -83,35 +67,6 @@ const tools = toolsData?.data?.tools ?? [];
         <p>No tools found</p>
       )
     }
-  </section>
-  <section>
-    <h2>Direct Image Test</h2>
-    <p>Testing direct image loading:</p>
-    <Image src={testImage} alt="Test" width={200} />
-    <Image src={testImage2} alt="Test" width={200} />
-    <!-- These won't work - public directory files don't exist -->
-    <!--
-    <img
-      src="/assets/Screenshot-From_2024-12-24--16-24-26.png"
-      alt="Test"
-      width="200"
-    />
-    <img src="/test-image.png" alt="Test" width="200" />
-    <img
-      src="/assets/Screenshot-From_2024-12-24--16-24-26.png"
-      alt="Test"
-      width="200"
-    />
-    -->
-
-    <!-- Use tilde notation for src/assets -->
-    <Card
-      title="Dynamic Import Test"
-      imageUrl="~/assets/Screenshot-From_2024-12-24--16-24-26.png"
-      imageAlt="Test"
-    >
-      Using tilde notation to dynamically import from src/assets
-    </Card>
   </section>
 </div>
 
