@@ -34,6 +34,13 @@ The Astro site is in the site directory
 /site/
 ```
 
+To upgrade Astro, run
+
+```
+cd site
+npx @astrojs/upgrade
+```
+
 To run the Astro apps on local, you have to create two servers.
 
 ```
