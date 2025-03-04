@@ -4,6 +4,8 @@ import Card from "@basics/Card.astro";
 import ToolCard from "@components/tool-components/ToolCard.astro";
 import CardRow from "@basics/CardRow.astro";
 import { getEntry, getCollection } from "astro:content";
+import TrademarkRibbon from "@basics/TrademarkRibbon.astro";
+import trademarkBaserowUrl from "../assets/Visuals/Tooling-Trademarks/trademark__Baserow.svg?url";
 
 type Tool = {
   site_name?: string;
@@ -19,9 +21,9 @@ const featuresData = await getEntry("cards", "features");
 const cards = featuresData?.data?.cards ?? [];
 
 // Get all entries from the tools collection
-const toolEntries = await getCollection("tools");
-// Tools are now directly in the entry data
-const tools = toolEntries.map((entry) => entry.data);
+const toolEntries = await getCollection("tooling");
+// Tools are now directly in the entry data, cast to Tool
+const tools = toolEntries.map((entry) => entry.data as Tool);
 console.log("Tools loaded:", tools);
 ---
 
@@ -32,8 +34,8 @@ console.log("Tools loaded:", tools);
       cards && cards.length > 0 ? (
         <CardRow columns={3} gap="2rem">
           {cards
-            .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
-            .map((card) => (
+            .sort((a: any, b: any) => (a.order ?? 0) - (b.order ?? 0))
+            .map((card: any) => (
               <Card
                 title={card.title}
                 imageUrl={card.imageUrl}
@@ -51,6 +53,12 @@ console.log("Tools loaded:", tools);
 
   <section>
     <h2>Tools</h2>
+    <img
+      src={trademarkBaserowUrl}
+      alt="Test logo render"
+      style="max-width: 200px;"
+    />
+    <TrademarkRibbon />
     {
       tools && tools.length > 0 ? (
         <CardRow columns={3} gap="2rem">

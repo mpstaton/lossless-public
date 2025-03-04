@@ -1,0 +1,15 @@
+---
+export interface Props {
+  trademark: string;
+}
+
+const { trademark } = Astro.props as Props;
+console.log("TrademarkFragment: Received trademark:", trademark);
+
+const { default: innerHTML } = await import(
+  `../../assets/Visuals/Tooling-Trademarks/${trademark}.svg?raw`
+);
+console.log("TrademarkFragment: innerHTML loaded:", innerHTML);
+---
+
+<div set:html={innerHTML} />

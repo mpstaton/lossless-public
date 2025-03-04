@@ -1,6 +1,11 @@
 ---
 url: 'https://contentsquare.com/'
 youtube-url: 'https://www.youtube.com/@Contentsquare'
+image: >-
+  https://images.ctfassets.net/gwbpo1m641r7/53LBfL1FUzJmM8Kpc4K9i/017e061edf41dfde5f3254502dbb7087/social-image-contentsquare.png
+site_name: 'Contentsquare: all'
+title: 'Contentsquare: all-in-one experience intelligence platform'
+favicon: 'https://contentsquare.com/favicons/favicon-32x32.png'
 ---
 
 [[Laerdal Marketing]]
