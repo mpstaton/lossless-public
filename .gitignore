@@ -20,6 +20,10 @@ site/dist/
 */yarn-error.log*
 */pnpm-debug.log*
 
+pnpm-lock.yaml
+package-lock.json
+
+
 # environment variables
 .env
 .env.production
