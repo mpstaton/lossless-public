@@ -1,3 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+const { glob } = require('glob');
+const matter = require('gray-matter');
+const dotenv = require('dotenv');
+const { fetch } = require('undici');
+
 export const isYouTubeUrl = (url: string): boolean => {
     try {
       const urlObj = new URL(url);
@@ -18,7 +25,8 @@ export const isYouTubeUrl = (url: string): boolean => {
     }
   };
 
-  const YOUTUBE_API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
+// Load from process.env instead
+const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 
 // Simple check - will only log length to avoid exposing key
 console.log('API key loaded:', YOUTUBE_API_KEY ? '✓' : '✗');
@@ -164,3 +172,114 @@ const extractVideoIdAndEmbed = (url: string): VideoIdResult => {
     };
   }
 };
+
+/**
+ * Process markdown files to find and format YouTube links
+ * @param globPattern - The glob pattern to match markdown files
+ */
+export const processMarkdownFiles = async (globPattern: string): Promise<void> => {
+  try {
+    // Find all markdown files matching the pattern
+    const files = await glob(globPattern);
+    console.log(`Found ${files.length} markdown files to process`);
+
+    let totalLinksProcessed = 0;
+    let totalFilesModified = 0;
+
+    for (const filePath of files) {
+      console.log(`Processing file: ${filePath}`);
+      
+      // Read the file content
+      const fileContent = fs.readFileSync(filePath, 'utf8');
+      
+      // Parse frontmatter and content
+      const { content } = matter(fileContent);
+      
+      // Regular expression to find youtu.be links
+      // This regex looks for youtu.be links that are not already inside an iframe tag
+      const youtubeLinkRegex = /(?<!\<iframe[^>]*>)(?<!\]\()https?:\/\/youtu\.be\/[a-zA-Z0-9_-]+(?:\?[^)\s]*)?(?!\)|\<\/iframe\>)/g;
+      
+      let modifiedContent = content;
+      let fileModified = false;
+      let matches: string[] = [];
+      let match: RegExpExecArray | null;
+      
+      // Find all matches first to avoid regex state issues with async operations
+      while ((match = youtubeLinkRegex.exec(content)) !== null) {
+        matches.push(match[0]);
+      }
+      
+      if (matches.length > 0) {
+        console.log(`Found ${matches.length} YouTube links in ${filePath}`);
+        
+        // Process each match
+        for (const youtubeUrl of matches) {
+          try {
+            // Fetch YouTube data for the link
+            const youtubeData = await fetchYouTubeData(youtubeUrl);
+            
+            // Generate the iframe code
+            const iframeCode = `<iframe 
+style="aspect-ratio:16/9;width:100%;height:auto" 
+src="https://www.youtube.com/embed/${youtubeData.uniqueEmbedId}" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen
+></iframe>`;
+            
+            // Replace the URL with the iframe code
+            modifiedContent = modifiedContent.replace(youtubeUrl, iframeCode);
+            fileModified = true;
+            totalLinksProcessed++;
+            
+            console.log(`Processed YouTube link: ${youtubeUrl}`);
+          } catch (error) {
+            console.error(`Error processing YouTube link ${youtubeUrl}:`, error);
+          }
+        }
+        
+        // Write the modified content back to the file if changes were made
+        if (fileModified) {
+          // Preserve frontmatter by using gray-matter to stringify
+          const fileData = matter(fileContent);
+          const updatedFileContent = matter.stringify(modifiedContent, fileData.data);
+          
+          fs.writeFileSync(filePath, updatedFileContent, 'utf8');
+          console.log(`Updated file: ${filePath}`);
+          totalFilesModified++;
+        }
+      } else {
+        console.log(`No YouTube links found in ${filePath}`);
+      }
+    }
+    
+    console.log(`Processing complete. Modified ${totalFilesModified} files and processed ${totalLinksProcessed} YouTube links.`);
+  } catch (error) {
+    console.error('Error processing markdown files:', error);
+  }
+};
+
+/**
+ * Main function to run the script
+ */
+export const main = async (): Promise<void> => {
+  try {
+    // Load environment variables
+    dotenv.config();
+    
+    // Process markdown files in the content directory
+    await processMarkdownFiles('site/src/content/**/*.md');
+    
+    console.log('YouTube link processing completed successfully');
+  } catch (error) {
+    console.error('Error running script:', error);
+    process.exit(1);
+  }
+};
+
+// Run the script if this file is executed directly
+if (require.main === module) {
+  main();
+}

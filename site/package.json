@@ -6,7 +6,8 @@
     "start": "astro dev",
     "build": "node ./scripts/fetchOpenGraphData.js && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format-youtube": "ts-node ./scripts/formatYouTubeLinks.ts"
   },
   "dependencies": {
     "@astrojs/node": "^7.0.2",
@@ -15,5 +16,9 @@
     "glob": "^10.3.10",
     "gray-matter": "^4.0.3",
     "undici": "^5.28.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
   }
 }
