@@ -2,41 +2,123 @@
 // This will be a left panel that will allow for navigation throughout the site.
 ---
 
-<div id="nav__left-panel">
-  <div class="panel-header">
-    <h3>Navigation</h3>
-  </div>
+<div id="nav__left-panel" class="panel-closed">
+  <button class="panel-toggle" aria-label="Toggle left panel">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="toggle-icon"
+    >
+      <path d="M9 18l6-6-6-6"></path>
+    </svg>
+  </button>
 
-  <div class="nav-section">
-    <h4>Main Sections</h4>
-    <ul>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Tools</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Settings</a></li>
-    </ul>
-  </div>
+  <div class="panel-content">
+    <div class="panel-header">
+      <h3>Navigation</h3>
+    </div>
 
-  <div class="nav-section">
-    <h4>Recent Items</h4>
-    <ul>
-      <li><a href="#">Project Alpha</a></li>
-      <li><a href="#">Design System</a></li>
-      <li><a href="#">Documentation</a></li>
-    </ul>
+    <div class="nav-section">
+      <h4>Main Sections</h4>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-section">
+      <h4>Recent Items</h4>
+      <ul>
+        <li><a href="#">Project Alpha</a></li>
+        <li><a href="#">Design System</a></li>
+        <li><a href="#">Documentation</a></li>
+      </ul>
+    </div>
   </div>
 </div>
+
+<script>
+  // Get the left panel and toggle button
+  const leftPanel = document.getElementById("nav__left-panel");
+  const toggleButton = leftPanel?.querySelector(".panel-toggle");
+
+  // Add click event listener to toggle button
+  toggleButton?.addEventListener("click", () => {
+    leftPanel?.classList.toggle("panel-closed");
+  });
+</script>
 
 <style>
   #nav__left-panel {
     padding: 1rem;
     height: 100%;
     background-color: var(--clr-lossless-primary-dark);
-    width: max-content;
-    min-width: 200px;
-    max-width: 250px;
+    width: 250px;
+    min-width: 250px;
     border-right: 1px solid var(--clr-lossless-ui-btn-border);
+    transition:
+      transform 0.3s ease,
+      width 0.3s ease,
+      min-width 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #nav__left-panel.panel-closed {
+    transform: translateX(-100%);
+    width: 0;
+    min-width: 0;
+    padding: 0;
+  }
+
+  #nav__left-panel.panel-closed .panel-content {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .panel-content {
+    opacity: 1;
+    visibility: visible;
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease;
+  }
+
+  .panel-toggle {
+    position: absolute;
+    top: 1rem;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--clr-lossless-primary-dark);
+    border: 1px solid var(--clr-lossless-ui-btn-border);
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0;
+  }
+
+  .toggle-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--clr-heading);
+    transition: transform 0.3s ease;
+  }
+
+  #nav__left-panel.panel-closed .toggle-icon {
+    transform: rotate(180deg);
   }
 
   .panel-header {

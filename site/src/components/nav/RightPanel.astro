@@ -2,58 +2,140 @@
 // This is a right panel for easy navigation.
 ---
 
-<div id="nav__right-panel">
-  <div class="panel-header">
-    <h3>Workspace</h3>
-  </div>
+<div id="nav__right-panel" class="panel-closed">
+  <button class="panel-toggle" aria-label="Toggle right panel">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="toggle-icon"
+    >
+      <path d="M15 18l-6-6 6-6"></path>
+    </svg>
+  </button>
 
-  <div class="workspace-section">
-    <h4>Active Projects</h4>
-    <div class="project-card">
-      <h5>Project Alpha</h5>
-      <div class="progress-bar">
-        <div class="progress" style="width: 75%;"></div>
-      </div>
-      <p>Last updated: 2 days ago</p>
+  <div class="panel-content">
+    <div class="panel-header">
+      <h3>Workspace</h3>
     </div>
 
-    <div class="project-card">
-      <h5>Design System</h5>
-      <div class="progress-bar">
-        <div class="progress" style="width: 45%;"></div>
+    <div class="workspace-section">
+      <h4>Active Projects</h4>
+      <div class="project-card">
+        <h5>Project Alpha</h5>
+        <div class="progress-bar">
+          <div class="progress" style="width: 75%;"></div>
+        </div>
+        <p>Last updated: 2 days ago</p>
       </div>
-      <p>Last updated: 5 days ago</p>
-    </div>
-  </div>
 
-  <div class="workspace-section">
-    <h4>Recent Activity</h4>
-    <ul class="activity-list">
-      <li>
-        <span class="activity-icon">📝</span>
-        <span class="activity-text">Updated documentation</span>
-      </li>
-      <li>
-        <span class="activity-icon">🔄</span>
-        <span class="activity-text">Synced with repository</span>
-      </li>
-      <li>
-        <span class="activity-icon">✅</span>
-        <span class="activity-text">Completed task #42</span>
-      </li>
-    </ul>
+      <div class="project-card">
+        <h5>Design System</h5>
+        <div class="progress-bar">
+          <div class="progress" style="width: 45%;"></div>
+        </div>
+        <p>Last updated: 5 days ago</p>
+      </div>
+    </div>
+
+    <div class="workspace-section">
+      <h4>Recent Activity</h4>
+      <ul class="activity-list">
+        <li>
+          <span class="activity-icon">📝</span>
+          <span class="activity-text">Updated documentation</span>
+        </li>
+        <li>
+          <span class="activity-icon">🔄</span>
+          <span class="activity-text">Synced with repository</span>
+        </li>
+        <li>
+          <span class="activity-icon">✅</span>
+          <span class="activity-text">Completed task #42</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
+
+<script>
+  // Get the right panel and toggle button
+  const rightPanel = document.getElementById("nav__right-panel");
+  const toggleButton = rightPanel?.querySelector(".panel-toggle");
+
+  // Add click event listener to toggle button
+  toggleButton?.addEventListener("click", () => {
+    rightPanel?.classList.toggle("panel-closed");
+  });
+</script>
 
 <style>
   #nav__right-panel {
     padding: 1rem;
     height: 100%;
     background-color: var(--clr-lossless-primary-dark);
-    width: max-content;
+    width: 250px;
     min-width: 250px;
-    max-width: 300px;
     border-left: 1px solid var(--clr-lossless-ui-btn-border);
+    transition:
+      transform 0.3s ease,
+      width 0.3s ease,
+      min-width 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #nav__right-panel.panel-closed {
+    transform: translateX(100%);
+    width: 0;
+    min-width: 0;
+    padding: 0;
+  }
+
+  #nav__right-panel.panel-closed .panel-content {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .panel-content {
+    opacity: 1;
+    visibility: visible;
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease;
+  }
+
+  .panel-toggle {
+    position: absolute;
+    top: 1rem;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--clr-lossless-primary-dark);
+    border: 1px solid var(--clr-lossless-ui-btn-border);
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0;
+  }
+
+  .toggle-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--clr-heading);
+    transition: transform 0.3s ease;
+  }
+
+  #nav__right-panel.panel-closed .toggle-icon {
+    transform: rotate(180deg);
   }
 
   .panel-header {

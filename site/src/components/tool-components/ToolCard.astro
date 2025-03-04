@@ -10,8 +10,8 @@ interface Tool {
 }
 
 interface Props {
-  tool: Tool;
-  // Still support individual props for backward compatibility
+  tool?: Tool;
+  // Support for direct properties
   site_name?: string;
   title?: string;
   url?: string;
@@ -21,18 +21,18 @@ interface Props {
   tags?: string[];
 }
 
-const { tool, ...individualProps } = Astro.props;
+const { tool, ...directProps } = Astro.props;
 
-// Use tool props or individual props if provided
+// Use tool props if provided, otherwise use direct props
 const {
-  site_name = individualProps.site_name,
-  title = individualProps.title,
-  url = individualProps.url,
-  image = individualProps.image,
-  favicon = individualProps.favicon,
-  description = individualProps.description,
-  tags = individualProps.tags || [],
-} = tool || individualProps;
+  site_name = directProps.site_name,
+  title = directProps.title,
+  url = directProps.url,
+  image = directProps.image,
+  favicon = directProps.favicon,
+  description = directProps.description,
+  tags = directProps.tags || [],
+} = tool || directProps;
 
 // Filter function to remove site_name from title
 function filterTitle(fullTitle: string, siteName: string): string {
@@ -60,7 +60,7 @@ function filterTitle(fullTitle: string, siteName: string): string {
 
 const displayTitle = title
   ? filterTitle(title, site_name || "")
-  : site_name || new URL(url).hostname;
+  : site_name || (url ? new URL(url).hostname : "");
 ---
 
 <div class="tool-card">
@@ -116,7 +116,7 @@ const displayTitle = title
   }
 
   .tool-card h2 {
-    font-size: var(--fs-600);
+    font-size: var(--fs-500);
     font-weight: var(--fw-bold);
     margin-bottom: 0.25em;
   }
@@ -180,7 +180,7 @@ const displayTitle = title
 
   .tool-card h4 {
     color: var(--clr-heading);
-    font-size: var(--fs-400);
+    font-size: var(--fs-350);
     margin: 0;
     flex-grow: 1;
   }

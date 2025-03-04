@@ -28,6 +28,7 @@ import RightPanel from "@components/nav/RightPanel.astro";
     position: relative;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling when panels slide */
   }
 
   .left-panel {
@@ -35,6 +36,7 @@ import RightPanel from "@components/nav/RightPanel.astro";
     top: 0;
     left: 0;
     height: 100%;
+    z-index: 10;
     /* Width is determined by the LeftPanel component */
   }
 
@@ -44,6 +46,7 @@ import RightPanel from "@components/nav/RightPanel.astro";
     padding: 0 1rem;
     margin: 0 auto;
     max-width: 1200px;
+    transition: margin 0.3s ease;
     /* Main content will adapt to the space left by the panels */
   }
 
@@ -52,6 +55,7 @@ import RightPanel from "@components/nav/RightPanel.astro";
     top: 0;
     right: 0;
     height: 100%;
+    z-index: 10;
     /* Width is determined by the RightPanel component */
   }
 

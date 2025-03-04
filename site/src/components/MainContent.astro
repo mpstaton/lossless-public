@@ -20,8 +20,8 @@ const cards = featuresData?.data?.cards ?? [];
 
 // Get all entries from the tools collection
 const toolEntries = await getCollection("tools");
-// Extract and flatten tools from entries
-const tools = toolEntries.flatMap((entry) => entry.data.tools || []);
+// Tools are now directly in the entry data
+const tools = toolEntries.map((entry) => entry.data);
 console.log("Tools loaded:", tools);
 ---
 

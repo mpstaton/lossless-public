@@ -44,8 +44,10 @@ import "@styles/global.css";
     gap: 2vw;
 
     & img {
-      width: auto;
-      height: clamp(14px, 3vw, 64px);
+      width: clamp(14px, 3vw, 32px);
+      height: clamp(14px, 3vw, 32px);
+      object-fit: contain;
+      aspect-ratio: 1 / 1;
     }
     & a {
       text-decoration: none;
