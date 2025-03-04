@@ -4,6 +4,9 @@ tools:
     image: 'https://turso.tech/opengraph-image.png?af897536fc917600'
     site_name: Turso
     title: Turso - Databases for All
+    tags:
+        - backend-as-a-service
+        - database-servers
 ---
 
 ##### [[Turso]] is a [[Serverless]] [[Database Apps|Database App]] [[Backend-as-a-Service]]

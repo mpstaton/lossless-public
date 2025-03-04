@@ -4,5 +4,8 @@ tools:
     image: 'https://cdn.hatica.io/social/hatica-work-analytics-for-engg-teams.png'
     site_name: Hatica
     title: Engineering Analytics to boost developer productivity
+    tags:
+        - Developer Tools
+        - Engineering Management
 ---
 

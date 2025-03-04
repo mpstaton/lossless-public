@@ -72,17 +72,21 @@ const displayTitle = title
         </div>
       )
     }
-    <div class="tool-card-header">
-      {favicon && <img class="tool-favicon" src={favicon} alt="" />}
-      <h2>{site_name}</h2>
-      <h3>{displayTitle}</h3>
+    <div class="tool-card__header">
+      <div class="tool-card__site-name">
+        {favicon && <img class="tool-favicon" src={favicon} alt="" />}
+        <h2>{site_name}</h2>
+      </div>
+      <h4>{displayTitle}</h4>
     </div>
     {description && <p class="tool-description">{description}</p>}
     {
       tags.length > 0 && (
         <div class="tool-tags">
           {tags.map((tag) => (
-            <span class="tool-tag">{tag}</span>
+            <span class="tool-tag">
+              <p>{tag}</p>
+            </span>
           ))}
         </div>
       )
@@ -105,6 +109,7 @@ const displayTitle = title
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    min-width: 300px;
     max-height: 100%;
     margin-bottom: 2px;
     box-sizing: border-box;
@@ -148,22 +153,34 @@ const displayTitle = title
     border-radius: 0.5em;
   }
 
-  .tool-card-header {
-    display: flex;
+  .tool-card__header {
+    display: block;
     align-items: center;
     gap: 0.5em;
     margin-bottom: 0.5em;
+  }
+
+  .tool-card__site-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .tool-card__site-name h2 {
+    margin: 0;
+    line-height: 1;
   }
 
   .tool-favicon {
     width: 20px;
     height: 20px;
     border-radius: 4px;
+    display: block;
   }
 
-  .tool-card h3 {
+  .tool-card h4 {
     color: var(--clr-heading);
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
     margin: 0;
     flex-grow: 1;
   }
@@ -195,5 +212,11 @@ const displayTitle = title
     padding: 0.2em 0.6em;
     border-radius: 1em;
     white-space: nowrap;
+
+    & p {
+      font-size: var(--fs-100);
+      margin: 0;
+      padding: 0;
+    }
   }
 </style>

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@basics/*": ["./src/components/basics/*"],
+      "@components/*": ["./src/components/*"],
+      "@visuals/*": ["./src/assets/visuals/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@styles/*": ["./src/styles/*"]
+    },
+    "jsx": "react-jsx",
+    "checkJs": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
