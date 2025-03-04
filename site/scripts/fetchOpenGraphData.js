@@ -56,6 +56,10 @@ async function processToolFiles() {
       // Initialize the tools array if it doesn't exist
       if (!frontmatter.tools) {
         frontmatter.tools = [];
+      } else if (!Array.isArray(frontmatter.tools)) {
+        // If tools exists but is not an array, convert it to an array
+        console.log(`Converting tools to array in ${file}`);
+        frontmatter.tools = [frontmatter.tools];
       }
       
       // Check if we already have a tool with this URL

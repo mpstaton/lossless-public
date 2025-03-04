@@ -34,7 +34,33 @@ const {
   tags = individualProps.tags || [],
 } = tool || individualProps;
 
-const displayTitle = title || site_name || new URL(url).hostname;
+// Filter function to remove site_name from title
+function filterTitle(fullTitle: string, siteName: string): string {
+  if (!fullTitle || !siteName || !fullTitle.includes(siteName)) {
+    return fullTitle || "";
+  }
+
+  // Find the position after the site_name
+  const siteNameEndPos = fullTitle.indexOf(siteName) + siteName.length;
+
+  // Look for the next capital letter after any punctuation and spaces
+  const remainingPart = fullTitle.substring(siteNameEndPos);
+  const capitalLetterMatch = remainingPart.match(/[^\w\s][\s]*([A-Z])/);
+
+  if (capitalLetterMatch && capitalLetterMatch.index !== undefined) {
+    // Return the part starting from the capital letter
+    return remainingPart.substring(
+      capitalLetterMatch.index + capitalLetterMatch[0].length - 1
+    );
+  }
+
+  // If no capital letter found, return the original title
+  return fullTitle;
+}
+
+const displayTitle = title
+  ? filterTitle(title, site_name || "")
+  : site_name || new URL(url).hostname;
 ---
 
 <div class="tool-card">

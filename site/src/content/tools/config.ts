@@ -4,7 +4,7 @@ import { glob, file } from 'astro/loaders';
 export const toolCollection = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/tools" }),
   schema: z.object({
-    tools: z.array(z.object({
+    tools: z.object({
       site_name: z.string().optional(),
       title: z.string().optional(),
       url: z.string(),
@@ -12,7 +12,7 @@ export const toolCollection = defineCollection({
       favicon: z.string().optional(),
       description: z.string().optional(),
       tags: z.array(z.string()).optional()
-    }))
+    })
   })
 });
 
