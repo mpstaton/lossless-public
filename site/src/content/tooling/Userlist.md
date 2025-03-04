@@ -1,0 +1,3 @@
+
+
+Manages email marketing

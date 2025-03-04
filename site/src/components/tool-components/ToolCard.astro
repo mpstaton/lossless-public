@@ -1,4 +1,6 @@
 ---
+import { filterTitle, getEffectiveSiteName } from "@utils/toolUtils";
+
 interface Tool {
   site_name?: string;
   title?: string;
@@ -7,6 +9,7 @@ interface Tool {
   favicon?: string;
   description?: string;
   tags?: string[];
+  filename?: string;
 }
 
 interface Props {
@@ -19,6 +22,7 @@ interface Props {
   favicon?: string;
   description?: string;
   tags?: string[];
+  filename?: string;
 }
 
 const { tool, ...directProps } = Astro.props;
@@ -32,35 +36,17 @@ const {
   favicon = directProps.favicon,
   description = directProps.description,
   tags = directProps.tags || [],
+  filename = directProps.filename,
 } = tool || directProps;
 
-// Filter function to remove site_name from title
-function filterTitle(fullTitle: string, siteName: string): string {
-  if (!fullTitle || !siteName || !fullTitle.includes(siteName)) {
-    return fullTitle || "";
-  }
+// Ensure tags is always an array
+const safeTags = tags || [];
 
-  // Find the position after the site_name
-  const siteNameEndPos = fullTitle.indexOf(siteName) + siteName.length;
+// Get the effective site name using the utility function
+const effectiveSiteName = getEffectiveSiteName(site_name, filename, url);
 
-  // Look for the next capital letter after any punctuation and spaces
-  const remainingPart = fullTitle.substring(siteNameEndPos);
-  const capitalLetterMatch = remainingPart.match(/[^\w\s][\s]*([A-Z])/);
-
-  if (capitalLetterMatch && capitalLetterMatch.index !== undefined) {
-    // Return the part starting from the capital letter
-    return remainingPart.substring(
-      capitalLetterMatch.index + capitalLetterMatch[0].length - 1
-    );
-  }
-
-  // If no capital letter found, return the original title
-  return fullTitle;
-}
-
-const displayTitle = title
-  ? filterTitle(title, site_name || "")
-  : site_name || (url ? new URL(url).hostname : "");
+// Only set displayTitle if title exists, otherwise leave it blank
+const displayTitle = title ? filterTitle(title, effectiveSiteName || "") : "";
 ---
 
 <div class="tool-card">
@@ -75,15 +61,15 @@ const displayTitle = title
     <div class="tool-card__header">
       <div class="tool-card__site-name">
         {favicon && <img class="tool-favicon" src={favicon} alt="" />}
-        <h2>{site_name}</h2>
+        <h2>{effectiveSiteName}</h2>
       </div>
       <h4>{displayTitle}</h4>
     </div>
     {description && <p class="tool-description">{description}</p>}
     {
-      tags.length > 0 && (
+      safeTags.length > 0 && (
         <div class="tool-tags">
-          {tags.map((tag) => (
+          {safeTags.map((tag) => (
             <span class="tool-tag">
               <p>{tag}</p>
             </span>
@@ -210,11 +196,11 @@ const displayTitle = title
     color: var(--clr-lossless-primary-glass);
     font-size: var(--fs-200);
     padding: 0.2em 0.6em;
-    border-radius: 1em;
+    border-radius: 0.25em;
     white-space: nowrap;
 
     & p {
-      font-size: var(--fs-100);
+      font-size: var(--fs-200);
       margin: 0;
       padding: 0;
     }

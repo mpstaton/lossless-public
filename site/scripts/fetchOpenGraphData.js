@@ -40,7 +40,7 @@ async function getFromOpenGraphIo(url) {
 
 // Main function to process all tool files
 async function processToolFiles() {
-  const contentDir = path.join(__dirname, '../src/content/tools');
+  const contentDir = path.join(__dirname, '../src/content/tooling');
   
   // Find all markdown files except config.ts
   const files = await glob('*.md', { cwd: contentDir });

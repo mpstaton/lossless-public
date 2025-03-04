@@ -1,0 +1,177 @@
+---
+import Header from "@basics/Header.astro";
+import CardRow from "@basics/CardRow.astro";
+import ToolCard from "@components/tool-components/ToolCard.astro";
+import BareToolCard from "@components/tool-components/BareToolCard.astro";
+import { getCollection } from "astro:content";
+import "@styles/global.css";
+
+// Get all entries from the tools collection
+const toolEntries = await getCollection("tooling");
+// Tools are now directly in the entry data
+const tools = toolEntries.map((entry) => ({
+  ...entry.data,
+  id: entry.id,
+}));
+
+// Filter tools based on whether they have an image property
+const toolsWithImages = tools.filter((tool) => tool.image);
+const toolsWithoutImages = tools.filter((tool) => !tool.image);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Toolkit - Lossless</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="toolkit-container">
+        <header class="toolkit-header">
+          <h1>Lossless Toolkit</h1>
+          <p class="toolkit-description">
+            A curated collection of tools and resources to help you build better
+            software.
+          </p>
+        </header>
+
+        <div class="toolkit-content">
+          {/* Tools with images section */}
+          {
+            toolsWithImages.length > 0 && (
+              <section class="tools-section">
+                <h2>Featured Tools</h2>
+                <CardRow columns={3} gap="2rem" minCardWidth="300px">
+                  {toolsWithImages.map((tool) => (
+                    <ToolCard
+                      url={tool.url}
+                      site_name={tool.site_name}
+                      title={tool.title}
+                      image={tool.image}
+                      favicon={tool.favicon}
+                      description={tool.description}
+                      tags={tool.tags}
+                      filename={tool.id}
+                    />
+                  ))}
+                </CardRow>
+              </section>
+            )
+          }
+
+          {/* Tools without images section */}
+          {
+            toolsWithoutImages.length > 0 && (
+              <section class="tools-section bare-tools-section">
+                <h2>More Tools</h2>
+                <div class="bare-tools-grid">
+                  {toolsWithoutImages.map((tool) => (
+                    <BareToolCard
+                      url={tool.url}
+                      site_name={tool.site_name}
+                      title={tool.title}
+                      tags={tool.tags}
+                      filename={tool.id}
+                    />
+                  ))}
+                </div>
+              </section>
+            )
+          }
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    background-color: var(--clr-primary-bg);
+    color: var(--clr-body);
+    font-family: var(--ff-base);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+    padding-top: 1rem;
+  }
+
+  .toolkit-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .toolkit-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .toolkit-header h1 {
+    font-size: var(--fs-800);
+    color: var(--clr-heading);
+    margin-bottom: 1rem;
+  }
+
+  .toolkit-description {
+    font-size: var(--fs-400);
+    color: var(--clr-body);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .toolkit-content {
+    width: 100%;
+  }
+
+  .tools-section {
+    margin-bottom: 4rem;
+  }
+
+  .tools-section h2 {
+    font-size: var(--fs-600);
+    color: var(--clr-heading);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .bare-tools-section {
+    background-color: var(--clr-lossless-primary-dark);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .bare-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .toolkit-container {
+      padding: 1rem;
+    }
+
+    .toolkit-header {
+      margin-bottom: 2rem;
+    }
+
+    .bare-tools-section {
+      padding: 1rem;
+    }
+
+    .bare-tools-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+</style>

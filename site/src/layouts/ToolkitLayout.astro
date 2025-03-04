@@ -1,0 +1,110 @@
+---
+import "@styles/global.css";
+import ToolCard from "@components/tool-components/ToolCard.astro";
+import CardRow from "@basics/CardRow.astro";
+import { getCollection } from "astro:content";
+
+// Get all entries from the tools collection
+const toolEntries = await getCollection("tooling");
+// Tools are now directly in the entry data
+const tools = toolEntries.map((entry) => entry.data);
+
+// Optional props
+interface Props {
+  title?: string;
+  description?: string;
+  columns?: number;
+  gap?: string;
+  minCardWidth?: string;
+}
+
+const {
+  title = "Toolkit",
+  description = "A collection of useful tools and resources",
+  columns = 3,
+  gap = "2rem",
+  minCardWidth = "300px",
+} = Astro.props;
+---
+
+<div class="toolkit-container">
+  <header class="toolkit-header">
+    <h1>{title}</h1>
+    {description && <p class="toolkit-description">{description}</p>}
+  </header>
+
+  <main class="toolkit-content">
+    {
+      tools && tools.length > 0 ? (
+        <CardRow columns={columns} gap={gap} minCardWidth={minCardWidth}>
+          {tools.map((tool) => (
+            <ToolCard
+              url={tool.url}
+              site_name={tool.site_name}
+              title={tool.title}
+              image={tool.image}
+              favicon={tool.favicon}
+              description={tool.description}
+              tags={tool.tags}
+            />
+          ))}
+        </CardRow>
+      ) : (
+        <div class="no-tools">
+          <p>No tools found. Check back later!</p>
+        </div>
+      )
+    }
+
+    <slot />
+  </main>
+</div>
+
+<style>
+  .toolkit-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .toolkit-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .toolkit-header h1 {
+    font-size: var(--fs-800);
+    color: var(--clr-heading);
+    margin-bottom: 1rem;
+  }
+
+  .toolkit-description {
+    font-size: var(--fs-400);
+    color: var(--clr-body);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .toolkit-content {
+    width: 100%;
+  }
+
+  .no-tools {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--clr-lossless-primary-dark);
+    border-radius: 1rem;
+    color: var(--clr-body);
+  }
+
+  @media (max-width: 768px) {
+    .toolkit-container {
+      padding: 1rem;
+    }
+
+    .toolkit-header {
+      margin-bottom: 2rem;
+    }
+  }
+</style>

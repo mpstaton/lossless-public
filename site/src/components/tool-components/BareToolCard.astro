@@ -1,0 +1,133 @@
+---
+import { filterTitle, getEffectiveSiteName } from "@utils/toolUtils";
+
+interface Tool {
+  site_name?: string;
+  title?: string;
+  url: string;
+  tags?: string[];
+  filename?: string;
+}
+
+interface Props {
+  tool?: Tool;
+  // Support for direct properties
+  site_name?: string;
+  title?: string;
+  url?: string;
+  tags?: string[];
+  filename?: string;
+}
+
+const { tool, ...directProps } = Astro.props;
+
+// Use tool props if provided, otherwise use direct props
+const {
+  site_name = directProps.site_name,
+  title = directProps.title,
+  url = directProps.url,
+  tags = directProps.tags || [],
+  filename = directProps.filename,
+} = tool || directProps;
+
+// Ensure tags is always an array
+const safeTags = tags || [];
+
+// Get the effective site name using the utility function
+const effectiveSiteName = getEffectiveSiteName(site_name, filename, url);
+
+// Only set displayTitle if title exists, otherwise leave it blank
+const displayTitle = title ? filterTitle(title, effectiveSiteName || "") : "";
+---
+
+<div class="bare-tool-card">
+  <a href={url} target="_blank" rel="noopener noreferrer">
+    <div class="bare-tool-card__header">
+      <h2>{effectiveSiteName}</h2>
+      {displayTitle && <h4>{displayTitle}</h4>}
+    </div>
+    {
+      safeTags.length > 0 && (
+        <div class="bare-tool-tags">
+          {safeTags.map((tag) => (
+            <span class="bare-tool-tag">
+              <p>{tag}</p>
+            </span>
+          ))}
+        </div>
+      )
+    }
+  </a>
+</div>
+
+<style>
+  .bare-tool-card {
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 90%
+    );
+    border: 1px solid var(--clr-lossless-ui-btn-border);
+    padding: 0.5em;
+    border-radius: 0.75em;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 2px;
+  }
+
+  .bare-tool-card a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .bare-tool-card:hover {
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 20%
+    );
+    transform: translateY(-2px);
+    margin-bottom: 0;
+  }
+
+  .bare-tool-card__header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+  }
+
+  .bare-tool-card h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .bare-tool-card h4 {
+    color: var(--clr-heading);
+    font-size: var(--fs-300);
+    margin: 0.25em 0 0 0;
+  }
+
+  .bare-tool-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+
+  .bare-tool-tag {
+    background: var(--clr-lossless-primary-dark);
+    color: var(--clr-lossless-primary-glass);
+    font-size: var(--fs-200);
+    padding: 0.2em 0.6em;
+    border-radius: 0.25em;
+    white-space: nowrap;
+
+    & p {
+      font-size: var(--fs-200);
+      margin: 0;
+      padding: 0;
+    }
+  }
+</style>
