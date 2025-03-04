@@ -5,7 +5,9 @@ parent-org: "[[Microsoft]]"
 ---
 a [[Text Editors or IDEs|Text Editor]] created and maintained by [[Microsoft]].
 
-https://youtube.com/shorts/3O6BFlOiFRg?si=A8onX1t8spfsDqo0
+<iframe style="aspect-ratio:9/16;width:100%;height:auto" src="https://youtube.com/shorts/3O6BFlOiFRg?si=A8onX1t8spfsDqo0&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen </iframe> 
+
+
 
 Written in [[TypeScript]]
 

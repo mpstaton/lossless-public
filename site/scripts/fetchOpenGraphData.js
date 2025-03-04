@@ -38,20 +38,16 @@ async function getFromOpenGraphIo(url) {
   }
 }
 
-// Main function to process all tool files
-async function processToolFiles() {
-  const contentDir = path.join(__dirname, '../src/content/tooling');
+// Process a single file
+async function processFile(filePath) {
+  console.log(`Processing file: ${filePath}`);
   
-  // Find all markdown files except config.ts
-  const files = await glob('*.md', { cwd: contentDir });
-  
-  for (const file of files) {
-    const filePath = path.join(contentDir, file);
+  try {
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const { data: frontmatter, content } = matter(fileContent);
     
     if (frontmatter && frontmatter.url) {
-      console.log(`Processing ${file} with URL: ${frontmatter.url}`);
+      console.log(`Processing ${path.basename(filePath)} with URL: ${frontmatter.url}`);
       
       // Check if we need to fetch OpenGraph data
       if (!frontmatter.title || !frontmatter.image || !frontmatter.site_name) {
@@ -74,19 +70,110 @@ async function processToolFiles() {
             
             // Write back to file
             fs.writeFileSync(filePath, updatedContent);
-            console.log(`✅ Updated ${file} with OpenGraph data`);
+            console.log(`✅ Updated ${path.basename(filePath)} with OpenGraph data`);
           } catch (error) {
-            console.error(`Error updating ${file}:`, error);
+            console.error(`Error updating ${path.basename(filePath)}:`, error);
             console.log('Problem frontmatter:', JSON.stringify(frontmatter));
           }
         } else {
-          console.log(`⚠️ No usable OpenGraph data found for ${file}`);
+          console.log(`⚠️ No usable OpenGraph data found for ${path.basename(filePath)}`);
         }
       } else {
-        console.log(`Skipping ${file} - already has complete OpenGraph data`);
+        console.log(`Skipping ${path.basename(filePath)} - already has complete OpenGraph data`);
       }
     } else {
-      console.log(`⚠️ Missing URL in ${file}`);
+      console.log(`⚠️ Missing URL in ${path.basename(filePath)}`);
+    }
+  } catch (error) {
+    console.error(`Error processing file ${filePath}:`, error);
+  }
+}
+
+// Main function to process all tool files
+async function processToolFiles() {
+  // Get command line arguments
+  const args = process.argv.slice(2);
+  console.log('Raw command line arguments:', args);
+  
+  // If specific files are provided, process them
+  if (args.length > 0) {
+    // Join all arguments as they might be parts of a filename with spaces
+    let combinedPath = args.join(' ');
+    console.log(`Combined path: ${combinedPath}`);
+    
+    // Add .md extension if not present
+    if (!combinedPath.toLowerCase().endsWith('.md')) {
+      console.log(`Adding .md extension to ${combinedPath}`);
+      combinedPath = `${combinedPath}.md`;
+    }
+    
+    // Handle different path formats
+    let filePath = combinedPath;
+    let fileFound = false;
+    
+    // Check if the path is absolute or relative to the current directory
+    if (path.isAbsolute(filePath) || filePath.startsWith('./') || filePath.startsWith('../')) {
+      if (fs.existsSync(filePath)) {
+        fileFound = true;
+      }
+    }
+    
+    // Try different path variations if not found
+    if (!fileFound) {
+      const possiblePaths = [
+        filePath,
+        path.join(__dirname, '../src/content/tooling', filePath),
+        path.join(__dirname, '../src/content/tools', filePath),
+        path.join(__dirname, '../src/content', filePath)
+      ];
+      
+      for (const testPath of possiblePaths) {
+        if (fs.existsSync(testPath)) {
+          console.log(`Found file at: ${testPath}`);
+          filePath = testPath;
+          fileFound = true;
+          break;
+        }
+      }
+      
+      // If still not found, try using glob
+      if (!fileFound) {
+        console.log(`Could not find file directly, trying glob pattern...`);
+        
+        // Create glob patterns for different possible locations
+        const globPatterns = [
+          path.join(__dirname, '../src/content/tooling', `**/${path.basename(filePath)}`),
+          path.join(__dirname, '../src/content/tools', `**/${path.basename(filePath)}`),
+          path.join(__dirname, '../src/content', `**/${path.basename(filePath)}`)
+        ];
+        
+        for (const pattern of globPatterns) {
+          const matches = await glob(pattern);
+          if (matches.length > 0) {
+            console.log(`Found file using glob: ${matches[0]}`);
+            filePath = matches[0];
+            fileFound = true;
+            break;
+          }
+        }
+      }
+    }
+    
+    if (fileFound) {
+      await processFile(filePath);
+    } else {
+      console.error(`Could not find file: ${filePath}`);
+    }
+  } else {
+    // Process all files in the tooling directory
+    const contentDir = path.join(__dirname, '../src/content/tooling');
+    
+    // Find all markdown files
+    const files = await glob('*.md', { cwd: contentDir });
+    
+    for (const file of files) {
+      const filePath = path.join(contentDir, file);
+      await processFile(filePath);
     }
   }
 }

@@ -9,6 +9,7 @@ This script finds YouTube links in markdown files and formats them with proper i
 - Formats unformatted links with responsive iframe embedding
 - Preserves frontmatter in markdown files
 - Handles YouTube API integration for video metadata
+- Supports processing individual files or entire directories
 
 ## Prerequisites
 
@@ -31,23 +32,43 @@ This script finds YouTube links in markdown files and formats them with proper i
 
 ## Usage
 
-Run the script with npm:
+### Process All Markdown Files
+
+Run the script with npm to process all markdown files in the content directory:
 
 ```bash
 npm run format-youtube
 ```
 
-By default, the script will scan all markdown files in the `site/src/content` directory. You can specify a custom glob pattern as an argument:
+### Process Specific Files
+
+You can process one or more specific files by providing their paths as arguments:
 
 ```bash
-npm run format-youtube -- "path/to/your/files/**/*.md"
+npm run format-youtube -- path/to/file1.md path/to/file2.md
 ```
+
+For example:
+
+```bash
+npm run format-youtube -- site/src/content/tools/example.md
+```
+
+### Process Files Matching a Pattern
+
+You can also use a glob pattern to process multiple files:
+
+```bash
+npm run format-youtube -- "site/src/content/tools/*.md"
+```
+
+Note: When using glob patterns, make sure to wrap the pattern in quotes to prevent shell expansion.
 
 ## How It Works
 
 The script:
 
-1. Finds all markdown files matching the specified glob pattern
+1. Finds all markdown files matching the specified pattern or processes the specific files provided
 2. Scans each file for YouTube links with the `youtu.be` pattern
 3. For each link found, it:
    - Extracts the video ID

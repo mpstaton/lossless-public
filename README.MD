@@ -45,13 +45,21 @@ To run the Astro apps on local, you have to create two servers.
 
 ```
 cd docs
-npm run dev
+pnpm run dev
 ```
 
 ```
 cd site
-npm run dev
+pnpm run dev
 ```
+
+## How to clean up YouTube URLs. 
+
+From the `site` directory, put the following command in bash:
+```bash
+pnpm run format-youtube --src/content/tooling/PATH/FILE_NAME
+```
+
 
 ***
 # Future Plans
