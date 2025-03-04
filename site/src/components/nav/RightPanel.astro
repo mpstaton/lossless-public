@@ -3,5 +3,126 @@
 ---
 
 <div id="nav__right-panel">
-  <p>Right</p>
+  <div class="panel-header">
+    <h3>Workspace</h3>
+  </div>
+
+  <div class="workspace-section">
+    <h4>Active Projects</h4>
+    <div class="project-card">
+      <h5>Project Alpha</h5>
+      <div class="progress-bar">
+        <div class="progress" style="width: 75%;"></div>
+      </div>
+      <p>Last updated: 2 days ago</p>
+    </div>
+
+    <div class="project-card">
+      <h5>Design System</h5>
+      <div class="progress-bar">
+        <div class="progress" style="width: 45%;"></div>
+      </div>
+      <p>Last updated: 5 days ago</p>
+    </div>
+  </div>
+
+  <div class="workspace-section">
+    <h4>Recent Activity</h4>
+    <ul class="activity-list">
+      <li>
+        <span class="activity-icon">📝</span>
+        <span class="activity-text">Updated documentation</span>
+      </li>
+      <li>
+        <span class="activity-icon">🔄</span>
+        <span class="activity-text">Synced with repository</span>
+      </li>
+      <li>
+        <span class="activity-icon">✅</span>
+        <span class="activity-text">Completed task #42</span>
+      </li>
+    </ul>
+  </div>
 </div>
+
+<style>
+  #nav__right-panel {
+    padding: 1rem;
+    height: 100%;
+    background-color: var(--clr-lossless-primary-dark);
+  }
+
+  .panel-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--clr-lossless-ui-btn-border);
+  }
+
+  .panel-header h3 {
+    margin: 0;
+    color: var(--clr-heading);
+  }
+
+  .workspace-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .workspace-section h4 {
+    font-size: var(--fs-400);
+    margin-bottom: 0.5rem;
+    color: var(--clr-heading);
+  }
+
+  .project-card {
+    background-color: var(--clr-lossless-primary-glass);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-card h5 {
+    margin: 0 0 0.5rem 0;
+    font-size: var(--fs-300);
+  }
+
+  .project-card p {
+    margin: 0.5rem 0 0 0;
+    font-size: var(--fs-200);
+    color: var(--clr-body);
+  }
+
+  .progress-bar {
+    height: 6px;
+    background-color: var(--clr-lossless-primary-dark);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .progress {
+    height: 100%;
+    background-color: var(--clr-lossless-ui-btn-border);
+  }
+
+  .activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .activity-list li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--clr-lossless-primary-glass);
+  }
+
+  .activity-icon {
+    margin-right: 0.5rem;
+    font-size: var(--fs-400);
+  }
+
+  .activity-text {
+    font-size: var(--fs-300);
+    color: var(--clr-body);
+  }
+</style>

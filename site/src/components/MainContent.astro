@@ -4,11 +4,6 @@ import Card from "@basics/Card.astro";
 import ToolCard from "@components/tool-components/ToolCard.astro";
 import CardRow from "@basics/CardRow.astro";
 import { getEntry, getCollection } from "astro:content";
-import { Image } from "astro:assets";
-
-// Import a test image directly - this is the proper way to use Astro's image optimization
-import testImage from "../assets/test-image.png";
-import testImage2 from "../assets/Screenshot-From_2024-12-24--16-24-26.png";
 
 type Tool = {
   site_name?: string;

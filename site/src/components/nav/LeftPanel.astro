@@ -3,5 +3,79 @@
 ---
 
 <div id="nav__left-panel">
-  <p>Left</p>
+  <div class="panel-header">
+    <h3>Navigation</h3>
+  </div>
+
+  <div class="nav-section">
+    <h4>Main Sections</h4>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Tools</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <h4>Recent Items</h4>
+    <ul>
+      <li><a href="#">Project Alpha</a></li>
+      <li><a href="#">Design System</a></li>
+      <li><a href="#">Documentation</a></li>
+    </ul>
+  </div>
 </div>
+
+<style>
+  #nav__left-panel {
+    padding: 1rem;
+    height: 100%;
+    background-color: var(--clr-lossless-primary-dark);
+  }
+
+  .panel-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--clr-lossless-ui-btn-border);
+  }
+
+  .panel-header h3 {
+    margin: 0;
+    color: var(--clr-heading);
+  }
+
+  .nav-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-section h4 {
+    font-size: var(--fs-400);
+    margin-bottom: 0.5rem;
+    color: var(--clr-heading);
+  }
+
+  .nav-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-section li {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-section a {
+    color: var(--clr-body);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-section a:hover {
+    background-color: var(--clr-lossless-primary-glass);
+  }
+</style>

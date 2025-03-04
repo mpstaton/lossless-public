@@ -74,6 +74,7 @@ const displayTitle = title
     }
     <div class="tool-card-header">
       {favicon && <img class="tool-favicon" src={favicon} alt="" />}
+      <h2>{site_name}</h2>
       <h3>{displayTitle}</h3>
     </div>
     {description && <p class="tool-description">{description}</p>}
@@ -107,6 +108,12 @@ const displayTitle = title
     max-height: 100%;
     margin-bottom: 2px;
     box-sizing: border-box;
+  }
+
+  .tool-card h2 {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.25em;
   }
 
   .tool-card a {

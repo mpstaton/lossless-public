@@ -52,3 +52,9 @@ npm run dev
 cd site
 npm run dev
 ```
+
+***
+# Future Plans
+ -[ ] Left and Right Panels
+ -[ ] Special handling of youtube links. 
+ -[ ] Image handling with text wrap. 

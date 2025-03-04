@@ -8,16 +8,69 @@ import RightPanel from "@components/nav/RightPanel.astro";
 ---
 
 <div class="three-column-layout">
-  <div>
+  <div class="left-panel">
     <LeftPanel />
   </div>
-  <div><MainContent> Woohoo! </MainContent></div>
-  <div><RightPanel /></div>
+  <div class="main-content">
+    <MainContent />
+  </div>
+  <div class="right-panel">
+    <RightPanel />
+  </div>
 </div>
 
 <style>
   .three-column-layout {
+    display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
+    min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .left-panel {
+    width: 250px;
+    min-width: 250px;
+    border-right: 1px solid var(--clr-lossless-ui-btn-border);
+  }
+
+  .main-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 1rem;
+  }
+
+  .right-panel {
+    width: 300px;
+    min-width: 300px;
+    border-left: 1px solid var(--clr-lossless-ui-btn-border);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .left-panel {
+      width: 200px;
+      min-width: 200px;
+    }
+
+    .right-panel {
+      width: 250px;
+      min-width: 250px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .three-column-layout {
+      flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+      width: 100%;
+      min-width: 100%;
+      border: none;
+      border-bottom: 1px solid var(--clr-lossless-ui-btn-border);
+    }
   }
 </style>
