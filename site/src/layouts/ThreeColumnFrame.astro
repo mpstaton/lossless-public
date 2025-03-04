@@ -23,43 +23,39 @@ import RightPanel from "@components/nav/RightPanel.astro";
   .three-column-layout {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
     min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
-    max-width: 1800px;
-    margin: 0 auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
   }
 
   .left-panel {
-    width: 250px;
-    min-width: 250px;
-    border-right: 1px solid var(--clr-lossless-ui-btn-border);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* Width is determined by the LeftPanel component */
   }
 
   .main-content {
     flex: 1;
     overflow-y: auto;
     padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Main content will adapt to the space left by the panels */
   }
 
   .right-panel {
-    width: 300px;
-    min-width: 300px;
-    border-left: 1px solid var(--clr-lossless-ui-btn-border);
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 100%;
+    /* Width is determined by the RightPanel component */
   }
 
   /* Responsive adjustments */
-  @media (max-width: 1200px) {
-    .left-panel {
-      width: 200px;
-      min-width: 200px;
-    }
-
-    .right-panel {
-      width: 250px;
-      min-width: 250px;
-    }
-  }
-
   @media (max-width: 768px) {
     .three-column-layout {
       flex-direction: column;
@@ -67,9 +63,8 @@ import RightPanel from "@components/nav/RightPanel.astro";
 
     .left-panel,
     .right-panel {
+      position: static;
       width: 100%;
-      min-width: 100%;
-      border: none;
       border-bottom: 1px solid var(--clr-lossless-ui-btn-border);
     }
   }
