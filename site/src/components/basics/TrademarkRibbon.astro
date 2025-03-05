@@ -11,26 +11,14 @@ const componentsDir = path.join(
 let trademarkFiles: string[] = [];
 
 try {
-  // Read the directory and filter for trademark__ and wordmark__ Astro component files
+  // Read the directory and filter for trademark__ Astro component files
   const files = fs.readdirSync(componentsDir);
-
-  // Get trademark files
-  const trademarkPrefixFiles = files
+  trademarkFiles = files
     .filter((file) => file.startsWith("trademark__") && file.endsWith(".astro"))
     .map((file) => file.replace("trademark__", "").replace(".astro", ""));
 
-  // Get wordmark files
-  const wordmarkPrefixFiles = files
-    .filter((file) => file.startsWith("wordmark__") && file.endsWith(".astro"))
-    .map((file) => file.replace("wordmark__", "").replace(".astro", ""));
-
-  // Combine both sets, removing duplicates
-  trademarkFiles = [
-    ...new Set([...trademarkPrefixFiles, ...wordmarkPrefixFiles]),
-  ];
-
   console.log(
-    `Found ${trademarkFiles.length} trademark components (${trademarkPrefixFiles.length} trademarks, ${wordmarkPrefixFiles.length} wordmarks) in ${componentsDir}`
+    `Found ${trademarkFiles.length} trademark components in ${componentsDir}`
   );
 } catch (error: unknown) {
   console.error(
@@ -38,39 +26,6 @@ try {
   );
   // Provide empty array as fallback
   trademarkFiles = [];
-}
-
-// Check if classification file exists
-let darkTrademarks: string[] = [];
-let lightTrademarks: string[] = [];
-
-try {
-  const classificationPath = path.join(
-    process.cwd(),
-    "src/assets/svg-classification.json"
-  );
-
-  if (fs.existsSync(classificationPath)) {
-    const classificationData = JSON.parse(
-      fs.readFileSync(classificationPath, "utf8")
-    );
-    darkTrademarks = classificationData.dark || [];
-    lightTrademarks = classificationData.light || [];
-
-    console.log(
-      `Loaded classification data: ${darkTrademarks.length} dark, ${lightTrademarks.length} light`
-    );
-  } else {
-    console.log(
-      "No classification data found, all trademarks will be in a single ribbon"
-    );
-    // If no classification data, put all trademarks in the light category
-    lightTrademarks = trademarkFiles;
-  }
-} catch (error) {
-  console.error("Error loading classification data:", error);
-  // If error, put all trademarks in the light category
-  lightTrademarks = trademarkFiles;
 }
 
 // Shuffle the logos array
@@ -95,128 +50,61 @@ function shuffle(array: string[]) {
   }
 }
 
-// Shuffle both dark and light trademarks
-let darkTrademarksShuffled: string[] = [];
-let lightTrademarksShuffled: string[] = [];
-
+let trademarksShuffled: string[] = [];
 try {
-  darkTrademarksShuffled = shuffle(darkTrademarks);
-  lightTrademarksShuffled = shuffle(lightTrademarks);
-
-  console.log("First few dark trademarks:", darkTrademarksShuffled.slice(0, 3));
-  console.log(
-    "First few light trademarks:",
-    lightTrademarksShuffled.slice(0, 3)
-  );
+  trademarksShuffled = shuffle(trademarkFiles);
+  console.log("First few trademarks:", trademarksShuffled.slice(0, 5));
 } catch (error) {
   console.error("Error in shuffle operation:", error);
-  darkTrademarksShuffled = darkTrademarks;
-  lightTrademarksShuffled = lightTrademarks;
+  trademarksShuffled = trademarkFiles; // Use unshuffled array as fallback
 }
 
 // Make sure we have at least some logos to display
-if (
-  darkTrademarksShuffled.length === 0 &&
-  lightTrademarksShuffled.length === 0
-) {
+if (trademarksShuffled.length === 0) {
   // Add some fallback logos if none were found
-  lightTrademarksShuffled.push("fallback1", "fallback2", "fallback3");
+  trademarksShuffled.push("fallback1", "fallback2", "fallback3");
   console.log("Using fallback trademarks");
 }
 
 // Debug info
 const debugInfo = {
   totalTrademarks: trademarkFiles.length,
-  darkTrademarks: darkTrademarksShuffled.length,
-  lightTrademarks: lightTrademarksShuffled.length,
+  firstFewTrademarks: trademarksShuffled.slice(0, 5),
   componentsDir,
 };
 ---
 
-<div class="trademark-ribbons">
-  {
-    darkTrademarksShuffled.length > 0 && (
-      <div class="trademark-ribbon dark-ribbon">
-        <div class="ribbon">
-          {darkTrademarksShuffled.map((trademark) => (
-            <div class="trademark" data-key={trademark}>
-              <TrademarkFragment trademark={trademark} />
-            </div>
-          ))}
-          {/* Duplicate for seamless looping */}
-          {darkTrademarksShuffled.map((trademark) => (
-            <div class="trademark" data-key={`${trademark}-dup`}>
-              <TrademarkFragment trademark={trademark} />
-            </div>
-          ))}
+<div class="trademark-ribbon">
+  <div class="ribbon">
+    {
+      trademarksShuffled.map((trademark) => (
+        <div class="trademark" key={trademark}>
+          <TrademarkFragment trademark={trademark} />
         </div>
-      </div>
-    )
-  }
-
-  {
-    lightTrademarksShuffled.length > 0 && (
-      <div class="trademark-ribbon light-ribbon">
-        <div class="ribbon reverse">
-          {lightTrademarksShuffled.map((trademark) => (
-            <div class="trademark" data-key={trademark}>
-              <TrademarkFragment trademark={trademark} />
-            </div>
-          ))}
-          {/* Duplicate for seamless looping */}
-          {lightTrademarksShuffled.map((trademark) => (
-            <div class="trademark" data-key={`${trademark}-dup`}>
-              <TrademarkFragment trademark={trademark} />
-            </div>
-          ))}
-        </div>
-      </div>
-    )
-  }
-
-  <div class="debug-info">
-    Found {debugInfo.totalTrademarks} trademarks ({debugInfo.darkTrademarks} dark,
-    {debugInfo.lightTrademarks} light)
+      ))
+    }
   </div>
+  <!--   <div class="debug-info">
+    Found {debugInfo.totalTrademarks} trademarks in {
+      debugInfo.componentsDir
+    }.<br />
+    First few: {debugInfo.firstFewTrademarks.join(", ")}
+  </div> -->
 </div>
 
 <style>
-  .trademark-ribbons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    object-fit: inherit;
-    gap: 1rem;
-  }
-
   .trademark-ribbon {
     width: 100%;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    object-fit: contain;
-    overflow: hidden;
+    height: 6vh;
     position: relative;
-    padding: 0.5rem 0;
-  }
-
-  .dark-ribbon {
-    background-color: #f8f8f8;
-  }
-
-  .light-ribbon {
-    background-color: #222;
+    padding: 1rem 0;
   }
 
   .ribbon {
     display: flex;
-    animation: scroll 280s linear infinite;
+    animation: scroll 320s linear infinite;
     width: max-content;
-    object-fit: contain;
-  }
-
-  .reverse {
-    animation: scroll-reverse 360s linear infinite;
+    align-items: center;
   }
 
   @keyframes scroll {
@@ -228,22 +116,12 @@ const debugInfo = {
     }
   }
 
-  @keyframes scroll-reverse {
-    0% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   .trademark {
     flex: 0 0 auto;
     margin: 0 1rem;
     max-height: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     box-sizing: border-box;
     object-fit: contain;
   }
@@ -255,6 +133,40 @@ const debugInfo = {
     padding: 0.5rem;
     background-color: #f5f5f5;
     border-radius: 4px;
-    display: none;
+  }
+
+  /* Test logos section for debugging */
+  .test-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+
+  .test-logo {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .logo-name {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+
+  .file-status {
+    font-size: 0.8rem;
+  }
+
+  .file-exists {
+    color: green;
+  }
+
+  .file-missing {
+    color: red;
   }
 </style>
