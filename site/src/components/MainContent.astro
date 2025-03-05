@@ -2,7 +2,7 @@
 import "@styles/global.css";
 import Card from "@basics/Card.astro";
 import ToolCard from "@components/tool-components/ToolCard.astro";
-import CardRow from "@basics/CardRow.astro";
+import CardGrid from "@basics/CardGrid.astro";
 import { getEntry, getCollection } from "astro:content";
 import TrademarkRibbon from "@basics/TrademarkRibbon.astro";
 import trademarkBaserowUrl from "../assets/Visuals/Tooling-Trademarks/trademark__Baserow.svg?url";
@@ -23,7 +23,7 @@ const cards = featuresData?.data?.cards ?? [];
 // Get all entries from the tools collection
 const toolEntries = await getCollection("tooling");
 // Tools are now directly in the entry data, cast to Tool
-const tools = toolEntries.map((entry) => entry.data as Tool);
+const tools = toolEntries.map((entry: any) => entry.data as Tool);
 console.log("Tools loaded:", tools);
 ---
 
@@ -32,7 +32,7 @@ console.log("Tools loaded:", tools);
     <h1>Here is the Main Content</h1>
     {
       cards && cards.length > 0 ? (
-        <CardRow columns={3} gap="2rem">
+        <CardGrid columns={3} gap="2rem">
           {cards
             .sort((a: any, b: any) => (a.order ?? 0) - (b.order ?? 0))
             .map((card: any) => (
@@ -44,7 +44,7 @@ console.log("Tools loaded:", tools);
                 {card.content}
               </Card>
             ))}
-        </CardRow>
+        </CardGrid>
       ) : (
         <p>No cards found</p>
       )
@@ -61,7 +61,7 @@ console.log("Tools loaded:", tools);
     <TrademarkRibbon />
     {
       tools && tools.length > 0 ? (
-        <CardRow columns={3} gap="2rem">
+        <CardGrid columns={3} gap="2rem">
           {tools.map((tool: Tool) => (
             <ToolCard
               url={tool.url}
@@ -73,7 +73,7 @@ console.log("Tools loaded:", tools);
               tags={tool.tags}
             />
           ))}
-        </CardRow>
+        </CardGrid>
       ) : (
         <p>No tools found</p>
       )

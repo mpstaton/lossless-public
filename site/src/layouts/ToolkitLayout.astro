@@ -1,7 +1,7 @@
 ---
 import "@styles/global.css";
 import ToolCard from "@components/tool-components/ToolCard.astro";
-import CardRow from "@basics/CardRow.astro";
+import CardGrid from "@basics/CardGrid.astro";
 import { getCollection } from "astro:content";
 
 // Get all entries from the tools collection
@@ -36,7 +36,7 @@ const {
   <main class="toolkit-content">
     {
       tools && tools.length > 0 ? (
-        <CardRow columns={columns} gap={gap} minCardWidth={minCardWidth}>
+        <CardGrid columns={columns} gap={gap} minCardWidth={minCardWidth}>
           {tools.map((tool) => (
             <ToolCard
               url={tool.url}
@@ -48,7 +48,7 @@ const {
               tags={tool.tags}
             />
           ))}
-        </CardRow>
+        </CardGrid>
       ) : (
         <div class="no-tools">
           <p>No tools found. Check back later!</p>

@@ -1,6 +1,6 @@
 ---
 import Header from "@basics/Header.astro";
-import CardRow from "@basics/CardRow.astro";
+import CardGrid from "@basics/CardGrid.astro";
 import ToolCard from "@components/tool-components/ToolCard.astro";
 import BareToolCard from "@components/tool-components/BareToolCard.astro";
 import { getCollection } from "astro:content";
@@ -45,7 +45,7 @@ const toolsWithoutImages = tools.filter((tool) => !tool.image);
             toolsWithImages.length > 0 && (
               <section class="tools-section">
                 <h2>Featured Tools</h2>
-                <CardRow columns={3} gap="2rem" minCardWidth="300px">
+                <CardGrid columns={3} gap="2rem" minCardWidth="300px">
                   {toolsWithImages.map((tool) => (
                     <ToolCard
                       url={tool.url}
@@ -58,7 +58,7 @@ const toolsWithoutImages = tools.filter((tool) => !tool.image);
                       filename={tool.id}
                     />
                   ))}
-                </CardRow>
+                </CardGrid>
               </section>
             )
           }

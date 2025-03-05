@@ -6,10 +6,12 @@ export interface Props {
 const { trademark } = Astro.props as Props;
 console.log("TrademarkFragment: Received trademark:", trademark);
 
+// Import the raw SVG content
 const { default: innerHTML } = await import(
   `../../assets/Visuals/Tooling-Trademarks/${trademark}.svg?raw`
 );
 console.log("TrademarkFragment: innerHTML loaded:", innerHTML);
 ---
 
-<div set:html={innerHTML} />
+<!-- Use Fragment to render the raw SVG content without a wrapper element -->
+<Fragment set:html={innerHTML} />

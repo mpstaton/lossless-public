@@ -1,7 +1,11 @@
 ---
-url: https://www.airtable.com/
+url: 'https://www.airtable.com/'
+image: 'https://www.airtable.com/images/airtable-seo.jpg'
+site_name: Airtable
+title: The platform to build next‒gen apps - Airtable
+favicon: 'https://www.airtable.com/favicon.ico'
 ---
-One of the [[Database Apps]], and is also partially an [[Advanced Spreadsheets]] Applies [[API First]] and [[Documentation First Development|Documentation First]] strategies. 
+One of the [[Database Apps 1]], and is also partially an [[Advanced Spreadsheets]] Applies [[API First]] and [[Documentation First Development|Documentation First]] strategies. 
 
 ### Airtable API
 

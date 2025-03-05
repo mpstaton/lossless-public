@@ -1,3 +1,0 @@
-
-An extension of [[JavaScript]]
-

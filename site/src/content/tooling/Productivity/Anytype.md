@@ -1,3 +1,6 @@
+---
+url: https://anytype.io/
+---
 
 
 [[Markdown Editor]]

@@ -28,7 +28,9 @@
         "./src/styles/*"
       ]
     },
-    "types": ["astro/client"]
+    "types": ["astro/client"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "astro"
   }
 }
 

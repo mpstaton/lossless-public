@@ -165,11 +165,17 @@ async function processToolFiles() {
       console.error(`Could not find file: ${filePath}`);
     }
   } else {
-    // Process all files in the tooling directory
+    // Process all files in the tooling directory, including all subdirectories
     const contentDir = path.join(__dirname, '../src/content/tooling');
     
-    // Find all markdown files
-    const files = await glob('*.md', { cwd: contentDir });
+    // Find all markdown files in any subdirectory, handling spaces in directory names
+    const files = await glob('**/*.md', { 
+      cwd: contentDir,
+      nodir: true,
+      windowsPathsNoEscape: true // Helps with handling special characters in paths
+    });
+    
+    console.log(`Found ${files.length} markdown files in tooling directory and subdirectories`);
     
     for (const file of files) {
       const filePath = path.join(contentDir, file);

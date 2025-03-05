@@ -1,5 +1,5 @@
 ---
 parent-org: "[[Microsoft]]"
 ---
-Includes [[Microsoft Loop|Loop]]
+Includes [[Tooling/Products/Microsoft Loop|Loop]]
 

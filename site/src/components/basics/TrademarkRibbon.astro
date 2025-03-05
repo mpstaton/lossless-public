@@ -1,17 +1,31 @@
 ---
 import TrademarkFragment from "@basics/TrademarkFragment.astro";
+import fs from "node:fs";
+import path from "node:path";
 
-const logosModules = import.meta.glob(
-  "../../assets/Visuals/Tooling-Trademarks/*.svg?raw",
-  { eager: true }
+// Instead of using import.meta.glob for SVGs, get the list of Astro components
+// Get all .astro files from the visuals-as-components directory
+const componentsDir = path.join(
+  process.cwd(),
+  "src/assets/visuals-as-components/tooling-trademarks"
 );
-// Get the keys (paths) and extract file names without extension
-const logoPaths = Object.keys(logosModules);
-const logos = logoPaths.map((path) => {
-  const segments = path.split("/");
-  const fileNameWithExt = segments[segments.length - 1];
-  return fileNameWithExt.replace(".svg?raw", "");
-});
+let logos: string[] = [];
+
+try {
+  // Read the directory and filter for .astro files
+  const files = fs.readdirSync(componentsDir);
+  logos = files
+    .filter((file) => file.endsWith(".astro"))
+    .map((file) => file.replace(".astro", ""));
+
+  console.log(`Found ${logos.length} Astro components in ${componentsDir}`);
+} catch (error: unknown) {
+  console.error(
+    `Error reading components directory: ${error instanceof Error ? error.message : String(error)}`
+  );
+  // Provide empty array as fallback
+  logos = [];
+}
 
 // Shuffle the logos array
 function shuffle(array: string[]) {

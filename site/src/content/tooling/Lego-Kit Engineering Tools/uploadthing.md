@@ -1,3 +1,0 @@
----
-url: https://uploadthing.com/
----
