@@ -11,24 +11,48 @@ dotenv.config();
 const openGraphKey = process.env.PUBLIC_OPEN_GRAPH_API_KEY;
 
 
-// Function to fetch screenshot URL from OpenGraph.io
-async function getScreenshotUrl(url) {
-  try {
-    const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
-    const response = await fetch(screenshotProxyUrl);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+// Function to fetch screenshot URL from OpenGraph.io and save it to the file later
+function fetchScreenshotUrlInBackground(url, filePath, frontmatter) {
+  console.log(`Starting background screenshot fetch for ${url}`);
+  
+  // Don't await this promise - let it run in the background
+  (async () => {
+    try {
+      const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
+      const response = await fetch(screenshotProxyUrl);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.screenshotUrl) {
+        console.log(`✅ Received screenshot URL for ${url} in background process`);
+        
+        // Read the current file content again (it might have changed)
+        const currentFileContent = fs.readFileSync(filePath, 'utf-8');
+        const { data: currentFrontmatter, content: currentContent } = matter(currentFileContent);
+        
+        // Update the frontmatter with the screenshot URL
+        currentFrontmatter.og_screenshot_url = data.screenshotUrl;
+        currentFrontmatter['og-last-fetch'] = new Date().toISOString();
+        
+        // Write the updated content back to the file
+        const updatedContent = matter.stringify(currentContent, currentFrontmatter);
+        fs.writeFileSync(filePath, updatedContent);
+        
+        console.log(`✅ Updated ${path.basename(filePath)} with screenshot URL from background process`);
+      } else {
+        console.log(`⚠️ No screenshot URL found for ${url} in background process`);
+      }
+    } catch (error) {
+      console.error(`Error in background screenshot fetch for ${url}:`, error);
     }
-    const data = await response.json();
-    
-    if (data.screenshotUrl) {
-      return data.screenshotUrl;
-    }
-    return null;
-  } catch (error) {
-    console.error('Error fetching screenshot URL for', url, ':', error);
-    return null;
-  }
+  })();
+  
+  // Return immediately, allowing the script to continue
+  return null;
 }
 
 // Function to fetch OpenGraph data
@@ -52,11 +76,8 @@ async function getFromOpenGraphIo(url) {
       if (data.hybridGraph.favicon) ogProperties.favicon = data.hybridGraph.favicon;
     }
     
-    // Fetch and add screenshot URL
-    const screenshotUrl = await getScreenshotUrl(url);
-    if (screenshotUrl) {
-      ogProperties.og_screenshot_url = screenshotUrl;
-    }
+    // We don't fetch the screenshot URL here anymore
+    // It will be handled separately in the background
     
     return ogProperties;
   } catch (error) {
@@ -120,9 +141,10 @@ async function processFile(filePath) {
         }
       });
       
+      let shouldUpdateFile = true;
+      
       // Check if we need to fetch OpenGraph data
-      // Also fetch if we don't have a screenshot URL yet
-      if (!frontmatter.title || !frontmatter.image || !frontmatter.site_name || !frontmatter.og_screenshot_url) {
+      if (!frontmatter.title || !frontmatter.image || !frontmatter.site_name) {
         console.log(`Fetching OpenGraph data for ${frontmatter.url}...`);
         
         // Fetch OpenGraph data
@@ -148,16 +170,24 @@ async function processFile(filePath) {
         // Do not update og-last-fetch when skipping fetch
       }
       
-      try {
-        // Convert back to frontmatter string
-        const updatedContent = matter.stringify(content, frontmatter);
-        
-        // Write back to file
-        fs.writeFileSync(filePath, updatedContent);
-        console.log(`✅ Updated ${path.basename(filePath)} with category tags and OpenGraph data`);
-      } catch (error) {
-        console.error(`Error updating ${path.basename(filePath)}:`, error);
-        console.log('Problem frontmatter:', JSON.stringify(frontmatter));
+      // Start the screenshot fetch in the background if needed
+      if (!frontmatter.og_screenshot_url) {
+        console.log(`Starting background screenshot fetch for ${frontmatter.url}...`);
+        fetchScreenshotUrlInBackground(frontmatter.url, filePath, frontmatter);
+      }
+      
+      if (shouldUpdateFile) {
+        try {
+          // Convert back to frontmatter string
+          const updatedContent = matter.stringify(content, frontmatter);
+          
+          // Write back to file
+          fs.writeFileSync(filePath, updatedContent);
+          console.log(`✅ Updated ${path.basename(filePath)} with category tags and OpenGraph data`);
+        } catch (error) {
+          console.error(`Error updating ${path.basename(filePath)}:`, error);
+          console.log('Problem frontmatter:', JSON.stringify(frontmatter));
+        }
       }
     } else {
       console.log(`⚠️ Missing URL in ${path.basename(filePath)}`);

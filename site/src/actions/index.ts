@@ -9,24 +9,33 @@ interface OpenGraphProperties {
   og_screenshot_url?: string;
 }
 
-// Function to fetch screenshot URL from OpenGraph.io
-async function getScreenshotUrl(url: string): Promise<string | null> {
-  try {
-    const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
-    const response = await fetch(screenshotProxyUrl);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+// Function to fetch screenshot URL from OpenGraph.io in the background
+function fetchScreenshotUrlInBackground(url: string): void {
+  console.log(`Starting background screenshot fetch for ${url}`);
+  
+  // Don't await this promise - let it run in the background
+  (async () => {
+    try {
+      const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
+      const response = await fetch(screenshotProxyUrl);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      if (data.screenshotUrl) {
+        console.log(`✅ Received screenshot URL for ${url} in background process: ${data.screenshotUrl}`);
+        // In the browser context, we can't directly update files
+        // You might want to store this in localStorage or send to a server endpoint
+      } else {
+        console.log(`⚠️ No screenshot URL found for ${url} in background process`);
+      }
+    } catch (error) {
+      console.error(`Error in background screenshot fetch for ${url}:`, error);
     }
-    const data = await response.json();
-    
-    if (data.screenshotUrl) {
-      return data.screenshotUrl;
-    }
-    return null;
-  } catch (error) {
-    console.error('Error fetching screenshot URL for', url, ':', error);
-    return null;
-  }
+  })();
 }
 
 export async function getFromOpenGraphIo(url: string) {
@@ -49,11 +58,9 @@ export async function getFromOpenGraphIo(url: string) {
             ogProperties.favicon = data.hybridGraph.favicon;
         }
 
-        // Fetch and add screenshot URL
-        const screenshotUrl = await getScreenshotUrl(url);
-        if (screenshotUrl) {
-            ogProperties.og_screenshot_url = screenshotUrl;
-        }
+        // Start the screenshot fetch in the background
+        // This will not block the main thread
+        fetchScreenshotUrlInBackground(url);
 
         console.log('Fetched OpenGraph properties:', ogProperties);
         return ogProperties;
