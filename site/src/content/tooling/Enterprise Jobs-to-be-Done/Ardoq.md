@@ -13,6 +13,9 @@ favicon: >-
   https://www.ardoq.com/hubfs/Images/Logos/Ardoq/Ardoq%20Logo%20emblem%20icon%20wink.svg
 tags:
   - Enterprise-Jobs-to-be-Done
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4ff0c73628f175ce346bf5ce8eb1a846297aae9ac7bf5e3b6d9718b778b790e0.jpeg
+og-last-fetch: '2025-03-05T04:18:05.456Z'
 ---
 [[Data Model]], [[Enterprise SaaS]]
 ![[Screenshot 2025-02-11 at 4.02.47 PM_Ardoq.png]]

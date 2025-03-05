@@ -1,6 +1,6 @@
 ---
 url: 'https://www.skool.com/'
-og-last-fetch: '2025-03-05T03:57:19.018Z'
+og-last-fetch: '2025-03-05T04:17:12.441Z'
 tags:
   - Training
 og_screenshot_url: >-

@@ -33,9 +33,8 @@ try {
         `TrademarkFragment: Successfully loaded wordmark component for ${trademark}`
       );
     } catch (wordmarkError) {
-      console.error(
-        `Failed to load any component for ${trademark}:`,
-        wordmarkError
+      console.log(
+        `Failed to load any component for ${trademark}. ` + wordmarkError
       );
       // Component will remain null if both imports fail
     }

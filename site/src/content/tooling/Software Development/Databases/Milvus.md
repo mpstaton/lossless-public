@@ -2,7 +2,7 @@
 url: 'https://milvus.io/'
 image: 'https://assets.zilliz.com/meta_image_milvus_d6510e10e0.png'
 favicon: 'https://milvus.io/favicon-32x32.png'
-og-last-fetch: '2025-03-05T03:58:13.300Z'
+og-last-fetch: '2025-03-05T04:17:41.333Z'
 tags:
   - Software-Development
   - Databases

@@ -10,6 +10,7 @@ interface Tool {
   description?: string;
   tags?: string[];
   filename?: string;
+  og_screenshot_url?: string;
 }
 
 interface Props {
@@ -23,6 +24,7 @@ interface Props {
   description?: string;
   tags?: string[];
   filename?: string;
+  og_screenshot_url?: string;
 }
 
 const { tool, ...directProps } = Astro.props;
@@ -37,6 +39,7 @@ const {
   description = directProps.description,
   tags = directProps.tags || [],
   filename = directProps.filename,
+  og_screenshot_url = directProps.og_screenshot_url,
 } = tool || directProps;
 
 // Ensure tags is always an array
@@ -52,9 +55,14 @@ const displayTitle = title ? filterTitle(title, effectiveSiteName || "") : "";
 <div class="tool-card">
   <a href={url} target="_blank" rel="noopener noreferrer">
     {
-      image && (
+      (image || og_screenshot_url) && (
         <div class="tool-card-image">
-          <img src={image} alt={displayTitle} />
+          <img
+            src={image || og_screenshot_url}
+            alt={displayTitle}
+            data-primary-image={image}
+            data-screenshot-url={og_screenshot_url}
+          />
         </div>
       )
     }
@@ -79,6 +87,58 @@ const displayTitle = title ? filterTitle(title, effectiveSiteName || "") : "";
     }
   </a>
 </div>
+
+<script>
+  // Handle image loading and fallback
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".tool-card-image img").forEach((img) => {
+      const imgElement = img as HTMLImageElement;
+      imgElement.addEventListener(
+        "error",
+        function () {
+          const imageElement = imgElement;
+          const primaryImage = imageElement.getAttribute("data-primary-image");
+          const screenshotUrl = imageElement.getAttribute(
+            "data-screenshot-url"
+          );
+
+          // If this is the primary image failing and we have a screenshot URL
+          if (imageElement.src === primaryImage && screenshotUrl) {
+            console.log(
+              "Primary image failed to load, falling back to screenshot URL"
+            );
+            imageElement.src = screenshotUrl;
+
+            // Set up error handler for the fallback image
+            imageElement.addEventListener(
+              "error",
+              function () {
+                console.log(
+                  "Screenshot image also failed to load, hiding image container"
+                );
+                const container = imageElement.closest(
+                  ".tool-card-image"
+                ) as HTMLElement;
+                if (container) container.style.display = "none";
+              },
+              { once: true }
+            );
+          } else {
+            // Either the fallback failed or we don't have a fallback
+            console.log(
+              "Image failed to load and no fallback available, hiding image container"
+            );
+            const container = imageElement.closest(
+              ".tool-card-image"
+            ) as HTMLElement;
+            if (container) container.style.display = "none";
+          }
+        },
+        { once: true }
+      );
+    });
+  });
+</script>
 
 <style>
   .tool-card {

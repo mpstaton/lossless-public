@@ -139,13 +139,13 @@ const debugInfo = {
       <div class="trademark-ribbon dark-ribbon">
         <div class="ribbon">
           {darkTrademarksShuffled.map((trademark) => (
-            <div class="trademark" key={trademark}>
+            <div class="trademark" data-key={trademark}>
               <TrademarkFragment trademark={trademark} />
             </div>
           ))}
           {/* Duplicate for seamless looping */}
           {darkTrademarksShuffled.map((trademark) => (
-            <div class="trademark" key={`${trademark}-dup`}>
+            <div class="trademark" data-key={`${trademark}-dup`}>
               <TrademarkFragment trademark={trademark} />
             </div>
           ))}
@@ -159,13 +159,13 @@ const debugInfo = {
       <div class="trademark-ribbon light-ribbon">
         <div class="ribbon reverse">
           {lightTrademarksShuffled.map((trademark) => (
-            <div class="trademark" key={trademark}>
+            <div class="trademark" data-key={trademark}>
               <TrademarkFragment trademark={trademark} />
             </div>
           ))}
           {/* Duplicate for seamless looping */}
           {lightTrademarksShuffled.map((trademark) => (
-            <div class="trademark" key={`${trademark}-dup`}>
+            <div class="trademark" data-key={`${trademark}-dup`}>
               <TrademarkFragment trademark={trademark} />
             </div>
           ))}
@@ -185,6 +185,7 @@ const debugInfo = {
     width: 100%;
     display: flex;
     flex-direction: column;
+    object-fit: inherit;
     gap: 1rem;
   }
 
@@ -193,6 +194,7 @@ const debugInfo = {
     height: 12vh;
     display: flex;
     align-items: center;
+    object-fit: contain;
     overflow: hidden;
     position: relative;
     padding: 0.5rem 0;
@@ -210,6 +212,7 @@ const debugInfo = {
     display: flex;
     animation: scroll 280s linear infinite;
     width: max-content;
+    object-fit: contain;
   }
 
   .reverse {
@@ -240,7 +243,9 @@ const debugInfo = {
     max-height: 2rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
+    object-fit: contain;
   }
 
   .debug-info {
