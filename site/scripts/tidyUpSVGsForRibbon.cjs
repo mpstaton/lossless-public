@@ -212,29 +212,53 @@ async function processFiles() {
           console.log(`Modifying SVG attributes in ${file}`);
           
           try {
-            // Remove viewBox attribute and set width to auto and height to 100%
-            content = content.replace(/<svg[^>]*?/g, (match) => {
-              console.log(`Original SVG tag: ${match.substring(0, 50)}...`);
+            // Use a more targeted approach to find and replace SVG tags
+            const svgRegex = /<svg[^>]*>/g;
+            let svgMatches = [];
+            let match;
+            
+            // First, collect all SVG tags and their positions
+            while ((match = svgRegex.exec(content)) !== null) {
+              svgMatches.push({
+                fullTag: match[0],
+                index: match.index
+              });
+            }
+            
+            // Sort matches by index in reverse order to avoid position shifts
+            svgMatches.sort((a, b) => b.index - a.index);
+            
+            // Process each SVG tag individually, starting from the end
+            for (const svgMatch of svgMatches) {
+              console.log(`Original SVG tag: ${svgMatch.fullTag.substring(0, 50)}...`);
               
-              // First, remove all existing width, height, and viewBox attributes
-              let newTag = match
-                .replace(/width\s*=\s*["'][^"']*["']/g, '')
-                .replace(/height\s*=\s*["'][^"']*["']/g, '')
-                .replace(/viewBox\s*=\s*["'][^"']*["']/g, '');
+              // Extract attributes we want to keep (except width, height, viewBox)
+              const attributeRegex = /(\S+)=["']([^"']*)["']/g;
+              let attributeMatch;
+              let attributes = [];
               
-              // Clean up any potential double spaces from removed attributes
-              newTag = newTag.replace(/\s{2,}/g, ' ');
+              while ((attributeMatch = attributeRegex.exec(svgMatch.fullTag)) !== null) {
+                const [full, name, value] = attributeMatch;
+                if (name !== 'width' && name !== 'height' && name !== 'viewBox') {
+                  attributes.push(`${name}="${value}"`);
+                }
+              }
               
-              // Now add exactly one set of width and height attributes
-              newTag = newTag.trim() + ' width="auto" height="100%"';
+              // Create a new clean SVG tag with our desired attributes
+              const newTag = `<svg ${attributes.join(' ')} width="auto" height="100%">`;
               
               console.log(`Modified SVG tag: ${newTag.substring(0, 50)}...`);
-              return newTag;
-            });
+              
+              // Replace the original tag with the new one
+              content = content.substring(0, svgMatch.index) + 
+                       newTag + 
+                       content.substring(svgMatch.index + svgMatch.fullTag.length);
+            }
             
             modified = true;
           } catch (regexError) {
             console.error(`Error modifying SVG in ${file}:`, regexError);
+            console.error(regexError.stack);
           }
         }
         
