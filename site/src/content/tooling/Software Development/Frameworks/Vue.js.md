@@ -1,6 +1,10 @@
 ---
-url: https://vuejs.org
+url: 'https://vuejs.org/'
 zinger: The Progressive JavaScript Framework
+image: 'https://vuejs.org/images/logo.png'
+site_name: Vue.js
+title: Vue.js
+favicon: 'https://vuejs.org/logo.svg'
 ---
 
 

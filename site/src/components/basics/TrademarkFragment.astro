@@ -6,12 +6,41 @@ export interface Props {
 const { trademark } = Astro.props as Props;
 console.log("TrademarkFragment: Received trademark:", trademark);
 
-// Import the raw SVG content
-const { default: innerHTML } = await import(
-  `../../assets/Visuals/Tooling-Trademarks/${trademark}.svg?raw`
-);
-console.log("TrademarkFragment: innerHTML loaded:", innerHTML);
+// Dynamically import the Astro component
+let Component = null;
+try {
+  // Import the component dynamically
+  const module = await import(
+    `../../assets/visuals-as-components/tooling-trademarks/trademark__${trademark}.astro`
+  );
+  Component = module.default;
+  console.log(
+    `TrademarkFragment: Successfully loaded component for ${trademark}`
+  );
+} catch (error) {
+  console.error(`Failed to load component for ${trademark}:`, error);
+  // Component will remain null if import fails
+}
 ---
 
-<!-- Use Fragment to render the raw SVG content without a wrapper element -->
-<Fragment set:html={innerHTML} />
+<div class="trademark-wrapper">
+  {Component && <Component />}
+  {!Component && <div class="fallback">{trademark}</div>}
+</div>
+
+<style>
+  .trademark-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fallback {
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+    word-break: break-all;
+    padding: 4px;
+  }
+</style>

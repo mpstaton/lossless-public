@@ -1,5 +1,9 @@
 ---
-url: https://twenty.com/
+url: 'https://twenty.com/'
+image: 'https://framerusercontent.com/assets/44L5tf46iK9v7QZCaZmwDNNw6Ts.png'
+site_name: Twenty
+title: 'Twenty -  The #1 Open-Source CRM'
+favicon: 'https://framerusercontent.com/images/jFBfPDVaJx9kQOwGT4WiIwZCos.png'
 ---
 
 [[Twenty]] is a [[State of the Art]] [[CRM]], and it is [[Open Source]]

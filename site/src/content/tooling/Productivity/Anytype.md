@@ -1,5 +1,10 @@
 ---
-url: https://anytype.io/
+url: 'https://anytype.io/'
+image: 'https://anytype.io/ogimage.jpg'
+site_name: the everything app
+title: anytype — the everything app
+favicon: 'https://anytype.io/favicon-32x32.png'
+og-last-fetch: '2025-03-05T01:15:27.375Z'
 ---
 
 

@@ -64,28 +64,36 @@ async function processFile(filePath) {
             }
           });
           
+          // Add or update the og-last-fetch property with current date
+          // Only add timestamp when fetch was successful
+          frontmatter['og-last-fetch'] = new Date().toISOString();
+          
           try {
             // Convert back to frontmatter string
             const updatedContent = matter.stringify(content, frontmatter);
             
             // Write back to file
             fs.writeFileSync(filePath, updatedContent);
-            console.log(`✅ Updated ${path.basename(filePath)} with OpenGraph data`);
+            console.log(`✅ Updated ${path.basename(filePath)} with OpenGraph data and timestamp`);
           } catch (error) {
             console.error(`Error updating ${path.basename(filePath)}:`, error);
             console.log('Problem frontmatter:', JSON.stringify(frontmatter));
           }
         } else {
           console.log(`⚠️ No usable OpenGraph data found for ${path.basename(filePath)}`);
+          // Do not update og-last-fetch when no data was found
         }
       } else {
         console.log(`Skipping ${path.basename(filePath)} - already has complete OpenGraph data`);
+        // Do not update og-last-fetch when skipping fetch
       }
     } else {
       console.log(`⚠️ Missing URL in ${path.basename(filePath)}`);
+      // Do not update og-last-fetch when URL is missing
     }
   } catch (error) {
     console.error(`Error processing file ${filePath}:`, error);
+    // Do not update og-last-fetch when there's an error
   }
 }
 

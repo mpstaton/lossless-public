@@ -1,6 +1,15 @@
 ---
-url: https://dgraph.io/
-zinger: The only open source, AI-ready graph database
-description: A fault-tolerant, distributed graph database, that gives developers the tools to rapidly build applications that scale
-github-url: https://github.com/dgraph-io/dgraph
+url: 'https://dgraph.io/'
+zinger: 'The only open source, AI-ready graph database'
+description: >-
+  A fault-tolerant, distributed graph database, that gives developers the tools
+  to rapidly build applications that scale
+github-url: 'https://github.com/dgraph-io/dgraph'
+image: >-
+  https://cdn.prod.website-files.com/63fa3e9d303f20f698270a7a/6419f91b6297a72e0ea955c5_Open%20Graph.webp
+site_name: 'Dgraph | Open Source, AI'
+title: 'Dgraph | Open Source, AI-Ready Graph Database'
+favicon: >-
+  https://cdn.prod.website-files.com/63fa3e9d303f20f698270a7a/63ff53715c070ec57e1adfeb_Size%3D32x32%20(2).svg
 ---
+
