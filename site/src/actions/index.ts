@@ -9,14 +9,28 @@ interface OpenGraphProperties {
   og_screenshot_url?: string;
 }
 
+// Track URLs that we've already started fetching screenshots for
+const screenshotFetchInProgress = new Set<string>();
+
 // Function to fetch screenshot URL from OpenGraph.io in the background
+// This is kept for potential future use but not automatically called
 function fetchScreenshotUrlInBackground(url: string): void {
+  // Skip if we're already fetching this URL
+  if (screenshotFetchInProgress.has(url)) {
+    console.log(`Screenshot fetch already in progress for ${url}, skipping duplicate request`);
+    return;
+  }
+  
+  // Add to tracking set
+  screenshotFetchInProgress.add(url);
+  
   console.log(`Starting background screenshot fetch for ${url}`);
   
   // Don't await this promise - let it run in the background
   (async () => {
     try {
-      const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
+      // Correct URL format for the screenshot API
+      const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?dimensions:lg?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
       const response = await fetch(screenshotProxyUrl);
       
       if (!response.ok) {
@@ -34,6 +48,9 @@ function fetchScreenshotUrlInBackground(url: string): void {
       }
     } catch (error) {
       console.error(`Error in background screenshot fetch for ${url}:`, error);
+    } finally {
+      // Remove from tracking set when done
+      screenshotFetchInProgress.delete(url);
     }
   })();
 }
@@ -58,9 +75,9 @@ export async function getFromOpenGraphIo(url: string) {
             ogProperties.favicon = data.hybridGraph.favicon;
         }
 
-        // Start the screenshot fetch in the background
-        // This will not block the main thread
-        fetchScreenshotUrlInBackground(url);
+        // We don't automatically fetch screenshots here anymore
+        // This is now handled by the fetchOpenGraphData.cjs script
+        // If you need a screenshot URL, call fetchScreenshotUrlInBackground(url) explicitly
 
         console.log('Fetched OpenGraph properties:', ogProperties);
         return ogProperties;

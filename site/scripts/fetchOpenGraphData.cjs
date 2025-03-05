@@ -10,15 +10,26 @@ dotenv.config();
 
 const openGraphKey = process.env.PUBLIC_OPEN_GRAPH_API_KEY;
 
+// Track URLs that we've already started fetching screenshots for
+const screenshotFetchInProgress = new Set();
 
 // Function to fetch screenshot URL from OpenGraph.io and save it to the file later
 function fetchScreenshotUrlInBackground(url, filePath, frontmatter) {
+  // Skip if we're already fetching this URL
+  if (screenshotFetchInProgress.has(url)) {
+    console.log(`Screenshot fetch already in progress for ${url}, skipping duplicate request`);
+    return null;
+  }
+  
+  // Add to tracking set
+  screenshotFetchInProgress.add(url);
+  
   console.log(`Starting background screenshot fetch for ${url}`);
   
   // Don't await this promise - let it run in the background
   (async () => {
     try {
-      const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
+      const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/${encodeURIComponent(url)}?dimensions:lg?quality:80?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
       const response = await fetch(screenshotProxyUrl);
       
       if (!response.ok) {
@@ -48,6 +59,9 @@ function fetchScreenshotUrlInBackground(url, filePath, frontmatter) {
       }
     } catch (error) {
       console.error(`Error in background screenshot fetch for ${url}:`, error);
+    } finally {
+      // Remove from tracking set when done
+      screenshotFetchInProgress.delete(url);
     }
   })();
   
@@ -58,7 +72,7 @@ function fetchScreenshotUrlInBackground(url, filePath, frontmatter) {
 // Function to fetch OpenGraph data
 async function getFromOpenGraphIo(url) {
   try {
-    const proxyUrl = `https://opengraph.io/api/1.1/site/${encodeURIComponent(url)}?accept_lang=auto&use_proxy=true&app_id=${openGraphKey}`;
+    const proxyUrl = `https://opengraph.io/api/1.1/site/${encodeURIComponent(url)}?dimensions:lg?accept_lang=auto&use_proxy=true&app_id=${openGraphKey}`;
     const response = await fetch(proxyUrl);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -172,7 +186,6 @@ async function processFile(filePath) {
       
       // Start the screenshot fetch in the background if needed
       if (!frontmatter.og_screenshot_url) {
-        console.log(`Starting background screenshot fetch for ${frontmatter.url}...`);
         fetchScreenshotUrlInBackground(frontmatter.url, filePath, frontmatter);
       }
       
