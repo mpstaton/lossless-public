@@ -3,6 +3,11 @@ url: 'https://kanochart.com/'
 image: 'https://kanochart.com/static/logo.svg'
 site_name: Kanochart
 title: Kanochart - Prioritize with confidence
+tags:
+  - Data-Utilities
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7460235a983b96bc7899ae0dd029b0127a4082b799ae333197fb4f0e3de7e780.jpeg
+og-last-fetch: '2025-03-05T03:57:52.933Z'
 ---
 An [[Opinionated Analytics 1]] tool that delivers [[Survey Instruments]] that can measure importance according to the [[Kano Model]].
 

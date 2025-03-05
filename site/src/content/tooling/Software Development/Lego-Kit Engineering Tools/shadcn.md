@@ -1,5 +1,7 @@
 ---
 tags:
+  - Software-Development
+  - Lego-Kit-Engineering-Tools
   - ui-library
 url: 'https://ui.shadcn.com/'
 image: >-
@@ -7,6 +9,9 @@ image: >-
 site_name: Build your component library
 title: Build your component library - shadcn/ui
 favicon: 'https://ui.shadcn.com/favicon-16x16.png'
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/11217e97399022d963ebaf46f7eff4832e7abeb22aad7e0b24c37fe7470e69ed.jpeg
+og-last-fetch: '2025-03-05T03:57:57.090Z'
 ---
 
 [[UI-Kit|Component Library]]

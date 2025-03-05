@@ -4,6 +4,9 @@ image: 'https://dollardeploy.com/cover.jpg'
 site_name: DollarDeploy
 title: DollarDeploy
 favicon: 'https://dollardeploy.com/icon-dark.png'
+tags:
+  - Software-Development
+  - Cloud-Infrastructure
 ---
 ##### [[DollarDeploy]] Hero
 ![[Screenshot 2025-02-18 at 1.07.02 PM_DollarDeploy--Hero.png]]

@@ -9,5 +9,11 @@ site_name: GitKraken
 title: GitKraken Legendary Git Tools | GitKraken
 favicon: >-
   https://www.gitkraken.com/wp-content/uploads/2021/03/android-chrome-144x144-1.png
+tags:
+  - Software-Development
+  - DevOps
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6ae854199fdfc039fc39607e0a3f9991ecc9410f20b30490b9d9bf3a5ef1a39c.jpeg
+og-last-fetch: '2025-03-05T03:58:10.994Z'
 ---
 [[Continuous Integration and Continuous Deployment]]

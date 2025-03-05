@@ -6,5 +6,10 @@ site_name: Foreplay
 title: Foreplay | Save Ads from TikTok & Facebook Ad Library
 favicon: >-
   https://cdn.prod.website-files.com/62a4ed18ddad95dde8b8bfa4/647129174d2274576936dda2_Group%2048098.png
+tags:
+  - Enterprise-Jobs-to-be-Done
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5c236427a2b30ae470be2880bcc9483af78112dfd629d4c7fe3fa3b333911194.jpeg
+og-last-fetch: '2025-03-05T03:57:59.941Z'
 ---
 

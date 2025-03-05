@@ -9,6 +9,12 @@ site_name: Docker
 title: 'Docker: Accelerated Container Application Development'
 favicon: >-
   https://www.docker.com/app/uploads/2024/02/cropped-docker-logo-favicon-192x192.png
+tags:
+  - Software-Development
+  - DevOps
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b9f67154bc6abfc949f785b488b9db7cdc0c8646d623112aafb52316d4b64864.jpeg
+og-last-fetch: '2025-03-05T03:58:09.694Z'
 ---
 [[Docker]] is a tool for [[Containers|Container]] creation and management, and enables [[Reproducible Builds]]. 
 

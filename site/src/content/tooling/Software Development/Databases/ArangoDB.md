@@ -1,5 +1,7 @@
 ---
 tags:
+  - Software-Development
+  - Databases
   - database
 url: 'https://arangodb.com/'
 image: 'https://arangodb.com/wp-content/uploads/2024/02/Image-5-2.gif'

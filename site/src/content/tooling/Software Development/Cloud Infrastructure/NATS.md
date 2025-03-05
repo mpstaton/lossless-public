@@ -4,6 +4,9 @@ image: 'https://nats.io/img/new_social_nats.png'
 site_name: NATS.io
 title: NATS.io
 favicon: 'https://nats.io/favicon.ico'
+tags:
+  - Software-Development
+  - Cloud-Infrastructure
 ---
 
 https://youtu.be/ufTKoAJ2OUo?si=_ly6WpX-mUwab0o0

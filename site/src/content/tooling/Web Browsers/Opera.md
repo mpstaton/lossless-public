@@ -8,6 +8,11 @@ site_name: Opera Web Browser
 title: 'Opera Web Browser | Faster, Safer, Smarter | Opera'
 favicon: >-
   https://cdn-production-opera-website.operacdn.com/staticfiles/assets/images/favicon/favicon-32x32.ddd494719bed.png
+tags:
+  - Web-Browsers
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e86723fc0a4176fdd336ac0802c453e457a05c1f857d082a340fa18de55ba253.jpeg
+og-last-fetch: '2025-03-05T03:57:18.518Z'
 ---
 ##### Opera has a dead simple Onboarding.
 ![[Screenshot From 2024-12-24 16-20-19_Opera--Onboarding.png]]

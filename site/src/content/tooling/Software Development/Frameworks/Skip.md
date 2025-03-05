@@ -9,7 +9,9 @@ favicon: 'https://skiplabs.io/favicon.svg'
 tags:
   - Software-Development
   - Frameworks
-og-last-fetch: '2025-03-05T03:33:11.786Z'
+og-last-fetch: '2025-03-05T03:58:02.852Z'
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/032126250487ac1c11d8b737a83c11d70f91b9cde560ce45f9a3962e4846e7b9.jpeg
 ---
 Skip is a [[Web Frameworks|Web Framework]] focused on the [[Back-End Engineering]], created and managed at [[Meta]] and [[Facebook]]
 

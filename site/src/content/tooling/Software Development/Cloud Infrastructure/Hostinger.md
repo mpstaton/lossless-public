@@ -5,6 +5,12 @@ image: 'https://www.hostinger.com/og-image.png'
 site_name: Hostinger
 title: Hostinger - Bring Your Idea Online With a Website
 favicon: 'https://www.hostinger.com/favicon.ico'
+tags:
+  - Software-Development
+  - Cloud-Infrastructure
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/daec7f23677c5fcf685596546919bd5741dea55b32145ccd76da39fb26cad04a.jpeg
+og-last-fetch: '2025-03-05T03:58:12.557Z'
 ---
 
 

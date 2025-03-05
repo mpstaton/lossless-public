@@ -5,5 +5,10 @@ image: >-
 site_name: AI Workshop
 title: AI Workshop
 favicon: 'https://assets.skool.com/skool/ed24268642ae417a9b8e3b9827cdd1fd.ico'
+tags:
+  - Training
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/1d3b73a72099128c63c2eea5f2e52fa4597d4938c06d90fe1a55e288e5716c92.jpeg
+og-last-fetch: '2025-03-05T03:57:21.873Z'
 ---
 

@@ -9,6 +9,9 @@ image: 'https://framerusercontent.com/assets/borZ0wXDoDM6d5a77COSqFZSqJc.webp'
 site_name: Dagger.io
 title: Dagger.io
 favicon: 'https://framerusercontent.com/images/GFfkccjP5MxjJoCDsMXSaA0mY.svg'
+tags:
+  - Software-Development
+  - DevOps
 ---
 A tool for [[Dev Ops]]
 

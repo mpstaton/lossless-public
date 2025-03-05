@@ -4,6 +4,8 @@ image: 'https://clickup.com/assets/brand/clickup-meta.png'
 site_name: ClickUp™
 title: The everything app for work
 favicon: 'https://clickup.com/favicons/favicon-32x32.png'
+tags:
+  - Productivity
 ---
 [[Rebundling]], [[Workflow Management]], [[Cognitive, Collaborative Tooling]]
 [[All-in-One Platforms|All-in-One Platform]]

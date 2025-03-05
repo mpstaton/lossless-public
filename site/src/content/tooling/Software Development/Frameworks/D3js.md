@@ -4,6 +4,12 @@ image: 'https://d3js.org/logo.png'
 site_name: D3
 title: D3
 favicon: 'https://d3js.org/logo.png'
+tags:
+  - Software-Development
+  - Frameworks
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bac5fbb42b0d9792f965f4a1403458a88dc393115dbe6becf3b2db0c90f3347a.jpeg
+og-last-fetch: '2025-03-05T03:58:05.391Z'
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 url: 'https://www.sanity.io/'
-tags: null
+tags:
+  - Data-Utilities
 zinger: Make content your competitive advantage
 description: >-
   Expect more from your CMS: Treat content as data—actionable, scalable, and
@@ -10,6 +11,9 @@ image: >-
 site_name: Sanity.io
 title: The Content Operating System | Sanity
 favicon: 'https://www.sanity.io/static/images/favicons/android-icon-192x192.png'
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cddd7325109c196289c1b7cd71cdd34e14e7223e5a424507066a0c4549be3114.jpeg
+og-last-fetch: '2025-03-05T03:57:55.725Z'
 ---
 
 

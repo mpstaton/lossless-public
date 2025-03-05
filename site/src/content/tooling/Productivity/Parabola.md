@@ -6,7 +6,11 @@ site_name: Parabola
 title: Parabola | Make easy work of tough logic
 favicon: >-
   https://cdn.prod.website-files.com/660c64c653c676f877b3ef55/6632c3618655aa755163b372_Favicon.png
-og-last-fetch: '2025-03-05T01:15:19.327Z'
+og-last-fetch: '2025-03-05T03:57:28.418Z'
+tags:
+  - Productivity
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/fd5f26c968e6e5e92fa0491702c5b24c401995dda0cf2a08cc5a0433a25fff92.jpeg
 ---
 Somewhere between [[Advanced Spreadsheets|Advanced Spreadsheet]] and a [[Database Apps 1|Database App]]
 

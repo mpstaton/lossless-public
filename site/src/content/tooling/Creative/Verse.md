@@ -6,5 +6,10 @@ site_name: Verse
 title: Verse | Interactive Video
 favicon: >-
   https://www.verse.com/wp-content/uploads/2019/07/favicon.png?optimize=low&dpr=2.0&auto=webp
+tags:
+  - Creative
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9113afa3c92e1ca7ae76cf708a53c641c9187ee303f620a3ef4ef7afffd59b47.jpeg
+og-last-fetch: '2025-03-05T03:58:01.829Z'
 ---
 [[Interactive Video]]

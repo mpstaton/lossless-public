@@ -10,5 +10,7 @@ image: >-
 site_name: Optimizely
 title: The home of exceptional digital experiences
 favicon: 'https://www.optimizely.com/globalassets/favicon.svg'
+tags:
+  - Enterprise-Jobs-to-be-Done
 ---
 Part of the [[Current Stack]]

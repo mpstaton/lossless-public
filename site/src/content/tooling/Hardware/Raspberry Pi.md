@@ -7,6 +7,11 @@ image: >-
 site_name: Raspberry Pi
 title: Raspberry Pi
 favicon: 'https://assets.raspberrypi.com/favicon.png'
+tags:
+  - Hardware
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/78c8099bf68c11fe1e2b95c18f4afde3c5a1208d14222b7af377d1db57bab4c3.jpeg
+og-last-fetch: '2025-03-05T03:57:18.995Z'
 ---
 
 

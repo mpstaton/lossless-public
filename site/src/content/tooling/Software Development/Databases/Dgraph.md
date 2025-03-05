@@ -11,5 +11,11 @@ site_name: 'Dgraph | Open Source, AI'
 title: 'Dgraph | Open Source, AI-Ready Graph Database'
 favicon: >-
   https://cdn.prod.website-files.com/63fa3e9d303f20f698270a7a/63ff53715c070ec57e1adfeb_Size%3D32x32%20(2).svg
+tags:
+  - Software-Development
+  - Databases
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6d8d6a3b0353ff875182499ac636a8b4646bdde8e0c9897a45d113387dc327c7.jpeg
+og-last-fetch: '2025-03-05T03:58:17.366Z'
 ---
 

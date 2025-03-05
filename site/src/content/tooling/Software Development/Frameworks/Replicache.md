@@ -9,6 +9,12 @@ image: 'https://replicache.dev/og-image.png'
 site_name: Replicache
 title: 'Replicache: Framework for local-first web apps.'
 favicon: 'https://replicache.dev/icons/favicon-32x32.png'
+tags:
+  - Software-Development
+  - Frameworks
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/51940621e316c4c7e2a6e64fecd4e62fa95f4054c935eb1e0640db618d2695d8.jpeg
+og-last-fetch: '2025-03-05T03:57:59.794Z'
 ---
 [[Local-First Applications|Local-First]]
 [[Realtime Collaboration]]

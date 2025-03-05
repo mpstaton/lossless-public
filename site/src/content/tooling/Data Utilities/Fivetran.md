@@ -11,6 +11,11 @@ site_name: Fivetran | Plate
 title: Fivetran | Plate-forme d’automatisation du mouvement de data
 favicon: >-
   https://cdn.prod.website-files.com/6130fa1501794ed4d11867ba/6157393b4dfeb61275ec8f97_color.png
+tags:
+  - Data-Utilities
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/fc9525a0befd2e4bfd611b55b9bb545e68055b53fee17a8b811893cc3ee3dc8e.jpeg
+og-last-fetch: '2025-03-05T03:58:14.543Z'
 ---
 [[iPaaS]], [[Data Fluidics]]
 

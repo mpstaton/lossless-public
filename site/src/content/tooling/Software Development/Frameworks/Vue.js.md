@@ -5,6 +5,12 @@ image: 'https://vuejs.org/images/logo.png'
 site_name: Vue.js
 title: Vue.js
 favicon: 'https://vuejs.org/logo.svg'
+tags:
+  - Software-Development
+  - Frameworks
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/3a78b3c445792226b76bca27d20a036a9ed8fd87be1f3d02f79cf786cf03f6cc.jpeg
+og-last-fetch: '2025-03-05T03:57:59.861Z'
 ---
 
 

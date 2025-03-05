@@ -10,5 +10,12 @@ image: 'https://appwrite.io/images/open-graph/website.png'
 site_name: Appwrite
 title: Appwrite - Build like a team of hundreds
 favicon: 'https://appwrite.io/images/logos/logo.svg'
+tags:
+  - Software-Development
+  - Databases
+  - Backend-as-a-Service
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4bc89ea2cf3727d5ed6efc61a76901746056b65ede9671b6a9a703d554349443.jpeg
+og-last-fetch: '2025-03-05T03:58:17.321Z'
 ---
 

@@ -1,12 +1,17 @@
 ---
 tags:
+  - Creative
   - design-tools
-url: https://www.figma.com/
-image: https://cdn.sanity.io/images/599r6htc/regionalized/1adfa5a99040c80af7b4b5e3e2cf845315ea2367-2400x1260.png?w=1200&q=70&fit=max&auto=format
+url: 'https://www.figma.com/'
+image: >-
+  https://cdn.sanity.io/images/599r6htc/regionalized/1adfa5a99040c80af7b4b5e3e2cf845315ea2367-2400x1260.png?w=1200&q=70&fit=max&auto=format
 site_name: Figma
-title: "Figma: The Collaborative Interface Design Tool"
-favicon: https://static.figma.com/app/icon/1/icon-192.png
-youtube-url: https://www.youtube.com/@Figma
+title: 'Figma: The Collaborative Interface Design Tool'
+favicon: 'https://static.figma.com/app/icon/1/icon-192.png'
+youtube-url: 'https://www.youtube.com/@Figma'
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/68fedf64924894e13bb99abb21c12be64ecfb0387bc39c7acd2c64cd5949932f.jpeg
+og-last-fetch: '2025-03-05T03:58:04.908Z'
 ---
 [[Realtime Collaboration]]
 

@@ -4,6 +4,9 @@ image: 'https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.
 site_name: 'Amazon Web Services, Inc.'
 title: 'Serverless Function, FaaS Serverless  - AWS Lambda - AWS'
 favicon: 'https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico'
+tags:
+  - Software-Development
+  - Cloud-Infrastructure
 ---
 
 A feature of [[Amazon Web Services|AWS]], created by [[Amazon]], a mainstay of [[Serverless]] 

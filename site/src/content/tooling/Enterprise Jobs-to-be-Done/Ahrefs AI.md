@@ -1,12 +1,17 @@
 ---
-url: https://ahrefs.com/
-zinger: Your digital marketing strategy backed by real, actionable data
-description: "All-in-one marketing intelligence platform:"
-image: https://static.ahrefs.com/assets/img/og/ahrefs.png?v=2
+url: 'https://ahrefs.com/'
+zinger: 'Your digital marketing strategy backed by real, actionable data'
+description: 'All-in-one marketing intelligence platform:'
+image: 'https://static.ahrefs.com/assets/img/og/ahrefs.png?v=2'
 site_name: Ahrefs
 title: Ahrefs—Marketing Intelligence Tools Powered by Big Data.
-favicon: https://static.ahrefs.com/favicon-48x48.png?v=2
-youtube-url: https://www.youtube.com/@ahrefsupdates
+favicon: 'https://static.ahrefs.com/favicon-48x48.png?v=2'
+youtube-url: 'https://www.youtube.com/@ahrefsupdates'
+tags:
+  - Enterprise-Jobs-to-be-Done
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a3ba1a97f24044f294008f01d26b4406d96522df35a0cdaa2fb34803f2e7f83a.jpeg
+og-last-fetch: '2025-03-05T03:57:55.634Z'
 ---
 [[AI Powered Data Capture]], 
 

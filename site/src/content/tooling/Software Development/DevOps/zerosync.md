@@ -1,6 +1,8 @@
 ---
 url: 'https://zerosync.co/'
 tags:
+  - Software-Development
+  - DevOps
   - iPaaS
 zinger: 'Build integration modules once, automatically sync data anywhere'
 description: >-
@@ -10,5 +12,8 @@ image: 'https://zerosync.co/zerosync-logo.png'
 site_name: ZeroSync
 title: ZeroSync
 favicon: 'https://zerosync.co/favicon.png'
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/57225e86925aec48819247c13bd22ae847f25040ed8c1f660127e1feac186111.jpeg
+og-last-fetch: '2025-03-05T03:58:00.078Z'
 ---
 

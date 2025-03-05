@@ -4,7 +4,11 @@ image: 'https://anytype.io/ogimage.jpg'
 site_name: the everything app
 title: anytype — the everything app
 favicon: 'https://anytype.io/favicon-32x32.png'
-og-last-fetch: '2025-03-05T01:15:27.375Z'
+og-last-fetch: '2025-03-05T03:57:18.038Z'
+tags:
+  - Productivity
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eeae976a313a1447e01097dfadf63704853d6fc24ec3a2d3ef5aedebf5c94df1.jpeg
 ---
 
 

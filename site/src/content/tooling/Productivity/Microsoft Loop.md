@@ -1,9 +1,11 @@
 ---
-url: "[[Microsoft]]"
+parent-org: "[[Microsoft]]"
 aliases:
   - Loop
 tags:
+  - Productivity
   - async-tools
+url: https://www.microsoft.com/en-us/microsoft-loop
 ---
 
 An [[Advanced Documents 1]] tool, part of [[Microsoft 365]]

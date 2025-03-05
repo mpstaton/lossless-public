@@ -6,6 +6,11 @@ image: 'https://zen-browser.app/share-pic.png'
 site_name: Zen Browser
 title: Zen Browser
 favicon: 'https://zen-browser.app/favicon.svg'
+tags:
+  - Web-Browsers
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/20bbce1a48869323374bd13c1659cb6b7875e041f78bbb477eaca42dd04844a6.jpeg
+og-last-fetch: '2025-03-05T03:57:13.606Z'
 ---
 
 2025, Feb 02. [Zen Browser Is Beautifully Designed And Feature Rich](https://youtu.be/SCMmzbxUqpo?si=F4DYkAry2dXzHVnQ) DistroTube, [[YouTube]]. 

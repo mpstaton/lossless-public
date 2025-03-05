@@ -6,6 +6,11 @@ image: >-
 site_name: 'Contentsquare: all'
 title: 'Contentsquare: all-in-one experience intelligence platform'
 favicon: 'https://contentsquare.com/favicons/favicon-32x32.png'
+tags:
+  - Enterprise-Jobs-to-be-Done
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a61bebc689f99610f965f262c490e65f0e7e3c0f390105fd2128ba44bfff650c.jpeg
+og-last-fetch: '2025-03-05T03:57:59.562Z'
 ---
 
 [[Laerdal Marketing]]

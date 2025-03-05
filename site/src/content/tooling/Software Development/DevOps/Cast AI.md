@@ -8,5 +8,11 @@ image: 'https://cast.ai/wp-content/uploads/2025/01/homepage-meta.png'
 site_name: Cast AI
 title: '#1 Intelligent Kubernetes Automation Platform – Cast AI'
 favicon: 'https://cast.ai/wp-content/uploads/2025/01/favicon-300x300.png'
+tags:
+  - Software-Development
+  - DevOps
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a7449c875f712ddbcea9b3062ec7627f011833f162e752f68c3d59a09a8baac1.jpeg
+og-last-fetch: '2025-03-05T03:58:16.303Z'
 ---
 [[Dev Ops]]

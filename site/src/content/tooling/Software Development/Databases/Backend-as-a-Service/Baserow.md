@@ -4,6 +4,13 @@ image: 'https://baserow.io/img/baserow_open_graph.png'
 site_name: Baserow
 title: Baserow - Open source no-code database
 favicon: 'https://baserow.io/img/favicon_192.png'
+tags:
+  - Software-Development
+  - Databases
+  - Backend-as-a-Service
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/261077b2a8efc0ad98ce0d8a112617ae709b84932e7224f39bdf58bdec59afc5.jpeg
+og-last-fetch: '2025-03-05T03:58:15.311Z'
 ---
 
 [[Database Apps 1]], defaults to [[Open Source]] as an alternative to [[Airtable]]

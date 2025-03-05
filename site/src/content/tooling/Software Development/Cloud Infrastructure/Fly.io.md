@@ -12,5 +12,11 @@ site_name: Deploy app servers close to your users      · Fly
 title: Deploy app servers close to your users      · Fly
 favicon: >-
   https://fly.io/phx/ui/images/favicon/favicon-32x32-803ad2058b86df3f8a9f8af1505a59d2.png?vsn=d
+tags:
+  - Software-Development
+  - Cloud-Infrastructure
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/26076624b6b7fb56dd7f5358abdf8551e8a8956db5cde6cbd4ccd9909d5a5550.jpeg
+og-last-fetch: '2025-03-05T03:58:06.188Z'
 ---
 

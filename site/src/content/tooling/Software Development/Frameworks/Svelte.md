@@ -4,6 +4,12 @@ image: 'https://svelte.dev/images/twitter-thumbnail.jpg'
 site_name: Svelte
 title: Svelte
 favicon: 'https://svelte.dev/favicon.png'
+tags:
+  - Software-Development
+  - Frameworks
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d5ce42d3352af3144b253670b8c6e9d274edd84ae1a6d00f4bcb57078b7e303f.jpeg
+og-last-fetch: '2025-03-05T03:58:00.560Z'
 ---
 
 | Release-Date | Version | Announcement                                                                             |

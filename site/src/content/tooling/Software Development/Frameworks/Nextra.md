@@ -5,6 +5,12 @@ image: >-
 site_name: Nextra
 title: Nextra – Next.js Static Site Generator
 favicon: 'https://nextra.site/icon.svg?cac6a12bdc398585'
+tags:
+  - Software-Development
+  - Frameworks
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/433ff2f01c9878c920cf7eabbf1820abedaba5f0e382c6d4a1a3de3ac6cdd65e.jpeg
+og-last-fetch: '2025-03-05T03:57:59.851Z'
 ---
 Uses similar patterns as [[NEXT.js]] and is somewhat meant to accompany it, as both [[Web Frameworks]] are supported by [[Vercel]]. 
 

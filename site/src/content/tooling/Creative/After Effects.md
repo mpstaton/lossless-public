@@ -6,6 +6,8 @@ image: >-
 site_name: Motion graphics software
 title: Motion graphics software | Adobe After Effects
 favicon: 'https://www.adobe.com/products/data:,'
+tags:
+  - Creative
 ---
 [[Computer-Generated Imagery|CGI]], [[Motion Graphics]]
 

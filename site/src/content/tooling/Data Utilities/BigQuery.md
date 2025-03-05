@@ -12,5 +12,10 @@ site_name: Google Cloud
 title: BigQuery enterprise data warehouse
 favicon: >-
   https://www.gstatic.com/devrel-devsite/prod/v0d244f667a3683225cca86d0ecf9b9b81b1e734e55a030bdcd3f3094b835c987/cloud/images/favicons/onecloud/favicon.ico
+tags:
+  - Data-Utilities
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2d032dc582689e8c0ecea7fc7bfa31899935ccda141d15f853627492ec5e02ab.jpeg
+og-last-fetch: '2025-03-05T03:57:54.687Z'
 ---
 [[Data Analysis]]

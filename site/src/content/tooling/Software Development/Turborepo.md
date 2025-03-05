@@ -4,6 +4,8 @@ image: 'https://turbo.build/api/og'
 site_name: Turbo
 title: Turbo
 favicon: 'https://turbo.build/favicon.ico'
+tags:
+  - Software-Development
 ---
 
 https://youtu.be/hRyU0bN7qhw?si=Zq2wUYiXkX5rcmJ-

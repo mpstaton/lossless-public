@@ -6,6 +6,11 @@ site_name: Board
 title: Board | The Enterprise Planning Platform
 favicon: >-
   https://www.board.com/wp-content/themes/board/assets/images/favicon/favicon-32x32.png
+tags:
+  - Enterprise-Jobs-to-be-Done
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b48b87d9fe4d7bd770ef01b9ff1f7c7046cb11a5c1ca97e943c510f1fd33f461.jpeg
+og-last-fetch: '2025-03-05T03:57:58.002Z'
 ---
 [[Enterprise Resource Planning|ERP]]
 

@@ -1,6 +1,8 @@
 ---
 url: 'https://www.cockroachlabs.com/homepage/'
 tags:
+  - Software-Development
+  - Databases
   - database
 zinger: >-
   Run mission-critical apps on CockroachDB — the cloud native, distributed SQL
@@ -16,6 +18,9 @@ image: >-
   https://images.ctfassets.net/00voh0j35590/3HOcRkIRnmu4DIWirX6gDH/b4f8a962358bffa8da063319af5dbba0/crl-socialpost-default-2020-2.jpg
 site_name: CockroachDB | Distributed SQL for always
 title: CockroachDB | Distributed SQL for always-on customer experiences
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5a91cf008258221b362473e49bde59e56bd9d1878d7e84b06948454fbba2b9b2.jpeg
+og-last-fetch: '2025-03-05T03:58:11.951Z'
 ---
 Based on [[Postgres]]
 

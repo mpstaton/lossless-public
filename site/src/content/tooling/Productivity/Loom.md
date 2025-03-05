@@ -6,6 +6,8 @@ image: >-
 site_name: Loom
 title: Free screen recorder for Mac and PC | Loom
 favicon: 'https://cdn.loom.com/assets/favicons-loom/android-chrome-192x192.png'
+tags:
+  - Productivity
 ---
 
 Uses [[Asynchronous Communication]] paradigm.  A primary [[Enterprise SaaS]] video-based communication tool.  Short-form, no-edits video communication can reduce [[Collaboration Cost]]. 

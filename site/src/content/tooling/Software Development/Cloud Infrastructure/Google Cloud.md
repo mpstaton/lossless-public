@@ -10,5 +10,11 @@ site_name: Google Cloud
 title: Cloud Computing Services | Google Cloud
 favicon: >-
   https://www.gstatic.com/devrel-devsite/prod/v0d244f667a3683225cca86d0ecf9b9b81b1e734e55a030bdcd3f3094b835c987/cloud/images/favicons/onecloud/favicon.ico
+tags:
+  - Software-Development
+  - Cloud-Infrastructure
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cd8183ccec2672cfff185ec3191cff01ba1a53a7c1b898db2f5d14df2204e4cb.jpeg
+og-last-fetch: '2025-03-05T03:58:07.775Z'
 ---
 [[BigQuery]]

@@ -6,7 +6,12 @@ description: >-
   platform.
 site_name: Just a moment...
 title: Just a moment...
-og-last-fetch: '2025-03-05T01:27:09.916Z'
+og-last-fetch: '2025-03-05T03:58:00.726Z'
+tags:
+  - Software-Development
+  - Lego-Kit-Engineering-Tools
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/51017da681cdf1133998fabba2e8b6100f39ed3ee6d13446c7f78d592b067b89.jpeg
 ---
 
 An example of [[Lego-Kit Engineering]]. 

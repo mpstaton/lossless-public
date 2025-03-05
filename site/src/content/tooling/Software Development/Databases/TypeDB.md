@@ -5,5 +5,11 @@ image: >-
 site_name: TypeDB
 title: 'TypeDB: the power of programming, in your database'
 favicon: 'https://typedb.com/favicon.ico'
+tags:
+  - Software-Development
+  - Databases
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/753a78d883a550fd8b8cb2f5ee4c711bc6b2e81f1e7b8e12ad9ce56dcdae344a.jpeg
+og-last-fetch: '2025-03-05T03:58:12.084Z'
 ---
 

@@ -9,6 +9,11 @@ image: 'https://brightdata.com/wp-content/uploads/2024/03/HP_OG-1.png'
 site_name: Bright Data
 title: Bright Data - All in One Platform for Proxies and Web Scraping
 favicon: 'https://brightdata.com/wp-content/themes/brightdata/assets/images/favicon.png'
+tags:
+  - Data-Utilities
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0b770999a184d5d06c77b60a483993483bba1af944df6fedaf7dbbc977797d19.jpeg
+og-last-fetch: '2025-03-05T03:57:55.258Z'
 ---
 [[AI Powered Data Capture]]
 ![[Screenshot 2025-02-19 at 6.01.07 PM_BrightData--Hero.png]]

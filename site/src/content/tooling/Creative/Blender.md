@@ -6,6 +6,11 @@ site_name: Blender
 title: Free and Open 3D Creation Software
 favicon: >-
   https://www.blender.org/wp-content/themes/bthree/assets/icons/favicon-32x32.png
+tags:
+  - Creative
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/10c38833207c9dae614d56b5f1b3e52ab7f02323a5b9d583372dfb8cc137ce6c.jpeg
+og-last-fetch: '2025-03-05T03:57:56.467Z'
 ---
 
 [[Computer-Generated Imagery]], [[Open Source]]

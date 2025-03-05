@@ -8,6 +8,9 @@ image: 'https://loco.rs/apple-touch-icon@x4.png'
 site_name: Loco.rs
 title: Loco.rs - Productivity-first Rust Fullstack Web Framework
 favicon: 'https://loco.rs/favicon-32x32.png'
+tags:
+  - Software-Development
+  - Frameworks
 ---
 
 [[Rust]]

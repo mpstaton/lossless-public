@@ -4,6 +4,11 @@ image: 'https://antora.org/img/site-image.png'
 site_name: Antora
 title: Antora
 favicon: 'https://antora.org/favicon.ico'
+tags:
+  - Software-Development
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/de35d8d32628c5725b1ffe407b7e2248d13ee31bc6f83cff8c70fa823ad3c742.jpeg
+og-last-fetch: '2025-03-05T03:57:17.623Z'
 ---
 
 [[Documentation First Development|Documentation First]]

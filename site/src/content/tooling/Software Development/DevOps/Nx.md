@@ -9,6 +9,12 @@ image: 'https://nx.dev/socials/nx-media.png'
 site_name: Nx
 title: 'Nx: Smart Monorepos · Fast CI'
 favicon: 'https://nx.dev/favicon/favicon-32x32.png'
+tags:
+  - Software-Development
+  - DevOps
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/02b1dcf8869161a56201454aaba2ce22a3e7dcc5a726d7caf773e59bdb760c1f.jpeg
+og-last-fetch: '2025-03-05T03:58:03.724Z'
 ---
 2025, February 21. [This AI VS Code extension actually works with large codebases!](http://localhost:5173/). GosuCoder. [[YouTube]]
 
