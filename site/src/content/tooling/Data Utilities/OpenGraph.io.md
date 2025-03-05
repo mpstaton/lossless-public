@@ -2,7 +2,7 @@
 url: 'https://www.opengraph.io/'
 hero: '![[Screenshot 2025-02-23 at 1.29.09 PM_OpenGraph-io--Hero.png]]'
 zinger: null
-og-last-fetch: '2025-03-05T04:17:40.483Z'
+og-last-fetch: '2025-03-05T08:59:56.526Z'
 tags:
   - Data-Utilities
 og_screenshot_url: >-

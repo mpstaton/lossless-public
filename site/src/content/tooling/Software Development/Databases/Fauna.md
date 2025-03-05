@@ -10,5 +10,8 @@ site_name: Fauna
 title: Fauna | The Distributed Serverless Database
 favicon: >-
   https://images.ctfassets.net/po4qc9xpmpuh/748wU03wXxETyOXXz54j9P/93d6bcdcefcca69f0c3b3d23af032efe/favicon.png
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b506d9ae4f9f5f0376ec30aa9fea6e6f18766311949e417616094c93b8bb88f4.jpeg
+og-last-fetch: '2025-03-05T09:00:16.213Z'
 ---
 
