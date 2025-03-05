@@ -78,7 +78,7 @@ const debugInfo = {
   <div class="ribbon">
     {
       trademarksShuffled.map((trademark) => (
-        <div class="trademark" key={trademark}>
+        <div class="trademark" data-key={trademark}>
           <TrademarkFragment trademark={trademark} />
         </div>
       ))
@@ -94,6 +94,7 @@ const debugInfo = {
 
 <style>
   .trademark-ribbon {
+    display: flex;
     width: 100%;
     height: 6vh;
     position: relative;
