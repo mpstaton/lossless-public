@@ -84,25 +84,25 @@ const debugInfo = {
       ))
     }
   </div>
-  <div class="debug-info">
+  <!--   <div class="debug-info">
     Found {debugInfo.totalTrademarks} trademarks in {
       debugInfo.componentsDir
     }.<br />
     First few: {debugInfo.firstFewTrademarks.join(", ")}
-  </div>
+  </div> -->
 </div>
 
 <style>
   .trademark-ribbon {
     width: 100%;
-    overflow: hidden;
+    height: 6vh;
     position: relative;
     padding: 1rem 0;
   }
 
   .ribbon {
     display: flex;
-    animation: scroll 80s linear infinite;
+    animation: scroll 320s linear infinite;
     width: max-content;
   }
 
@@ -118,9 +118,11 @@ const debugInfo = {
   .trademark {
     flex: 0 0 auto;
     margin: 0 1rem;
-    height: 2rem;
+    max-height: 2rem;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    object-fit: contain;
   }
 
   .debug-info {
