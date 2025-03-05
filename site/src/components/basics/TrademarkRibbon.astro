@@ -28,6 +28,39 @@ try {
   trademarkFiles = [];
 }
 
+// Check if classification file exists
+let darkTrademarks: string[] = [];
+let lightTrademarks: string[] = [];
+
+try {
+  const classificationPath = path.join(
+    process.cwd(),
+    "src/assets/svg-classification.json"
+  );
+
+  if (fs.existsSync(classificationPath)) {
+    const classificationData = JSON.parse(
+      fs.readFileSync(classificationPath, "utf8")
+    );
+    darkTrademarks = classificationData.dark || [];
+    lightTrademarks = classificationData.light || [];
+
+    console.log(
+      `Loaded classification data: ${darkTrademarks.length} dark, ${lightTrademarks.length} light`
+    );
+  } else {
+    console.log(
+      "No classification data found, all trademarks will be in a single ribbon"
+    );
+    // If no classification data, put all trademarks in the light category
+    lightTrademarks = trademarkFiles;
+  }
+} catch (error) {
+  console.error("Error loading classification data:", error);
+  // If error, put all trademarks in the light category
+  lightTrademarks = trademarkFiles;
+}
+
 // Shuffle the logos array
 function shuffle(array: string[]) {
   // Make a copy of the array to avoid modifying the original
@@ -50,60 +83,125 @@ function shuffle(array: string[]) {
   }
 }
 
-let trademarksShuffled: string[] = [];
+// Shuffle both dark and light trademarks
+let darkTrademarksShuffled: string[] = [];
+let lightTrademarksShuffled: string[] = [];
+
 try {
-  trademarksShuffled = shuffle(trademarkFiles);
-  console.log("First few trademarks:", trademarksShuffled.slice(0, 5));
+  darkTrademarksShuffled = shuffle(darkTrademarks);
+  lightTrademarksShuffled = shuffle(lightTrademarks);
+
+  console.log("First few dark trademarks:", darkTrademarksShuffled.slice(0, 3));
+  console.log(
+    "First few light trademarks:",
+    lightTrademarksShuffled.slice(0, 3)
+  );
 } catch (error) {
   console.error("Error in shuffle operation:", error);
-  trademarksShuffled = trademarkFiles; // Use unshuffled array as fallback
+  darkTrademarksShuffled = darkTrademarks;
+  lightTrademarksShuffled = lightTrademarks;
 }
 
 // Make sure we have at least some logos to display
-if (trademarksShuffled.length === 0) {
+if (
+  darkTrademarksShuffled.length === 0 &&
+  lightTrademarksShuffled.length === 0
+) {
   // Add some fallback logos if none were found
-  trademarksShuffled.push("fallback1", "fallback2", "fallback3");
+  lightTrademarksShuffled.push("fallback1", "fallback2", "fallback3");
   console.log("Using fallback trademarks");
 }
 
 // Debug info
 const debugInfo = {
   totalTrademarks: trademarkFiles.length,
-  firstFewTrademarks: trademarksShuffled.slice(0, 5),
+  darkTrademarks: darkTrademarksShuffled.length,
+  lightTrademarks: lightTrademarksShuffled.length,
   componentsDir,
 };
 ---
 
-<div class="trademark-ribbon">
-  <div class="ribbon">
-    {
-      trademarksShuffled.map((trademark) => (
-        <div class="trademark" key={trademark}>
-          <TrademarkFragment trademark={trademark} />
+<div class="trademark-ribbons">
+  {
+    darkTrademarksShuffled.length > 0 && (
+      <div class="trademark-ribbon dark-ribbon">
+        <div class="ribbon">
+          {darkTrademarksShuffled.map((trademark) => (
+            <div class="trademark" key={trademark}>
+              <TrademarkFragment trademark={trademark} />
+            </div>
+          ))}
+          {/* Duplicate for seamless looping */}
+          {darkTrademarksShuffled.map((trademark) => (
+            <div class="trademark" key={`${trademark}-dup`}>
+              <TrademarkFragment trademark={trademark} />
+            </div>
+          ))}
         </div>
-      ))
-    }
+      </div>
+    )
+  }
+
+  {
+    lightTrademarksShuffled.length > 0 && (
+      <div class="trademark-ribbon light-ribbon">
+        <div class="ribbon reverse">
+          {lightTrademarksShuffled.map((trademark) => (
+            <div class="trademark" key={trademark}>
+              <TrademarkFragment trademark={trademark} />
+            </div>
+          ))}
+          {/* Duplicate for seamless looping */}
+          {lightTrademarksShuffled.map((trademark) => (
+            <div class="trademark" key={`${trademark}-dup`}>
+              <TrademarkFragment trademark={trademark} />
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  <div class="debug-info">
+    Found {debugInfo.totalTrademarks} trademarks ({debugInfo.darkTrademarks} dark,
+    {debugInfo.lightTrademarks} light)
   </div>
-  <!--   <div class="debug-info">
-    Found {debugInfo.totalTrademarks} trademarks in {
-      debugInfo.componentsDir
-    }.<br />
-    First few: {debugInfo.firstFewTrademarks.join(", ")}
-  </div> -->
 </div>
 
 <style>
+  .trademark-ribbons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .trademark-ribbon {
     width: 100%;
-    height: 6vh;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
     position: relative;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
+  }
+
+  .dark-ribbon {
+    background-color: #f8f8f8;
+  }
+
+  .light-ribbon {
+    background-color: #222;
   }
 
   .ribbon {
     display: flex;
-    animation: scroll 320s linear infinite;
+    animation: scroll 280s linear infinite;
     width: max-content;
+  }
+
+  .reverse {
+    animation: scroll-reverse 360s linear infinite;
   }
 
   @keyframes scroll {
@@ -115,6 +213,15 @@ const debugInfo = {
     }
   }
 
+  @keyframes scroll-reverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   .trademark {
     flex: 0 0 auto;
     margin: 0 1rem;
@@ -122,7 +229,6 @@ const debugInfo = {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    object-fit: contain;
   }
 
   .debug-info {
@@ -132,40 +238,6 @@ const debugInfo = {
     padding: 0.5rem;
     background-color: #f5f5f5;
     border-radius: 4px;
-  }
-
-  /* Test logos section for debugging */
-  .test-logos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-  }
-
-  .test-logo {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: white;
-  }
-
-  .logo-name {
-    font-weight: bold;
-    margin-bottom: 0.25rem;
-  }
-
-  .file-status {
-    font-size: 0.8rem;
-  }
-
-  .file-exists {
-    color: green;
-  }
-
-  .file-missing {
-    color: red;
+    display: none;
   }
 </style>
