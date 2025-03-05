@@ -1,9 +1,12 @@
 ---
-url: 'https://www.airtable.com/'
-image: 'https://www.airtable.com/images/airtable-seo.jpg'
+url: https://www.airtable.com/
+image: https://www.airtable.com/images/airtable-seo.jpg
 site_name: Airtable
-title: The platform to build next‒gen apps - Airtable
-favicon: 'https://www.airtable.com/favicon.ico'
+title: The platform to build next‒gen apps
+favicon: https://www.airtable.com/favicon.ico
+tags:
+  - database-app
+  - jam-stack
 ---
 One of the [[Database Apps 1]], and is also partially an [[Advanced Spreadsheets]] Applies [[API First]] and [[Documentation First Development|Documentation First]] strategies. 
 

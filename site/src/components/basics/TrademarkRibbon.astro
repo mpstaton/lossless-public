@@ -11,14 +11,26 @@ const componentsDir = path.join(
 let trademarkFiles: string[] = [];
 
 try {
-  // Read the directory and filter for trademark__ Astro component files
+  // Read the directory and filter for trademark__ and wordmark__ Astro component files
   const files = fs.readdirSync(componentsDir);
-  trademarkFiles = files
+
+  // Get trademark files
+  const trademarkPrefixFiles = files
     .filter((file) => file.startsWith("trademark__") && file.endsWith(".astro"))
     .map((file) => file.replace("trademark__", "").replace(".astro", ""));
 
+  // Get wordmark files
+  const wordmarkPrefixFiles = files
+    .filter((file) => file.startsWith("wordmark__") && file.endsWith(".astro"))
+    .map((file) => file.replace("wordmark__", "").replace(".astro", ""));
+
+  // Combine both sets, removing duplicates
+  trademarkFiles = [
+    ...new Set([...trademarkPrefixFiles, ...wordmarkPrefixFiles]),
+  ];
+
   console.log(
-    `Found ${trademarkFiles.length} trademark components in ${componentsDir}`
+    `Found ${trademarkFiles.length} trademark components (${trademarkPrefixFiles.length} trademarks, ${wordmarkPrefixFiles.length} wordmarks) in ${componentsDir}`
   );
 } catch (error: unknown) {
   console.error(

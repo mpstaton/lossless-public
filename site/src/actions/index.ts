@@ -6,6 +6,27 @@ interface OpenGraphProperties {
   title?: string;
   url?: string;
   favicon?: string;
+  og_screenshot_url?: string;
+}
+
+// Function to fetch screenshot URL from OpenGraph.io
+async function getScreenshotUrl(url: string): Promise<string | null> {
+  try {
+    const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
+    const response = await fetch(screenshotProxyUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    if (data.screenshotUrl) {
+      return data.screenshotUrl;
+    }
+    return null;
+  } catch (error) {
+    console.error('Error fetching screenshot URL for', url, ':', error);
+    return null;
+  }
 }
 
 export async function getFromOpenGraphIo(url: string) {
@@ -26,6 +47,12 @@ export async function getFromOpenGraphIo(url: string) {
             ogProperties.title = data.hybridGraph.title;
             ogProperties.url = data.hybridGraph.url;
             ogProperties.favicon = data.hybridGraph.favicon;
+        }
+
+        // Fetch and add screenshot URL
+        const screenshotUrl = await getScreenshotUrl(url);
+        if (screenshotUrl) {
+            ogProperties.og_screenshot_url = screenshotUrl;
         }
 
         console.log('Fetched OpenGraph properties:', ogProperties);

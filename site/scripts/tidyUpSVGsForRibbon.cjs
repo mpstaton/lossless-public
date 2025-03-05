@@ -301,8 +301,24 @@ async function processFiles() {
     
     // Create a JSON file with the classification results
     const classificationData = {
-      dark: darkSVGs.map(file => file.replace('.astro', '').replace('trademark__', '')),
-      light: lightSVGs.map(file => file.replace('.astro', '').replace('trademark__', ''))
+      dark: darkSVGs.map(file => {
+        // Extract the base name without prefix and extension
+        if (file.startsWith('trademark__')) {
+          return file.replace('trademark__', '').replace('.astro', '');
+        } else if (file.startsWith('wordmark__')) {
+          return file.replace('wordmark__', '').replace('.astro', '');
+        }
+        return file.replace('.astro', '');
+      }),
+      light: lightSVGs.map(file => {
+        // Extract the base name without prefix and extension
+        if (file.startsWith('trademark__')) {
+          return file.replace('trademark__', '').replace('.astro', '');
+        } else if (file.startsWith('wordmark__')) {
+          return file.replace('wordmark__', '').replace('.astro', '');
+        }
+        return file.replace('.astro', '');
+      })
     };
     
     fs.writeFileSync(

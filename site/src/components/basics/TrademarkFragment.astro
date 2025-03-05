@@ -9,16 +9,39 @@ console.log("TrademarkFragment: Received trademark:", trademark);
 // Dynamically import the Astro component
 let Component = null;
 try {
-  // Import the component dynamically
-  const module = await import(
-    `../../assets/visuals-as-components/tooling-trademarks/trademark__${trademark}.astro`
-  );
-  Component = module.default;
-  console.log(
-    `TrademarkFragment: Successfully loaded component for ${trademark}`
-  );
+  // First try to import the trademark component
+  try {
+    const trademarkModule = await import(
+      `../../assets/visuals-as-components/tooling-trademarks/trademark__${trademark}.astro`
+    );
+    Component = trademarkModule.default;
+    console.log(
+      `TrademarkFragment: Successfully loaded trademark component for ${trademark}`
+    );
+  } catch (trademarkError) {
+    console.log(
+      `No trademark component found for ${trademark}, trying wordmark...`
+    );
+
+    // If trademark import fails, try wordmark
+    try {
+      const wordmarkModule = await import(
+        `../../assets/visuals-as-components/tooling-trademarks/wordmark__${trademark}.astro`
+      );
+      Component = wordmarkModule.default;
+      console.log(
+        `TrademarkFragment: Successfully loaded wordmark component for ${trademark}`
+      );
+    } catch (wordmarkError) {
+      console.error(
+        `Failed to load any component for ${trademark}:`,
+        wordmarkError
+      );
+      // Component will remain null if both imports fail
+    }
+  }
 } catch (error) {
-  console.error(`Failed to load component for ${trademark}:`, error);
+  console.error(`Unexpected error loading component for ${trademark}:`, error);
   // Component will remain null if import fails
 }
 ---

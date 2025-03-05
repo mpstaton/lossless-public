@@ -10,6 +10,27 @@ dotenv.config();
 
 const openGraphKey = process.env.PUBLIC_OPEN_GRAPH_API_KEY;
 
+
+// Function to fetch screenshot URL from OpenGraph.io
+async function getScreenshotUrl(url) {
+  try {
+    const screenshotProxyUrl = `https://opengraph.io/api/1.1/screenshot/site/${encodeURIComponent(url)}?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
+    const response = await fetch(screenshotProxyUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    if (data.screenshotUrl) {
+      return data.screenshotUrl;
+    }
+    return null;
+  } catch (error) {
+    console.error('Error fetching screenshot URL for', url, ':', error);
+    return null;
+  }
+}
+
 // Function to fetch OpenGraph data
 async function getFromOpenGraphIo(url) {
   try {
@@ -31,11 +52,42 @@ async function getFromOpenGraphIo(url) {
       if (data.hybridGraph.favicon) ogProperties.favicon = data.hybridGraph.favicon;
     }
     
+    // Fetch and add screenshot URL
+    const screenshotUrl = await getScreenshotUrl(url);
+    if (screenshotUrl) {
+      ogProperties.og_screenshot_url = screenshotUrl;
+    }
+    
     return ogProperties;
   } catch (error) {
     console.error('Error fetching OpenGraph properties for', url, ':', error);
     return null;
   }
+}
+
+// Function to extract category tags from file path
+function extractCategoryTags(filePath) {
+  // Get the path relative to the tooling directory
+  const toolingDirPattern = /.*\/content\/tooling\/(.*)/;
+  const match = filePath.match(toolingDirPattern);
+  
+  if (!match || !match[1]) {
+    return [];
+  }
+  
+  // Get the directory path without the filename
+  const dirPath = path.dirname(match[1]);
+  
+  // Split the path into directories
+  const directories = dirPath.split('/').filter(dir => dir.trim() !== '');
+  
+  // Reverse the array to put the directory closest to the file first
+  const reversedDirectories = [...directories].reverse();
+  
+  // Transform directory names by replacing spaces with hyphens
+  const categoryTags = reversedDirectories.map(dir => dir.replace(/ /g, '-'));
+  
+  return categoryTags;
 }
 
 // Process a single file
@@ -49,8 +101,28 @@ async function processFile(filePath) {
     if (frontmatter && frontmatter.url) {
       console.log(`Processing ${path.basename(filePath)} with URL: ${frontmatter.url}`);
       
+      // Extract category tags from the file path
+      const categoryTags = extractCategoryTags(filePath);
+      console.log(`Extracted category tags: ${categoryTags.join(', ')}`);
+      
+      // Initialize tags array if it doesn't exist
+      if (!frontmatter.tags) {
+        frontmatter.tags = [];
+      } else if (typeof frontmatter.tags === 'string') {
+        // Convert string tags to array
+        frontmatter.tags = [frontmatter.tags];
+      }
+      
+      // Add category tags to the beginning of the tags array, avoiding duplicates
+      categoryTags.forEach(tag => {
+        if (!frontmatter.tags.includes(tag)) {
+          frontmatter.tags.unshift(tag);
+        }
+      });
+      
       // Check if we need to fetch OpenGraph data
-      if (!frontmatter.title || !frontmatter.image || !frontmatter.site_name) {
+      // Also fetch if we don't have a screenshot URL yet
+      if (!frontmatter.title || !frontmatter.image || !frontmatter.site_name || !frontmatter.og_screenshot_url) {
         console.log(`Fetching OpenGraph data for ${frontmatter.url}...`);
         
         // Fetch OpenGraph data
@@ -67,25 +139,25 @@ async function processFile(filePath) {
           // Add or update the og-last-fetch property with current date
           // Only add timestamp when fetch was successful
           frontmatter['og-last-fetch'] = new Date().toISOString();
-          
-          try {
-            // Convert back to frontmatter string
-            const updatedContent = matter.stringify(content, frontmatter);
-            
-            // Write back to file
-            fs.writeFileSync(filePath, updatedContent);
-            console.log(`✅ Updated ${path.basename(filePath)} with OpenGraph data and timestamp`);
-          } catch (error) {
-            console.error(`Error updating ${path.basename(filePath)}:`, error);
-            console.log('Problem frontmatter:', JSON.stringify(frontmatter));
-          }
         } else {
           console.log(`⚠️ No usable OpenGraph data found for ${path.basename(filePath)}`);
           // Do not update og-last-fetch when no data was found
         }
       } else {
-        console.log(`Skipping ${path.basename(filePath)} - already has complete OpenGraph data`);
+        console.log(`Skipping OpenGraph fetch for ${path.basename(filePath)} - already has complete OpenGraph data`);
         // Do not update og-last-fetch when skipping fetch
+      }
+      
+      try {
+        // Convert back to frontmatter string
+        const updatedContent = matter.stringify(content, frontmatter);
+        
+        // Write back to file
+        fs.writeFileSync(filePath, updatedContent);
+        console.log(`✅ Updated ${path.basename(filePath)} with category tags and OpenGraph data`);
+      } catch (error) {
+        console.error(`Error updating ${path.basename(filePath)}:`, error);
+        console.log('Problem frontmatter:', JSON.stringify(frontmatter));
       }
     } else {
       console.log(`⚠️ Missing URL in ${path.basename(filePath)}`);
