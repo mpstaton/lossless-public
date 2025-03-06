@@ -1,5 +1,6 @@
 ---
 import { filterTitle, getEffectiveSiteName } from "@utils/toolUtils";
+import TagChip from "./TagChip.astro";
 
 interface Tool {
   site_name?: string;
@@ -117,9 +118,7 @@ console.log("Effective description:", {
       safeTags.length > 0 && (
         <div class="tool-tags">
           {safeTags.map((tag) => (
-            <span class="tool-tag">
-              <p>{tag}</p>
-            </span>
+            <TagChip tag={tag} />
           ))}
         </div>
       )
@@ -288,20 +287,5 @@ console.log("Effective description:", {
     flex-wrap: wrap;
     gap: 0.5em;
     margin-top: auto;
-  }
-
-  .tool-tag {
-    background: var(--clr-lossless-primary-dark);
-    color: var(--clr-lossless-primary-glass);
-    font-size: var(--fs-200);
-    padding: 0.2em 0.6em;
-    border-radius: 0.25em;
-    white-space: nowrap;
-
-    & p {
-      font-size: var(--fs-200);
-      margin: 0;
-      padding: 0;
-    }
   }
 </style>
