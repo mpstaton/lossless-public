@@ -1,3 +1,6 @@
+---
+url: https://nextjs.org/
+---
 
 
 A [[Web Frameworks|Web Framework]] that is the market standard for [[Server Side Rendering|SSR]] architecture, based off of [[React]] and maintained by [[Vercel]]. 
