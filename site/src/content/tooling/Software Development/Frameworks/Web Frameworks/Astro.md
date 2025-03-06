@@ -9,6 +9,7 @@ site_name: Astro
 title: Astro
 favicon: 'https://astro.build/favicon.svg'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 og_screenshot_url: >-

@@ -5,6 +5,7 @@ site_name: FastAPI
 title: FastAPI
 favicon: 'https://fastapi.tiangolo.com/img/favicon.png'
 tags:
+  - Frameworks
   - Software-Development
   - Web-Frameworks
 og_screenshot_url: >-

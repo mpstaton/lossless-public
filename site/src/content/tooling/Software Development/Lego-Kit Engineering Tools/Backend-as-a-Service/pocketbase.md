@@ -6,6 +6,7 @@ site_name: PocketBase
 title: PocketBase - Open Source backend in 1 file
 favicon: 'https://pocketbase.io/images/favicon/favicon-32x32.png'
 tags:
+  - Lego-Kit-Engineering-Tools
   - Software-Development
   - Databases
   - Backend-as-a-Service

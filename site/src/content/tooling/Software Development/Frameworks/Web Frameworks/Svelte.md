@@ -5,6 +5,7 @@ site_name: Svelte
 title: Svelte
 favicon: 'https://svelte.dev/favicon.png'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 og_screenshot_url: >-

@@ -6,6 +6,7 @@ site_name: Nextra
 title: Nextra – Next.js Static Site Generator
 favicon: 'https://nextra.site/icon.svg?cac6a12bdc398585'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 og_screenshot_url: >-

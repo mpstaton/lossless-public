@@ -5,6 +5,7 @@ site_name: Unpoly
 title: Unpoly - Progressive enhancement for HTML
 favicon: 'https://unpoly.com/images/favicon-2d52fc7a.png'
 tags:
+  - Frameworks
   - Software-Development
   - Web-Frameworks
 og_screenshot_url: >-

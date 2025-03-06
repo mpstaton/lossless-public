@@ -6,6 +6,7 @@ site_name: Vue.js
 title: Vue.js
 favicon: 'https://vuejs.org/logo.svg'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 og_screenshot_url: >-

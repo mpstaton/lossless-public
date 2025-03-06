@@ -11,6 +11,7 @@ site_name: Appwrite
 title: Appwrite - Build like a team of hundreds
 favicon: 'https://appwrite.io/images/logos/logo.svg'
 tags:
+  - Lego-Kit-Engineering-Tools
   - Software-Development
   - Databases
   - Backend-as-a-Service

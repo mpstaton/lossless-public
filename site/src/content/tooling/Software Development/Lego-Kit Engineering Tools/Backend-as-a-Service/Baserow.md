@@ -5,6 +5,7 @@ site_name: Baserow
 title: Baserow - Open source no-code database
 favicon: 'https://baserow.io/img/favicon_192.png'
 tags:
+  - Lego-Kit-Engineering-Tools
   - Software-Development
   - Databases
   - Backend-as-a-Service

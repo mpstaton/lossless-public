@@ -7,6 +7,7 @@ title: SingleStore | The Real-Time Data Platform for Intelligent Applications
 favicon: >-
   https://www.singlestore.com/favicon-32x32.png?v=277b9cbbe31e8bc416504cf3b902d430
 tags:
+  - Lego-Kit-Engineering-Tools
   - Software-Development
   - Databases
   - Backend-as-a-Service

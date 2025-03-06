@@ -1,13 +1,15 @@
 ---
-url: https://orbstack.dev/
-image: https://orbstack.dev/img/icon-square256.png
+url: 'https://orbstack.dev/'
+image: 'https://orbstack.dev/img/icon-square256.png'
 site_name: OrbStack
-title: Fast, light, simple Docker & Linux
-favicon: https://orbstack.dev/img/icon128.png
+title: 'Fast, light, simple Docker & Linux'
+favicon: 'https://orbstack.dev/img/icon128.png'
 tags:
+  - Developer-Experience
   - Software-Development
   - DevOps
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/71f9b2f378fb69ba2aede828f50a3faea381879467239d19c55fc6a12e383e49.jpeg
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/71f9b2f378fb69ba2aede828f50a3faea381879467239d19c55fc6a12e383e49.jpeg
 og-last-fetch: 2025-03-05T03:58:00.879Z
 ---
 [[Containers]], [[Virtual Machines]], [[Ephemeral Environments|Ephemeral Environment]]

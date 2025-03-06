@@ -5,6 +5,7 @@ site_name: The full
 title: The full-stack JavaScript framework for real-time apps - Meteor.js
 favicon: 'https://dmtgy0px4zdqn.cloudfront.net/favicon.ico?v=2'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 ---

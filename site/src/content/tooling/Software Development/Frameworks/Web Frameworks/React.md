@@ -6,6 +6,7 @@ site_name: React
 title: React
 favicon: 'https://react.dev/favicon-32x32.png'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 og_screenshot_url: >-

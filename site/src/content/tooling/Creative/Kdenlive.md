@@ -1,5 +1,15 @@
 ---
-url: https://kdenlive.org/en/
+url: 'https://kdenlive.org/en/'
+tags:
+  - Creative
+image: 'https://kdenlive.org/wp-content/uploads/2022/01/kdenlive-logo-blank-500px.png'
+site_name: Kdenlive
+title: Kdenlive - Video Editing Freedom
+favicon: >-
+  https://kdenlive.org/wp-content/uploads/2022/01/kdenlive-logo-blank-500px-300x300.png
+og-last-fetch: '2025-03-06T21:02:08.422Z'
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/13d37a5bfe3056e3bd5b71541b5c8322ec12993aa40b05019ba819e58c17eebb.jpeg
 ---
 [[Video Editing]]
 

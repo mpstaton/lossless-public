@@ -5,6 +5,7 @@ site_name: </> htmx
 title: </> htmx - high power tools for html
 favicon: 'https://htmx.org/favicon.svg'
 tags:
+  - Frameworks
   - Software-Development
   - Web-Frameworks
 og_screenshot_url: >-

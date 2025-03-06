@@ -5,6 +5,7 @@ site_name: NestJS - A progressive Node.js framework
 title: NestJS - A progressive Node.js framework
 favicon: 'https://nestjs.com/favicon-32x32.42b683bd.png'
 tags:
+  - Frameworks
   - Software-Development
   - Web-Frameworks
 og_screenshot_url: >-

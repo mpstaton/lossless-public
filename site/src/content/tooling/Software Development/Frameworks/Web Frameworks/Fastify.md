@@ -6,6 +6,7 @@ site_name: 'Fast and low overhead web framework, for Node.js'
 title: 'Fast and low overhead web framework, for Node.js | Fastify'
 favicon: 'https://fastify.dev/img/favicon.ico'
 tags:
+  - Frameworks
   - Software-Development
   - Web-Frameworks
 og_screenshot_url: >-

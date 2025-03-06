@@ -10,6 +10,7 @@ site_name: Legend State
 title: Legend State
 favicon: 'https://legendapp.com/open-source/state/v3/favicon.ico'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 og_screenshot_url: >-

@@ -12,6 +12,8 @@ title: 'Boomi Integration Platform as a Service: Connect Everything'
 favicon: >-
   https://boomi.com/wp-content/uploads/2024/08/cropped-Boomi_Logo_Icon_Navy-192x192.png
 tags:
+  - Enterprise-Jobs-to-be-Done
+  - Integration-Platforms
   - Software-Development
   - DevOps
 og_screenshot_url: >-

@@ -6,6 +6,8 @@ site_name: Ghostty
 title: Ghostty
 favicon: 'https://ghostty.org/favicon-32.png'
 tags:
+  - DevOps
+  - Developer-Experience
   - Software-Development
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d92a20acd486acdbe6a150ad75bd9948e99e11d308d7601463be8a2320f8f8dc.jpeg

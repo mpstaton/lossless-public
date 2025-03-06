@@ -6,6 +6,7 @@ site_name: NocoDB Cloud
 title: NocoDB Cloud
 favicon: 'https://cdn.nocodb.com/marketing-site/20250120104552/images/favicon.png'
 tags:
+  - Lego-Kit-Engineering-Tools
   - Software-Development
   - Databases
   - Backend-as-a-Service

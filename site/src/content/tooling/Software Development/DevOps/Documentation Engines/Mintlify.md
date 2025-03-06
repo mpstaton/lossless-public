@@ -7,6 +7,7 @@ title: 'Mintlify — The documentation you want, effortlessly'
 favicon: >-
   https://cdn.prod.website-files.com/66cc2bd703ccf308a49a6188/66cc3e0d67f2324645580a18_favicon.png
 tags:
+  - Documentation-Engines
   - Software-Development
   - DevOps
 og_screenshot_url: >-

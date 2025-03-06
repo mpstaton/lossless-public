@@ -6,6 +6,7 @@ site_name: Mermaid
 title: Mermaid | Diagramming and charting tool
 favicon: 'https://mermaid.js.org/favicon.ico'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 og_screenshot_url: >-

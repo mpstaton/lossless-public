@@ -7,6 +7,7 @@ site_name: Bitbucket
 title: Bitbucket | Git solution for teams using Jira
 favicon: 'https://wac-cdn.atlassian.com/assets/img/favicons/bitbucket/favicon-32x32.png'
 tags:
+  - Developer-Experience
   - Software-Development
   - DevOps
 og_screenshot_url: >-

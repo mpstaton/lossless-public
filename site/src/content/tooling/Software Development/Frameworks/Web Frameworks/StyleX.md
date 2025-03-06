@@ -7,6 +7,7 @@ site_name: StyleX
 title: StyleX
 favicon: 'https://stylexjs.com/img/favicon.svg'
 tags:
+  - Frameworks
   - Software-Development
   - Web-Frameworks
 og_screenshot_url: >-

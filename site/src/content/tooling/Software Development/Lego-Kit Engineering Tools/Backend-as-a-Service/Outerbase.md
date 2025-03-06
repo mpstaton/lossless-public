@@ -5,6 +5,7 @@ site_name: Outerbase
 title: Outerbase | The interface for your database
 favicon: 'https://www.outerbase.com/favicon.svg'
 tags:
+  - Lego-Kit-Engineering-Tools
   - Software-Development
   - Databases
   - Backend-as-a-Service

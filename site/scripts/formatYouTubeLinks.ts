@@ -334,15 +334,16 @@ export const processMarkdownFiles = async (globPattern: string): Promise<void> =
       
       let modifiedContent = content;
       let fileModified = false;
-      let matches: string[] = [];
+      const uniqueUrls = new Set<string>();
       let match: RegExpExecArray | null;
       
-      // Find all matches first to avoid regex state issues with async operations
+      // Find all unique matches first to avoid regex state issues with async operations
       while ((match = youtubeLinkRegex.exec(content)) !== null) {
-        matches.push(match[0]);
+        uniqueUrls.add(match[0]);
       }
       
-      console.log(`Found ${matches.length} YouTube links in content`);
+      const matches = Array.from(uniqueUrls);
+      console.log(`Found ${matches.length} unique YouTube links in content`);
       if (matches.length > 0) {
         console.log(`YouTube links found: ${JSON.stringify(matches)}`);
         

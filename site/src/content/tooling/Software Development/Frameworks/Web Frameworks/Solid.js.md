@@ -5,6 +5,7 @@ site_name: SolidJS
 title: SolidJS
 favicon: 'https://www.solidjs.com/img/favicons/favicon-32x32.png'
 tags:
+  - Web-Frameworks
   - Software-Development
   - Frameworks
 og_screenshot_url: >-
