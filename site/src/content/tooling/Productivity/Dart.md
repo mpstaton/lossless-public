@@ -1,14 +1,17 @@
 ---
-url: https://www.itsdart.com/
+url: 'https://www.itsdart.com/'
 zinger: AI project management software for smarter teams
 description_site_cp: Dart will save you seven hours per week in project management overhead
-image: https://cdn.prod.website-files.com/659e83b16fe25e7824e48b3a/6604a9ac211a7874356f2514_open%20graph.png
+image: >-
+  https://cdn.prod.website-files.com/659e83b16fe25e7824e48b3a/6604a9ac211a7874356f2514_open%20graph.png
 site_name: Dart
 title: AI project management software for smarter teams
-favicon: https://cdn.prod.website-files.com/659e83b16fe25e7824e48b3a/65ce9b2768c10a8152de1df8_favicon.png
+favicon: >-
+  https://cdn.prod.website-files.com/659e83b16fe25e7824e48b3a/65ce9b2768c10a8152de1df8_favicon.png
 tags:
   - Productivity
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/48983fdb2c7f075d88429fd6d99983a6ae6d62a04bf0841d32bf7970e25a6dd7.jpeg
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/48983fdb2c7f075d88429fd6d99983a6ae6d62a04bf0841d32bf7970e25a6dd7.jpeg
 og_last_fetch: 2025-03-05T03:57:36.771Z
 ---
 

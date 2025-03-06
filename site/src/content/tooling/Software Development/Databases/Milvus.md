@@ -8,7 +8,7 @@ tags:
   - Databases
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/577610f1494f292800a58bbb5f3ef67c8438a7b0f0e21421d2079103378c9956.jpeg
-og-last-fetch: '2025-03-06T21:44:08.237Z'
+og-last-fetch: '2025-03-06T22:10:26.607Z'
 ---
 https://youtu.be/3bftbAjQF7Q?si=Nl1s6c8MhIw0YLGS
 

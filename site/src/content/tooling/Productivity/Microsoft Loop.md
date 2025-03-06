@@ -1,17 +1,16 @@
 ---
-parent_org: '[[Microsoft]]'
+parent_org: "[[Microsoft]]"
 aliases:
   - Loop
 tags:
   - Productivity
   - async-tools
-url: 'https://www.microsoft.com/en-us/microsoft-loop'
-image: 'https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png'
-site_name: 'Microsoft Loop: Collaborative App'
-title: 'Microsoft Loop: Collaborative App | Microsoft 365'
-og_last_fetch: '2025-03-05T04:17:40.354Z'
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e9d5855054048f1e4724f07e587368948a9ea7e4305876427ff65a5747ce2975.jpeg
+url: https://www.microsoft.com/en-us/microsoft-loop
+image: https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png
+site_name: Microsoft Loop
+title: A Collaborative Document App for Microsoft 365
+og_last_fetch: 2025-03-05T04:17:40.354Z
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e9d5855054048f1e4724f07e587368948a9ea7e4305876427ff65a5747ce2975.jpeg
 ---
 
 An [[Advanced Documents]] tool, part of [[Microsoft 365]]

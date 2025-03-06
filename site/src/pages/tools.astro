@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import ToolCard from "@components/tool-components/ToolCard.astro";
-import { getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
 interface Tool {
   site_name?: string;
@@ -10,18 +10,44 @@ interface Tool {
   image?: string;
   favicon?: string;
   description?: string;
+  description_site_cp?: string;
+  zinger?: string;
   tags?: string[];
+  og_screenshot_url?: string;
+  og_last_fetch?: string;
 }
 
-const toolsData = await getEntry("tools", "tools");
-const allTools = toolsData?.data?.tools ?? [];
+const toolEntries = await getCollection("tooling");
+const processedTools = toolEntries.map((entry) => {
+  // Get the frontmatter data
+  const frontmatter = entry.data;
+
+  // Create the tool object with all properties
+  const tool = {
+    site_name: frontmatter.site_name,
+    title: frontmatter.title,
+    url: frontmatter.url,
+    image: frontmatter.image,
+    favicon: frontmatter.favicon,
+    description: frontmatter.description || frontmatter.zinger || "",
+    description_site_cp: frontmatter.description_site_cp,
+    tags: frontmatter.tags || [],
+    filename: entry.id,
+    og_screenshot_url: frontmatter.og_screenshot_url,
+    og_last_fetch: frontmatter.og_last_fetch,
+  };
+
+  return tool;
+});
+
+console.log("Processed tools:", processedTools);
 ---
 
 <Layout title="Tools">
   <main class="container">
     <h1>Tools</h1>
     <div class="tools-grid">
-      {allTools.map((tool: Tool) => <ToolCard tool={tool} />)}
+      {processedTools.map((tool: Tool) => <ToolCard tool={tool} />)}
     </div>
   </main>
 </Layout>
