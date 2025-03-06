@@ -14,6 +14,8 @@ og-last-fetch: '2025-03-05T03:57:59.851Z'
 ---
 Uses similar patterns as [[NEXT.js]] and is somewhat meant to accompany it, as both [[Web Frameworks]] are supported by [[Vercel]]. 
 
+[[Static Site Generators|Static Site Generation]]
+
 | Release | Date       | Announcement                                                                                    |
 | ------- | ---------- | ----------------------------------------------------------------------------------------------- |
 | 3.0     | 2024-12-13 | [Nextra 3 – Your Favourite MDX Framework, Now on Steroids](https://the-guild.dev/blog/nextra-3) |

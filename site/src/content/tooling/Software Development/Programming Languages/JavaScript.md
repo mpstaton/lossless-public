@@ -1,3 +1,6 @@
+---
+url: https://ecma-international.org/publications-and-standards/standards/ecma-262/
+---
 
 [[Web Frameworks]] include [[NEXT.js]], [[React]], [[Vue.js]], [[Solid.js]], [[Nextra]], [[Astro]].
 
@@ -28,7 +31,7 @@
 >     - Provides server-side APIs for tasks like file I/O, networking, and process management.
 >     - Forms the backbone of many JavaScript tools.
 > 
-> ### **[[Deno 1]]**
+> ### **[[Deno]]**
 > 
 > - **What it is:** A modern runtime created by the original developer of Node.js.
 > - **Why we need it:** Deno improves upon Node.js by addressing security concerns, providing built-in TypeScript support, and allowing module imports directly from URLs.
@@ -37,7 +40,7 @@
 >     - Simplified module management (no `node_modules`).
 >     - Supports TypeScript out of the box.
 > 
-> ### **[[Bun 1]]**
+> ### **[[Bun]]**
 > 
 > - **What it is:** A fast JavaScript runtime and toolkit, similar to Node.js and Deno.
 > - **Why we need it:** Bun focuses on speed and ease of use, combining runtime execution, a package manager, and a bundler into one tool.

@@ -12,7 +12,7 @@ og_screenshot_url: >-
 og-last-fetch: '2025-03-05T03:58:21.677Z'
 ---
 
-##### [[tooling/Software Development/Databases/Backend-as-a-Service/Turso]] is a [[Serverless]] [[Database Apps 1|Database App]] [[Backend-as-a-Service 1]]
+##### [[Turso]] is a [[Serverless]] [[Database Apps 1|Database App]] [[Backend-as-a-Service]]
 ![](https://i.imgur.com/mHurviW.png)
 
 <iframe style="aspect-ratio:16/9;width:100%;height:auto" src="https://www.youtube.com/embed/zAOcN0ZENLU?si=vg17HAApz5fC&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

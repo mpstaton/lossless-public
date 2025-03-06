@@ -14,9 +14,9 @@ og_screenshot_url: >-
 og-last-fetch: '2025-03-05T03:57:21.253Z'
 ---
 
-An [[Advanced Documents 1]] tool, part of [[Microsoft 365]], part of the [[Current Stack|Laerdal Tech Stack]]
+An [[Advanced Documents]] tool, part of [[Microsoft 365]], part of the [[Current Stack|Laerdal Tech Stack]]
 
 
 ![[Pasted image 20250109153133.png]]
 
-![[Advanced Documents 1]]
+![[Advanced Documents]]

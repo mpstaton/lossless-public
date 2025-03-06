@@ -11,5 +11,5 @@ og_screenshot_url: >-
 og-last-fetch: '2025-03-05T03:57:27.187Z'
 ---
 
-An [[Advanced Documents 1]] tool, the market leader.  
+An [[Advanced Documents]] tool, the market leader.  
 

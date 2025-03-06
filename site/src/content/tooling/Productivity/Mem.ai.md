@@ -10,4 +10,4 @@ og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5390e5cc603274d497ea7c42566c921108e8f9a2d7b193155c17f74ac4e4577b.jpeg
 og-last-fetch: '2025-03-05T03:57:21.895Z'
 ---
-Similar to [[Networked-Notes]] and [[Advanced Documents 1]], but using [[Generative AI]].  
+Similar to [[Networked-Notes]] and [[Advanced Documents]], but using [[Generative AI]].  

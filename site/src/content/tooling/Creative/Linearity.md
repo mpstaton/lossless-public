@@ -15,7 +15,7 @@ og-last-fetch: '2025-03-05T03:58:03.941Z'
 [[Animations]]
 [[Cognitive, Collaborative Tooling]]
 
-Similar to [[Affinity 1]]
+Similar to [[Affinity]]
 
 ##### [[Linearity]] is provides a suite of [[Design Tools]], with easy [[Animations]]
 ![[Screenshot 2025-02-25 at 3.49.10 PM_Linearity--Hero.png]]

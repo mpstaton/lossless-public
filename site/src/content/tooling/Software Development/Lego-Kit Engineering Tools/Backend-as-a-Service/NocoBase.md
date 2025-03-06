@@ -14,5 +14,5 @@ og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cc9d5f0f9d5fb7aa0a9561afa1045d7fee9897faf13a562b8afa80d90fee1b37.jpeg
 og-last-fetch: '2025-03-05T03:58:13.203Z'
 ---
-Another [[Database Apps 1]]
+Another [[Database Apps]]
 

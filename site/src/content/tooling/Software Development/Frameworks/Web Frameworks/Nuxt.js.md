@@ -1,4 +1,7 @@
+---
+url: https://nuxt.com/
+---
 
 
 
-An
+A [[Web Frameworks|Web Framework]] for [[Vue.js]] that handles [[Server Side Rendering]]

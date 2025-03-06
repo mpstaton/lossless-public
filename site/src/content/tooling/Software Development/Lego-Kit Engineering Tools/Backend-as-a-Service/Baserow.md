@@ -13,7 +13,7 @@ og_screenshot_url: >-
 og-last-fetch: '2025-03-05T03:58:15.311Z'
 ---
 
-[[Database Apps 1]], defaults to [[Open Source]] as an alternative to [[Airtable]]
+[[Database Apps]], defaults to [[Open Source]] as an alternative to [[Airtable]]
 
 https://youtu.be/9JFDqA1VpOA?si=wOu8-yvg8JmqT434
 

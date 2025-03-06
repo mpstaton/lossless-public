@@ -14,7 +14,7 @@ og_screenshot_url: >-
 og-last-fetch: '2025-03-05T03:58:08.849Z'
 ---
 [[Open Source]]
-[[Backend-as-a-Service 1]]
+[[Backend-as-a-Service]]
 Built on [[SQLite]]. 
 
 2022, Aug 09. [The FASTEST way to create a backend for your app](https://youtube.com/shorts/iYPIWFHXFg4?si=suYfyEt5RWAShn_J) [[CodingWithLewis]], [[YouTube]]. 

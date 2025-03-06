@@ -12,7 +12,7 @@ og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/556bf6b3049fb4f3673395b171fb9224e36bc14e8491f17d4a9aac8ab7bc46c7.jpeg
 og-last-fetch: '2025-03-05T03:57:36.920Z'
 ---
-[[Advanced Documents 1]]
+[[Advanced Documents]]
 ### CraftDocs managing the Innovation Cookbook:
 [[The Lossless Innovation Cookbook]] on [[CraftDocs]].
 ![[Screenshot 2025-01-28 at 9.05.25 PM.png]]
