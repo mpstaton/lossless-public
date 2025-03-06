@@ -8,6 +8,7 @@ interface Tool {
   image?: string;
   favicon?: string;
   description?: string;
+  description_site_cp?: string;
   tags?: string[];
   filename?: string;
   og_screenshot_url?: string;
@@ -53,7 +54,37 @@ const effectiveSiteName = getEffectiveSiteName(site_name, filename, url);
 // Only set displayTitle if title exists, otherwise leave it blank
 const displayTitle = title ? filterTitle(title, effectiveSiteName || "") : "";
 
-const effectiveDescription = description_site_cp || description;
+// More robust description handling
+const hasDescriptionSiteCp =
+  description_site_cp !== undefined &&
+  description_site_cp !== null &&
+  description_site_cp.trim() !== "";
+const hasDescription =
+  description !== undefined &&
+  description !== null &&
+  description.trim() !== "";
+
+console.log("Description availability:", {
+  hasDescriptionSiteCp,
+  hasDescription,
+  description_site_cp_type: typeof description_site_cp,
+  description_type: typeof description,
+  description_site_cp_value: description_site_cp,
+  description_value: description,
+});
+
+const effectiveDescription = hasDescriptionSiteCp
+  ? description_site_cp
+  : hasDescription
+    ? description
+    : "";
+
+// Log the final effective description
+console.log("Effective description:", {
+  value: effectiveDescription,
+  length: effectiveDescription.length,
+  isEmpty: effectiveDescription === "",
+});
 ---
 
 <div class="tool-card">

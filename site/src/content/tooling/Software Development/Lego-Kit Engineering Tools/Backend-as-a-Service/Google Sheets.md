@@ -1,8 +1,16 @@
 ---
-url: 'https://workspace.google.com/products/sheets/'
+url: 'https://workspace.google.com/intl/id/products/sheets/'
 tags:
   - Software-Development
   - Lego-Kit-Engineering-Tools
   - Backend-as-a-Service
+image: >-
+  https://lh3.googleusercontent.com/WOnvR9nZQBIPPKmiUdj53G6dfLuUpQAkXtnsvYwRDfr5Cn_ZpkACdeZFUMbXt3Wh4z0udpcBRk-7snLoa5xCSemBnMaeOK9B4wAT2A=w1600-rj-e365
+site_name: Google Workspace
+title: 'Google Spreadsheet: Template & Spreadsheet Online | Google Workspace'
+favicon: 'https://workspace.google.com/static/favicon.ico?cache=4926369'
+og-last-fetch: '2025-03-06T21:44:24.666Z'
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5a114f796ea6997d60640614d340b231af3e2113fc131fda82cc505a4eadd9a8.jpeg
 ---
 Actually, functions as a [[Database Apps 1|Database App]].

@@ -7,6 +7,11 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/722f1c5535fdcd19675be752438115d292be21edb3c6b21b33aa27f54590ef46.jpeg
 og_last_fetch: '2025-03-06T21:06:48.895Z'
+image: 'https://tailwindcss.com/opengraph-image.jpg?22502194f1a254bc'
+site_name: Tailwind CSS
+title: Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.
+favicon: 'https://tailwindcss.com/favicon.ico'
+og-last-fetch: '2025-03-06T21:44:14.300Z'
 ---
 A [[Web Frameworks|Web Framework]] for managing [[CSS]]. It's [[Opinionated]] about [[Inline Styles]]
 
