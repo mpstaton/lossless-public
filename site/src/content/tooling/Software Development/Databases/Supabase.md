@@ -3,6 +3,8 @@ tags:
   - database
 ---
 Supabase is actually built on the [[Open Source]] [[Databases|Database]] [[Postgres]].
+
+https://youtu.be/cmF64GU5RZY?si=SD3aZn1Dx7qXSbHA
 ### Supabase has templates and starter code to ease getting started
 [[Supabase]] provides example code in common [[Programming Languages]] and [[Web Frameworks]] including [[NEXT.js]], [[Svelte]], and [[React]]. 
 ![[Screenshot 2025-01-31 at 10.57.39 AM_Supabase--Starters.png]]

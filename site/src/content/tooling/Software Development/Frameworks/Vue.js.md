@@ -21,3 +21,5 @@ Created by [[Evan You]], also the creator of [[Vite]].
 https://youtu.be/PyiBDWWJ-9w?si=UAT6sAl2Me1PMXFv
 
 https://youtube.com/shorts/Aabh97P31FA?si=Xljro1HfxAbQd2iC
+
+https://youtube.com/playlist?list=PL06MUQt-_wltZJLflDQPs1IennEwcSSKI&si=2QkjxVmy4Afosjpg

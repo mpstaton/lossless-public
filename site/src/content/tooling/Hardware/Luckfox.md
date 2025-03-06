@@ -12,3 +12,4 @@ og-last-fetch: '2025-03-05T03:57:24.082Z'
 ---
 Competing with [[Nvidia]] on [[Graphics Processing Units|GPU Architecture]] computing hardware. 
 
+https://youtu.be/1W7ku0vcA1k?si=mB47d4s6XFnjzoyR

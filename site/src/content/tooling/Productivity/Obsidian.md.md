@@ -1,6 +1,12 @@
 [[Markdown Editor]]
 
 https://youtu.be/37aJiD0ey-8?si=ZzdTMlFH5le8w1Rt
+
+https://youtu.be/qAsGO5N7OCk?si=t_LVYolNR57pPNKt
+
+https://youtu.be/05Jo08vwwMI?si=fmwSadfqpqi7D9Iv
+
+https://youtu.be/-J1v65yZdcQ?si=FvyUPylHF-ercOp_
 ### Obsidian using Properties in [[Markup]]
 ![[Screenshot 2025-01-31 at 1.14.17 PM_Obsidian--Properties.png]]
 ### Obsidian maintains [[Release Notes]].
@@ -33,3 +39,4 @@ Here's a screenshot of [[Release Notes]] from [[Obsidian.md]].
 2024, January 11. [Simple way to integrate Astro with Obsidian](https://youtu.be/dz3GOp4hN50?si=Q97-WXPD2GTZ5sDx). Lazar Nikolov.
 
 Use "symbolic links" through the command line.  
+https://youtu.be/DoC8Y2qWkyk?si=XcN54Ntz6_g8WCo_

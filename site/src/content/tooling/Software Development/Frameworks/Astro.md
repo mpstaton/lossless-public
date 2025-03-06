@@ -25,8 +25,10 @@ https://youtu.be/bGW6ldQ69Fw?si=FgLstcKbqGgB91aE
 
 https://youtu.be/Q1GJpcJLXhQ?si=3zb5CxBXmmmF1pQO
 
+https://youtu.be/tWEx_cm0cf8?si=heNm0oOMMiE8Dfeu
+
 https://youtu.be/kIftpNnN_8I?si=wi_AROloNjgEQFJ_
-### Getting Started with Astro
+### [[Getting Started]] with Astro
 [[Astro]] does a lot to help people with [[Getting Started]]
 
 ![[Screenshot 2025-01-22 at 1.03.36 PM.png]]
