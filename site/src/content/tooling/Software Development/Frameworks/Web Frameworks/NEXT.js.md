@@ -8,7 +8,7 @@ image: 'https://assets.vercel.com/image/upload/front/nextjs/twitter-card.png'
 site_name: Next.js by Vercel
 title: Next.js by Vercel - The React Framework
 favicon: 'https://nextjs.org/favicon.ico'
-og-last-fetch: '2025-03-06T21:07:11.693Z'
+og_last_fetch: '2025-03-06T21:07:11.693Z'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eb7997fa534a94dc3d8fee21cb75aa0b430b825be109834e4450033de1bbb555.jpeg
 ---

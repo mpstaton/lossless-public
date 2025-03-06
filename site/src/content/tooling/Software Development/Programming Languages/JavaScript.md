@@ -7,7 +7,7 @@ site_name: Ecma International
 title: ECMA-262 - Ecma International
 favicon: >-
   https://www.ecma-international.org/wp-content/uploads/ecma-favicon@2x-300x300.png
-og-last-fetch: '2025-03-06T21:04:04.598Z'
+og_last_fetch: '2025-03-06T21:04:04.598Z'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ea6d742078d0a298ddac4afe56a53c161c4b9c2d09fb6c57621578095194f890.jpeg
 ---

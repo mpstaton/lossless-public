@@ -8,7 +8,7 @@ tags:
   - Creative
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c0f64b5de366cf8f303b5b8be64ef39d13087eb16002e41c9faa2054bd1bee05.jpeg
-og-last-fetch: '2025-03-05T03:57:54.512Z'
+og_last_fetch: '2025-03-05T03:57:54.512Z'
 ---
 
 [[Computer-Generated Imagery|CGI]] for mathematical concepts. [[3D Graphics]].  [[Video Generator]]. [[VFX|Visual Effects]]

@@ -8,7 +8,7 @@ tags:
   - Creative
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7f39b43a9ca4f463936049e7a9f94bcdb87ae1c5074a57f84f026cd94bd42303.jpeg
-og-last-fetch: '2025-03-05T03:57:55.631Z'
+og_last_fetch: '2025-03-05T03:57:55.631Z'
 ---
 ### Affinity Designer
 

@@ -1,6 +1,6 @@
 ---
 url: 'https://contentsquare.com/'
-youtube-url: 'https://www.youtube.com/@Contentsquare'
+youtube_url: 'https://www.youtube.com/@Contentsquare'
 image: >-
   https://images.ctfassets.net/gwbpo1m641r7/53LBfL1FUzJmM8Kpc4K9i/017e061edf41dfde5f3254502dbb7087/social-image-contentsquare.png
 site_name: 'Contentsquare: all'
@@ -10,7 +10,7 @@ tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a61bebc689f99610f965f262c490e65f0e7e3c0f390105fd2128ba44bfff650c.jpeg
-og-last-fetch: '2025-03-05T03:57:59.562Z'
+og_last_fetch: '2025-03-05T03:57:59.562Z'
 ---
 
 [[Laerdal Marketing]]

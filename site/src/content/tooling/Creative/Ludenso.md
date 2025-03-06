@@ -14,6 +14,6 @@ tags:
   - Creative
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2edbf9cc2bc14ff13e265130646337dd5f08b70a542dead656eba5cca2619397.jpeg
-og-last-fetch: '2025-03-05T03:58:09.509Z'
+og_last_fetch: '2025-03-05T03:58:09.509Z'
 ---
 

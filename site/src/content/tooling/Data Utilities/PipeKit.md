@@ -15,6 +15,6 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/189470b8cea28249fddcfbed70b1e11ae3b28ebc9c57dfef17c953de39afbdeb.jpeg
-og-last-fetch: '2025-03-05T03:58:07.475Z'
+og_last_fetch: '2025-03-05T03:58:07.475Z'
 ---
 

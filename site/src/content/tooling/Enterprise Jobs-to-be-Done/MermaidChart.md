@@ -5,7 +5,7 @@ title: >-
   Mermaid Chart - Create complex, visual diagrams with text. A smarter way of
   creating diagrams.
 favicon: 'https://www.mermaidchart.com/img/favicon.ico'
-og-last-fetch: '2025-03-06T21:01:54.327Z'
+og_last_fetch: '2025-03-06T21:01:54.327Z'
 tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-

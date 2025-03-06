@@ -1,5 +1,5 @@
 ---
-youtube-url: https://youtube.com/@getwebstudio
+youtube_url: https://youtube.com/@getwebstudio
 ---
 
 https://youtu.be/W43QpuT3fW0?si=AjlrrdSE3adZfDsQ

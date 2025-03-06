@@ -10,7 +10,7 @@ tags:
   - Web-Frameworks
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c889b62860c33a44dc8a7a9613e6234d218661b6a081ebcb9e51d4c04adabd23.jpeg
-og-last-fetch: '2025-03-05T03:57:58.160Z'
+og_last_fetch: '2025-03-05T03:57:58.160Z'
 ---
 A light, stable [[Web Frameworks|Web Framework]] in [[Python]] designed to get developers up and running with an [[Application Programming Interface|API]].
 

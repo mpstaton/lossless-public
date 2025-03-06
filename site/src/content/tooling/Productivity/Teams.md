@@ -1,7 +1,7 @@
 ---
 aliases:
   - Microsoft Teams
-parent-org: "[[Microsoft]]"
+parent_org: "[[Microsoft]]"
 ---
 [[Current Stack]]
 

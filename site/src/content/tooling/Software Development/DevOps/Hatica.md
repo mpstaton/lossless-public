@@ -8,6 +8,6 @@ tags:
   - DevOps
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/05d0981c63a08f749a8004e941502dcbea1da01d43f255a930e6f680c1d8abe9.jpeg
-og-last-fetch: '2025-03-05T03:58:09.119Z'
+og_last_fetch: '2025-03-05T03:58:09.119Z'
 ---
 

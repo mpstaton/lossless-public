@@ -13,7 +13,7 @@ tags:
   - Frameworks
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/269022d20d832a81a15d40cced2010d58e673ca8cee656f3f6ac3031573640be.jpeg
-og-last-fetch: '2025-03-05T03:58:00.277Z'
+og_last_fetch: '2025-03-05T03:58:00.277Z'
 ---
 
 A [[Framework]] in [[Rust]]

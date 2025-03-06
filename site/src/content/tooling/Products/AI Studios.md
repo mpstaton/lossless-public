@@ -10,6 +10,6 @@ tags:
   - Products
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6ef93870f8ed76270b8619ad605ec3ac8d2cd97b58fb9205a8e311117880b243.jpeg
-og-last-fetch: '2025-03-05T03:57:26.979Z'
+og_last_fetch: '2025-03-05T03:57:26.979Z'
 ---
 

@@ -5,7 +5,7 @@ image: >-
 site_name: Django Project
 title: Django
 favicon: 'https://static.djangoproject.com/img/icon-touch.e4872c4da341.png'
-og-last-fetch: '2025-03-05T03:58:03.727Z'
+og_last_fetch: '2025-03-05T03:58:03.727Z'
 tags:
   - Web-Frameworks
   - Software-Development

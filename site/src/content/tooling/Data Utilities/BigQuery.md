@@ -1,6 +1,6 @@
 ---
 url: 'https://cloud.google.com/bigquery'
-parent-org: '[[Google]]'
+parent_org: '[[Google]]'
 zinger: 'From data warehouse to a unified, AI-ready data platform'
 description: >-
   BigQuery is a fully managed, AI-ready data analytics platform that helps you
@@ -16,6 +16,6 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2d032dc582689e8c0ecea7fc7bfa31899935ccda141d15f853627492ec5e02ab.jpeg
-og-last-fetch: '2025-03-05T03:57:54.687Z'
+og_last_fetch: '2025-03-05T03:57:54.687Z'
 ---
 [[Data Analysis]]

@@ -1,6 +1,6 @@
 ---
 url: 'https://react.dev/'
-parent-org: '[[Meta]]'
+parent_org: '[[Meta]]'
 image: 'https://react.dev/images/og-home.png'
 site_name: React
 title: React
@@ -11,7 +11,7 @@ tags:
   - Frameworks
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ddc6a11b6e0607cf0fced41dbc927d3f8e8cc05491223bb082beae0cd2b4bdef.jpeg
-og-last-fetch: '2025-03-05T03:58:01.326Z'
+og_last_fetch: '2025-03-05T03:58:01.326Z'
 ---
 Created and maintained by [[Meta]]. It is the most popular, thus [[Market Standard]], for [[Front-End]] development.  It's essentially a [[JavaScript]] library that enables [[Component-Based Software Architecture]]. 
 

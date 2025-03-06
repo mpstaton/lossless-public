@@ -9,7 +9,7 @@ tags:
   - Creative
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5281a2db746af1a387b686868a974a8571bb76db20d7ba7bae522db749c25589.jpeg
-og-last-fetch: '2025-03-05T03:58:03.941Z'
+og_last_fetch: '2025-03-05T03:58:03.941Z'
 ---
 [[Creative Arts]]
 [[Animations]]

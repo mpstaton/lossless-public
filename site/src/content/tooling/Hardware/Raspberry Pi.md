@@ -1,7 +1,7 @@
 ---
 url: 'https://www.raspberrypi.com/'
 zinger: The new standard for embedded computing.
-wikipedia-url: 'https://en.wikipedia.org/wiki/Raspberry_Pi'
+wikipedia_url: 'https://en.wikipedia.org/wiki/Raspberry_Pi'
 image: >-
   https://assets.raspberrypi.com/static/default-opengraph-f1d3121abeef861889c52dd4a2813df9.png
 site_name: Raspberry Pi
@@ -11,7 +11,7 @@ tags:
   - Hardware
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/78c8099bf68c11fe1e2b95c18f4afde3c5a1208d14222b7af377d1db57bab4c3.jpeg
-og-last-fetch: '2025-03-05T03:57:18.995Z'
+og_last_fetch: '2025-03-05T03:57:18.995Z'
 ---
 
 

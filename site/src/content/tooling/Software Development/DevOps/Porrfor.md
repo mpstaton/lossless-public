@@ -3,7 +3,7 @@ url: 'https://porffor.dev/'
 site_name: Porffor
 title: Porffor
 favicon: 'https://porffor.dev/logo.png'
-og-last-fetch: '2025-03-06T21:04:37.379Z'
+og_last_fetch: '2025-03-06T21:04:37.379Z'
 tags:
   - Software-Development
   - DevOps

@@ -1,7 +1,7 @@
 ---
-github-url: https://github.com/astral-sh/uv
-created-by: "[[Microsoft]]"
-docs-url: https://docs.astral.sh/uv/
+github_url: https://github.com/astral-sh/uv
+created_by: "[[Microsoft]]"
+docs_url: https://docs.astral.sh/uv/
 ---
 
 

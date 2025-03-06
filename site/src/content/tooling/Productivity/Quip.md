@@ -1,5 +1,5 @@
 ---
-parent-org: "[[Salesforce]]"
+parent_org: "[[Salesforce]]"
 ---
 
 

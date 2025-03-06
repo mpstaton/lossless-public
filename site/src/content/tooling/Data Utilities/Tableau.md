@@ -9,7 +9,7 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9f08b5a99c6c9f62c7b1c97611500f5db6b140a14c8c8c4a5b34b00faaad2427.jpeg
-og-last-fetch: '2025-03-05T03:57:50.382Z'
+og_last_fetch: '2025-03-05T03:57:50.382Z'
 ---
 
 Einstein [[AI Copilots]]

@@ -22,6 +22,7 @@ interface Props {
   image?: string;
   favicon?: string;
   description?: string;
+  description_site_cp?: string;
   tags?: string[];
   filename?: string;
   og_screenshot_url?: string;
@@ -37,6 +38,7 @@ const {
   image = directProps.image,
   favicon = directProps.favicon,
   description = directProps.description,
+  description_site_cp = directProps.description_site_cp,
   tags = directProps.tags || [],
   filename = directProps.filename,
   og_screenshot_url = directProps.og_screenshot_url,
@@ -50,6 +52,8 @@ const effectiveSiteName = getEffectiveSiteName(site_name, filename, url);
 
 // Only set displayTitle if title exists, otherwise leave it blank
 const displayTitle = title ? filterTitle(title, effectiveSiteName || "") : "";
+
+const effectiveDescription = description_site_cp || description;
 ---
 
 <div class="tool-card">
@@ -73,7 +77,11 @@ const displayTitle = title ? filterTitle(title, effectiveSiteName || "") : "";
       </div>
       <h4>{displayTitle}</h4>
     </div>
-    {description && <p class="tool-description">{description}</p>}
+    {
+      effectiveDescription && (
+        <p class="tool-description">{effectiveDescription}</p>
+      )
+    }
     {
       safeTags.length > 0 && (
         <div class="tool-tags">

@@ -1,5 +1,5 @@
 ---
-github-url: https://github.com/originjs/vite-plugin-federation
+github_url: https://github.com/originjs/vite-plugin-federation
 zinger: Module Federation for vite & rollup
 ---
 [[Vite]]

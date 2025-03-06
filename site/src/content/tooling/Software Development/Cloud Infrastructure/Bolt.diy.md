@@ -1,5 +1,5 @@
 ---
-github-url: https://github.com/stackblitz-labs/bolt.diy
+github_url: https://github.com/stackblitz-labs/bolt.diy
 ---
 [[Open Source]] version of [[Tooling/Software Development/Cloud Infrastructure/Bolt.new]], a [[Open Source, DIY Variant|DIY Variant]]
 

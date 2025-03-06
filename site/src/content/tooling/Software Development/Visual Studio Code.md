@@ -1,7 +1,7 @@
 ---
 aliases:
   - VS Code
-parent-org: "[[Microsoft]]"
+parent_org: "[[Microsoft]]"
 ---
 a [[Text Editors or IDEs|Text Editor]] created and maintained by [[Microsoft]].
 

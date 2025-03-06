@@ -2,7 +2,7 @@
 url: 'https://www.opengraph.io/'
 hero: '![[Screenshot 2025-02-23 at 1.29.09 PM_OpenGraph-io--Hero.png]]'
 zinger: null
-og-last-fetch: '2025-03-06T21:03:56.576Z'
+og_last_fetch: '2025-03-06T21:03:56.576Z'
 tags:
   - Software-Development
   - Lego-Kit-Engineering-Tools

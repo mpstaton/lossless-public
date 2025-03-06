@@ -12,7 +12,7 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ba7a0f941d05b93774de21b8fb035d34839c5ebec8e5c61d1684fe3a4428f4bf.jpeg
-og-last-fetch: '2025-03-05T03:57:53.338Z'
+og_last_fetch: '2025-03-05T03:57:53.338Z'
 ---
 [[Open Source]] [[Data Analysis]] using [[Agentic AI]]
 

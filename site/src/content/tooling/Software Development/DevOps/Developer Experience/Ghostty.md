@@ -1,5 +1,5 @@
 ---
-github-url: 'https://github.com/ghostty-org'
+github_url: 'https://github.com/ghostty-org'
 url: 'https://ghostty.org'
 image: 'https://ghostty.org/social-share-card.jpg'
 site_name: Ghostty
@@ -11,8 +11,8 @@ tags:
   - Software-Development
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d92a20acd486acdbe6a150ad75bd9948e99e11d308d7601463be8a2320f8f8dc.jpeg
-og-last-fetch: 2025-03-05T03:57:20.812Z
-docs-url: 'https://ghostty.org/docs'
+og_last_fetch: 2025-03-05T03:57:20.812Z
+docs_url: 'https://ghostty.org/docs'
 ---
 An [[Open Source]] [[Terminal Emulators]]
 

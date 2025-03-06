@@ -11,6 +11,6 @@ tags:
   - Creative
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8b823376178ec491af93605c44917c66d41590cc5222772ddd9f24476ea9cf6f.jpeg
-og-last-fetch: '2025-03-05T03:57:59.836Z'
+og_last_fetch: '2025-03-05T03:57:59.836Z'
 ---
 [[Interactive Video]]

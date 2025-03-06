@@ -11,7 +11,7 @@ favicon: >-
   https://res.cloudinary.com/hevo/image/upload/v1685407994/hevo-website/favicons/favicon-32x32_ovcld6.png
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8b466fd98e47d31eddad2c01dec4ecfab1bc3d1950ff59b8b5f7d4be47ca8d52.jpeg
-og-last-fetch: '2025-03-05T03:58:10.147Z'
+og_last_fetch: '2025-03-05T03:58:10.147Z'
 ---
 
 

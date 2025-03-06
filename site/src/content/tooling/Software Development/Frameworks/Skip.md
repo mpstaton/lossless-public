@@ -1,5 +1,5 @@
 ---
-github-url: 'https://github.com/SkipLabs/skip'
+github_url: 'https://github.com/SkipLabs/skip'
 url: 'https://skiplabs.io/'
 description: Skip makes your backend reactive so you can ship better features faster
 image: 'https://skiplabs.io/skip-opengraph.png'
@@ -9,7 +9,7 @@ favicon: 'https://skiplabs.io/favicon.svg'
 tags:
   - Software-Development
   - Frameworks
-og-last-fetch: '2025-03-05T03:58:02.852Z'
+og_last_fetch: '2025-03-05T03:58:02.852Z'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/032126250487ac1c11d8b737a83c11d70f91b9cde560ce45f9a3962e4846e7b9.jpeg
 ---

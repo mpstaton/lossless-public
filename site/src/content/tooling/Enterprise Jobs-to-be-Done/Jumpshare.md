@@ -9,7 +9,7 @@ tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/844df42efb9ecc1bdda48b735b1cbb6d8ecd910bb490c81b80c1d4fe183e8110.jpeg
-og-last-fetch: '2025-03-05T03:57:51.121Z'
+og_last_fetch: '2025-03-05T03:57:51.121Z'
 ---
 [[Asynchronous Communication]], [[Cognitive, Collaborative Tooling]]
 ##### [[Jumpshare]] is an easy way to share any media, but with more sophisticated tooling.

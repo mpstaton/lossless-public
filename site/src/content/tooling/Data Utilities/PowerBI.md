@@ -1,5 +1,5 @@
 ---
-parent-org: "[[Microsoft]]"
+parent_org: "[[Microsoft]]"
 tags:
   - data-reporting
 ---

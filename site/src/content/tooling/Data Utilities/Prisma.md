@@ -9,7 +9,7 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/21eb8d2b8a560f67e14af1a9c4078967a03840fc96a86c2830ce946376c912ee.jpeg
-og-last-fetch: '2025-03-05T03:57:58.253Z'
+og_last_fetch: '2025-03-05T03:57:58.253Z'
 ---
 A code library [[Object-Relational Mapper]] that works with modern [[Web Frameworks]] and [[Databases]].
 

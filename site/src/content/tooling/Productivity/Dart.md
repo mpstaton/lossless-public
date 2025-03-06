@@ -12,7 +12,7 @@ tags:
   - Productivity
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/48983fdb2c7f075d88429fd6d99983a6ae6d62a04bf0841d32bf7970e25a6dd7.jpeg
-og-last-fetch: '2025-03-05T03:57:36.771Z'
+og_last_fetch: '2025-03-05T03:57:36.771Z'
 ---
 
 

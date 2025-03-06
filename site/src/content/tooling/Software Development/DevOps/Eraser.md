@@ -12,7 +12,7 @@ tags:
   - Software-Development
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/97f27693524788f7dc3d4ed8aa41b13ad80e0b87d6b273545bc876d0f032546f.jpeg
-og-last-fetch: '2025-03-05T03:57:20.162Z'
+og_last_fetch: '2025-03-05T03:57:20.162Z'
 ---
 
 An example of [[Visual Software Development]]. 

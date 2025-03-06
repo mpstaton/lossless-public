@@ -1,5 +1,5 @@
 ---
-expanded-acronym: Cascading Style Sheets
+expanded_acronym: Cascading Style Sheets
 ---
 https://youtu.be/gj2REv4D380?si=P8UWBX3L5Ei7pOyE
 

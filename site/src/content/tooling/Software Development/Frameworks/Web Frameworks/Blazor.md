@@ -1,7 +1,7 @@
 ---
-wikipedia-url: 'https://en.m.wikipedia.org/wiki/Blazor'
+wikipedia_url: 'https://en.m.wikipedia.org/wiki/Blazor'
 url: 'https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor'
-parent-org: '[[Microsoft]]'
+parent_org: '[[Microsoft]]'
 tags:
   - Software-Development
   - Frameworks
@@ -9,7 +9,7 @@ tags:
 image: 'https://dotnet.microsoft.com/blob-assets/images/dotnet-icons/square.png'
 site_name: Microsoft
 title: Blazor | Build client web apps with C# | .NET
-og-last-fetch: '2025-03-06T21:07:14.512Z'
+og_last_fetch: '2025-03-06T21:07:14.512Z'
 ---
 
 Made by [[Microsoft]]

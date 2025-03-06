@@ -16,6 +16,6 @@ title: 'RethinkDB: the open-source database for the realtime web'
 favicon: 'https://rethinkdb.com/favicon.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b72c7024dc043ca77c44e242b4361c4ef08510faa5ee5882bad3b845cb00d77c.jpeg
-og-last-fetch: '2025-03-05T03:58:05.732Z'
+og_last_fetch: '2025-03-05T03:58:05.732Z'
 ---
 

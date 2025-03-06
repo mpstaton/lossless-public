@@ -8,10 +8,10 @@ image: >-
 site_name: Figma
 title: 'Figma: The Collaborative Interface Design Tool'
 favicon: 'https://static.figma.com/app/icon/1/icon-192.png'
-youtube-url: 'https://www.youtube.com/@Figma'
+youtube_url: 'https://www.youtube.com/@Figma'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/68fedf64924894e13bb99abb21c12be64ecfb0387bc39c7acd2c64cd5949932f.jpeg
-og-last-fetch: '2025-03-05T03:58:04.908Z'
+og_last_fetch: '2025-03-05T03:58:04.908Z'
 ---
 [[Realtime Collaboration]]
 

@@ -12,7 +12,7 @@ tags:
   - Creative
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/879e545e800c27ae844bc77226e334913e75f157a5ffec75f4ca0221ac58a3c4.jpeg
-og-last-fetch: '2025-03-05T03:57:58.623Z'
+og_last_fetch: '2025-03-05T03:57:58.623Z'
 ---
 
 [[Color Management]]

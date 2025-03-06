@@ -6,7 +6,7 @@ site_name: Parabola
 title: Parabola | Make easy work of tough logic
 favicon: >-
   https://cdn.prod.website-files.com/660c64c653c676f877b3ef55/6632c3618655aa755163b372_Favicon.png
-og-last-fetch: '2025-03-05T03:57:28.418Z'
+og_last_fetch: '2025-03-05T03:57:28.418Z'
 tags:
   - Productivity
 og_screenshot_url: >-

@@ -8,7 +8,7 @@ tags:
   - Productivity
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/3dd1fecdea603fad3767ae8bfef69361bf7d252ac9069b4a90c5d33689fc5a9a.jpeg
-og-last-fetch: '2025-03-05T03:57:30.939Z'
+og_last_fetch: '2025-03-05T03:57:30.939Z'
 ---
 
 Similar to [[ScreenStudio]]
