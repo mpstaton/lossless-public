@@ -1,4 +1,6 @@
 [[Markdown Editor]]
+
+https://youtu.be/37aJiD0ey-8?si=ZzdTMlFH5le8w1Rt
 ### Obsidian using Properties in [[Markup]]
 ![[Screenshot 2025-01-31 at 1.14.17 PM_Obsidian--Properties.png]]
 ### Obsidian maintains [[Release Notes]].

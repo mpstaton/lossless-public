@@ -15,3 +15,6 @@ A [[Terminal Emulators]] that helps with [[Data Analysis]].
 
 https://youtu.be/KF5dtxVsn1E?si=Ixy9gw9vpL1siEBo
 
+https://youtube.com/shorts/EpWV3qb9pv4?si=k6w_uzaazDw15Nwa
+
+https://youtu.be/nbbVJGNxnic?si=6YF0lNkQhq_iXpti

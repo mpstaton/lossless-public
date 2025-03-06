@@ -1,0 +1,18 @@
+
+:root {
+  text-wrap: balance;
+
+  --clr-mod__default-contrast: 0.86;
+
+  text-area {
+    field-sizing: content;
+  }
+
+  .button {
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    border: 1px solid oklch(from var(--clr--btn__primary) calc(1 + var(--clr-mod__default-contrast)));
+    background-color: oklch(var(--clr--btn__primary));
+    color: oklch(var(--clr--btn__primary-text));
+  }
+}

@@ -26,6 +26,8 @@ https://youtu.be/gjxY0aVdoCY?si=NVmb5I2lFbkYae3h
 
 https://youtu.be/xfzNXa8WYW8?si=TGnk-BOj2-Q_NChV
 
+https://youtu.be/3EnathFYgz8?si=AsMUXSTeGVGaeftJ
+
 | Version | First-Release | Stable-Release | <- Announcement                                         |
 | ------- | ------------- | -------------- | ------------------------------------------------------- |
 | 19      | 2024-04       | 2024-12-05     | [React v19](https://react.dev/blog/2024/12/05/react-19) |

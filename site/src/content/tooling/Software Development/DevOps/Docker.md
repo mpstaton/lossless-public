@@ -26,6 +26,7 @@ https://youtu.be/Ud7Npgi6x8E?si=AFr_dvxpi80y4mLP
 
 https://youtu.be/mSC1Igmz1tY?si=ygrdTP9K1yozjWkj
 
+https://youtube.com/shorts/IeEUvhTebcM?si=1N6BZwJAwSaqtfpa
 ##### Docker focuses on [[Getting Started]]
 [[Docker]] manages the Docker [[Visual Studio Code|VS Code]] [[Plug-ins,  Add-ons,  Extensions|Extension]], which immediately thrusts the user into [[Getting Started]] documentation. 
 ![[Screenshot From 2024-12-25 02-38-53_Docker__VSCode--Getting-Started.png]]

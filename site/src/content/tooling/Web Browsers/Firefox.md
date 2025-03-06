@@ -14,3 +14,5 @@ og-last-fetch: '2025-03-05T03:57:18.142Z'
 ---
 
 https://youtu.be/jISakcFy5qE?si=nrn4TaoxPF5nsQJw
+
+https://youtu.be/Rc96ISKh2OM?si=hE5wYeLF879Dso2J

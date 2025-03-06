@@ -16,3 +16,5 @@ og-last-fetch: '2025-03-05T03:57:56.467Z'
 [[Computer-Generated Imagery]], [[Open Source]]
 
 2025, Jan 04. [Make this professional CGI in Blender and AE | VFX in Blender](https://youtu.be/GbPPKR2nQmk?si=LuV9_lSHANvqq66H). [[YouTube]]
+
+https://youtu.be/U_NHijmIF3E?si=djA8X-I3H0CkcnSg

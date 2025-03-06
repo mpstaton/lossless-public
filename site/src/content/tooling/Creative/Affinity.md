@@ -12,9 +12,9 @@ og-last-fetch: '2025-03-05T03:57:55.631Z'
 ---
 ### Affinity Designer
 
+ https://youtu.be/VJQ8Mtr4czk?si=dJkSUr1ky8VaQDrW
  
- 
-
+https://youtu.be/uJTnE7Ib06A?si=Zj7HiSEfAn4ste45
 ##### [[Affinity]] Designer is the most intuitive, yet powerful, vector art studio. 
 <iframe 
 style="aspect-ratio:16/9;width:100%;height:auto" 
