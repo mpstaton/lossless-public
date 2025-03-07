@@ -15,14 +15,27 @@ const { tag } = Astro.props;
     background: var(--clr-lossless-primary-dark);
     color: var(--clr-lossless-primary-glass);
     font-size: var(--fs-300);
-    padding: 0.2em 0.6em;
+    padding: 0 0.2em;
     border-radius: 0.25em;
     white-space: nowrap;
+    display: inline-flex;
+    transition: all 0.2s ease-in-out;
 
     & p {
-      font-size: var(--fs-200);
+      font-size: var(--fs-300);
       margin: 0;
-      padding: 0;
+      padding: .3em .2em;
     }
+  }
+
+    .tool-tag:hover {
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 20%
+    );
+    transform: translateY(-2px);
+    margin-bottom: 0;
+  }
   }
 </style>

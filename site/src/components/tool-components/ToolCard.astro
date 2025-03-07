@@ -1,6 +1,7 @@
 ---
 import { filterTitle, getEffectiveSiteName } from "@utils/toolUtils";
 import TagChip from "./TagChip.astro";
+import TagCloud from "./TagCloud.astro";
 
 interface Tool {
   site_name?: string;
@@ -114,15 +115,7 @@ console.log("Effective description:", {
         <p class="tool-description">{effectiveDescription}</p>
       )
     }
-    {
-      safeTags.length > 0 && (
-        <div class="tool-tags">
-          {safeTags.map((tag) => (
-            <TagChip tag={tag} />
-          ))}
-        </div>
-      )
-    }
+    <TagCloud tags={tags} />
   </a>
 </div>
 
@@ -274,18 +267,11 @@ console.log("Effective description:", {
     font-family: var(--ff-legible);
     font-weight: var(--fw-regular);
     font-size: var(--fs-300);
-    margin-bottom: 0.75em;
+    margin-bottom: 0.5em;
     flex-grow: 1;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-  }
-
-  .tool-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    margin-top: auto;
   }
 </style>

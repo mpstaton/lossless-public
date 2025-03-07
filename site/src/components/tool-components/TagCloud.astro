@@ -1,23 +1,38 @@
+---
 import TagChip from "./TagChip.astro";
 
 interface Props {
   tags: string[];
 }
 
-
-
+const { tags } = Astro.props;
 
 const safeTags = tags || [];
+---
 
 
 <div class="tool-cloud">
-{
-  safeTags.length > 0 && (
-    <div class="tool-tags">
-      {safeTags.map((tag) => (
+  <div class="tool-tags">
+    {safeTags.length > 0 && 
+      safeTags.map((tag) => (
         <TagChip tag={tag} />
-      ))}
-    </div>
-  )
-}
+      ))
+    }
+  </div>
 </div>
+
+<style>
+  .tool-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .tool-tags {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5em;
+    width: 100%;
+  }
