@@ -21,10 +21,14 @@ export const toolCollection = defineCollection({
     url: z.string(),
     site_name: z.string().optional(),
     title: z.string().optional(),
+    zinger: z.string().optional(),
     image: z.string().optional(),
     favicon: z.string().optional(),
     description: z.string().optional(),
-    tags: z.array(z.string()).optional()
+    description_site_cp: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+    og_screenshot_url: z.string().optional(),
+    og_last_fetch: z.string().optional(),
   })
 });
 
