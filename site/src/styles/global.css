@@ -79,11 +79,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, p {
-    font-family: var(--ff-base);
-    font-size: var(--fs-400);
     text-decoration: none;
-    color: var(--clr-lossless-primary-light);
-}
+    color: var(--clr-body);
+    font-family: var(--ff-base);
+};
 
 .separator--thin {
     width: 100%;

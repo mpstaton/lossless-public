@@ -90,7 +90,7 @@ console.log("Effective description:", {
 ---
 
 <div class="tool-card">
-  <a href={url} target="_blank" rel="noopener noreferrer">
+  <div class="content-wrapper">
     {
       (image || og_screenshot_url) && (
         <div class="tool-card-image">
@@ -106,7 +106,9 @@ console.log("Effective description:", {
     <div class="tool-card__header">
       <div class="tool-card__site-name">
         {favicon && <img class="tool-favicon" src={favicon} alt="" />}
-        <h2>{effectiveSiteName}</h2>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <h2>{effectiveSiteName}</h2>
+        </a>
       </div>
       <h4>{displayTitle}</h4>
     </div>
@@ -116,7 +118,9 @@ console.log("Effective description:", {
       )
     }
     <TagCloud tags={tags} />
-  </a>
+    
+    </div>
+
 </div>
 
 <script>
@@ -179,6 +183,7 @@ console.log("Effective description:", {
       var(--clr-lossless-primary-dark) 90%
     );
     border: 1px solid var(--clr-lossless-ui-btn-border);
+    color: aliceblue;
     padding: 0.15em;
     border-radius: 1em;
     transition: all 0.2s ease-in-out;
@@ -198,12 +203,10 @@ console.log("Effective description:", {
     margin-bottom: 0.25em;
   }
 
-  .tool-card a {
+  .tool-card .content-wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
-    text-decoration: none;
-    color: inherit;
     padding: 0.5em;
   }
 

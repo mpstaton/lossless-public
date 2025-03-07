@@ -6,35 +6,34 @@ interface Props {
 const { tag } = Astro.props;
 ---
 
-<span class="tool-tag">
+<a href={`/toolkit/${tag}`} class="tool-tag">
   <p>{tag}</p>
-</span>
+</a>
 
 <style>
   .tool-tag {
     background: var(--clr-lossless-primary-dark);
     color: var(--clr-lossless-primary-glass);
-    font-size: var(--fs-300);
-    padding: 0 0.2em;
     border-radius: 0.25em;
     white-space: nowrap;
-    display: inline-flex;
     transition: all 0.2s ease-in-out;
-
+    padding: 0.2em 0.3em;
+    display: inline-flex;
+    align-items: center;
+    height: fit-content;
     & p {
-      font-size: var(--fs-300);
+      font-size: var(--fs-200);
       margin: 0;
-      padding: .3em .2em;
     }
   }
 
     .tool-tag:hover {
-    background: color-mix(
-      in oklab,
-      var(--clr-lossless-primary-glass),
-      var(--clr-lossless-primary-dark) 20%
-    );
-    transform: translateY(-2px);
-    margin-bottom: 0;
-  }
+      background: color-mix(
+        in oklab,
+        var(--clr-lossless-primary-glass),
+        var(--clr-lossless-primary-dark) 20%
+      );
+      transform: translateY(-2px);
+      margin-bottom: 0;
+    }
 </style>
