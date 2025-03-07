@@ -10,10 +10,10 @@ site_name: Pythagora AI
 title: Pythagora AI | Build Internal Tools with Artificial Intelligence
 favicon: >-
   https://cdn.prod.website-files.com/65d1e4e18eca49b7cb4a278e/65e29159db5d95ab3dbd6a54_favicon_32_square_more.png
-og_last_fetch: 2025-03-07T05:20:56.435Z
 og_errors: true
 og_last_error: '2025-03-07T05:38:03.928Z'
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
+og_last_fetch: 2025-03-07T05:20:56.435Z
 ---
 https://youtube.com/shorts/_9SCg4aIFB0?si=CBxq1RYwhm1XfKK0
 

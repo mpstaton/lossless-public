@@ -8,9 +8,9 @@ tags:
   - AI-Toolkit
   - AI-Interfaces
   - AI-Workspaces
-og_last_fetch: 2025-03-07T05:20:56.744Z
 og_errors: true
 og_last_error: '2025-03-07T05:38:03.788Z'
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
+og_last_fetch: 2025-03-07T05:20:56.744Z
 ---
 Similar to [[Networked-Notes]] and [[Advanced Documents]], but using [[Generative AI]].  

@@ -1,21 +1,17 @@
 ---
-url: 'https://www.augmentcode.com/'
+url: https://www.augmentcode.com/
 zinger: Developer AI for real work
-description: >-
-  The first AI coding assistant built for professional software engineers and
-  large codebases.
+description: The first AI coding assistant built for professional software engineers and large codebases.
 tags:
   - AI-Toolkit
   - Generative-AI
   - Code-Generators
-image: >-
-  https://cdn.prod.website-files.com/66d76c2202b335e39ad2b5e8/675cb87f1ba91008af1bb69e_augment-open-graph.png
-site_name: Augment Code – Developer AI for real work
-title: Augment Code – Developer AI for real work
-favicon: >-
-  https://cdn.prod.website-files.com/66d76c2202b335e39ad2b5e8/66f302d663108ca67c19ddbc_Favicon.png
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/daf5d9ff6b9cfd77540b05bea208c5939fa58f864462d8c95e7aea8f0f442d3c.jpeg
+  - Developer-AI
+image: https://cdn.prod.website-files.com/66d76c2202b335e39ad2b5e8/675cb87f1ba91008af1bb69e_augment-open-graph.png
+site_name: Augment Code
+title: Developer AI for real work
+favicon: https://cdn.prod.website-files.com/66d76c2202b335e39ad2b5e8/66f302d663108ca67c19ddbc_Favicon.png
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/daf5d9ff6b9cfd77540b05bea208c5939fa58f864462d8c95e7aea8f0f442d3c.jpeg
 og_last_fetch: 2025-03-07T05:20:56.440Z
 ---
 https://youtu.be/LEOSWYlQyVw?si=28jhDOW5h9Pe8ZJZ

@@ -12,7 +12,7 @@ title: Open WebUI
 favicon: 'https://www.openwebui.com/./favicon.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7a21a1eab0163b92630bb1dec4d0a75059952c9aaf66e3cd0b14ac0d5640742b.jpeg
-og_last_fetch: '2025-03-07T05:37:33.595Z'
+og_last_fetch: '2025-03-07T06:13:16.932Z'
 ---
 
 Creates a UI for [[Artificial Intelligence|AI]]

@@ -133,22 +133,13 @@ function markFileWithError(filePath, errorMessage) {
 }
 
 // Function to fetch OpenGraph data
-async function getFromOpenGraphIo(url) {
+async function getFromOpenGraphIo(url, filePath) {
   try {
     const proxyUrl = `https://opengraph.io/api/1.1/site/${encodeURIComponent(url)}?dimensions:lg?accept_lang=auto&use_proxy=true&app_id=${openGraphKey}`;
     const response = await fetch(proxyUrl);
     if (!response.ok) {
       // Handle HTTP errors by marking the file
-      const fileContent = fs.readFileSync(filePath, 'utf-8');
-      const { data: frontmatter, content } = matter(fileContent);
-      
-      frontmatter.og_errors = true;
-      frontmatter.og_last_error = new Date().toISOString();
-      frontmatter.og_error_status = response.status;
-      
-      const updatedContent = matter.stringify(content, frontmatter);
-      fs.writeFileSync(filePath, updatedContent);
-      
+      markFileWithError(filePath, `HTTP error ${response.status}`);
       console.log(`⚠️ HTTP error ${response.status} for ${url}. Marked file with og_errors.`);
       return null;
     }
@@ -165,12 +156,10 @@ async function getFromOpenGraphIo(url) {
       if (data.hybridGraph.favicon) ogProperties.favicon = data.hybridGraph.favicon;
     }
     
-    // We don't fetch the screenshot URL here anymore
-    // It will be handled separately in the background
-    
     return ogProperties;
   } catch (error) {
     console.error('Error fetching OpenGraph properties for', url, ':', error);
+    markFileWithError(filePath, `Fetch error: ${error.message}`);
     return null;
   }
 }
@@ -269,7 +258,7 @@ async function processFile(filePath) {
         console.log(`Fetching OpenGraph data for ${frontmatter.url}...`);
         
         // Fetch OpenGraph data
-        const ogData = await getFromOpenGraphIo(frontmatter.url);
+        const ogData = await getFromOpenGraphIo(frontmatter.url, filePath);
         
         if (ogData && Object.keys(ogData).length > 0) {
           // Update the frontmatter with the fetched data

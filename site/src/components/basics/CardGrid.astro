@@ -8,22 +8,98 @@ interface Props {
 const { columns = 3, gap = "2rem", minCardWidth = "300px" } = Astro.props;
 ---
 
-<div class="card-grid">
-  <slot />
+<div class="cards-container">
+  <div class="card-grid">
+    <slot />
+  </div>
 </div>
 
+<script is:inline>
+  // Handle mouse position for cards
+  const handleMouseMove = (e) => {
+    const cards = document.getElementsByClassName("card");
+
+    for (const card of cards) {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    }
+  };
+
+  // Add event listener when the document is ready
+  document
+    .querySelector(".cards-container")
+    ?.addEventListener("mousemove", handleMouseMove);
+</script>
+
 <style define:vars={{ columns, gap, minCardWidth }}>
+  .cards-container {
+    width: 100%;
+    position: relative;
+    padding: 2rem;
+  }
+
   .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--minCardWidth), 1fr));
     gap: var(--gap);
     row-gap: 2rem;
     width: 100%;
-    padding: 2rem 2rem;
+    position: relative;
+  }
+
+  /* Remove default card background to let glow show through */
+  :global(.card) {
+    position: relative;
+    background: transparent !important;
+  }
+
+  /* Glow effects */
+  :global(.card)::before,
+  :global(.card)::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  :global(.card)::before {
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y),
+      var(--clr-lossless-primary-glass),
+      transparent 40%
+    );
+    z-index: -1;
+  }
+
+  :global(.card)::after {
+    background: radial-gradient(
+      600px circle at var(--mouse-x) var(--mouse-y),
+      rgba(174, 215, 245, 0.468),
+      transparent 40%
+    );
+    z-index: -1;
+  }
+
+  :global(.card:hover)::before {
+    opacity: 1;
+  }
+
+  :global(.cards-container:hover .card::after) {
+    opacity: 0.1;
   }
 
   @media (max-width: 768px) {
-    .card-grid {
+    .cards-container {
       padding: 0 1rem;
     }
   }

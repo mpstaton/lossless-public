@@ -9,7 +9,7 @@ tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/1783984c991045b11ebcece0f423b559f7644489fa8a99052ad8cda44fedd82e.jpeg
-og_last_fetch: '2025-03-07T05:38:26.416Z'
+og_last_fetch: '2025-03-07T06:11:14.355Z'
 ---
 [[Visual Software Development]], [[CARBS]].
 

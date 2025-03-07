@@ -9,10 +9,10 @@ image: 'https://aider.chat/assets/aider.jpg'
 site_name: aider
 title: Home
 favicon: 'https://aider.chat/assets/icons/favicon-32x32.png'
-og_last_fetch: 2025-03-07T05:20:56.441Z
 og_errors: true
 og_last_error: '2025-03-07T05:38:03.917Z'
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
+og_last_fetch: 2025-03-07T05:20:56.441Z
 ---
 
 [[Code Generator]] inside [[Terminal Emulators]], it simulates [[Pair Programming]] and is helpful for [[Code Review]].

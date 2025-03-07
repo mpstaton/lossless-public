@@ -1,14 +1,11 @@
 ---
-url: 'https://www.linearity.io/'
-image: 'https://a.storyblok.com/f/197805/1920x1080/d89ab5b204/meta-image-curve.png'
-site_name: 'Linearity: Professional Vector Design & Animation Tools for Apple Devices'
-title: >-
-  Linearity: Professional Vector Design & Animation Tools for Apple Devices |
-  Linearity
+url: https://www.linearity.io/
+image: https://a.storyblok.com/f/197805/1920x1080/d89ab5b204/meta-image-curve.png
+site_name: Linearity
+title: Professional Vector Design & Animation Tools for Apple Devices | Linearity
 tags:
   - Creative
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5281a2db746af1a387b686868a974a8571bb76db20d7ba7bae522db749c25589.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5281a2db746af1a387b686868a974a8571bb76db20d7ba7bae522db749c25589.jpeg
 og_last_fetch: 2025-03-07T05:19:01.838Z
 ---
 [[Creative Arts]]
