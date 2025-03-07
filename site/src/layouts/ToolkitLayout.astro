@@ -1,10 +1,10 @@
 ---
 import "@styles/global.css";
-import ToolCard from "@components/tool-components/ToolCard.astro";
-import CardGrid from "@basics/CardGrid.astro";
-import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
 
-// Get all entries from the tools collection
+const { title, description } = Astro.props;
+
+/* // Get all entries from the tools collection
 const toolEntries = await getCollection("tooling");
 // Tools are now directly in the entry data
 const tools = toolEntries.map((entry) => entry.data);
@@ -24,9 +24,9 @@ const {
   columns = 3,
   gap = "2rem",
   minCardWidth = "300px",
-} = Astro.props;
+} = Astro.props; */
 ---
-
+ <Layout  title={title} description={description}>
 <div class="toolkit-container">
   <header class="toolkit-header">
     <h1>{title}</h1>
@@ -34,6 +34,7 @@ const {
   </header>
 
   <main class="toolkit-content">
+    <!--
     {
       tools && tools.length > 0 ? (
         <CardGrid columns={columns} gap={gap} minCardWidth={minCardWidth}>
@@ -54,15 +55,16 @@ const {
           <p>No tools found. Check back later!</p>
         </div>
       )
-    }
+    } -->
 
     <slot />
   </main>
 </div>
+</Layout>
 
 <style>
   .toolkit-container {
-    max-width: 1400px;
+    width: 82vw;
     margin: 0 auto;
     padding: 2rem;
   }
