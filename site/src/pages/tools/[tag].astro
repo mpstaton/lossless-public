@@ -1,0 +1,58 @@
+---
+import CardGrid from "@basics/CardGrid.astro";
+import ToolkitLayout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+interface Tool {
+  site_name?: string;
+  title?: string;
+  url: string;
+  image?: string;
+  favicon?: string;
+  description?: string;
+  description_site_cp?: string;
+  zinger?: string;
+  tags?: string[];
+  og_screenshot_url?: string;
+  og_last_fetch?: string;
+}
+
+const toolEntries = await getCollection("tooling");
+const processedTools = toolEntries.map((entry) => {
+  // Get the frontmatter data
+  const frontmatter = entry.data;
+
+  const {tag} = Astro.params;
+  // Create the tool object with all properties
+  const tool = {
+    site_name: frontmatter.site_name,
+    title: frontmatter.title,
+    url: frontmatter.url,
+    image: frontmatter.image,
+    favicon: frontmatter.favicon,
+    description: frontmatter.description || frontmatter.zinger || "",
+    description_site_cp: frontmatter.description_site_cp,
+    tags: frontmatter.tags || [],
+    filename: entry.id,
+    og_screenshot_url: frontmatter.og_screenshot_url,
+    og_last_fetch: frontmatter.og_last_fetch,
+  };
+
+  const async getToolsByTag(tag: string) {
+    return toolEntries.filter((entry) => {
+      const frontmatter = entry.data;
+      return frontmatter.tags.includes(tag);
+    });
+  }
+
+  return {
+    tool,
+    getToolsByTag,
+  };
+
+---
+
+<ToolkitLayout title=`${ tag } Tools` />
+
+
+
