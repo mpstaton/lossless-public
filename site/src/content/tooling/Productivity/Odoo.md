@@ -8,7 +8,7 @@ tags:
   - Productivity
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ca45d929e4972dc896f77baeaa16873798a265176a2184c96687aa5e505ee7bb.jpeg
-og_last_fetch: '2025-03-05T03:57:19.291Z'
+og_last_fetch: 2025-03-07T05:19:01.820Z
 ---
 
 https://youtu.be/vgvbRRVreHI?si=3yguzDDQlnK1MLH-

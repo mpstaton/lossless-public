@@ -8,6 +8,6 @@ tags:
   - Training
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2aa533919210ece76615183b3d5a7895ef92b2d007d1a2583a5d33bd7b35921c.jpeg
-og_last_fetch: '2025-03-05T03:57:22.478Z'
+og_last_fetch: 2025-03-07T05:19:01.807Z
 ---
 

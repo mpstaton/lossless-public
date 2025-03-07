@@ -9,7 +9,10 @@ tags:
 image: 'https://dotnet.microsoft.com/blob-assets/images/dotnet-icons/square.png'
 site_name: Microsoft
 title: Blazor | Build client web apps with C# | .NET
-og_last_fetch: '2025-03-06T21:07:14.512Z'
+og_last_fetch: 2025-03-07T05:20:56.427Z
+og_errors: true
+og_last_error: '2025-03-07T05:38:03.635Z'
+og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
 ---
 
 Made by [[Microsoft]]

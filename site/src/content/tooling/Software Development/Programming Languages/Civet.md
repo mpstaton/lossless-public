@@ -10,6 +10,6 @@ tags:
   - Programming-Languages
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b7c1171c7f24c80f5cadb9d24670d8646835b6bcffe2a4ece35e530b8335b5bb.jpeg
-og_last_fetch: '2025-03-05T03:58:00.583Z'
+og_last_fetch: 2025-03-07T05:19:02.899Z
 ---
 An alternative to [[TypeScript]].

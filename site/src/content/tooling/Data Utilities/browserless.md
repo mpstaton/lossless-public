@@ -11,7 +11,7 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2d5f739056f9fc101fcd586fbd971af0360122a32acf34de0d5c00f9ce67eb63.jpeg
-og_last_fetch: '2025-03-05T03:57:57.178Z'
+og_last_fetch: 2025-03-07T05:19:01.831Z
 ---
 An [[AI Powered Data Capture]] tool.
 <span query="get(hero)"></span>![[Screenshot 2025-02-20 at 11.09.01 PM_browserless--Hero.png]]<span type="end"></span>

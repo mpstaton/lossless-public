@@ -11,7 +11,7 @@ tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a3ba1a97f24044f294008f01d26b4406d96522df35a0cdaa2fb34803f2e7f83a.jpeg
-og_last_fetch: '2025-03-05T03:57:55.634Z'
+og_last_fetch: 2025-03-07T05:19:01.831Z
 ---
 [[AI Powered Data Capture]], 
 

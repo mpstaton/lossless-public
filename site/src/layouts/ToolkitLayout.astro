@@ -26,15 +26,16 @@ const {
   minCardWidth = "300px",
 } = Astro.props; */
 ---
- <Layout  title={title} description={description}>
-<div class="toolkit-container">
-  <header class="toolkit-header">
-    <h1>{title}</h1>
-    {description && <p class="toolkit-description">{description}</p>}
-  </header>
 
-  <main class="toolkit-content">
-    <!--
+<Layout title={title} description={description}>
+  <div class="toolkit-container">
+    <header class="toolkit-header">
+      <h1>{title}</h1>
+      {description && <p class="toolkit-description">{description}</p>}
+    </header>
+
+    <main class="toolkit-content">
+      <!--
     {
       tools && tools.length > 0 ? (
         <CardGrid columns={columns} gap={gap} minCardWidth={minCardWidth}>
@@ -57,14 +58,14 @@ const {
       )
     } -->
 
-    <slot />
-  </main>
-</div>
+      <slot />
+    </main>
+  </div>
 </Layout>
 
 <style>
   .toolkit-container {
-    width: 88%;
+    width: 92%;
     margin: 0 auto;
     padding: 2rem;
   }

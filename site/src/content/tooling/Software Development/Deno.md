@@ -8,7 +8,7 @@ tags:
   - Software-Development
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b522df73c3c721cecfeace16be81bacfcd9b06006fde40fca32e86c2c35d3358.jpeg
-og_last_fetch: '2025-03-05T03:57:25.493Z'
+og_last_fetch: 2025-03-07T05:19:01.816Z
 ---
 [[JavaScript]]
 2024, Oct 22. [Browser APIs in Deno](https://youtu.be/oxVwTT-rZRo?si=CecGWY_xtAG3NbBz). [[YouTube]].

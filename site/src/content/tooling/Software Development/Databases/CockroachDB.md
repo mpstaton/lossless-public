@@ -20,7 +20,7 @@ site_name: CockroachDB | Distributed SQL for always
 title: CockroachDB | Distributed SQL for always-on customer experiences
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5a91cf008258221b362473e49bde59e56bd9d1878d7e84b06948454fbba2b9b2.jpeg
-og_last_fetch: '2025-03-05T03:58:11.951Z'
+og_last_fetch: 2025-03-07T05:19:02.925Z
 ---
 Based on [[Postgres]]
 

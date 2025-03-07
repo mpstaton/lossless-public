@@ -14,6 +14,6 @@ tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9b4a34ff8a28d8ccf82f0a43cce6a9299d54928f300233c1cd9fc45a0e20041f.jpeg
-og_last_fetch: '2025-03-05T09:00:18.569Z'
+og_last_fetch: 2025-03-07T05:19:01.827Z
 ---
 Part of the [[Current Stack]]

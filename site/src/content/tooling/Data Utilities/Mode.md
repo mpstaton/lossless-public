@@ -13,7 +13,7 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5fce38c3e9db087cf73da85460346e3d488b5f13481e7651a86933323d8cedc9.jpeg
-og_last_fetch: 2025-03-05T03:57:57.962Z
+og_last_fetch: 2025-03-07T05:19:01.833Z
 ---
 A tool for [[Business Intelligence]]
 

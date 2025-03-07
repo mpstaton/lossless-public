@@ -14,7 +14,7 @@ tags:
   - Frameworks
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0ea1e02c7fe5afc1e858ef9f4cb74623c2beac1690f6b9bd60d46b5188b23009.jpeg
-og_last_fetch: '2025-03-05T03:48:47.522Z'
+og_last_fetch: 2025-03-07T05:20:56.428Z
 ---
 A new [[Web Frameworks|Web Framework]] that focuses on [[Static Site Generators|Static Site Generation]], but also perfectly implements [[Islands Architecture]] 
 

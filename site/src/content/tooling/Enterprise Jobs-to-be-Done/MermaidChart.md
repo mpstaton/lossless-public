@@ -5,12 +5,11 @@ title: >-
   Mermaid Chart - Create complex, visual diagrams with text. A smarter way of
   creating diagrams.
 favicon: 'https://www.mermaidchart.com/img/favicon.ico'
-og_last_fetch: '2025-03-06T21:01:54.327Z'
 tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/1783984c991045b11ebcece0f423b559f7644489fa8a99052ad8cda44fedd82e.jpeg
-og-last-fetch: '2025-03-06T22:10:25.131Z'
+og_last_fetch: '2025-03-07T05:38:26.416Z'
 ---
 [[Visual Software Development]], [[CARBS]].
 

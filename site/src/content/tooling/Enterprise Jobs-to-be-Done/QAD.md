@@ -9,7 +9,7 @@ tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9c0d96c6c9fb1deac367ba04058b3809532a4383c1b12e533fff7c06e14d91d0.jpeg
-og_last_fetch: '2025-03-05T03:57:38.296Z'
+og_last_fetch: 2025-03-07T05:19:01.827Z
 ---
 
 Part of the [[Current Stack|Laerdal Tech Stack]].

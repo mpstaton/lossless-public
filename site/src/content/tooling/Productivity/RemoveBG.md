@@ -9,6 +9,6 @@ title: Remove Image Backgrounds for Free
 favicon: 'https://www.remove.bg/favicon-32x32.png?v=fc0bfce6e1310f1539afec9729716721'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/94e6ed553c665c9f5c4ebea5648849dbe9c8e4851a3039db155c141dbac1a5ba.jpeg
-og_last_fetch: 2025-03-05T03:57:21.007Z
+og_last_fetch: 2025-03-07T05:19:01.820Z
 ---
 

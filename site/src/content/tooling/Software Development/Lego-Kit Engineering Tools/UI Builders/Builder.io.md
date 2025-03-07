@@ -17,7 +17,7 @@ tags:
   - UI-Builders
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/252a44f4df4635b7863f569526c8895840ed79649f6729676696d6e412816803.jpeg
-og_last_fetch: '2025-03-05T03:58:22.775Z'
+og_last_fetch: 2025-03-07T05:20:56.414Z
 ---
 
 An [[App Builder]], focused on [[Visual Software Development]].

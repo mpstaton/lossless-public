@@ -12,7 +12,7 @@ tags:
   - Web-Browsers
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/76ba71ece8c53c686d8b27f4046552c41a072811cf81cc488e322095c192e981.jpeg
-og_last_fetch: '2025-03-05T03:57:21.063Z'
+og_last_fetch: 2025-03-07T05:19:01.784Z
 ---
 ### Microsoft Edge showing update walkthrough. 
 ![[Screenshot 2025-01-31 at 2.23.17 PM_Edge--Updates.png]]

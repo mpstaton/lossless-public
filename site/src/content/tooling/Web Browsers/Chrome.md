@@ -10,7 +10,7 @@ tags:
   - Web-Browsers
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/f017c8050d1c5fcdb4511ba7fa11d3f363165748200d77db41845a647e6acfb6.jpeg
-og_last_fetch: '2025-03-05T03:57:21.607Z'
+og_last_fetch: 2025-03-07T05:19:01.805Z
 ---
 https://youtu.be/v7mQ_eaT4Gw?si=Bu0ZDsGe8ldQ8rVI
 

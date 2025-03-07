@@ -15,7 +15,7 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/f01df92ad3cb3a4c08bee06f4b68ef53437c72e1d5fce0f536529988a5230752.jpeg
-og_last_fetch: '2025-03-05T03:57:58.069Z'
+og_last_fetch: 2025-03-07T05:19:01.834Z
 ---
 Part of the [[Current Stack|Laerdal Stack]]
 

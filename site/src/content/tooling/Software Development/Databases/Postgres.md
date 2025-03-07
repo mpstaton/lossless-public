@@ -10,7 +10,7 @@ title: PostgreSQL
 favicon: 'https://www.postgresql.org/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/71266c81157df78676ca4e6c1c34d011cdffed026f6805526d547dca46d5d415.jpeg
-og_last_fetch: '2025-03-05T03:58:06.149Z'
+og_last_fetch: 2025-03-07T05:19:02.920Z
 ---
 
 

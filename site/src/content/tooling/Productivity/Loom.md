@@ -8,6 +8,10 @@ title: Free screen recorder for Mac and PC | Loom
 favicon: 'https://cdn.loom.com/assets/favicons-loom/android-chrome-192x192.png'
 tags:
   - Productivity
+og_errors: true
+og_last_error: '2025-03-07T05:36:38.559Z'
+og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
+og_last_fetch: 2025-03-07T05:19:01.821Z
 ---
 
 Uses [[Asynchronous Communication]] paradigm.  A primary [[Enterprise SaaS]] video-based communication tool.  Short-form, no-edits video communication can reduce [[Collaboration Cost]]. 

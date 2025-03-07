@@ -10,7 +10,7 @@ tags:
   - Web-Frameworks
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2e72944e10e6b45c810069dacff5e23724f6f05975e23bdefc9d8fb1492ef56f.jpeg
-og_last_fetch: '2025-03-05T03:57:51.927Z'
+og_last_fetch: 2025-03-07T05:20:56.417Z
 ---
 [[HTML]] enhancement, similar to [[HTMX]]
 
