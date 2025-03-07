@@ -1,13 +1,14 @@
 ---
-url: https://www.rust-lang.org/
+url: 'https://www.rust-lang.org/'
 tags:
   - Software-Development
   - Programming-Languages
-image: https://www.rust-lang.org/static/images/rust-social-wide.jpg
+image: 'https://www.rust-lang.org/static/images/rust-social-wide.jpg'
 site_name: Rust
 title: Rust Programming Language
-favicon: https://www.rust-lang.org/static/images/favicon-32x32.png
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0a6e6cc20c9ad8d6e91cb53f89a46e677cde6d53f520bf1f83ce318069de8e40.jpeg
+favicon: 'https://www.rust-lang.org/static/images/favicon-32x32.png'
+og_screenshot_url: >-
+  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0a6e6cc20c9ad8d6e91cb53f89a46e677cde6d53f520bf1f83ce318069de8e40.jpeg
 og_last_fetch: 2025-03-07T05:19:02.895Z
 ---
 

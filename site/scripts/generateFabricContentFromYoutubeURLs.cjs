@@ -1,54 +1,59 @@
 const { exec } = require('child_process');
+const util = require('util');
 const fs = require('fs');
 const path = require('path');
-const util = require('util');
 
-// Convert exec to return a Promise
 const execPromise = util.promisify(exec);
+const outputDirectory = 'src/content/data';
 
-// Configuration
-const outputDirectory = 'src/content/data/sources'; // Directory to save output files
-const concurrentLimit = 1; // Process one video at a time to avoid overload
-const delayBetweenRequests = 50000; // 50 delay between requests
+function extractVideoId(url) {
+  const regex = /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([^?&]+)/;
+  const matches = url.match(regex);
+  return matches ? matches[1] : null;
+}
 
 function getYoutubeUrls() {
   try {
-    // Read and parse the JSON file
-    const jsonData = JSON.parse(fs.readFileSync('src/content/data/youtube-urls.json', 'utf8'));
+    console.log('Attempting to read youtube-urls.json...');
     
-    // Collect all YouTube URLs into a single array and remove duplicates
+    // Log current working directory
+    console.log('Current working directory:', process.cwd());
+    
+    const filePath = 'src/content/data/youtube-urls.json';
+    console.log('Looking for file at:', path.resolve(filePath));
+    
+    // Check if file exists
+    if (!fs.existsSync(filePath)) {
+      console.error('Error: youtube-urls.json file not found');
+      return [];
+    }
+    
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    console.log('File read successfully, parsing JSON...');
+    
+    const jsonData = JSON.parse(fileContent);
+    console.log(`Found ${jsonData.length} entries in JSON file`);
+    
     const allUrls = jsonData
       .reduce((urls, item) => [...urls, ...(item.youtube_urls || [])], [])
-      .filter((url, index, self) => self.indexOf(url) === index); // Remove duplicates
+      .filter((url, index, self) => self.indexOf(url) === index);
+    
+    console.log(`Extracted ${allUrls.length} unique YouTube URLs`);
     
     return allUrls;
   } catch (error) {
-    console.error('Error reading or parsing youtube-urls.json:', error);
+    console.error('Error in getYoutubeUrls:', error);
     return [];
   }
 }
 
-// List of YouTube URLs to process
-const youtubeUrls = getYoutubeUrls();
-
-// Create output directory if it doesn't exist
-if (!fs.existsSync(outputDirectory)) {
-  fs.mkdirSync(outputDirectory, { recursive: true });
-}
-
-/**
- * Process a single YouTube URL
- * @param {string} url - The YouTube URL to process
- * @returns {Promise<string>} - The output file path
- */
 async function processYoutubeUrl(url) {
   console.log(`Processing URL: ${url}`);
   const thisYoutubeUrl = url;
   const frontMatterMark = `---`
+  const TIMEOUT_MS = 180000; // 3 minutes in milliseconds
 
-  
   try {
-    // Extract video ID for filename
     const videoId = extractVideoId(url);
     if (!videoId) {
       throw new Error(`Could not extract video ID from URL: ${url}`);
@@ -60,21 +65,28 @@ async function processYoutubeUrl(url) {
     const outputFile = path.join(outputDirectory, `juice_from_${videoId}.md`);
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     const logFile = path.join(outputDirectory, `${videoId}_log_${timestamp}.md`);
-    0
-    // Construct command
+
     const command = `fabric -y ${url} --stream --pattern extract_wisdom`;
     
-    // Execute command and capture output
     console.log(`Executing: ${command}`);
     console.log(`Saving output to: ${outputFile}`);
     
-    const { stdout, stderr } = await execPromise(command);
+    // Create a promise that rejects after timeout
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(() => {
+        reject(new Error(`Operation timed out after ${TIMEOUT_MS/1000} seconds`));
+      }, TIMEOUT_MS);
+    });
+
+    // Race between the actual operation and the timeout
+    const { stdout, stderr } = await Promise.race([
+      execPromise(command),
+      timeoutPromise
+    ]);
     
     fullFileOutput = `${frontMatterOutput}\n${stdout}`;
-    // Save output to file
     fs.writeFileSync(outputFile, fullFileOutput);
     
-    // Save logs if there's any stderr
     if (stderr) {
       fs.writeFileSync(logFile, stderr);
       console.log(`Saved error logs to: ${logFile}`);
@@ -84,99 +96,41 @@ async function processYoutubeUrl(url) {
     return outputFile;
   } catch (error) {
     console.error(`Error processing URL ${url}:`, error.message);
-    // Write error to log file
     const errorLogFile = path.join(
       outputDirectory, 
       `error_${new Date().toISOString().replace(/[:.]/g, '-')}.log`
     );
     fs.writeFileSync(errorLogFile, `URL: ${url}\nError: ${error.message}\n${error.stack}`);
     console.error(`Error details written to: ${errorLogFile}`);
+    
+    // If it's a timeout, we should kill the fabric process
+    if (error.message.includes('timed out')) {
+      try {
+        // Kill any running fabric process
+        exec('pkill -f fabric');
+        console.log('Killed hanging fabric process');
+      } catch (killError) {
+        console.error('Error killing fabric process:', killError);
+      }
+    }
+    
     return null;
   }
 }
 
-/**
- * Extract video ID from a YouTube URL
- * @param {string} url - The YouTube URL
- * @returns {string|null} - The extracted video ID or null if not found
- */
-function extractVideoId(url) {
-  try {
-    const urlObj = new URL(url);
-    
-    // Handle youtu.be format
-    if (urlObj.hostname === 'youtu.be') {
-      return urlObj.pathname.substring(1).split('?')[0];
-    }
-    
-    // Handle youtube.com format
-    if (urlObj.hostname.includes('youtube.com')) {
-      const searchParams = new URLSearchParams(urlObj.search);
-      return searchParams.get('v');
-    }
-    
-    return null;
-  } catch (error) {
-    console.error(`Error extracting video ID from ${url}:`, error.message);
-    return null;
+async function main() {
+  const urls = getYoutubeUrls();
+  console.log(`Starting to process ${urls.length} URLs...`);
+  
+  for (const url of urls) {
+    await processYoutubeUrl(url);
   }
+  
+  console.log('Finished processing all URLs');
 }
 
-/**
- * Process all YouTube URLs in the list
- */
-async function processAllUrls() {
-  console.log(`Starting to process ${youtubeUrls.length} YouTube URLs...`);
-  console.log(`Output will be saved to: ${path.resolve(outputDirectory)}`);
-  
-  const results = [];
-  
-  // Process URLs sequentially to avoid overloading the system
-  for (let i = 0; i < youtubeUrls.length; i++) {
-    const url = youtubeUrls[i];
-    console.log(`\n[${i + 1}/${youtubeUrls.length}] Processing URL...`);
-    
-    const outputFile = await processYoutubeUrl(url);
-    results.push({
-      url,
-      outputFile,
-      success: !!outputFile
-    });
-    
-    // Add delay between requests if not the last URL
-    if (i < youtubeUrls.length - 1) {
-      console.log(`Waiting ${delayBetweenRequests/1000} seconds before processing next URL...`);
-      await new Promise(resolve => setTimeout(resolve, delayBetweenRequests));
-    }
-  }
-  
-  // Print summary
-  console.log('\n--- Processing Summary ---');
-  console.log(`Total URLs: ${youtubeUrls.length}`);
-  console.log(`Successfully processed: ${results.filter(r => r.success).length}`);
-  console.log(`Failed: ${results.filter(r => !r.success).length}`);
-  
-  // List successful outputs
-  if (results.filter(r => r.success).length > 0) {
-    console.log('\nSuccessfully processed files:');
-    results.filter(r => r.success).forEach(result => {
-      console.log(`- ${result.url} → ${result.outputFile}`);
-    });
-  }
-  
-  // List failures
-  if (results.filter(r => !r.success).length > 0) {
-    console.log('\nFailed URLs:');
-    results.filter(r => !r.success).forEach(result => {
-      console.log(`- ${result.url}`);
-    });
-    console.log('Check error logs in the output directory for details.');
-  }
-}
-
-// Start processing
-processAllUrls().catch(error => {
-  console.error('Fatal error:', error);
+// Execute the main function
+main().catch(error => {
+  console.error('Error in main execution:', error);
   process.exit(1);
 });
-
