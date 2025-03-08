@@ -1,6 +1,9 @@
 ---
 aliases:
   - Arc
+tags:
+  - Check-it-Out
+url: https://arc.net
 ---
 ##### [[Arc Browser|Arc]] is a [[State of the Art]][[Web Browser]]
 

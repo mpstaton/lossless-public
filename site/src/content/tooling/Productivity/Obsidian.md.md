@@ -6,6 +6,10 @@ https://youtu.be/qAsGO5N7OCk?si=t_LVYolNR57pPNKt
 
 https://youtu.be/05Jo08vwwMI?si=fmwSadfqpqi7D9Iv
 
+https://youtu.be/9ZQLyARShsg?si=1_xkr3UjxDNVqix9
+
+https://youtu.be/yXDrpWDeQPg?si=MtdFa7FwaesBPotq
+
 https://youtu.be/-J1v65yZdcQ?si=FvyUPylHF-ercOp_
 ### Obsidian using Properties in [[Markup]]
 ![[Screenshot 2025-01-31 at 1.14.17 PM_Obsidian--Properties.png]]

@@ -11,6 +11,7 @@ aliases:
 
 https://youtu.be/kbG2CWrmKTw?si=IszFpFxy41V-XjbI
 
+https://youtu.be/RtQmNp5FKsk?si=siw13Vg91ch5CSRb
 
 https://youtu.be/LEwgy73sVKk?si=A9_f_lD7zQfmlo7S
 https://youtu.be/3sYBe7yEJ3U?si=jxo1Lx5ZmpC3b0tx
@@ -29,6 +30,8 @@ https://youtu.be/oOro9NFHjQ8?si=2Jc3pkV4TnfDUFTQ
 https://youtu.be/wAUTbQ4rPI4?si=-1tvnxEmSYVmASdp
 
 https://youtu.be/561dyCTvGlQ?si=w59IWRCh1rc6vB_u
+
+https://youtu.be/XrQjJML8BhM?si=BJrfaXHwvFYBwa_7
 
 https://youtu.be/huu_9rAEiQU?si=-tdyebDzaL73083p
 ### AI Assisted Data Capture

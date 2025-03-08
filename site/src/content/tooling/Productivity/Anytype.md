@@ -1,13 +1,14 @@
 ---
-url: 'https://anytype.io/'
-image: 'https://anytype.io/ogimage.jpg'
+url: https://anytype.io/
+image: https://anytype.io/ogimage.jpg
 site_name: the everything app
 title: anytype — the everything app
-favicon: 'https://anytype.io/favicon-32x32.png'
+favicon: https://anytype.io/favicon-32x32.png
 tags:
   - Productivity
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eeae976a313a1447e01097dfadf63704853d6fc24ec3a2d3ef5aedebf5c94df1.jpeg
+  - Advanced-Documents
+  - Networked-Notes
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eeae976a313a1447e01097dfadf63704853d6fc24ec3a2d3ef5aedebf5c94df1.jpeg
 og_last_fetch: 2025-03-07T05:19:01.824Z
 ---
 

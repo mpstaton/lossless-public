@@ -14,4 +14,7 @@ og_last_fetch: 2025-03-07T05:19:19.162Z
 ---
 
 https://youtu.be/38loqDtlLok?si=-GPmVn3Qc4zyjA5g
+
+https://youtu.be/HLL2qXw-Uw4?si=DgLsWoKSPPCXdYTG
+
 [[OCR]]

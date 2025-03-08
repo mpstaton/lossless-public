@@ -25,5 +25,7 @@ A [[Terminal Emulators]] that uses [[Code Generator]] for developers.
 
 https://youtu.be/uRquE0FjvFk?si=B4Yzss3Hh0bTQRhZ
 
+
+https://youtube.com/shorts/wIFgiE6hJEw?si=-SYaPBNBO_ekY-ux
 ![[Screenshot 2025-02-18 at 12.20.10 PM_Warp-Terminal.png]]
 https://youtu.be/qkduRen6QFk?si=BaKDNQfwXIw0dMIe

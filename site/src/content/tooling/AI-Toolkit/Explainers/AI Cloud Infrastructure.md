@@ -1,1 +1,1 @@
-[[SiliconCloud]], [[SiliconFlow]]
+[[SiliconCloud]], [[SiliconFlow]], [[Lambda Labs]]

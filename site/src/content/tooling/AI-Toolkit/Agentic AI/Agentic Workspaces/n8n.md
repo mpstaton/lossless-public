@@ -1,8 +1,11 @@
 ---
 youtube_url: https://www.youtube.com/@n8n-io
 tags:
-  - workflow-automation
   - iPaaS
+  - Workflow-Automation
+  - Agentic-AI
+  - Agentic-Workspaces
+  - Check-it-Out
 ---
 Here's an [[n8n]] beginner course on [[YouTube]] created by n8n. The [n8n Beginner course](https://youtube.com/playlist?list=PLlET0GsrLUL59YbxstZE71WszP3pVnZfI&si=T8vhC2cKnjVlxh4u)
 
@@ -39,19 +42,22 @@ https://www.youtube.com/live/56D91EcaUnM?si=7IXtk-_-qEHCNzzx
 https://youtu.be/PYkjffkLLZ8?si=pqCz9p2zTdGkvB_N
 
 https://youtu.be/vH_Ptkz0mus?si=2OgoO1Pg1BKZ2twd
+
 https://youtu.be/olv5yujTZuk?si=fF-aohg50TelD0uX
 
 https://youtu.be/p-CV-zSHp6E?si=O03YjjHKq6fT_Zlv
 
+https://youtu.be/so5CpsnNado?si=WCEi0fhDBC-8Uhzu
 
 https://youtu.be/iT9xpiUwVbI?si=BBxShEsavCby3HXw
 
 https://youtu.be/_lsXx-3jz-0?si=HiMDr3zhZqK8G1kJ
 
+### [[Perplexity AI]] explains [[n8n]]
 n8n is a low-code, open-source workflow automation platform that enables users to connect applications, services, and APIs to automate tasks and processes without extensive coding. Founded in 2019 by Jan Oberhauser and Ricardo J. Mendonça, n8n has gained popularity for its user-friendly interface, extensive integrations (over 400 platforms), and flexibility for both simple and complex workflows[1][2]. It supports self-hosting for enhanced data control and offers advanced features like branching, merging, AI integration, and developer-friendly tools[2][7].
 
 ### Differentiation
-- **Open Source**: Unlike competitors like Zapier or IFTTT, n8n allows users to modify its core code and self-host the platform for greater customization and data privacy[2][8].
+- **Open Source**: Unlike competitors like [[Zapier]] or [[IFTTT]], [[n8n]] allows users to modify its core code and self-host the platform for greater customization and data privacy[2][8].
 - **Advanced Features**: It supports complex workflows with branching logic, custom coding (JavaScript/Python), and AI-driven automation[2].
 - **Community-Driven**: Its open-source nature fosters a vibrant community that contributes templates, integrations, and feedback[1][2].
 

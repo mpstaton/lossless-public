@@ -11,7 +11,7 @@ aliases:
 - [[Terminal Emulators|Terminal Emulators]] include [[Warp]] and [[Aider]]
 - [[Opsless Deployment Providers]] include [[Tooling/Software Development/Cloud Infrastructure/Bolt.new]], [[v0]], [[Lovable]], [[Replit]], [[Hostinger]] and [[ScrBook]]
 - [[Plug-ins,  Add-ons,  Extensions|Plug-ins]] to other Text Editors include [[Aider]], [[Databutton]], [[Claude#Cline|Cline]], [[Devin]], [[supermaven]], [[Augment Code]], [[Continue AI]], [[AppMap]] who embed into [[Text Editors or IDEs]], such as [[JetBrains]] but especially [[Visual Studio Code|VS Code]].
-- Starting from your own code repositories, services like [[Poolside]], [[AppMap]], [[smolagents]]. 
+- Starting from your own code repositories, services like [[Poolside]], [[AppMap]], [[smolagents]], [[RepoPrompt]]
 - Specializing in [[Bug Reporting]] is [[CodeAnt AI]]
 
 We don't know what some even claim to be, such as [[Fine.dev]]
@@ -63,6 +63,10 @@ https://youtu.be/nNNFBabP82U?si=165KRaE4gHC4QO34
 https://www.youtube.com/live/-X3y0PBAa1c?si=UgNEeW9Qbd_olTdc
 
 https://youtu.be/VnaKWiEoQZE?si=j_NH1t3AWCg0McqC
+
+https://youtu.be/XlcQ7Ml4t54?si=0Xg1hAkSaRGwRI4j
+
+https://youtu.be/V0TGQRAt4wg?si=rC_PP8GgR8cqQWGK
 
 https://youtu.be/gXmakVsIbF0?si=kYqSgG6zzYhMdZHY
 

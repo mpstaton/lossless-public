@@ -17,3 +17,5 @@ og_last_fetch: 2025-03-07T05:20:56.433Z
 An [[Open Source]] [[Terminal Emulators]]
 
 https://youtu.be/Elh8pvXHVxM?si=3dWPYAbb0a8Ij1vs
+
+https://youtu.be/Elh8pvXHVxM?si=8qOYjzgkcjxogz98

@@ -18,3 +18,5 @@ og_last_fetch: 2025-03-07T05:19:01.838Z
 2025, Jan 04. [Make this professional CGI in Blender and AE | VFX in Blender](https://youtu.be/GbPPKR2nQmk?si=LuV9_lSHANvqq66H). [[YouTube]]
 
 https://youtu.be/U_NHijmIF3E?si=djA8X-I3H0CkcnSg
+
+https://youtu.be/13CNFjd1CwE?si=b-v0dUEBNqWbQwBU

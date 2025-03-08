@@ -23,3 +23,6 @@ og_last_fetch: 2025-03-07T05:19:18.724Z
   allowfullscreen
 ></iframe>
 2025, February 19. [Building an AI App Fast: Monitoring, Orchestration, and More Under One Roof with Eden AI](https://youtu.be/G0ylKloEIPk?si=vCPuuSuPyD4remNh). Developers Digest.
+
+
+https://youtu.be/gfNx7gGitlo?si=TUYaJNL2D6s8gnwI

@@ -7,6 +7,7 @@ tags:
   - Generative-AI
   - Code-Generators
   - Developer-AI
+  - IDE-Plugins
 image: https://cdn.prod.website-files.com/66d76c2202b335e39ad2b5e8/675cb87f1ba91008af1bb69e_augment-open-graph.png
 site_name: Augment Code
 title: Developer AI for real work
@@ -16,6 +17,7 @@ og_last_fetch: 2025-03-07T05:20:56.440Z
 ---
 https://youtu.be/LEOSWYlQyVw?si=28jhDOW5h9Pe8ZJZ
 
+https://youtu.be/IF8lhAB2iHE?si=AnealFDUXxUaoryx
 ##### [[Augment Code]] is a [[Code Generator]] [[Plug-ins,  Add-ons,  Extensions|Plug-in]] to [[Visual Studio Code|VS Code]]
 [[Augment Code]] specializes in [[RAG]] techniques to be more contextually aware in [[Complex Codebases]]
 ![[Screenshot 2025-02-22 at 9.03.38 PM_AugmentCode--Hero.png]]
