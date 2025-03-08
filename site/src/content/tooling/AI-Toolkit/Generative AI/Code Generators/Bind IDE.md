@@ -7,8 +7,8 @@ tags:
   - IDEs
   - AI-Native
   - In-Browser-IDEs
-image: https://cdn.prod.website-files.com/650e15fb107e3d4aec2c591a/66502139a075e77bb51de915_favicon256x256.png
 image: >-
+  https://cdn.prod.website-files.com/650e15fb107e3d4aec2c591a/66502139a075e77bb51de915_favicon256x256.png
   https://cdn.prod.website-files.com/650e15fb107e3d4aec2c591a/66502139a075e77bb51de915_favicon256x256.png
 site_name: Bind AI IDE
 title: 'IDE by Bind AI | Alternative to Lovable, Cursor, Replit'

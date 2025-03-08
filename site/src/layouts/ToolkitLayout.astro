@@ -1,8 +1,60 @@
 ---
 import "@styles/global.css";
 import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import CardGrid from "@basics/CardGrid.astro";
+import TagColumn from "@tool-components/TagColumn.astro";
+import ToolCard from "@components/tool-components/ToolCard.astro";
 
 const { title, description } = Astro.props;
+
+const toolEntries = await getCollection("tooling");
+console.log("Tool entries:", toolEntries.length);
+
+interface Tool {
+  site_name?: string;
+  title?: string;
+  url: string;
+  image?: string;
+  favicon?: string;
+  description?: string;
+  description_site_cp?: string;
+  zinger?: string;
+  tags?: string[];
+  og_screenshot_url?: string;
+  og_last_fetch?: string;
+}
+
+const tag = "AI-Toolkit"
+console.log("Current tag:", tag);
+
+const aiToolKit = toolEntries
+  .filter((entry) => {
+    const frontmatter = entry.data;
+    return frontmatter.tags && frontmatter.tags.includes(tag);
+    console.log("Filtered toolkit:", aiToolKit.length);
+  })
+  .map((entry) => ({
+    site_name: entry.data.site_name,
+    title: entry.data.title,
+    url: entry.data.url,
+    image: entry.data.image,
+    favicon: entry.data.favicon,
+    description: entry.data.description || entry.data.zinger || "",
+    description_site_cp: entry.data.description_site_cp,
+    tags: entry.data.tags || [],
+    filename: entry.id,
+    og_screenshot_url: entry.data.og_screenshot_url,
+  }));
+  
+  const allTags = Array.from(
+  new Set(
+    aiToolKit.flatMap(tool => tool.tags)
+  )
+).sort()
+  
+  
+
 
 /* // Get all entries from the tools collection
 const toolEntries = await getCollection("tooling");
@@ -35,6 +87,11 @@ const {
     </header>
 
     <main class="toolkit-content">
+      <TagColumn allRenderedTags={allTags} tools={aiToolKit} />
+      <CardGrid>
+        {aiToolKit.map((tool: Tool) => <ToolCard tool={tool} />)}
+      </CardGrid>
+
       <!--
     {
       tools && tools.length > 0 ? (
@@ -64,6 +121,20 @@ const {
 </Layout>
 
 <style>
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toolkit-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2em 0;
+  }
+
   .toolkit-container {
     width: 92%;
     margin: 0 auto;

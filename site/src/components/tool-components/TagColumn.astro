@@ -1,0 +1,44 @@
+---
+import TagChip from '@tool-components/TagChip.astro';
+
+interface Props {
+  allRenderedTags: string[];
+  tools: any[]; // Add this prop to get access to all tools
+}
+
+const { allRenderedTags, tools } = Astro.props;
+
+// Calculate tag frequencies
+const tagFrequencies = allRenderedTags.reduce((acc, tag) => {
+  const count = tools.filter(tool => tool.tags?.includes(tag)).length;
+  acc[tag] = count;
+  return acc;
+}, {} as Record<string, number>);
+
+// Sort tags by frequency (descending) and then alphabetically for ties
+const sortedTags = allRenderedTags.sort((a, b) => {
+  const countDiff = tagFrequencies[b] - tagFrequencies[a];
+  return countDiff !== 0 ? countDiff : a.localeCompare(b);
+});
+---
+
+<div class="tag-column">
+  {
+    sortedTags.map((tag) => (
+      <TagChip 
+        tag={tag} 
+        count={tagFrequencies[tag]} 
+        includeCount={true} 
+      />
+    ))
+  }
+</div>
+
+<style>
+  .tag-column {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em;
+  }
+</style>

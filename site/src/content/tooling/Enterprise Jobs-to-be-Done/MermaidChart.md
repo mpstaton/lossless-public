@@ -9,10 +9,10 @@ tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/1783984c991045b11ebcece0f423b559f7644489fa8a99052ad8cda44fedd82e.jpeg
-og_last_fetch: 2025-03-07T06:11:14.355Z
 og_errors: true
 og_last_error: '2025-03-07T10:19:44.514Z'
 og_error_message: HTTP error 401
+og_last_fetch: 2025-03-07T06:11:14.355Z
 ---
 [[Visual Software Development]], [[CARBS]].
 
