@@ -1,16 +1,16 @@
 ---
-url: https://dollardeploy.com
-image: https://dollardeploy.com/cover.jpg
+url: 'https://dollardeploy.com'
+image: 'https://dollardeploy.com/cover.jpg'
 site_name: DollarDeploy
 title: DollarDeploy
-favicon: https://dollardeploy.com/icon-dark.png
+favicon: 'https://dollardeploy.com/icon-dark.png'
 tags:
   - Software-Development
   - Cloud-Infrastructure
   - Self-Hosting-Cloud
 og_errors: true
 og_last_error: 2025-03-07T05:36:40.167Z
-og_error_message: "Screenshot fetch error: HTTP error! status: 500"
+og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
 og_last_fetch: 2025-03-07T05:19:02.929Z
 ---
 ##### [[DollarDeploy]] Hero

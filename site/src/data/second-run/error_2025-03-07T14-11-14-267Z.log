@@ -1,0 +1,13 @@
+URL: https://youtube.com/watch?v=xZX0vOqWsC8
+Error: Command failed: fabric -y https://youtube.com/watch?v=xZX0vOqWsC8 --stream --pattern extract_wisdom
+
+Error: Command failed: fabric -y https://youtube.com/watch?v=xZX0vOqWsC8 --stream --pattern extract_wisdom
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:519:28)
+    at maybeClose (node:internal/child_process:1105:16)
+    at Socket.<anonymous> (node:internal/child_process:457:11)
+    at Socket.emit (node:events:519:28)
+    at Pipe.<anonymous> (node:net:340:12)
