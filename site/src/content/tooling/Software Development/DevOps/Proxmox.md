@@ -16,3 +16,7 @@ og_last_fetch: 2025-03-07T05:19:02.913Z
 [[Virtual Environments]] part of [[Reproducible Builds]]. 
 
 https://youtu.be/gbVFTl8bnt8?si=UHwLk7bBBRinjdOL
+
+https://youtu.be/qFWQldUqzyk?si=ehwypq6g9y2Iwhr-
+
+https://youtu.be/gbVFTl8bnt8?si=ZTA4zcsARu8PtX9d

@@ -26,6 +26,8 @@ og_last_fetch: 2025-03-07T05:19:02.917Z
 
 https://youtu.be/Ud7Npgi6x8E?si=AFr_dvxpi80y4mLP
 
+https://youtu.be/t779DVjCKCs?si=c9YfUCAKR5YcQIbx
+
 https://youtu.be/mSC1Igmz1tY?si=ygrdTP9K1yozjWkj
 
 https://youtube.com/shorts/IeEUvhTebcM?si=1N6BZwJAwSaqtfpa

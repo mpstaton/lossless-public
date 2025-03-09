@@ -15,7 +15,7 @@ jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:02.920Z
 ---
 
-
+https://youtu.be/zvPCkT9WRk0?si=YxLN-uIgg0BwhLd8
 | Release | Date       | Announcement                                                                                                                                                       |
 | ------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 17.2    | 2024-11-21 | [PostgreSQL 17.2, 16.6, 15.10, 14.15, 13.18, and 12.22 Released!](https://www.postgresql.org/about/news/postgresql-172-166-1510-1415-1318-and-1222-released-2965/) |

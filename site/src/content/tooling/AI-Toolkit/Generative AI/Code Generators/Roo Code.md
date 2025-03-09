@@ -19,3 +19,5 @@ tags:
 2025, February 14. [Roo Code is AMAZING - AI VSCode Extension (better than Cursor?)](https://www.youtube.com/watch?v=r5T3h0BOiWw). Better Stack.
 
 https://youtu.be/mwJx5QI2c0o?si=uDAOTfofsA1vzRh9
+
+https://youtu.be/mwJx5QI2c0o?si=mEC6HHtnftoTjtdg

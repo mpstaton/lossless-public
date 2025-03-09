@@ -18,3 +18,5 @@ jina_error: |-
 og_last_fetch: 2025-03-07T05:19:02.930Z
 ---
 An [[Open Source]] framework for [[Self-Hosting]] that gives the same powers of [[Opsless Deployment Providers]]
+
+https://youtu.be/gZxQUgWm9ZM?si=GalhrytFPxf3cLSn
