@@ -9,6 +9,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ca45d929e4972dc896f77baeaa16873798a265176a2184c96687aa5e505ee7bb.jpeg
 og_last_fetch: 2025-03-07T05:19:01.820Z
+last_jina_request: '2025-03-09T05:58:40.677Z'
+jina_error: TIMEOUT
 ---
 
 https://youtu.be/vgvbRRVreHI?si=3yguzDDQlnK1MLH-

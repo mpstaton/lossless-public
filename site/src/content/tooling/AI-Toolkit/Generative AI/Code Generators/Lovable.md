@@ -12,6 +12,8 @@ favicon: 'https://lovable.dev/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7eb11b6a6b2250c47387756fe4f1fc7a36e0089f9378bd09f1e37120d39fa540.jpeg
 og_last_fetch: 2025-03-07T05:20:56.437Z
+last_jina_request: '2025-03-09T05:58:40.741Z'
+jina_error: TIMEOUT
 ---
 [[Code Generator]]
 

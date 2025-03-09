@@ -11,6 +11,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/556bf6b3049fb4f3673395b171fb9224e36bc14e8491f17d4a9aac8ab7bc46c7.jpeg
 og_last_fetch: 2025-03-07T05:19:01.823Z
+last_jina_request: '2025-03-09T05:58:40.678Z'
+jina_error: TIMEOUT
 ---
 [[Advanced Documents]]
 ### CraftDocs managing the Innovation Cookbook:

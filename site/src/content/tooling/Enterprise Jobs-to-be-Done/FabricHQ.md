@@ -11,5 +11,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d3813120a803dbfcec1175f3f34eaaafe0bc0dc7eb5508d85111f9c0cee29f86.jpeg
 og_last_fetch: 2025-03-07T05:19:01.829Z
+last_jina_request: '2025-03-09T05:58:40.731Z'
+jina_error: TIMEOUT
 ---
 [[Recruiting Platforms 1|Recruiting Platform]]

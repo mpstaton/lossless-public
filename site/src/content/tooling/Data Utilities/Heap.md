@@ -18,6 +18,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/f01df92ad3cb3a4c08bee06f4b68ef53437c72e1d5fce0f536529988a5230752.jpeg
 og_last_fetch: 2025-03-07T05:19:01.834Z
+last_jina_request: '2025-03-09T05:58:40.560Z'
+jina_error: TIMEOUT
 ---
 Part of the [[Current Stack|Laerdal Stack]]
 

@@ -14,5 +14,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/502afb5e36da691bbe35bc7a53dca9e5d25db9302f35b31e9d01b1bfdef46971.jpeg
 og_last_fetch: 2025-03-07T05:19:19.166Z
+last_jina_request: '2025-03-09T05:58:40.627Z'
+jina_error: TIMEOUT
 ---
 https://uibakery.io/ai-app-generator

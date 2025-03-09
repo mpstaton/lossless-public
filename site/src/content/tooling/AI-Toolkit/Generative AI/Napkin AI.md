@@ -12,5 +12,7 @@ site_name: Napkin AI
 title: Napkin AI - The visual AI for business storytelling
 favicon: 'https://www.napkin.ai/favicon-32x32.png?v=2'
 og_last_fetch: 2025-03-07T05:19:19.176Z
+last_jina_request: '2025-03-09T05:58:40.628Z'
+jina_error: TIMEOUT
 ---
 

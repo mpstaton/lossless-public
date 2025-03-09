@@ -11,5 +11,7 @@ site_name: poolside
 title: poolside
 favicon: 'https://poolside.ai/favicon.ico'
 og_last_fetch: 2025-03-07T05:20:56.436Z
+last_jina_request: '2025-03-09T05:58:40.741Z'
+jina_error: TIMEOUT
 ---
 [[Code Generator]]

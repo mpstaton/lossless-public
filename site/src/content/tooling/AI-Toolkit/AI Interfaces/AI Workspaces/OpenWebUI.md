@@ -16,6 +16,8 @@ og_errors: true
 og_last_error: '2025-03-07T10:19:46.162Z'
 og_error_message: HTTP error 401
 og_last_fetch: 2025-03-07T06:13:16.932Z
+last_jina_request: '2025-03-09T05:58:40.804Z'
+jina_error: TIMEOUT
 ---
 
 Creates a UI for [[Artificial Intelligence|AI]]

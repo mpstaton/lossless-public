@@ -12,6 +12,8 @@ favicon: 'https://atlan.com/favicon-96x96.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/81e81681e94df9e8271319f6b58ec516a239275dd51f22b7244fb6602109cace.jpeg
 og_last_fetch: 2025-03-07T05:19:01.835Z
+last_jina_request: '2025-03-09T05:58:40.587Z'
+jina_error: TIMEOUT
 ---
 [[Data Governance]]
 

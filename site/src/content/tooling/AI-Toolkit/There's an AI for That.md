@@ -10,5 +10,7 @@ og_errors: true
 og_last_error: '2025-03-07T10:19:44.676Z'
 og_error_message: HTTP error 401
 og_last_fetch: 2025-03-07T06:11:14.478Z
+last_jina_request: '2025-03-09T05:58:40.589Z'
+jina_error: TIMEOUT
 ---
 https://youtu.be/S3fEzr1oAVk?si=4Bq9w8UPBQQPo9tj

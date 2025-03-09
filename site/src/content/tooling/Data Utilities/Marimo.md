@@ -9,6 +9,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/90a2899db32d4d92e654163dd0e81572bdfddd9d27666401f93cabd68e6ba5a0.jpeg
 og_last_fetch: 2025-03-07T05:19:01.833Z
+last_jina_request: '2025-03-09T05:58:40.559Z'
+jina_error: TIMEOUT
 ---
 Here's [an overview video](https://youtu.be/XoArtLKPJ2I?si=V3yg6PM34tgr3JUF) on [[YouTube]] by [[BugBytes]].
 

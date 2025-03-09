@@ -15,6 +15,8 @@ og_errors: true
 og_last_error: '2025-03-07T05:36:39.702Z'
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
 og_last_fetch: 2025-03-07T05:19:02.909Z
+last_jina_request: '2025-03-09T05:58:40.622Z'
+jina_error: TIMEOUT
 ---
 
 [[Rust]]

@@ -12,6 +12,8 @@ favicon: 'https://aide.dev/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2c7b5bee8b50b726de07a9708dbf988fec9744fc0bb01ec7bb7dede0b2daade5.jpeg
 og_last_fetch: 2025-03-07T05:20:56.442Z
+last_jina_request: '2025-03-09T05:58:40.803Z'
+jina_error: TIMEOUT
 ---
 An [[Text Editors or IDEs|IDE]] with [[Code Generator]] powers.  
 

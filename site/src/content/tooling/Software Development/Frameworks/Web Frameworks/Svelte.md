@@ -11,6 +11,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d5ce42d3352af3144b253670b8c6e9d274edd84ae1a6d00f4bcb57078b7e303f.jpeg
 og_last_fetch: 2025-03-07T05:20:56.419Z
+last_jina_request: '2025-03-09T05:58:40.736Z'
+jina_error: TIMEOUT
 ---
 
 | Release-Date | Version | Announcement                                                                             |

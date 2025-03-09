@@ -11,5 +11,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9ec8d380195400916f530ba2269235c0240eee261a78ea2e840ba942e89b7e26.jpeg
 og_last_fetch: 2025-03-07T05:19:31.550Z
+last_jina_request: '2025-03-09T05:58:40.590Z'
+jina_error: TIMEOUT
 ---
 [[Artificial Intelligence|Enterprise AI]]

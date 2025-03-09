@@ -12,6 +12,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/09a8b930c8b79e7c313e5e741e1d59c39ae91bc1f10cdefa68b47bf77519be57.jpeg
 og_last_fetch: 2025-03-07T05:20:56.432Z
+last_jina_request: '2025-03-09T05:58:40.739Z'
+jina_error: TIMEOUT
 ---
 [[Microsoft]] acquired [[GitHub]].
 

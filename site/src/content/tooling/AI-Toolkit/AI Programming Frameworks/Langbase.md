@@ -10,5 +10,7 @@ favicon: 'https://langbase.com/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/fe14bb705f97b14477cd66fc6a02fde2f5cb810a3cb390fade9c3dcedf7232bf.jpeg
 og_last_fetch: 2025-03-07T05:20:56.174Z
+last_jina_request: '2025-03-09T05:58:40.735Z'
+jina_error: TIMEOUT
 ---
 

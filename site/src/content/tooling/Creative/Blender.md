@@ -11,6 +11,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/10c38833207c9dae614d56b5f1b3e52ab7f02323a5b9d583372dfb8cc137ce6c.jpeg
 og_last_fetch: 2025-03-07T05:19:01.838Z
+last_jina_request: '2025-03-09T05:58:40.588Z'
+jina_error: TIMEOUT
 ---
 
 [[Computer-Generated Imagery]], [[Open Source]]

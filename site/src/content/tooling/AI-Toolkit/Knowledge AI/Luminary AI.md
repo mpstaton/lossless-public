@@ -10,5 +10,7 @@ title: AI ChatBot - Luminary AI
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0d80b887d5c7d8b3f515079c2f3ac78a1870c08f81e98154b5644d3c097ac529.jpeg
 og_last_fetch: 2025-03-07T05:19:18.722Z
+last_jina_request: '2025-03-09T05:58:40.538Z'
+jina_error: TIMEOUT
 ---
 [[RAG]] and [[Knowledge Augmented Generation|KAG]] 

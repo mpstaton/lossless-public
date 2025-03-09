@@ -10,6 +10,8 @@ favicon: 'https://framerusercontent.com/images/4voQs0ZFt7bwUoeTCYzanp9Cg.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bbc999004e5da68ed7422e309b35766812f0fdfccfe3b4a5831053b791327122.jpeg
 og_last_fetch: 2025-03-07T05:19:19.175Z
+last_jina_request: '2025-03-09T05:58:40.628Z'
+jina_error: TIMEOUT
 ---
 [[Generative AI]]
 [[AI Avatars]]

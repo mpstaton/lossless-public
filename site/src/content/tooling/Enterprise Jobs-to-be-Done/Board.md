@@ -11,6 +11,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b48b87d9fe4d7bd770ef01b9ff1f7c7046cb11a5c1ca97e943c510f1fd33f461.jpeg
 og_last_fetch: 2025-03-07T05:19:01.830Z
+last_jina_request: '2025-03-09T05:58:40.558Z'
+jina_error: TIMEOUT
 ---
 [[Enterprise Resource Planning|ERP]]
 

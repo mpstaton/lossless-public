@@ -14,6 +14,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a7264d3a74e0d2f4336e24c24afcd6e0cf36ac3b03c382d057f70e58316de813.jpeg
 og_last_fetch: 2025-03-07T05:20:56.756Z
+last_jina_request: '2025-03-09T05:58:40.806Z'
+jina_error: TIMEOUT
 ---
 Similar to [[Fathom AI]], an [[AI Powered Data Capture#AI Powered Transcription Services|AI Powered Transcription]] service. 
 

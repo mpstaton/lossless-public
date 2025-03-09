@@ -12,6 +12,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/032126250487ac1c11d8b737a83c11d70f91b9cde560ce45f9a3962e4846e7b9.jpeg
 og_last_fetch: 2025-03-07T05:19:02.909Z
+last_jina_request: '2025-03-09T05:58:40.592Z'
+jina_error: TIMEOUT
 ---
 Skip is a [[Web Frameworks|Web Framework]] focused on the [[Back-End Engineering]], created and managed at [[Meta]] and [[Facebook]]
 

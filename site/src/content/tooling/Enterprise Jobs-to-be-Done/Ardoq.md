@@ -16,6 +16,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4ff0c73628f175ce346bf5ce8eb1a846297aae9ac7bf5e3b6d9718b778b790e0.jpeg
 og_last_fetch: 2025-03-07T05:19:01.830Z
+last_jina_request: '2025-03-09T05:58:40.558Z'
+jina_error: TIMEOUT
 ---
 [[Data Model]], [[Enterprise SaaS]]
 ![[Screenshot 2025-02-11 at 4.02.47 PM_Ardoq.png]]

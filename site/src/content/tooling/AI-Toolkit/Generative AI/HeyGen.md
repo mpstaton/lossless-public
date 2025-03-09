@@ -14,5 +14,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c0fadff54acb974981c2160509946bb429736ff7bee1b8892218f022386d33b8.jpeg
 og_last_fetch: 2025-03-07T05:20:39.775Z
+last_jina_request: '2025-03-09T05:58:40.629Z'
+jina_error: TIMEOUT
 ---
 

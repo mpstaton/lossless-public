@@ -13,6 +13,8 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6759ca3a5bc3cb25c144331697448710ef541759cbc1a195a35f0d4d978ef423.jpeg
 og_last_fetch: 2025-03-07T05:20:40.130Z
+last_jina_request: '2025-03-09T05:58:40.732Z'
+jina_error: TIMEOUT
 ---
 [[AI Powered Personal Assistant]], [[Artificial Intelligence|Enterprise AI]], [[Agentic AI]]
 

@@ -12,6 +12,8 @@ favicon: 'https://cdn.replit.com/dotcom/favicon-196.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e39c8b31528100188ae439afe37b8fe7322fdbb176cb5a125b2c88d9bce8d334.jpeg
 og_last_fetch: 2025-03-07T05:19:02.927Z
+last_jina_request: '2025-03-09T05:58:40.521Z'
+jina_error: TIMEOUT
 ---
 
 https://youtu.be/pZrKB9J33IQ?si=XaIW6L5FVxUCPFrf

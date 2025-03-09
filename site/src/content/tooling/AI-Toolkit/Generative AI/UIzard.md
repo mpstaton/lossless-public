@@ -12,6 +12,8 @@ favicon: 'https://uizard.io/favicon-32x32.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/73ff4b4be188cbcddb89a513de0a5cf8533865b0677c6196abee2c2bfc93c346.jpeg
 og_last_fetch: 2025-03-07T05:19:19.166Z
+last_jina_request: '2025-03-09T05:58:40.625Z'
+jina_error: TIMEOUT
 ---
 [https://uizard.io](https://uizard.io/)
 [[UI Builders]]

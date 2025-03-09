@@ -12,5 +12,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/3ebb2f29af869bcb006daec0b2e69eb5c2fad680db28ff41975f05898474a19f.jpeg
 og_last_fetch: 2025-03-07T05:20:56.412Z
+last_jina_request: '2025-03-09T05:58:40.734Z'
+jina_error: TIMEOUT
 ---
 [[Cloud Infrastructure]]

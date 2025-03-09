@@ -10,6 +10,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9f08b5a99c6c9f62c7b1c97611500f5db6b140a14c8c8c4a5b34b00faaad2427.jpeg
 og_last_fetch: 2025-03-07T05:19:01.831Z
+last_jina_request: '2025-03-09T05:58:40.558Z'
+jina_error: TIMEOUT
 ---
 
 Einstein [[AI Copilots]]

@@ -13,6 +13,8 @@ og_errors: true
 og_last_error: '2025-03-07T10:19:44.820Z'
 og_error_message: HTTP error 401
 og_last_fetch: 2025-03-07T06:11:14.691Z
+last_jina_request: '2025-03-09T05:58:40.591Z'
+jina_error: TIMEOUT
 ---
 
 [[Web Frameworks]] include [[NEXT.js]], [[React]], [[Vue.js]], [[Solid.js]], [[Nextra]], [[Astro]].

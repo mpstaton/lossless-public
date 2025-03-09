@@ -10,5 +10,7 @@ image: 'https://playground.com/og/default.png'
 site_name: Playground
 title: 'Free AI Design Tool: Logos, T-Shirts, Social Media - Playground'
 og_last_fetch: 2025-03-07T05:19:19.172Z
+last_jina_request: '2025-03-09T05:58:40.627Z'
+jina_error: TIMEOUT
 ---
 [[Presentation Maker]] 

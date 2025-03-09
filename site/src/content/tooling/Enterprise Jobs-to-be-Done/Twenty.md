@@ -9,6 +9,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2ef97ffe0b869e2e8316b66eef4a59b959cc88d038ed23bec41951e3a7d6527c.jpeg
 og_last_fetch: 2025-03-07T05:19:01.826Z
+last_jina_request: '2025-03-09T05:58:40.730Z'
+jina_error: TIMEOUT
 ---
 
 [[Twenty]] is a [[State of the Art]] [[CRM]], and it is [[Open Source]]

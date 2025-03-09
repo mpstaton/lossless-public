@@ -12,6 +12,8 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/dbb92ea6ca8eef3137612d4264b71e61db526de5ab3aeb33358e9a322851a9c5.jpeg
 og_last_fetch: 2025-03-07T05:19:18.724Z
+last_jina_request: '2025-03-09T05:58:40.538Z'
+jina_error: TIMEOUT
 ---
 <iframe 
   style="aspect-ratio:16/9;width:100%;height:auto" 

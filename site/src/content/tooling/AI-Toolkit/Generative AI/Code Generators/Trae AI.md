@@ -11,6 +11,8 @@ title: Trae - Ship Faster with Trae
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6b34f9e65ca9d66ebb883d04c7169192623329b90460fdb514571a4245d82d8a.jpeg
 og_last_fetch: 2025-03-07T05:20:56.434Z
+last_jina_request: '2025-03-09T05:58:40.740Z'
+jina_error: TIMEOUT
 ---
 ##### [[Trae AI]] is an  [[AI Native Applications|AI Native]] [[Text Editors or IDEs|IDE]] [[Code Generator]]
 Similar to [[Cursor]], [[Windsurf IDE]].

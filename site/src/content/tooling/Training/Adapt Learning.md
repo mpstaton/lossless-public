@@ -12,6 +12,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bc91c6c55e052a60cc203e20b9beb805f04d86c4ad49dedf9138d50e3cbe06ea.jpeg
 og_last_fetch: 2025-03-07T05:19:01.809Z
+last_jina_request: '2025-03-09T05:58:40.675Z'
+jina_error: TIMEOUT
 ---
 Part of [[Current Stack|Laerdal Tech Stack]]
 

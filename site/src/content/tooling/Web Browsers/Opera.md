@@ -13,6 +13,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e86723fc0a4176fdd336ac0802c453e457a05c1f857d082a340fa18de55ba253.jpeg
 og_last_fetch: 2025-03-07T05:19:01.782Z
+last_jina_request: '2025-03-09T05:58:40.674Z'
+jina_error: TIMEOUT
 ---
 ##### Opera has a dead simple Onboarding.
 ![[Screenshot From 2024-12-24 16-20-19_Opera--Onboarding.png]]

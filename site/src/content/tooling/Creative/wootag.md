@@ -13,5 +13,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8b823376178ec491af93605c44917c66d41590cc5222772ddd9f24476ea9cf6f.jpeg
 og_last_fetch: 2025-03-07T05:19:01.836Z
+last_jina_request: '2025-03-09T05:58:40.587Z'
+jina_error: TIMEOUT
 ---
 [[Interactive Video]]

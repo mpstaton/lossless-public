@@ -9,6 +9,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/718f93b6fd8e59927496e68a7ad87ae25447409b6c98653f111a5c83170a91d1.jpeg
 og_last_fetch: 2025-03-07T05:19:01.833Z
+last_jina_request: '2025-03-09T05:58:40.559Z'
+jina_error: TIMEOUT
 ---
 
 A [[Terminal Emulators]] that helps with [[Data Analysis]]. 
