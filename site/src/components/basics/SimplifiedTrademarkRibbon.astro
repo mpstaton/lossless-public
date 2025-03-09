@@ -5,17 +5,23 @@ import path from "node:path";
 // Get all trademark SVGs
 const componentsDir = path.join(
   process.cwd(),
-  "src/assets/visuals-as-components/trademarks-fixed-height/"
+  "src/assets/Visuals/Standardized-Tooling-Trademarks"
 );
 
 const trademarks = fs
   .readdirSync(componentsDir)
-  .filter((file) => file.endsWith(".astro"))
+  .filter((file) => file.endsWith(".svg"))
   .sort(() => Math.random() - 0.5)
   .map((filename) => {
     const content = fs.readFileSync(path.join(componentsDir, filename), "utf8");
+    // Extract SVG and modify its attributes
     const svgMatch = content.match(/<svg[^>]*>[\s\S]*?<\/svg>/i);
-    return svgMatch ? svgMatch[0] : "";
+    if (svgMatch) {
+      return svgMatch[0]
+        .replace(/height="[^"]*"/, 'height="100%"')
+        .replace(/width="[^"]*"/, "auto");
+    }
+    return "";
   })
   .filter(Boolean);
 ---
@@ -39,29 +45,33 @@ const trademarks = fs
 <style>
   .trademark-ribbon {
     width: 100%;
-    height: 80px;
-    overflow: hidden;
+    height: 160px;
+    overflow: visible;
     position: relative;
+    background: transparent;
   }
 
   .ribbon-track {
     display: flex;
     align-items: center;
-    animation: scroll 60s linear infinite;
+    animation: scroll 460s linear infinite;
     width: max-content;
     height: 100%;
     gap: 2rem;
   }
 
   .trademark-container {
-    height: 100%;
+    height: 160px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .trademark-container :global(svg) {
-    height: 100%;
+    height: 160px;
     width: auto;
+    max-width: none;
+    display: block;
   }
 
   @keyframes scroll {
