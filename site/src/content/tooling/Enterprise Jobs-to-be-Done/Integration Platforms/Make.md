@@ -15,8 +15,8 @@ og_errors: true
 og_last_error: '2025-03-07T10:19:45.328Z'
 og_error_message: HTTP error 401
 og_last_fetch: 2025-03-07T06:11:15.279Z
-last_jina_request: '2025-03-09T05:58:40.536Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:12.957Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 [[iPaaS]]

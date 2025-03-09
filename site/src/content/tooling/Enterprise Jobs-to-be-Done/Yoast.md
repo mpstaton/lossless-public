@@ -9,8 +9,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4993284b7c1624006ee57ddf29fd2a041798b461ca5a91e846aba11cc466490a.jpeg
 og_last_fetch: 2025-03-07T05:19:01.826Z
-last_jina_request: '2025-03-09T05:58:40.730Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:12.274Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Search Engine Optimization]] for everyone.  
 

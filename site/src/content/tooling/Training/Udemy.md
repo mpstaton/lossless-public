@@ -10,8 +10,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2e98d4b3ecf1ecbf05a89073f0a5057aacc2f0fdd43195cab6a4f1bd2d87c50d.jpeg
 og_last_fetch: 2025-03-07T05:19:01.805Z
-last_jina_request: '2025-03-09T05:58:40.675Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.955Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 

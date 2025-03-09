@@ -11,8 +11,8 @@ favicon: 'https://hailuoai.video/assets/logo/favicon.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5edb0d0b07d2f5fe341d6fcd488b11ab9231c7172cb81ca9a927e19cb6f65ff1.jpeg
 og_last_fetch: 2025-03-07T05:20:39.778Z
-last_jina_request: '2025-03-09T05:58:40.629Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:13.368Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Generative AI]] 
 [[Video Generator]]

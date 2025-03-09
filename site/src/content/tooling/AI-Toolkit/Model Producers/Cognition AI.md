@@ -14,7 +14,7 @@ site_name: Cognition
 title: An applied AI lab building the future of software engineering
 favicon: 'https://www.cognition.ai/icons/favicon.svg'
 og_last_fetch: 2025-03-07T05:19:18.720Z
-last_jina_request: '2025-03-09T05:58:40.557Z'
+last_jina_request: '2025-03-09T06:09:16.996Z'
 jina_error: TIMEOUT
 ---
 Cognition AI is an [[Artificial Intelligence|AI]] research lab, and are the creators and maintainers of [[Devin]], one of the [[AI Models]] that can perform [[Code Generator]]

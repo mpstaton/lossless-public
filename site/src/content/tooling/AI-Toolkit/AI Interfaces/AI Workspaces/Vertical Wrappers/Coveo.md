@@ -13,7 +13,7 @@ favicon: 'https://www.coveo.com/public/img/favicon.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/761047facaa18ea19ca4343906c6f818acedc57267b411fa0e7b7fe6f71d7337.jpeg
 og_last_fetch: 2025-03-07T05:20:56.757Z
-last_jina_request: '2025-03-09T05:58:40.806Z'
+last_jina_request: '2025-03-09T06:09:19.478Z'
 jina_error: TIMEOUT
 ---
 [[Enterprise SaaS]], [[Customer Experience]]. 

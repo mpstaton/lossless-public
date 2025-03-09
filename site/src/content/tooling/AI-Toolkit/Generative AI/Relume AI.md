@@ -14,8 +14,8 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b10d1e4261d94bb3de04a2fa078aa583cb6620e1c6512fe61085d9885491b9fc.jpeg
 og_last_fetch: 2025-03-07T05:19:19.171Z
-last_jina_request: '2025-03-09T05:58:40.627Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.786Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[App Builder]], [[Site Builders]], [[UI Builders]]
 

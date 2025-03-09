@@ -16,7 +16,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/42a6d83228ad764faf3ae0015e437e78dbdd92f475c9cd4fd5814e37cde8aaca.jpeg
 og_last_fetch: 2025-03-07T05:19:46.541Z
-last_jina_request: '2025-03-09T05:58:40.539Z'
+last_jina_request: '2025-03-09T06:09:19.314Z'
 jina_error: TIMEOUT
 ---
 [[Knowledge Base AI]]

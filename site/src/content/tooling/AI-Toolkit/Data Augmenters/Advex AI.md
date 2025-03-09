@@ -16,8 +16,8 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/60ad133053803c797828bd814e6d5d3fa916e171d095e56f260bb3ded608aea4.jpeg
 og_last_fetch: 2025-03-07T05:19:19.165Z
-last_jina_request: '2025-03-09T05:58:40.672Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:12.670Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Computer Vision]]
 

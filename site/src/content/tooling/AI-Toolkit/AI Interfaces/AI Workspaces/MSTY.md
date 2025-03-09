@@ -14,7 +14,7 @@ site_name: Msty
 title: Msty - Using AI Models made Simple and Easy
 favicon: 'https://msty.app/favicon.ico'
 og_last_fetch: 2025-03-07T05:20:56.747Z
-last_jina_request: '2025-03-09T05:58:40.805Z'
+last_jina_request: '2025-03-09T06:09:19.473Z'
 jina_error: TIMEOUT
 ---
 https://youtu.be/5U_lOjfZiXg?si=EJWZpDXYAT98xgCb

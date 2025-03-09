@@ -16,7 +16,7 @@ title: Best AI Video Generator | AI STUDIO
 favicon: >-
   https://cdn.prod.website-files.com/63da3362f67ed6f71c9489c1/6710fc52c1b4308c5d43631c_Favicon_aistudios.svg
 og_last_fetch: 2025-03-07T05:20:40.120Z
-last_jina_request: '2025-03-09T05:58:40.631Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:12.498Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Video Generator|Video Generation]]

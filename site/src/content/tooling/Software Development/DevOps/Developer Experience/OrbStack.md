@@ -12,8 +12,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/71f9b2f378fb69ba2aede828f50a3faea381879467239d19c55fc6a12e383e49.jpeg
 og_last_fetch: 2025-03-07T05:20:56.430Z
-last_jina_request: '2025-03-09T05:58:40.739Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.751Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Containers]], [[Virtual Machines]], [[Ephemeral Environments|Ephemeral Environment]]
 

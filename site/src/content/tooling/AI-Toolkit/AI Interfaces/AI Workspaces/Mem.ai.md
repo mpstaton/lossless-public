@@ -12,7 +12,7 @@ og_errors: true
 og_last_error: '2025-03-07T05:38:03.788Z'
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
 og_last_fetch: 2025-03-07T05:20:56.744Z
-last_jina_request: '2025-03-09T05:58:40.805Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:12.709Z'
+jina_error: 'HTTP error! status: 429'
 ---
 Similar to [[Networked-Notes]] and [[Advanced Documents]], but using [[Generative AI]].  

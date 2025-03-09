@@ -10,8 +10,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/375a4ccca26fc75007e16b3d46dcb76453c81bf5a23877c79c67ffdfe07a89e5.jpeg
 og_last_fetch: 2025-03-07T05:19:02.928Z
-last_jina_request: '2025-03-09T05:58:40.521Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:12.031Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 A feature of [[Amazon Web Services|AWS]], created by [[Amazon]], a mainstay of [[Serverless]] 

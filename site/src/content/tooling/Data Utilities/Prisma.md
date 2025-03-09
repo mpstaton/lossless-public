@@ -10,8 +10,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/21eb8d2b8a560f67e14af1a9c4078967a03840fc96a86c2830ce946376c912ee.jpeg
 og_last_fetch: 2025-03-07T05:19:01.832Z
-last_jina_request: '2025-03-09T05:58:40.558Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.070Z'
+jina_error: 'HTTP error! status: 429'
 ---
 A code library [[Object-Relational Mapper]] that works with modern [[Web Frameworks]] and [[Databases]].
 

@@ -11,7 +11,7 @@ favicon: 'https://framerusercontent.com/images/4li2PjWxZJmoGkzXRMJWU1rJmI.svg'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6e28c20c2a9331520db6e344bbb9afec93f65412fbae2636bfb19c171b40db8a.jpeg
 og_last_fetch: 2025-03-07T05:20:56.410Z
-last_jina_request: '2025-03-09T05:58:40.733Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.135Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Generative AI]] [[AI Cloud Infrastructure]]

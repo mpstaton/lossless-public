@@ -16,7 +16,7 @@ title: Lindy — Meet Your AI Assistant
 favicon: >-
   https://cdn.prod.website-files.com/63e15df811f9df22b231e58f/6733c559fa6a679364b58973_32.png
 og_last_fetch: 2025-03-07T05:20:40.126Z
-last_jina_request: '2025-03-09T05:58:40.732Z'
+last_jina_request: '2025-03-09T06:09:19.412Z'
 jina_error: TIMEOUT
 ---
 [[Agentic AI]]

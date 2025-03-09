@@ -10,8 +10,8 @@ favicon: 'https://www.assemblyai.com/favicon.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ac303e13b2836f26b643b87ccac1b193851d34339cec90f47833dd7920090d0d.jpeg
 og_last_fetch: 2025-03-07T05:20:56.170Z
-last_jina_request: '2025-03-09T05:58:40.733Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.953Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 [https://www.assemblyai.com](https://www.assemblyai.com/)

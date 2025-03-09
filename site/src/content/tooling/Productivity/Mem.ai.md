@@ -9,7 +9,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5390e5cc603274d497ea7c42566c921108e8f9a2d7b193155c17f74ac4e4577b.jpeg
 og_last_fetch: 2025-03-07T05:19:01.821Z
-last_jina_request: '2025-03-09T05:58:40.678Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:15.213Z'
+jina_error: 'HTTP error! status: 429'
 ---
 Similar to [[Networked-Notes]] and [[Advanced Documents]], but using [[Generative AI]].  

@@ -1,0 +1,19 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "": "https://x.com/exolabs/status/1839027070128496905",
+      "25,966": "https://github.com/exo-explore/exo",
+      "Book a Demo": "https://calendly.com/alex-exolabs/exo-product-demonstration",
+      "Learn More": "https://blog.exolabs.net/day-1"
+    },
+    "title": "EXO Labs - Enterprise On-Premise AI",
+    "description": "Secure, compliant AI for mission-critical operations. EXO delivers enterprise-grade AI that runs entirely on your infrastructure.",
+    "url": "https://exolabs.net/",
+    "content": "EXO Labs - Enterprise On-Premise AI\n===============\n\nEXO\n\n[](https://x.com/exolabs)[](https://www.linkedin.com/company/exolabsai)\n\n[25,966](https://github.com/exo-explore/exo)[Book a Demo](https://calendly.com/alex-exolabs/exo-product-demonstration)\n\nAI You Can Trust With Your Data\n===============================\n\nEXO powers AI you control—secure, scalable, local.\n\n[Book a Demo](https://calendly.com/alex-exolabs/exo-product-demonstration)[Learn More](https://blog.exolabs.net/day-1)\n\nBuilt For\n\nAutomotiveEnergyDefenceRoboticsAviationHealthcareLogisticsManufacturingLegalGovernmentAutomotiveEnergyDefenceRoboticsAviationHealthcareLogisticsManufacturingLegalGovernment\n\nAS SEEN IN\n\n[![Image 1: Wall Street Journal](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/wsj-qiRsvKR8rNBDpQAZQP1kwfxpZSUyqe.png)](https://www.wsj.com/tech/ai/ai-model-training-underused-gpu-chips-4b6bdff9)[![Image 2: The Information](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/theinformation_logo-UpZgzlApi9eYGQgmLw1aPjRywGXjkz.jpeg)](https://www.theinformation.com/articles/what-on-device-models-mean-for-open-source-ai)[![Image 3: Meta](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/meta-brand-color-gjsWcbyH5r7mQ3YySiWjrXQ5vKLWPQ.png)](https://x.com/exolabs/status/1839027070128496905)",
+    "usage": {
+      "tokens": 406
+    }
+  }
+}

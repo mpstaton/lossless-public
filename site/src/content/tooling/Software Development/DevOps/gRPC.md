@@ -12,8 +12,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7105baed6173f1eb727867d44ab63f12fa413c196b3f5e075c646f94a68477a9.jpeg
 og_last_fetch: 2025-03-07T05:19:02.912Z
-last_jina_request: '2025-03-09T05:58:40.623Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.792Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 Boilerplate generator for [[Dev Ops]].

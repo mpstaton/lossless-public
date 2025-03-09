@@ -1,0 +1,21 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "": "https://www.notdiamond.net/",
+      "Join the waitlist": "https://9m1i8ut0s20.typeform.com/to/NAHJwPZR",
+      "Read more about our vision for long-term safety": "https://www.notdiamond.net/safety",
+      "notdiamond-0001": "https://www.notdiamond.net/notdiamond-0001",
+      "Legal": "https://www.notdiamond.net/legal",
+      "Contact": "mailto:t5@notdiamond.ai?subject=Curious%20about%20Not%20Diamond"
+    },
+    "title": "Not Diamond",
+    "description": "",
+    "url": "https://www.notdiamond.net/",
+    "content": "Not Diamond\n===============\n \n\n[![Image 1](https://cdn.prod.website-files.com/666c8329825732540ce3c301/666c8329825732540ce3c338_logo-medium-transparent.png)](https://www.notdiamond.net/)\n\n[Join the waitlist](https://form.typeform.com/to/EwkODNUs)\n\nOptimize quality with  \nautomatic query-routing.  \nSend queries to the right AI model. Boost quality. Slash latency and costs. All in a single line of code.\n\nThe perfect answer every time.  \n\n---------------------------------\n\n‍One simple API to drive down cost and latency while boosting quality and reliability.  \n\n-----------------------------------------------------------------------------------------\n\n### Maximize quality\n\nWe route to dozens of models to maximize response quality.\n\n### Data-driven learning\n\nEasily provide feedback data to optimize model routing to your use case.\n\n### No more eyeballing\n\nLeverage precise, data-driven decisions that continuously improve.\n\n### Route to anything\n\nRoute to custom models, workflows, agents, chains, or anything else.\n\nTry it out yourself.  \n\n-----------------------\n\nSend some queries below and watch them get dynamically routed to the best-suited model.  \n\n------------------------------------------------------------------------------------------\n\n![Image 2](https://cdn.prod.website-files.com/666c8329825732540ce3c301/666c8329825732540ce3c38b_query-table-2.png)\n\nAlways high-quality.  \n\n-----------------------\n\nBy default, we always route to the most accurate model available, ensuring your application is consistently high-quality.  \n\n----------------------------------------------------------------------------------------------------------------------------\n\n![Image 3](https://cdn.prod.website-files.com/666c8329825732540ce3c301/666c8329825732540ce3c385_outage-reroute.png)\n\nYou're in control.  \n\n---------------------\n\nEasily define personalized routing logic, integrate with your custom workflows, and manage client-side API calls to models.  \n\n------------------------------------------------------------------------------------------------------------------------------\n\n![Image 4](https://cdn.prod.website-files.com/666c8329825732540ce3c301/666c8329825732540ce3c38a_model-feedback.png)\n\nThe perfect fit.  \n\n-------------------\n\nQuality is subjective. Easily provide feedback data on routing decisions and we’ll instantly adapt to your users' needs.  \n\n---------------------------------------------------------------------------------------------------------------------------\n\nAn AI safety and research lab.  \n\n---------------------------------\n\nWe've built venture scale companies, pushed code to millions of users, and published cutting edge research in top AI journals. We believe that the interfaces _between_ models are just as important as the quality of the models themselves—not only for performance and generalization, but for safety as well.  \n\n--------------------------------------------------------------------------------------------------------------------------------\n\n‍[Read more about our vision for long-term safety](https://www.notdiamond.net/safety).  \n\n-----------------------------------------------------------------------------------------\n\nSign up now for API access\n--------------------------\n\n[Join the waitlist](https://9m1i8ut0s20.typeform.com/to/NAHJwPZR)\n\nNot Diamond © 2024\n\n[notdiamond-0001](https://www.notdiamond.net/notdiamond-0001)[Legal](https://www.notdiamond.net/legal)[Contact](mailto:t5@notdiamond.ai?subject=Curious%20about%20Not%20Diamond)",
+    "usage": {
+      "tokens": 667
+    }
+  }
+}

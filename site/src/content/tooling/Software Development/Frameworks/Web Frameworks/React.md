@@ -12,8 +12,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ddc6a11b6e0607cf0fced41dbc927d3f8e8cc05491223bb082beae0cd2b4bdef.jpeg
 og_last_fetch: 2025-03-07T05:20:56.420Z
-last_jina_request: '2025-03-09T05:58:40.737Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.630Z'
+jina_error: 'HTTP error! status: 429'
 ---
 Created and maintained by [[Meta]]. It is the most popular, thus [[Market Standard]], for [[Front-End]] development.  It's essentially a [[JavaScript]] library that enables [[Component-Based Software Architecture]]. 
 

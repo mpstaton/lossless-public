@@ -14,7 +14,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5fce38c3e9db087cf73da85460346e3d488b5f13481e7651a86933323d8cedc9.jpeg
 og_last_fetch: 2025-03-07T05:19:01.833Z
-last_jina_request: '2025-03-09T05:58:40.559Z'
+last_jina_request: '2025-03-09T06:09:12.502Z'
 jina_error: TIMEOUT
 ---
 A tool for [[Business Intelligence]]

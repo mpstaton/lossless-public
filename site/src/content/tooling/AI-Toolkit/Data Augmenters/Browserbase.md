@@ -11,7 +11,7 @@ site_name: 'Browserbase: A web browser for AI agents & applications'
 title: 'Browserbase: A web browser for AI agents & applications'
 favicon: 'https://www.browserbase.com/website/favicon/favicon-48x48.png'
 og_last_fetch: 2025-03-07T05:19:19.164Z
-last_jina_request: '2025-03-09T05:58:40.672Z'
+last_jina_request: '2025-03-09T06:09:11.576Z'
 jina_error: TIMEOUT
 ---
 [[AI Powered Data Capture]].

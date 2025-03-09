@@ -19,8 +19,8 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/43e98c38a6c67f47395ec5af51c0b1f996afca78784e2679c009ea9c8be70153.jpeg
 og_last_fetch: 2025-03-07T05:20:56.177Z
-last_jina_request: '2025-03-09T05:58:40.735Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.059Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 2024, Sep 29. [LangChain and OLlama: Build your personal coding assistant in 10 minutes](https://youtu.be/fOUng7fMQ1Y?si=zumizOmuEk1H6vyh)

@@ -14,7 +14,7 @@ favicon: 'https://copycoder.ai/favicon-32x32.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8556a4c5ef9c370bf263257b377a46a5019de056f86807ad0796f70e1e50ecb4.jpeg
 og_last_fetch: 2025-03-07T05:20:56.439Z
-last_jina_request: '2025-03-09T05:58:40.741Z'
+last_jina_request: '2025-03-09T06:09:19.460Z'
 jina_error: TIMEOUT
 ---
 

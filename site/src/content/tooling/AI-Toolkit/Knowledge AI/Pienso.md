@@ -14,7 +14,7 @@ favicon: 'https://pienso.com/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cdeb01bb45f070daa75683174126c2b01c710eb4335b3f3d02df30283a77d87d.jpeg
 og_last_fetch: 2025-03-07T05:19:18.722Z
-last_jina_request: '2025-03-09T05:58:40.537Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.517Z'
+jina_error: 'HTTP error! status: 429'
 ---
 

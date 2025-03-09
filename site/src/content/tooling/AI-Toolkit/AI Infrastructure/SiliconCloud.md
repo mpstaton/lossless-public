@@ -10,7 +10,7 @@ favicon: 'https://framerusercontent.com/images/4li2PjWxZJmoGkzXRMJWU1rJmI.svg'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d2457473a4d0ccaf6177e03f2d3769292a1744d50a6c7e48a558612c4f127950.jpeg
 og_last_fetch: 2025-03-07T05:20:56.411Z
-last_jina_request: '2025-03-09T05:58:40.733Z'
+last_jina_request: '2025-03-09T06:09:12.975Z'
 jina_error: TIMEOUT
 ---
 

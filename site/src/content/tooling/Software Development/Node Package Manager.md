@@ -11,8 +11,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/58d046c1d166c4fa0907206d4e2d5937f34712a4e1160b5de9227a95b6628b4d.jpeg
 og_last_fetch: 2025-03-07T05:19:01.816Z
-last_jina_request: '2025-03-09T05:58:40.680Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:12.270Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Packages and Libraries|Packages]]
 [[Node.js]]

@@ -10,8 +10,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9acff6219921c86ad1e6c3aa03103f7ab99b25bec2d7f0e0b983e3960a7193d2.jpeg
 og_last_fetch: 2025-03-07T05:19:01.813Z
-last_jina_request: '2025-03-09T05:58:40.679Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.063Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 [[Realtime Collaboration]]

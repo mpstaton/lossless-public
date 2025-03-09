@@ -8,8 +8,8 @@ docs_url: 'https://git-scm.com/doc'
 og_errors: true
 og_last_error: '2025-03-08T20:39:42.148Z'
 og_error_message: HTTP error 401
-last_jina_request: '2025-03-09T05:58:40.676Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.841Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 https://youtu.be/0Hk2XjGSzbA?si=idNrPLL_nQg2oDpR

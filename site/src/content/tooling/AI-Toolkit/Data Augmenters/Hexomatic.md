@@ -13,7 +13,7 @@ favicon: 'https://hexomatic.com/android-chrome-192x192.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cffffa5793b189f92b843d396909836026bc188415af4598b19bfbf7ef2d82bd.jpeg
 og_last_fetch: 2025-03-07T05:19:19.163Z
-last_jina_request: '2025-03-09T05:58:40.631Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.119Z'
+jina_error: 'HTTP error! status: 429'
 ---
 

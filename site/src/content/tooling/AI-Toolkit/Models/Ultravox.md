@@ -15,8 +15,8 @@ site_name: Next-Gen Voice AI
 title: Ultravox.ai — Next-Gen Voice AI
 favicon: 'https://framerusercontent.com/images/h9fy7KYQkluDdSvOCQxOPmxcY.svg'
 og_last_fetch: 2025-03-07T05:19:18.726Z
-last_jina_request: '2025-03-09T05:58:40.557Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:12.972Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 One of the [[AI Models|Models]] created by [[Fixie AI]].

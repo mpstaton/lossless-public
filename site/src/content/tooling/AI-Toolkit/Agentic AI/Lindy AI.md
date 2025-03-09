@@ -14,8 +14,8 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6e25654b1985f2e452b7996c3ca9892821fccebfb6979eaffcb9d50a323f8e66.jpeg
 og_last_fetch: 2025-03-07T05:20:40.127Z
-last_jina_request: '2025-03-09T05:58:40.732Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.129Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 Learned about it from [[Rick Mulready]]

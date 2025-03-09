@@ -11,8 +11,8 @@ site_name: Welcome
 title: Welcome - GraphRAG
 favicon: 'https://microsoft.github.io/graphrag/assets/images/favicon.png'
 og_last_fetch: 2025-03-07T05:19:18.723Z
-last_jina_request: '2025-03-09T05:58:40.539Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.534Z'
+jina_error: 'HTTP error! status: 429'
 ---
 https://youtu.be/TqAScH5y2oc?si=iu3ZjIwCfPe3zeI1
 [[LangChain]], [[Neo4j]]

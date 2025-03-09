@@ -14,7 +14,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/63033a854db0b80858ff877b6d86a9955819656564a9e5cb8d58e997951f0ccb.jpeg
 og_last_fetch: 2025-03-07T05:20:56.754Z
-last_jina_request: '2025-03-09T05:58:40.805Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.755Z'
+jina_error: 'HTTP error! status: 429'
 ---
 Example of [[Predictable Revenue]], [[Persuasive Technology]].

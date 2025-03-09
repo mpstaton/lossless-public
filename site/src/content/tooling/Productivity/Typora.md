@@ -10,8 +10,8 @@ favicon: 'https://typora.io/img/favicon-128.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e9b9a44f17129aa00267729ee24f4f98c17fde723034b7a1076dd03d5032484b.jpeg
 og_last_fetch: 2025-03-07T05:19:01.819Z
-last_jina_request: '2025-03-09T05:58:40.677Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.030Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Markdown]]
 

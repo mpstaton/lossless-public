@@ -12,7 +12,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/1e7df95881087e6558b212227979e032175ad5119571b400033b73374d3ea3ce.jpeg
 og_last_fetch: 2025-03-07T05:19:01.811Z
-last_jina_request: '2025-03-09T05:58:40.676Z'
+last_jina_request: '2025-03-09T06:09:19.367Z'
 jina_error: TIMEOUT
 ---
 

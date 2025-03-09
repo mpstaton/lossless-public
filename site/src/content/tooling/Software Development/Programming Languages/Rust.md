@@ -10,8 +10,8 @@ favicon: 'https://www.rust-lang.org/static/images/favicon-32x32.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0a6e6cc20c9ad8d6e91cb53f89a46e677cde6d53f520bf1f83ce318069de8e40.jpeg
 og_last_fetch: 2025-03-07T05:19:02.895Z
-last_jina_request: '2025-03-09T05:58:40.590Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.492Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 [[Loco]]

@@ -12,8 +12,8 @@ title: Vertex AI Platform
 favicon: >-
   https://www.gstatic.com/devrel-devsite/prod/v0d244f667a3683225cca86d0ecf9b9b81b1e734e55a030bdcd3f3094b835c987/cloud/images/favicons/onecloud/favicon.ico
 og_last_fetch: 2025-03-07T05:19:01.840Z
-last_jina_request: '2025-03-09T05:58:40.589Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.064Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 https://youtu.be/cxxEsCYt-C0?si=F0GaFzGPfLa6vy_U

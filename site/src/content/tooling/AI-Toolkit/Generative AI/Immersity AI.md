@@ -14,7 +14,7 @@ title: Immersity AI | Convert Image and Video to 3D
 favicon: >-
   https://cdn.prod.website-files.com/6639cdf0b2b3923e2887386c/66478cab0edee878c79cf0a8_IAI_FAVICON.png
 og_last_fetch: 2025-03-07T05:20:39.773Z
-last_jina_request: '2025-03-09T05:58:40.629Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.543Z'
+jina_error: 'HTTP error! status: 429'
 ---
 

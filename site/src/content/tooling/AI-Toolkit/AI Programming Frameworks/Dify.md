@@ -14,8 +14,8 @@ favicon: 'https://framerusercontent.com/images/KWDRAMQLGjoMFBAjNjoCFMP7XI.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eb274cb892747ac14f78de65eeac7dc2009c4cd83c0ba16e2dc7ca292f8e6490.jpeg
 og_last_fetch: 2025-03-07T05:20:56.179Z
-last_jina_request: '2025-03-09T05:58:40.735Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.294Z'
+jina_error: 'HTTP error! status: 429'
 ---
 2024, Nov 04. [How to Pick the Best AI Open-source Projects for Production Use](https://youtu.be/wVXojxS_hak?si=VRBRN-O_QjGR0rcA)
 

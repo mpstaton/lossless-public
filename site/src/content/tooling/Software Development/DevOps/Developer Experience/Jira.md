@@ -11,7 +11,7 @@ image: >-
 site_name: Jira
 title: Jira | Issue & Project Tracking Software | Atlassian
 og_last_fetch: 2025-03-06T21:44:20.244Z
-last_jina_request: '2025-03-09T05:58:40.739Z'
+last_jina_request: '2025-03-09T06:09:11.942Z'
 jina_error: TIMEOUT
 ---
 [[Ticket Managers]]

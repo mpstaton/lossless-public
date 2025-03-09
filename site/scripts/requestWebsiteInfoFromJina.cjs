@@ -10,6 +10,16 @@ dotenv.config();
 
 const ERROR_LOG_PATH = './scripts/fixes-needed/JinaErrors.md';
 
+// Processing modes
+const PROCESS_MODE = {
+  NEW_ONLY: 'NEW_ONLY',         // Only process files without last_jina_request
+  NEW_AND_TIMEOUTS: 'NEW_AND_TIMEOUTS', // Process new files and those with TIMEOUT errors
+  ALL: 'ALL'                    // Process all files
+};
+
+// Set your desired mode here
+const CURRENT_MODE = PROCESS_MODE.NEW_AND_TIMEOUTS;
+
 async function appendToErrorLog(filePath, error) {
   const errorMessage = `${new Date().toISOString()} - ${filePath}: ${error}\n`;
   try {
@@ -21,7 +31,7 @@ async function appendToErrorLog(filePath, error) {
 
 async function makeJinaRequest(url) {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 10000);
+  const timeout = setTimeout(() => controller.abort(), 50000);
 
   try {
     const response = await fetch(`https://r.jina.ai/${encodeURIComponent(url)}`, {
@@ -93,14 +103,36 @@ async function processFile(filePath) {
   }
 }
 
+async function shouldProcessFile(filePath, mode) {
+  const fileContent = await fs.readFile(filePath, 'utf-8');
+  const { data: frontMatter } = matter(fileContent);
+
+  switch (mode) {
+    case PROCESS_MODE.NEW_ONLY:
+      return !frontMatter.last_jina_request;
+    case PROCESS_MODE.NEW_AND_TIMEOUTS:
+      return !frontMatter.last_jina_request || frontMatter.jina_error === 'TIMEOUT';
+    case PROCESS_MODE.ALL:
+      return true;
+    default:
+      return false;
+  }
+}
+
 async function main() {
   try {
-    // Get all markdown files in the tooling directory
     const files = await glob('src/content/tooling/**/*.md');
+    
+    // Filter files based on processing mode
+    const filesToProcess = [];
+    for (const file of files) {
+      if (await shouldProcessFile(file, CURRENT_MODE)) {
+        filesToProcess.push(file);
+      }
+    }
 
-    // Process all files concurrently
-    await Promise.all(files.map(processFile));
-
+    console.log(`Processing ${filesToProcess.length} files in ${CURRENT_MODE} mode`);
+    await Promise.all(filesToProcess.map(processFile));
     console.log('Processing complete!');
   } catch (error) {
     console.error('Error in main process:', error);

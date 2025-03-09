@@ -11,8 +11,8 @@ favicon: 'https://nextjs.org/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eb7997fa534a94dc3d8fee21cb75aa0b430b825be109834e4450033de1bbb555.jpeg
 og_last_fetch: 2025-03-07T05:20:56.423Z
-last_jina_request: '2025-03-09T05:58:40.737Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.358Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 

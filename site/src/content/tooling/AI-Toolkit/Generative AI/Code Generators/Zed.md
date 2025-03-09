@@ -15,7 +15,7 @@ favicon: 'https://zed.dev/favicon_black_64.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4ec42a68d8a1a84d2e195e4a8a18812ff14585034898a24648bd4e63992c54cc.jpeg
 og_last_fetch: 2025-03-07T05:20:56.434Z
-last_jina_request: '2025-03-09T05:58:40.740Z'
+last_jina_request: '2025-03-09T06:09:19.451Z'
 jina_error: TIMEOUT
 ---
 [[Text Editors or IDEs]]

@@ -18,8 +18,8 @@ og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/da6ddbf4ff4d887f9262a8cc199d70e4987d580aaf86f7eab1e20e232a61b886.jpeg
 og_last_fetch: 2025-03-07T05:19:02.892Z
 description_site_cp: ' AI code understanding | LLM context enhancement | Code structure visualization | Static analysis for AI | Large Language Model tooling #LLM #AI #JavaScript #TypeScript #CodeAnalysis #ContextWindow #DeveloperTools'
-last_jina_request: '2025-03-09T05:58:40.590Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.494Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 <iframe 

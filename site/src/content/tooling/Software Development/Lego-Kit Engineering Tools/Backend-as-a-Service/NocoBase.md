@@ -14,8 +14,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cc9d5f0f9d5fb7aa0a9561afa1045d7fee9897faf13a562b8afa80d90fee1b37.jpeg
 og_last_fetch: 2025-03-07T05:20:56.416Z
-last_jina_request: '2025-03-09T05:58:40.736Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.171Z'
+jina_error: 'HTTP error! status: 429'
 ---
 Another [[Database Apps]]
 

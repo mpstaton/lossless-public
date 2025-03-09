@@ -11,7 +11,7 @@ favicon: 'https://ollama.com/public/android-chrome-icon-512x512.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c42a9d41471b8cec75621b9f80c79464c473cde47a6d934cab7dcfbeb7922f99.jpeg
 og_last_fetch: 2025-03-07T05:19:18.953Z
-last_jina_request: '2025-03-09T05:58:40.624Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:11.553Z'
+jina_error: 'HTTP error! status: 429'
 ---
 

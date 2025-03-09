@@ -12,8 +12,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/433ff2f01c9878c920cf7eabbf1820abedaba5f0e382c6d4a1a3de3ac6cdd65e.jpeg
 og_last_fetch: 2025-03-07T05:20:56.423Z
-last_jina_request: '2025-03-09T05:58:40.737Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:16.051Z'
+jina_error: 'HTTP error! status: 429'
 ---
 Uses similar patterns as [[NEXT.js]] and is somewhat meant to accompany it, as both [[Web Frameworks]] are supported by [[Vercel]]. 
 

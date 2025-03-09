@@ -12,8 +12,8 @@ youtube_url: 'https://www.youtube.com/@Figma'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/68fedf64924894e13bb99abb21c12be64ecfb0387bc39c7acd2c64cd5949932f.jpeg
 og_last_fetch: 2025-03-07T05:19:01.838Z
-last_jina_request: '2025-03-09T05:58:40.588Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:09:10.948Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Realtime Collaboration]]
 

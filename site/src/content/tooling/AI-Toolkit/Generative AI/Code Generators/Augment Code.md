@@ -19,7 +19,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/daf5d9ff6b9cfd77540b05bea208c5939fa58f864462d8c95e7aea8f0f442d3c.jpeg
 og_last_fetch: 2025-03-07T05:20:56.440Z
-last_jina_request: '2025-03-09T05:58:40.546Z'
+last_jina_request: '2025-03-09T06:09:10.965Z'
 jina_error: 'HTTP error! status: 429'
 ---
 
