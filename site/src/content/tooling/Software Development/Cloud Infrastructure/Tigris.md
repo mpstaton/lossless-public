@@ -18,7 +18,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/91f87b653ae63af53c94bd3b779f5a131d60ca9c9287ab0c78ca2279f3296f0b.jpeg
 og_last_fetch: 2025-03-07T05:19:02.927Z
-last_jina_request: '2025-03-09T06:09:12.052Z'
+last_jina_request: '2025-03-09T06:45:18.715Z'
 jina_error: 'HTTP error! status: 429'
 ---
 Used by [[Fly.io]]

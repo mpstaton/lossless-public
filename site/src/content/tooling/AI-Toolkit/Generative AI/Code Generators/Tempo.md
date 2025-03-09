@@ -12,7 +12,7 @@ favicon: 'https://tempo.new/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/16cd4f14380c7d847ecf6957bc4ed12737eb620b1a6fc1c764582394cd44c96b.jpeg
 og_last_fetch: 2025-03-07T05:20:56.435Z
-last_jina_request: '2025-03-09T06:09:12.081Z'
+last_jina_request: '2025-03-09T06:45:13.883Z'
 jina_error: 'HTTP error! status: 429'
 ---
 

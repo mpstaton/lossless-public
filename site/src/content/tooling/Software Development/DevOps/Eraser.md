@@ -13,7 +13,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/97f27693524788f7dc3d4ed8aa41b13ad80e0b87d6b273545bc876d0f032546f.jpeg
 og_last_fetch: 2025-03-07T05:19:02.917Z
-last_jina_request: '2025-03-09T06:09:11.644Z'
+last_jina_request: '2025-03-09T06:45:08.035Z'
 jina_error: 'HTTP error! status: 429'
 ---
 

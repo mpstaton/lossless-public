@@ -12,8 +12,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/844df42efb9ecc1bdda48b735b1cbb6d8ecd910bb490c81b80c1d4fe183e8110.jpeg
 og_last_fetch: 2025-03-07T05:19:01.828Z
-last_jina_request: '2025-03-09T06:19:35.775Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:44:58.217Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Asynchronous Communication]], [[Cognitive, Collaborative Tooling]]
 ##### [[Jumpshare]] is an easy way to share any media, but with more sophisticated tooling.

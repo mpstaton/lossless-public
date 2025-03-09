@@ -12,7 +12,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/324e36b4358724fb26e62ceca745fbf7034a2255d30fee2a46cfeeb6d7d05d24.jpeg
 og_last_fetch: 2025-03-07T05:20:56.416Z
-last_jina_request: '2025-03-09T06:09:11.441Z'
+last_jina_request: '2025-03-09T06:45:12.313Z'
 jina_error: 'HTTP error! status: 429'
 ---
 ##### [[BuildShip]] is a [[Visual Software Development|Visual]] [[Low-Code]] [[Back-End Engineering|Back-End]], nearly a [[Backend-as-a-Service]]

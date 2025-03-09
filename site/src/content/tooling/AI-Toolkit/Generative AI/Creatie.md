@@ -10,7 +10,7 @@ favicon: 'https://static.creatie.ai/creatie-website/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a8c6bfdc4fe583a8ac584cd647cef75572b07e82fff4b1188bef9e5dcccc084b.jpeg
 og_last_fetch: 2025-03-07T05:20:40.009Z
-last_jina_request: '2025-03-09T06:09:12.676Z'
+last_jina_request: '2025-03-09T06:45:11.855Z'
 jina_error: 'HTTP error! status: 429'
 ---
 

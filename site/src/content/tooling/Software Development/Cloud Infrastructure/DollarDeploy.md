@@ -12,7 +12,7 @@ og_errors: true
 og_last_error: 2025-03-07T05:36:40.167Z
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
 og_last_fetch: 2025-03-07T05:19:02.929Z
-last_jina_request: '2025-03-09T06:09:13.218Z'
+last_jina_request: '2025-03-09T06:45:17.515Z'
 jina_error: 'HTTP error! status: 429'
 ---
 ##### [[DollarDeploy]] Hero

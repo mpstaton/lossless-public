@@ -17,7 +17,7 @@ favicon: 'https://rethinkdb.com/favicon.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b72c7024dc043ca77c44e242b4361c4ef08510faa5ee5882bad3b845cb00d77c.jpeg
 og_last_fetch: 2025-03-07T05:19:02.920Z
-last_jina_request: '2025-03-09T06:09:12.098Z'
+last_jina_request: '2025-03-09T06:45:13.361Z'
 jina_error: 'HTTP error! status: 429'
 ---
 

@@ -10,8 +10,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4fa86a72a87240259d4d884f80ce80162b781d03727156454811c31c1aa2125d.jpeg
 og_last_fetch: 2025-03-07T05:19:01.820Z
-last_jina_request: '2025-03-09T06:09:10.945Z'
-jina_error: 'HTTP error! status: 429'
+last_jina_request: '2025-03-09T06:45:03.926Z'
+jina_error: fetch failed
 ---
 [[Reference Management System]]
 

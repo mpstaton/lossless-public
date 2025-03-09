@@ -12,7 +12,7 @@ favicon: 'https://psc2.cf2.poecdn.net/assets/favicon.svg'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b208d0f2ab53c41acfd04b1becb7836efbb6edb41e44da08a1b3f1be756fb8a8.jpeg
 og_last_fetch: 2025-03-07T05:20:56.443Z
-last_jina_request: '2025-03-09T06:09:11.926Z'
+last_jina_request: '2025-03-09T06:45:18.227Z'
 jina_error: 'HTTP error! status: 429'
 ---
 ### [[Poe AI]] compares [[AI Models]] in app:

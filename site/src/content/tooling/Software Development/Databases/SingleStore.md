@@ -13,8 +13,8 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2d238e31187dd06a0fbe1c477af1007f580d954c638cd97a64e11f4e2271d69b.jpeg
 og_last_fetch: 2025-03-07T05:19:02.920Z
-last_jina_request: '2025-03-09T06:09:11.449Z'
-jina_error: 'HTTP error! status: 429'
+last_jina_request: '2025-03-09T06:44:59.411Z'
+jina_error: 'Unexpected token ''!'', "![Image 1]"... is not valid JSON'
 ---
 One of the Multi-Modal [[Databases]].
 

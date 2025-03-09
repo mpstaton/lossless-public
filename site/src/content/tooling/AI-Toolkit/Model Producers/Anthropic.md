@@ -1,8 +1,8 @@
 ---
 url: 'https://www.anthropic.com'
 tags: null
-last_jina_request: '2025-03-09T06:19:35.968Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:13.495Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 [[Claude]], [[Haiku]]

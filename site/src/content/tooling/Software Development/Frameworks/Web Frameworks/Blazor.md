@@ -13,8 +13,8 @@ og_errors: true
 og_last_error: '2025-03-07T05:38:03.635Z'
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
 og_last_fetch: 2025-03-07T05:20:56.427Z
-last_jina_request: '2025-03-09T06:19:36.129Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:05.066Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 Made by [[Microsoft]]

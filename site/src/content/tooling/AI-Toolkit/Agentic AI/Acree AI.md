@@ -13,7 +13,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/38cc33b6ef9c43bef156df7db5f4c71634b81699caa4be16003d09ea9829828b.jpeg
 og_last_fetch: 2025-03-07T05:20:56.172Z
-last_jina_request: '2025-03-09T06:19:36.389Z'
+last_jina_request: '2025-03-09T06:45:13.867Z'
 jina_error: 'HTTP error! status: 429'
 ---
 [[Agentic AI]]

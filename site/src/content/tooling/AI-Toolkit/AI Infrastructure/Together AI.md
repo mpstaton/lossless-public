@@ -17,7 +17,7 @@ og_errors: true
 og_last_error: 2025-03-07T05:38:03.521Z
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
 og_last_fetch: 2025-03-07T05:20:56.408Z
-last_jina_request: '2025-03-09T06:09:12.277Z'
+last_jina_request: '2025-03-09T06:45:20.025Z'
 jina_error: 'HTTP error! status: 429'
 ---
 [[Self-Hosting]] [[Cloud Infrastructure]]

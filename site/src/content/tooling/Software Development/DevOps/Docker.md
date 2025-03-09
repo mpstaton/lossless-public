@@ -15,8 +15,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b9f67154bc6abfc949f785b488b9db7cdc0c8646d623112aafb52316d4b64864.jpeg
 og_last_fetch: 2025-03-07T05:19:02.917Z
-last_jina_request: '2025-03-09T06:19:29.520Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:09.462Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Docker]] is a tool for [[Containers|Container]] creation and management, and enables [[Reproducible Builds]]. 
 

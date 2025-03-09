@@ -8,8 +8,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5281a2db746af1a387b686868a974a8571bb76db20d7ba7bae522db749c25589.jpeg
 og_last_fetch: 2025-03-07T05:19:01.838Z
-last_jina_request: '2025-03-09T06:19:28.530Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:06.664Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Creative Arts]]
 [[Animations]]

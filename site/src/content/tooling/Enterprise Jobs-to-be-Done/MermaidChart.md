@@ -13,8 +13,8 @@ og_errors: true
 og_last_error: '2025-03-07T10:19:44.514Z'
 og_error_message: HTTP error 401
 og_last_fetch: 2025-03-07T06:11:14.355Z
-last_jina_request: '2025-03-09T06:19:34.081Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:08.083Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Visual Software Development]], [[CARBS]].
 

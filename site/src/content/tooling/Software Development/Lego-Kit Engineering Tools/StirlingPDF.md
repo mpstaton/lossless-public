@@ -16,8 +16,8 @@ og_errors: true
 og_last_error: '2025-03-07T10:19:44.921Z'
 og_error_message: HTTP error 401
 og_last_fetch: 2025-03-07T05:19:02.904Z
-last_jina_request: '2025-03-09T06:09:16.421Z'
-jina_error: 'HTTP error! status: 429'
+last_jina_request: '2025-03-09T06:44:59.268Z'
+jina_error: 'Unexpected token ''H'', "Home | Sti"... is not valid JSON'
 ---
 
 [[Open Source]], [[API First]]

@@ -12,7 +12,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a2d18cd142f42134c8e575c8e177f669010d29bac0946f1048470562e30f672e.jpeg
 og_last_fetch: 2025-03-07T05:19:01.810Z
-last_jina_request: '2025-03-09T06:09:11.449Z'
-jina_error: 'HTTP error! status: 429'
+last_jina_request: '2025-03-09T06:45:01.728Z'
+jina_error: 'Unexpected token ''K'', "Kasm Works"... is not valid JSON'
 ---
 

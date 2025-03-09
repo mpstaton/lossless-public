@@ -11,8 +11,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/20bbce1a48869323374bd13c1659cb6b7875e041f78bbb477eaca42dd04844a6.jpeg
 og_last_fetch: 2025-03-07T05:19:01.780Z
-last_jina_request: '2025-03-09T06:09:11.386Z'
-jina_error: 'HTTP error! status: 429'
+last_jina_request: '2025-03-09T06:45:01.685Z'
+jina_error: 'Unexpected token ''Z'', "Zen Browse"... is not valid JSON'
 ---
 
 2025, Feb 02. [Zen Browser Is Beautifully Designed And Feature Rich](https://youtu.be/SCMmzbxUqpo?si=F4DYkAry2dXzHVnQ) DistroTube, [[YouTube]]. 

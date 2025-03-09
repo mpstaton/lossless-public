@@ -15,8 +15,8 @@ favicon: 'https://databutton.com/icon.png?e129df4fd0c8737a'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/dac8009c4226d4ffc6a26d55de74f3ce93f68154dbc21d1067933ad903069890.jpeg
 og_last_fetch: 2025-03-07T05:20:56.438Z
-last_jina_request: '2025-03-09T06:19:32.085Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:12.366Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 

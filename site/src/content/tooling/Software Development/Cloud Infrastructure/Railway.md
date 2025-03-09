@@ -11,7 +11,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/f9c54fe1585ef1f2a93ec452d39798ea7298ae9e76b43bb0024bb36aeee71592.jpeg
 og_last_fetch: 2025-03-07T05:19:02.928Z
-last_jina_request: '2025-03-09T06:09:10.998Z'
+last_jina_request: '2025-03-09T06:45:19.615Z'
 jina_error: 'HTTP error! status: 429'
 ---
 [[Opsless Deployment Providers]]

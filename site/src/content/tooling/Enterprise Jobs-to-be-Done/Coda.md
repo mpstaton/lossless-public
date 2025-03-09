@@ -10,7 +10,7 @@ favicon: 'https://cdn.coda.io/icons/png/color/coda-192.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d9cc37c9e295374b4b44803cb550b434857eb82bf038419d25186e2b407f5511.jpeg
 og_last_fetch: 2025-03-07T05:19:01.830Z
-last_jina_request: '2025-03-09T06:09:11.232Z'
+last_jina_request: '2025-03-09T06:45:11.564Z'
 jina_error: 'HTTP error! status: 429'
 ---
 

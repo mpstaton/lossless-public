@@ -10,7 +10,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4ba56372be3981392093ef700088e788fe7c630185dd3ea6f6b87ce967035f13.jpeg
 og_last_fetch: 2025-03-07T05:19:02.891Z
-last_jina_request: '2025-03-09T06:19:28.608Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:21.057Z'
+jina_error: 'HTTP error! status: 429'
 ---
 [[Artificial Intelligence|Enterprise AI]]

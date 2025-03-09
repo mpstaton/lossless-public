@@ -16,8 +16,8 @@ title: Embra - The AI Operating System to simplify your workday
 favicon: >-
   https://cdn.prod.website-files.com/670e96ae3791772722362385/673a79f8a5fe7ade4cb5ad0b_66ccca267ae2edaa3d402a5c_favicon.png
 og_last_fetch: 2025-03-07T05:19:18.724Z
-last_jina_request: '2025-03-09T06:19:29.980Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:44:58.971Z'
+jina_error: 'HTTP error! status: 429'
 ---
 A form of [[Knowledge Base AI]], that uses Team Communications as the source data, thus using [[Knowledge Augmented Generation]] to summarize what's happening around the company.
 

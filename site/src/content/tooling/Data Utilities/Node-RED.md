@@ -8,7 +8,7 @@ tags:
 og_errors: true
 og_last_error: '2025-03-08T20:39:43.501Z'
 og_error_message: HTTP error 401
-last_jina_request: '2025-03-09T06:19:35.452Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:17.495Z'
+jina_error: 'HTTP error! status: 429'
 ---
 

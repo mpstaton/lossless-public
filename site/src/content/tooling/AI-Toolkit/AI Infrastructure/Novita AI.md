@@ -14,7 +14,7 @@ site_name: Novita AI
 title: 'Novita AI - Model APIs, Serverless, GPU Instance In One AI Cloud'
 favicon: 'https://novita.ai/favicon.ico'
 og_last_fetch: 2025-03-07T05:20:56.411Z
-last_jina_request: '2025-03-09T06:09:12.138Z'
+last_jina_request: '2025-03-09T06:45:20.458Z'
 jina_error: 'HTTP error! status: 429'
 ---
 [[AnythingLLM]]

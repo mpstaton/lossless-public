@@ -8,8 +8,8 @@ tags:
 og_errors: true
 og_last_error: '2025-03-08T20:39:42.737Z'
 og_error_message: HTTP error 401
-last_jina_request: '2025-03-09T06:19:35.100Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:03.006Z'
+jina_error: 'Unexpected token ''P'', "Project Ar"... is not valid JSON'
 ---
 
 https://youtu.be/iWztNv_Lgz4?si=7Nsa5dTt2GCBS8jK

@@ -14,8 +14,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5fce38c3e9db087cf73da85460346e3d488b5f13481e7651a86933323d8cedc9.jpeg
 og_last_fetch: 2025-03-07T05:19:01.833Z
-last_jina_request: '2025-03-09T06:19:29.063Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:20.002Z'
+jina_error: 'HTTP error! status: 429'
 ---
 A tool for [[Business Intelligence]]
 

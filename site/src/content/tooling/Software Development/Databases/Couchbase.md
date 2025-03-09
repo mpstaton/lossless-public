@@ -14,7 +14,7 @@ favicon: 'https://www.couchbase.com/wp-content/uploads/2023/10/couchbase-favicon
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a727e75d0b18988cebf0dc23ee9780dc390aea0922af149a6fd9cb45b313d957.jpeg
 og_last_fetch: 2025-03-07T05:19:02.925Z
-last_jina_request: '2025-03-09T06:09:12.761Z'
+last_jina_request: '2025-03-09T06:45:05.186Z'
 jina_error: 'HTTP error! status: 429'
 ---
 

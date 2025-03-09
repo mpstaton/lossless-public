@@ -18,7 +18,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4aa14ef0db3c73bef2abb29311daa949d4c20594446fc8d2d18f2fc470881ab7.jpeg
 og_last_fetch: 2025-03-07T05:19:02.903Z
-last_jina_request: '2025-03-09T06:09:12.286Z'
+last_jina_request: '2025-03-09T06:45:10.995Z'
 jina_error: 'HTTP error! status: 429'
 ---
 [[(GDPR) General Data Protection Regulation]]

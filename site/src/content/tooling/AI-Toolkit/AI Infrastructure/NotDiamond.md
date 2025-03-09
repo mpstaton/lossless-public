@@ -16,8 +16,8 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5cebfb5962687c9da9e393580f9d4cad96647fa1ba2038f837ad51a64f78ed35.jpeg
 og_last_fetch: 2025-03-07T05:20:56.412Z
-last_jina_request: '2025-03-09T06:19:28.850Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:44:58.144Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 ![NotDiamond Hero](https://i.imgur.com/8WPnmmG.png)

@@ -12,7 +12,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/399f1c951f7294deb9f1126dac6645317590a67b2723e2940a0727b8ad682566.jpeg
 og_last_fetch: 2025-03-07T05:19:02.930Z
-last_jina_request: '2025-03-09T06:19:40.261Z'
+last_jina_request: '2025-03-09T06:45:06.735Z'
 jina_error: 'HTTP error! status: 429'
 ---
 [[Cloud Infrastructure]]

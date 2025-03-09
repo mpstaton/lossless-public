@@ -11,8 +11,8 @@ favicon: 'https://groq.com/wp-content/uploads/2024/02/android-icon-192x192-1.png
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7a536c4a7b6faf0c9b52cba239432629c3758985c167add98ce1b1c770c73e86.jpeg
 og_last_fetch: 2025-03-07T05:20:56.412Z
-last_jina_request: '2025-03-09T06:19:30.643Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:17.383Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 [https://chat.groq.com](https://chat.groq.com/)

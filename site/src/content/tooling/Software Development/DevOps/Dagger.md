@@ -15,7 +15,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cc5609331b3cec643bd0ae464ac072a5b09494ae82c91c534af82d85c3287533.jpeg
 og_last_fetch: 2025-03-07T05:19:02.918Z
-last_jina_request: '2025-03-09T06:09:13.270Z'
+last_jina_request: '2025-03-09T06:45:11.202Z'
 jina_error: 'HTTP error! status: 429'
 ---
 A tool for [[Dev Ops]]

@@ -16,7 +16,7 @@ favicon: >-
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/078dbb8074582a3fb12ae6855387de3389e292484ddf0599da0c214c81c93d0f.jpeg
 og_last_fetch: 2025-03-07T05:19:01.841Z
-last_jina_request: '2025-03-09T06:09:14.860Z'
+last_jina_request: '2025-03-09T06:44:59.370Z'
 jina_error: 'HTTP error! status: 429'
 ---
 ##### Tribe AI is [[Artificial Intelligence|Enterprise AI]]

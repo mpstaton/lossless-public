@@ -11,7 +11,7 @@ favicon: 'https://slidesgo.com/favicons/apple-favicon-152x152.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ac118e0c8fcd9201a478fab70dbbe381c43212ee99b313aa2f8512bcc685f68c.jpeg
 og_last_fetch: 2025-03-07T05:19:19.168Z
-last_jina_request: '2025-03-09T06:19:34.149Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:45:17.988Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
