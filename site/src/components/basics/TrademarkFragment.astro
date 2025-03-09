@@ -6,9 +6,9 @@ export interface Props {
 const { trademark } = Astro.props;
 
 function getSVG(name: string) {
-  const filepath = `../../assets/visuals-as-components/tooling-trademarks/trademark__${name}.astro`;
+  const filepath = `../../assets/visuals-as-components/trademarks-fixed-height/trademark__${name}.astro`;
   const files = import.meta.glob(
-    "../../assets/visuals-as-components/tooling-trademarks/*.astro",
+    "../../assets/visuals-as-components/trademarks-fixed-height/*.astro",
     {
       eager: true,
       as: "raw",
@@ -61,10 +61,17 @@ try {
 
 <style>
   .trademark-wrapper {
-    height: 100%;
+    height: 80px;
     max-height: 6vh;
     width: auto;
-    object-fit: cover;
+    object-fit: contain;
+  }
+
+  .trademark-svg-wrap {
+    height: 80px;
+    width: auto;
+    box-sizing: border-box;
+    object-fit: contain;
   }
 
   :global(svg) {

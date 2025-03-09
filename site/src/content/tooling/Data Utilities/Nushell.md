@@ -8,9 +8,9 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/718f93b6fd8e59927496e68a7ad87ae25447409b6c98653f111a5c83170a91d1.jpeg
-og_last_fetch: 2025-03-07T05:19:01.833Z
 last_jina_request: '2025-03-09T06:45:17.792Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:19:01.833Z
 ---
 
 A [[Terminal Emulators]] that helps with [[Data Analysis]]. 

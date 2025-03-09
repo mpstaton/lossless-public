@@ -10,9 +10,9 @@ site_name: Upstage AI
 title: Upstage AI - Building intelligence for the future of work
 favicon: >-
   https://cdn.prod.website-files.com/6743d5190bb2b52f38e99e37/6748713db65988aab4e2dbf7_G.WEB.svg
-og_last_fetch: 2025-03-07T05:19:01.840Z
 last_jina_request: '2025-03-09T06:45:05.327Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:19:01.840Z
 ---
 [[Small Language Models]]
 [[Artificial Intelligence|Enterprise AI]]

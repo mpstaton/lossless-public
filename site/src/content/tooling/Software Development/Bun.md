@@ -10,9 +10,9 @@ tags:
   - Software-Development
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/57c1f1097c960c03ba5d346d859cabd176a7b7ccede60aab9355107529accaa6.jpeg
-og_last_fetch: 2025-03-07T05:19:01.817Z
 last_jina_request: '2025-03-09T06:45:11.005Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:19:01.817Z
 ---
 ##### [[Bun]] is yet another [[JavaScript]] toolchain for [[Web Development]], but seems to be the highest performing.
 ![[Screenshot 2025-02-24 at 3.02.58 AM_Bun--Hero.png]]

@@ -11,8 +11,8 @@ image: 'https://www.napkin.ai/assets/og-image-v5.png?v=2'
 site_name: Napkin AI
 title: Napkin AI - The visual AI for business storytelling
 favicon: 'https://www.napkin.ai/favicon-32x32.png?v=2'
-og_last_fetch: 2025-03-07T05:19:19.176Z
 last_jina_request: '2025-03-09T06:45:20.774Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:19:19.176Z
 ---
 

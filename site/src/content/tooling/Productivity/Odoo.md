@@ -8,9 +8,9 @@ tags:
   - Productivity
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ca45d929e4972dc896f77baeaa16873798a265176a2184c96687aa5e505ee7bb.jpeg
-og_last_fetch: 2025-03-07T05:19:01.820Z
 last_jina_request: '2025-03-09T06:45:11.382Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:19:01.820Z
 ---
 
 https://youtu.be/vgvbRRVreHI?si=3yguzDDQlnK1MLH-

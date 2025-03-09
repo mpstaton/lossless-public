@@ -12,8 +12,8 @@ site_name: Distributed SQL query engine for big data
 title: Distributed SQL query engine for big data
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/be7dc32d8d2b6c2d9cf9f8a3143feb8c5363cf2588d44812fcadb1283ecbc88b.jpeg
-og_last_fetch: 2025-03-07T05:19:01.831Z
 last_jina_request: '2025-03-09T06:45:16.507Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:19:01.831Z
 ---
 

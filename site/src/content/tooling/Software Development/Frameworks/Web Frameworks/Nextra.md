@@ -11,9 +11,9 @@ tags:
   - Frameworks
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/433ff2f01c9878c920cf7eabbf1820abedaba5f0e382c6d4a1a3de3ac6cdd65e.jpeg
-og_last_fetch: 2025-03-07T05:20:56.423Z
 last_jina_request: '2025-03-09T06:45:05.445Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:20:56.423Z
 ---
 Uses similar patterns as [[NEXT.js]] and is somewhat meant to accompany it, as both [[Web Frameworks]] are supported by [[Vercel]]. 
 

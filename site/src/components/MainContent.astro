@@ -6,7 +6,7 @@ import CardGrid from "@basics/CardGrid.astro";
 import TagCloud from "@components/tool-components/TagCloud.astro";
 import { getEntry, getCollection } from "astro:content";
 import TrademarkRibbon from "@basics/TrademarkRibbon.astro";
-
+import SimplifiedTrademarkRibbon from "@basics/SimplifiedTrademarkRibbon.astro";
 interface Tool {
   url: string;
   site_name?: string;
@@ -25,19 +25,21 @@ const tools = toolEntries.map((entry: any) => entry.data as Tool);
 const featuresData = await getEntry("cards", "features");
 const cards = featuresData?.data?.cards ?? [];
 
-
-const tagFrequencies = tools.reduce((tagCounts: Record<string, number>, tool: Tool) => {
-  tool.tags?.forEach((tag: any) => {
-    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-  });
-  return tagCounts;
-}, {} as Record<string, number>);
+const tagFrequencies = tools.reduce(
+  (tagCounts: Record<string, number>, tool: Tool) => {
+    tool.tags?.forEach((tag: any) => {
+      tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    });
+    return tagCounts;
+  },
+  {} as Record<string, number>
+);
 // Get all unique tags from all tools
-const allTags = [...new Set(
-  tools
-    .flatMap(tool => tool.tags || [])
-    .filter(tag => tag) // Remove any undefined/null values
-)]
+const allTags = [
+  ...new Set(
+    tools.flatMap((tool) => tool.tags || []).filter((tag) => tag) // Remove any undefined/null values
+  ),
+];
 ---
 
 <div id="main-content-col">
@@ -50,18 +52,22 @@ const allTags = [...new Set(
     <h2>Tools</h2>
     <div class="tools-header">
       <TrademarkRibbon />
-      <TagCloud 
-      tags={allTags}
-      tagFrequencies={tagFrequencies}
-      visibleTagRowLimit={4}
-      maxWidth="96%" />
+      <TagCloud
+        tags={allTags}
+        tagFrequencies={tagFrequencies}
+        visibleTagRowLimit={4}
+        maxWidth="96%"
+      />
     </div>
-    
-    {tools && tools.length > 0 ? (
-      <CardGrid columns={3} gap="2rem" tools={tools} />
-    ) : (
-      <p>No tools found</p>
-    )}
+    <SimplifiedTrademarkRibbon />
+
+    {
+      tools && tools.length > 0 ? (
+        <CardGrid columns={3} gap="2rem" tools={tools} />
+      ) : (
+        <p>No tools found</p>
+      )
+    }
   </section>
 </div>
 

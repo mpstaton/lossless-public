@@ -9,8 +9,8 @@ image: 'https://odin-lang.org/images/logo-slim.png'
 site_name: Odin
 title: Odin Programming Language
 favicon: 'https://odin-lang.org/favicon.svg'
-og_last_fetch: 2025-03-06T21:44:03.289Z
 last_jina_request: '2025-03-09T06:45:19.816Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-06T21:44:03.289Z
 ---
 

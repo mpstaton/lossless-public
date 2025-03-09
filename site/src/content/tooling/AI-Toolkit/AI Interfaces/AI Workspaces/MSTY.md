@@ -13,9 +13,9 @@ image: 'https://msty.app/msty-screenshots/msty-og-image.png'
 site_name: Msty
 title: Msty - Using AI Models made Simple and Easy
 favicon: 'https://msty.app/favicon.ico'
-og_last_fetch: 2025-03-07T05:20:56.747Z
 last_jina_request: '2025-03-09T06:45:20.658Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:20:56.747Z
 ---
 https://youtu.be/5U_lOjfZiXg?si=EJWZpDXYAT98xgCb
 

@@ -12,9 +12,9 @@ tags:
   - Web-Browsers
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/76ba71ece8c53c686d8b27f4046552c41a072811cf81cc488e322095c192e981.jpeg
-og_last_fetch: 2025-03-07T05:19:01.784Z
 last_jina_request: '2025-03-09T06:44:58.296Z'
 jina_error: 'HTTP error! status: 429'
+og_last_fetch: 2025-03-07T05:19:01.784Z
 ---
 ### Microsoft Edge showing update walkthrough. 
 ![[Screenshot 2025-01-31 at 2.23.17 PM_Edge--Updates.png]]
