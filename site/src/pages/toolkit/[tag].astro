@@ -52,13 +52,8 @@ const pageDescription = `A collection of tools and resources tagged with "${tag}
 <ToolkitLayout 
   title={pageTitle}
   description={pageDescription}
->
-  <CardGrid>
-    {toolsByTag.map((tool: Tool) => (
-      <ToolCard tool={tool} />
-    ))}
-  </CardGrid>
-</ToolkitLayout>
+  filterTag={tag}
+/>
 
 <style>
   body {
