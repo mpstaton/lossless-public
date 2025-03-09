@@ -233,7 +233,8 @@ async function processFile(filePath) {
       console.log(`Processing ${path.basename(filePath)} with URL: ${frontmatter.url}`);
       
       // Extract category tags from the file path
-      const categoryTags = extractCategoryTags(filePath);
+      const categoryTags = extractCategoryTags(filePath)
+        .map(tag => tag.replace(/\s+/g, '-')); // Replace spaces with hyphens
       console.log(`Extracted category tags: ${categoryTags.join(', ')}`);
       
       // Initialize tags array if it doesn't exist
@@ -254,7 +255,7 @@ async function processFile(filePath) {
       let shouldUpdateFile = true;
       
       // Check if we need to fetch OpenGraph data
-      if (!frontmatter.title || !frontmatter.image || !frontmatter.site_name) {
+      if ((!frontmatter.image || !frontmatter.og_last_fetch || !frontmatter.title || !frontmatter.site_name ) && !frontmatter.og_errors) {
         console.log(`Fetching OpenGraph data for ${frontmatter.url}...`);
         
         // Fetch OpenGraph data
@@ -263,7 +264,8 @@ async function processFile(filePath) {
         if (ogData && Object.keys(ogData).length > 0) {
           // Update the frontmatter with the fetched data
           Object.keys(ogData).forEach(key => {
-            if (ogData[key] !== undefined && ogData[key] !== null) {
+            // Only update if the property doesn't exist in frontmatter
+            if (ogData[key] !== undefined && ogData[key] !== null && !frontmatter[key]) {
               frontmatter[key] = ogData[key];
             }
           });
@@ -273,9 +275,10 @@ async function processFile(filePath) {
         } else {
           console.log(`⚠️ No usable OpenGraph data found for ${path.basename(filePath)}`);
         }
+      } else if (frontmatter.og_error_message) {
+        console.log(`Skipping OpenGraph fetch for ${path.basename(filePath)} - previous error: ${frontmatter.og_error_message}`);
       } else {
         console.log(`Skipping OpenGraph fetch for ${path.basename(filePath)} - already has complete OpenGraph data`);
-        // Do not update og-last-fetch when skipping fetch
       }
       
       // Start the screenshot fetch in the background if needed
@@ -361,7 +364,6 @@ async function processToolFiles() {
         const globPatterns = [
           path.join(__dirname, '../src/content/tooling', `**/${path.basename(filePath)}`),
           path.join(__dirname, '../src/content/tools', `**/${path.basename(filePath)}`),
-          path.join(__dirname, '../src/content', `**/${path.basename(filePath)}`)
         ];
         
         for (const pattern of globPatterns) {

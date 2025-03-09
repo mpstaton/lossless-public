@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const execPromise = util.promisify(exec);
-const outputDirectory = 'src/content/data';
+const outputDirectory = 'src/data/01_lossless-run';
 
 function extractVideoId(url) {
   const regex = /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([^?&]+)/;
@@ -66,7 +66,7 @@ async function processYoutubeUrl(url) {
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     const logFile = path.join(outputDirectory, `${videoId}_log_${timestamp}.md`);
 
-    const command = `fabric -y ${url} --stream --pattern extract_wisdom`;
+    const command = `fabric -y ${url} --stream --pattern extract_lossless_essentials`;
     
     console.log(`Executing: ${command}`);
     console.log(`Saving output to: ${outputFile}`);

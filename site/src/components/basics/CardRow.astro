@@ -1,0 +1,78 @@
+---
+import ToolCard from '@tool-components/ToolCard.astro';
+
+interface Props {
+  tools: any[];
+  toolCounts?: Record<string, number>;
+  includeCount?: boolean;
+  filter?: (item: any) => boolean;
+  itemsToShow?: number;
+}
+
+const {
+  tools,
+  toolCounts = {},
+  includeCount = false,
+  filter = () => true,
+  itemsToShow 
+} = Astro.props;
+
+const filteredTools = tools.filter(filter);
+---
+
+<div class="tool-row-container">
+  <button class="scroll-btn left" aria-label="Scroll left">←</button>
+
+  <div class="tool-row">
+    <div class="tools-wrapper">
+      {
+        filteredTools.map((tool) => (
+          <ToolCard 
+            tool={tool}
+            count={toolCounts[tool.id]} 
+            includeCount={includeCount}
+          />
+        ))
+      }
+    </div>
+  </div>
+
+  <button class="scroll-btn right" aria-label="Scroll right">→</button>
+</div>
+
+<style>
+  .tool-row-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .tool-row {
+    overflow-x: hidden;
+    padding: 0.5rem;
+  }
+
+  .tools-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .scroll-btn.left {
+    left: 0;
+  }
+
+  .scroll-btn.right {
+    right: 0;
+  }
+</style>

@@ -1,0 +1,104 @@
+---
+// TagRow.astro
+import TagChip from './TagChip.astro';
+
+interface Props {
+  tags: string[];
+  tagCounts?: Record<string, number>;
+  includeCount?: boolean;
+}
+
+const { tags, tagCounts = {}, includeCount = false } = Astro.props;
+---
+
+<div class="tag-row-container">
+  <button class="scroll-btn left" aria-label="Scroll left">←</button>
+  
+  <div class="tag-row">
+    <div class="tags-wrapper">
+      {tags.map(tag => (
+        <TagChip 
+          tag={tag} 
+          count={tagCounts[tag]} 
+          includeCount={includeCount}
+        />
+      ))}
+    </div>
+  </div>
+  
+  <button class="scroll-btn right" aria-label="Scroll right">→</button>
+</div>
+
+<style>
+  .tag-row-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .tag-row {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .tags-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding: 0.5rem 0;
+  }
+
+  .tags-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  .scroll-btn {
+    background: var(--clr-lossless-primary-dark);
+    color: var(--clr-lossless-primary-glass);
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+  }
+
+  .scroll-btn:hover {
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 20%
+    );
+  }
+</style>
+
+<script>
+  // Client-side JavaScript for scroll functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.tags-wrapper');
+    const leftBtn = document.querySelector('.scroll-btn.left');
+    const rightBtn = document.querySelector('.scroll-btn.right');
+
+    if (!container || !leftBtn || !rightBtn) return;
+
+    const scrollAmount = 200;
+
+    leftBtn.addEventListener('click', () => {
+      container.scrollLeft -= scrollAmount;
+    });
+
+    rightBtn.addEventListener('click', () => {
+      container.scrollLeft += scrollAmount;
+    });
+  });
+</script>

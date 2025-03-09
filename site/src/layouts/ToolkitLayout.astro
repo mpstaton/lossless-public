@@ -1,13 +1,12 @@
 ---
 import "@styles/global.css";
 import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import CardGrid from "@basics/CardGrid.astro";
+import TagColumn from "@tool-components/TagColumn.astro";
 
-const { title, description } = Astro.props;
-
-/* // Get all entries from the tools collection
+// Get all entries from the tools collection
 const toolEntries = await getCollection("tooling");
-// Tools are now directly in the entry data
-const tools = toolEntries.map((entry) => entry.data);
 
 // Optional props
 interface Props {
@@ -16,6 +15,7 @@ interface Props {
   columns?: number;
   gap?: string;
   minCardWidth?: string;
+  filterTag?: string;
 }
 
 const {
@@ -24,7 +24,26 @@ const {
   columns = 3,
   gap = "2rem",
   minCardWidth = "300px",
-} = Astro.props; */
+  filterTag
+} = Astro.props;
+
+// Filter tools by tag if filterTag is provided
+const filteredEntries = filterTag 
+  ? toolEntries.filter(entry => entry.data.tags?.includes(filterTag))
+  : toolEntries;
+
+// Map entries to tools format
+const tools = filteredEntries.map(entry => ({
+  ...entry.data,
+  id: entry.id,
+}));
+
+// Get all unique tags from the full collection (not filtered)
+const allTags = Array.from(
+  new Set(
+    toolEntries.flatMap(entry => entry.data.tags || [])
+  )
+).sort();
 ---
 
 <Layout title={title} description={description}>
@@ -32,32 +51,18 @@ const {
     <header class="toolkit-header">
       <h1>{title}</h1>
       {description && <p class="toolkit-description">{description}</p>}
+      {filterTag && <p class="filter-notice">Showing tools tagged with "{filterTag}"</p>}
     </header>
 
     <main class="toolkit-content">
-      <!--
-    {
-      tools && tools.length > 0 ? (
-        <CardGrid columns={columns} gap={gap} minCardWidth={minCardWidth}>
-          {tools.map((tool) => (
-            <ToolCard
-              url={tool.url}
-              site_name={tool.site_name}
-              title={tool.title}
-              image={tool.image}
-              favicon={tool.favicon}
-              description={tool.description}
-              tags={tool.tags}
-            />
-          ))}
-        </CardGrid>
-      ) : (
-        <div class="no-tools">
-          <p>No tools found. Check back later!</p>
-        </div>
-      )
-    } -->
-
+      <TagColumn allRenderedTags={allTags} tools={toolEntries.map(entry => entry.data)} />
+      <div class="tools-container">
+        <CardGrid
+          tools={tools}
+          gap={gap}
+          minCardWidth={minCardWidth}
+        />
+      </div>
       <slot />
     </main>
   </div>
@@ -90,16 +95,15 @@ const {
   }
 
   .toolkit-content {
+    display: flex;
+    gap: 2rem;
     width: 100%;
   }
 
-  .no-tools {
-    text-align: center;
-    padding: 3rem;
-    background-color: var(--clr-lossless-primary-dark);
-    border-radius: 1rem;
-    color: var(--clr-body);
-  }
+
+
+ 
+
 
   @media (max-width: 768px) {
     .toolkit-container {
@@ -109,5 +113,31 @@ const {
     .toolkit-header {
       margin-bottom: 2rem;
     }
+
+    .toolkit-content {
+      flex-direction: column;
+    }
+
+    .bare-tools-section {
+      padding: 1rem;
+    }
+
+    .bare-tools-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+
+  .filter-notice {
+    font-size: var(--fs-300);
+    color: var(--clr-body);
+    opacity: 0.8;
+    margin-top: 0.5rem;
+  }
+
+  .no-tools {
+    text-align: center;
+    color: var(--clr-body);
+    font-style: italic;
+    padding: 2rem;
   }
 </style>

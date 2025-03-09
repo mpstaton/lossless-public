@@ -1,9 +1,13 @@
 ---
-url: https://git-scm.com
+url: 'https://git-scm.com'
 tags:
+  - Products
   - Developer-Experience
   - Workflow-Management
-docs_url: https://git-scm.com/doc
+docs_url: 'https://git-scm.com/doc'
+og_errors: true
+og_last_error: '2025-03-08T20:39:42.148Z'
+og_error_message: HTTP error 401
 ---
 
 https://youtu.be/0Hk2XjGSzbA?si=idNrPLL_nQg2oDpR

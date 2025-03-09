@@ -1,10 +1,15 @@
 ---
-url: https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot
-parent_org: "[[GitHub]]"
-zinger: 
+url: 'https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot'
+parent_org: '[[GitHub]]'
+zinger: null
 tags:
+  - AI-Toolkit
+  - Generative-AI
   - Code-Generators
   - IDE-Plugins
+og_errors: true
+og_last_error: '2025-03-08T20:39:44.897Z'
+og_error_message: HTTP error 401
 ---
 
 

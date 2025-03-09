@@ -1,13 +1,15 @@
 ---
 interface Props {
   tag: string;
+  count?: number;
+  includeCount?: boolean;
 }
 
-const { tag } = Astro.props;
+const { tag, count = 0, includeCount = false } = Astro.props;
 ---
 
 <a href={`/toolkit/${tag}`} class="tool-tag">
-  <p>{tag}</p>
+  <p>{tag}{includeCount && count > 0 && <span class="count">({count})</span>}</p>
 </a>
 
 <style>
@@ -16,7 +18,7 @@ const { tag } = Astro.props;
     color: var(--clr-lossless-primary-glass);
     border-radius: 0.25em;
     white-space: nowrap;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     padding: 0.2em 0.3em;
     display: inline-flex;
     align-items: center;
@@ -27,13 +29,17 @@ const { tag } = Astro.props;
     }
   }
 
-    .tool-tag:hover {
-      background: color-mix(
-        in oklab,
-        var(--clr-lossless-primary-glass),
-        var(--clr-lossless-primary-dark) 20%
-      );
-      transform: translateY(-2px);
-      margin-bottom: 0;
-    }
+  .count {
+    margin-left: 0.3em;
+    opacity: 0.8;
+    font-size: 0.9em;
+  }
+
+  .tool-tag:hover {
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 20%
+    );
+  }
 </style>

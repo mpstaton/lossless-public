@@ -1,5 +1,5 @@
 ---
-url: "https://www.augmentcode.com/"
+url: 'https://www.augmentcode.com/'
 zinger: Developer AI for real work
 description: >-
   The first AI coding assistant built for professional software engineers and
@@ -10,7 +10,8 @@ tags:
   - Code-Generators
   - Developer-AI
   - IDE-Plugins
-image: https://cdn.prod.website-files.com/66d76c2202b335e39ad2b5e8/675cb87f1ba91008af1bb69e_augment-open-graph.png
+image: >-
+  https://cdn.prod.website-files.com/66d76c2202b335e39ad2b5e8/675cb87f1ba91008af1bb69e_augment-open-graph.png
 site_name: Augment Code
 title: Developer AI for real work
 favicon: >-

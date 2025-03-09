@@ -1,17 +1,69 @@
 ---
+import ToolCard from "@components/tool-components/ToolCard.astro";
+import BareToolCard from "@components/tool-components/BareToolCard.astro";
+
 interface Props {
   columns?: number;
   gap?: string;
   minCardWidth?: string;
+  tools: Array<{
+    url: string;
+    site_name?: string;
+    title?: string;
+    image?: string;
+    favicon?: string;
+    description?: string;
+    tags?: string[];
+    id: string;
+  }>;
 }
 
-const { columns = 3, gap = "2rem", minCardWidth = "300px" } = Astro.props;
+const { columns = 3, gap = "2rem", tools = [] } = Astro.props;
+
+// Split tools into those with and without images
+const toolsWithImages = tools.filter(tool => tool.image);
+const toolsWithoutImages = tools.filter(tool => !tool.image);
 ---
 
 <div class="cards-container">
-  <div class="card-grid">
-    <slot />
-  </div>
+  {toolsWithImages.length > 0 && (
+    <section class="tools-section">
+      <div class="card-grid">
+        {toolsWithImages.map((tool) => (
+          <ToolCard
+            url={tool.url}
+            site_name={tool.site_name}
+            title={tool.title}
+            image={tool.image}
+            favicon={tool.favicon}
+            description={tool.description}
+            tags={tool.tags}
+            filename={tool.id}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {toolsWithoutImages.length > 0 && (
+    <section class="tools-section bare-tools-section">
+      <div class="bare-tools-grid">
+        {toolsWithoutImages.map((tool) => (
+          <BareToolCard
+            url={tool.url}
+            site_name={tool.site_name}
+            title={tool.title}
+            tags={tool.tags}
+            filename={tool.id}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+  
+  {tools.length === 0 && (
+    <p class="no-tools">No tools found</p>
+  )}
 </div>
 
 <script is:inline>
@@ -35,29 +87,61 @@ const { columns = 3, gap = "2rem", minCardWidth = "300px" } = Astro.props;
     ?.addEventListener("mousemove", handleMouseMove);
 </script>
 
-<style define:vars={{ columns, gap, minCardWidth }}>
+<style define:vars={{ columns, gap }}>
   .cards-container {
     width: 100%;
-    position: relative;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--minCardWidth), 1fr));
+    grid-template-columns: repeat(var(--columns), 1fr);
     gap: var(--gap);
-    row-gap: 2rem;
     width: 100%;
-    position: relative;
   }
 
-  /* Remove default card background to let glow show through */
+  .tools-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tools-section h2 {
+    font-size: var(--fs-600);
+    color: var(--clr-heading);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .bare-tools-section {
+    background-color: var(--clr-lossless-primary-dark);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .bare-tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .no-tools {
+    text-align: center;
+    color: var(--clr-body);
+    font-style: italic;
+    padding: 2rem;
+  }
+
+  /* Card glow effects */
   :global(.card) {
     position: relative;
     background: transparent !important;
   }
 
-  /* Glow effects */
   :global(.card)::before,
   :global(.card)::after {
     border-radius: inherit;
@@ -99,8 +183,16 @@ const { columns = 3, gap = "2rem", minCardWidth = "300px" } = Astro.props;
   }
 
   @media (max-width: 768px) {
-    .cards-container {
+/*     .cards-container {
       padding: 0 1rem;
     }
-  }
+
+    .bare-tools-section {
+      padding: 1rem;
+    }
+
+    .bare-tools-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  } */
 </style>
