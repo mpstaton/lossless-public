@@ -10,7 +10,7 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4e5366f94fed9021301ddf674365632a0491e9a5a181856fc740a8c1d911a4d8.jpeg
 og_last_fetch: 2025-03-07T05:19:19.164Z
-last_jina_request: '2025-03-09T06:09:19.317Z'
+last_jina_request: '2025-03-09T06:20:15.029Z'
 jina_error: TIMEOUT
 ---
 [[AI Powered Data Capture]]

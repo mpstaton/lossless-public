@@ -14,8 +14,8 @@ tags:
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/269022d20d832a81a15d40cced2010d58e673ca8cee656f3f6ac3031573640be.jpeg
 og_last_fetch: 2025-03-07T05:19:02.911Z
-last_jina_request: '2025-03-09T06:09:10.709Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:19:38.214Z'
+jina_error: 'HTTP error! status: 429'
 ---
 
 A [[Framework]] in [[Rust]]

@@ -12,7 +12,7 @@ og_errors: true
 og_last_error: '2025-03-07T05:36:34.550Z'
 og_error_message: 'Screenshot fetch error: HTTP error! status: 500'
 og_last_fetch: 2025-03-07T05:19:02.925Z
-last_jina_request: '2025-03-09T06:09:19.237Z'
+last_jina_request: '2025-03-09T06:19:31.524Z'
 jina_error: TIMEOUT
 ---
 Rated the #1 Graph Database in the world for Fall 2024. 

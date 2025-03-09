@@ -16,7 +16,7 @@ favicon: 'https://aerospike.com/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/596d4aa0511326d039f40b456b3a6788edbf4c229e7cfa0312c22fef2e0b8801.jpeg
 og_last_fetch: 2025-03-07T05:19:02.926Z
-last_jina_request: '2025-03-09T06:09:11.437Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:19:38.303Z'
+jina_error: 'HTTP error! status: 429'
 ---
 

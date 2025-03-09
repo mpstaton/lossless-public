@@ -1,0 +1,26 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "": "https://stackblitz.com/",
+      "We're hiring": "https://stackblitz.com/careers",
+      "Introducing the Visual Inspector!": "https://x.com/boltdotnew/status/1892620446106886396",
+      "Start a blog with Astro": "https://bolt.new/~/bolt-astro-blog",
+      "Create a docs site with Vitepress": "https://bolt.new/~/bolt-vitepress",
+      "Scaffold UI with shadcn": "https://bolt.new/~/bolt-shadcn",
+      "Draft a presentation with Slidev": "https://bolt.new/~/bolt-slidev",
+      "Code a video with Remotion": "https://bolt.new/~/bolt-remotion",
+      "Help Center": "https://support.bolt.new/",
+      "Terms": "https://stackblitz.com/terms-of-service",
+      "Privacy": "https://stackblitz.com/privacy-policy"
+    },
+    "title": "bolt.new",
+    "description": "",
+    "url": "https://bolt.new/",
+    "content": "[](https://bolt.new/)\n\n[We're hiring](https://stackblitz.com/careers)\n\nSign In\n\nGet Started\n\n[Introducing the Visual Inspector!](https://x.com/boltdotnew/status/1892620446106886396)\n\nWhat do you want to build?\n==========================\n\nPrompt, run, edit, and deploy full-stack web and mobile apps.\n\nClear\n\nUpdate\n\nNEWBuild a mobile app with Expo\n\n[Start a blog with Astro](https://bolt.new/~/bolt-astro-blog)[Create a docs site with Vitepress](https://bolt.new/~/bolt-vitepress)[Scaffold UI with shadcn](https://bolt.new/~/bolt-shadcn)[Draft a presentation with Slidev](https://bolt.new/~/bolt-slidev)[Code a video with Remotion](https://bolt.new/~/bolt-remotion)\n\nor start a blank app with your favorite stack\n\n[](https://bolt.new/~/bolt-astro-basic)[](https://bolt.new/~/bolt-vanilla-vite)[](https://bolt.new/~/bolt-nextjs-shadcn)[](https://bolt.new/~/bolt-nativescript-js)[](https://bolt.new/~/bolt-nuxt)[](https://bolt.new/~/bolt-slidev)[](https://bolt.new/~/bolt-vue)\n\n[](https://bolt.new/~/bolt-sveltekit)[](https://bolt.new/~/bolt-remix)[](https://bolt.new/~/bolt-ts)[](https://bolt.new/~/bolt-vite-react)[](https://bolt.new/~/bolt-remotion)[](https://bolt.new/~/bolt-angular)[](https://bolt.new/~/bolt-qwik)\n\n[](https://x.com/boltdotnew)[](https://github.com/stackblitz/bolt.new)[](https://discord.com/invite/stackblitz)\n\n[Help Center](https://support.bolt.new/)\n\n[Careers](https://stackblitz.com/careers)\n\n[Terms](https://stackblitz.com/terms-of-service)[Privacy](https://stackblitz.com/privacy-policy)\n\n[](https://stackblitz.com/)",
+    "usage": {
+      "tokens": 454
+    }
+  }
+}

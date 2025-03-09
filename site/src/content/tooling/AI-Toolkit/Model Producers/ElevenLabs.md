@@ -11,8 +11,8 @@ site_name: ElevenLabs
 title: Free Text to Speech & AI Voice Generator | ElevenLabs
 favicon: 'https://elevenlabs.io/favicon.ico'
 og_last_fetch: 2025-03-07T05:19:18.720Z
-last_jina_request: '2025-03-09T06:09:12.564Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:19:37.928Z'
+jina_error: 'HTTP error! status: 429'
 ---
 Specializes in [[Generative AI]] powered [[AI-Powered Language Translation]]
 

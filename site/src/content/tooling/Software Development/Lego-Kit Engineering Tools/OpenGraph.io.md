@@ -11,8 +11,8 @@ og_errors: true
 og_last_error: '2025-03-07T10:19:44.998Z'
 og_error_message: HTTP error 401
 og_last_fetch: 2025-03-07T06:11:14.792Z
-last_jina_request: '2025-03-09T06:09:10.763Z'
-jina_error: TIMEOUT
+last_jina_request: '2025-03-09T06:19:34.984Z'
+jina_error: fetch failed
 ---
 [[Web Scraping]], 
 

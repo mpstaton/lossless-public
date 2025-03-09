@@ -1,0 +1,21 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "Upgrade": "https://copycoder.ai/pricing",
+      "info@copycoder.ai": "mailto:info@copycoder.ai?subject=Bug%20report",
+      "": "https://x.com/CopyCoderAI",
+      "Affiliate Program": "https://copycoder.ai/affiliate",
+      "Privacy Policy": "https://copycoder.ai/privacy",
+      "Terms": "https://copycoder.ai/terms"
+    },
+    "title": "CopyCoder",
+    "description": "Generate AI prompts based on uploaded images",
+    "url": "https://copycoder.ai/",
+    "content": "CopyCoder\n===============\n\n![Image 1: CopyCoder Logo](https://copycoder.ai/_next/image?url=%2Fcopycoder-logo-new.png&w=96&q=75)CopyCoder\n\n[Upgrade](https://copycoder.ai/pricing)\n\n🔥 New Feature!CopyCoder Agent + AuthView demo →Create powerful  \nprompts for AI coding tools\n\nView Demo\n\nBuilt for the next generation of AI coders. Upload images of full applications, UI mockups, or custom designs and use our generated prompts to build your apps faster.\n\nOur front-end frameworks\n\nSign in to continue\n-------------------\n\nEnter your email to get started\n\nEmail\n\nSend verification code\n\nDrag & drop images of websites, Figma designs, or UI mockups here\n\nor\n\nChoose imageNote: Only one image can be uploaded at a time.\n\nChoose analysis focus:\n\nWeb applicationsAnalyze SaaS, UI & Figma designs.\n\nGenerate prompt\n\nSign in to use this feature\n\nSign in to get started!\n\nSign in or Upgrade\n\nFound bugs that needs squashing? Report bugs here: [info@copycoder.ai](mailto:info@copycoder.ai?subject=Bug%20report)\n\nConnect with us or join our growing community!\n\n[](https://x.com/CopyCoderAI)\n\n[Affiliate Program](https://copycoder.ai/affiliate)[Privacy Policy](https://copycoder.ai/privacy)[Terms](https://copycoder.ai/terms)\n\n© 2024 CopyCoder AI. All rights reserved.",
+    "usage": {
+      "tokens": 306
+    }
+  }
+}

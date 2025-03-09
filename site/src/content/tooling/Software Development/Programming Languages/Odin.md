@@ -10,7 +10,7 @@ site_name: Odin
 title: Odin Programming Language
 favicon: 'https://odin-lang.org/favicon.svg'
 og_last_fetch: 2025-03-06T21:44:03.289Z
-last_jina_request: '2025-03-09T06:09:11.689Z'
+last_jina_request: '2025-03-09T06:19:31.232Z'
 jina_error: TIMEOUT
 ---
 
