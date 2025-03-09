@@ -1,5 +1,4 @@
 ---
-import CardGrid from "@basics/CardGrid.astro";
 import ToolkitLayout from "@layouts/ToolkitLayout.astro";
 import { getCollection } from "astro:content";
 import ToolCard from "@components/tool-components/ToolCard.astro";
@@ -58,28 +57,11 @@ const pageTitle = `Tools tagged with "${tag}"`;
 const pageDescription = `A collection of tools and resources tagged with "${tag}"`;
 ---
 
-<ToolkitLayout title={pageTitle} description={pageDescription}>
-  <slot />
-</ToolkitLayout>
-
-<style>
-  body {
-    background-color: var(--clr-primary-bg);
-  }
-  h1 {
-    font-family: "Poppins", sans-serif;
-    color: var(--clr-lossless-primary-light);
-  }
-</style>
-
-// Create a title for the page
-const pageTitle = `Tools tagged with "${tag}"`;
-const pageDescription = `A collection of tools and resources tagged with "${tag}"`;
----
-
-<ToolkitLayout title={pageTitle} description={pageDescription}>
-
-</ToolkitLayout>
+<ToolkitLayout
+  title="AI Tools"
+  description="A curated collection of AI-powered tools and resources"
+  filterTag="AI-Toolkit"
+/>
 
 <style>
   body {

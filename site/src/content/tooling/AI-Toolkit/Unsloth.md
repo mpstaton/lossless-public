@@ -1,6 +1,6 @@
 ---
 url: 'https://unsloth.ai'
-github-url: 'https://github.com/unslothai/unsloth'
+github_url: 'https://github.com/unslothai/unsloth'
 tags:
   - AI-Toolkit
   - Check-it-Out

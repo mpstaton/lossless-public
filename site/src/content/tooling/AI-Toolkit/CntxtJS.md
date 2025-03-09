@@ -11,7 +11,7 @@ image: >-
   https://opengraph.githubassets.com/05378f91e256c7db30a0b05924e2f3ae5841fe12ee0ac78b75d9cbc9912f50d2/brandondocusen/CntxtJS
 site_name: GitHub
 title: >-
-  GitHub - brandondocusen/CntxtJS: A lightweight tool to optimize your
+GitHub _ brandondocusen/CntxtJS: A lightweight tool to optimize your
   Javascript / Typescript project for LLM context windows by using a knowledge
   graph | AI code understanding | LLM context enhancement | Code structure
   visualization | Static analysis for AI | Large Language Model tooling #LLM #AI

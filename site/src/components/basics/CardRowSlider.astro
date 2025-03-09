@@ -1,0 +1,101 @@
+---
+import CardRow from './CardRow.astro';
+
+interface Props {
+  tools: any[];
+  toolCounts?: Record<string, number>;
+  includeCount?: boolean;
+  filter?: (tool: any) => boolean;
+  itemsToShow?: number;
+}
+
+const {
+  tools,
+  toolCounts = {},
+  includeCount = false,
+  filter = () => true,
+  itemsToShow = 3
+} = Astro.props;
+---
+
+<div class="relative w-full">
+  <div class="overflow-hidden">
+    <div class="flex transition-transform duration-300 ease-in-out">
+      <CardRow 
+        tools={tools}
+        toolCounts={toolCounts}
+        includeCount={includeCount}
+        filter={filter}
+        itemsToShow={itemsToShow}
+      />
+    </div>
+  </div>
+
+  <button 
+    class="slider-button"
+    id="prevButton"
+  >
+    Previous
+  </button>
+  
+  <button 
+    class="slider-button"
+    id="nextButton"
+  >
+    Next
+  </button>
+</div>
+
+<style>
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(31, 41, 55, 0.5);
+    padding: 0.5rem;
+    color: white;
+    display: none;
+  }
+
+  #prevButton {
+    left: 0;
+  }
+
+  #nextButton {
+    right: 0;
+  }
+</style>
+
+<script>
+  const container = document.querySelector('.overflow-hidden');
+  const prevButton = document.getElementById('prevButton');
+  const nextButton = document.getElementById('nextButton');
+  let currentIndex = 0;
+
+  if (prevButton && nextButton && container) {
+    prevButton.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+
+    nextButton.addEventListener('click', () => {
+      if (currentIndex < maxSlides) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+  }
+
+  function updateSlider() {
+    const slideWidth = 100 / itemsToShow;
+    container.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+    updateButtonVisibility();
+  }
+
+  function updateButtonVisibility() {
+    if (prevButton) prevButton.style.display = currentIndex === 0 ? 'none' : 'block';
+    if (nextButton) nextButton.style.display = currentIndex >= maxSlides ? 'none' : 'block';
+  }
+</script>

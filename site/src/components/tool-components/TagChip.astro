@@ -18,7 +18,7 @@ const { tag, count = 0, includeCount = false } = Astro.props;
     color: var(--clr-lossless-primary-glass);
     border-radius: 0.25em;
     white-space: nowrap;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     padding: 0.2em 0.3em;
     display: inline-flex;
     align-items: center;
@@ -41,7 +41,5 @@ const { tag, count = 0, includeCount = false } = Astro.props;
       var(--clr-lossless-primary-glass),
       var(--clr-lossless-primary-dark) 20%
     );
-    transform: translateY(-2px);
-    margin-bottom: 0;
   }
 </style>

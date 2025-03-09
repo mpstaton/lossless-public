@@ -233,7 +233,8 @@ async function processFile(filePath) {
       console.log(`Processing ${path.basename(filePath)} with URL: ${frontmatter.url}`);
       
       // Extract category tags from the file path
-      const categoryTags = extractCategoryTags(filePath);
+      const categoryTags = extractCategoryTags(filePath)
+        .map(tag => tag.replace(/\s+/g, '-')); // Replace spaces with hyphens
       console.log(`Extracted category tags: ${categoryTags.join(', ')}`);
       
       // Initialize tags array if it doesn't exist

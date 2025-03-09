@@ -3,85 +3,71 @@ import "@styles/global.css";
 import Card from "@basics/Card.astro";
 import ToolCard from "@components/tool-components/ToolCard.astro";
 import CardGrid from "@basics/CardGrid.astro";
+import TagCloud from "@components/tool-components/TagCloud.astro";
 import { getEntry, getCollection } from "astro:content";
 import TrademarkRibbon from "@basics/TrademarkRibbon.astro";
-import trademarkBaserowUrl from "../assets/Visuals/Tooling-Trademarks/trademark__Baserow.svg?url";
 
-type Tool = {
+interface Tool {
+  url: string;
   site_name?: string;
   title?: string;
-  url: string;
   image?: string;
   favicon?: string;
   description?: string;
   tags?: string[];
-};
+  id: string;
+}
 
+// ... existing type definitions ...
+
+const toolEntries = await getCollection("tooling");
+const tools = toolEntries.map((entry: any) => entry.data as Tool);
 const featuresData = await getEntry("cards", "features");
 const cards = featuresData?.data?.cards ?? [];
 
-// Get all entries from the tools collection
-const toolEntries = await getCollection("tooling");
-// Tools are now directly in the entry data, cast to Tool
-const tools = toolEntries.map((entry: any) => entry.data as Tool);
-console.log("Tools loaded:", tools);
+
+const tagFrequencies = tools.reduce((tagCounts: Record<string, number>, tool: Tool) => {
+  tool.tags?.forEach((tag: any) => {
+    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+  });
+  return tagCounts;
+}, {} as Record<string, number>);
+// Get all unique tags from all tools
+const allTags = [...new Set(
+  tools
+    .flatMap(tool => tool.tags || [])
+    .filter(tag => tag) // Remove any undefined/null values
+)]
 ---
 
 <div id="main-content-col">
   <section>
     <h1>Here is the Main Content</h1>
-    {
-      cards && cards.length > 0 ? (
-        <CardGrid columns={3} gap="2rem">
-          {cards
-            .sort((a: any, b: any) => (a.order ?? 0) - (b.order ?? 0))
-            .map((card: any) => (
-              <Card
-                title={card.title}
-                imageUrl={card.imageUrl}
-                imageAlt={card.title}
-              >
-                {card.content}
-              </Card>
-            ))}
-        </CardGrid>
-      ) : (
-        <p>No cards found</p>
-      )
-    }
+    <!-- Existing cards section -->
   </section>
 
   <section>
     <h2>Tools</h2>
-    <TrademarkRibbon />
-    {
-      tools && tools.length > 0 ? (
-        <CardGrid columns={3} gap="2rem">
-          {tools.map((tool: Tool) => (
-            <ToolCard
-              url={tool.url}
-              site_name={tool.site_name}
-              title={tool.title}
-              image={tool.image}
-              favicon={tool.favicon}
-              description={tool.description}
-              tags={tool.tags}
-            />
-          ))}
-        </CardGrid>
-      ) : (
-        <p>No tools found</p>
-      )
-    }
+    <div class="tools-header">
+      <TrademarkRibbon />
+      <TagCloud 
+      tags={allTags}
+      tagFrequencies={tagFrequencies}
+      visibleTagRowLimit={4}
+      maxWidth="96%" />
+    </div>
+    
+    {tools && tools.length > 0 ? (
+      <CardGrid columns={3} gap="2rem" tools={tools} />
+    ) : (
+      <p>No tools found</p>
+    )}
   </section>
 </div>
 
 <style>
   #main-content-col {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1400px;
+    width: 94%;
     margin: 0 auto;
     padding: 2rem 0;
   }
@@ -89,5 +75,13 @@ console.log("Tools loaded:", tools);
   h1 {
     margin-bottom: 2rem;
     text-align: center;
+  }
+
+  .tools-header {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
   }
 </style>

@@ -1,6 +1,6 @@
 ---
 url: 'https://www.projectaria.com/'
-parent-org: '[[Meta]]'
+parent_org: '[[Meta]]'
 aliases:
   - Project Aria
 tags:

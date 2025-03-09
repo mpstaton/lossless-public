@@ -3,19 +3,27 @@ import TagChip from "./TagChip.astro";
 
 interface Props {
   tags: string[];
+  tagFrequencies: Record<string, number>;
+  visibleTagRowLimit?: number;
+  maxWidth?: string;
 }
 
-const { tags } = Astro.props;
+const { tags = [], tagFrequencies = {}, visibleTagRowLimit = 4, maxWidth = "100%" } = Astro.props;
 
-const safeTags = tags || [];
+// Calculate approximate row height based on tag chip height + gap
+const rowHeight = 26; // Tag height (22px) + gap (6px)
+const maxHeight = visibleTagRowLimit * rowHeight;
 ---
 
-
 <div class="tool-cloud">
-  <div class="tool-tags">
-    {safeTags.length > 0 && 
-      safeTags.map((tag) => (
-        <TagChip tag={tag} />
+  <div class="tool-tags" style={`max-height: ${maxHeight}px; max-width: ${maxWidth};`}>
+    {tags.length > 0 && 
+      tags.map((tag) => (
+        <TagChip 
+          tag={tag}
+          count={tagFrequencies[tag] || 0}
+          includeCount={true}
+        />
       ))
     }
   </div>
@@ -25,8 +33,9 @@ const safeTags = tags || [];
   .tool-cloud {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6em;
+    gap: .6em;
     width: 100%;
+    justify-content: space-between;
   }
 
   .tool-tags {
@@ -34,4 +43,33 @@ const safeTags = tags || [];
     flex-flow: row wrap;
     gap: 0.5em;
     width: 100%;
+    overflow-y: hidden;
+    padding: .6em 1em;
+    justify-content: space-between; /* Add space for potential scrollbar */
   }
+
+  /* Show scrollbar on hover if content overflows */
+  .tool-tags:hover {
+    background: calc(var(--clr-lossless-primary-dark) * 80%);
+    border: 0.1em solid var(--clr-lossless-primary-glass);
+    border-radius: 1em;
+  }
+
+  /* Customize scrollbar */
+  .tool-tags::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .tool-tags::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .tool-tags::-webkit-scrollbar-thumb {
+    background: var(--clr-lossless-primary-dark);
+    border-radius: 3px;
+  }
+
+  .tool-tags::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-lossless-primary-glass);
+  }
+</style>
