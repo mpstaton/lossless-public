@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Define source and destination directories
-const sourceDir = path.join(process.cwd(), 'src/assets/Visuals/Tooling-Trademarks');
-const destDir = path.join(process.cwd(), 'src/assets/visuals-as-components/tooling-trademarks');
+const sourceDir = path.join(process.cwd(), 'src/assets/Visuals/Standardized-Tooling-Trademarks');
+const destDir = path.join(process.cwd(), 'src/assets/visuals-as-components/trademarks-viewbox-fixed-height');
 
 // Create destination directory if it doesn't exist
 if (!fs.existsSync(destDir)) {

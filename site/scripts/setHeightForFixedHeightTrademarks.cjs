@@ -78,16 +78,25 @@ async function processSVGViewBox(filePath) {
     );
 
     // Handle preserveAspectRatio
-    if (!modifiedContent.includes('preserveAspectRatio')) {
+    const hasPreserveAspectRatio = /<svg[^>]*preserveAspectRatio\s*=/.test(modifiedContent);
+    if (!hasPreserveAspectRatio) {
+      // Add the property if it doesn't exist
       modifiedContent = modifiedContent.replace(
-        /<svg/,
-        '<svg preserveAspectRatio="xMidYMid"'
+        /<svg([^>]*)>/,
+        '<svg$1 preserveAspectRatio="xMidYMid">'
       );
     } else {
+      // Update existing property
       modifiedContent = modifiedContent.replace(
-        /preserveAspectRatio="[^"]*"/,
-        'preserveAspectRatio="xMidYMid"'
+        /<svg([^>]*?)preserveAspectRatio\s*=\s*["'][^"']*["']/,
+        '<svg$1preserveAspectRatio="xMidYMid"'
       );
+    }
+
+    // Verify preserveAspectRatio was added/updated
+    if (!modifiedContent.includes('preserveAspectRatio="xMidYMid"')) {
+      console.log(`⚠️ Failed to set preserveAspectRatio in ${path.basename(filePath)}`);
+      return false;
     }
 
     // Update height and width attributes if they exist

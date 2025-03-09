@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 48 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg preserveAspectRatio="xMidYMid" width="128" height="160" viewBox="0 0 128 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(1,0,0,1,-6.86914,0)">
         <g id="appIcon__Mojo">
             <path d="M50.494,25.426C50.994,27.346 48.862,29.394 48.862,29.394C48.862,29.394 44.976,31.885 45.734,21.195C46.492,10.506 29.076,0 29.076,0C29.076,0 29.175,1.019 29.071,8.066C28.941,16.933 23.678,13.893 23.678,13.893C18.411,19.357 18.89,31.696 18.89,31.696C12.369,37.279 12.14,25.67 12.14,25.67C12.14,25.67 -0.275,37.81 13.002,50.816C13.002,50.816 14.949,52.701 11.838,52.101C9.618,51.674 9.117,50.814 9.117,50.814C9.117,50.814 9.541,56.198 25.197,59.567C25.501,59.627 30.367,60.555 35.863,59.493C47.923,56.87 50.029,51.997 50.029,51.997C50.029,51.997 49.773,52.436 47.772,52.633C45.622,52.844 47.468,50.836 47.468,50.836C61.638,42.221 49.993,23.506 50.494,25.426Z" style="fill:rgb(255,76,31);fill-rule:nonzero;"/>
