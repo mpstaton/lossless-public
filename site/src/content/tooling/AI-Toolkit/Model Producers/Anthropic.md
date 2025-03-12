@@ -46,3 +46,5 @@ Sources
 
 ### Error Handling in the [[Anthropic]] [[REST API]]. 
 ![[20250125_Errors - Anthropic.jpeg]]
+
+https://www.youtube.com/live/esCSpbDPJik?si=1YFe9Kh7PEZNtapM

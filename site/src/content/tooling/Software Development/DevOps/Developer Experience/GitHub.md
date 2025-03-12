@@ -27,6 +27,8 @@ An [[AI Copilots]] from [[GitHub]] that performs [[Code Generator|Code Generatio
 ![[Screenshot 2025-02-20 at 7.57.47 PM_GitHub-Copilot--Getting-Started.png]]
 ###### A 7 Minute Overview of [[GitHub#GitHub has a Code Generator AI Copilots Copilot , a Plug-ins, Add-ons, Extensions Plug-in to Visual Studio Code VS Code|GitHub Copilot]] on [[YouTube]].
 
+https://youtu.be/Z6BYhJl9hV8?si=LP7R4YFofIy7jTiK
+
 https://youtu.be/pUK7MRzoTDc?si=1pjr4g4Lc9Q-9p4L
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hPVatUSvZq0?si=05CHuwnzQxs6Vjx5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 https://www.youtube.com/live/XT_m3nua72E?si=022_YrqEQcYgDxCM

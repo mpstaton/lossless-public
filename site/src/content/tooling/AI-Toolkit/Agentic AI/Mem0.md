@@ -18,3 +18,7 @@ jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:20:40.126Z
 ---
 [[Memory Layer]]
+
+https://youtu.be/iOZpiXLT7iY?si=YMF_veSkgzkaNV-A
+
+https://youtu.be/iOZpiXLT7iY?si=EElcrUKXjiRbh5YJ

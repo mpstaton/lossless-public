@@ -47,3 +47,5 @@ https://youtu.be/IF8lhAB2iHE?si=AnealFDUXxUaoryx
   allowfullscreen
 ></iframe>
 2025, February 3. [Augment Code: Developer AI for Real World Work](https://youtu.be/1WpVivkDKxA?si=0yXu1BQv7o2YyBu1). Developers Digest.
+
+https://youtu.be/9QxLEeglcIk?si=U4XTMbO9midQzg1n

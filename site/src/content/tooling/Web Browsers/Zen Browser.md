@@ -32,3 +32,5 @@ og_last_fetch: 2025-03-07T05:19:01.780Z
 
 ![[Screenshot 2025-02-16 at 3.38.18 PM_Zen-Darkmode.png]]
 https://youtu.be/tKM2N4TQHQY?si=xqTDNKONyBX2sF3E
+
+https://youtu.be/rPOcQuRywuM?si=Wg8kPgnIP-Mskkds

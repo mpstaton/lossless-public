@@ -45,7 +45,13 @@ https://youtu.be/uc72yTqXeho?si=7hCBDWQQ7E7TTb9m
 
 https://youtu.be/9m9OgM_P1Wo?si=84XIfH-EPgQPHoUm
 
+https://youtu.be/lCbhobY6pKI?si=dRBbk8sPwri1424B
+
 https://youtu.be/9m9OgM_P1Wo?si=L2dFMdEaItCrYhLz
+
+https://youtu.be/DpdM4xei5fw?si=LwTfI8p0L6w54VOR
+
+https://youtu.be/uc72yTqXeho?si=51cMA-mtdi52afG4
 ##### Cursor Hero
 ![[Screenshot From 2025-02-19 07-00-02_Cursor--Hero.png]]
 

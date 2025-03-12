@@ -91,7 +91,7 @@ const width = widthMatch ? widthMatch[1] : "0";
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background: rgba(var(--clr-lossless-primary-dark), 0.1);
+    background: calc(var(--clr-lossless-primary-dark) * 0.1);
     border-radius: 0.5rem;
     border: 1px solid var(--clr-lossless-primary-light);
     transition: all 0.2s ease-in-out;
@@ -140,6 +140,7 @@ const width = widthMatch ? widthMatch[1] : "0";
   .trademark-container :global(svg) {
     height: 100%;
     width: auto;
-    max-width: 100%;
+    width: 100%;
+    overflow: visible;
   }
 </style>
