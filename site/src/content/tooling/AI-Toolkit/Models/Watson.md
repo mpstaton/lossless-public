@@ -10,6 +10,8 @@ title: IBM Watson
 favicon: 'https://www.ibm.com/content/dam/adobe-cms/default-images/icon-512x512.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2b6c490b5bf12de55c4caf7167234c13df7722b1463cab9a930a01d12c5ac939.jpeg
+last_jina_request: '2025-03-09T06:45:21.841Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:18.725Z
 ---
 One of the [[AI Models]]. 

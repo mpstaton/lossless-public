@@ -14,6 +14,8 @@ tags:
   - DevOps
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b9f67154bc6abfc949f785b488b9db7cdc0c8646d623112aafb52316d4b64864.jpeg
+last_jina_request: '2025-03-09T06:45:09.462Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:02.917Z
 ---
 [[Docker]] is a tool for [[Containers|Container]] creation and management, and enables [[Reproducible Builds]]. 
@@ -23,6 +25,8 @@ og_last_fetch: 2025-03-07T05:19:02.917Z
 [[How Docker Changes Everything]]
 
 https://youtu.be/Ud7Npgi6x8E?si=AFr_dvxpi80y4mLP
+
+https://youtu.be/t779DVjCKCs?si=c9YfUCAKR5YcQIbx
 
 https://youtu.be/mSC1Igmz1tY?si=ygrdTP9K1yozjWkj
 

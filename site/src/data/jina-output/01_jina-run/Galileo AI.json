@@ -1,0 +1,15 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {},
+    "title": "og.png",
+    "description": "",
+    "url": "https://cdn.usegalileo.ai/og.png",
+    "content": "og.png\n===============\n\n![Image 1](https://cdn.usegalileo.ai/og.png)",
+    "warning": "",
+    "usage": {
+      "tokens": 21
+    }
+  }
+}

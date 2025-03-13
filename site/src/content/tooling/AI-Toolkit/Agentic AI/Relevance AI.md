@@ -17,6 +17,8 @@ favicon: >-
   https://cdn.prod.website-files.com/636cad09a1159553a45e8ba1/66c3e8a77830ad2449220990_32x32%20(1).png
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ff20f00519bcd4bd711892e9aa52da7bee1e3ae560006fc34cf505405050da09.jpeg
+last_jina_request: '2025-03-09T06:45:02.158Z'
+jina_error: fetch failed
 og_last_fetch: 2025-03-07T05:20:40.124Z
 ---
 [Build an AI Agent That Scrapes ANYTHING (No-Code)](https://youtu.be/yJ7R3jxSF_g?si=cmlaVHvYDm_Aiyqs) by [[Ben AI]]

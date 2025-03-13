@@ -1,6 +1,13 @@
 ---
-url: https://www.anthropic.com
+url: 'https://www.anthropic.com'
 tags:
+  - AI-Toolkit
+  - Model-Producers
+last_jina_request: '2025-03-09T06:45:13.495Z'
+jina_error: 'HTTP error! status: 429'
+og_errors: true
+og_last_error: '2025-03-09T08:16:01.669Z'
+og_error_message: 'Fetch error: fetch failed'
 ---
 
 [[Claude]], [[Haiku]]
@@ -39,3 +46,5 @@ Sources
 
 ### Error Handling in the [[Anthropic]] [[REST API]]. 
 ![[20250125_Errors - Anthropic.jpeg]]
+
+https://www.youtube.com/live/esCSpbDPJik?si=1YFe9Kh7PEZNtapM

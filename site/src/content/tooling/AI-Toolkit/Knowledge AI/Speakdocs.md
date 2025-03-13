@@ -11,6 +11,8 @@ image: >-
 site_name: SpeakDocs
 title: 'SpeakDocs - Intelligent conversations, Instant insights'
 favicon: 'https://speakdocs.io/favicon.ico'
+last_jina_request: '2025-03-09T06:44:58.143Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:18.721Z
 ---
 [[Knowledge Base AI]], provides the ability to chat or speak with your own [[RAG]] or [[Knowledge Augmented Generation|KAG]] setup. 

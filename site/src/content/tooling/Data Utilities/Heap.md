@@ -17,6 +17,8 @@ tags:
   - Product-Analytics
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/f01df92ad3cb3a4c08bee06f4b68ef53437c72e1d5fce0f536529988a5230752.jpeg
+last_jina_request: '2025-03-09T06:45:20.181Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:01.834Z
 ---
 Part of the [[Current Stack|Laerdal Stack]]

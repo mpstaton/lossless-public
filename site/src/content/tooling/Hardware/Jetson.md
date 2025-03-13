@@ -9,6 +9,8 @@ tags:
   - Hardware
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0427d58184f474280430b1dacaf3e964d80d92bbfa3674fbc1f4abc260b88c85.jpeg
+last_jina_request: '2025-03-09T06:45:09.884Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:01.826Z
 ---
 

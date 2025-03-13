@@ -1,0 +1,81 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import { glob } from "glob";
+import TrademarkSVGWrapper from "@components/trademarks/TrademarkSVGWrapper.astro";
+
+interface Props {
+  sourceDir: string;
+  width: string;
+  maxWidth: string;
+}
+
+const { sourceDir, width, maxWidth } = Astro.props;
+
+// Get all SVG files from the source directory
+const svgFiles = await glob(`${sourceDir}/*.svg`);
+console.log("Found SVG files:", svgFiles);
+---
+
+<div class="ribbon-container">
+  <div class="ribbon-overlay">
+    <div class="trademark-row">
+      {
+        svgFiles.map((file) => (
+          <TrademarkSVGWrapper
+            sourceDir={file}
+            width={width}
+            maxWidth={maxWidth}
+          />
+        ))
+      }
+      {/* Duplicate for seamless loop */}
+      {
+        svgFiles.map((file) => (
+          <TrademarkSVGWrapper
+            sourceDir={file}
+            width={width}
+            maxWidth={maxWidth}
+          />
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .ribbon-container {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: visible;
+  }
+
+  .ribbon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Double width to accommodate all items */
+    height: 120px;
+  }
+
+  .trademark-row {
+    display: inline-flex;
+    display-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1rem;
+    animation: scroll 200s linear infinite; /* Increased duration */
+    white-space: nowrap;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>

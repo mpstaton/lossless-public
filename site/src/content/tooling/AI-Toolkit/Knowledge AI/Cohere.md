@@ -15,6 +15,8 @@ title: The World's Leading AI Platform for Enterprise | Cohere
 favicon: 'https://cohere.com/favicon-32x32.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/f7a59c043f8227ec0e6a693916ca70f219373e38c3d17545ecb06cb69536c237.jpeg
+last_jina_request: '2025-03-09T06:45:18.560Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:18.725Z
 ---
 

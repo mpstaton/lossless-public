@@ -15,6 +15,8 @@ og_screenshot_url: >-
 og_errors: true
 og_last_error: '2025-03-07T10:19:44.921Z'
 og_error_message: HTTP error 401
+last_jina_request: '2025-03-09T06:44:59.268Z'
+jina_error: 'Unexpected token ''H'', "Home | Sti"... is not valid JSON'
 og_last_fetch: 2025-03-07T05:19:02.904Z
 ---
 

@@ -1,0 +1,42 @@
+{
+  "id": "1740971379349",
+  "object": "chat.completion.chunk",
+  "created": 1740971379,
+  "model": "jina-deepsearch-v1",
+  "system_fingerprint": "fp_1740971379349",
+  "choices": [
+    {
+      "index": 0,
+      "delta": {
+        "content": "The latest blog post from Jina AI is \"LLM-as-SERP: Search Engine Result Pages from Large Language Models\", published on February 27, 2025. This post explores the potential of using Large Language Models to generate Search Engine Result Pages and discusses whether this idea is smart or stupid [^1]. Another recent post is \"A Practical Guide to Implementing DeepSearch/DeepResearch\" published on February 25, 2025 [^2].\n\n[^1]: LLM as SERP Search Engine Result Pages from Large Language Models This idea either extremely smart or extremely stupid no in between Read till the end and find out why this could be useful [jina.ai](https://jina.ai/news/llm-as-serp-search-engine-result-pages-from-large-language-models)\n\n[^2]: A Practical Guide to Implementing DeepSearch DeepResearch QPS out depth in DeepSearch is the new norm Find answers through read search reason loops Learn what it is and how to build it [jina.ai](https://jina.ai/news/a-practical-guide-to-implementing-deepsearch-deepresearch)",
+        "type": "text"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 23337,
+    "completion_tokens": 11553,
+    "total_tokens": 34672
+  },
+  "visitedURLs": [
+    "https://jina.ai/news",
+    "https://jina.ai/news?tag=tech-blog",
+    "https://jina.ai/news/llm-as-serp-search-engine-result-pages-from-large-language-models",
+    "https://jina.ai/news/a-practical-guide-to-implementing-deepsearch-deepresearch",
+    "https://jina.ai/",
+    "https://jina.ai/llm-serp-demo",
+    "https://elastic.co/search-labs/blog/jina-ai-embeddings-rerank-model-open-inference-api",
+    "https://x.com/jinaai_?lang=en",
+    "https://medium.com/@kawsarlog/jina-ais-reader-api-a-game-changer-for-developers-be66154b2692",
+    "https://medium.com/@tossy21/trying-out-jina-ais-node-deepresearch-c5b55d630ea6",
+    "https://jina.ai/deepsearch"
+  ],
+  "readURLs": [
+    "https://jina.ai/news",
+    "https://jina.ai/news?tag=tech-blog",
+    "https://jina.ai/news/llm-as-serp-search-engine-result-pages-from-large-language-models",
+    "https://jina.ai/news/a-practical-guide-to-implementing-deepsearch-deepresearch"
+  ]
+}

@@ -11,6 +11,8 @@ favicon: >-
   https://cdn.prod.website-files.com/61e7d259b7746e2d1df0b68d/621dcbd73ef4da7148540c44_favicon-eden.png
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/dbb92ea6ca8eef3137612d4264b71e61db526de5ab3aeb33358e9a322851a9c5.jpeg
+last_jina_request: '2025-03-09T06:45:12.407Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:18.724Z
 ---
 <iframe 

@@ -1,0 +1,18 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "": "https://www.producthunt.com/posts/speakdocs?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-speakdocs",
+      "Terms & Conditions": "https://speakdocs.io/terms",
+      "Privacy Policy": "https://speakdocs.io/privacy"
+    },
+    "title": "SpeakDocs - Intelligent conversations, Instant insights",
+    "description": "Have natural conversations with your documents using AI-powered insights",
+    "url": "https://speakdocs.io/",
+    "content": "SpeakDocs - Intelligent conversations, Instant insights\n===============\n\nSpeakdocs\n\nLog inSign up\n\nSpeak Directly With\n===================\n\nYour Documents.\n===============\n\nActually speak and have real conversations with your documents — try it now.\n\nAI-powered insights & instant answers from your files.\n\nGet started in seconds, no complex setup required.\n\nUpload & start speaking\n\nTry it now — no signup required.\n\nReady for documents\n\nAI-powered insights\n\n[![Image 1: SpeakDocs - Your AI-powered document assistant | Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=671906&theme=light)](https://www.producthunt.com/posts/speakdocs?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-speakdocs)\n\nSimple, transparent pricing\n---------------------------\n\nChoose the plan that best fits your needs. All plans include a 14-day money-back guarantee.\n\n### Free Trial\n\n$0\n\n*   Upload up to 3 documents\n*   1-minute conversation per document\n*   Voice notes (up to 30 seconds)\n*   Basic AI insights\n*   Standard support\n\nStart Free\n\n### Plus\n\n$10$5/month\n\nSave 50% Today with code LAUNCH50!\n\n*   Upload up to 25 documents\n*   5-minute conversation per document\n*   Voice notes (up to 3 minutes)\n*   Enhanced AI insights\n*   Email support\n\nGet Plus\n\n### Pro\n\n$19$9.50/month\n\nSave 50% Today with code LAUNCH50!\n\n*   Upload unlimited documents\n*   No conversation time limits\n*   Unlimited voice notes\n*   Advanced AI insights\n*   Priority support\n\nGet Started\n\n[Terms & Conditions](https://speakdocs.io/terms)[Privacy Policy](https://speakdocs.io/privacy)",
+    "usage": {
+      "tokens": 384
+    }
+  }
+}

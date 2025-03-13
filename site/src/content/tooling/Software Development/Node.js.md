@@ -9,6 +9,8 @@ image: >-
 site_name: Node.js
 title: Run JavaScript Everywhere
 favicon: 'https://nodejs.org/static/images/favicons/favicon.png'
+last_jina_request: '2025-03-09T06:45:07.456Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-06T21:43:55.993Z
 ---
 

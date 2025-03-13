@@ -1,0 +1,44 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "": "https://studios.trychroma.com/rahul-on-julius",
+      "Docs": "https://docs.trychroma.com/",
+      "Discord": "https://discord.gg/MMeYNTmh3x",
+      "Updates": "https://www.trychroma.com/updates",
+      "Careers": "https://careers.trychroma.com/",
+      "Get started": "https://docs.trychroma.com/docs/overview/getting-started",
+      "Sign up": "https://www.trychroma.com/signup",
+      "Full-text search and metadata filtering": "https://docs.trychroma.com/docs/querying-collections/metadata-filtering",
+      "Retrieve images with multimodal": "https://docs.trychroma.com/docs/embeddings/multimodal",
+      "Deploy Chroma to the cloud": "https://docs.trychroma.com/production/deployment",
+      "Browse integrations": "https://docs.trychroma.com/integrations/chroma-integrations",
+      "Learn more": "https://www.trychroma.com/engineering/serverless",
+      "Interview: Flo Crivello on building Lindy.AI. Watch now →": "https://studios.trychroma.com/flo-on-lindy",
+      "Labs: Embedding adatpers - Chroma Research. Read now →": "https://research.trychroma.com/embedding-adapters",
+      "☞All Interviews": "https://studios.trychroma.com/",
+      "☞All Technical Reports": "https://research.trychroma.com/",
+      "Distributed Systems": "https://careers.trychroma.com/roles/distributed-systems",
+      "Infrastructure": "https://careers.trychroma.com/roles/infra",
+      "Developer Experience": "https://careers.trychroma.com/roles/developer-experience",
+      "Community Lead": "https://careers.trychroma.com/roles/community",
+      "Applied Research": "https://careers.trychroma.com/roles/research",
+      "Follow Chroma on Youtube": "https://www.youtube.com/@trychroma",
+      "Follow Chroma on Twitter X": "https://x.com/trychroma",
+      "Github issue": "https://github.com/chroma-core/chroma/issues",
+      "Apache 2.0 License.": "https://github.com/chroma-core/chroma?tab=Apache-2.0-1-ov-file#readme",
+      "Privacy": "https://www.trychroma.com/website-privacy",
+      "Terms": "https://www.trychroma.com/website-terms",
+      "About": "https://docs.trychroma.com/docs/overview/about",
+      "hello@trychroma.com": "mailto:hello@trychroma.com"
+    },
+    "title": "Chroma",
+    "description": "",
+    "url": "https://www.trychroma.com/",
+    "content": "Chroma\n===============\n\n[![Image 1: Chroma](https://www.trychroma.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchroma.d840f629.png&w=96&q=75&dpl=dpl_Bs3UBTK6xs7NnFxFUZjZicki4YEw)](https://www.trychroma.com/home)\n\n[![Image 2: github_stars](https://img.shields.io/github/stars/chroma-core/chroma.svg?style=social&label=Star&maxAge=2400)](https://github.com/chroma-core/chroma)\n\n[Docs](https://docs.trychroma.com/)[Github](https://github.com/chroma-core/chroma)[Discord](https://discord.gg/MMeYNTmh3x)[Updates](https://www.trychroma.com/updates)[Careers](https://careers.trychroma.com/)\n\n[Get started](https://docs.trychroma.com/docs/overview/getting-started)Log in[Sign up](https://www.trychroma.com/signup)\n\nChroma is the open-source AI application database. Batteries included.\n\nEmbeddings, vector search, document storage, full-text search, metadata filtering, and multi-modal. All in one place. Retrieval that just works. As it should be.\n\nHow it works\n\nFeatures\n\nGet started\n\nInstall\n\n![Image 3: diagram of retrieval-augmented generation](https://www.trychroma.com/_next/static/media/computer.fcd1bd54.svg)\n\nGet Started\n\n[Quick start (Python & JavaScript)](https://docs.trychroma.com/docs/overview/getting-started)[Full-text search and metadata filtering](https://docs.trychroma.com/docs/querying-collections/metadata-filtering)[Retrieve images with multimodal](https://docs.trychroma.com/docs/embeddings/multimodal)[Deploy Chroma to the cloud](https://docs.trychroma.com/production/deployment)[Browse integrations](https://docs.trychroma.com/integrations/chroma-integrations)[Contribute to the project](https://github.com/chroma-core/chroma)\n\nWhat we're working on:\n\nWe're currently focused a full public release of Chroma Cloud powered by our open-source distributed and serverless architecture. Chroma Cloud is currently in production in private preview.\n\n[Learn more](https://www.trychroma.com/engineering/serverless)[Sign Up](https://www.trychroma.com/signup)\n\nWhat's new\n\n[![Image 4: still frame of interview](https://www.trychroma.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frahul.168b0c12.png&w=3840&q=75&dpl=dpl_Bs3UBTK6xs7NnFxFUZjZicki4YEw)](https://studios.trychroma.com/rahul-on-julius)\n\nBuilders in AI\n\n[Rahul Sonwalkar on building Julius](https://studios.trychroma.com/rahul-on-julius)\n\nRahul Sonwalkar, founder and CEO of Julius - the AI data scientist, joins Anton to discuss how they use large language models to write code, integrate LLM tool use, detect and mitigate errors, and how to quickly get started and rapidly iterate on an AI product.\n\n[Watch now](https://studios.trychroma.com/rahul-on-julius)\n\n[Interview: Flo Crivello on building Lindy.AI. Watch now →](https://studios.trychroma.com/flo-on-lindy)[Labs: Embedding adatpers - Chroma Research. Read now →](https://research.trychroma.com/embedding-adapters)\n\n[☞All Interviews](https://studios.trychroma.com/)\n\n•\n\n[☞All Technical Reports](https://research.trychroma.com/)\n\nThe Chroma Newsletter\n\nTasteful updates, no more than once per week\n\nSubscribe\n\nCareers\n\n[Distributed Systems](https://careers.trychroma.com/roles/distributed-systems)[Infrastructure](https://careers.trychroma.com/roles/infra)[Developer Experience](https://careers.trychroma.com/roles/developer-experience)[Community Lead](https://careers.trychroma.com/roles/community)[Applied Research](https://careers.trychroma.com/roles/research)\n\n[Open Roles](https://careers.trychroma.com/)\n\nCommunity\n\n[![Image 5: discord](https://www.trychroma.com/img/discord.svg) Join the Chroma Discord Server](https://discord.gg/MMeYNTmh3x)[![Image 6: github](https://www.trychroma.com/img/github.svg) Github Community](https://github.com/chroma-core/chroma)[![Image 7: youtube](https://www.trychroma.com/img/youtube.svg) Follow Chroma on Youtube](https://www.youtube.com/@trychroma)[![Image 8: x](https://www.trychroma.com/img/x.svg) Follow Chroma on Twitter X](https://x.com/trychroma)\n\nFAQs\n\nHow can I get support? → Post a [Github issue](https://github.com/chroma-core/chroma/issues), or join [our Discord](https://discord.gg/MMeYNTmh3x).\n\nDoes Chroma have a fully-managed cloud version? → [Join the waitlist](https://www.trychroma.com/signup)\n\nWhat does Chroma cost? → Chroma is free and open-source under the [Apache 2.0 License.](https://github.com/chroma-core/chroma?tab=Apache-2.0-1-ov-file#readme)\n\nAre you hiring? → [Yes](https://careers.trychroma.com/)\n\n© Chroma 2025\n\n•[Privacy](https://www.trychroma.com/website-privacy)•[Terms](https://www.trychroma.com/website-terms)•[About](https://docs.trychroma.com/docs/overview/about)\n\n[hello@trychroma.com](mailto:hello@trychroma.com)•[Join the team](https://careers.trychroma.com/)",
+    "usage": {
+      "tokens": 1317
+    }
+  }
+}

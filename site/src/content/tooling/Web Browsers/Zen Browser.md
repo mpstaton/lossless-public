@@ -10,6 +10,8 @@ tags:
   - Web-Browsers
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/20bbce1a48869323374bd13c1659cb6b7875e041f78bbb477eaca42dd04844a6.jpeg
+last_jina_request: '2025-03-09T06:45:01.685Z'
+jina_error: 'Unexpected token ''Z'', "Zen Browse"... is not valid JSON'
 og_last_fetch: 2025-03-07T05:19:01.780Z
 ---
 
@@ -30,3 +32,5 @@ og_last_fetch: 2025-03-07T05:19:01.780Z
 
 ![[Screenshot 2025-02-16 at 3.38.18 PM_Zen-Darkmode.png]]
 https://youtu.be/tKM2N4TQHQY?si=xqTDNKONyBX2sF3E
+
+https://youtu.be/rPOcQuRywuM?si=Wg8kPgnIP-Mskkds

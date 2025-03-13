@@ -10,6 +10,8 @@ title: 'Hailuo AI: Transform Idea to Visual with AI'
 favicon: 'https://hailuoai.video/assets/logo/favicon.png'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5edb0d0b07d2f5fe341d6fcd488b11ab9231c7172cb81ca9a927e19cb6f65ff1.jpeg
+last_jina_request: '2025-03-09T06:45:17.252Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:20:39.778Z
 ---
 [[Generative AI]] 

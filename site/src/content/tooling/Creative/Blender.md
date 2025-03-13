@@ -10,6 +10,8 @@ tags:
   - Creative
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/10c38833207c9dae614d56b5f1b3e52ab7f02323a5b9d583372dfb8cc137ce6c.jpeg
+last_jina_request: '2025-03-09T06:45:19.676Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:01.838Z
 ---
 

@@ -12,6 +12,8 @@ favicon: >-
   https://www.databricks.com/en-website-assets/favicon-32x32.png?v=c9b9916c3b27dc51866c46b79a6e9b88
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/42aaa147ffc4a84ee2f837ee8c5005842c36c79fea79f9e5644cd8c215635c40.jpeg
+last_jina_request: '2025-03-09T06:44:59.870Z'
+jina_error: 'Unexpected token ''P'', "Published "... is not valid JSON'
 og_last_fetch: 2025-03-07T05:19:01.835Z
 ---
 Part of the [[Current Stack]] of Laerdal. 

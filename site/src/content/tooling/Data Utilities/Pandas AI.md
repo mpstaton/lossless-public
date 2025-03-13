@@ -12,6 +12,8 @@ tags:
   - Data-Utilities
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ba7a0f941d05b93774de21b8fb035d34839c5ebec8e5c61d1684fe3a4428f4bf.jpeg
+last_jina_request: '2025-03-09T06:44:59.866Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:01.832Z
 ---
 [[Open Source]] [[Data Analysis]] using [[Agentic AI]]

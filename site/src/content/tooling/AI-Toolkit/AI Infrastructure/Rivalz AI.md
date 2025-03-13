@@ -9,6 +9,8 @@ title: Rivalz Network
 favicon: 'https://rivalz.ai/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ce29c2865eb481cd859533e131b161d05f1d37bdab4fdab1fbebca2944b8c3f3.jpeg
+last_jina_request: '2025-03-09T06:45:19.614Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:20:56.411Z
 ---
 [[Video Generator]]

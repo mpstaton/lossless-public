@@ -10,10 +10,12 @@ title: PostgreSQL
 favicon: 'https://www.postgresql.org/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/71266c81157df78676ca4e6c1c34d011cdffed026f6805526d547dca46d5d415.jpeg
+last_jina_request: '2025-03-09T06:45:19.678Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:02.920Z
 ---
 
-
+https://youtu.be/zvPCkT9WRk0?si=YxLN-uIgg0BwhLd8
 
 | Release | Date       | Announcement                                                                                                                                                       |
 | ------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

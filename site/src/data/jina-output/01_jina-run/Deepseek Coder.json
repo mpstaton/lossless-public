@@ -1,0 +1,27 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "DeepSeek AI": "https://www.deepseek.com/",
+      "Chat with DeepSeek Coder": "https://coder.deepseek.com/",
+      "📑 Technical Report": "https://arxiv.org/pdf/2401.14196.pdf",
+      "Github": "https://github.com/deepseek-ai/deepseek-coder/",
+      "HuggingFace": "https://huggingface.co/deepseek-ai",
+      "Discord": "https://discord.gg/Tc7c45Zzu5",
+      "Wechat(微信)": "https://github.com/guoday/assert/blob/main/QR.png?raw=true",
+      "[ DeepSeek-Coder]": "https://coder.deepseek.com/chat",
+      "[ Github]": "https://github.com/deepseek-ai/DeepSeek-Coder",
+      "agi_code@deepseek.com": "mailto:agi_code@deepseek.com",
+      "nerfies": "https://github.com/nerfies/nerfies.github.io",
+      "Creative Commons Attribution-ShareAlike 4.0 International License": "http://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "title": "DeepSeek Coder:Let the Code Write Itself",
+    "description": "",
+    "url": "https://deepseekcoder.github.io/",
+    "content": "DeepSeek Coder\n===============        \n\nDeepSeek Coder:  \nLet the Code Write Itself\n===========================================\n\nDeveloped by [DeepSeek AI](https://www.deepseek.com/)\n\n [![Image 1](https://deepseekcoder.github.io/static/images/home.png)Chat with DeepSeek Coder](https://coder.deepseek.com/) [📑 Technical Report](https://arxiv.org/pdf/2401.14196.pdf) [Github](https://github.com/deepseek-ai/deepseek-coder/) [![Image 2](https://deepseekcoder.github.io/static/images/huggingface_logo.svg)HuggingFace](https://huggingface.co/deepseek-ai) [Discord](https://discord.gg/Tc7c45Zzu5) [Wechat(微信)](https://github.com/guoday/assert/blob/main/QR.png?raw=true)\n\nAbstract\n--------\n\nDeepSeek Coder comprises a series of code language models trained from scratch on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on repo-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, resulting in foundational models (DeepSeek-Coder-Base). We further fine-tune the base model with 2B tokens of instruction data to get instruction-tuned models, namedly DeepSeek-Coder-Instruct.\n\n*   Pretrained on **2 Trillion** tokens over more than 80 programming languages.\n*   Various model sizes (**1.3B**, **5.7B**, **6.7B** and **33B**) to support different requirements.\n*   A window size of **16K window** size, supporting **project-level** code completion and infilling.\n*   **State-of-the-Art** performance among open code models.\n*   **Open source and free for research and commercial use**.\n\n![Image 3: Description of the GIF](https://deepseekcoder.github.io/static/images/code_chat.gif) \n\nPerformance\n-----------\n\nWe evaluate DeepSeek Coder on various coding-related benchmarks. The result shows that DeepSeek-Coder-Base-33B significantly outperforms existing open-source code LLMs. Compared with CodeLLama-34B, it leads by 7.9%, 9.3%, 10.8% and 5.9% respectively on HumanEval Python, HumanEval Multilingual, MBPP and DS-1000. Surprisingly, our DeepSeek-Coder-Base-7B reaches the performance of CodeLlama-34B. And the DeepSeek-Coder-Instruct-33B model after instruction tuning outperforms GPT-3.5-turbo on HumanEval and achieves comparable result with GPT-3.5-turbo on MBPP.\n\n  \n\n![Image 4: 图像2](https://deepseekcoder.github.io/static/images/table2.png) ![Image 5: 图像1](https://deepseekcoder.github.io/static/images/result3.png)\n\n  \n\n#### Fig. State-of-the-art Performance on various Coding Benchmarks and Multilingual HumanEval\n\n  \n\n### (1) Performance of different Code LLMs on Multilingual HumanEval Benchmark\n\n![Image 6: HumanEval](https://deepseekcoder.github.io/static/images/HumanEval.png)  \n  \n\n### (2) Performance of different Code LLMs on MBPP Benchmark\n\n![Image 7: MBPP](https://deepseekcoder.github.io/static/images/MBPP.png)  \n  \n\n### (3) Performance of different Code LLMs on DS-1000 Benchmark\n\n![Image 8: DS-1000](https://deepseekcoder.github.io/static/images/DS-1000.png)  \n  \n\n### (4) Performance of different Code Models on Math-Reasoning Tasks.\n\n![Image 9: math](https://deepseekcoder.github.io/static/images/Math.png)\n\nHow to Use DeepSeek Coder\n-------------------------\n\n*   \\- Try now, please visit our [\\[![Image 10](https://deepseekcoder.github.io/static/images/home.png) DeepSeek-Coder\\]](https://coder.deepseek.com/chat).\n*   \\- More details and evaluations are available on our [\\[![Image 11](https://deepseekcoder.github.io/static/images/github-logo.png) Github\\]](https://github.com/deepseek-ai/DeepSeek-Coder).\n*   \\- Model weights are also available on [\\[🤗 Huggingface\\]](https://huggingface.co/deepseek-ai)\n\nContact Us\n----------\n\nIf you have any questions, please raise an issue or contact us at [agi\\_code@deepseek.com](mailto:agi_code@deepseek.com).\n\nThe website is based on [nerfies](https://github.com/nerfies/nerfies.github.io), licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).",
+    "usage": {
+      "tokens": 1080
+    }
+  }
+}

@@ -1,6 +1,8 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import ToolCard from "@components/tool-components/ToolCard.astro";
+import TrademarkColumn from "@basics/TrademarkColumn.astro";
+import SimplestRibbon from "@basics/SimplestRibbon.astro";
 import { getCollection } from "astro:content";
 
 interface Tool {
@@ -40,26 +42,52 @@ const processedTools = toolEntries.map((entry) => {
   return tool;
 });
 
-console.log("Processed tools:", processedTools);
+// Trademark directories configuration
+const TRADEMARK_CONFIG = {
+  sourceDir: "src/assets/Visuals/Tooling-Trademarks",
+  destinationDir: "src/assets/Visuals/Tooling-Trademarks/usable--darkmode",
+};
 ---
 
 <Layout title="Tools">
   <main class="container">
-    <h1>Tools</h1>
-    <div class="tools-grid">
-      {processedTools.map((tool: Tool) => <ToolCard tool={tool} />)}
-    </div>
+    <section>
+      <h2>Simplest Ribbon</h2>
+      <SimplestRibbon
+        sourceDir={TRADEMARK_CONFIG.sourceDir}
+        destinationDir={TRADEMARK_CONFIG.destinationDir}
+      />
+    </section>
+    <section class="trademarks-section">
+      <h2>Trademark Sorting</h2>
+      <TrademarkColumn
+        sourceDir={TRADEMARK_CONFIG.sourceDir}
+        destinationDir={TRADEMARK_CONFIG.destinationDir}
+      />
+    </section>
+
+    <!--     <section class="tools-section">
+      <h1>Tools</h1>
+      <div class="tools-grid">
+        {processedTools.map((tool: Tool) => <ToolCard tool={tool} />)}
+      </div>
+    </section> -->
   </main>
 </Layout>
 
 <style>
   .container {
-    max-width: 1200px;
+    max-width: 94%;
     margin: 0 auto;
     padding: 2rem 1rem;
   }
 
-  h1 {
+  .trademarks-section {
+    margin-bottom: 4rem;
+  }
+
+  h1,
+  h2 {
     margin-bottom: 2rem;
     text-align: center;
   }

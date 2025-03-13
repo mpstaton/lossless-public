@@ -1,0 +1,47 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import { glob } from "glob";
+import TrademarkSortWrap from "./TrademarkSortWrap.astro";
+
+interface Props {
+  sourceDir: string;
+  destinationDir: string;
+}
+
+const { sourceDir, destinationDir } = Astro.props;
+
+// Get all SVG files from the source directory
+const svgFiles = await glob(`${sourceDir}/*.svg`);
+
+// Read width from each SVG and sort
+const sortedFiles = await Promise.all(
+  svgFiles.map(async (filePath) => {
+    const content = fs.readFileSync(filePath, "utf-8");
+    const widthMatch = content.match(/width="([^"]+)"/);
+    const width = widthMatch ? parseInt(widthMatch[1], 10) : 0;
+    return { filePath, width };
+  })
+).then((files) => files.sort((a, b) => a.width - b.width));
+---
+
+<div class="trademark-column">
+  {
+    sortedFiles.map((file) => (
+      <TrademarkSortWrap
+        svgPath={file.filePath}
+        destinationDir={destinationDir}
+      />
+    ))
+  }
+</div>
+
+<style>
+  .trademark-column {
+    display: inline-block;
+    display-direction: column;
+    gap: 2em;
+    width: 100%;
+    padding: 2rem;
+  }
+</style>

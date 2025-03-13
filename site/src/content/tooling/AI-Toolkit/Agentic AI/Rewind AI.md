@@ -14,6 +14,10 @@ favicon: >-
   https://cdn.prod.website-files.com/635dda7647d1612d7d877c36/635dda88f95dcc46102a401e_Favicon.png
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c1e177c654aacd0bbacea62442b9804852f1d01e65c7996696162ffca5a1c365.jpeg
+last_jina_request: '2025-03-09T06:45:02.717Z'
+jina_error: |-
+  Unexpected token 'R', "Rewind
+  ==="... is not valid JSON
 og_last_fetch: 2025-03-07T05:20:40.123Z
 ---
 An [[Agentic AI]] product focused on being an [[AI Powered Personal Assistant]]
