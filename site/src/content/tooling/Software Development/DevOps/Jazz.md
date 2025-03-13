@@ -13,7 +13,7 @@ last_jina_request: '2025-03-09T06:45:21.977Z'
 jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:02.916Z
 ---
-![[Screenshot 2025-02-20 at 11.33.53 PM.png]]
+![[Screenshot 2025-02-20 at 11.33.53 PM_Jazz--Hero.png]]
 
 [[Local-First Applications]]
 [[Web Frameworks|Framework]]

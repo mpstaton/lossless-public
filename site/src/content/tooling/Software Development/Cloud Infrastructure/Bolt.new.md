@@ -11,5 +11,5 @@ An [[Open Source]] version that can be run locally or [[Self-Hosting|Self-Host]]
 ![[Screenshot 2025-01-27 at 3.31.31 PM_Bolt_new--One-Click-Integrations.png]]
 ### Bolt.new uses [[Advanced Documents]] for it's [[Knowledge Base]]
 In the below screenshot, you can see that [[Tooling/Software Development/Cloud Infrastructure/Bolt.new]] is using [[Notion]] for it's [[Knowledge Base]]
-![[Screenshot 2025-01-27 at 1.50.27 PM.png]]
+![[Screenshot 2025-01-27 at 1.50.27 PM_Bolt_Docs--Using-Notion.png]]
 

@@ -17,9 +17,9 @@ og_last_fetch: 2025-03-07T05:19:01.823Z
 [[Advanced Documents]]
 ### CraftDocs managing the Innovation Cookbook:
 [[The Lossless Innovation Cookbook]] on [[CraftDocs]].
-![[Screenshot 2025-01-28 at 9.05.25 PM.png]]
+![[Screenshot 2025-01-28 at 9.05.25 PM_Lossless_Cookbook--CraftDocs.png]]
 ##### [[CraftDocs]] integrating [[AI Models]] through their [[REST API]]
-![[Pasted image 20250211110909.png]]
+![[Pasted image 20250211110909_AppleAppStore_Streamlining-Updates.png]]
 
 ##### [[CraftDocs]] features [[Templates]] to help with [[Getting Started]].
 ![[Screenshot 2025-02-20 at 2.44.41 PM_CraftDocs--Templates.png]]

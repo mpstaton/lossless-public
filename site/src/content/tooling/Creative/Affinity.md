@@ -32,7 +32,7 @@ allowfullscreen
 Can we? [^bbaa2a]
 
 ##### [[Affinity]] Designer keeps [[Release Notes]]
-![[20250220_Affinity--Release-Notes 1.jpeg]] [^2] 
+![[20250220_Affinity--Release-Notes.jpeg]] [^2] 
 
 
 

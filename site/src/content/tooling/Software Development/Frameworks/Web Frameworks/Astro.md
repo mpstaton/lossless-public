@@ -34,6 +34,6 @@ https://youtu.be/kIftpNnN_8I?si=wi_AROloNjgEQFJ_
 ### [[Getting Started]] with Astro
 [[Astro]] does a lot to help people with [[Getting Started]]
 
-![[Screenshot 2025-01-22 at 1.03.36 PM.png]]
+![[Screenshot 2025-01-22 at 1.03.36 PM_Astro_Docs--Ebook.png]]
 ### Astro has a Community Chat
 ![[Screenshot 2025-02-01 at 8.13.03 PM_Astro--Community-Chat.png]]

@@ -40,7 +40,7 @@ As an example of [[Cross-Platform Applications]]
 ![[Screenshot From 2025-02-19 09-11-46_GitHub-Desktop.png]]
 ##### GitHub implements [[OAuth]] with [[2FA]]  
 https://youtu.be/oI631eCAQnQ?si=XBUNg-tm-H9Ee3fK
-![[Screenshot From 2024-12-25 02-33-02_GitHub--OAuth.png]]
+![[Screenshot From 2024-12-25 02-33-02_GitHub--OAuth--Security.png]]
 ![[Screenshot From 2024-12-25 02-33-24_GitHub--OAuth.png]]
 ##### [[GitHub]] features a useful, lean [[User Forums|User Forum]]
 ![[Screenshot From 2024-12-26 17-39-14_GitHub--Discussions.png]]
