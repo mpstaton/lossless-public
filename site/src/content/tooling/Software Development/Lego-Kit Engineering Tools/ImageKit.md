@@ -10,6 +10,8 @@ tags:
   - Lego-Kit-Engineering-Tools
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2a1b78da3cc31fa70c18d771abdab25febb9f2bfc13dc67ee4ff63a614667055.jpeg
+last_jina_request: '2025-03-09T06:45:14.343Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:02.906Z
 ---
 [[Lego-Kit Engineering]]

@@ -9,8 +9,16 @@ tags:
   - DevOps
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/1eb5a071132ca8274440280688f73eb08fc617b77138cf339b643102d1390f99.jpeg
+last_jina_request: '2025-03-09T06:45:07.833Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:02.913Z
 ---
 [[Virtual Environments]] part of [[Reproducible Builds]]. 
 
 https://youtu.be/gbVFTl8bnt8?si=UHwLk7bBBRinjdOL
+
+https://youtu.be/qFWQldUqzyk?si=ehwypq6g9y2Iwhr-
+
+https://youtu.be/gbVFTl8bnt8?si=ZTA4zcsARu8PtX9d
+
+https://youtu.be/-6b_SIVWg_A?si=DgL-YsXTduWnIndV

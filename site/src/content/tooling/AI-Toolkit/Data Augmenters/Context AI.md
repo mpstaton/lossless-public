@@ -11,6 +11,8 @@ site_name: Context.ai
 title: Context.ai
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/3c22b3fc4fd647b69794620fa840c8a8de677de22ad0d3b66e3124424ac63110.jpeg
+last_jina_request: '2025-03-09T06:45:13.020Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:19.164Z
 ---
 

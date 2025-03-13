@@ -1,0 +1,26 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "Download Beta": "https://www.waveterm.dev/#beta-access",
+      "Take me straight to the Downloads Page —>": "https://www.waveterm.dev/download",
+      "": "https://www.alchemistaccelerator.com/",
+      "Download Legacy": "https://www.waveterm.dev/download-legacy",
+      "Documentation": "https://docs.waveterm.dev/",
+      "Blog": "https://blog.waveterm.dev/",
+      "Introduction": "https://docs.waveterm.dev/introduction",
+      "Release Notes": "https://docs.waveterm.dev/releasenotes",
+      "FAQ": "https://docs.waveterm.dev/faq",
+      "Terms of Service": "https://www.waveterm.dev/tos",
+      "Privacy Policy": "https://www.waveterm.dev/privacy"
+    },
+    "title": "Wave Terminal — Upgrade Your Command Line",
+    "description": "Stop Context Switching by Bringing Context Into Your Terminal. Wave is an open-source terminal with superpowers, integrating file previews, file editing, AI, web browsing, and workspace organization. Available for MacOS, Linux, and Windows.",
+    "url": "https://www.waveterm.dev/",
+    "content": "Wave Terminal — Upgrade Your Command Line\n===============\n\nStop Context Switching\n\nby Bringing Context Into Your Terminal\n\nWave is an open-source terminal with superpowers, integrating file previews, file editing, AI, web browsing, and workspace organization.\n\nAvailable for MacOS, Linux, and Windows.\n\nManage Remote Machines\n\nQuickly switch between remote servers and clusters with our SSH connection manager (with WSL support)\n\nScreen Splitting and Layouts\n\nSplit screens and arrange terminals, editors, and web views into workspaces and dashboards\n\nWork with Remote Files\n\nNavigate directories, preview markdown and images, and manage files on remote machines\n\nRemote File Editing\n\nUse our built-in VSCode-like editor to edit remote files (can even be configured as your shell's default editor)\n\nInline Web Browser\n\nBuilt-in web browser to access Github, StackOverflow, dashboards, and your own apps\n\n[Download Beta](https://www.waveterm.dev/#beta-access)\n\n![Image 1](https://framerusercontent.com/images/x5bWAS6lLI79RTC6t3JzVdzJX0.webp?scale-down-to=2048)\n\nEverything you need from a modern terminal\n\nVisualize Information Quickly\n\nBuild beautiful dashboards using our built in graphical widgets and stickers.\n\nBuild widgets\n\nBuild your own reusable widgets with HTML and populate them with data from the CLI.\n\nOpen Source\n\nAll of your data is stored locally, no sensitive information leaves your network. No login or account required.\n\nCustomize, Theme, and Style\n\nMake it your own and share with teammates.\n\nPreview Files Inline\n\nImages, Markdown, Audio/Video, HTML, CSVs, and more.\n\nEdit Remote Files\n\nWith our integrated VSCode-Like GUI Editor. Syntax highlighting, indentation, mouse, and copy/paste support all included out of the box.\n\nImport Pre-Built Dashboards\n\nOr build your own. Easily share your own dashboard layouts and widgets with coworkers or publish them online.\n\nJoin Our Beta Updates List\n\nJoin our beta list and help shape the future of terminal! This is _optional_, just click \"Take me straight to the Downloads Page\" to bypass form.\n\nName\n\nCompany\n\nWork Email\n\nGo to Downloads --\\>\n\n[Take me straight to the Downloads Page —\\>](https://www.waveterm.dev/download)\n\nMac\n\nApple Silicon, Intel\n\nLinux\n\nSnap, AppImage, .deb, .rpm, .zip, pacman\n\nWindows\n\n64-bit, 32-bit\n\n[](https://www.waveterm.dev/)\n\n[](https://github.com/wavetermdev/waveterm)[](https://discord.gg/XfvZ334gwU)[](https://www.linkedin.com/company/wavetermdev)[](https://twitter.com/wavetermdev)[](https://www.youtube.com/@wavetermdev)\n\nMade with ❤️ in San Francisco  \n©2024 Command Line Inc\n\nGet started\n\n[Download](https://www.waveterm.dev/download)\n\n[Download Legacy](https://www.waveterm.dev/download-legacy)\n\n[Documentation](https://docs.waveterm.dev/)\n\n[Join Community](https://discord.gg/XfvZ334gwU)\n\n[Github](https://github.com/wavetermdev/waveterm)\n\n[Blog](https://blog.waveterm.dev/)\n\nLearn\n\n[Introduction](https://docs.waveterm.dev/introduction)\n\n[Release Notes](https://docs.waveterm.dev/releasenotes)\n\n[FAQ](https://docs.waveterm.dev/faq)\n\n[Youtube](https://www.youtube.com/@wavetermdev)\n\nLegal\n\n[Terms of Service](https://www.waveterm.dev/tos)\n\n[Privacy Policy](https://www.waveterm.dev/privacy)\n\nBacked by\n\n[![Image 2](https://framerusercontent.com/images/bS83zUKBrLUaqYz1JS0oQSEoKU.png)](https://www.unusual.vc/)[](https://www.alchemistaccelerator.com/)\n\n[](https://www.waveterm.dev/)\n\n[Github](https://github.com/wavetermdev/waveterm)[Blog](https://blog.waveterm.dev/)[Documentation](https://docs.waveterm.dev/)\n\nCommunity\n\n[Download Beta](https://www.waveterm.dev/#beta-access)",
+    "usage": {
+      "tokens": 893
+    }
+  }
+}

@@ -11,6 +11,8 @@ title: AutoML tool for RAG
 favicon: 'https://auto-rag.com/assets/images/favicon.png?v=ed20f1ab'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d2da8633d09a9e301907b9a378d17816df77e5065f2dd7cb632c2d286c5ea706.jpeg
+last_jina_request: '2025-03-09T06:44:59.300Z'
+jina_error: 'Unexpected token ''A'', "AutoRAG - "... is not valid JSON'
 og_last_fetch: 2025-03-07T05:19:18.725Z
 ---
 [[RAG]]

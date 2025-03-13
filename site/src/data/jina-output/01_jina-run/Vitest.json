@@ -1,0 +1,41 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "Skip to content": "https://vitest.dev/#VPContent",
+      "Vitest": "https://vitest.dev/",
+      "Guide & API": "https://vitest.dev/guide/",
+      "Config": "https://vitest.dev/config/",
+      "Browser Mode": "https://vitest.dev/guide/browser.html",
+      "Advanced API": "https://vitest.dev/advanced/api/",
+      "Blog": "https://vitest.dev/blog",
+      "Team": "https://vitest.dev/team",
+      "v3.0.8": "https://github.com/vitest-dev/vitest/releases/tag/v3.0.8",
+      "Releases Notes": "https://github.com/vitest-dev/vitest/releases",
+      "Contributing": "https://github.com/vitest-dev/vitest/blob/main/CONTRIBUTING.md",
+      "unreleased": "https://main.vitest.dev/",
+      "v0.x": "https://v0.vitest.dev/",
+      "v1.x": "https://v1.vitest.dev/",
+      "v2.x": "https://v2.vitest.dev/",
+      "简体中文": "https://cn.vitest.dev/",
+      "": "https://www.netlify.com/",
+      "Features": "https://vitest.dev/guide/features",
+      "Why Vitest?": "https://vitest.dev/guide/why",
+      "VoidZero": "https://voidzero.dev/",
+      "NuxtLabs": "https://nuxtlabs.com/",
+      "Stackblitz": "https://stackblitz.com/",
+      "Zammad": "https://zammad.com/",
+      "Bit": "https://bit.dev/",
+      "vital": "https://vital.io/",
+      "Sponsor Vitest": "https://github.com/sponsors/vitest-dev"
+    },
+    "title": "Vitest",
+    "description": "Next generation testing framework powered by Vite",
+    "url": "https://vitest.dev/",
+    "content": "Vitest | Next Generation testing framework\n===============            \n\n[Skip to content](https://vitest.dev/#VPContent)\n\n[![Image 1](https://vitest.dev/logo.svg)Vitest](https://vitest.dev/)\n\nSearchK\n\nMain Navigation [Guide & API](https://vitest.dev/guide/)[Config](https://vitest.dev/config/)[Browser Mode](https://vitest.dev/guide/browser.html)\n\nResources\n\n[Advanced API](https://vitest.dev/advanced/api/)\n\n[Blog](https://vitest.dev/blog)\n\n[Team](https://vitest.dev/team)\n\nv3.0.8\n\n[v3.0.8](https://github.com/vitest-dev/vitest/releases/tag/v3.0.8)\n\n[Releases Notes](https://github.com/vitest-dev/vitest/releases)\n\n[Contributing](https://github.com/vitest-dev/vitest/blob/main/CONTRIBUTING.md)\n\n[unreleased](https://main.vitest.dev/)\n\n[v0.x](https://v0.vitest.dev/)\n\n[v1.x](https://v1.vitest.dev/)\n\n[v2.x](https://v2.vitest.dev/)\n\nEnglish\n\n[简体中文](https://cn.vitest.dev/)\n\n[](https://bsky.app/profile/vitest.dev)[](https://elk.zone/m.webtoo.ls/@vitest)[](https://chat.vitest.dev/)[](https://github.com/vitest-dev/vitest)\n\nEnglish\n\n[简体中文](https://cn.vitest.dev/)\n\nAppearance\n\n[](https://bsky.app/profile/vitest.dev)[](https://elk.zone/m.webtoo.ls/@vitest)[](https://chat.vitest.dev/)[](https://github.com/vitest-dev/vitest)\n\nVitestNext Generation Testing Framework\n=======================================\n\nA Vite-native testing framework. It's fast!\n\n[Get Started](https://vitest.dev/guide/)\n\n[Features](https://vitest.dev/guide/features)\n\n[Why Vitest?](https://vitest.dev/guide/why)\n\n[View on GitHub](https://github.com/vitest-dev/vitest)\n\n![Image 2: Vitest](https://vitest.dev/logo-shadow.svg)\n\nVite Powered\n------------\n\nReuse Vite's config and plugins - consistent across your app and tests. But it's not required to use Vitest!\n\nJest Compatible\n---------------\n\nExpect, snapshot, coverage, and more - migrating from Jest is straightforward.\n\n⚡\n\nSmart & instant watch mode\n--------------------------\n\nOnly rerun the related changes, just like HMR for tests!\n\nESM, TypeScript, JSX\n--------------------\n\nOut-of-box ESM, TypeScript and JSX support powered by esbuild.\n\nVitest is free and open source, made possible by wonderful sponsors.\n--------------------------------------------------------------------\n\n### Special Sponsors\n\n[#### VoidZero ![Image 3: VoidZero](https://vitest.dev/voidzero.svg)](https://voidzero.dev/)\n\n[#### NuxtLabs ![Image 4: NuxtLabs](https://vitest.dev/nuxtlabs.svg)](https://nuxtlabs.com/)\n\n[#### Stackblitz ![Image 5: Stackblitz](https://vitest.dev/stackblitz.svg)](https://stackblitz.com/)\n\n[#### Zammad ![Image 6: Zammad](https://vitest.dev/zammad.svg)](https://zammad.com/)\n\n### Platinum Sponsors\n\n[#### Bit ![Image 7: Bit](https://vitest.dev/bit.svg)](https://bit.dev/)\n\n### Gold Sponsors\n\n[#### vital ![Image 8: vital](https://vitest.dev/vital.svg)](https://vital.io/)\n\n[Sponsor Vitest](https://github.com/sponsors/vitest-dev)\n\n[![Image 9: Deploys by Netlify](https://vitest.dev/netlify.svg)](https://www.netlify.com/)\n\nReleased under the MIT License.\n\nCopyright © 2021-PRESENT Anthony Fu, Matías Capeletto and Vitest contributors",
+    "usage": {
+      "tokens": 848
+    }
+  }
+}

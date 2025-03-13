@@ -26,6 +26,18 @@
       ],
       "@styles/*": [
         "./src/styles/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@scripts/*": [
+        "./scripts/*"
+      ],
+      "@changelog--code/*": [
+        ".src/content/changelog-code/*"
+      ],
+      "@changelog--content/*": [
+        ".src/content/changelog-content/*"
       ]
     },
     "types": ["astro/client"],

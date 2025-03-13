@@ -1,0 +1,18 @@
+{
+    "code": 200,
+    "status": 20000,
+    "data": {
+      "links": {
+        "More information...": "https://www.iana.org/domains/example"
+      },
+      "title": "Example Domain",
+      "description": "",
+      "url": "https://example.com/",
+      "content": "Example Domain\n===============\n    \n\nExample Domain\n==============\n\nThis domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.\n\n[More information...](https://www.iana.org/domains/example)",
+      "warning": "",
+      "usage": {
+        "tokens": 52
+      }
+    }
+  }
+  

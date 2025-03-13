@@ -1,0 +1,55 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+
+interface Props {
+  sourceDir: string;
+  width: string;
+  maxWidth: string;
+}
+
+const { sourceDir, width, maxWidth } = Astro.props;
+
+// Get the SVG content
+const svgContent = fs.readFileSync(sourceDir, "utf-8");
+---
+
+<div
+  class="trademark-wrap"
+  data-width={width}
+  data-source={sourceDir}
+  data-max-width={maxWidth}
+>
+  <div class="trademark-container" set:html={svgContent} />
+</div>
+
+<style>
+  .trademark-wrap {
+    position: relative;
+    width: auto;
+    max-width: 800px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background: calc(var(--clr-lossless-primary-dark) * 0.1);
+    transition: all 0.2s ease-in-out;
+    overflow: visible;
+  }
+  .trademark-container {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    color: var(--clr-lossless-primary-light);
+  }
+
+  .trademark-container :global(svg) {
+    height: 100%;
+    width: auto;
+    overflow: visible;
+  }
+</style>

@@ -1,0 +1,34 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "StackBlitz": "https://stackblitz.com/",
+      "Bolt.new": "https://bolt.new/",
+      "WebContainers": "https://webcontainers.io/",
+      "Careers": "https://stackblitz.com/careers",
+      "Sign in": "https://stackblitz.com/sign_in",
+      "Introducing WebContainers: Run Node.js in your browser Read the release": "https://blog.stackblitz.com/posts/introducing-webcontainers",
+      "Enterprise Server": "https://stackblitz.com/enterprise",
+      "Integrations": "https://stackblitz.com/integrations",
+      "Design Systems": "https://stackblitz.com/design-systems",
+      "Web Publisher": "https://developer.stackblitz.com/codeflow/integrating-web-publisher",
+      "Case Studies": "https://stackblitz.com/case-studies",
+      "Pricing": "https://stackblitz.com/pricing",
+      "Privacy": "https://stackblitz.com/privacy-policy",
+      "Terms of Service": "https://stackblitz.com/terms-of-service",
+      "Community": "https://discord.gg/stackblitz",
+      "Docs": "https://developer.stackblitz.com/",
+      "Enterprise Sales": "https://stackblitz.com/enterprise-contact",
+      "Blog": "https://blog.stackblitz.com/",
+      "": "https://github.com/stackblitz"
+    },
+    "title": "StackBlitz | Instant Dev Environments | Click. Code. Done.",
+    "description": "StackBlitz is the collaborative browser-based IDE for web developers. StackBlitz eliminates time-consuming local configuration and lets developers spend more time building.",
+    "url": "https://stackblitz.com/",
+    "content": "StackBlitz | Instant Dev Environments | Click. Code. Done.\n===============\n       \n\n[StackBlitz](https://stackblitz.com/)\n\nToggle Menu\n\n*   [Bolt.new](https://bolt.new/)\n*   [WebContainers](https://webcontainers.io/)\n*   [Careers](https://stackblitz.com/careers)\n\n[Sign in](https://stackblitz.com/sign_in)\n\nHow product& engineering teams work together with AI\n====================================================\n\nTurn text into working web apps. Bolt handles the code while you focus on your vision, letting you **create** and **launch** applications directly from your browser.\n\n[Try Bolt.new](https://bolt.new/)\n\n### Loved by frontend and product teams  \n**at the world's largest and most innovative companies**\n\n*   ![Image 1: Google](https://stackblitz.com/_astro/google.BKhN6lqA_LbH4h.svg)\n*   ![Image 2: Meta](https://stackblitz.com/_astro/meta.BZYPTU9O_1lLsls.svg)\n*   ![Image 3: Shopify](https://stackblitz.com/_astro/shopify.ByHtukiT_1J8PIf.svg)\n*   ![Image 4: Salesforce](https://stackblitz.com/_astro/salesforce.C_wubRL__2p0KMc.svg)\n*   ![Image 5: Intel](https://stackblitz.com/_astro/intel.BTF2Cw1X_Z2kTjoX.svg)\n*   ![Image 6: Mozilla](https://stackblitz.com/_astro/mozilla.CBnnQB51_2u8144.svg)\n*   ![Image 7: Cloudflare](https://stackblitz.com/_astro/cloudflare.Px0iUVCo_Z1CNC1x.svg)\n*   ![Image 8: Stripe](https://stackblitz.com/_astro/stripe.CFJCsvvZ_5RvUh.svg)\n\n![Image 9: Quote author avatar](https://stackblitz.com/_astro/ilya_grigorik.wwuGm1Qk_1AX5M8.webp)\n\n![Image 10: Quote author's associated organization](https://stackblitz.com/_astro/shopify.BV2FCj8e_e70MY.svg)\n\n\"StackBlitz unlocks a true one-click startup experience with the full stack running in the browser—**it's a game-changer.**\"\n\nIlya Grigorik Principal Engineer at Shopify\n\n##### Powered by WebContainers\n\n**Faster** and **more secure**  \nthan local.\n============================================\n\n[**Introducing WebContainers:** Run Node.js in your browser Read the release ![Image 11](https://stackblitz.com/_astro/img/pages/home/card-bg-webcontainer.png)](https://blog.stackblitz.com/posts/introducing-webcontainers)\n\nBolt is powered by WebContainers, the first WebAssembly-based micro operating system which boots entire development environments in milliseconds, securely within your browser tab.\n\n### What about online IDEs?\n\n**Legacy cloud-based IDEs** run on remote servers and **stream the results back** to your browser. This approach yields **few security benefits** and provides a **worse experience** than your local machine in nearly every way.\n\n**With StackBlitz, all compute occurs inside your browser**, making use of decades of speed and security innovations.\n\n|  | ![Image 12: StackBlitz](https://stackblitz.com/_astro/img/brands/stackblitz-monotone.svg) | Legacy Online IDEs |\n| --- | --- | --- |\n| Boot time | \nMilliseconds\n\n | \n\nMinutes\n\n |\n| Zero network latency |  |  |\n| Work offline |  |  |\n| Easily debug  \nbroken containers |  |  |\n| Reset broken containers | \n\nPage refresh\n\n | \n\nNot possible\n\n |\n\n### **See for yourself.**  \nBuild your first app in **minutes.**\n\n[Create with Bolt.new](https://bolt.new/)\n\n![Image 13: StackBlitz](https://stackblitz.com/_astro/stackblitz-logo-color.C8-mRlxl_ZM8j2i.svg)\n\nProducts\n\n*   [Enterprise Server](https://stackblitz.com/enterprise)\n*   [Integrations](https://stackblitz.com/integrations)\n*   [Design Systems](https://stackblitz.com/design-systems)\n*   [WebContainer API](https://webcontainers.io/)\n*   [Web Publisher](https://developer.stackblitz.com/codeflow/integrating-web-publisher)\n\nPlatform\n\n*   [Case Studies](https://stackblitz.com/case-studies)\n*   [Pricing](https://stackblitz.com/pricing)\n*   [Privacy](https://stackblitz.com/privacy-policy)\n*   [Terms of Service](https://stackblitz.com/terms-of-service)\n\nSupport\n\n*   [Community](https://discord.gg/stackblitz)\n*   [Docs](https://developer.stackblitz.com/)\n*   [Enterprise Sales](https://stackblitz.com/enterprise-contact)\n\nCompany\n\n*   [Blog](https://blog.stackblitz.com/)\n*   [Careers](https://stackblitz.com/careers)\n\n*   [Terms of Service](https://stackblitz.com/terms-of-service)\n*   [Privacy Policy](https://stackblitz.com/privacy-policy)\n\n[](https://x.com/boltdotnew)[](https://github.com/stackblitz)[](https://discord.gg/stackblitz)\n\nStackBlitz Codeflow and the Infinite Pull Request logo are trademarks of StackBlitz, Inc.\n\n© 2025 StackBlitz, Inc.",
+    "usage": {
+      "tokens": 1202
+    }
+  }
+}

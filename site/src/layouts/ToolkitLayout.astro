@@ -51,7 +51,6 @@ const allTags = Array.from(
     <header class="toolkit-header">
       <h1>{title}</h1>
       {description && <p class="toolkit-description">{description}</p>}
-      {filterTag && <p class="filter-notice">Showing tools tagged with "{filterTag}"</p>}
     </header>
 
     <main class="toolkit-content">
@@ -98,12 +97,8 @@ const allTags = Array.from(
     display: flex;
     gap: 2rem;
     width: 100%;
+    position: relative;
   }
-
-
-
- 
-
 
   @media (max-width: 768px) {
     .toolkit-container {

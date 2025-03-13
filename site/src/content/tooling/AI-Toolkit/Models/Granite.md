@@ -9,6 +9,8 @@ image: 'https://assets.ibm.com/is/image/ibm/ibm-8bar-logo-2560x2560?$original$'
 site_name: Granite
 title: Granite | IBM
 favicon: 'https://www.ibm.com/content/dam/adobe-cms/default-images/icon-512x512.png'
+last_jina_request: '2025-03-09T06:45:14.247Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:18.954Z
 ---
 

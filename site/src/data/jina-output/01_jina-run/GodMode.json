@@ -1,0 +1,21 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "@da_fant": "https://twitter.com/da_fant",
+      "@emilahlback": "https://twitter.com/emilahlback",
+      "@_Lonis_": "https://twitter.com/_Lonis_",
+      "About": "https://godmode.space/about",
+      "GODMODE ⚡️ AI": "https://godmode.space/#",
+      "Sign Up": "https://docs.google.com/forms/d/e/1FAIpQLSdfKYSOEifsbKsfx365zZ0TuZpE9ovLUcAwpGY3NFNRg6l25w/viewform?usp=sf_link"
+    },
+    "title": "Godmode AI",
+    "description": "Explore the Power of Generative AI Agents on Godmode. Inspired by Auto-GPT and BabyAGI. Supports GPT-3.5 & GPT-4.",
+    "url": "https://godmode.space/",
+    "content": "Godmode AI - Unlock the power of AI Agents\n=============== \n\nNew session\n\nLogin to save your sessions.\n\nArchived sessions\n\nTwitter\n\n[@da\\_fant](https://twitter.com/da_fant)[@emilahlback](https://twitter.com/emilahlback)[@\\_Lonis\\_](https://twitter.com/_Lonis_)\n\n[About](https://godmode.space/about)\n\nSettings\n\n[GODMODE ⚡️ AI](https://godmode.space/# \"Godmode\")\n--------------------------------------------------\n\nName\n\nExamples\n\nIn which market should I first launch my vegan protein bars?Write me a resignation letter to my boss at SAPExplore the possibility there existed an advanced pre-ice age civilization\n\nLaunchLaunch\n\nAbout\n\n\n---------\n\nGodmode is a web platform to access the automation powers of autoGPT and babyAGI. AI agents are still in their infancy, but they are quickly growing in capabilities, and we hope that Godmode will enable more people to tap into autonomous AI agents even in this early stage.\n\nGodmode is inspired by Auto-GPT and BabyAGI, and supports GPT-3.5 & GPT-4.\n\nGodmode is a project by [@emilahlback](https://twitter.com/emilahlback), [@da\\_fant](https://twitter.com/da_fant) and [@\\_Lonis\\_](https://twitter.com/_Lonis_).\n\nLooking to automate repetitive business processes? Sign up for Godmode v2\n\n[Sign Up](https://docs.google.com/forms/d/e/1FAIpQLSdfKYSOEifsbKsfx365zZ0TuZpE9ovLUcAwpGY3NFNRg6l25w/viewform?usp=sf_link)",
+    "usage": {
+      "tokens": 360
+    }
+  }
+}

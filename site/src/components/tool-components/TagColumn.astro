@@ -22,23 +22,185 @@ const sortedTags = allRenderedTags.sort((a, b) => {
 });
 ---
 
-<div class="tag-column">
-  {
-    sortedTags.map((tag) => (
-      <TagChip 
-        tag={tag} 
-        count={tagFrequencies[tag]} 
-        includeCount={true} 
-      />
-    ))
-  }
+<div class="tag-column-wrapper">
+  <form class="tag-search-form" role="search">
+    <input 
+      type="search"
+      id="tag-search"
+      name="tag-search"
+      placeholder="Search tags..."
+      list="tag-options"
+      autocomplete="on"
+    />
+    <datalist id="tag-options">
+      {sortedTags.map(tag => (
+        <option value={tag} />
+      ))}
+    </datalist>
+  </form>
+
+  <div class="tag-column">
+    {
+      sortedTags.map((tag) => (
+        <TagChip 
+          tag={tag} 
+          count={tagFrequencies[tag]} 
+          includeCount={true} 
+        />
+      ))
+    }
+  </div>
 </div>
 
+<script>
+  // Handle form submission
+  const form = document.querySelector('.tag-search-form');
+  const input = document.querySelector('#tag-search');
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const searchValue = (input as HTMLInputElement)?.value.trim();
+    if (searchValue) {
+      window.location.href = `/toolkit/${encodeURIComponent(searchValue)}`;
+    }
+  });
+
+  // Handle input enter key
+  input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const searchValue = (e.target as HTMLInputElement).value.trim();
+      if (searchValue) {
+        window.location.href = `/toolkit/${encodeURIComponent(searchValue)}`;
+      }
+    }
+  });
+</script>
+
 <style>
+  .tag-search-form {
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    background: var(--clr-primary-bg);
+    padding: 0.5rem 0;
+    z-index: 1;
+  }
+
+  #tag-search {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--clr-lossless-primary-glass);
+    border-radius: 0.25rem;
+    background: var(--clr-lossless-primary-dark);
+    color: var(--clr-body);
+    font-size: var(--fs-300);
+  }
+
+  #tag-search:focus {
+    outline: 2px solid var(--clr-lossless-primary-glass);
+    outline-offset: 2px;
+  }
+
+  #tag-search::placeholder {
+    color: var(--clr-body);
+    opacity: 0.7;
+  }
+  #tag-options {
+    background: var(--clr-lossless-primary-dark);
+    color: calc(var(--clr-body) * 10%);
+    font-size: var(--fs-200);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .tag-column-wrapper {
+    position: sticky;
+    top: 2rem;
+    height: calc(100vh - 4rem);
+    padding-right: 0.5rem; /* Space for scrollbar */
+  }
+
   .tag-column {
     flex-direction: column;
     display: flex;
-    flex-wrap: wrap;
     gap: 0.2em;
+    height: 100%;
+    width: max-content;
+    overflow: hidden;
+    transition: overflow 0.2s ease;
+  }
+
+  /* Only show scrollbar and enable scroll on hover */
+  .tag-column:hover {
+    overflow-y: auto;
+  }
+
+  /* Customize scrollbar */
+  .tag-column::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .tag-column::-webkit-scrollbar-track {
+    background: var(--clr-lossless-primary-dark);
+    border-radius: 3px;
+  }
+
+  .tag-column::-webkit-scrollbar-thumb {
+    background: var(--clr-lossless-primary-glass);
+    border-radius: 3px;
+  }
+
+  @media (max-width: 768px) {
+    .tag-column-wrapper {
+      position: static;
+      height: auto;
+      max-height: 200px;
+    }
+
+    .tag-column {
+      overflow-y: auto;
+    }
+  }
+
+  /* Style the autocomplete dropdown */
+  input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  /* Firefox */
+  #tag-options option {
+    background: var(--clr-lossless-primary-dark);
+    color: var(--clr-body);
+    font-size: var(--fs-200);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  /* Chromium browsers */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--clr-body);
+    -webkit-box-shadow: 0 0 0px 1000px var(--clr-lossless-primary-dark) inset;
+    font-size: var(--fs-200);
+  }
+
+  /* For the actual dropdown in Chrome/Safari */
+  ::-webkit-list-button,
+  ::-webkit-inner-spin-button,
+  ::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: var(--fs-200);
+  }
+
+  /* For the datalist popup */
+  option {
+    font-size: var(--fs-100);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--clr-primary-bg);
+    color: var(--clr-body);
   }
 </style>

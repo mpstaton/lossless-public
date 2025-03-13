@@ -9,6 +9,8 @@ tags:
   - Training
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2e98d4b3ecf1ecbf05a89073f0a5057aacc2f0fdd43195cab6a4f1bd2d87c50d.jpeg
+last_jina_request: '2025-03-09T06:45:07.624Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:01.805Z
 ---
 

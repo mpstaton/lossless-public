@@ -11,6 +11,8 @@ title: 'Connect, protect, and build everywhere'
 favicon: 'https://www.cloudflare.com/favicon.ico'
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a6ad87b96b6f44b6b903d3db0d28b0f75e62c6ec246afd9e218723c6168baad3.jpeg
+last_jina_request: '2025-03-09T06:45:00.922Z'
+jina_error: 'Unexpected token ''C'', "Connect, p"... is not valid JSON'
 og_last_fetch: 2025-03-07T05:19:02.930Z
 ---
 [[Content Delivery Networks]], [[Cloud Infrastructure]]. 
@@ -18,3 +20,7 @@ og_last_fetch: 2025-03-07T05:19:02.930Z
 ![[Screenshot 2025-02-19 at 2.28.52 PM_Cloudflare--Hero.png]]
 
 https://youtu.be/RKxjMIDCwS8?si=ja0ZXYR5BZN9ZyI3
+
+##### [[Cloudflare]] has an [[Agentic AI]] platform
+
+https://youtu.be/l4tHKJFQvRg?si=jmoHyL2ZXt9oPh-Y

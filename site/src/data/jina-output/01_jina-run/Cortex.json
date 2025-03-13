@@ -1,0 +1,32 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "Skip to main content": "https://cortex.so/#__docusaurus_skipToContent_fallback",
+      "": "https://cortex.so/",
+      "Models": "https://cortex.so/models",
+      "Changelog": "https://cortex.so/changelog",
+      "Docs": "https://cortex.so/docs",
+      "API Reference": "https://cortex.so/api-reference",
+      "2.5K": "https://github.com/janhq/cortex",
+      "1.3K": "https://discord.gg/FTk2MvZwJH",
+      "Cortex.cpp v1.0 is now live on GitHub. Check it out!": "https://github.com/janhq/cortex.cpp/releases/tag/v1.0.1",
+      "Download for Linux": "https://app.cortexcpp.com/download/latest/linux-amd64-local",
+      "Get in Touch": "https://cortex.so/contact",
+      "CLI": "https://cortex.so/docs/cli",
+      "Github": "https://github.com/janhq/cortex.cpp",
+      "Twitter": "https://x.com/cortex_so",
+      "Linkedin": "https://www.linkedin.com/company/homebrewltd/",
+      "About": "https://jan.ai/about",
+      "Careers": "https://homebrew.bamboohr.com/careers"
+    },
+    "title": "Homepage - Cortex",
+    "description": "Cortex is an Local AI engine for developers to run and customize Local LLMs. It is packaged with a Docker-inspired command-line interface and a Typescript client library. It can be used as a standalone server, or imported as a library. Cortex's roadmap is to eventually support full OpenAI API-equivalence.",
+    "url": "https://cortex.so/",
+    "content": "Homepage - Cortex\n===============  \n\n[Skip to main content](https://cortex.so/#__docusaurus_skipToContent_fallback)\n\n[![Image 1: Cortex Logo](https://cortex.so/img/logos/cortex-logo.svg)](https://cortex.so/)[Models](https://cortex.so/models)[Changelog](https://cortex.so/changelog)\n\n[Docs](https://cortex.so/docs/)[API Reference](https://cortex.so/api-reference)\n\nSearchK\n\n[2.5K](https://github.com/janhq/cortex)\n\n[1.3K](https://discord.gg/FTk2MvZwJH)\n\n🎉[Cortex.cpp v1.0 is now live on GitHub. Check it out!](https://github.com/janhq/cortex.cpp/releases/tag/v1.0.1)\n\nRun and Customize Local LLMs\n============================\n\nPowers 👋 Jan\n\n[Download for Linux](https://app.cortexcpp.com/download/latest/linux-amd64-local)\n\n[Get in Touch](https://cortex.so/contact)\n\n```\n# Run Local LLMs\n\n❯ cortex run llama3.2\n\nAvailable to download:\n\n1. llama3.2:3b-gguf-q2-k\n\n2. llama3.2:3b-gguf-q3-kl\n\n3. llama3.2:3b-gguf-q3-km\n\n4. llama3.2:3b-gguf-q3-ks\n\n5. llama3.2:3b-gguf-q4-km (default)\n\n6. llama3.2:3b-gguf-q4-ks\n\n7. llama3.2:3b-gguf-q5-km\n\n8. llama3.2:3b-gguf-q5-ks\n\n9. llama3.2:3b-gguf-q6-k\n\n10. llama3.2:3b-gguf-q8-0\n\nSelect a model (1-10): 5\n\n```\n\n![Image 2: Cortex Logo](https://cortex.so/img/logos/cortex-logo-mark.svg)\n\nThe Soul of a New Machine\n=========================\n\nSubscribe to our newsletter on LLM research and building Cortex.\n\nSubcribe\n\nCortex\n======\n\n[Docs](https://cortex.so/docs)\n\n[CLI](https://cortex.so/docs/cli)\n\n[API Reference](https://cortex.so/api-reference)\n\n[Models](https://cortex.so/models)\n\n[Changelog](https://cortex.so/changelog)\n\nCommunity\n=========\n\n[Github](https://github.com/janhq/cortex.cpp)\n\n[Discord](https://discord.gg/FTk2MvZwJH)\n\n[Twitter](https://x.com/cortex_so)\n\n[Linkedin](https://www.linkedin.com/company/homebrewltd/)\n\nCompany\n=======\n\n[About](https://jan.ai/about)\n\n[Careers](https://homebrew.bamboohr.com/careers)\n\n©2025 Homebrew Computer Company\n\n![Image 3: Cortex Logo](https://cortex.so/img/logos/homebrew-dark.svg)",
+    "usage": {
+      "tokens": 665
+    }
+  }
+}

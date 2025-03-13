@@ -3,7 +3,6 @@ import ToolCard from "@components/tool-components/ToolCard.astro";
 import BareToolCard from "@components/tool-components/BareToolCard.astro";
 
 interface Props {
-  columns?: number;
   gap?: string;
   minCardWidth?: string;
   tools: Array<{
@@ -18,7 +17,7 @@ interface Props {
   }>;
 }
 
-const { columns = 3, gap = "2rem", tools = [] } = Astro.props;
+const { gap = "2rem", tools = [] } = Astro.props;
 
 // Split tools into those with and without images
 const toolsWithImages = tools.filter(tool => tool.image);
@@ -87,7 +86,7 @@ const toolsWithoutImages = tools.filter(tool => !tool.image);
     ?.addEventListener("mousemove", handleMouseMove);
 </script>
 
-<style define:vars={{ columns, gap }}>
+<style define:vars={{ gap }}>
   .cards-container {
     width: 100%;
     display: flex;
@@ -97,7 +96,7 @@ const toolsWithoutImages = tools.filter(tool => !tool.image);
 
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
     gap: var(--gap);
     width: 100%;
   }

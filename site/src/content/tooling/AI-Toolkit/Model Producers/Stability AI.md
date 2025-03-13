@@ -14,6 +14,8 @@ favicon: >-
   https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/cfbf5bc5-47d4-4f4a-b133-23bd12a7d7c2/favicon.ico?format=100w
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/342a06f7686e4508cb36d0b68a9ebf4ddc27e132993db9e2b7229305daca0247.jpeg
+last_jina_request: '2025-03-09T06:45:16.030Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:02.932Z
 ---
 A main creator and maintainer of [[Stable Diffusion]].  

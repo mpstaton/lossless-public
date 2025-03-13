@@ -14,6 +14,8 @@ tags:
   - Enterprise-Jobs-to-be-Done
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9b4a34ff8a28d8ccf82f0a43cce6a9299d54928f300233c1cd9fc45a0e20041f.jpeg
+last_jina_request: '2025-03-09T06:45:05.419Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:01.827Z
 ---
 Part of the [[Current Stack]]

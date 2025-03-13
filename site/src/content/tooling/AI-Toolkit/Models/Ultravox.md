@@ -14,6 +14,8 @@ image: 'https://framerusercontent.com/images/NU41PDn8R4zag1RapkCZFTCTOxM.jpg'
 site_name: Next-Gen Voice AI
 title: Ultravox.ai — Next-Gen Voice AI
 favicon: 'https://framerusercontent.com/images/h9fy7KYQkluDdSvOCQxOPmxcY.svg'
+last_jina_request: '2025-03-09T06:45:11.750Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:18.726Z
 ---
 

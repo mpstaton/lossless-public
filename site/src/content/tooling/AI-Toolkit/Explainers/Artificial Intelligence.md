@@ -33,7 +33,11 @@ https://youtu.be/561dyCTvGlQ?si=w59IWRCh1rc6vB_u
 
 https://youtu.be/XrQjJML8BhM?si=BJrfaXHwvFYBwa_7
 
+https://youtu.be/yRV8HjxJhl8?si=QKECush59iwSq-it
+
 https://youtu.be/huu_9rAEiQU?si=-tdyebDzaL73083p
+
+https://youtu.be/UeQQHbcqN0s?si=PTeXQd0Cqc_C7vtO
 ### AI Assisted Data Capture
 
 [[AI Powered Data Capture]]
@@ -43,6 +47,8 @@ https://youtu.be/huu_9rAEiQU?si=-tdyebDzaL73083p
 https://youtu.be/UGO_Ehywuxc?si=QimsVzGpbGrE2iCf
 
 https://youtu.be/379s4W_EaTk?si=InM4l_p7xSad8YXh
+
+https://youtu.be/SjSl2re_Fm8?si=hfX2YFP0tJND5eH4
 
 > [!NOTE] AI Explains
 > ### **How Does AI Work?**

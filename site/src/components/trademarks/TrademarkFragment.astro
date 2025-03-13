@@ -1,0 +1,88 @@
+---
+export interface Props {
+  trademark: string;
+}
+
+const { trademark } = Astro.props;
+
+function getSVG(name: string) {
+  const filepath = `../../assets/visuals-as-components/trademarks-fixed-height/trademark__${name}.astro`;
+  const files = import.meta.glob(
+    "../../assets/visuals-as-components/trademarks-fixed-height/*.astro",
+    {
+      eager: true,
+      as: "raw",
+    }
+  );
+
+  if (!(filepath in files)) {
+    throw new Error(`${filepath} not found`);
+  }
+
+  const svgContent = files[filepath];
+  const svgMatch = svgContent.match(/<svg[^>]*>([\s\S]*?)<\/svg>/);
+
+  if (!svgMatch) {
+    throw new Error("No SVG found in file");
+  }
+
+  const attributesMatch = svgContent.match(/<svg([^>]*)>/);
+  const attributes: Record<string, string> = {};
+  if (attributesMatch) {
+    const attrs = attributesMatch[1].match(/(\w+)="([^"]*)"/g);
+    attrs?.forEach((attr) => {
+      const [key, value] = attr.split("=");
+      attributes[key] = value.replace(/"/g, "");
+    });
+  }
+
+  return {
+    attributes,
+    innerHTML: svgMatch[1],
+  };
+}
+
+let svgContent = null;
+try {
+  svgContent = getSVG(trademark);
+} catch (error) {
+  console.error(`Failed to load SVG for ${trademark}:`, error);
+}
+---
+
+<div class="trademark-wrapper">
+  {
+    svgContent && (
+      <svg {...svgContent.attributes} set:html={svgContent.innerHTML} />
+    )
+  }
+  {!svgContent && <div class="fallback">{trademark}</div>}
+</div>
+
+<style>
+  .trademark-wrapper {
+    height: 80px;
+    max-height: 6vh;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .trademark-svg-wrap {
+    height: 80px;
+    width: auto;
+    box-sizing: border-box;
+    object-fit: contain;
+  }
+
+  :global(svg) {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .fallback {
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+  }
+</style>

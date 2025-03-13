@@ -13,6 +13,8 @@ tags:
   - Software-Development
 og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/12644a411b37fef4ca32efdba648ec3ca43298057eb49a561b63116a543249c2.jpeg
+last_jina_request: '2025-03-09T06:45:14.408Z'
+jina_error: 'HTTP error! status: 429'
 og_last_fetch: 2025-03-07T05:19:01.814Z
 ---
 [[AI Powered Data Capture]]
