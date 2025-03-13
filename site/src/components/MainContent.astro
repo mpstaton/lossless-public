@@ -4,8 +4,7 @@ import CardGrid from "@basics/CardGrid.astro";
 import TagCloud from "@components/tool-components/TagCloud.astro";
 import { getEntry, getCollection } from "astro:content";
 import TrademarkRibbon from "@components/trademarks/TrademarkRibbon.astro";
-import TubeContainer from "@basics/TubeContainer.astro";
-import TubeContainerWebkit from "@basics/TubeContainerWebkit.astro";
+import TubeContainerSVG from "@basics/tube-attempts/TubeContainerSVG.astro";
 interface Tool {
   url: string;
   site_name?: string;
@@ -50,19 +49,9 @@ const allTags = [
       <h1>Here is the Main Content</h1>
     </div>
 
-    <div class="curved-separator"></div>
-    <div class="curved-separator"></div>
-    <div class="curved-separator"></div>
-    <div class="curved-separator"></div>
-
-    <TubeContainer>
-      <h1>Here is the Tube Container</h1>
-    </TubeContainer>
-
-    <TubeContainerWebkit>
-      <h1>Here is the Tube Container Webkit</h1>
-    </TubeContainerWebkit>
-
+    <div class="main-content-element">
+      <TubeContainerSVG />
+    </div>
     <!-- Existing cards section -->
   </section>
 
