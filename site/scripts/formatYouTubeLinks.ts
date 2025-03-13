@@ -128,51 +128,276 @@ allowfullscreen
 ></iframe></div>\n${citeMarkdown ? ` (${youtubeData.channelTitle} ${citeMarkdown})` : ''}`;
   },
 
-  getJSONFormat: (randHex: string, youtubeUrl: string, youtubeData: any, formattedDate: any, content: string) => {
+  getJSONFormat: (randHex: string, youtubeUrl: string, youtubeData: YouTubeData, formattedDate: { year: string; month: string; day: string }): YouTubeVideoJSON => {
     return {
+      randHexId: randHex,
+      youtubeUrl: youtubeUrl,
+      youtubeId: youtubeData.uniqueEmbedId,
+      youtubePublishedDate: `${formattedDate.year}-${formattedDate.month}-${formattedDate.day}`,
+      youtubeTitle: youtubeData.title,
+      youtubeChannelTitle: youtubeData.channelTitle,
       citeMarkdown: `[^${randHex}]`,
       fullLineCite: `[^${randHex}] ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]`,
       fullLineFootnote: `[^${randHex}]: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]`
     };
   },
 
-  getMarkdownPageYAMLFormat: (randHex: string, youtubeUrl: string, youtubeData: any, formattedDate: any, content: string) => {
+  getMarkdownPageYAMLFormat: (randHex: string, youtubeUrl: string, youtubeData: any, formattedDate: any, content: string, appearsInMdFiles: string[]) => {
     return `---\n
     rand_hex_id: ${randHex}\n 
-    rand_hex_id_tag: [^${randHex}]\n 
+    rand_hex_id_tag: [^${randHex}]\n
+    appears_in_md_files: ${appearsInMdFiles}\n
     formatted_date_published: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}.\n 
     raw_title: "${youtubeData.title},"\n 
     formatted_title_md_link: "[${youtubeData.title}](${youtubeUrl}),"\n
     raw_channel_title: "${youtubeData.channelTitle},"\n
     formatted_obsidian_title: "[[${youtubeData.channelTitle}]],"\n
-    formatted_citation_line: "${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]. [^${randHex}]";
-    formatted_footnote_line: "[^${randHex}]: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]";
+    formatted_citation_line: "${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]. [^${randHex}]\n";
+    formatted_footnote_line: "[^${randHex}]: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]\n";
     ---`;
   },
 
-  setMarkdownPageContent: (iframeCode: string | null, content: string) => {
+  setMarkdownPageContentForOneYoutubeVideo: (iframeCode: string | null, content: string) => {
     return `${iframeCode}\n\n${content}`;
   },
   
   setOrderedList: (listItems: string[]) => {
     return listItems.map((item, index) => `${index + 1}. ${item}`).join('\n');
+  },
+
+  // Video page settings
+  videoPage: {
+    directory: 'src/content/videos',
+    stripTitleOfUnsafeCharacters: (title: string): string => {
+      return title
+        .replace(/[^a-zA-Z0-9-_\s]/g, '') // Remove special chars except hyphen and underscore
+        .replace(/\s+/g, '-') // Replace spaces with hyphens
+        .toLowerCase(); // Convert to lowercase
+    },
+    
+    getFileName: (publishedDate: string, channelTitle: string, videoTitle: string): string => {
+      const date = new Date(publishedDate);
+      const formattedDate = USER_OPTIONS.formatDate(date);
+      const safeChannelTitle = USER_OPTIONS.videoPage.stripTitleOfUnsafeCharacters(channelTitle);
+      const safeVideoTitle = USER_OPTIONS.videoPage.stripTitleOfUnsafeCharacters(videoTitle);
+      return `YouTube-Video_${formattedDate.year}-${formattedDate.month}-${formattedDate.day}_${safeChannelTitle}--${safeVideoTitle}.md`;
+    },
+
+    getAnyContentForOneVideoMarkdownPage: async (youtubeData: YouTubeData): Promise<string> => {
+      // This can be extended to fetch content from other parts of the codebase
+      return `## Description\n\n${youtubeData.description}\n`;
+    }
+  },
+};
+
+// Add interface for YouTube Video JSON structure
+interface YouTubeVideoJSON {
+  randHexId: string;
+  youtubeUrl: string;
+  youtubeId: string;
+  youtubePublishedDate: string;
+  youtubeTitle: string;
+  youtubeChannelTitle: string;
+  citeMarkdown: string;
+  fullLineCite: string;
+  fullLineFootnote: string;
+}
+
+/**
+ * Handle JSON file operations for YouTube videos
+ */
+const handleYouTubeVideoJSON = async (
+  youtubeData: YouTubeData,
+  youtubeUrl: string,
+  randHex: string,
+  formattedDate: { year: string; month: string; day: string }
+): Promise<void> => {
+  const jsonDir = 'src/data/objects/videos';
+  const filename = `video_youtube--${youtubeData.uniqueEmbedId}.json`;
+  const filePath = path.join(jsonDir, filename);
+
+  // Create directory if it doesn't exist
+  if (!fs.existsSync(jsonDir)) {
+    fs.mkdirSync(jsonDir, { recursive: true });
   }
+
+  // Get current JSON format
+  const currentFormat = USER_OPTIONS.getJSONFormat(randHex, youtubeUrl, youtubeData, formattedDate);
+
+  let stats = {
+    created: 0,
+    modified: 0,
+    skipped: 0
+  };
+
+  try {
+    if (fs.existsSync(filePath)) {
+      // File exists, check for inconsistencies
+      const existingContent = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      let needsUpdate = false;
+      let updatedContent = { ...existingContent };
+
+      // Check each field for inconsistencies
+      Object.entries(currentFormat).forEach(([key, value]) => {
+        if (existingContent[key] !== value) {
+          needsUpdate = true;
+          updatedContent[key] = value;
+          console.log(`Updating ${key} in ${filename}`);
+        }
+      });
+
+      if (needsUpdate) {
+        fs.writeFileSync(filePath, JSON.stringify(updatedContent, null, 2));
+        stats.modified++;
+        console.log(`Updated JSON file: ${filename}`);
+      } else {
+        stats.skipped++;
+        console.log(`Skipped JSON file (no changes needed): ${filename}`);
+      }
+    } else {
+      // Create new file
+      fs.writeFileSync(filePath, JSON.stringify(currentFormat, null, 2));
+      stats.created++;
+      console.log(`Created new JSON file: ${filename}`);
+    }
+  } catch (error) {
+    console.error(`Error handling JSON file ${filename}:`, error);
+  }
+
+  console.log('JSON Processing Stats:', {
+    'Files Created': stats.created,
+    'Files Modified': stats.modified,
+    'Files Skipped': stats.skipped
+  });
+};
+
+/**
+ * Handle markdown file operations for YouTube videos
+ */
+const handleYouTubeVideoMarkdown = async (
+  youtubeData: YouTubeData,
+  youtubeUrl: string,
+  randHex: string,
+  formattedDate: { year: string; month: string; day: string },
+  appearsInMdFiles: string[]
+): Promise<void> => {
+  const stats = {
+    created: 0,
+    modified: 0,
+    skipped: 0
+  };
+
+  try {
+    // Create directory if it doesn't exist
+    const videoDir = USER_OPTIONS.videoPage.directory;
+    if (!fs.existsSync(videoDir)) {
+      fs.mkdirSync(videoDir, { recursive: true });
+    }
+
+    // Generate filename
+    const filename = USER_OPTIONS.videoPage.getFileName(
+      youtubeData.publishedAt,
+      youtubeData.channelTitle,
+      youtubeData.title
+    );
+    const filePath = path.join(videoDir, filename);
+
+    // Check if file exists
+    if (fs.existsSync(filePath)) {
+      // Read existing content
+      const existingContent = fs.readFileSync(filePath, 'utf8');
+      
+      // Generate new content
+      const newContent = await getFullMarkdownPageForOneYoutubeVideo(
+        randHex,
+        youtubeUrl,
+        youtubeData,
+        formattedDate,
+        existingContent,
+        appearsInMdFiles
+      );
+
+      // Compare and update if different
+      if (existingContent !== newContent) {
+        fs.writeFileSync(filePath, newContent, 'utf8');
+        stats.modified++;
+        console.log(`Updated markdown file: ${filename}`);
+      } else {
+        stats.skipped++;
+        console.log(`Skipped markdown file (no changes needed): ${filename}`);
+      }
+    } else {
+      // Create new file
+      const newContent = await getFullMarkdownPageForOneYoutubeVideo(
+        randHex,
+        youtubeUrl,
+        youtubeData,
+        formattedDate,
+        '', // Empty content for new files
+        appearsInMdFiles
+      );
+      fs.writeFileSync(filePath, newContent, 'utf8');
+      stats.created++;
+      console.log(`Created new markdown file: ${filename}`);
+    }
+  } catch (error) {
+    console.error('Error handling markdown file:', error);
+  }
+
+  console.log('Markdown Processing Stats:', {
+    'Files Created': stats.created,
+    'Files Modified': stats.modified,
+    'Files Skipped': stats.skipped
+  });
 };
 
 // Function to get full markdown page - to be used within the processing logic
-const getFullMarkdownPageForOneYoutubeVideo = (
-  iframeCode: string | null, 
-  content: string,
-  aspectRatio: string,
-  embedUrl: string,
+const getFullMarkdownPageForOneYoutubeVideo = async (
+  randHex: string,
+  youtubeUrl: string,
   youtubeData: YouTubeData,
-  citeMarkdown: string | null
-): string => {
-  return USER_OPTIONS.setMarkdownPageContent(
-    USER_OPTIONS.getIframeCode(aspectRatio, embedUrl, youtubeData, citeMarkdown, content),
+  formattedDate: { year: string; month: string; day: string },
+  content: string,
+  appearsInMdFiles: string[]
+): Promise<string> => {
+  // Get the YAML frontmatter
+  const yamlFrontmatter = USER_OPTIONS.getMarkdownPageYAMLFormat(
+    randHex,
+    youtubeUrl,
+    youtubeData,
+    formattedDate,
+    content,
+    appearsInMdFiles
+  );
+
+  // Get the iframe code
+  const aspectRatio = youtubeUrl.includes('/shorts/') ? "9/16" : "16/9";
+  const embedUrl = `https://www.youtube.com/embed/${youtubeData.uniqueEmbedId}?controls=0`;
+  const iframeCode = USER_OPTIONS.getIframeCode(
+    aspectRatio,
+    embedUrl,
+    youtubeData,
+    `[^${randHex}]`,
     content
   );
+
+  // Get any additional content
+  const additionalContent = await USER_OPTIONS.videoPage.getAnyContentForOneVideoMarkdownPage(youtubeData);
+
+  // Combine all parts
+  return USER_OPTIONS.setMarkdownPageContentForOneYoutubeVideo(
+    iframeCode,
+    `${yamlFrontmatter}\n\n# Video: ${youtubeData.title}\n\n${additionalContent}\n\n${content}`
+  );
 };
+
+const createJSONObjectForOneYoutubeVideo = (
+  randHex: string,
+  youtubeUrl: string,
+  youtubeData: YouTubeData,
+  formattedDate: any,
+  content: string
+) => {};
 
 // Simple check - will only log length to avoid exposing key
 console.log('API key loaded:', YOUTUBE_API_KEY ? '✓' : '✗');
@@ -552,6 +777,12 @@ export const processMarkdownFiles = async (globPattern: string): Promise<void> =
             // Format the current date for the citation
             const formattedDate = USER_OPTIONS.formatDate(new Date());
 
+            // Handle JSON file for this video
+            await handleYouTubeVideoJSON(youtubeData, youtubeUrl, randHex, formattedDate);
+
+            // Handle markdown file for this video
+            await handleYouTubeVideoMarkdown(youtubeData, youtubeUrl, randHex, formattedDate, [filePath]);
+
             const { citeMarkdown, fullLineCite, fullLineFootnote } = USER_OPTIONS.getCitationFormats(randHex, youtubeUrl, youtubeData, formattedDate, content);
             
             // Generate the iframe code
@@ -690,22 +921,22 @@ export const processMarkdownFiles = async (globPattern: string): Promise<void> =
 };
 
 /**
- * Process a single markdown file and return its name without extension
+ * Process a single markdown file and return its name without extension and relative path
  * @param filePath Path to the markdown file
- * @returns The filename without .md extension, preserving case
+ * @returns Object containing the filename without .md extension and the relative path from src/
  */
-async function processSingleFile(filePath: string): Promise<string> {
+async function processSingleFile(filePath: string): Promise<{ filename: string; relativePath: string }> {
   try {
     // Check if file exists
     if (!fs.existsSync(filePath)) {
       console.error(`File not found: ${filePath}`);
-      return '';
+      return { filename: '', relativePath: '' };
     }
     
     // Check if file is a markdown file
     if (!filePath.toLowerCase().endsWith('.md')) {
       console.error(`Not a markdown file: ${filePath}`);
-      return '';
+      return { filename: '', relativePath: '' };
     }
     
     console.log(`Processing single file: ${filePath}`);
@@ -713,16 +944,25 @@ async function processSingleFile(filePath: string): Promise<string> {
     // Get the filename without extension while preserving case
     const filename = path.basename(filePath, '.md');
     
+    // Get the relative path starting with src/
+    let relativePath = filePath;
+    const srcIndex = filePath.indexOf('src/');
+    if (srcIndex !== -1) {
+      relativePath = filePath.substring(srcIndex);
+    } else if (!filePath.startsWith('src/')) {
+      relativePath = `src/content/${filePath}`;
+    }
+    
     // Use the same function but with a pattern that matches only this file
     // We need to escape special characters in the file path for the glob pattern
     const escapedPath = filePath.replace(/[*?[\](){}!+@|]/g, '\\$&');
     await processMarkdownFiles(escapedPath);
     
     console.log(`Completed processing file: ${filePath}`);
-    return filename;
+    return { filename, relativePath };
   } catch (error) {
     console.error(`Error processing file ${filePath}:`, error);
-    return '';
+    return { filename: '', relativePath: '' };
   }
 }
 
