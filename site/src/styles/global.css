@@ -83,14 +83,14 @@ a, p {
     text-decoration: none;
     color: var(--clr-body);
     font-family: var(--ff-base);
-};
+}
 
 .separator--thin {
     width: 100%;
     height: 1px;
     background-color: var(--clr-lossless-primary-light);
-  }
+}
 
 *, *::before, *::after {
-box-sizing: border-box;
+    box-sizing: border-box;
 }

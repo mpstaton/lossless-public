@@ -1,6 +1,5 @@
 ---
 import { filterTitle, getEffectiveSiteName } from "@utils/toolUtils";
-import TagChip from "./TagChip.astro";
 import TagCloud from "./TagCloud.astro";
 
 interface Tool {
@@ -66,14 +65,14 @@ const hasDescription =
   description !== null &&
   description.trim() !== "";
 
-console.log("Description availability:", {
+/* console.log("Description availability:", {
   hasDescriptionSiteCp,
   hasDescription,
   description_site_cp_type: typeof description_site_cp,
   description_type: typeof description,
   description_site_cp_value: description_site_cp,
   description_value: description,
-});
+}); */
 
 const effectiveDescription = hasDescriptionSiteCp
   ? description_site_cp
@@ -117,9 +116,7 @@ const effectiveDescription = hasDescriptionSiteCp
         <p class="tool-description">{effectiveDescription}</p>
       )
     }
-    <div class="tag-container">
-      {tags.map((tag) => <TagChip tag={tag} />)}
-    </div>
+    <TagCloud tags={tags} />
   </div>
 </div>
 

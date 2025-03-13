@@ -44,7 +44,9 @@ const allTags = [
 
 <div id="main-content-col">
   <section>
-    <h1>Here is the Main Content</h1>
+    <div id="hero-container">
+      <h1>Here is the Main Content</h1>
+    </div>
     <!-- Existing cards section -->
   </section>
 
@@ -58,28 +60,40 @@ const allTags = [
         maxWidth="96%"
       />
     </div>
-    <h2>Simplest Ribbon</h2>
-    <TrademarkRibbon
-      sourceDir={TRADEMARK_CONFIG.sourceDir}
-      width="auto"
-      maxWidth="500px"
-    />
+    <div id="ribbon">
+      <div id="ribbon-context">
+        <h2>Tech we're watching.</h2>
+      </div>
+      <TrademarkRibbon
+        sourceDir={TRADEMARK_CONFIG.sourceDir}
+        width="auto"
+        maxWidth="500px"
+      />
+    </div>
   </section>
-
-  {
-    tools && tools.length > 0 ? (
-      <CardGrid gap="2rem" tools={tools} />
-    ) : (
-      <p>No tools found</p>
-    )
-  }
 </div>
+
+{
+  tools && tools.length > 0 ? (
+    <CardGrid gap="2rem" tools={tools} />
+  ) : (
+    <p>No tools found</p>
+  )
+}
 
 <style>
   #main-content-col {
     width: 94%;
     margin: 0 auto;
     padding: 2rem 0;
+  }
+
+  #ribbon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
   }
 
   h1 {
