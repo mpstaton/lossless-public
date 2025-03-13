@@ -1,4 +1,3 @@
-
 :root {
   text-wrap: balance;
 
@@ -15,4 +14,22 @@
     background-color: oklch(var(--clr--btn__primary));
     color: oklch(var(--clr--btn__primary-text));
   }
+}
+
+/* Full bleed utility class */
+.full-bleed {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+/* Container class to enable full-bleed children */
+.enable-full-bleed {
+  overflow-x: visible;
+  position: relative;
+  width: 100%;
 }
