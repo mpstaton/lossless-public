@@ -4,6 +4,8 @@ import CardGrid from "@basics/CardGrid.astro";
 import TagCloud from "@components/tool-components/TagCloud.astro";
 import { getEntry, getCollection } from "astro:content";
 import TrademarkRibbon from "@components/trademarks/TrademarkRibbon.astro";
+import TubeContainer from "@basics/TubeContainer.astro";
+import TubeContainerWebkit from "@basics/TubeContainerWebkit.astro";
 interface Tool {
   url: string;
   site_name?: string;
@@ -47,10 +49,24 @@ const allTags = [
     <div id="hero-container">
       <h1>Here is the Main Content</h1>
     </div>
+
+    <div class="curved-separator"></div>
+    <div class="curved-separator"></div>
+    <div class="curved-separator"></div>
+    <div class="curved-separator"></div>
+
+    <TubeContainer>
+      <h1>Here is the Tube Container</h1>
+    </TubeContainer>
+
+    <TubeContainerWebkit>
+      <h1>Here is the Tube Container Webkit</h1>
+    </TubeContainerWebkit>
+
     <!-- Existing cards section -->
   </section>
 
-  <section>
+  <section class="main-content-element">
     <h2>Tools</h2>
     <div class="tools-header">
       <TagCloud
@@ -60,45 +76,35 @@ const allTags = [
         maxWidth="96%"
       />
     </div>
-    <div id="ribbon">
+    <div id="ribbon main-content-element" style="overflow-x: clip;">
       <div id="ribbon-context">
         <h2>Tech we're watching.</h2>
       </div>
-      <TrademarkRibbon
-        sourceDir={TRADEMARK_CONFIG.sourceDir}
-        width="auto"
-        maxWidth="500px"
-      />
+      <div class="main-content-element">
+        <TrademarkRibbon
+          sourceDir={TRADEMARK_CONFIG.sourceDir}
+          width="auto"
+          maxWidth="92%"
+        />
+      </div>
     </div>
+    <div class="full-bleed separator--primary-bg-grd"></div>
   </section>
+  <div class="main-content-element">
+    {
+      tools && tools.length > 0 ? (
+        <CardGrid gap="2rem" tools={tools} />
+      ) : (
+        <p>No tools found</p>
+      )
+    }
+  </div>
 </div>
 
-{
-  tools && tools.length > 0 ? (
-    <CardGrid gap="2rem" tools={tools} />
-  ) : (
-    <p>No tools found</p>
-  )
-}
-
 <style>
-  #main-content-col {
-    width: 94%;
-    margin: 0 auto;
-    padding: 2rem 0;
-  }
-
-  #ribbon {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-
-  h1 {
-    margin-bottom: 2rem;
-    text-align: center;
+  h1,
+  h2 {
+    margin-top: 1rem;
   }
 
   .tools-header {
@@ -107,5 +113,41 @@ const allTags = [
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+  }
+
+  #main-content-col {
+    width: 94%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: visible;
+    justify-content: center;
+  }
+  #hero-container {
+    display: flex;
+    background: var(--grd--lossless-eastern-crimson);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-content-element {
+    width: 92%;
+    margin: 4% 0;
+    padding: 1rem 0;
+  }
+
+  #ribbon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    overflow-x: hidden;
   }
 </style>
