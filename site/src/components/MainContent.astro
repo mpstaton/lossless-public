@@ -1,12 +1,9 @@
 ---
 import "@styles/global.css";
-import Card from "@basics/Card.astro";
-import ToolCard from "@components/tool-components/ToolCard.astro";
 import CardGrid from "@basics/CardGrid.astro";
 import TagCloud from "@components/tool-components/TagCloud.astro";
 import { getEntry, getCollection } from "astro:content";
-import TrademarkRibbon from "@basics/TrademarkRibbon.astro";
-import SimplifiedTrademarkRibbon from "@basics/SimplifiedTrademarkRibbon.astro";
+import TrademarkRibbon from "@components/trademarks/TrademarkRibbon.astro";
 interface Tool {
   url: string;
   site_name?: string;
@@ -18,12 +15,15 @@ interface Tool {
   id: string;
 }
 
+const TRADEMARK_CONFIG = {
+  sourceDir: "src/assets/Visuals/Tooling-Trademarks/usable--darkmode",
+};
+
 // ... existing type definitions ...
 
 const toolEntries = await getCollection("tooling");
 const tools = toolEntries.map((entry: any) => entry.data as Tool);
 const featuresData = await getEntry("cards", "features");
-const cards = featuresData?.data?.cards ?? [];
 
 const tagFrequencies = tools.reduce(
   (tagCounts: Record<string, number>, tool: Tool) => {
@@ -51,7 +51,6 @@ const allTags = [
   <section>
     <h2>Tools</h2>
     <div class="tools-header">
-      <TrademarkRibbon />
       <TagCloud
         tags={allTags}
         tagFrequencies={tagFrequencies}
@@ -59,16 +58,21 @@ const allTags = [
         maxWidth="96%"
       />
     </div>
-    <SimplifiedTrademarkRibbon />
-
-    {
-      tools && tools.length > 0 ? (
-        <CardGrid gap="2rem" tools={tools} />
-      ) : (
-        <p>No tools found</p>
-      )
-    }
+    <h2>Simplest Ribbon</h2>
+    <TrademarkRibbon
+      sourceDir={TRADEMARK_CONFIG.sourceDir}
+      width="auto"
+      maxWidth="500px"
+    />
   </section>
+
+  {
+    tools && tools.length > 0 ? (
+      <CardGrid gap="2rem" tools={tools} />
+    ) : (
+      <p>No tools found</p>
+    )
+  }
 </div>
 
 <style>

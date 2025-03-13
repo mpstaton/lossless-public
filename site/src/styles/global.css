@@ -40,6 +40,7 @@
     --clr-lossless-ui-btn-border: var(--clr-lossless-primary-light);
 
     --clr-primary-bg: var(--clr-stolen--github--dark);
+    --clr-secondary-bg: var(--white--pure--20p);
 
 
     --clr-heading: var(--clr-lossless-accent--brightest);

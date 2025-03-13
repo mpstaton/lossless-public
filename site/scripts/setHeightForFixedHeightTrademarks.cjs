@@ -13,7 +13,8 @@ const CONFIG = {
   PROCESS_MODE: PROCESS_MODE.SET_HEIGHT_SVG,
   ASTRO_DIR: 'src/assets/visuals-as-components/trademarks-fixed-height',
   SVG_DIR: 'src/assets/Visuals/Standardized-Tooling-Trademarks',
-  TARGET_HEIGHT: 80
+  TARGET_HEIGHT: 160,
+  TARGET_WIDTH: "auto"
 };
 
 // Calculate Greatest Common Divisor using Euclidean algorithm
@@ -56,7 +57,7 @@ async function processSVGViewBox(filePath) {
     const ratio = getSimplifiedRatio(originalWidth, originalHeight);
     
     // Calculate new dimensions maintaining aspect ratio
-    const targetHeight = 160;
+    const targetHeight = CONFIG.TARGET_HEIGHT;
     const scaleFactor = targetHeight / originalHeight;
     const newWidth = Math.round(originalWidth * scaleFactor);
     
@@ -89,7 +90,7 @@ async function processSVGViewBox(filePath) {
       // Update existing property
       modifiedContent = modifiedContent.replace(
         /<svg([^>]*?)preserveAspectRatio\s*=\s*["'][^"']*["']/,
-        '<svg$1preserveAspectRatio="xMidYMid"'
+        '<svg$1preserveAspectRatio="xMidYMid meet"'
       );
     }
 

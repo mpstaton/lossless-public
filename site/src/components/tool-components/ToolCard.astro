@@ -82,11 +82,11 @@ const effectiveDescription = hasDescriptionSiteCp
     : "";
 
 // Log the final effective description
-console.log("Effective description:", {
+/* console.log("Effective description:", {
   value: effectiveDescription,
   length: effectiveDescription.length,
   isEmpty: effectiveDescription === "",
-});
+}); */
 ---
 
 <div class="tool-card">
@@ -117,7 +117,9 @@ console.log("Effective description:", {
         <p class="tool-description">{effectiveDescription}</p>
       )
     }
-    <TagCloud tags={tags} />
+    <div class="tag-container">
+      {tags.map((tag) => <TagChip tag={tag} />)}
+    </div>
   </div>
 </div>
 

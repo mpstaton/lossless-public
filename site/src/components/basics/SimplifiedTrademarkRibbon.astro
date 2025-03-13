@@ -45,13 +45,6 @@ const trademarks = fs
   </div>
 
   <style>
-    .ribbon-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 160px;
-    }
     .trademark-ribbon {
       width: 100%;
       height: 180px;
@@ -59,11 +52,18 @@ const trademarks = fs
       position: relative;
       background: transparent;
     }
+    .ribbon-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 160px;
+    }
 
     .ribbon-track {
       display: flex;
       align-items: center;
-      animation: scroll 210s linear infinite;
+      animation: scroll 100s linear infinite;
       width: max-content;
       height: 100%;
       gap: 5em;
