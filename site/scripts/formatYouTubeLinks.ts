@@ -19,6 +19,160 @@ dotenv.config();
 
 // YouTube API key from environment variables - check both possible names
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY || process.env.VITE_YOUTUBE_API_KEY;
+// ============================================================================
+// User Configuration Options
+// ============================================================================
+
+/**
+ * Helper functions to check for existing elements
+ */
+const ContentChecks = {
+  hasIframe: (content: string, videoId: string): boolean => {
+    const iframeRegex = new RegExp(`<iframe[^>]*src=["'][^"']*${videoId}[^"']*["'][^>]*>`, 'i');
+    return iframeRegex.test(content);
+  },
+
+  hasFootnoteReference: (content: string, randHex: string): boolean => {
+    const footnoteRegex = new RegExp(`\\[\\^${randHex}\\]`, 'i');
+    return footnoteRegex.test(content);
+  },
+
+  hasFootnoteDefinition: (content: string, randHex: string): boolean => {
+    const footnoteDefRegex = new RegExp(`\\[\\^${randHex}\\]:.*`, 'i');
+    return footnoteDefRegex.test(content);
+  },
+
+  hasFootnotesSection: (content: string, header: string, sectionLine: string): boolean => {
+    const escapedHeader = header.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const escapedLine = sectionLine.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const footnotesPattern = new RegExp(`${escapedHeader}\\s*${escapedLine}`, 's');
+    return footnotesPattern.test(content);
+  }
+};
+
+/**
+ * Formatting options for citations and footnotes
+ */
+const USER_OPTIONS = {
+  // Footnotes configuration
+  footnotes: {
+    header: '# Footnotes',
+    sectionLine: '***',
+    
+    // Check and add footnotes section if needed
+    addSectionIfNeeded: (content: string): string => {
+      if (!ContentChecks.hasFootnotesSection(content, USER_OPTIONS.footnotes.header, USER_OPTIONS.footnotes.sectionLine)) {
+        return content + '\n\n\n' + USER_OPTIONS.footnotes.header + '\n' + USER_OPTIONS.footnotes.sectionLine + '\n';
+      }
+      return content;
+    }
+  },
+
+  // Video resources section configuration
+  videoResourcesSection: {
+    header: '#### Video Resources',
+    getVideoItemHeader: (data: YouTubeData, url: string) => 
+      `###### Video:[${data.title}](${url}) by [[${data.channelTitle}]]`,
+    videoItemSeparator: '---',
+  },
+
+  // Date formatting function for citations
+  formatDate: (date: Date): { year: string; month: string; day: string } => {
+    const months = [
+      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+    ];
+    
+    return {
+      year: date.getFullYear().toString(),
+      month: months[date.getMonth()],
+      day: date.getDate().toString().padStart(2, '0')
+    };
+  },
+
+  // Citation format templates with existence checks
+  getCitationFormats: (randHex: string, youtubeUrl: string, youtubeData: any, formattedDate: any, content: string) => {
+    const formats: { [key: string]: string | null } = {};
+    
+    // Only generate formats that don't exist
+    formats.citeMarkdown = !ContentChecks.hasFootnoteReference(content, randHex) 
+      ? `[^${randHex}]` 
+      : null;
+    
+    formats.fullLineCite = !ContentChecks.hasFootnoteReference(content, randHex)
+      ? `${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]. [^${randHex}]`
+      : null;
+    
+    formats.fullLineFootnote = !ContentChecks.hasFootnoteDefinition(content, randHex)
+      ? `[^${randHex}]: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]`
+      : null;
+    
+    return formats;
+  },
+
+  // YouTube iframe template with existence check
+  getIframeCode: (aspectRatio: string, embedUrl: string, youtubeData: any, citeMarkdown: string | null, content: string): string | null => {
+    const videoId = new URL(embedUrl).pathname.split('/').pop()?.split('?')[0];
+    if (!videoId || ContentChecks.hasIframe(content, videoId)) {
+      return null;
+    }
+    
+    return `<div class="youtube-container"><iframe 
+style="aspect-ratio:${aspectRatio};width:100%;height:auto" 
+src="${embedUrl}" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen
+></iframe></div>\n${citeMarkdown ? ` (${youtubeData.channelTitle} ${citeMarkdown})` : ''}`;
+  },
+
+  getJSONFormat: (randHex: string, youtubeUrl: string, youtubeData: any, formattedDate: any, content: string) => {
+    return {
+      citeMarkdown: `[^${randHex}]`,
+      fullLineCite: `[^${randHex}] ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]`,
+      fullLineFootnote: `[^${randHex}]: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]`
+    };
+  },
+
+  getMarkdownPageYAMLFormat: (randHex: string, youtubeUrl: string, youtubeData: any, formattedDate: any, content: string) => {
+    return `---\n
+    rand_hex_id: ${randHex}\n 
+    rand_hex_id_tag: [^${randHex}]\n 
+    formatted_date_published: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}.\n 
+    raw_title: "${youtubeData.title},"\n 
+    formatted_title_md_link: "[${youtubeData.title}](${youtubeUrl}),"\n
+    raw_channel_title: "${youtubeData.channelTitle},"\n
+    formatted_obsidian_title: "[[${youtubeData.channelTitle}]],"\n
+    formatted_citation_line: "${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]. [^${randHex}]";
+    formatted_footnote_line: "[^${randHex}]: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]";
+    ---`;
+  },
+
+  setMarkdownPageContent: (iframeCode: string | null, content: string) => {
+    return `${iframeCode}\n\n${content}`;
+  },
+  
+  setOrderedList: (listItems: string[]) => {
+    return listItems.map((item, index) => `${index + 1}. ${item}`).join('\n');
+  }
+};
+
+// Function to get full markdown page - to be used within the processing logic
+const getFullMarkdownPageForOneYoutubeVideo = (
+  iframeCode: string | null, 
+  content: string,
+  aspectRatio: string,
+  embedUrl: string,
+  youtubeData: YouTubeData,
+  citeMarkdown: string | null
+): string => {
+  return USER_OPTIONS.setMarkdownPageContent(
+    USER_OPTIONS.getIframeCode(aspectRatio, embedUrl, youtubeData, citeMarkdown, content),
+    content
+  );
+};
 
 // Simple check - will only log length to avoid exposing key
 console.log('API key loaded:', YOUTUBE_API_KEY ? '✓' : '✗');
@@ -312,8 +466,8 @@ export const processMarkdownFiles = async (globPattern: string): Promise<void> =
     let totalFilesModified = 0;
     
     // Define constants for footnotes section
-    const footnotesHeader = `# Footnotes`;
-    const footnotesSectionLine = `***`;
+    const footnotesHeader = USER_OPTIONS.footnotes.header;
+    const footnotesSectionLine = USER_OPTIONS.footnotes.sectionLine;
 
     for (const filePath of files) {
       console.log(`Processing file: ${filePath}`);
@@ -396,11 +550,9 @@ export const processMarkdownFiles = async (globPattern: string): Promise<void> =
             const randHex = generateRandomHex();
             
             // Format the current date for the citation
-            const formattedDate = formatDate(new Date());
+            const formattedDate = USER_OPTIONS.formatDate(new Date());
 
-            const citeMarkdownWithHex = `[^${randHex}]`;
-            const fullLineCiteMarkdownWithHex = `[^${randHex}] ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]`;
-            const fullLineFootnoteMarkdownWithHex = `[^${randHex}]: ${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]`;
+            const { citeMarkdown, fullLineCite, fullLineFootnote } = USER_OPTIONS.getCitationFormats(randHex, youtubeUrl, youtubeData, formattedDate, content);
             
             // Generate the iframe code
             // Determine if this is a shorts video by checking the URL
@@ -419,40 +571,10 @@ export const processMarkdownFiles = async (globPattern: string): Promise<void> =
               embedUrl += '?controls=0';
             }
             
-            const iframeCode = `<div class="youtube-container"><iframe 
-style="aspect-ratio:${aspectRatio};width:100%;height:auto" 
-src="${embedUrl}" 
-title="YouTube video player" 
-frameborder="0" 
-allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-referrerpolicy="strict-origin-when-cross-origin" 
-allowfullscreen
-></iframe></div>\n (${youtubeData.channelTitle} ${citeMarkdownWithHex})`;
+            const iframeCode = USER_OPTIONS.getIframeCode(aspectRatio, embedUrl, youtubeData, citeMarkdown, content);
 
             // Add footnotes section if it doesn't exist
-            modifiedContent = addFootnoteSectionIfNone(modifiedContent, footnotesHeader, footnotesSectionLine);
-            
-            // Add the footnote to the footnotes section
-            const footnotesHeaderPos = modifiedContent.indexOf(footnotesHeader);
-            if (footnotesHeaderPos !== -1) {
-              // Find the position after the footnotes section line
-              const footnotesSectionLinePos = modifiedContent.indexOf(footnotesSectionLine, footnotesHeaderPos);
-              if (footnotesSectionLinePos !== -1) {
-                // Insert the footnote after the section line
-                const insertPos = footnotesSectionLinePos + footnotesSectionLine.length;
-                modifiedContent = 
-                  modifiedContent.substring(0, insertPos) + 
-                  '\n\n' + fullLineFootnoteMarkdownWithHex + 
-                  modifiedContent.substring(insertPos);
-              }
-            }
-
-            console.log(`Generated iframe code with ID: ${youtubeData.uniqueEmbedId}`);
-            console.log(`Before replacement, content contains URL: ${modifiedContent.includes(youtubeUrl)}`);
-            
-            // Replace the URL with the iframe code
-            // Use a more specific replacement to avoid replacing URLs that might be part of other text
-            const escapedUrl = youtubeUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            modifiedContent = USER_OPTIONS.footnotes.addSectionIfNeeded(modifiedContent);
             
             // Split content into main content and footnotes to avoid replacing URLs in footnotes
             let mainContent = modifiedContent;
@@ -466,54 +588,71 @@ allowfullscreen
             }
             
             // Different regex patterns for different contexts
-            const markdownLinkRegex = new RegExp(`\\[([^\\]]+)\\]\\(${escapedUrl}\\)`, 'g');
-            const plainUrlRegex = new RegExp(`(^|\\s|"|'|\\()${escapedUrl}(\\)|\\s|"|'|$)`, 'g');
+            const markdownLinkRegex = new RegExp(`\\[([^\\]]+)\\]\\(${youtubeUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\)`, 'g');
+            const plainUrlRegex = new RegExp(`(^|\\s|"|'|\\()${youtubeUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(\\)|\\s|"|'|$)`, 'g');
             
             let replacementMade = false;
             
-            // Check if the URL is in a markdown link in the main content
-            if (markdownLinkRegex.test(mainContent)) {
-              console.log(`URL is in a markdown link, replacing`);
-              // Reset regex lastIndex
-              markdownLinkRegex.lastIndex = 0;
-              // Replace the markdown link with the iframe code
-              mainContent = mainContent.replace(markdownLinkRegex, (match, linkText) => {
-                console.log(`Replacing markdown link: ${match}`);
+            // Only proceed with replacements if we have valid iframe code
+            if (iframeCode) {
+              // Check if the URL is in a markdown link in the main content
+              if (markdownLinkRegex.test(mainContent)) {
+                console.log(`URL is in a markdown link, replacing`);
+                // Reset regex lastIndex
+                markdownLinkRegex.lastIndex = 0;
+                // Replace the markdown link with the iframe code
+                mainContent = mainContent.replace(markdownLinkRegex, () => {
+                  console.log(`Replacing markdown link with iframe`);
+                  replacementMade = true;
+                  return iframeCode;
+                });
+              } 
+              // Check if the URL is a plain URL in the main content
+              else if (plainUrlRegex.test(mainContent)) {
+                console.log(`URL is a plain URL, replacing`);
+                // Reset regex lastIndex
+                plainUrlRegex.lastIndex = 0;
+                // Replace the plain URL with the iframe code, preserving surrounding context
+                mainContent = mainContent.replace(plainUrlRegex, (match, before, after) => {
+                  console.log(`Replacing plain URL with iframe`);
+                  replacementMade = true;
+                  return `${before}${iframeCode}${after}`;
+                });
+              }
+              // If neither pattern matched, try a direct replacement in the main content
+              else if (mainContent.includes(youtubeUrl)) {
+                console.log(`Direct replacement fallback for URL: ${youtubeUrl}`);
+                mainContent = mainContent.replace(youtubeUrl, iframeCode);
                 replacementMade = true;
-                return iframeCode;
-              });
-            } 
-            // Check if the URL is a plain URL in the main content
-            else if (plainUrlRegex.test(mainContent)) {
-              console.log(`URL is a plain URL, replacing`);
-              // Reset regex lastIndex
-              plainUrlRegex.lastIndex = 0;
-              // Replace the plain URL with the iframe code, preserving surrounding context
-              mainContent = mainContent.replace(plainUrlRegex, (match, before, after) => {
-                console.log(`Replacing plain URL: ${match}`);
-                replacementMade = true;
-                return `${before}${iframeCode}${after}`;
-              });
+              }
             }
-            // If neither pattern matched, try a direct replacement in the main content
-            else if (mainContent.includes(youtubeUrl)) {
-              console.log(`Direct replacement fallback for URL: ${youtubeUrl}`);
-              mainContent = mainContent.replace(youtubeUrl, iframeCode);
-              replacementMade = true;
+
+            // Only add footnote if we have one and made a replacement
+            if (fullLineFootnote && replacementMade) {
+              // Add the footnote to the footnotes section
+              const footnotesHeaderPos = modifiedContent.indexOf(footnotesHeader);
+              if (footnotesHeaderPos !== -1) {
+                // Find the position after the footnotes section line
+                const footnotesSectionLinePos = modifiedContent.indexOf(footnotesSectionLine, footnotesHeaderPos);
+                if (footnotesSectionLinePos !== -1) {
+                  // Insert the footnote after the section line
+                  const insertPos = footnotesSectionLinePos + footnotesSectionLine.length;
+                  modifiedContent = 
+                    modifiedContent.substring(0, insertPos) + 
+                    '\n\n' + fullLineFootnote + 
+                    modifiedContent.substring(insertPos);
+                }
+              }
             }
-            else {
-              console.log(`Could not find URL in main content, skipping replacement`);
-              continue;
-            }
-            
+
             // Recombine the content if it was split
             if (mainFootnotesPos !== -1) {
-              modifiedContent = mainContent + footnotesContent;
+              modifiedContent = mainContent + (footnotesContent || '');
             } else {
               modifiedContent = mainContent;
             }
             
-            console.log(`After replacement, content contains iframe: ${modifiedContent.includes(iframeCode)}`);
+            console.log(`After replacement, content contains iframe: ${modifiedContent.includes(iframeCode || '')}`);
             
             if (replacementMade) {
               fileModified = true;
@@ -551,24 +690,28 @@ allowfullscreen
 };
 
 /**
- * Process a single markdown file
+ * Process a single markdown file and return its name without extension
  * @param filePath Path to the markdown file
+ * @returns The filename without .md extension, preserving case
  */
-async function processSingleFile(filePath: string): Promise<void> {
+async function processSingleFile(filePath: string): Promise<string> {
   try {
     // Check if file exists
     if (!fs.existsSync(filePath)) {
       console.error(`File not found: ${filePath}`);
-      return;
+      return '';
     }
     
     // Check if file is a markdown file
     if (!filePath.toLowerCase().endsWith('.md')) {
       console.error(`Not a markdown file: ${filePath}`);
-      return;
+      return '';
     }
     
     console.log(`Processing single file: ${filePath}`);
+    
+    // Get the filename without extension while preserving case
+    const filename = path.basename(filePath, '.md');
     
     // Use the same function but with a pattern that matches only this file
     // We need to escape special characters in the file path for the glob pattern
@@ -576,8 +719,10 @@ async function processSingleFile(filePath: string): Promise<void> {
     await processMarkdownFiles(escapedPath);
     
     console.log(`Completed processing file: ${filePath}`);
+    return filename;
   } catch (error) {
     console.error(`Error processing file ${filePath}:`, error);
+    return '';
   }
 }
 
