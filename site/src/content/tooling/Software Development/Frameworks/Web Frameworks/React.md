@@ -33,6 +33,8 @@ https://youtu.be/3EnathFYgz8?si=AsMUXSTeGVGaeftJ
 
 https://youtu.be/wIyHSOugGGw?si=cjUnbWHww1Dake8D
 
+https://youtu.be/ROKRTZ_xCgo?si=pZq8TSHhVHrubsVk
+
 | Version | First-Release | Stable-Release | <- Announcement                                         |
 | ------- | ------------- | -------------- | ------------------------------------------------------- |
 | 19      | 2024-04       | 2024-12-05     | [React v19](https://react.dev/blog/2024/12/05/react-19) |

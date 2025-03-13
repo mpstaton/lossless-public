@@ -250,3 +250,5 @@ https://youtu.be/SjSl2re_Fm8?si=hfX2YFP0tJND5eH4
 2024, Nov 20. [Visualizing transformers and attention](https://youtu.be/KJtZARuO3JY?si=ZKOnYprOiwIb8CQB). 3blue1brown. [[YouTube]].
 
 https://youtu.be/-RyUERQL-Y8?si=y2ARMOtiZY9Tt5ty
+
+https://www.youtube.com/live/esCSpbDPJik?si=5_zCH4nwkSlWPxJA

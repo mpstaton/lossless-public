@@ -21,3 +21,5 @@ og_last_fetch: 2025-03-07T05:20:56.427Z
 
 ### ASP.NET Core Docs
 ![[2025-01-17 at 6.10.38 PM__ASPNET-Docs 1.png]]
+
+https://youtu.be/p9S0wZtXz1s?si=eMyhxYylMpb1y6y4
