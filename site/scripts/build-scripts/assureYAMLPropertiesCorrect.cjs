@@ -2,18 +2,51 @@ const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
 const matter = require('gray-matter');
+const { v4: uuidv4 } = require('uuid');
 
-const contentDir = path.join(process.cwd(), 'src/content/tooling');
-const fixesDir = path.join(process.cwd(), 'scripts/fixes-needed');
+// ============================================================================
+// User Configuration Options
+// ============================================================================
+
+const USER_OPTIONS = {
+  // Directory Configuration
+  directories: {
+    content: path.join(process.cwd(), 'src/content/tooling'),
+    fixes: path.join(process.cwd(), 'scripts/fixes-needed'),
+    excludeUrlCheck: ['Explainers'] // Directories to exclude from URL checks
+  },
+
+  // YAML Properties
+  frontmatter: {
+    required: {
+      properties: ['site_uuid'],
+      generateIfMissing: {
+        site_uuid: () => uuidv4()
+      }
+    },
+    propertyFormatting: {
+      convertHyphensToUnderscores: true,
+      ensureArrayForTags: true
+    }
+  },
+
+  // File Generation
+  reporting: {
+    issueFiles: {
+      lowercaseTags: 'Lowercase-Tags.md',
+      missingUrls: 'Missing-URLs.md'
+    }
+  }
+};
 
 // Ensure fixes directory exists
-if (!fs.existsSync(fixesDir)) {
-  fs.mkdirSync(fixesDir, { recursive: true });
+if (!fs.existsSync(USER_OPTIONS.directories.fixes)) {
+  fs.mkdirSync(USER_OPTIONS.directories.fixes, { recursive: true });
 }
 
 // Find all markdown files recursively
 const markdownFiles = glob.sync('**/*.md', {
-  cwd: contentDir,
+  cwd: USER_OPTIONS.directories.content,
   absolute: true
 });
 
@@ -34,20 +67,31 @@ markdownFiles.forEach(filePath => {
   let modifiedFrontmatter = frontmatter;
   let replacementsInFile = 0;
   
-  // Replace hyphens in variable names (before colons) with underscores
-  modifiedFrontmatter = modifiedFrontmatter.replace(/^([^:\r\n]+?):/gm, (match, varName) => {
-    const newVarName = varName.trim().replace(/-/g, '_');
-    if (newVarName !== varName.trim()) {
+  // Check and add required properties
+  USER_OPTIONS.frontmatter.required.properties.forEach(prop => {
+    if (!parsedFile.data[prop] && USER_OPTIONS.frontmatter.required.generateIfMissing[prop]) {
+      const generatedValue = USER_OPTIONS.frontmatter.required.generateIfMissing[prop]();
+      const newProperty = `${prop}: "${generatedValue}"`;
+      modifiedFrontmatter = `${newProperty}\n${modifiedFrontmatter}`;
       replacementsInFile++;
-      return `${newVarName}:`;
     }
-    return match;
   });
 
-  // Check for tags with spaces and lowercase starts
-  if (parsedFile.data.tags) {
+  // Replace hyphens in variable names with underscores if enabled
+  if (USER_OPTIONS.frontmatter.propertyFormatting.convertHyphensToUnderscores) {
+    modifiedFrontmatter = modifiedFrontmatter.replace(/^([^:\r\n]+?):/gm, (match, varName) => {
+      const newVarName = varName.trim().replace(/-/g, '_');
+      if (newVarName !== varName.trim()) {
+        replacementsInFile++;
+        return `${newVarName}:`;
+      }
+      return match;
+    });
+  }
+
+  // Handle tags formatting
+  if (parsedFile.data.tags && USER_OPTIONS.frontmatter.propertyFormatting.ensureArrayForTags) {
     const tags = Array.isArray(parsedFile.data.tags) ? parsedFile.data.tags : [parsedFile.data.tags];
-    
     const modifiedTags = tags.map(tag => tag.replace(/\s+/g, '-'));
     
     // Check for lowercase tags
@@ -67,9 +111,10 @@ markdownFiles.forEach(filePath => {
     }
   }
 
-  // Check for missing URLs in non-Explainer directories
-  if (!parsedFile.data.url && !filePath.includes('Explainers')) {
-    missingUrls.add(path.relative(contentDir, filePath));
+  // Check for missing URLs in non-excluded directories
+  if (!parsedFile.data.url && 
+      !USER_OPTIONS.directories.excludeUrlCheck.some(dir => filePath.includes(dir))) {
+    missingUrls.add(path.relative(USER_OPTIONS.directories.content, filePath));
   }
 
   if (frontmatter !== modifiedFrontmatter) {
@@ -82,20 +127,17 @@ markdownFiles.forEach(filePath => {
   }
 });
 
-// Write lowercase tags to file
-fs.writeFileSync(
-  path.join(fixesDir, 'Lowercase-Tags.md'),
-  lowercaseTags.size > 0 ? Array.from(lowercaseTags).join('\n') : '',
-  'utf8'
-);
+// Write issue reports
+Object.entries(USER_OPTIONS.reporting.issueFiles).forEach(([type, filename]) => {
+  const data = type === 'lowercaseTags' ? lowercaseTags : missingUrls;
+  fs.writeFileSync(
+    path.join(USER_OPTIONS.directories.fixes, filename),
+    data.size > 0 ? Array.from(data).join('\n') : '',
+    'utf8'
+  );
+});
 
-// Write missing URLs to file
-fs.writeFileSync(
-  path.join(fixesDir, 'Missing-URLs.md'),
-  missingUrls.size > 0 ? Array.from(missingUrls).join('\n') : '',
-  'utf8'
-);
-
+// Log summary
 console.log(`\nSummary:`);
 console.log(`Files modified: ${filesModified}`);
 console.log(`Total replacements: ${totalReplacements}`);
