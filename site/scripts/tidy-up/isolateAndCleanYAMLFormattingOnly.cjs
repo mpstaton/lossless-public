@@ -9,15 +9,16 @@ const path = require('path');
 // - 'sample': Process a random sample of corrupted files (uses MAX_SAMPLE_SIZE)
 // - 'specific': Process only the files listed in SPECIFIC_FILES_TO_PROCESS
 // - 'all': Process all corrupted files found in the report
-const PROCESSING_MODE = 'sample';
+const PROCESSING_MODE = 'specific';
 
 // Maximum number of files to process when in 'sample' mode
 const MAX_SAMPLE_SIZE = 5;
 
 // Specific files to process when in 'specific' mode (relative or absolute paths)
 const SPECIFIC_FILES_TO_PROCESS = [
-    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Firefox.md',
-    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Chrome.md'
+    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/smolagents.md',
+    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Stack AI.md',
+    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Spider.md'
 ];
 
 // Properties to fix and the correction method to apply
@@ -27,22 +28,24 @@ const SPECIFIC_FILES_TO_PROCESS = [
 const PROPERTIES_TO_FIX = [
     { key: 'og_error_message', method: 'assureQuotesOrReplaceLineAndSurroundValueWithQuotes' },
     { key: 'jina_error', method: 'assureQuotesOrReplaceLineAndSurroundValueWithQuotes' },
-    // Uncomment these when ready to process them
-    // { key: 'description', method: 'replaceWithSimpleStringNoQuotes' },
-    // { key: 'title', method: 'replaceWithSimpleStringNoQuotes' },
-    // { key: 'site_description_cp', method: 'replaceWithSimpleStringNoQuotes' },
-    // { key: 'site_title_cp', method: 'replaceWithSimpleStringNoQuotes' }
+    { key: 'title', method: 'replaceWithSimpleStringNoQuotes' },
+    { key: 'description', method: 'replaceWithSimpleStringNoQuotes' },
+    { key: 'url', method: 'replaceWithSimpleStringNoQuotes' },
+    { key: 'image', method: 'replaceWithSimpleStringNoQuotes' },
+    { key: 'og_screenshot_url', method: 'replaceWithSimpleStringNoQuotes' },
+    { key: 'favicon', method: 'replaceWithSimpleStringNoQuotes' }
+    // Add more properties as needed
 ];
 
 // ======================================================================
 // FILE PATHS
 // ======================================================================
 
-// Output file for the list of fixed files
-const TARGET_OUTPUT_FILE_PATH = './scripts/data-or-content-generation/fixes-needed/Completed-Glitch-Corrections.md';
-
 // Input file containing the list of corrupted files
-const REPORT_INPUT_PATH = './scripts/data-or-content-generation/fixes-needed/Corrupted-Frontmatter-List.md';
+const REPORT_INPUT_PATH = path.resolve(process.cwd(), 'scripts/data-or-content-generation/fixes-needed/Corrupted-Frontmatter-List.md');
+
+// Output file for the list of fixed files
+const TARGET_OUTPUT_FILE_PATH = path.resolve(process.cwd(), 'scripts/data-or-content-generation/fixes-needed/Completed-Glitch-Corrections.md');
 
 // ======================================================================
 // IMPLEMENTATION - No need to modify below this line
@@ -59,13 +62,24 @@ const GLITCH_CORRECTIONS = {
         if (!match) return line;
         
         const [fullLine, keyPart, value] = match;
+        const trimmedValue = value.trim();
         
-        // If value is already quoted, return as is
-        if (/^".*"$/.test(value.trim())) return line;
+        // Case 1: Value is already surrounded by double quotes - leave as is
+        if (/^".*"$/.test(trimmedValue)) return line;
         
-        // If value contains a colon, quote it
-        if (value.includes(':')) {
-            return `${keyPart}"${value.replace(/"/g, '\\"')}"`;
+        // Case 2: Value is surrounded by single quotes - replace with double quotes
+        if (/^'.*'$/.test(trimmedValue)) {
+            // Extract the content inside single quotes
+            const innerContent = trimmedValue.slice(1, -1);
+            // Escape any double quotes in the content
+            const escapedContent = innerContent.replace(/"/g, '\\"');
+            // Surround with double quotes
+            return `${keyPart}"${escapedContent}"`;
+        }
+        
+        // Case 3: Value contains a colon but no quotes - add double quotes
+        if (trimmedValue.includes(':')) {
+            return `${keyPart}"${trimmedValue.replace(/"/g, '\\"')}"`;
         }
         
         return line;
@@ -74,14 +88,14 @@ const GLITCH_CORRECTIONS = {
     // For block scalar values that should be simple strings
     replaceWithSimpleStringNoQuotes: (content, key) => {
         // Find the block scalar pattern for this key
-        const blockScalarPattern = new RegExp(`^(${key}:\\s*)(>-|>|\\|[-]?)\\s*$(\\n[ \\t]+.*)*`, 'm');
+        const blockScalarPattern = new RegExp(`^(${key}:)\\s*(>-|>|\\|[-]?)\\s*$(\\n[ \\t]+.*)*`, 'm');
         const match = content.match(blockScalarPattern);
         
         if (!match) return content;
         
         // Extract the block content
         const lines = match[0].split('\n');
-        const keyLine = lines[0];
+        const keyPart = match[1]; // Just the "key:" part
         
         // Get the indented content and join as a single line
         let valueLines = lines.slice(1);
@@ -106,13 +120,14 @@ const GLITCH_CORRECTIONS = {
             // Fix cases where punctuation might not need spaces
             .replace(/ ([,.!?:;])(\s|$)/g, '$1$2');
         
-        // Replace the block scalar with a simple string
-        return content.replace(match[0], `${key}: ${combinedValue}`);
+        // Replace the block scalar with a simple string, ensuring exactly one space after the colon
+        return content.replace(match[0], `${keyPart} ${combinedValue}`);
     }
 };
 
-// Track which files we've fixed
-const fixedFiles = new Set();
+// Track which files were evaluated and which ones were fixed
+const evaluatedFiles = new Set();
+const fixedFiles = new Map(); // Map of filePath -> Set of fixed properties
 
 /**
  * Process a single file to fix a specific type of glitch
@@ -123,6 +138,11 @@ const fixedFiles = new Set();
  */
 function cleanFrontmatterGlitch(filePath, glitchKey, correctionType) {
     try {
+        console.log(`\nChecking ${filePath} for ${glitchKey}...`);
+        
+        // Add to evaluated files
+        evaluatedFiles.add(filePath);
+
         // Read the file
         const content = fs.readFileSync(filePath, 'utf8');
         
@@ -145,8 +165,14 @@ function cleanFrontmatterGlitch(filePath, glitchKey, correctionType) {
         // Look for the glitch key in the frontmatter
         const keyPattern = new RegExp(`^${glitchKey}:.+`, 'm');
         if (!keyPattern.test(frontmatter)) {
-            // Key not found, nothing to fix
+            console.log(`SKIPPED: ${filePath} - No ${glitchKey} property found in frontmatter`);
             return false;
+        }
+        
+        // Debug: Show matched property
+        const propertyLineMatch = frontmatter.match(new RegExp(`^${glitchKey}:.*$`, 'm'));
+        if (propertyLineMatch) {
+            console.log(`Found property: ${propertyLineMatch[0]}`);
         }
         
         // Apply the correction
@@ -158,7 +184,12 @@ function cleanFrontmatterGlitch(filePath, glitchKey, correctionType) {
                 const lines = frontmatter.split('\n');
                 const newLines = lines.map(line => {
                     if (line.trim().startsWith(`${glitchKey}:`)) {
-                        return GLITCH_CORRECTIONS.assureQuotesOrReplaceLineAndSurroundValueWithQuotes(line, glitchKey);
+                        const original = line;
+                        const fixed = GLITCH_CORRECTIONS.assureQuotesOrReplaceLineAndSurroundValueWithQuotes(line, glitchKey);
+                        if (original !== fixed) {
+                            console.log(`Fixing line: "${original}" => "${fixed}"`);
+                        }
+                        return fixed;
                     }
                     return line;
                 });
@@ -179,6 +210,7 @@ function cleanFrontmatterGlitch(filePath, glitchKey, correctionType) {
         
         // Check if anything was changed
         if (newContent === content) {
+            console.log(`SKIPPED: ${filePath} - No changes needed for ${glitchKey}`);
             return false;
         }
         
@@ -187,7 +219,11 @@ function cleanFrontmatterGlitch(filePath, glitchKey, correctionType) {
         console.log(`FIXED: ${filePath} - Fixed ${glitchKey}`);
         
         // Mark as fixed
-        fixedFiles.add(filePath);
+        if (!fixedFiles.has(filePath)) {
+            fixedFiles.set(filePath, new Set());
+        }
+        fixedFiles.get(filePath).add(glitchKey);
+        
         return true;
     } catch (error) {
         console.error(`ERROR processing ${filePath}: ${error.message}`);
@@ -206,19 +242,30 @@ function getFilesToProcess(allCorruptedFiles) {
             // Get a random sample of files
             const sampleSize = Math.min(MAX_SAMPLE_SIZE, allCorruptedFiles.length);
             const shuffled = [...allCorruptedFiles].sort(() => 0.5 - Math.random());
-            return shuffled.slice(0, sampleSize);
+            const sampleFiles = shuffled.slice(0, sampleSize);
+            console.log(`\nSelected ${sampleFiles.length} sample files:`);
+            sampleFiles.forEach(file => console.log(`- ${file.path}`));
+            return sampleFiles;
             
         case 'specific':
             // Filter the corrupted files to only include the specific files
-            return allCorruptedFiles.filter(file => 
+            console.log(`\nLooking for these specific files:`);
+            SPECIFIC_FILES_TO_PROCESS.forEach(path => console.log(`- ${path}`));
+            
+            const specificFiles = allCorruptedFiles.filter(file => 
                 SPECIFIC_FILES_TO_PROCESS.some(specificPath => 
                     file.path.includes(specificPath) || specificPath.includes(file.path)
                 )
             );
             
+            console.log(`\nFound ${specificFiles.length} specified files in the corrupted files list:`);
+            specificFiles.forEach(file => console.log(`- ${file.path}`));
+            
+            return specificFiles;
+            
         case 'all':
         default:
-            // Process all corrupted files
+            console.log(`\nProcessing all ${allCorruptedFiles.length} corrupted files`);
             return allCorruptedFiles;
     }
 }
@@ -228,6 +275,16 @@ function getFilesToProcess(allCorruptedFiles) {
  */
 function processCorruptedFiles() {
     try {
+        // Check if report file exists
+        if (!fs.existsSync(REPORT_INPUT_PATH)) {
+            console.error(`Report file not found: ${REPORT_INPUT_PATH}`);
+            console.log(`Current working directory: ${process.cwd()}`);
+            console.log('Please make sure the report has been generated first.');
+            return;
+        }
+
+        console.log(`Reading report from: ${REPORT_INPUT_PATH}`);
+        
         // Read the report file
         const reportContent = fs.readFileSync(REPORT_INPUT_PATH, 'utf8');
         
@@ -240,13 +297,23 @@ function processCorruptedFiles() {
             const filePath = match[1];
             const issues = match[2];
             
-            allCorruptedFiles.push({
-                path: filePath,
-                issues: issues
-            });
+            // Verify the file exists
+            if (fs.existsSync(filePath)) {
+                allCorruptedFiles.push({
+                    path: filePath,
+                    issues: issues
+                });
+            } else {
+                console.warn(`File does not exist: ${filePath}`);
+            }
         }
         
         console.log(`Found ${allCorruptedFiles.length} corrupted files in the report.`);
+        
+        if (allCorruptedFiles.length === 0) {
+            console.log('No files to process. Exiting.');
+            return;
+        }
         
         // Get the files to process based on the configured mode
         const filesToProcess = getFilesToProcess(allCorruptedFiles);
@@ -282,6 +349,18 @@ function processCorruptedFiles() {
         
     } catch (error) {
         console.error(`Error processing corrupted files: ${error.message}`);
+        console.error(error.stack);
+    }
+}
+
+/**
+ * Ensure a directory exists, creating it if needed
+ * @param {string} dirPath - Path to the directory
+ */
+function ensureDirectoryExists(dirPath) {
+    if (!fs.existsSync(dirPath)) {
+        console.log(`Creating directory: ${dirPath}`);
+        fs.mkdirSync(dirPath, { recursive: true });
     }
 }
 
@@ -289,23 +368,65 @@ function processCorruptedFiles() {
  * Write a report of all files that were fixed
  */
 function writeFixedFilesReport() {
-    const reportContent = `# YAML Glitch Corrections
+    const fixedFilesCount = fixedFiles.size;
+    const fixedPropertiesMap = new Map(); // Property -> count
+    
+    // Count how many times each property was fixed
+    for (const [_, properties] of fixedFiles.entries()) {
+        for (const property of properties) {
+            fixedPropertiesMap.set(property, (fixedPropertiesMap.get(property) || 0) + 1);
+        }
+    }
+    
+    // Build the report content
+    let reportContent = `# YAML Glitch Corrections
 Last updated: ${new Date().toISOString()}
 
 Processing mode: ${PROCESSING_MODE}
 ${PROCESSING_MODE === 'sample' ? `Sample size: ${MAX_SAMPLE_SIZE}` : ''}
 ${PROCESSING_MODE === 'specific' ? `Specific files: ${SPECIFIC_FILES_TO_PROCESS.length}` : ''}
 
-Properties fixed:
+## Properties Checked
 ${PROPERTIES_TO_FIX.map(prop => `- ${prop.key} (${prop.method})`).join('\n')}
 
-Fixed ${fixedFiles.size} files:
+## Files Evaluated (${evaluatedFiles.size})
+${Array.from(evaluatedFiles).map(file => `- ${file}`).join('\n')}
 
-${Array.from(fixedFiles).map(file => `- ${file}`).join('\n')}
+## Summary of Fixes
+- Total files fixed: ${fixedFilesCount}
+- Total properties fixed: ${Array.from(fixedPropertiesMap.entries()).reduce((sum, [_, count]) => sum + count, 0)}
+
+## Properties Successfully Fixed
+${Array.from(fixedPropertiesMap.entries())
+    .map(([property, count]) => `- ${property}: ${count} instances`)
+    .join('\n')}
+
+## Files Modified
 `;
+
+    if (fixedFilesCount > 0) {
+        for (const [filePath, properties] of fixedFiles.entries()) {
+            reportContent += `\n### ${filePath}\n`;
+            reportContent += `Fixed properties:\n`;
+            for (const property of properties) {
+                reportContent += `- ${property}\n`;
+            }
+        }
+    } else {
+        reportContent += "\nNo files were modified.";
+    }
     
-    fs.writeFileSync(TARGET_OUTPUT_FILE_PATH, reportContent, 'utf8');
-    console.log(`\nFix report written to ${TARGET_OUTPUT_FILE_PATH}`);
+    // Make sure the directory exists before writing the file
+    const targetDir = path.dirname(TARGET_OUTPUT_FILE_PATH);
+    ensureDirectoryExists(targetDir);
+    
+    // Write the report file
+    try {
+        fs.writeFileSync(TARGET_OUTPUT_FILE_PATH, reportContent, 'utf8');
+        console.log(`\nFix report written to ${TARGET_OUTPUT_FILE_PATH}`);
+    } catch (error) {
+        console.error(`Error writing report to ${TARGET_OUTPUT_FILE_PATH}:`, error);
+    }
 }
 
 // Run the script
