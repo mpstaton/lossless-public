@@ -10,7 +10,7 @@ tags:
 - Software-Development
 - DevOps
 - Check-it-Out
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/71f9b2f378fb69ba2aede828f50a3faea381879467239d19c55fc6a12e383e49.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/71f9b2f378fb69ba2aede828f50a3faea381879467239d19c55fc6a12e383e49.jpeg
 last_jina_request: '2025-03-09T06:45:14.791Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:20:56.430Z

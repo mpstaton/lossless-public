@@ -9,9 +9,9 @@ image: 'https://rubyonrails.org/assets/images/opengraph.png'
 site_name: Ruby on Rails
 title: Ruby on Rails
 favicon: 'https://rubyonrails.org/assets/images/favicon.png'
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/dbb387d517f021781ebdfeb042f5981b00a2c958a38be8835f49a19b313322d1.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/dbb387d517f021781ebdfeb042f5981b00a2c958a38be8835f49a19b313322d1.jpeg
 last_jina_request: '2025-03-09T06:45:03.168Z'
-jina_error: 'Unexpected token ''R'', "Ruby on Ra"... is not valid JSON'
+jina_error: "Unexpected token ''R'', \"Ruby on Ra\"... is not valid JSON"
 og_last_fetch: 2025-03-14T05:42:17.434Z
 ---
 

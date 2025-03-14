@@ -7,7 +7,7 @@ the world.
 tags:
 - AI-Toolkit
 - Generative-AI
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/521e5ac2caae7c1329cab144e2791c24a1796bd541224e5822b7c54440f1beeb.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/521e5ac2caae7c1329cab144e2791c24a1796bd541224e5822b7c54440f1beeb.jpeg
 image: 'https://leonardo.ai/wp-content/uploads/2025/02/thumb_KG_leonardo.jpg'
 site_name: Leonardo AI
 title: 'AI Image Generator - Create Art, Images & Video'

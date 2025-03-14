@@ -11,7 +11,7 @@ image: 'https://ladybird.org/assets/img/ladybird-purple-on-black.png'
 site_name: Ladybird
 title: An open source modern browser.
 favicon: 'https://ladybird.org/assets/img/ladybird_favicon.png'
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8653be1cd285d2660652db0e8fc6986b4101f77f6a1efca1f16701e6d430e4ac.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8653be1cd285d2660652db0e8fc6986b4101f77f6a1efca1f16701e6d430e4ac.jpeg
 last_jina_request: '2025-03-09T06:45:05.408Z'
 jina_error:   Unexpected token 'L', "Ladybird
 ="... is not valid JSON

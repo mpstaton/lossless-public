@@ -9,7 +9,7 @@ title: npm | Home
 favicon: 'https://static-production.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png'
 tags:
 - Software-Development
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/58d046c1d166c4fa0907206d4e2d5937f34712a4e1160b5de9227a95b6628b4d.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/58d046c1d166c4fa0907206d4e2d5937f34712a4e1160b5de9227a95b6628b4d.jpeg
 last_jina_request: '2025-03-09T06:45:07.272Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:01.816Z

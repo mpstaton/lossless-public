@@ -8,7 +8,7 @@ physical AI systems such as autonomous vehicles (AVs) and robots.
 tags:
 - AI-Toolkit
 - Models
-image:   https://www.nvidia.com/content/dam/en-zz/Solutions/ai/cosmos/nvidia-cosmos-og.jpg
+image: https://www.nvidia.com/content/dam/en-zz/Solutions/ai/cosmos/nvidia-cosmos-og.jpg
 site_name: NVIDIA
 title: NVIDIA Cosmos World Foundation Models
 og_errors: true

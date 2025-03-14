@@ -4,7 +4,7 @@ url: 'https://www.deepseek.com/'
 tags:
 - AI-Toolkit
 - Model-Producers
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bd62c0962c92f5aec74eaff6566de1dc28669b3f91cc035284cf3410ba19947e.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bd62c0962c92f5aec74eaff6566de1dc28669b3f91cc035284cf3410ba19947e.jpeg
 image: 'https://chat.deepseek.com/deepseek-chat.jpeg'
 site_name: DeepSeek
 title: DeepSeek

@@ -7,7 +7,7 @@ favicon: 'https://porffor.dev/logo.png'
 tags:
 - Software-Development
 - DevOps
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6e72c3d959b2de62eca1b9712d24dd4b1eb417270f70678c9f419bf640224bc0.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6e72c3d959b2de62eca1b9712d24dd4b1eb417270f70678c9f419bf640224bc0.jpeg
 og_errors: true
 og_last_error: '2025-03-07T10:19:45.158Z'
 og_error_message: HTTP error 401

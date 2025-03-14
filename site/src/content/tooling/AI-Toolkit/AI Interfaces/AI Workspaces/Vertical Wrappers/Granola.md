@@ -12,7 +12,7 @@ tags:
 - AI-Interfaces
 - AI-Workspaces
 - Vertical-Wrappers
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a7264d3a74e0d2f4336e24c24afcd6e0cf36ac3b03c382d057f70e58316de813.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a7264d3a74e0d2f4336e24c24afcd6e0cf36ac3b03c382d057f70e58316de813.jpeg
 last_jina_request: '2025-03-09T06:45:09.030Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:20:56.756Z

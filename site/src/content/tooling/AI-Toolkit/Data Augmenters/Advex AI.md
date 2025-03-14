@@ -7,11 +7,11 @@ cost.
 tags:
 - AI-Toolkit
 - Data-Augmenters
-image:   https://cdn.prod.website-files.com/66007cbeb967491a9d02e9ad/677ba6a73a963e5e6ed7594f_Advex-webclip-256.png
+image: https://cdn.prod.website-files.com/66007cbeb967491a9d02e9ad/677ba6a73a963e5e6ed7594f_Advex-webclip-256.png
 site_name: Advex
 title: Advex
-favicon:   https://cdn.prod.website-files.com/66007cbeb967491a9d02e9ad/677d5394c5731b4671b03a9b_Advex-favicon-16x16.png
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/60ad133053803c797828bd814e6d5d3fa916e171d095e56f260bb3ded608aea4.jpeg
+favicon: https://cdn.prod.website-files.com/66007cbeb967491a9d02e9ad/677d5394c5731b4671b03a9b_Advex-favicon-16x16.png
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/60ad133053803c797828bd814e6d5d3fa916e171d095e56f260bb3ded608aea4.jpeg
 last_jina_request: '2025-03-09T06:45:18.561Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:19.165Z

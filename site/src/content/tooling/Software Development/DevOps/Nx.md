@@ -12,7 +12,7 @@ favicon: 'https://nx.dev/favicon/favicon-32x32.png'
 tags:
 - Software-Development
 - DevOps
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/02b1dcf8869161a56201454aaba2ce22a3e7dcc5a726d7caf773e59bdb760c1f.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/02b1dcf8869161a56201454aaba2ce22a3e7dcc5a726d7caf773e59bdb760c1f.jpeg
 last_jina_request: '2025-03-09T06:45:05.428Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:02.915Z

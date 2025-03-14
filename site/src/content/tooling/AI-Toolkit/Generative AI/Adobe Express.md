@@ -5,7 +5,7 @@ parent_org: '[[Adobe]]'
 tags:
 - AI-Toolkit
 - Generative-AI
-image:   https://www.adobe.com/express/media_1b5feac50b240ac50461b75455f51032ee15e002d.jpeg?width=1200&format=pjpg&optimize=medium
+image: https://www.adobe.com/express/media_1b5feac50b240ac50461b75455f51032ee15e002d.jpeg?width=1200&format=pjpg&optimize=medium
 site_name: Adobe Express
 title: 'Free Design, Photo, and Video Tool - Design Made Easy'
 favicon: 'https://www.adobe.com/express/data:,'

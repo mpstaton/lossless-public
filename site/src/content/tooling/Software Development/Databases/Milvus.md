@@ -6,7 +6,7 @@ favicon: 'https://milvus.io/favicon-32x32.png'
 tags:
 - Software-Development
 - Databases
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/577610f1494f292800a58bbb5f3ef67c8438a7b0f0e21421d2079103378c9956.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/577610f1494f292800a58bbb5f3ef67c8438a7b0f0e21421d2079103378c9956.jpeg
 og_errors: true
 og_last_error: '2025-03-07T10:19:45.249Z'
 og_error_message: HTTP error 401

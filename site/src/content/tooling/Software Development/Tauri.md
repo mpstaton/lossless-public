@@ -8,7 +8,7 @@ title: 'Create small, fast, secure, cross-platform applications'
 favicon: 'https://v2.tauri.app/favicon.svg'
 tags:
 - Software-Development
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/579e44e7f6d0db29bf9c15cfb9a78fda95b385b6895efd1fc866419322202fc1.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/579e44e7f6d0db29bf9c15cfb9a78fda95b385b6895efd1fc866419322202fc1.jpeg
 last_jina_request: '2025-03-09T06:45:06.723Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:01.813Z

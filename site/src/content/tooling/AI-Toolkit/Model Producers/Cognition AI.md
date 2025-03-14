@@ -7,7 +7,7 @@ engineering teams achieve more.
 tags:
 - AI-Toolkit
 - Model-Producers
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/fc958cd9bf8fa3e282b24b75a09740a95a033a29f68bc1d75fde17fb45beb71d.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/fc958cd9bf8fa3e282b24b75a09740a95a033a29f68bc1d75fde17fb45beb71d.jpeg
 image: 'https://www.cognition.ai/images/social.png'
 site_name: Cognition
 title: An applied AI lab building the future of software engineering

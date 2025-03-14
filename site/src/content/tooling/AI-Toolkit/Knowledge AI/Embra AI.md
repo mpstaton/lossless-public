@@ -7,11 +7,11 @@ an hour of work into 5 minutes — every day.
 tags:
 - AI-Toolkit
 - Knowledge-AI
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/01c60da6b88b6488c29e22c565888488ee39a66a9d7c9244fa418259c1987ec1.jpeg
-image:   https://cdn.prod.website-files.com/66c8d969bc903919e4b1e5f1/66cf95c92587001d68617c03_OG_card_white.png
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/01c60da6b88b6488c29e22c565888488ee39a66a9d7c9244fa418259c1987ec1.jpeg
+image: https://cdn.prod.website-files.com/66c8d969bc903919e4b1e5f1/66cf95c92587001d68617c03_OG_card_white.png
 site_name: Embra
 title: Embra - The AI Operating System to simplify your workday
-favicon:   https://cdn.prod.website-files.com/670e96ae3791772722362385/673a79f8a5fe7ade4cb5ad0b_66ccca267ae2edaa3d402a5c_favicon.png
+favicon: https://cdn.prod.website-files.com/670e96ae3791772722362385/673a79f8a5fe7ade4cb5ad0b_66ccca267ae2edaa3d402a5c_favicon.png
 last_jina_request: '2025-03-09T06:44:58.971Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:18.724Z

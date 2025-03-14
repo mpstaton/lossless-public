@@ -10,7 +10,7 @@ site_name: MultitaskAI
 title:   MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini, and Top
 AI Models
 favicon: 'https://multitaskai.com/en/icon.png?3c861ab986d0dc18'
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/dc368d764c9e75a8e260ded4336dbfd5f48d0794ad0a5ef8bc26f10c2bd84097.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/dc368d764c9e75a8e260ded4336dbfd5f48d0794ad0a5ef8bc26f10c2bd84097.jpeg
 last_jina_request: '2025-03-09T06:45:10.596Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:20:56.744Z

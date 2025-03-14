@@ -6,7 +6,7 @@ tags:
 - AI-Toolkit
 - Generative-AI
 - Code-Generators
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ae6e4be24e4edcbcb9e65baac5af5f7c4f16fbc7b269dac3a0cf78f045364d31.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ae6e4be24e4edcbcb9e65baac5af5f7c4f16fbc7b269dac3a0cf78f045364d31.jpeg
 image: 'https://abacus.ai/static/og/og_codellm3.jpg'
 site_name: Abacus.AI
 title: Abacus.AI - CodeLLM

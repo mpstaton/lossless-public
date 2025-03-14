@@ -9,9 +9,9 @@ title: Cloud Monitoring as a Service | Datadog
 favicon: 'https://imgix.datadoghq.com/img/favicons/dd-favicon.png'
 tags:
 - Data-Utilities
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2850f31e276b1d5ea84ab307c491a60a1ef46ea3c2986ceb55e478fa3cafd145.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2850f31e276b1d5ea84ab307c491a60a1ef46ea3c2986ceb55e478fa3cafd145.jpeg
 last_jina_request: '2025-03-09T06:44:58.640Z'
-jina_error: 'Unexpected token ''P'', "Published "... is not valid JSON'
+jina_error: "Unexpected token ''P'', \"Published \"... is not valid JSON"
 og_last_fetch: 2025-03-07T05:19:01.835Z
 og_errors: true
 og_last_error: '2025-03-14T05:42:36.779Z'

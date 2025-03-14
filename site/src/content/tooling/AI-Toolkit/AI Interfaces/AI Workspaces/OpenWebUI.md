@@ -10,7 +10,7 @@ tags:
 site_name: Open WebUI
 title: Open WebUI
 favicon: 'https://www.openwebui.com/./favicon.png'
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7a21a1eab0163b92630bb1dec4d0a75059952c9aaf66e3cd0b14ac0d5640742b.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7a21a1eab0163b92630bb1dec4d0a75059952c9aaf66e3cd0b14ac0d5640742b.jpeg
 og_errors: true
 og_last_error: '2025-03-07T10:19:46.162Z'
 og_error_message: HTTP error 401

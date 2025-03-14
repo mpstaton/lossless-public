@@ -7,11 +7,11 @@ without tedious environment configuration or management.
 image: 'https://www.docker.com/app/uploads/2023/06/meta-image-homepage-1110x580.png'
 site_name: Docker
 title: 'Docker: Accelerated Container Application Development'
-favicon:   https://www.docker.com/app/uploads/2024/02/cropped-docker-logo-favicon-192x192.png
+favicon: https://www.docker.com/app/uploads/2024/02/cropped-docker-logo-favicon-192x192.png
 tags:
 - Software-Development
 - DevOps
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b9f67154bc6abfc949f785b488b9db7cdc0c8646d623112aafb52316d4b64864.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b9f67154bc6abfc949f785b488b9db7cdc0c8646d623112aafb52316d4b64864.jpeg
 last_jina_request: '2025-03-09T06:45:09.462Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:02.917Z

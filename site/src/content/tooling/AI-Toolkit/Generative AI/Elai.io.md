@@ -7,7 +7,7 @@ parent_org: '[[Panopto]]'
 tags:
 - AI-Toolkit
 - Generative-AI
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/911239b13ca5fe22812a6c5f2a13a0669afe8b0073b6b08af27d16c1a9f04e84.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/911239b13ca5fe22812a6c5f2a13a0669afe8b0073b6b08af27d16c1a9f04e84.jpeg
 image: 'https://elai.io/wp-content/uploads/2023/01/social_thumbnails-1024x502.png'
 site_name: Elai.io
 title: Elai.io - The Most Advanced and Intuitive AI Video Generator

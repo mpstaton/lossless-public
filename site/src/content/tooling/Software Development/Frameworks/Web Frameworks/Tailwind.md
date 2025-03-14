@@ -5,7 +5,7 @@ tags:
 - Software-Development
 - Frameworks
 - Web-Frameworks
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/722f1c5535fdcd19675be752438115d292be21edb3c6b21b33aa27f54590ef46.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/722f1c5535fdcd19675be752438115d292be21edb3c6b21b33aa27f54590ef46.jpeg
 image: 'https://tailwindcss.com/opengraph-image.jpg?22502194f1a254bc'
 site_name: Tailwind CSS
 title: Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.

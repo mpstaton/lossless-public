@@ -9,7 +9,7 @@ tags:
 url: 'https://flowiseai.com/'
 github_url: 'https://github.com/FlowiseAI/Flowisec'
 github_profile_url: 'https://github.com/FlowiseAI/'
-image:   https://remarkable-smakager-ddb2b7.netlify.app/opengraph-image.png?2eca201df198027c
+image: https://remarkable-smakager-ddb2b7.netlify.app/opengraph-image.png?2eca201df198027c
 site_name: Flowise
 title: Low code LLM Apps Builder
 og_errors: true

@@ -1,13 +1,13 @@
 ---
 site_uuid: "c89dcebe-4dc1-4da9-b345-ad548ed4b698"
 url: 'https://www.blender.org/'
-image:   https://www.blender.org/wp-content/uploads/2025/02/splash_artwork_2K-480x270.webp
+image: https://www.blender.org/wp-content/uploads/2025/02/splash_artwork_2K-480x270.webp
 site_name: Blender
 title: Free and Open 3D Creation Software
-favicon:   https://www.blender.org/wp-content/themes/bthree/assets/icons/favicon-32x32.png
+favicon: https://www.blender.org/wp-content/themes/bthree/assets/icons/favicon-32x32.png
 tags:
 - Creative
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/10c38833207c9dae614d56b5f1b3e52ab7f02323a5b9d583372dfb8cc137ce6c.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/10c38833207c9dae614d56b5f1b3e52ab7f02323a5b9d583372dfb8cc137ce6c.jpeg
 last_jina_request: '2025-03-09T06:45:19.676Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:01.838Z

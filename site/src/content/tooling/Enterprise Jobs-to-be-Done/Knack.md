@@ -19,7 +19,7 @@ jina_error: "'HTTP error! status: 429'"
 image: 'https://www.knack.com/wp-content/uploads/2023/09/Untitled-design-87.png'
 site_name: 'Knack: No-Code Application Development Platform'
 title: Home
-favicon:   https://www.knack.com/wp-content/smush-webp/2023/06/cropped-favicon-1-192x192.png.webp
+favicon: https://www.knack.com/wp-content/smush-webp/2023/06/cropped-favicon-1-192x192.png.webp
 og_fetched_url: 'https://www.knack.com'
 og_last_fetch: '2025-03-14T04:42:10.316Z'
 ---

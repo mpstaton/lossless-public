@@ -4,7 +4,7 @@ url: 'https://www.warp.dev'
 zinger: The intelligent terminal.
 description:   Become a command line power user on day one. Warp combines AI and your dev
 team’s knowledge in one fast, intuitive terminal.
-image:   https://leading-bell-3e1c02e64d.media.strapiapp.com/hero_og_1017_0fe1efb432.png
+image: https://leading-bell-3e1c02e64d.media.strapiapp.com/hero_og_1017_0fe1efb432.png
 site_name: Warp
 title: 'Warp: The intelligent terminal'
 favicon: 'https://www.warp.dev/favicon.png'
@@ -12,7 +12,7 @@ tags:
 - AI-Toolkit
 - Generative-AI
 - Code-Generators
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8d73894f4f6f87fe2f4d245c0b83e68bcdcbf71a3e1522fd70aeebdc4c5e1a12.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8d73894f4f6f87fe2f4d245c0b83e68bcdcbf71a3e1522fd70aeebdc4c5e1a12.jpeg
 last_jina_request: '2025-03-09T06:45:14.839Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:20:56.434Z

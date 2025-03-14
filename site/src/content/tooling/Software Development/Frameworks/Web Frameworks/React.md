@@ -10,7 +10,7 @@ tags:
 - Web-Frameworks
 - Software-Development
 - Frameworks
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ddc6a11b6e0607cf0fced41dbc927d3f8e8cc05491223bb082beae0cd2b4bdef.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ddc6a11b6e0607cf0fced41dbc927d3f8e8cc05491223bb082beae0cd2b4bdef.jpeg
 last_jina_request: '2025-03-09T06:45:12.860Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:20:56.420Z

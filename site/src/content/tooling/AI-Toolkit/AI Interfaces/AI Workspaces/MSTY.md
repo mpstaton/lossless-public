@@ -8,7 +8,7 @@ tags:
 - Check-it-Out
 - Must-Have
 - Desktop-App
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2d243b015c15897c49c435b077e62a8ccd3573caa27f7822a3086fab22e0aeac.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2d243b015c15897c49c435b077e62a8ccd3573caa27f7822a3086fab22e0aeac.jpeg
 image: 'https://msty.app/msty-screenshots/msty-og-image.png'
 site_name: Msty
 title: Msty - Using AI Models made Simple and Easy

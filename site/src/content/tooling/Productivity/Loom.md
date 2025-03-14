@@ -2,7 +2,7 @@
 site_uuid: "98071106-a64d-469e-8ee4-3b990254f6cc"
 url: 'https://www.loom.com/'
 parent_org: '[[Atlassian]]'
-image:   https://cdn.sanity.io/images/pvn35iyy/production/2bb98edb0f378799d46fc7aa3564b9ad28604073-1200x627.png
+image: https://cdn.sanity.io/images/pvn35iyy/production/2bb98edb0f378799d46fc7aa3564b9ad28604073-1200x627.png
 site_name: Loom
 title: Free screen recorder for Mac and PC | Loom
 favicon: 'https://cdn.loom.com/assets/favicons-loom/android-chrome-192x192.png'

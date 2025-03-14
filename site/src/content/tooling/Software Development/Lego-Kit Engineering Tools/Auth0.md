@@ -9,7 +9,7 @@ title: 'Secure access for everyone, but not just anyone.'
 tags:
 - Software-Development
 - Lego-Kit-Engineering-Tools
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/51017da681cdf1133998fabba2e8b6100f39ed3ee6d13446c7f78d592b067b89.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/51017da681cdf1133998fabba2e8b6100f39ed3ee6d13446c7f78d592b067b89.jpeg
 og_errors: true
 og_last_error: '2025-03-07T10:19:45.079Z'
 og_error_message: HTTP error 401

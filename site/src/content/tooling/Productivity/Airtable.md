@@ -11,7 +11,7 @@ tags:
 - Asynchronous-Communication
 - Workflow-Management
 - JAM-Stack
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/78242d8f3ebfd297f184895df2c4cb1f76fe53ad45f507c83d9cda105e3df0ac.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/78242d8f3ebfd297f184895df2c4cb1f76fe53ad45f507c83d9cda105e3df0ac.jpeg
 last_jina_request: '2025-03-09T06:45:04.681Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:01.824Z

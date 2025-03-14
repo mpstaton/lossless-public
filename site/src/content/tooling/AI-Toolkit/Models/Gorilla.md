@@ -6,7 +6,7 @@ zinger: Large Language Model Connected with Massive APIs
 tags:
 - AI-Toolkit
 - Models
-image:   https://gorilla.cs.berkeley.edu/assets/img/blog_post_4_gorilla_open_function_calling.png
+image: https://gorilla.cs.berkeley.edu/assets/img/blog_post_4_gorilla_open_function_calling.png
 site_name: Gorilla
 title: Gorilla
 og_errors: true

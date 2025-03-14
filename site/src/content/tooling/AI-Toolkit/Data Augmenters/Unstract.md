@@ -4,7 +4,7 @@ url: 'https://unstract.com/'
 tags:
 - AI-Toolkit
 - Data-Augmenters
-image:   https://unstract.com/wp-content/uploads/2024/10/extract-data-from-documents-with-unstract.png
+image: https://unstract.com/wp-content/uploads/2024/10/extract-data-from-documents-with-unstract.png
 site_name: Unstract.com →
 title: 'Unstract: LLM Powered ETL for Unstructured Data'
 favicon: 'https://unstract.com/wp-content/uploads/2024/03/unstract-u.png'

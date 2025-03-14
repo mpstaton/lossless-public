@@ -7,7 +7,7 @@ affordable, reliable GPU cloud.
 tags:
 - AI-Toolkit
 - AI-Infrastructure
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/103d0fbce07303af3a64726b3cee4c831f03e61f1ce67fa2cce1f7647cea4c25.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/103d0fbce07303af3a64726b3cee4c831f03e61f1ce67fa2cce1f7647cea4c25.jpeg
 image: 'https://novita.ai/logo/logo.svg'
 site_name: Novita AI
 title: 'Novita AI - Model APIs, Serverless, GPU Instance In One AI Cloud'

@@ -7,7 +7,7 @@ title: SQLite Home Page
 tags:
 - Software-Development
 - Databases
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/62671a25f564977d59e9287c15ab4fc12257bc3d20f698851481cab0d3a617d5.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/62671a25f564977d59e9287c15ab4fc12257bc3d20f698851481cab0d3a617d5.jpeg
 last_jina_request: '2025-03-09T06:45:13.156Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:02.920Z

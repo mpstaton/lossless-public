@@ -11,7 +11,7 @@ title: Bright Data - All in One Platform for Proxies and Web Scraping
 favicon: 'https://brightdata.com/wp-content/themes/brightdata/assets/images/favicon.png'
 tags:
 - Data-Utilities
-og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0b770999a184d5d06c77b60a483993483bba1af944df6fedaf7dbbc977797d19.jpeg
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0b770999a184d5d06c77b60a483993483bba1af944df6fedaf7dbbc977797d19.jpeg
 last_jina_request: '2025-03-09T06:45:17.950Z'
 jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:01.835Z
