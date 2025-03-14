@@ -2,144 +2,240 @@ const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
 const matter = require('gray-matter');
-const { v4: uuidv4 } = require('uuid');
+const USER_OPTIONS = require('./getUserOptionsForBuild.cjs');
 
 // ============================================================================
-// User Configuration Options
+// YAML Processing Functions
 // ============================================================================
 
-const USER_OPTIONS = {
-  // Directory Configuration
-  directories: {
-    content: path.join(process.cwd(), 'src/content/tooling'),
-    fixes: path.join(process.cwd(), 'scripts/fixes-needed'),
-    excludeUrlCheck: ['Explainers'] // Directories to exclude from URL checks
-  },
-
-  // YAML Properties
-  frontmatter: {
-    required: {
-      properties: ['site_uuid'],
-      generateIfMissing: {
-        site_uuid: () => uuidv4()
-      }
-    },
-    propertyFormatting: {
-      convertHyphensToUnderscores: true,
-      ensureArrayForTags: true
-    }
-  },
-
-  // File Generation
-  reporting: {
-    issueFiles: {
-      lowercaseTags: 'Lowercase-Tags.md',
-      missingUrls: 'Missing-URLs.md'
-    }
-  }
-};
-
-// Ensure fixes directory exists
-if (!fs.existsSync(USER_OPTIONS.directories.fixes)) {
-  fs.mkdirSync(USER_OPTIONS.directories.fixes, { recursive: true });
+/**
+ * Pre-process and clean YAML content before parsing
+ * @param {string} content - Raw file content
+ * @returns {string} Cleaned content
+ */
+function preprocessYAML(content) {
+  return USER_OPTIONS.frontmatter.preprocessing.cleanContent(content);
 }
 
-// Find all markdown files recursively
-const markdownFiles = glob.sync('**/*.md', {
-  cwd: USER_OPTIONS.directories.content,
-  absolute: true
-});
+/**
+ * Format a YAML value according to its property definition
+ * @param {string} key - Property key
+ * @param {any} value - Property value
+ * @returns {any} Formatted value
+ */
+function formatYAMLValue(key, value) {
+  const propertyDef = USER_OPTIONS.frontmatter.properties[key];
+  if (!propertyDef) return value;
 
-let filesModified = 0;
-let totalReplacements = 0;
-let lowercaseTags = new Set();
-let missingUrls = new Set();
+  if (propertyDef.isArray && Array.isArray(value)) {
+    const formatted = propertyDef.format ? value.map(v => propertyDef.format(v)) : value;
+    const { prefix, itemPrefix, itemSuffix, suffix } = USER_OPTIONS.frontmatter.formatting.array;
+    return `${prefix}${formatted.map(v => `${itemPrefix}${v}${itemSuffix}`).join('')}${suffix}`;
+  }
 
-markdownFiles.forEach(filePath => {
-  const content = fs.readFileSync(filePath, 'utf8');
-  const parsedFile = matter(content);
+  return propertyDef.format ? propertyDef.format(value) : value;
+}
+
+/**
+ * Validate a YAML value against its property definition
+ * @param {string} key - Property key
+ * @param {any} value - Property value
+ * @returns {boolean} Whether the value is valid
+ */
+function validateYAMLValue(key, value) {
+  const propertyDef = USER_OPTIONS.frontmatter.properties[key];
+  if (!propertyDef || !propertyDef.validate) return true;
+
+  if (propertyDef.isArray && Array.isArray(value)) {
+    return value.every(v => propertyDef.validate(v));
+  }
+
+  return propertyDef.validate(value);
+}
+
+/**
+ * Process YAML frontmatter to ensure it follows defined rules
+ * @param {string} content - File content
+ * @returns {Object} Processed content and modifications info
+ */
+function processYAMLFrontmatter(content) {
+  // Pre-process content
+  let processedContent = preprocessYAML(content);
   
-  // Get the raw frontmatter string
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return;
-  
-  const frontmatter = match[1];
-  let modifiedFrontmatter = frontmatter;
-  let replacementsInFile = 0;
-  
-  // Check and add required properties
-  USER_OPTIONS.frontmatter.required.properties.forEach(prop => {
-    if (!parsedFile.data[prop] && USER_OPTIONS.frontmatter.required.generateIfMissing[prop]) {
-      const generatedValue = USER_OPTIONS.frontmatter.required.generateIfMissing[prop]();
-      const newProperty = `${prop}: "${generatedValue}"`;
-      modifiedFrontmatter = `${newProperty}\n${modifiedFrontmatter}`;
-      replacementsInFile++;
+  // Validate basic YAML structure
+  const preCheckErrors = USER_OPTIONS.frontmatter.validation.preCheck(processedContent);
+  if (preCheckErrors.length > 0) {
+    console.error('Pre-check validation errors:', preCheckErrors);
+    return { content: processedContent, modified: false, errors: preCheckErrors };
+  }
+
+  // Parse YAML
+  const { data: frontmatter, content: bodyContent } = matter(processedContent);
+  let modified = false;
+  let replacements = 0;
+  const changes = {};
+
+  // Process each property
+  Object.entries(USER_OPTIONS.frontmatter.properties).forEach(([key, def]) => {
+    // Generate missing required properties
+    if (def.required && !frontmatter[key] && def.generate) {
+      frontmatter[key] = def.generate();
+      modified = true;
+      replacements++;
+      changes[key] = { action: 'generated', value: frontmatter[key] };
+    }
+
+    // Format existing properties
+    if (frontmatter[key] !== undefined) {
+      const formatted = formatYAMLValue(key, frontmatter[key]);
+      if (formatted !== frontmatter[key]) {
+        frontmatter[key] = formatted;
+        modified = true;
+        replacements++;
+        changes[key] = { action: 'formatted', value: formatted };
+      }
+
+      // Validate formatted value
+      if (!validateYAMLValue(key, frontmatter[key])) {
+        console.warn(`Invalid value for ${key}:`, frontmatter[key]);
+      }
     }
   });
 
-  // Replace hyphens in variable names with underscores if enabled
-  if (USER_OPTIONS.frontmatter.propertyFormatting.convertHyphensToUnderscores) {
-    modifiedFrontmatter = modifiedFrontmatter.replace(/^([^:\r\n]+?):/gm, (match, varName) => {
-      const newVarName = varName.trim().replace(/-/g, '_');
-      if (newVarName !== varName.trim()) {
-        replacementsInFile++;
-        return `${newVarName}:`;
-      }
-      return match;
-    });
+  // Post-validation
+  const postCheckErrors = USER_OPTIONS.frontmatter.validation.postCheck(frontmatter);
+  if (postCheckErrors.length > 0) {
+    console.error('Post-check validation errors:', postCheckErrors);
   }
 
-  // Handle tags formatting
-  if (parsedFile.data.tags && USER_OPTIONS.frontmatter.propertyFormatting.ensureArrayForTags) {
-    const tags = Array.isArray(parsedFile.data.tags) ? parsedFile.data.tags : [parsedFile.data.tags];
-    const modifiedTags = tags.map(tag => tag.replace(/\s+/g, '-'));
-    
-    // Check for lowercase tags
-    modifiedTags.forEach(tag => {
-      if (tag[0] && tag[0].toLowerCase() === tag[0]) {
-        lowercaseTags.add(tag);
-      }
-    });
+  // Generate new content if modified
+  if (modified) {
+    processedContent = matter.stringify(bodyContent, frontmatter);
+  }
 
-    // Update frontmatter if tags were modified
-    if (JSON.stringify(tags) !== JSON.stringify(modifiedTags)) {
-      modifiedFrontmatter = modifiedFrontmatter.replace(
-        /^tags:.*$/m,
-        `tags: [${modifiedTags.map(t => `"${t}"`).join(', ')}]`
-      );
-      replacementsInFile++;
+  return {
+    content: processedContent,
+    modified,
+    replacements,
+    changes,
+    errors: [...preCheckErrors, ...postCheckErrors]
+  };
+}
+
+/**
+ * Process all markdown files in the specified directory
+ * @param {string} contentDirectory - Directory containing markdown files 
+ * @returns {Object} Processing results
+ */
+function processAllFiles(contentDirectory) {
+  // Ensure the fixes directory exists
+  const fixesDir = USER_OPTIONS.directories.fixes;
+  if (!fs.existsSync(fixesDir)) {
+    fs.mkdirSync(fixesDir, { recursive: true });
+  }
+
+  // Process all markdown files
+  const markdownFiles = glob.sync('**/*.md', {
+    cwd: contentDirectory,
+    absolute: true
+  });
+
+  let filesModified = 0;
+  let totalReplacements = 0;
+  const errors = new Map();
+
+  markdownFiles.forEach(filePath => {
+    try {
+      const content = fs.readFileSync(filePath, 'utf8');
+      const result = processYAMLFrontmatter(content);
+
+      if (result.errors.length > 0) {
+        errors.set(filePath, result.errors);
+      }
+
+      if (result.modified) {
+        fs.writeFileSync(filePath, result.content, 'utf8');
+        filesModified++;
+        totalReplacements += result.replacements;
+        console.log(`Modified ${path.relative(process.cwd(), filePath)}:`, result.changes);
+      }
+    } catch (error) {
+      console.error(`Error processing ${filePath}:`, error);
+      errors.set(filePath, [error.message]);
     }
+  });
+
+  // Write error report
+  if (errors.size > 0) {
+    const errorReport = Array.from(errors.entries())
+      .map(([file, fileErrors]) => `${file}:\n${fileErrors.map(e => `  - ${e}`).join('\n')}`)
+      .join('\n\n');
+    fs.writeFileSync(
+      path.join(fixesDir, 'YAML-Errors.md'),
+      errorReport,
+      'utf8'
+    );
   }
 
-  // Check for missing URLs in non-excluded directories
-  if (!parsedFile.data.url && 
-      !USER_OPTIONS.directories.excludeUrlCheck.some(dir => filePath.includes(dir))) {
-    missingUrls.add(path.relative(USER_OPTIONS.directories.content, filePath));
+  // Return summary
+  return {
+    filesProcessed: markdownFiles.length,
+    filesModified,
+    totalReplacements,
+    errorsCount: errors.size
+  };
+}
+
+/**
+ * Process a single file
+ * @param {string} filePath - Path to the file to process
+ * @returns {Object} Processing result
+ */
+function processFile(filePath) {
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    const result = processYAMLFrontmatter(content);
+
+    if (result.modified) {
+      fs.writeFileSync(filePath, result.content, 'utf8');
+      console.log(`Modified ${path.relative(process.cwd(), filePath)}:`, result.changes);
+    }
+
+    return {
+      modified: result.modified,
+      replacements: result.replacements,
+      changes: result.changes,
+      errors: result.errors
+    };
+  } catch (error) {
+    console.error(`Error processing ${filePath}:`, error);
+    return {
+      modified: false,
+      replacements: 0,
+      changes: {},
+      errors: [error.message]
+    };
   }
+}
 
-  if (frontmatter !== modifiedFrontmatter) {
-    // Replace the original frontmatter with modified version
-    const newContent = content.replace(frontmatter, modifiedFrontmatter);
-    fs.writeFileSync(filePath, newContent, 'utf8');
-    filesModified++;
-    totalReplacements += replacementsInFile;
-    console.log(`Modified ${path.relative(process.cwd(), filePath)}: ${replacementsInFile} replacements`);
-  }
-});
+// Export the functions for use by other scripts
+module.exports = {
+  processYAMLFrontmatter,
+  processAllFiles,
+  processFile,
+  preprocessYAML,
+  formatYAMLValue,
+  validateYAMLValue
+};
 
-// Write issue reports
-Object.entries(USER_OPTIONS.reporting.issueFiles).forEach(([type, filename]) => {
-  const data = type === 'lowercaseTags' ? lowercaseTags : missingUrls;
-  fs.writeFileSync(
-    path.join(USER_OPTIONS.directories.fixes, filename),
-    data.size > 0 ? Array.from(data).join('\n') : '',
-    'utf8'
-  );
-});
-
-// Log summary
-console.log(`\nSummary:`);
-console.log(`Files modified: ${filesModified}`);
-console.log(`Total replacements: ${totalReplacements}`);
-console.log(`Lowercase tags found: ${lowercaseTags.size}`);
-console.log(`Files missing URLs: ${missingUrls.size}`);
+// Execute if run directly
+if (require.main === module) {
+  const contentDir = USER_OPTIONS.directories.content;
+  const results = processAllFiles(contentDir);
+  
+  console.log('\nSummary:');
+  console.log(`Files processed: ${results.filesProcessed}`);
+  console.log(`Files modified: ${results.filesModified}`);
+  console.log(`Total replacements: ${results.totalReplacements}`);
+  console.log(`Files with errors: ${results.errorsCount}`);
+}
