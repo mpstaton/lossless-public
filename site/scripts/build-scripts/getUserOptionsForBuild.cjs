@@ -34,28 +34,36 @@ const USER_OPTIONS = {
     properties: {
       // Core properties
       site_uuid: {
-        required: true,
+        required: false,
         generate: () => uuidv4(),
         format: value => value ? value.toString() : value,
-        validate: value => /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value)
+        validate: value => !value || /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value)
       },
       url: {
-        required: true,
-        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value, // Remove quotes
-        validate: value => /^https?:\/\/.+/i.test(value)
+        required: false,
+        format: value => {
+          // Always remove quotes from URL values
+          if (!value) return value;
+          return value.replace(/^["'](.*)["']$/, '$1').trim();
+        },
+        validate: value => !value || /^https?:\/\/.+/i.test(value)
       },
       tags: {
-        required: true,
+        required: false,
         isArray: true,
         format: tag => tag ? tag.replace(/\s+/g, '-') : tag,
         arrayFormat: 'dash-list', // - item format
-        validate: tag => typeof tag === 'string' && tag.length > 0
+        validate: tag => !tag || (typeof tag === 'string' && tag.length > 0)
       },
       
       // OpenGraph properties
       image: {
-        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
-        validate: value => /^https?:\/\/.+/i.test(value)
+        format: value => {
+          // Always remove quotes from URL values
+          if (!value) return value;
+          return value.replace(/^["'](.*)["']$/, '$1').trim();
+        },
+        validate: value => !value || /^https?:\/\/.+/i.test(value)
       },
       site_name: {
         format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value
@@ -64,12 +72,28 @@ const USER_OPTIONS = {
         format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value
       },
       favicon: {
-        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
-        validate: value => /^https?:\/\/.+/i.test(value)
+        format: value => {
+          // Always remove quotes from URL values
+          if (!value) return value;
+          return value.replace(/^["'](.*)["']$/, '$1').trim();
+        },
+        validate: value => !value || /^https?:\/\/.+/i.test(value)
       },
       og_screenshot_url: {
-        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
-        validate: value => /^https?:\/\/.+/i.test(value)
+        format: value => {
+          // Always remove quotes from URL values
+          if (!value) return value;
+          return value.replace(/^["'](.*)["']$/, '$1').trim();
+        },
+        validate: value => !value || /^https?:\/\/.+/i.test(value)
+      },
+      og_image: {
+        format: value => {
+          // Always remove quotes from URL values
+          if (!value) return value;
+          return value.replace(/^["'](.*)["']$/, '$1').trim();
+        },
+        validate: value => !value || /^https?:\/\/.+/i.test(value)
       },
       
       // Timestamps and status properties
@@ -140,6 +164,7 @@ const USER_OPTIONS = {
     // Pre-processing rules
     preprocessing: {
       // List of URL properties that should always be single-line values (not block scalars)
+      // and should never have quotes
       urlProperties: [
         'url', 'image', 'favicon', 'og_screenshot_url', 'og_image'
       ],
@@ -250,6 +275,10 @@ const USER_OPTIONS = {
           }
         }
         
+        // For each URL property, ensure it has no quotes
+        const urlPropertyRegex = new RegExp(`^(${USER_OPTIONS.frontmatter.preprocessing.urlProperties.join('|')}):[ \\t]*["']([^"'\\n]+)["'][ \\t]*$`, 'gm');
+        frontmatter = frontmatter.replace(urlPropertyRegex, '$1: $2');
+        
         // Reconstruct the frontmatter
         const processedFrontmatter = processedLines.join('\n');
         
@@ -275,24 +304,7 @@ const USER_OPTIONS = {
       postCheck: (data) => {
         const errors = [];
         if (!data) errors.push('Invalid YAML data');
-        else {
-          // Check required properties
-          for (const [key, def] of Object.entries(USER_OPTIONS.frontmatter.properties)) {
-            if (def.required && data[key] === undefined) {
-              errors.push(`Missing required property: ${key}`);
-            }
-          }
-          
-          // Validate tags format
-          const tagsDef = USER_OPTIONS.frontmatter.properties.tags;
-          if (data.tags && tagsDef.required) {
-            if (!Array.isArray(data.tags)) {
-              errors.push('Tags should be an array');
-            } else if (data.tags.length === 0) {
-              errors.push('Tags array should not be empty');
-            }
-          }
-        }
+        
         return errors;
       }
     }

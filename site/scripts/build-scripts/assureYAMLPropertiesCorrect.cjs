@@ -86,10 +86,10 @@ function processYAMLFrontmatter(content) {
   
   try {
     // Parse the frontmatter with gray-matter (after cleaning)
-    const matter = grayMatter(cleanedContent);
+    const parsed = matter(cleanedContent);
     
     let modified = false;
-    const data = matter.data || {};
+    const data = parsed.data || {};
     
     // Process each property from the property definitions
     Object.entries(properties).forEach(([key, def]) => {
@@ -133,7 +133,7 @@ function processYAMLFrontmatter(content) {
     // If any properties were changed, rebuild the content with the updated frontmatter
     if (modified) {
       // Create updated content with new frontmatter
-      const updatedContent = grayMatter.stringify(matter.content, data);
+      const updatedContent = matter.stringify(parsed.content, data);
       return { content: updatedContent, modified: true, errors: [] };
     }
     

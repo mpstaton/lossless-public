@@ -15,11 +15,12 @@ This specification defines a modular build script system designed to process, va
 
 ### Core Purpose
 The build scripts evaluate, clean, modify, and augment markdown files by:
-1. Ensuring consistent YAML frontmatter formatting
-2. Validating required metadata properties
-3. Fetching and embedding external data (OpenGraph, screenshots)
-4. Processing embedded content (YouTube videos)
-5. Generating comprehensive reports on content status
+1. Evaluating the presence or absence of YAML frontmatter and their properties.  
+2. Logging instances of inconsistent YAML frontmatter formatting
+3. Validating required metadata properties
+4. Fetching and embedding external data (OpenGraph, screenshots)
+5. Processing embedded content (YouTube videos)
+6. Generating comprehensive reports on content status
 
 ### System Activation
 The entire process is initiated via `pnpm build` command, which triggers the master orchestrator script. During development, components can be tested individually by running scripts directly:
@@ -27,15 +28,55 @@ The entire process is initiated via `pnpm build` command, which triggers the mas
 node scripts/build-scripts/masterBuildScriptOrchestrator.cjs
 ```
 
-# CONSTRAINTS
+# CONSTRAINTS for AI Code Assistants
 Under no condition should you use block scalar syntax in frontmatter. 
 Under no condition should numbers be used in strings without quotes surrounding them.  
+Under no condition should URL properties have quotes around them - all URL values must be unquoted.
+
+## AI Assistant Constraints
+As an AI coding assistant working with this codebase, you MUST follow these constraints at all times:
+
+1. **NO UNASKED MODIFICATIONS**: Never modify any property requirements (required: true/false) or validation logic unless EXPLICITLY requested.
+
+2. **VALIDATION LOGIC**: Assume all validation logic is intentional and correct. Do not "fix" validation unless explicitly asked.
+
+3. **MINIMAL EDITS**: Make only the specific changes requested. Do not introduce additional "improvements" or "fixes" without explicit approval.
+
+4. **CONFIGURATION PRESERVATION**: The USER_OPTIONS object contains critical configurations. Never change its structure or validation requirements without explicit permission.
+
+5. **STRICT SCOPE ADHERENCE**: Limit all changes to exactly what was requested, even if you see other potential issues.
+
+6. **NO REQUIRED FIELDS MODIFICATION**: Never mark fields as required (required: true) without explicit instruction. When in doubt, use required: false.
+
+7. **PERMISSION BEFORE STRUCTURAL CHANGES**: Always ask permission before modifying the structure of any core configuration objects.
+
+8. **VERIFICATION REQUIRED**: Show diffs and explain changes before applying them to critical files such as getUserOptionsForBuild.cjs.
+
+9. **YAML HANDLING**: Follow exact YAML formatting rules defined in the codebase. Never introduce block scalars or unquoted values containing special characters. NEVER add quotes to URL properties - all URLs must be unquoted.
+
+10. **ERROR HANDLING PRESERVATION**: Do not modify error handling logic unless specifically requested. Error handling is carefully designed for this architecture.
+
+11. **REPORT LIMITATIONS**: If you cannot complete a task within these constraints, report the limitations rather than working around them.
+
+12. **PROPERTY OPTIONALITY**: Always assume all properties should be optional unless explicitly told otherwise. Every validator should check for null/undefined values.
+
+13. **CONFIRMATION REQUIRED**: When asked to make a change that seems to conflict with these constraints, request explicit confirmation before proceeding.
+
+14. **URL PROPERTY FORMATTING**: ALWAYS ensure URL properties (url, image, favicon, og_screenshot_url, og_image) are stored WITHOUT quotes around them. Never add quotes to URL values.
+
+These constraints take precedence over any general programming best practices or assumptions. Follow them strictly.
 
 
 ## 2. Architecture
 
 ### Component Structure
-The system follows a modular architecture with clear separation of concerns:
+
+The system should be fully non-blocking where:
+1. Each property is used by a specific operation
+2. Missing properties only affect operations that need them
+3. Files should never be rejected entirely because of a single missing property
+4. The system should log issues and continue processing
+5. The system follows a modular architecture with clear separation of concerns:
 
 ```
 scripts/build-scripts/
