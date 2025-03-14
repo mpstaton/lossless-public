@@ -7,6 +7,13 @@ const { v4: uuidv4 } = require('uuid');
 // Import configurations and evaluation functions
 const USER_OPTIONS = require('./getUserOptionsForBuild.cjs');
 const { evaluateFile } = require('./evaluateTargetContent.cjs');
+const { 
+  getFromOpenGraphIo, 
+  fetchScreenshotUrlInBackground, 
+  cleanDuplicateYamlKeys,
+  markFileWithError 
+} = require('./fetchOpenGraphData.cjs');
+const { formatEvaluationReport } = require('./getReportingFormatForBuild.cjs');
 
 // ============================================================================
 // YAML Assurance Functions
@@ -95,6 +102,60 @@ function assureYAMLProperties(filePath, evaluation) {
 }
 
 // ============================================================================
+// OpenGraph Processing Functions
+// ============================================================================
+
+/**
+ * Process OpenGraph data for a file based on evaluation results
+ * @param {string} filePath - Path to the file
+ * @param {Object} evaluation - Evaluation results
+ * @returns {Promise<void>}
+ */
+async function processOpenGraph(filePath, evaluation) {
+  if (!evaluation.openGraph.needsProcessing) {
+    return;
+  }
+
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    const cleanedContent = cleanDuplicateYamlKeys(content);
+    const { data: frontmatter, content: fileContent } = matter(cleanedContent);
+
+    // Skip if no URL is present
+    if (!frontmatter.url) {
+      console.log(`⚠️ Skipping OpenGraph processing for ${path.basename(filePath)} - No URL present`);
+      return;
+    }
+
+    // Fetch new OpenGraph data if needed
+    if (evaluation.openGraph.needsFetch) {
+      console.log(`Fetching OpenGraph data for ${path.basename(filePath)}`);
+      const ogData = await getFromOpenGraphIo(frontmatter.url, filePath);
+      
+      if (ogData) {
+        Object.entries(ogData).forEach(([key, value]) => {
+          if (value && !frontmatter[key]) frontmatter[key] = value;
+        });
+        frontmatter.og_last_fetch = new Date().toISOString();
+      }
+    }
+
+    // Start screenshot fetch if needed
+    if (evaluation.openGraph.needsScreenshot && !frontmatter.og_errors) {
+      console.log(`Initiating screenshot fetch for ${path.basename(filePath)}`);
+      fetchScreenshotUrlInBackground(frontmatter.url, filePath);
+    }
+
+    // Save updates
+    fs.writeFileSync(filePath, matter.stringify(fileContent, frontmatter));
+    console.log(`✅ Updated OpenGraph data for ${path.basename(filePath)}`);
+  } catch (error) {
+    console.error(`Error processing OpenGraph for ${path.basename(filePath)}:`, error);
+    markFileWithError(filePath, `OpenGraph processing error: ${error.message}`);
+  }
+}
+
+// ============================================================================
 // Utility Functions
 // ============================================================================
 
@@ -127,149 +188,6 @@ function getNextIterationFilePath(baseFilePath) {
   return path.join(dir, `${baseName}_${iterationNum}${ext}`);
 }
 
-/**
- * Format evaluation and modification results as markdown
- * @param {Object} results - Combined evaluation and modification results by file
- * @returns {string} Formatted markdown content
- */
-function formatResults(results) {
-  const timestamp = new Date().toISOString();
-  let markdown = `---
-title: Content Evaluation and Modification Results
-date: ${timestamp}
-type: evaluation-report
----
-
-# Content Evaluation and Modification Results
-Generated: ${timestamp}
-
-## Summary
-Total files processed: ${Object.keys(results).length}
-
-## Detailed Results\n\n`;
-
-  // Sort files by basename
-  const sortedFiles = Object.entries(results)
-    .sort(([filePathA], [filePathB]) => {
-      const baseNameA = path.basename(filePathA).toLowerCase();
-      const baseNameB = path.basename(filePathB).toLowerCase();
-      return baseNameA.localeCompare(baseNameB);
-    });
-
-  for (const [filePath, result] of sortedFiles) {
-    if (!result.evaluation) continue;
-
-    const fileName = path.basename(filePath);
-    const fileNameNoExt = path.basename(fileName, '.md');
-    
-    // Get the path after 'content/'
-    const contentBasePath = 'site/src/content/';
-    const relativePath = filePath.split(contentBasePath)[1] || filePath;
-    
-    markdown += `### ${fileName}\n`;
-    markdown += `current_path::${relativePath}\n`;
-    markdown += `internal_link::[[${fileNameNoExt}]]\n`;
-
-    // Display existing UUID if present, or the one just generated
-    const existingUUID = result.evaluation.yaml.needsUUID ? null : 
-                        matter(fs.readFileSync(filePath, 'utf8')).data.site_uuid;
-    const generatedUUID = result.modifications.changes.uuid;
-    const uuid = existingUUID || generatedUUID;
-    
-    if (uuid) {
-      markdown += `site_uuid::${uuid}\n`;
-    }
-    markdown += '\n';
-
-    // YAML Modifications (if any were made)
-    if (result.modifications.modified) {
-      markdown += `#### YAML Modifications Made\n`;
-      markdown += `- Total replacements: ${result.modifications.replacements}\n`;
-      
-      const changes = result.modifications.changes;
-      if (changes.uuid) {
-        markdown += `- Generated UUID: ${changes.uuid}\n`;
-      }
-      if (changes.hyphenConversions) {
-        markdown += `- Variable name conversions:\n`;
-        changes.hyphenConversions.forEach(conv => {
-          markdown += `  - "${conv.from}" → "${conv.to}"\n`;
-        });
-      }
-      if (changes.tagFormatting) {
-        markdown += `- Tag formatting:\n`;
-        markdown += `  - Before: [${changes.tagFormatting.from.join(', ')}]\n`;
-        markdown += `  - After: [${changes.tagFormatting.to.join(', ')}]\n`;
-      }
-      if (changes.addedTags) {
-        markdown += `- Added path tags: ${changes.addedTags.join(', ')}\n`;
-      }
-      markdown += '\n';
-    }
-
-    // YAML Evaluation
-    markdown += `#### YAML/Frontmatter Status\n`;
-    const yaml = result.evaluation.yaml;
-    markdown += `- Needs UUID: ${yaml.needsUUID}\n`;
-    markdown += `- Needs Hyphen Conversion: ${yaml.needsHyphenConversion}\n`;
-    markdown += `- Needs Tag Formatting: ${yaml.needsTagFormatting}\n`;
-    markdown += `- Has Lowercase Tags: ${yaml.hasLowercaseTags}\n`;
-    markdown += `- Needs URL Check: ${yaml.needsURLCheck}\n`;
-    markdown += `- Needs Path Tags: ${yaml.needsPathTags}\n`;
-    if (yaml.needsPathTags) {
-      markdown += `  - Missing Tags: ${yaml.missingPathTags.join(', ')}\n`;
-    }
-    markdown += `- Processing Required: ${yaml.needsProcessing}\n\n`;
-
-    // OpenGraph Evaluation
-    markdown += `#### OpenGraph Status\n`;
-    markdown += `- Needs Fetch: ${result.evaluation.openGraph.needsFetch}\n`;
-    markdown += `- Needs Screenshot: ${result.evaluation.openGraph.needsScreenshot}\n`;
-    markdown += `- Has Errors: ${result.evaluation.openGraph.hasErrors}\n`;
-    markdown += `- Processing Required: ${result.evaluation.openGraph.needsProcessing}\n\n`;
-
-    // YouTube Evaluation
-    markdown += `#### YouTube Content Status\n`;
-    markdown += `- Total URLs Found: ${result.evaluation.youtube.allYoutubeUrls.length}\n`;
-    markdown += `  - Unique Unprocessed URLs: ${result.evaluation.youtube.danglingUrls.length}\n`;
-    markdown += `  - Already Processed URLs: ${result.evaluation.youtube.processedUrls.length}\n`;
-    markdown += `- Needs Footnotes Section: ${result.evaluation.youtube.needsFootnotesSection}\n`;
-    markdown += `- Needs Registry Update: ${result.evaluation.youtube.needsRegistryUpdate}\n`;
-    markdown += `- Processing Required: ${result.evaluation.youtube.needsProcessing}\n\n`;
-
-    if (result.evaluation.youtube.allYoutubeUrls.length > 0) {
-      markdown += `##### YouTube URLs Evaluation\n`;
-      
-      if (result.evaluation.youtube.danglingUrls.length > 0) {
-        markdown += `###### Unprocessed URLs:\n`;
-        result.evaluation.youtube.danglingUrls.forEach(url => {
-          const urlEval = result.evaluation.youtube.urlEvaluations[url];
-          markdown += `URL: ${url}\n`;
-          markdown += `- In Registry: ${urlEval.isInRegistry}\n`;
-          markdown += `- Needs Registry Update: ${urlEval.needsRegistryUpdate}\n\n`;
-        });
-      }
-
-      if (result.evaluation.youtube.processedUrls.length > 0) {
-        markdown += `###### Processed URLs:\n`;
-        result.evaluation.youtube.processedUrls.forEach(url => {
-          const urlEval = result.evaluation.youtube.urlEvaluations[url];
-          markdown += `URL: ${url}\n`;
-          markdown += `- Has Iframe: ${urlEval.hasIframe}\n`;
-          markdown += `- Needs Footnote: ${urlEval.needsFootnote}\n`;
-          markdown += `- Needs Footnote Definition: ${urlEval.needsFootnoteDefinition}\n`;
-          markdown += `- In Registry: ${urlEval.isInRegistry}\n`;
-          markdown += `- Needs Registry Update: ${urlEval.needsRegistryUpdate}\n\n`;
-        });
-      }
-    }
-
-    markdown += `---\n\n`;
-  }
-
-  return markdown;
-}
-
 // ============================================================================
 // Main Orchestration
 // ============================================================================
@@ -289,6 +207,24 @@ async function main() {
 
     console.log(`Searching for files with pattern: ${globPattern}`);
     const files = await glob(globPattern);
+    
+    // Initialize processing stats
+    const processingStats = {
+      totalFound: files.length,
+      excluded: {
+        count: 0,
+        paths: []
+      },
+      skipped: {
+        count: 0,
+        paths: []
+      },
+      processed: {
+        count: 0,
+        paths: []
+      }
+    };
+
     console.log(`Found ${files.length} files to process`);
 
     // Process each file
@@ -297,23 +233,39 @@ async function main() {
       console.log(`Processing: ${file}`);
       
       // First evaluate
-      const evaluation = evaluateFile(file);
+      let evaluation = evaluateFile(file);
+      
+      if (!evaluation) {
+        processingStats.skipped.count++;
+        processingStats.skipped.paths.push(file);
+        console.log(`Skipped ${file} - Could not evaluate`);
+        continue;
+      }
+
+      processingStats.processed.count++;
+      processingStats.processed.paths.push(file);
       
       // Then apply YAML modifications if needed
       const modifications = evaluation?.yaml.needsProcessing 
         ? assureYAMLProperties(file, evaluation)
         : { modified: false, replacements: 0, changes: {} };
 
-      if (evaluation) {
-        results[file] = { evaluation, modifications };
+      // Process OpenGraph if needed
+      if (evaluation?.openGraph.needsProcessing) {
+        await processOpenGraph(file, evaluation);
+        
+        // Re-evaluate after OpenGraph processing to get updated status
+        evaluation = evaluateFile(file);
       }
+
+      results[file] = { evaluation, modifications };
     }
 
     // Generate output file path with iteration number
     const outputFile = getNextIterationFilePath(USER_OPTIONS.evaluationOutputFile);
     
-    // Format and write results
-    const markdown = formatResults(results);
+    // Format and write results using the reporting module
+    const markdown = formatEvaluationReport(results, processingStats);
     
     // Ensure directory exists
     const outputDir = path.dirname(outputFile);
