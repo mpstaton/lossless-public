@@ -36,73 +36,73 @@ const USER_OPTIONS = {
       site_uuid: {
         required: true,
         generate: () => uuidv4(),
-        format: value => value.toString(),
+        format: value => value ? value.toString() : value,
         validate: value => /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value)
       },
       url: {
         required: true,
-        format: value => value.replace(/^["'](.*)["']$/, '$1'), // Remove quotes
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value, // Remove quotes
         validate: value => /^https?:\/\/.+/i.test(value)
       },
       tags: {
         required: true,
         isArray: true,
-        format: tag => tag.replace(/\s+/g, '-'),
+        format: tag => tag ? tag.replace(/\s+/g, '-') : tag,
         arrayFormat: 'dash-list', // - item format
         validate: tag => typeof tag === 'string' && tag.length > 0
       },
       
       // OpenGraph properties
       image: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
         validate: value => /^https?:\/\/.+/i.test(value)
       },
       site_name: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1')
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value
       },
       title: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1')
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value
       },
       favicon: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
         validate: value => /^https?:\/\/.+/i.test(value)
       },
       og_screenshot_url: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
         validate: value => /^https?:\/\/.+/i.test(value)
       },
       
       // Timestamps and status properties
       last_jina_request: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1'),
-        validate: value => !isNaN(Date.parse(value))
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
+        validate: value => !value || !isNaN(Date.parse(value))
       },
       jina_error: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1')
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value
       },
       og_last_fetch: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1'),
-        validate: value => !isNaN(Date.parse(value))
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
+        validate: value => !value || !isNaN(Date.parse(value))
       },
       og_errors: {
-        format: value => value.toString()
+        format: value => value ? value.toString() : value
       },
       og_last_error: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1'),
-        validate: value => !isNaN(Date.parse(value))
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
+        validate: value => !value || !isNaN(Date.parse(value))
       },
       og_error_message: {
-        format: value => value.replace(/^["'](.*)["']$/, '$1')
+        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value
       }
     },
 
     // YAML formatting rules
     formatting: {
       // How to format different value types
-      string: value => value.replace(/^["'](.*)["']$/, '$1'),
-      url: value => value.replace(/^["'](.*)["']$/, '$1'),
-      date: value => value.replace(/^["'](.*)["']$/, '$1'),
-      boolean: value => value.toString(),
+      string: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
+      url: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
+      date: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
+      boolean: value => value !== null && value !== undefined ? value.toString() : value,
       array: {
         prefix: '\n',
         itemPrefix: '  - ',
@@ -119,6 +119,16 @@ const USER_OPTIONS = {
 
     // Pre-processing rules
     preprocessing: {
+      // List of URL properties that should always be single-line values (not block scalars)
+      urlProperties: [
+        'url', 'image', 'favicon', 'og_screenshot_url', 'og_image'
+      ],
+      
+      // Properties that frequently contain colons and need special handling
+      specialProperties: [
+        'title', 'description', 'jina_error', 'og_error_message', 'zinger'
+      ],
+      
       // Clean content before YAML parsing
       cleanContent: content => {
         if (!content) return '';
@@ -129,29 +139,76 @@ const USER_OPTIONS = {
         // Normalize line endings
         content = content.replace(/\r\n/g, '\n');
         
-        // Fix common YAML formatting issues
-        return content
-          // Fix block scalar URL issues
-          .replace(/^([\w_-]+):\s*>[^\n]*\n\s*http/gm, '$1: http')
-          // Remove unnecessary quotes
-          .replace(/^([\w_-]+):\s+['"]([^'"]*)['"]\s*$/gm, '$1: $2')
-          // Fix URL formatting
-          .replace(/^\s*(https?:\/\/[^\s]+)\s*$/gm, '$1')
-          // Fix duplicate mapping keys
-          .replace(/(\n---\n[\s\S]*?\n---)/m, match => {
-            const seenKeys = new Set();
-            const lines = match.split('\n');
-            return lines.filter(line => {
-              const keyMatch = line.match(/^(\w+(?:[-_]\w+)*?):/);
-              if (!keyMatch) return true;
+        // Extract the frontmatter section for focused processing
+        const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
+        if (!frontmatterMatch) return content;
+        
+        const originalFrontmatter = frontmatterMatch[0];
+        let frontmatter = frontmatterMatch[1];
+        
+        // STEP 1: Aggressively remove all block scalar indicators
+        frontmatter = frontmatter.replace(/^([^:\n]+):[ \t]*(>-|>|[|][-]?)[ \t]*\n/gm, '$1: ');
+        
+        // STEP 2: Fix broken URLs (lines starting with https:)
+        const lines = frontmatter.split('\n');
+        const processedLines = [];
+        let lastKey = null;
+        
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i].trim();
+          if (!line) {
+            processedLines.push('');
+            continue;
+          }
+          
+          // Check if this is a key-value pair
+          const keyMatch = line.match(/^(\w+(?:[-_]\w+)*?):\s*(.*)/);
+          
+          if (keyMatch) {
+            const [, key, value] = keyMatch;
+            lastKey = key;
+            
+            // If this is a special property that might contain colons, quote it
+            if (USER_OPTIONS.frontmatter.preprocessing.specialProperties.includes(key) && 
+                value.includes(':') && 
+                !/^["'].*["']$/.test(value.trim())) {
+              processedLines.push(`${key}: "${value.replace(/"/g, '\\"')}"`);
+            } 
+            // If this is an error message with status code, quote it
+            else if ((key === 'jina_error' || key === 'og_error_message') && 
+                     value.includes('status:')) {
+              processedLines.push(`${key}: "${value.replace(/"/g, '\\"')}"`);
+            }
+            // Otherwise keep as is
+            else {
+              processedLines.push(line);
+            }
+          } 
+          // Check if this is a broken URL (starts with https:)
+          else if (line.match(/^https?:\/\//)) {
+            // Find the last URL property and append this to it
+            for (let j = processedLines.length - 1; j >= 0; j--) {
+              const prevLine = processedLines[j];
+              const prevKeyMatch = prevLine.match(/^(\w+(?:[-_]\w+)*?):\s*(.*)/);
               
-              const key = keyMatch[1];
-              if (seenKeys.has(key)) return false;
-              
-              seenKeys.add(key);
-              return true;
-            }).join('\n');
-          });
+              if (prevKeyMatch && USER_OPTIONS.frontmatter.preprocessing.urlProperties.includes(prevKeyMatch[1])) {
+                // Replace with the complete URL
+                processedLines[j] = `${prevKeyMatch[1]}: ${line}`;
+                break;
+              }
+            }
+          }
+          // Not a key-value pair or URL - keep as is
+          else {
+            processedLines.push(line);
+          }
+        }
+        
+        // Reconstruct the frontmatter
+        const processedFrontmatter = processedLines.join('\n');
+        
+        // Replace the original frontmatter in the content
+        return content.replace(originalFrontmatter, `---\n${processedFrontmatter}\n---`);
       }
     },
 

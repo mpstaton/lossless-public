@@ -31,26 +31,34 @@ function processYAMLValue(value) {
 }
 
 /**
- * Clean and format YAML frontmatter
- * @param {string} content - File content
+ * Clean and normalize YAML frontmatter
+ * @param {string} content - The file content with YAML frontmatter
  * @returns {string} Cleaned content
  */
 function cleanYAMLFrontmatter(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return content;
+  if (!content) return '';
+  
+  // Use the enhanced preprocessing function from USER_OPTIONS
+  return USER_OPTIONS.frontmatter.preprocessing.cleanContent(content);
+}
 
-  const frontmatter = match[1];
-  let modifiedFrontmatter = frontmatter;
-
-  // Process each line of frontmatter
-  modifiedFrontmatter = modifiedFrontmatter.replace(/^([^:\r\n]+?):[ \t]*(.+)$/gm, (match, key, value) => {
-    const processedKey = processYAMLKey(key.trim());
-    const processedValue = processYAMLValue(value.trim());
-    return `${processedKey}: ${processedValue}`;
-  });
-
-  // Replace original frontmatter
-  return content.replace(frontmatter, modifiedFrontmatter);
+/**
+ * Extract and parse YAML frontmatter
+ * @param {string} content - Content with YAML frontmatter
+ * @returns {Object} Parsed YAML data and the remaining content
+ */
+function parseYAMLFrontmatter(content) {
+  // First clean the YAML to avoid parsing errors
+  const cleanedContent = cleanYAMLFrontmatter(content);
+  
+  try {
+    // Use gray-matter to parse the frontmatter
+    const { data, content: contentWithoutFrontmatter } = matter(cleanedContent);
+    return { data, content: contentWithoutFrontmatter, errors: [] };
+  } catch (error) {
+    console.error('Error parsing YAML frontmatter:', error);
+    return { data: {}, content: cleanedContent, errors: [error.message] };
+  }
 }
 
 // ============================================================================
@@ -472,25 +480,32 @@ function evaluateYouTube(content, currentFile) {
 function evaluateFile(filePath) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
-    // Clean YAML before parsing
-    const cleanedContent = cleanYAMLFrontmatter(content);
-    const parsedFile = matter(cleanedContent);
-
-    const yaml = evaluateYAML(filePath, parsedFile);
-    const openGraph = evaluateOpenGraph(parsedFile.data);
-    const youtube = evaluateYouTube(parsedFile.content, filePath);
+    
+    // Clean and parse YAML
+    const parsed = parseYAMLFrontmatter(content);
+    
+    if (parsed.errors.length > 0) {
+      throw new Error(`Error evaluating file ${filePath}: ${parsed.errors[0]}`);
+    }
+    
+    const yaml = evaluateYAML(filePath, parsed);
+    const openGraph = evaluateOpenGraph(parsed.data);
+    const youtube = evaluateYouTube(parsed.content, filePath);
 
     return {
-      yaml,
-      openGraph,
-      youtube,
-      needsProcessing: yaml.needsProcessing || 
-                      openGraph.needsProcessing || 
-                      youtube.needsProcessing
+      success: true,
+      evaluation: {
+        yaml,
+        openGraph,
+        youtube,
+        needsProcessing: yaml.needsProcessing || 
+                        openGraph.needsProcessing || 
+                        youtube.needsProcessing
+      }
     };
   } catch (error) {
     console.error(`Error evaluating file ${filePath}:`, error);
-    return null;
+    return { success: false, error: error.message };
   }
 }
 
@@ -501,5 +516,6 @@ module.exports = {
   evaluateYouTube,
   ContentChecks,
   readVideoRegistry,
-  cleanYAMLFrontmatter
+  cleanYAMLFrontmatter,
+  parseYAMLFrontmatter
 };

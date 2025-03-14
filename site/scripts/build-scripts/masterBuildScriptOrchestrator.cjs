@@ -60,18 +60,26 @@ function preProcessYAML(content) {
  */
 async function assureYAMLProperties(filePath) {
   try {
-    // Use the processFile function from assureYAMLPropertiesCorrect.cjs
+    console.log(`Processing YAML in ${filePath}`);
+    
+    // First, clean the YAML to prevent parsing issues
+    const content = fs.readFileSync(filePath, 'utf8');
+    const cleanedContent = USER_OPTIONS.frontmatter.preprocessing.cleanContent(content);
+    
+    // Write the cleaned content back to the file
+    fs.writeFileSync(filePath, cleanedContent, 'utf8');
+    
+    // Now process the file with the YAML properties processor
     const result = processYAMLFile(filePath);
-    return { 
-      success: result.errors.length === 0,
-      modified: result.modified,
-      replacements: result.replacements,
-      changes: result.changes,
-      errors: result.errors
-    };
+    
+    if (!result.success) {
+      console.error(`YAML processing failed for ${filePath}:`, result.errors);
+    }
+    
+    return result;
   } catch (error) {
-    console.error(`Error in assureYAMLPropertiesCorrect.cjs for ${filePath}:`, error);
-    return { success: false, errors: [error.message] };
+    console.error(`Error in assureYAMLProperties for ${filePath}:`, error);
+    return { success: false, errors: [error.message], filePath };
   }
 }
 
@@ -194,38 +202,33 @@ function getNextIterationFilePath(baseFilePath) {
  * @param {string} filePath - Path to the file to process
  */
 async function processFile(filePath) {
-  console.log(`Processing file: ${filePath}`);
-  
-  // Step 1: Evaluate content
-  const evalResult = await evaluateContent(filePath);
-  if (!evalResult.success) {
-    console.error('Content evaluation failed.');
-    return { success: false, error: evalResult.error };
-  }
-
-  // Track modifications
-  let modifications = { modified: false, replacements: 0, changes: {} };
-
-  // Step 2: Process YAML if needed
-  if (evalResult.evaluation.yaml.needsProcessing) {
+  try {
+    console.log(`\nProcessing: ${filePath}`);
+    
+    // First process the YAML frontmatter to ensure it's valid
     const yamlResult = await assureYAMLProperties(filePath);
     if (!yamlResult.success) {
-      console.error('YAML processing failed.');
-      // Continue with other processes even if YAML fails
+      console.log(`Skipped ${filePath} - Failed to process YAML`);
+      return { success: false, errors: yamlResult.errors };
     }
-    modifications = { ...modifications, ...yamlResult };
-  }
+    
+    // Track modifications
+    let modifications = { modified: false, replacements: 0, changes: {} };
 
-  // Step 3: Process OpenGraph if needed
-  if (evalResult.evaluation.openGraph.needsProcessing) {
-    await processOpenGraph(filePath, evalResult.evaluation);
-  }
+    // Step 2: Process OpenGraph if needed
+    if (yamlResult.evaluation.openGraph.needsProcessing) {
+      await processOpenGraph(filePath, yamlResult.evaluation);
+    }
 
-  return { 
-    success: true, 
-    evaluation: evalResult.evaluation,
-    modifications
-  };
+    return { 
+      success: true, 
+      evaluation: yamlResult.evaluation,
+      modifications
+    };
+  } catch (error) {
+    console.error(`Error processing ${filePath}:`, error);
+    return { success: false, errors: [error.message] };
+  }
 }
 
 /**

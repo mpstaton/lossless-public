@@ -17,23 +17,38 @@ function preprocessYAML(content) {
   return USER_OPTIONS.frontmatter.preprocessing.cleanContent(content);
 }
 
+// Get the properties definition from the user options
+const { properties } = USER_OPTIONS.frontmatter;
+
 /**
  * Format a YAML value according to its property definition
  * @param {string} key - Property key
  * @param {any} value - Property value
+ * @param {Object} propertyDef - Property definition
  * @returns {any} Formatted value
  */
-function formatYAMLValue(key, value) {
-  const propertyDef = USER_OPTIONS.frontmatter.properties[key];
-  if (!propertyDef) return value;
-
-  if (propertyDef.isArray && Array.isArray(value)) {
-    const formatted = propertyDef.format ? value.map(v => propertyDef.format(v)) : value;
-    const { prefix, itemPrefix, itemSuffix, suffix } = USER_OPTIONS.frontmatter.formatting.array;
-    return `${prefix}${formatted.map(v => `${itemPrefix}${v}${itemSuffix}`).join('')}${suffix}`;
+function formatYAMLValue(key, value, propertyDef) {
+  // Handle null/undefined values safely
+  if (value === null || value === undefined) {
+    return value;
   }
 
-  return propertyDef.format ? propertyDef.format(value) : value;
+  try {
+    if (propertyDef && typeof propertyDef.format === 'function') {
+      return propertyDef.format(value);
+    }
+    
+    // Use default formatting if no specific formatter exists
+    if (typeof value === 'string') {
+      return USER_OPTIONS.frontmatter.formatting.string(value);
+    }
+    
+    return value;
+  } catch (error) {
+    console.error(`Error formatting value for key '${key}':`, error);
+    // Return the original value if formatting fails
+    return value;
+  }
 }
 
 /**
@@ -59,67 +74,75 @@ function validateYAMLValue(key, value) {
  * @returns {Object} Processed content and modifications info
  */
 function processYAMLFrontmatter(content) {
-  // Pre-process content
-  let processedContent = preprocessYAML(content);
+  // First, clean the content using the enhanced preprocessing function
+  const cleanedContent = USER_OPTIONS.frontmatter.preprocessing.cleanContent(content);
   
-  // Validate basic YAML structure
-  const preCheckErrors = USER_OPTIONS.frontmatter.validation.preCheck(processedContent);
+  // Check for basic YAML structure issues
+  const preCheckErrors = USER_OPTIONS.frontmatter.validation.preCheck(cleanedContent);
   if (preCheckErrors.length > 0) {
-    console.error('Pre-check validation errors:', preCheckErrors);
-    return { content: processedContent, modified: false, errors: preCheckErrors };
+    console.log('Pre-check validation errors:', preCheckErrors);
+    return { content, modified: false, errors: preCheckErrors };
   }
-
-  // Parse YAML
-  const { data: frontmatter, content: bodyContent } = matter(processedContent);
-  let modified = false;
-  let replacements = 0;
-  const changes = {};
-
-  // Process each property
-  Object.entries(USER_OPTIONS.frontmatter.properties).forEach(([key, def]) => {
-    // Generate missing required properties
-    if (def.required && !frontmatter[key] && def.generate) {
-      frontmatter[key] = def.generate();
-      modified = true;
-      replacements++;
-      changes[key] = { action: 'generated', value: frontmatter[key] };
-    }
-
-    // Format existing properties
-    if (frontmatter[key] !== undefined) {
-      const formatted = formatYAMLValue(key, frontmatter[key]);
-      if (formatted !== frontmatter[key]) {
-        frontmatter[key] = formatted;
-        modified = true;
-        replacements++;
-        changes[key] = { action: 'formatted', value: formatted };
+  
+  try {
+    // Parse the frontmatter with gray-matter (after cleaning)
+    const matter = grayMatter(cleanedContent);
+    
+    let modified = false;
+    const data = matter.data || {};
+    
+    // Process each property from the property definitions
+    Object.entries(properties).forEach(([key, def]) => {
+      // Skip properties that don't need processing
+      if (!def) return;
+      
+      // Check if property is required but missing
+      if (def.required && data[key] === undefined) {
+        // Generate the property value if a generator is available
+        if (typeof def.generate === 'function') {
+          data[key] = def.generate();
+          modified = true;
+        }
+      } else if (data[key] !== undefined) {
+        // Property exists, format it according to its definition
+        
+        // Special case for arrays (like tags)
+        if (def.isArray && Array.isArray(data[key])) {
+          // Format each item in the array
+          data[key] = data[key].map(item => formatYAMLValue(key, item, def));
+        } else {
+          // Format regular values
+          const formattedValue = formatYAMLValue(key, data[key], def);
+          
+          // Only update if the value has changed to avoid unnecessary modifications
+          if (formattedValue !== data[key]) {
+            data[key] = formattedValue;
+            modified = true;
+          }
+        }
       }
-
-      // Validate formatted value
-      if (!validateYAMLValue(key, frontmatter[key])) {
-        console.warn(`Invalid value for ${key}:`, frontmatter[key]);
-      }
+    });
+    
+    // Post-validation to check the final data
+    const postCheckErrors = USER_OPTIONS.frontmatter.validation.postCheck(data);
+    if (postCheckErrors.length > 0) {
+      console.log('Post-check validation errors:', postCheckErrors);
+      return { content: cleanedContent, modified: false, errors: postCheckErrors };
     }
-  });
-
-  // Post-validation
-  const postCheckErrors = USER_OPTIONS.frontmatter.validation.postCheck(frontmatter);
-  if (postCheckErrors.length > 0) {
-    console.error('Post-check validation errors:', postCheckErrors);
+    
+    // If any properties were changed, rebuild the content with the updated frontmatter
+    if (modified) {
+      // Create updated content with new frontmatter
+      const updatedContent = grayMatter.stringify(matter.content, data);
+      return { content: updatedContent, modified: true, errors: [] };
+    }
+    
+    // Return cleaned content even if no properties were modified
+    return { content: cleanedContent, modified: false, errors: [] };
+  } catch (error) {
+    console.error('Error processing YAML frontmatter:', error);
+    return { content, modified: false, errors: [error.message] };
   }
-
-  // Generate new content if modified
-  if (modified) {
-    processedContent = matter.stringify(bodyContent, frontmatter);
-  }
-
-  return {
-    content: processedContent,
-    modified,
-    replacements,
-    changes,
-    errors: [...preCheckErrors, ...postCheckErrors]
-  };
 }
 
 /**
@@ -193,28 +216,32 @@ function processAllFiles(contentDirectory) {
  */
 function processFile(filePath) {
   try {
+    console.log('Processing file:', filePath);
+    
+    // Read the file content
     const content = fs.readFileSync(filePath, 'utf8');
+    
+    // Clean and process the frontmatter
     const result = processYAMLFrontmatter(content);
-
+    
+    // Write back to the file if modified
     if (result.modified) {
-      fs.writeFileSync(filePath, result.content, 'utf8');
-      console.log(`Modified ${path.relative(process.cwd(), filePath)}:`, result.changes);
+      fs.writeFileSync(filePath, result.content);
+      console.log(`Updated YAML in ${filePath}`);
+      return { success: true, modified: true, filePath };
     }
-
-    return {
-      modified: result.modified,
-      replacements: result.replacements,
-      changes: result.changes,
-      errors: result.errors
-    };
+    
+    // Check for errors
+    if (result.errors && result.errors.length > 0) {
+      console.log('YAML processing failed.');
+      return { success: false, errors: result.errors, filePath };
+    }
+    
+    // File was processed but not modified
+    return { success: true, modified: false, filePath };
   } catch (error) {
     console.error(`Error processing ${filePath}:`, error);
-    return {
-      modified: false,
-      replacements: 0,
-      changes: {},
-      errors: [error.message]
-    };
+    return { success: false, errors: [error.message], filePath };
   }
 }
 

@@ -27,6 +27,11 @@ The entire process is initiated via `pnpm build` command, which triggers the mas
 node scripts/build-scripts/masterBuildScriptOrchestrator.cjs
 ```
 
+# CONSTRAINTS
+Under no condition should you use block scalar syntax in frontmatter. 
+Under no condition should numbers be used in strings without quotes surrounding them.  
+
+
 ## 2. Architecture
 
 ### Component Structure
