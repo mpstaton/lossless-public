@@ -9,31 +9,42 @@ const path = require('path');
 // - 'sample': Process a random sample of corrupted files (uses MAX_SAMPLE_SIZE)
 // - 'specific': Process only the files listed in SPECIFIC_FILES_TO_PROCESS
 // - 'all': Process all corrupted files found in the report
-const PROCESSING_MODE = 'specific';
+const PROCESSING_MODE = 'all';
 
 // Maximum number of files to process when in 'sample' mode
 const MAX_SAMPLE_SIZE = 5;
 
 // Specific files to process when in 'specific' mode (relative or absolute paths)
 const SPECIFIC_FILES_TO_PROCESS = [
+    // Include files with known severe issues
     '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/smolagents.md',
-    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Stack AI.md',
-    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Spider.md'
+    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Pydantic AI.md',
+    '/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Lindy AI.md'
 ];
 
 // Properties to fix and the correction method to apply
 // Available correction methods:
 // - 'assureQuotesOrReplaceLineAndSurroundValueWithQuotes': For properties with values containing colons
 // - 'replaceWithSimpleStringNoQuotes': For properties with block scalar indicators
+// - 'cleanExtraSpacesInProperty': For properties with extra spaces before values
 const PROPERTIES_TO_FIX = [
+    // Error messages that might contain colons
     { key: 'og_error_message', method: 'assureQuotesOrReplaceLineAndSurroundValueWithQuotes' },
     { key: 'jina_error', method: 'assureQuotesOrReplaceLineAndSurroundValueWithQuotes' },
+    
+    // URLs and other properties that might have block scalar issues
     { key: 'title', method: 'replaceWithSimpleStringNoQuotes' },
     { key: 'description', method: 'replaceWithSimpleStringNoQuotes' },
-    { key: 'url', method: 'replaceWithSimpleStringNoQuotes' },
-    { key: 'image', method: 'replaceWithSimpleStringNoQuotes' },
-    { key: 'og_screenshot_url', method: 'replaceWithSimpleStringNoQuotes' },
-    { key: 'favicon', method: 'replaceWithSimpleStringNoQuotes' }
+    { key: 'url', method: 'cleanExtraSpacesInProperty' },
+    { key: 'image', method: 'cleanExtraSpacesInProperty' },
+    { key: 'og_screenshot_url', method: 'cleanExtraSpacesInProperty' },
+    { key: 'favicon', method: 'cleanExtraSpacesInProperty' },
+    
+    // Additional properties that commonly have formatting issues
+    { key: 'date', method: 'cleanExtraSpacesInProperty' },
+    { key: 'author', method: 'cleanExtraSpacesInProperty' },
+    { key: 'category', method: 'cleanExtraSpacesInProperty' },
+    { key: 'site_uuid', method: 'cleanExtraSpacesInProperty' }
     // Add more properties as needed
 ];
 
@@ -64,8 +75,15 @@ const GLITCH_CORRECTIONS = {
         const [fullLine, keyPart, value] = match;
         const trimmedValue = value.trim();
         
-        // Case 1: Value is already surrounded by double quotes - leave as is
-        if (/^".*"$/.test(trimmedValue)) return line;
+        // Case 1: Value is already surrounded by double quotes - check for double quotes
+        if (/^".*"$/.test(trimmedValue)) {
+            // Check for double double quotes - e.g. ""value""
+            if (/^"".*""$/.test(trimmedValue)) {
+                const innerContent = trimmedValue.slice(2, -2);
+                return `${keyPart}"${innerContent}"`;
+            }
+            return line;
+        }
         
         // Case 2: Value is surrounded by single quotes - replace with double quotes
         if (/^'.*'$/.test(trimmedValue)) {
@@ -87,9 +105,19 @@ const GLITCH_CORRECTIONS = {
     
     // For block scalar values that should be simple strings
     replaceWithSimpleStringNoQuotes: (content, key) => {
-        // Find the block scalar pattern for this key
-        const blockScalarPattern = new RegExp(`^(${key}:)\\s*(>-|>|\\|[-]?)\\s*$(\\n[ \\t]+.*)*`, 'm');
-        const match = content.match(blockScalarPattern);
+        // Find various block scalar patterns more comprehensively
+        const blockScalarPatterns = [
+            // Standard block scalar notation
+            new RegExp(`^(${key}:)\\s*(>-|>|\\|[-]?)\\s*$(\\n[ \\t]+.*)*`, 'm'),
+            // Multiline without explicit block scalar
+            new RegExp(`^(${key}:)\\s*$(\\n[ \\t]+.*)+`, 'm')
+        ];
+        
+        let match = null;
+        for (const pattern of blockScalarPatterns) {
+            match = content.match(pattern);
+            if (match) break;
+        }
         
         if (!match) return content;
         
@@ -122,6 +150,31 @@ const GLITCH_CORRECTIONS = {
         
         // Replace the block scalar with a simple string, ensuring exactly one space after the colon
         return content.replace(match[0], `${keyPart} ${combinedValue}`);
+    },
+    
+    // For cleaning up extra spaces in front of property values
+    cleanExtraSpacesInProperty: (line, key) => {
+        // Match key and any number of spaces, followed by the value
+        const keyPattern = new RegExp(`^(${key}:)(\\s*)(.*?)$`, 'm');
+        const match = line.match(keyPattern);
+        
+        if (!match) return line;
+        
+        const [fullLine, keyPart, spaces, value] = match;
+        const trimmedValue = value.trim();
+        
+        // If there are multiple spaces (more than one), fix it
+        if (spaces.length > 1) {
+            return `${keyPart} ${trimmedValue}`;
+        }
+        
+        // If there's a newline in the value and it's not quoted, fix it
+        if (trimmedValue.includes('\n') && !(/^["'].*["']$/.test(trimmedValue))) {
+            // If it contains a newline, make it a simple string
+            return `${keyPart} ${trimmedValue.replace(/\n/g, ' ')}`;
+        }
+        
+        return line;
     }
 };
 
@@ -162,17 +215,27 @@ function cleanFrontmatterGlitch(filePath, glitchKey, correctionType) {
         const originalFrontmatter = frontmatterMatch[0];
         const frontmatter = frontmatterMatch[1];
         
-        // Look for the glitch key in the frontmatter
-        const keyPattern = new RegExp(`^${glitchKey}:.+`, 'm');
+        // More flexible pattern to find the property regardless of spacing
+        const keyPattern = new RegExp(`^\\s*${glitchKey}\\s*:`, 'm');
         if (!keyPattern.test(frontmatter)) {
             console.log(`SKIPPED: ${filePath} - No ${glitchKey} property found in frontmatter`);
             return false;
         }
         
-        // Debug: Show matched property
-        const propertyLineMatch = frontmatter.match(new RegExp(`^${glitchKey}:.*$`, 'm'));
-        if (propertyLineMatch) {
-            console.log(`Found property: ${propertyLineMatch[0]}`);
+        // Debug: Show matched property and surrounding context
+        const contextLines = frontmatter.split('\n');
+        for (let i = 0; i < contextLines.length; i++) {
+            if (keyPattern.test(contextLines[i])) {
+                console.log(`Found property at line ${i+1}: ${contextLines[i]}`);
+                // Show a few lines of context
+                const start = Math.max(0, i-2);
+                const end = Math.min(contextLines.length, i+3);
+                console.log("Context:");
+                for (let j = start; j < end; j++) {
+                    console.log(`${j === i ? '> ' : '  '}${contextLines[j]}`);
+                }
+                break;
+            }
         }
         
         // Apply the correction
@@ -201,6 +264,26 @@ function cleanFrontmatterGlitch(filePath, glitchKey, correctionType) {
                 
             case 'replaceWithSimpleStringNoQuotes':
                 newContent = GLITCH_CORRECTIONS.replaceWithSimpleStringNoQuotes(content, glitchKey);
+                break;
+                
+            case 'cleanExtraSpacesInProperty':
+                // Process each line, looking for the key
+                const spaceLines = frontmatter.split('\n');
+                const newSpaceLines = spaceLines.map(line => {
+                    if (line.trim().startsWith(`${glitchKey}:`)) {
+                        const original = line;
+                        const fixed = GLITCH_CORRECTIONS.cleanExtraSpacesInProperty(line, glitchKey);
+                        if (original !== fixed) {
+                            console.log(`Fixing line: "${original}" => "${fixed}"`);
+                        }
+                        return fixed;
+                    }
+                    return line;
+                });
+                
+                // Reconstruct the frontmatter
+                const newSpaceFrontmatter = newSpaceLines.join('\n');
+                newContent = content.replace(originalFrontmatter, `---\n${newSpaceFrontmatter}\n---`);
                 break;
                 
             default:
