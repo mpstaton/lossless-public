@@ -17,6 +17,8 @@ og_last_fetch: 2025-03-07T05:20:56.432Z
 ---
 [[Microsoft]] acquired [[GitHub]].
 
+https://youtu.be/Oaj3RBIoGFc?si=HiT-RnoDJ7kKkXLQ
+
 ![[How GitHub Changes Everything#AI Explains GitHub]]
 
 [[GitHub]] has a Command Line Interface called [GitHub CLI](https://cli.github.com).

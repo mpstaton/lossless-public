@@ -27,3 +27,5 @@ https://youtu.be/XvY_BF1IV_U?si=6nn192pUQ0S9viNU
 ![[Screenshot 2025-02-24 at 2.59.38 AM_OpenWeb-UI--Hero.png]]
 
 https://youtu.be/5Lpd2o1TM7A?si=H-K1DeU3KTBlc5XM
+
+https://youtu.be/7DUMJI0G4Rs?si=xANbmM03ndSKzxYE

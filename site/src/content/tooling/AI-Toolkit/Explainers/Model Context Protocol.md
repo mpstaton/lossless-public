@@ -6,11 +6,15 @@ tags:
 ---
 https://youtu.be/oAoigBWLZgE?si=8AF2ooyl_EMhe2sM
 
+https://youtu.be/g08kmknV5Sg?si=1VzgKs5TjxMeoWnY
+
 https://youtube.com/shorts/pFM16nVrnD4?si=zw_LOqOKCns_zsxY
 
 https://youtu.be/japoGcdbZGw?si=RE2kLXYfNygeuvOd
 
 https://youtu.be/m46tZX6vceI?si=Xhuz94XNYIa1y3Xp
+
+https://youtu.be/TcNd6rTOpJA?si=R-DAf8H-dhfbPiVc
 
 
 [[Prompt Engineering]]

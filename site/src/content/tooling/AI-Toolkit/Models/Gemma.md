@@ -16,3 +16,9 @@ og_last_fetch: 2025-03-07T05:19:18.955Z
 Made by [[Google Labs]], 
 
 A [[Large Language Models]] 
+
+https://youtu.be/OHdL4-dUKuE?si=NwYZATn4dvKnmDgP
+
+https://youtu.be/rMSSuY4ppnY?si=qhE3KoJLsMOnUdaK
+
+https://youtu.be/UU13FN2Xpyw?si=D7UHr7K1PCOw2DMZ
