@@ -1,7 +1,7 @@
 ---
 site_uuid: "ec214e49-26aa-4210-8f6f-647a96653d1b"
 aliases:
-  - DLMs
+- DLMs
 ---
 
 https://youtu.be/KMuXaSQCfro?si=BHFDeXZCtUQO5L5p

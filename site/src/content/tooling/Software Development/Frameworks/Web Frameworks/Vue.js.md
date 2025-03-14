@@ -7,14 +7,13 @@ site_name: Vue.js
 title: Vue.js
 favicon: 'https://vuejs.org/logo.svg'
 tags:
-  - Web-Frameworks
-  - Software-Development
-  - Frameworks
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/3a78b3c445792226b76bca27d20a036a9ed8fd87be1f3d02f79cf786cf03f6cc.jpeg
+- Web-Frameworks
+- Software-Development
+- Frameworks
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/3a78b3c445792226b76bca27d20a036a9ed8fd87be1f3d02f79cf786cf03f6cc.jpeg
 last_jina_request: '2025-03-09T06:45:02.305Z'
 jina_error: 'Unexpected token ''V'', "Vue.js - T"... is not valid JSON'
-og_last_fetch: '2025-03-14T05:42:16.861Z'
+og_last_fetch: 2025-03-14T05:42:16.861Z
 ---
 
 

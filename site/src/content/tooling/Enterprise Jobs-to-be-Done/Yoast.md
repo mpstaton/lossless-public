@@ -6,11 +6,10 @@ site_name: Yoast
 title: SEO for everyone
 favicon: 'https://yoast.com/images/yoast_icon_32x32.ico'
 tags:
-  - Enterprise-Jobs-to-be-Done
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4993284b7c1624006ee57ddf29fd2a041798b461ca5a91e846aba11cc466490a.jpeg
+- Enterprise-Jobs-to-be-Done
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4993284b7c1624006ee57ddf29fd2a041798b461ca5a91e846aba11cc466490a.jpeg
 last_jina_request: '2025-03-09T06:45:05.193Z'
-jina_error: 'HTTP error! status: 429'
+jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:01.826Z
 ---
 [[Search Engine Optimization]] for everyone.  

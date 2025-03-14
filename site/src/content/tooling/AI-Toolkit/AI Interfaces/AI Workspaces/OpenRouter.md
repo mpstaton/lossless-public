@@ -2,13 +2,11 @@
 site_uuid: "58dff9be-30c1-4fc2-9594-922cc9067482"
 url: 'https://openrouter.ai'
 tags:
-  - AI-Toolkit
-  - AI-Interfaces
-  - AI-Workspaces
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6dba8b525a6dbd9e0e91e5cead3ad2dd27866c0d25fb0507088b2056d4275aca.jpeg
-image: >-
-  https://openrouter.ai/dynamic-og?pathname=default&title=OpenRouter&description=A+unified+interface+for+LLMs.+Find+the+best+models+%26+prices+for+your+prompts
+- AI-Toolkit
+- AI-Interfaces
+- AI-Workspaces
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6dba8b525a6dbd9e0e91e5cead3ad2dd27866c0d25fb0507088b2056d4275aca.jpeg
+image:   https://openrouter.ai/dynamic-og?pathname=default&title=OpenRouter&description=A+unified+interface+for+LLMs.+Find+the+best+models+%26+prices+for+your+prompts
 site_name: OpenRouter
 title: OpenRouter
 favicon: 'https://openrouter.ai/favicon.ico'

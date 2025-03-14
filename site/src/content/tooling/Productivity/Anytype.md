@@ -6,13 +6,12 @@ site_name: the everything app
 title: anytype — the everything app
 favicon: 'https://anytype.io/favicon-32x32.png'
 tags:
-  - Productivity
-  - Advanced-Documents
-  - Networked-Notes
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eeae976a313a1447e01097dfadf63704853d6fc24ec3a2d3ef5aedebf5c94df1.jpeg
+- Productivity
+- Advanced-Documents
+- Networked-Notes
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eeae976a313a1447e01097dfadf63704853d6fc24ec3a2d3ef5aedebf5c94df1.jpeg
 last_jina_request: '2025-03-09T06:45:05.990Z'
-jina_error: 'HTTP error! status: 429'
+jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:01.824Z
 ---
 

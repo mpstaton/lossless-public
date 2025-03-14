@@ -7,13 +7,12 @@ site_name: Mermaid
 title: Diagramming and charting tool
 favicon: 'https://mermaid.js.org/favicon.ico'
 tags:
-  - Web-Frameworks
-  - Software-Development
-  - Frameworks
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4628814d9f274c78228026bea6b3839a5098570f52f2e83d1dd2fb52d51981f6.jpeg
+- Web-Frameworks
+- Software-Development
+- Frameworks
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4628814d9f274c78228026bea6b3839a5098570f52f2e83d1dd2fb52d51981f6.jpeg
 last_jina_request: '2025-03-09T06:45:15.272Z'
-jina_error: 'HTTP error! status: 429'
+jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:20:56.425Z
 ---
 [[Visual Software Development]], [[Data Standard]]

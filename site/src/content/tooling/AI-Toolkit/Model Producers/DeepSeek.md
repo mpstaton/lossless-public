@@ -2,16 +2,15 @@
 site_uuid: "b264dd92-d77d-48ec-9255-8241d8632f1a"
 url: 'https://www.deepseek.com/'
 tags:
-  - AI-Toolkit
-  - Model-Producers
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bd62c0962c92f5aec74eaff6566de1dc28669b3f91cc035284cf3410ba19947e.jpeg
+- AI-Toolkit
+- Model-Producers
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bd62c0962c92f5aec74eaff6566de1dc28669b3f91cc035284cf3410ba19947e.jpeg
 image: 'https://chat.deepseek.com/deepseek-chat.jpeg'
 site_name: DeepSeek
 title: DeepSeek
 favicon: 'https://www.deepseek.com/favicon.ico'
 last_jina_request: '2025-03-09T06:45:08.080Z'
-jina_error: 'HTTP error! status: 429'
+jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:18.720Z
 ---
 One of the primary organizations creating [[AI Models]].

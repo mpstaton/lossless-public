@@ -3,17 +3,16 @@ site_uuid: "c658d255-31d6-4521-8220-83282920679b"
 url: 'https://abacus.ai/teams/'
 parent_org: '[[Abacus AI]]'
 tags:
-  - AI-Toolkit
-  - Generative-AI
-  - Code-Generators
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ae6e4be24e4edcbcb9e65baac5af5f7c4f16fbc7b269dac3a0cf78f045364d31.jpeg
+- AI-Toolkit
+- Generative-AI
+- Code-Generators
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ae6e4be24e4edcbcb9e65baac5af5f7c4f16fbc7b269dac3a0cf78f045364d31.jpeg
 image: 'https://abacus.ai/static/og/og_codellm3.jpg'
 site_name: Abacus.AI
 title: Abacus.AI - CodeLLM
 favicon: 'https://codellm.abacus.ai/static/icon2/favicon-192.png'
 last_jina_request: '2025-03-09T06:45:00.466Z'
-jina_error: 'HTTP error! status: 429'
+jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:20:56.440Z
 ---
 

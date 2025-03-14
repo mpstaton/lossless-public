@@ -2,8 +2,8 @@
 site_uuid: "47567cbb-e866-44a3-85b6-2a208cd8a510"
 github_url: https://github.com/RooVetGit/Roo-Code
 tags: ["Code-Generators", "IDE-Plugins", "AI-Toolkit", "Generative-AI"]
-  - Code-Generators
-  - IDE-Plugins
+- Code-Generators
+- IDE-Plugins
 ---
 
 ##### [[Roo Code]] [[Visual Studio Code|VS Code]] [[Plug-ins,  Add-ons,  Extensions|Extension]] for [[Code Generator 1|Code Generation]]

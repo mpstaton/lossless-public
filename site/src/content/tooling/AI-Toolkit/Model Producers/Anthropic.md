@@ -2,15 +2,14 @@
 site_uuid: 0b506300-1c8b-4619-bc08-362bd9a3edb9
 url: 'https://www.anthropic.com'
 tags:
-  - AI-Toolkit
-  - Model-Producers
+- AI-Toolkit
+- Model-Producers
 last_jina_request: '2025-03-09T06:45:13.495Z'
-jina_error: 'HTTP error! status: 429'
+jina_error: "'HTTP error! status: 429'"
 og_errors: true
 og_last_error: '2025-03-09T08:16:01.669Z'
 og_error_message: 'Fetch error: fetch failed'
-image: >-
-  https://cdn.sanity.io/images/4zrzovbb/website/4b8bc05b916dc4fbaf2543f76f946e5587aaeb43-2400x1260.png
+image:   https://cdn.sanity.io/images/4zrzovbb/website/4b8bc05b916dc4fbaf2543f76f946e5587aaeb43-2400x1260.png
 site_name: Home
 title: Home
 favicon: 'https://www.anthropic.com/favicon.ico'

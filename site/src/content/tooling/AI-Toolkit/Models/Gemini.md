@@ -2,18 +2,15 @@
 site_uuid: "3c870a2b-b3fe-4db9-afb9-6cac06668e94"
 url: 'https://gemini.google.com'
 tags:
-  - AI-Toolkit
-  - Models
-image: >-
-  https://www.gstatic.com/lamda/images/gemini_thumbnail_c362e5eadc46ca9f617e2.png
+- AI-Toolkit
+- Models
+image:   https://www.gstatic.com/lamda/images/gemini_thumbnail_c362e5eadc46ca9f617e2.png
 site_name: Gemini
 title: ‎Gemini - chat to supercharge your ideas
-favicon: >-
-  https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5b7d54409f2a9b2acd4605ebe227548df996beaca597edf919951a9838e5338e.jpeg
+favicon:   https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5b7d54409f2a9b2acd4605ebe227548df996beaca597edf919951a9838e5338e.jpeg
 last_jina_request: '2025-03-09T06:45:04.634Z'
-jina_error: 'HTTP error! status: 429'
+jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:19:18.955Z
 ---
 

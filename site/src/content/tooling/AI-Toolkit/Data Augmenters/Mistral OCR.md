@@ -2,8 +2,8 @@
 site_uuid: 1d7f8db9-0901-4ec5-ab0b-767f2caace70
 url: 'https://mistral.ai/en/news/mistral-ocr'
 tags:
-  - AI-Toolkit
-  - Data-Augmenters
+- AI-Toolkit
+- Data-Augmenters
 og_errors: true
 og_last_error: '2025-03-08T20:39:44.305Z'
 og_error_message: HTTP error 401

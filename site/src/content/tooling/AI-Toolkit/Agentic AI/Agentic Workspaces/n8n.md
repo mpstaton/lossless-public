@@ -2,11 +2,11 @@
 site_uuid: "676fbd61-103c-4ac1-834f-96e693ca0528"
 youtube_url: https://www.youtube.com/@n8n-io
 tags: ["iPaaS", "Workflow-Automation", "Agentic-AI", "Agentic-Workspaces", "Check-it-Out", "AI-Toolkit"]
-  - iPaaS
-  - Workflow-Automation
-  - Agentic-AI
-  - Agentic-Workspaces
-  - Check-it-Out
+- iPaaS
+- Workflow-Automation
+- Agentic-AI
+- Agentic-Workspaces
+- Check-it-Out
 ---
 Here's an [[n8n]] beginner course on [[YouTube]] created by n8n. The [n8n Beginner course](https://youtube.com/playlist?list=PLlET0GsrLUL59YbxstZE71WszP3pVnZfI&si=T8vhC2cKnjVlxh4u)
 

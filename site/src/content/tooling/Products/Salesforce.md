@@ -1,7 +1,7 @@
 ---
 site_uuid: "25bf3393-e8f4-43e6-a4ce-c30436f54fbb"
 tags: ["crm-tools", "Products"]
-  - crm-tools
+- crm-tools
 ---
 
 ## Modular Upsells

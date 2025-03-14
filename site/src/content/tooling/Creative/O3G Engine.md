@@ -1,8 +1,8 @@
 ---
 site_uuid: "e9fd2096-449e-4cb9-b4bd-dfaab0a2e7d8"
 aliases:
-  - O3G Engine
-  - O3GE
+- O3G Engine
+- O3GE
 ---
 
 https://youtu.be/QC_ALm5X4wU?si=NVk_7Mxl7GIwg3Ac

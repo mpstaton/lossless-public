@@ -1,10 +1,10 @@
 ---
 site_uuid: 1293953e-113f-44bf-b3a1-bae7f317b6db
 aliases:
-  - Arc
+- Arc
 tags:
-  - Web-Browsers
-  - Check-it-Out
+- Web-Browsers
+- Check-it-Out
 url: 'https://arc.net'
 og_errors: true
 og_last_error: '2025-03-08T20:39:41.880Z'

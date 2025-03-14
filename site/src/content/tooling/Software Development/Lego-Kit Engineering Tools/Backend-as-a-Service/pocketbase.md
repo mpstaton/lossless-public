@@ -7,14 +7,13 @@ site_name: PocketBase
 title: PocketBase - Open Source backend in 1 file
 favicon: 'https://pocketbase.io/images/favicon/favicon-32x32.png'
 tags:
-  - Lego-Kit-Engineering-Tools
-  - Software-Development
-  - Databases
-  - Backend-as-a-Service
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bb79754a704e19459fc436b1856451987c20612298e422abff1e4edb71590417.jpeg
+- Lego-Kit-Engineering-Tools
+- Software-Development
+- Databases
+- Backend-as-a-Service
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bb79754a704e19459fc436b1856451987c20612298e422abff1e4edb71590417.jpeg
 last_jina_request: '2025-03-09T06:45:01.862Z'
-jina_error: 'HTTP error! status: 429'
+jina_error: "'HTTP error! status: 429'"
 og_last_fetch: 2025-03-07T05:20:56.414Z
 ---
 [[Open Source]]

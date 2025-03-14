@@ -2,13 +2,12 @@
 site_uuid: "652263ef-cb8e-427e-96b5-82e88d4db789"
 url: 'https://microsoft.github.io/Magma/'
 tags:
-  - AI-Toolkit
-  - Models
+- AI-Toolkit
+- Models
 site_name: Magma
 title: 'Magma: A Foundation Model for Multimodal AI Agents'
 favicon: 'https://microsoft.github.io/Magma/./static/images/logo.png'
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ca8023dd3c55bdc930006a714012248b504e4b59745d744e41232c1debdc06af.jpeg
+og_screenshot_url:   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ca8023dd3c55bdc930006a714012248b504e4b59745d744e41232c1debdc06af.jpeg
 og_errors: true
 og_last_error: '2025-03-07T10:19:45.396Z'
 og_error_message: HTTP error 401

@@ -1,7 +1,7 @@
 ---
 site_uuid: "032efa58-39ff-4ab8-b51f-a0a407921b2c"
 aliases:
-  - VS Code
+- VS Code
 parent_org: "[[Microsoft]]"
 ---
 a [[Text Editors or IDEs|Text Editor]] created and maintained by [[Microsoft]].
