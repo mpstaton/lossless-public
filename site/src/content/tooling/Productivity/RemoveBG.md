@@ -1,5 +1,5 @@
 ---
-site_uuid: "d638adf7-9e49-487d-b27f-36553128fc59"
+site_uuid: d638adf7-9e49-487d-b27f-36553128fc59
 url: 'https://www.remove.bg/'
 tags:
   - Productivity
@@ -12,6 +12,6 @@ og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/94e6ed553c665c9f5c4ebea5648849dbe9c8e4851a3039db155c141dbac1a5ba.jpeg
 last_jina_request: '2025-03-09T06:46:33.924Z'
 jina_error: TIMEOUT
-og_last_fetch: 2025-03-07T05:19:01.820Z
+og_last_fetch: '2025-03-14T05:42:19.756Z'
 ---
 

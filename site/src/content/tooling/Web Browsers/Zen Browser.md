@@ -1,5 +1,5 @@
 ---
-site_uuid: "599bd19e-2292-4175-8037-887d64efd9c8"
+site_uuid: 599bd19e-2292-4175-8037-887d64efd9c8
 url: 'https://zen-browser.app/'
 aliases:
   - Zen
@@ -13,7 +13,7 @@ og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/20bbce1a48869323374bd13c1659cb6b7875e041f78bbb477eaca42dd04844a6.jpeg
 last_jina_request: '2025-03-09T06:45:01.685Z'
 jina_error: 'Unexpected token ''Z'', "Zen Browse"... is not valid JSON'
-og_last_fetch: 2025-03-07T05:19:01.780Z
+og_last_fetch: '2025-03-14T05:42:21.374Z'
 ---
 
 2025, Feb 02. [Zen Browser Is Beautifully Designed And Feature Rich](https://youtu.be/SCMmzbxUqpo?si=F4DYkAry2dXzHVnQ) DistroTube, [[YouTube]]. 

@@ -1,5 +1,5 @@
 ---
-site_uuid: "1293953e-113f-44bf-b3a1-bae7f317b6db"
+site_uuid: 1293953e-113f-44bf-b3a1-bae7f317b6db
 aliases:
   - Arc
 tags:
@@ -11,6 +11,12 @@ og_last_error: '2025-03-08T20:39:41.880Z'
 og_error_message: HTTP error 401
 last_jina_request: '2025-03-09T06:45:02.500Z'
 jina_error: 'Unexpected token ''A'', "Arc from T"... is not valid JSON'
+image: 'https://arc.net/og.png'
+site_name: Arc from The Browser Company
+title: Arc from The Browser Company
+favicon: 'https://arc.net/favicon.png'
+og_fetched_url: 'https://arc.net'
+og_last_fetch: '2025-03-14T04:41:14.912Z'
 ---
 ##### [[Arc Browser|Arc]] is a [[State of the Art]][[Web Browser]]
 

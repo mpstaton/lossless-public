@@ -1,5 +1,5 @@
 ---
-site_uuid: "86e3054a-b9c9-432d-ab7e-9783e317bd1c"
+site_uuid: 86e3054a-b9c9-432d-ab7e-9783e317bd1c
 url: 'https://ladybird.org/'
 zinger: A truly independent web browser.
 description_site_cp: 'We are building a brand-new browser from scratch, backed by a non-profit.'
@@ -17,7 +17,7 @@ last_jina_request: '2025-03-09T06:45:05.408Z'
 jina_error: |-
   Unexpected token 'L', "Ladybird
   ="... is not valid JSON
-og_last_fetch: 2025-03-07T05:19:01.783Z
+og_last_fetch: '2025-03-14T05:42:16.470Z'
 ---
 
 https://youtu.be/z1Eq0xlVs3g?si=SIN6k5z6sDXtj60m

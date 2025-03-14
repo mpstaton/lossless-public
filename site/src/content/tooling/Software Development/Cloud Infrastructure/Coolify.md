@@ -1,5 +1,5 @@
 ---
-site_uuid: "5baec612-d5d0-4855-8c99-9ef540fcd51e"
+site_uuid: 5baec612-d5d0-4855-8c99-9ef540fcd51e
 url: 'https://coolify.io'
 tags:
   - Software-Development
@@ -16,7 +16,7 @@ last_jina_request: '2025-03-09T06:45:00.427Z'
 jina_error: |-
   Unexpected token 'C', "Coolify
   =="... is not valid JSON
-og_last_fetch: 2025-03-07T05:19:02.930Z
+og_last_fetch: '2025-03-14T05:42:17.605Z'
 ---
 An [[Open Source]] framework for [[Self-Hosting]] that gives the same powers of [[Opsless Deployment Providers]]
 

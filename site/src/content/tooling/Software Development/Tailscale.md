@@ -1,5 +1,5 @@
 ---
-site_uuid: "56bbc5ec-f8e0-4c6e-98dc-c857496ad2fb"
+site_uuid: 56bbc5ec-f8e0-4c6e-98dc-c857496ad2fb
 url: 'https://tailscale.com'
 tags:
   - Software-Development
@@ -11,7 +11,7 @@ og_screenshot_url: >-
   https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/04fdaa1e2144440e5be1e4f62731c2b281631effc78b7d40bc4ddbc6e8233d14.jpeg
 last_jina_request: '2025-03-09T06:45:02.933Z'
 jina_error: TIMEOUT
-og_last_fetch: 2025-03-07T05:19:01.814Z
+og_last_fetch: '2025-03-14T05:42:25.427Z'
 ---
 
 https://youtu.be/tW50igaFZTQ?si=a8I2pMHuGg_GwiEh
