@@ -62,6 +62,8 @@ function readVideoRegistry() {
  * @property {boolean} needsTagFormatting - Whether tags need formatting
  * @property {boolean} hasLowercaseTags - Whether there are lowercase tags to report
  * @property {boolean} needsURLCheck - Whether URL check is needed
+ * @property {boolean} needsPathTags - Whether tags from the file path need to be added
+ * @property {string[]} missingPathTags - Array of tags that should be added from the path
  * @property {boolean} needsProcessing - Whether any YAML processing is needed
  */
 
@@ -75,11 +77,13 @@ function readVideoRegistry() {
 
 /**
  * @typedef {Object} YouTubeEvaluation
- * @property {string[]} youtubeUrls - Array of found YouTube URLs
+ * @property {string[]} allYoutubeUrls - Array of all found YouTube URLs
+ * @property {string[]} danglingUrls - Array of unprocessed YouTube URLs
+ * @property {string[]} processedUrls - Array of processed YouTube URLs
  * @property {Object} urlEvaluations - Evaluation results for each URL
  * @property {boolean} needsFootnotesSection - Whether footnotes section needs to be added
  * @property {boolean} needsProcessing - Whether any YouTube processing is needed
- * @property {boolean} needsEntryIntoVideoRegistry - Whether an entry into the video registry is needed
+ * @property {boolean} needsRegistryUpdate - Whether an entry into the video registry is needed
  */
 
 /**
@@ -127,6 +131,32 @@ const ContentChecks = {
       !USER_OPTIONS.directories.excludeUrlCheck.some(dir => filePath.includes(dir));
   },
 
+  getPathTags: (filePath) => {
+    // Get the relative path from the content directory
+    const contentPath = USER_OPTIONS.directories.content;
+    const relativePath = path.relative(contentPath, filePath);
+    
+    // Split the path and remove the filename and 'tooling' directory
+    const pathParts = relativePath.split(path.sep);
+    const directories = pathParts.slice(0, -1).filter(dir => dir !== 'tooling');
+    
+    // Convert directory names to tags (replace spaces with dashes)
+    return directories.map(dir => dir.replace(/\s+/g, '-'));
+  },
+
+  needsPathTags: (data, filePath) => {
+    const currentTags = Array.isArray(data.tags) ? data.tags : (data.tags ? [data.tags] : []);
+    const pathTags = ContentChecks.getPathTags(filePath);
+    
+    // Check which path tags are missing from current tags
+    const missingTags = pathTags.filter(tag => !currentTags.includes(tag));
+    
+    return {
+      needsPathTags: missingTags.length > 0,
+      missingPathTags: missingTags
+    };
+  },
+
   // OpenGraph checks
   needsOpenGraphFetch: (data) => {
     const requiredProps = USER_OPTIONS.openGraph.requiredProperties;
@@ -141,6 +171,31 @@ const ContentChecks = {
   hasIframe: (content, videoId) => {
     const iframeRegex = new RegExp(`<iframe[^>]*src=["'][^"']*${videoId}[^"']*["'][^>]*>`, 'i');
     return iframeRegex.test(content);
+  },
+
+  hasMarkdownLink: (content, url) => {
+    const escapedUrl = url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const markdownRegex = new RegExp(`\\[([^\\]]+)\\]\\(${escapedUrl}\\)`, 'i');
+    return markdownRegex.test(content);
+  },
+
+  hasCitationLine: (content, url) => {
+    const escapedUrl = url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const citationRegex = new RegExp(`"\\[[^\\]]+\\]\\(${escapedUrl}\\),"`, 'i');
+    return citationRegex.test(content);
+  },
+
+  hasFootnoteLine: (content, url) => {
+    const escapedUrl = url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const footnoteRegex = new RegExp(`\\[\\^[a-f0-9]+\\]:[^\\n]*${escapedUrl}`, 'i');
+    return footnoteRegex.test(content);
+  },
+
+  isProcessedUrl: (content, url, videoId) => {
+    return ContentChecks.hasIframe(content, videoId) ||
+           ContentChecks.hasMarkdownLink(content, url) ||
+           ContentChecks.hasCitationLine(content, url) ||
+           ContentChecks.hasFootnoteLine(content, url);
   },
 
   hasFootnoteReference: (content, randHex) => {
@@ -162,9 +217,34 @@ const ContentChecks = {
   },
 
   findYoutubeUrls: (content) => {
-    if (!content) return [];
+    if (!content) return {
+      allUrls: [],
+      danglingUrls: [],
+      processedUrls: []
+    };
+
+    // Find all YouTube URLs
     const matches = [...content.matchAll(USER_OPTIONS.regex.youtubeUrl)];
-    return [...new Set(matches.map(match => match[0]))];
+    const allUrls = [...new Set(matches.map(match => match[0]))];
+    
+    // Categorize URLs
+    const danglingUrls = [];
+    const processedUrls = [];
+    
+    allUrls.forEach(url => {
+      const videoId = url.match(USER_OPTIONS.regex.youtubeUrl)?.[1];
+      if (videoId && ContentChecks.isProcessedUrl(content, url, videoId)) {
+        processedUrls.push(url);
+      } else {
+        danglingUrls.push(url);
+      }
+    });
+
+    return {
+      allUrls,
+      danglingUrls: [...new Set(danglingUrls)],
+      processedUrls: [...new Set(processedUrls)]
+    };
   },
 
   evaluateYoutubeUrl: (url, content, registry) => {
@@ -207,12 +287,16 @@ const ContentChecks = {
  * @returns {YAMLEvaluation}
  */
 function evaluateYAML(filePath, parsedFile) {
+  const pathTagsEvaluation = ContentChecks.needsPathTags(parsedFile.data, filePath);
+  
   const evaluation = {
     needsUUID: !ContentChecks.hasUUID(parsedFile.data),
     needsHyphenConversion: ContentChecks.needsHyphenConversion(parsedFile.matter),
     needsTagFormatting: ContentChecks.needsTagFormatting(parsedFile.data.tags),
     hasLowercaseTags: ContentChecks.hasLowercaseTags(parsedFile.data.tags),
     needsURLCheck: ContentChecks.needsURLCheck(parsedFile.data, filePath),
+    needsPathTags: pathTagsEvaluation.needsPathTags,
+    missingPathTags: pathTagsEvaluation.missingPathTags,
     needsProcessing: false
   };
 
@@ -220,7 +304,8 @@ function evaluateYAML(filePath, parsedFile) {
     evaluation.needsUUID ||
     evaluation.needsHyphenConversion ||
     evaluation.needsTagFormatting ||
-    evaluation.needsURLCheck;
+    evaluation.needsURLCheck ||
+    evaluation.needsPathTags;
 
   return evaluation;
 }
@@ -256,33 +341,38 @@ function evaluateYouTube(content, currentFile) {
   process.env.CURRENT_FILE = currentFile;
   
   const registry = readVideoRegistry();
-  const youtubeUrls = ContentChecks.findYoutubeUrls(content);
+  const { allUrls, danglingUrls, processedUrls } = ContentChecks.findYoutubeUrls(content);
   const urlEvaluations = {};
 
-  youtubeUrls.forEach(url => {
+  // Evaluate all URLs, both dangling and processed
+  allUrls.forEach(url => {
     urlEvaluations[url] = ContentChecks.evaluateYoutubeUrl(url, content, registry);
   });
 
   const evaluation = {
-    youtubeUrls,
+    allYoutubeUrls: allUrls,
+    danglingUrls,
+    processedUrls,
     urlEvaluations,
-    needsFootnotesSection: youtubeUrls.length > 0 && !ContentChecks.hasFootnotesSection(content),
+    needsFootnotesSection: allUrls.length > 0 && !ContentChecks.hasFootnotesSection(content),
     needsProcessing: false,
     needsRegistryUpdate: false
   };
 
+  // Only consider dangling URLs for initial processing needs
   evaluation.needsProcessing = 
-    youtubeUrls.length > 0 &&
-    (evaluation.needsFootnotesSection || 
-     Object.values(urlEvaluations).some(evaluation => 
-       !evaluation.hasIframe || 
-       evaluation.needsFootnote || 
-       evaluation.needsFootnoteDefinition || 
-       !evaluation.isInRegistry || 
-       evaluation.needsRegistryUpdate));
+    danglingUrls.length > 0 ||
+    (allUrls.length > 0 &&
+     (evaluation.needsFootnotesSection || 
+      Object.values(urlEvaluations).some(evaluation => 
+        !evaluation.hasIframe || 
+        evaluation.needsFootnote || 
+        evaluation.needsFootnoteDefinition || 
+        !evaluation.isInRegistry || 
+        evaluation.needsRegistryUpdate)));
 
   evaluation.needsRegistryUpdate = 
-    youtubeUrls.length > 0 &&
+    allUrls.length > 0 &&
     Object.values(urlEvaluations).some(evaluation => 
       !evaluation.isInRegistry || evaluation.needsRegistryUpdate);
 

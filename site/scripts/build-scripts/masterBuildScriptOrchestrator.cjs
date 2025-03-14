@@ -73,6 +73,10 @@ Total files evaluated: ${Object.keys(results).length}
     markdown += `- Needs Tag Formatting: ${evaluation.yaml.needsTagFormatting}\n`;
     markdown += `- Has Lowercase Tags: ${evaluation.yaml.hasLowercaseTags}\n`;
     markdown += `- Needs URL Check: ${evaluation.yaml.needsURLCheck}\n`;
+    markdown += `- Needs Path Tags: ${evaluation.yaml.needsPathTags}\n`;
+    if (evaluation.yaml.needsPathTags) {
+      markdown += `  - Missing Tags: ${evaluation.yaml.missingPathTags.join(', ')}\n`;
+    }
     markdown += `- Processing Required: ${evaluation.yaml.needsProcessing}\n\n`;
 
     // OpenGraph Evaluation
@@ -84,20 +88,37 @@ Total files evaluated: ${Object.keys(results).length}
 
     // YouTube Evaluation
     markdown += `#### YouTube Content Status\n`;
-    markdown += `- Found URLs: ${evaluation.youtube.youtubeUrls.length}\n`;
+    markdown += `- Total URLs Found: ${evaluation.youtube.allYoutubeUrls.length}\n`;
+    markdown += `  - Unique Unprocessed URLs: ${evaluation.youtube.danglingUrls.length}\n`;
+    markdown += `  - Already Processed URLs: ${evaluation.youtube.processedUrls.length}\n`;
     markdown += `- Needs Footnotes Section: ${evaluation.youtube.needsFootnotesSection}\n`;
     markdown += `- Needs Registry Update: ${evaluation.youtube.needsRegistryUpdate}\n`;
     markdown += `- Processing Required: ${evaluation.youtube.needsProcessing}\n\n`;
 
-    if (evaluation.youtube.youtubeUrls.length > 0) {
+    if (evaluation.youtube.allYoutubeUrls.length > 0) {
       markdown += `##### YouTube URLs Evaluation\n`;
-      for (const [url, urlEval] of Object.entries(evaluation.youtube.urlEvaluations)) {
-        markdown += `URL: ${url}\n`;
-        markdown += `- Has Iframe: ${urlEval.hasIframe}\n`;
-        markdown += `- Needs Footnote: ${urlEval.needsFootnote}\n`;
-        markdown += `- Needs Footnote Definition: ${urlEval.needsFootnoteDefinition}\n`;
-        markdown += `- In Registry: ${urlEval.isInRegistry}\n`;
-        markdown += `- Needs Registry Update: ${urlEval.needsRegistryUpdate}\n\n`;
+      
+      if (evaluation.youtube.danglingUrls.length > 0) {
+        markdown += `###### Unprocessed URLs:\n`;
+        evaluation.youtube.danglingUrls.forEach(url => {
+          const urlEval = evaluation.youtube.urlEvaluations[url];
+          markdown += `URL: ${url}\n`;
+          markdown += `- In Registry: ${urlEval.isInRegistry}\n`;
+          markdown += `- Needs Registry Update: ${urlEval.needsRegistryUpdate}\n\n`;
+        });
+      }
+
+      if (evaluation.youtube.processedUrls.length > 0) {
+        markdown += `###### Processed URLs:\n`;
+        evaluation.youtube.processedUrls.forEach(url => {
+          const urlEval = evaluation.youtube.urlEvaluations[url];
+          markdown += `URL: ${url}\n`;
+          markdown += `- Has Iframe: ${urlEval.hasIframe}\n`;
+          markdown += `- Needs Footnote: ${urlEval.needsFootnote}\n`;
+          markdown += `- Needs Footnote Definition: ${urlEval.needsFootnoteDefinition}\n`;
+          markdown += `- In Registry: ${urlEval.isInRegistry}\n`;
+          markdown += `- Needs Registry Update: ${urlEval.needsRegistryUpdate}\n\n`;
+        });
       }
     }
 
