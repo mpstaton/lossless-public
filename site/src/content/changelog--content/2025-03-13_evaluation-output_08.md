@@ -4,12 +4,10 @@ Generated: 2025-03-14T04:11:02.241Z
 ---
 
 ## Summary
-Total files processed: 649
-Files with updated YAML: 0
-Files with fresh OpenGraph objects this run: 555
-Files with outstanding OpenGraph errors: 96
-Fetched screenshots this run: 459
-Files with screenshot errors: 0
+Total files evaluated: 649
+Total files processed in this run:
+New or updated Open Graph fetches this run: 
+New or updated screenshot fetches this run: 459
 
   # Of 662 markdown files found:
 

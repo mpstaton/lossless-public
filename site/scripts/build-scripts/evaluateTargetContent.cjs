@@ -6,6 +6,54 @@ const matter = require('gray-matter');
 const USER_OPTIONS = require('./getUserOptionsForBuild.cjs');
 
 // ============================================================================
+// YAML Processing Functions
+// ============================================================================
+
+/**
+ * Process YAML key to ensure Obsidian format
+ * @param {string} key - The key to process
+ * @returns {string}
+ */
+function processYAMLKey(key) {
+  return key.toLowerCase()
+    .replace(/^["'](.*)["']$/, '$1')  // Remove quotes
+    .replace(/[-\s]+/g, '_');         // Convert spaces and hyphens to underscores
+}
+
+/**
+ * Process YAML value to follow Obsidian format
+ * @param {any} value - The value to process
+ * @returns {any}
+ */
+function processYAMLValue(value) {
+  if (typeof value !== 'string') return value;
+  return value.replace(/^["'](.*)["']$/, '$1');
+}
+
+/**
+ * Clean and format YAML frontmatter
+ * @param {string} content - File content
+ * @returns {string} Cleaned content
+ */
+function cleanYAMLFrontmatter(content) {
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!match) return content;
+
+  const frontmatter = match[1];
+  let modifiedFrontmatter = frontmatter;
+
+  // Process each line of frontmatter
+  modifiedFrontmatter = modifiedFrontmatter.replace(/^([^:\r\n]+?):[ \t]*(.+)$/gm, (match, key, value) => {
+    const processedKey = processYAMLKey(key.trim());
+    const processedValue = processYAMLValue(value.trim());
+    return `${processedKey}: ${processedValue}`;
+  });
+
+  // Replace original frontmatter
+  return content.replace(frontmatter, modifiedFrontmatter);
+}
+
+// ============================================================================
 // Video Registry Management
 // ============================================================================
 
@@ -159,12 +207,49 @@ const ContentChecks = {
 
   // OpenGraph checks
   needsOpenGraphFetch: (data) => {
-    const requiredProps = USER_OPTIONS.openGraph.requiredProperties;
-    return requiredProps.some(prop => !data[prop]) && !data.og_errors;
+    // If no URL, no fetch needed
+    if (!data.url) {
+      return false;
+    }
+
+    // If no OpenGraph data at all, needs fetch
+    const hasAnyOGData = USER_OPTIONS.openGraph.requiredProperties.some(prop => data[prop]);
+    if (!hasAnyOGData) {
+      return true;
+    }
+
+    // If there are errors, only retry for timeout or rate limit
+    if (data.og_errors) {
+      const error = String(data.og_error_message || '').toLowerCase();
+      return error.includes('timeout') || error.includes('rate limit');
+    }
+
+    // If URL has changed since last fetch
+    if (data.og_fetched_url && data.og_fetched_url !== data.url) {
+      return true;
+    }
+
+    // Otherwise, no fetch needed
+    return false;
   },
 
   needsScreenshotFetch: (data) => {
-    return !data.og_screenshot_url && !data.og_errors;
+    // Only fetch screenshot if:
+    // 1. We have a URL
+    // 2. No screenshot exists
+    // 3. No errors (except timeout/rate-limit)
+    // 4. We have basic OG data
+    if (!data.url || data.og_screenshot_url) {
+      return false;
+    }
+
+    if (data.og_errors) {
+      const error = String(data.og_error_message || '').toLowerCase();
+      return error.includes('timeout') || error.includes('rate limit');
+    }
+
+    // Must have some basic OG data before fetching screenshot
+    return USER_OPTIONS.openGraph.requiredProperties.some(prop => data[prop]);
   },
 
   // YouTube content checks
@@ -387,7 +472,9 @@ function evaluateYouTube(content, currentFile) {
 function evaluateFile(filePath) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
-    const parsedFile = matter(content);
+    // Clean YAML before parsing
+    const cleanedContent = cleanYAMLFrontmatter(content);
+    const parsedFile = matter(cleanedContent);
 
     const yaml = evaluateYAML(filePath, parsedFile);
     const openGraph = evaluateOpenGraph(parsedFile.data);
@@ -413,5 +500,6 @@ module.exports = {
   evaluateOpenGraph,
   evaluateYouTube,
   ContentChecks,
-  readVideoRegistry
+  readVideoRegistry,
+  cleanYAMLFrontmatter
 };

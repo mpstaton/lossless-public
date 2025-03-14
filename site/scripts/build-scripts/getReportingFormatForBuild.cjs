@@ -1,5 +1,7 @@
 const path = require('path');
 const matter = require('gray-matter');
+const fs = require('fs');
+const glob = require('glob');
 
 /**
  * @typedef {Object} ProcessingStats
@@ -136,24 +138,34 @@ function calculateStats(results, processingStats) {
  * @returns {string} Formatted summary markdown
  */
 function formatSummary(stats, processingStats) {
+  // Calculate percentages
+  const getPercent = (num, total) => ((num / total) * 100).toFixed(1);
+  const total = processingStats.totalFound;
+
   return `## Summary
-Total files processed: ${stats.totalFiles}
+### File Processing Overview
+Total markdown files found: ${total}
+Files evaluated: ${stats.totalFiles} (${getPercent(stats.totalFiles, total)}%)
+Files processed: ${processingStats.processed.count} (${getPercent(processingStats.processed.count, total)}%)
 
-Files with valid YAML before run: ${stats.yamlValid.beforeRun}
-Files with YAML updated this run: ${stats.yamlValid.updatedThisRun}
-Files with YAML errors during run: ${stats.yamlValid.errorsDuringRun}
+### Processing Breakdown
+Files skipped (could not evaluate): ${processingStats.skipped.count} (${getPercent(processingStats.skipped.count, total)}%)
+Files excluded by pattern: ${processingStats.excluded.count} (${getPercent(processingStats.excluded.count, total)}%)
 
-Files with valid OpenGraph objects before run: ${stats.openGraph.validBeforeRun}
-Files with OpenGraph updated this run: ${stats.openGraph.updatedThisRun}
-Files with new OpenGraph this run: ${stats.openGraph.newThisRun}
-Files with OpenGraph errors during run: ${stats.openGraph.errorsDuringRun}
-Total files with valid OpenGraph after run: ${stats.openGraph.totalValidAfterRun}
+### Content Updates This Run
+YAML modifications: ${stats.yamlValid.updatedThisRun} (${getPercent(stats.yamlValid.updatedThisRun, total)}%)
+OpenGraph fetches: ${stats.openGraph.updatedThisRun + stats.openGraph.newThisRun} (${getPercent(stats.openGraph.updatedThisRun + stats.openGraph.newThisRun, total)}%)
+Screenshot fetches: ${stats.screenshots.updatedThisRun + stats.screenshots.newThisRun} (${getPercent(stats.screenshots.updatedThisRun + stats.screenshots.newThisRun, total)}%)
 
-Files with valid screenshots before run: ${stats.screenshots.validBeforeRun}
-Files with screenshots updated this run: ${stats.screenshots.updatedThisRun}
-Files with new screenshots this run: ${stats.screenshots.newThisRun}
-Files with screenshot errors during run: ${stats.screenshots.errorsDuringRun}
-Total files with valid screenshots after run: ${stats.screenshots.totalValidAfterRun}`;
+### Current State After Run
+Files with valid YAML: ${stats.yamlValid.beforeRun + stats.yamlValid.updatedThisRun} (${getPercent(stats.yamlValid.beforeRun + stats.yamlValid.updatedThisRun, total)}%)
+Files with valid OpenGraph: ${stats.openGraph.totalValidAfterRun} (${getPercent(stats.openGraph.totalValidAfterRun, total)}%)
+Files with valid screenshots: ${stats.screenshots.totalValidAfterRun} (${getPercent(stats.screenshots.totalValidAfterRun, total)}%)
+
+### Error States
+YAML errors: ${stats.yamlValid.errorsDuringRun} (${getPercent(stats.yamlValid.errorsDuringRun, total)}%)
+OpenGraph errors: ${stats.openGraph.errorsDuringRun} (${getPercent(stats.openGraph.errorsDuringRun, total)}%)
+Screenshot errors: ${stats.screenshots.errorsDuringRun} (${getPercent(stats.screenshots.errorsDuringRun, total)}%)`;
 }
 
 /**
@@ -412,6 +424,52 @@ Generated: ${timestamp}
   return markdown;
 }
 
+/**
+ * Write the evaluation report to a file
+ * @param {string} markdown - The formatted markdown report
+ * @param {Object} options - Output options from USER_OPTIONS.evaluationOutput
+ * @returns {string} Path to the written file
+ */
+function writeOutput(markdown, options) {
+  const dir = path.dirname(options.baseFile);
+  const ext = options.pattern.extension;
+  const baseName = path.basename(options.baseFile, ext);
+  const sep = options.pattern.separator;
+  
+  // Format date according to pattern
+  const today = new Date();
+  const datePrefix = today.toISOString().split('T')[0]; // YYYY-MM-DD format
+  
+  // Find existing iteration files for today
+  const pattern = `${datePrefix}${sep}${baseName}${sep}*${ext}`;
+  const existingFiles = glob.sync(pattern, { cwd: dir });
+  
+  // Get next iteration number
+  const iterations = existingFiles
+    .map(file => {
+      const match = file.match(new RegExp(`${sep}(\\d+)${ext}$`));
+      return match ? parseInt(match[1]) : 0;
+    })
+    .filter(num => !isNaN(num));
+  
+  const nextIteration = iterations.length > 0 ? Math.max(...iterations) + 1 : 1;
+  const iterationNum = nextIteration.toString().padStart(2, '0');
+  
+  // Create output file path
+  const outputFile = path.join(dir, `${datePrefix}${sep}${baseName}${sep}${iterationNum}${ext}`);
+  
+  // Ensure directory exists
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  
+  // Write the file
+  fs.writeFileSync(outputFile, markdown);
+  
+  return outputFile;
+}
+
 module.exports = {
-  formatEvaluationReport
+  formatEvaluationReport,
+  writeOutput
 };

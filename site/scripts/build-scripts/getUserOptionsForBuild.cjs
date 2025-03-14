@@ -8,7 +8,15 @@ require('dotenv').config();
 
 const USER_OPTIONS = {
   // output file for quality assurance
-  evaluationOutputFile: path.join(process.cwd(), 'src/content/changelog--content/2025-03-13_evaluation-output.md'),
+  evaluationOutputPathAndFile: {
+    baseFile: path.join(process.cwd(), 'src/content/changelog--content/evaluation-output.md'),
+    pattern: {
+      dateFormat: 'YYYY-MM-DD',
+      iterationFormat: '00', // 01, 02, etc.
+      separator: '_',
+      extension: '.md'
+    }
+  },
 
   // Directory Configuration
   directories: {
@@ -20,18 +28,170 @@ const USER_OPTIONS = {
     excludeUrlCheck: ['Explainers'] // Directories to exclude from URL checks
   },
 
-  // YAML Properties
+  // YAML Properties and Formatting Rules
   frontmatter: {
-    required: {
-      properties: ['site_uuid'],
-      generateIfMissing: {
-        site_uuid: () => uuidv4()
+    // Define all possible YAML properties and their formatting rules
+    properties: {
+      // Core properties
+      site_uuid: {
+        required: true,
+        generate: () => uuidv4(),
+        format: value => value.toString(),
+        validate: value => /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value)
+      },
+      url: {
+        required: true,
+        format: value => value.replace(/^["'](.*)["']$/, '$1'), // Remove quotes
+        validate: value => /^https?:\/\/.+/i.test(value)
+      },
+      tags: {
+        required: true,
+        isArray: true,
+        format: tag => tag.replace(/\s+/g, '-'),
+        arrayFormat: 'dash-list', // - item format
+        validate: tag => typeof tag === 'string' && tag.length > 0
+      },
+      
+      // OpenGraph properties
+      image: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        validate: value => /^https?:\/\/.+/i.test(value)
+      },
+      site_name: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1')
+      },
+      title: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1')
+      },
+      favicon: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        validate: value => /^https?:\/\/.+/i.test(value)
+      },
+      og_screenshot_url: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        validate: value => /^https?:\/\/.+/i.test(value)
+      },
+      
+      // Timestamps and status properties
+      last_jina_request: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        validate: value => !isNaN(Date.parse(value))
+      },
+      jina_error: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1')
+      },
+      og_last_fetch: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        validate: value => !isNaN(Date.parse(value))
+      },
+      og_errors: {
+        format: value => value.toString()
+      },
+      og_last_error: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1'),
+        validate: value => !isNaN(Date.parse(value))
+      },
+      og_error_message: {
+        format: value => value.replace(/^["'](.*)["']$/, '$1')
       }
     },
-    propertyFormatting: {
-      convertHyphensToUnderscores: true,
-      ensureArrayForTags: true,
-      convertCasingsOfTags: true
+
+    // YAML formatting rules
+    formatting: {
+      // How to format different value types
+      string: value => value.replace(/^["'](.*)["']$/, '$1'),
+      url: value => value.replace(/^["'](.*)["']$/, '$1'),
+      date: value => value.replace(/^["'](.*)["']$/, '$1'),
+      boolean: value => value.toString(),
+      array: {
+        prefix: '\n',
+        itemPrefix: '  - ',
+        itemSuffix: '',
+        suffix: '\n'
+      },
+      
+      // Special formatting cases
+      blockString: {
+        indicator: '|-',
+        indent: '  '
+      }
+    },
+
+    // Pre-processing rules
+    preprocessing: {
+      // Clean content before YAML parsing
+      cleanContent: content => {
+        if (!content) return '';
+        
+        // Remove BOM if present
+        content = content.replace(/^\uFEFF/, '');
+        
+        // Normalize line endings
+        content = content.replace(/\r\n/g, '\n');
+        
+        // Fix common YAML formatting issues
+        return content
+          // Fix block scalar URL issues
+          .replace(/^([\w_-]+):\s*>[^\n]*\n\s*http/gm, '$1: http')
+          // Remove unnecessary quotes
+          .replace(/^([\w_-]+):\s+['"]([^'"]*)['"]\s*$/gm, '$1: $2')
+          // Fix URL formatting
+          .replace(/^\s*(https?:\/\/[^\s]+)\s*$/gm, '$1')
+          // Fix duplicate mapping keys
+          .replace(/(\n---\n[\s\S]*?\n---)/m, match => {
+            const seenKeys = new Set();
+            const lines = match.split('\n');
+            return lines.filter(line => {
+              const keyMatch = line.match(/^(\w+(?:[-_]\w+)*?):/);
+              if (!keyMatch) return true;
+              
+              const key = keyMatch[1];
+              if (seenKeys.has(key)) return false;
+              
+              seenKeys.add(key);
+              return true;
+            }).join('\n');
+          });
+      }
+    },
+
+    // Validation rules
+    validation: {
+      // Pre-validation checks
+      preCheck: content => {
+        const errors = [];
+        if (!content) errors.push('Empty content');
+        else {
+          if (!/^---\n/.test(content)) errors.push('Missing YAML front matter delimiter');
+          if (!/\n---\n/.test(content)) errors.push('Missing YAML front matter closing delimiter');
+        }
+        return errors;
+      },
+      
+      // Post-validation checks
+      postCheck: (data) => {
+        const errors = [];
+        if (!data) errors.push('Invalid YAML data');
+        else {
+          // Check required properties
+          for (const [key, def] of Object.entries(USER_OPTIONS.frontmatter.properties)) {
+            if (def.required && data[key] === undefined) {
+              errors.push(`Missing required property: ${key}`);
+            }
+          }
+          
+          // Validate tags format
+          const tagsDef = USER_OPTIONS.frontmatter.properties.tags;
+          if (data.tags && tagsDef.required) {
+            if (!Array.isArray(data.tags)) {
+              errors.push('Tags should be an array');
+            } else if (data.tags.length === 0) {
+              errors.push('Tags array should not be empty');
+            }
+          }
+        }
+        return errors;
+      }
     }
   },
 

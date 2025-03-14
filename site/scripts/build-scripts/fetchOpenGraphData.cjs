@@ -14,6 +14,33 @@ const openGraphKey = process.env.PUBLIC_OPEN_GRAPH_API_KEY;
 const screenshotFetchInProgress = new Set();
 
 /**
+ * Strip quotes from a value for YAML
+ * @param {any} value - The value to process
+ * @returns {any} Processed value
+ */
+function stripQuotes(value) {
+  if (typeof value !== 'string') return value;
+  return value.replace(/^["'](.*)["']$/, '$1');
+}
+
+/**
+ * Process object values to strip quotes for YAML
+ * @param {Object} obj - Object to process
+ * @returns {Object} Processed object
+ */
+function processObjectForYAML(obj) {
+  const processed = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === 'object' && value !== null) {
+      processed[key] = processObjectForYAML(value);
+    } else {
+      processed[key] = stripQuotes(value);
+    }
+  }
+  return processed;
+}
+
+/**
  * Clean duplicate YAML keys from raw content
  * @param {string} content - Raw file content
  * @returns {string} Cleaned content
@@ -93,7 +120,7 @@ async function fetchScreenshotUrlInBackground(url, filePath) {
     const cleanedContent = cleanDuplicateYamlKeys(fileContent);
     const { data: frontmatter, content } = matter(cleanedContent);
     
-    frontmatter.og_screenshot_url = data.screenshotUrl;
+    frontmatter.og_screenshot_url = stripQuotes(data.screenshotUrl);
     frontmatter.og_last_fetch = new Date().toISOString();
     
     fs.writeFileSync(filePath, matter.stringify(content, frontmatter));
@@ -119,7 +146,7 @@ function markFileWithError(filePath, errorMessage) {
     
     frontmatter.og_errors = true;
     frontmatter.og_last_error = new Date().toISOString();
-    frontmatter.og_error_message = errorMessage;
+    frontmatter.og_error_message = stripQuotes(errorMessage);
     
     fs.writeFileSync(filePath, matter.stringify(content, frontmatter));
     console.log(`⚠️ Marked ${path.basename(filePath)} with error: ${errorMessage}`);
@@ -129,10 +156,66 @@ function markFileWithError(filePath, errorMessage) {
 }
 
 /**
- * Fetch OpenGraph data for a URL
- * @param {string} url - URL to fetch OpenGraph data for
- * @param {string} filePath - Path to the markdown file
- * @returns {Promise<Object|null>} OpenGraph properties or null if error
+ * Determine if OpenGraph data needs to be fetched
+ * @param {Object} frontmatter - The file's frontmatter
+ * @returns {Object} Evaluation result
+ */
+function needsOpenGraphFetch(frontmatter) {
+  // If no URL, no fetch needed
+  if (!frontmatter.url) {
+    return { needsFetch: false, reason: 'no_url' };
+  }
+
+  // If no OpenGraph data at all, needs fetch
+  if (!hasAnyOpenGraphData(frontmatter)) {
+    return { needsFetch: true, reason: 'no_data' };
+  }
+
+  // Check for specific error conditions that warrant a retry
+  if (frontmatter.og_errors) {
+    const error = frontmatter.og_errors.toLowerCase();
+    
+    // Only retry on timeout or rate limit errors
+    if (error.includes('timeout') || error.includes('rate limit')) {
+      return { needsFetch: true, reason: 'retryable_error' };
+    }
+    
+    // All other errors should not trigger a refetch
+    return { needsFetch: false, reason: 'non_retryable_error' };
+  }
+
+  // Check if URL has changed since last fetch
+  if (frontmatter.og_fetched_url && frontmatter.og_fetched_url !== frontmatter.url) {
+    return { needsFetch: true, reason: 'url_changed' };
+  }
+
+  // If we have OpenGraph data and no retryable errors, no fetch needed
+  return { needsFetch: false, reason: 'has_valid_data' };
+}
+
+/**
+ * Check if frontmatter has any OpenGraph data
+ * @param {Object} frontmatter - The file's frontmatter
+ * @returns {boolean} Whether any OpenGraph data exists
+ */
+function hasAnyOpenGraphData(frontmatter) {
+  const ogProperties = [
+    'og_title',
+    'og_description',
+    'og_image',
+    'og_url',
+    'og_site_name',
+    'og_type'
+  ];
+
+  return ogProperties.some(prop => frontmatter[prop]);
+}
+
+/**
+ * Process OpenGraph data for a file
+ * @param {string} url - The URL to fetch OpenGraph data for
+ * @param {string} filePath - Path to the file being processed
+ * @returns {Promise<Object|null>} OpenGraph data or null if error
  */
 async function getFromOpenGraphIo(url, filePath) {
   if (!openGraphKey) {
@@ -155,10 +238,17 @@ async function getFromOpenGraphIo(url, filePath) {
     if (data.hybridGraph) {
       const properties = ['image', 'site_name', 'title', 'url', 'favicon'];
       properties.forEach(prop => {
-        if (data.hybridGraph[prop]) ogProperties[prop] = data.hybridGraph[prop];
+        if (data.hybridGraph[prop]) {
+          // Strip quotes from each property value
+          ogProperties[prop] = stripQuotes(data.hybridGraph[prop]);
+        }
       });
     }
     
+    // Add URL to the OpenGraph data for change detection
+    ogProperties.og_fetched_url = stripQuotes(url);
+    ogProperties.og_last_fetch = new Date().toISOString();
+
     return ogProperties;
   } catch (error) {
     console.error('Error fetching OpenGraph properties for', url, ':', error);
@@ -172,5 +262,7 @@ module.exports = {
   getFromOpenGraphIo,
   fetchScreenshotUrlInBackground,
   cleanDuplicateYamlKeys,
-  markFileWithError
+  markFileWithError,
+  needsOpenGraphFetch,
+  hasAnyOpenGraphData
 };

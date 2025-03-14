@@ -6,99 +6,91 @@ const { v4: uuidv4 } = require('uuid');
 
 // Import configurations and evaluation functions
 const USER_OPTIONS = require('./getUserOptionsForBuild.cjs');
-const { evaluateFile } = require('./evaluateTargetContent.cjs');
+const { 
+  evaluateFile, 
+  cleanYAMLFrontmatter 
+} = require('./evaluateTargetContent.cjs');
 const { 
   getFromOpenGraphIo, 
   fetchScreenshotUrlInBackground, 
   cleanDuplicateYamlKeys,
   markFileWithError 
 } = require('./fetchOpenGraphData.cjs');
-const { formatEvaluationReport } = require('./getReportingFormatForBuild.cjs');
+const { formatEvaluationReport, writeOutput } = require('./getReportingFormatForBuild.cjs');
+const {
+  processFile: processYAMLFile
+} = require('./assureYAMLPropertiesCorrect.cjs');
 
 // ============================================================================
-// YAML Assurance Functions
+// YAML Processing Functions
 // ============================================================================
 
 /**
- * @typedef {Object} YAMLModifications
- * @property {boolean} modified - Whether the file was modified
- * @property {number} replacements - Number of replacements made
- * @property {Object} changes - Detailed changes made
+ * Process and validate YAML frontmatter before any other operations
+ * @param {string} content - Raw file content
+ * @returns {Object} Processed content and validation info
  */
+function preProcessYAML(content) {
+  // First clean the content using the comprehensive rules
+  const cleanedContent = USER_OPTIONS.frontmatter.preprocessing.cleanContent(content);
+  
+  // Validate basic YAML structure
+  const preCheckErrors = USER_OPTIONS.frontmatter.validation.preCheck(cleanedContent);
+  if (preCheckErrors.length > 0) {
+    return { content: cleanedContent, valid: false, errors: preCheckErrors };
+  }
+
+  // Parse and validate YAML
+  const { data: frontmatter, content: bodyContent } = matter(cleanedContent);
+  const postCheckErrors = USER_OPTIONS.frontmatter.validation.postCheck(frontmatter);
+
+  return {
+    content: cleanedContent,
+    frontmatter,
+    bodyContent,
+    valid: postCheckErrors.length === 0,
+    errors: [...preCheckErrors, ...postCheckErrors]
+  };
+}
 
 /**
- * Process and correct YAML frontmatter
+ * Ensure YAML properties are correctly formatted
  * @param {string} filePath - Path to the file
- * @param {Object} evaluation - Evaluation results for the file
- * @returns {YAMLModifications} Modification results
+ * @returns {Promise<Object>} Processing results
  */
-function assureYAMLProperties(filePath, evaluation) {
-  const content = fs.readFileSync(filePath, 'utf8');
-  const parsedFile = matter(content);
-  
-  // Get the raw frontmatter string
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return { modified: false, replacements: 0, changes: {} };
-  
-  const frontmatter = match[1];
-  let modifiedFrontmatter = frontmatter;
-  let replacements = 0;
-  const changes = {};
-  
-  // Add UUID if missing
-  if (evaluation.yaml.needsUUID) {
-    const generatedUUID = uuidv4();
-    const newProperty = `site_uuid: "${generatedUUID}"`;
-    modifiedFrontmatter = `${newProperty}\n${modifiedFrontmatter}`;
-    replacements++;
-    changes.uuid = generatedUUID;
+async function assureYAMLProperties(filePath) {
+  try {
+    // Use the processFile function from assureYAMLPropertiesCorrect.cjs
+    const result = processYAMLFile(filePath);
+    return { 
+      success: result.errors.length === 0,
+      modified: result.modified,
+      replacements: result.replacements,
+      changes: result.changes,
+      errors: result.errors
+    };
+  } catch (error) {
+    console.error(`Error in assureYAMLPropertiesCorrect.cjs for ${filePath}:`, error);
+    return { success: false, errors: [error.message] };
   }
+}
 
-  // Convert hyphens to underscores in variable names
-  if (evaluation.yaml.needsHyphenConversion) {
-    modifiedFrontmatter = modifiedFrontmatter.replace(/^([^:\r\n]+?):/gm, (match, varName) => {
-      const newVarName = varName.trim().replace(/-/g, '_');
-      if (newVarName !== varName.trim()) {
-        replacements++;
-        changes.hyphenConversions = changes.hyphenConversions || [];
-        changes.hyphenConversions.push({ from: varName.trim(), to: newVarName });
-        return `${newVarName}:`;
-      }
-      return match;
-    });
-  }
-
-  // Format tags
-  if (evaluation.yaml.needsTagFormatting || evaluation.yaml.needsPathTags) {
-    const currentTags = Array.isArray(parsedFile.data.tags) ? parsedFile.data.tags : 
-                       (parsedFile.data.tags ? [parsedFile.data.tags] : []);
-    
-    let newTags = currentTags.map(tag => tag.replace(/\s+/g, '-'));
-    
-    // Add missing path tags
-    if (evaluation.yaml.needsPathTags) {
-      newTags = [...new Set([...newTags, ...evaluation.yaml.missingPathTags])];
-      changes.addedTags = evaluation.yaml.missingPathTags;
+/**
+ * Evaluate content and write results
+ * @param {string} filePath - Path to the file
+ * @returns {Promise<Object>} Evaluation results
+ */
+async function evaluateContent(filePath) {
+  try {
+    const result = await evaluateFile(filePath);
+    if (!result) {
+      return { success: false, error: "Failed to evaluate file" };
     }
-    
-    if (JSON.stringify(currentTags) !== JSON.stringify(newTags)) {
-      modifiedFrontmatter = modifiedFrontmatter.replace(
-        /^tags:.*$/m,
-        `tags: [${newTags.map(t => `"${t}"`).join(', ')}]`
-      );
-      replacements++;
-      changes.tagFormatting = { from: currentTags, to: newTags };
-    }
+    return { success: true, evaluation: result };
+  } catch (error) {
+    console.error(`Error evaluating ${filePath}:`, error);
+    return { success: false, error: error.message };
   }
-
-  const modified = frontmatter !== modifiedFrontmatter;
-  if (modified) {
-    // Replace the original frontmatter with modified version
-    const newContent = content.replace(frontmatter, modifiedFrontmatter);
-    fs.writeFileSync(filePath, newContent, 'utf8');
-  }
-
-  return { modified, replacements, changes };
 }
 
 // ============================================================================
@@ -166,17 +158,22 @@ async function processOpenGraph(filePath, evaluation) {
  */
 function getNextIterationFilePath(baseFilePath) {
   const dir = path.dirname(baseFilePath);
-  const ext = path.extname(baseFilePath);
+  const ext = USER_OPTIONS.evaluationOutputPathAndFile.pattern.extension;
   const baseName = path.basename(baseFilePath, ext);
+  const sep = USER_OPTIONS.evaluationOutputPathAndFile.pattern.separator;
   
-  // Find existing iteration files
-  const pattern = `${baseName}_*${ext}`;
+  // Format date according to pattern
+  const today = new Date();
+  const datePrefix = today.toISOString().split('T')[0]; // YYYY-MM-DD format
+  
+  // Find existing iteration files for today
+  const pattern = `${datePrefix}${sep}${baseName}${sep}*${ext}`;
   const existingFiles = glob.sync(pattern, { cwd: dir });
   
   // Extract existing iteration numbers
   const iterations = existingFiles
     .map(file => {
-      const match = file.match(/_(\d+)\.md$/);
+      const match = file.match(new RegExp(`${sep}(\\d+)${ext}$`));
       return match ? parseInt(match[1]) : 0;
     })
     .filter(num => !isNaN(num));
@@ -185,13 +182,55 @@ function getNextIterationFilePath(baseFilePath) {
   const nextIteration = iterations.length > 0 ? Math.max(...iterations) + 1 : 1;
   const iterationNum = nextIteration.toString().padStart(2, '0');
   
-  return path.join(dir, `${baseName}_${iterationNum}${ext}`);
+  return path.join(dir, `${datePrefix}${sep}${baseName}${sep}${iterationNum}${ext}`);
 }
 
 // ============================================================================
-// Main Orchestration
+// Main Processing
 // ============================================================================
 
+/**
+ * Main orchestration function
+ * @param {string} filePath - Path to the file to process
+ */
+async function processFile(filePath) {
+  console.log(`Processing file: ${filePath}`);
+  
+  // Step 1: Evaluate content
+  const evalResult = await evaluateContent(filePath);
+  if (!evalResult.success) {
+    console.error('Content evaluation failed.');
+    return { success: false, error: evalResult.error };
+  }
+
+  // Track modifications
+  let modifications = { modified: false, replacements: 0, changes: {} };
+
+  // Step 2: Process YAML if needed
+  if (evalResult.evaluation.yaml.needsProcessing) {
+    const yamlResult = await assureYAMLProperties(filePath);
+    if (!yamlResult.success) {
+      console.error('YAML processing failed.');
+      // Continue with other processes even if YAML fails
+    }
+    modifications = { ...modifications, ...yamlResult };
+  }
+
+  // Step 3: Process OpenGraph if needed
+  if (evalResult.evaluation.openGraph.needsProcessing) {
+    await processOpenGraph(filePath, evalResult.evaluation);
+  }
+
+  return { 
+    success: true, 
+    evaluation: evalResult.evaluation,
+    modifications
+  };
+}
+
+/**
+ * Main function to orchestrate all processing
+ */
 async function main() {
   try {
     console.log('Starting content evaluation and YAML assurance...');
@@ -207,7 +246,7 @@ async function main() {
 
     console.log(`Searching for files with pattern: ${globPattern}`);
     const files = await glob(globPattern);
-    
+
     // Initialize processing stats
     const processingStats = {
       totalFound: files.length,
@@ -232,37 +271,22 @@ async function main() {
     for (const file of files) {
       console.log(`Processing: ${file}`);
       
-      // First evaluate
-      let evaluation = evaluateFile(file);
+      const result = await processFile(file);
       
-      if (!evaluation) {
+      if (!result.success) {
         processingStats.skipped.count++;
         processingStats.skipped.paths.push(file);
-        console.log(`Skipped ${file} - Could not evaluate`);
+        console.log(`Skipped ${file} - ${result.error || 'Could not process'}`);
         continue;
       }
 
       processingStats.processed.count++;
       processingStats.processed.paths.push(file);
-      
-      // Then apply YAML modifications if needed
-      const modifications = evaluation?.yaml.needsProcessing 
-        ? assureYAMLProperties(file, evaluation)
-        : { modified: false, replacements: 0, changes: {} };
-
-      // Process OpenGraph if needed
-      if (evaluation?.openGraph.needsProcessing) {
-        await processOpenGraph(file, evaluation);
-        
-        // Re-evaluate after OpenGraph processing to get updated status
-        evaluation = evaluateFile(file);
-      }
-
-      results[file] = { evaluation, modifications };
+      results[file] = result;
     }
 
     // Generate output file path with iteration number
-    const outputFile = getNextIterationFilePath(USER_OPTIONS.evaluationOutputFile);
+    const outputFile = getNextIterationFilePath(USER_OPTIONS.evaluationOutputPathAndFile.baseFile);
     
     // Format and write results using the reporting module
     const markdown = formatEvaluationReport(results, processingStats);
@@ -283,5 +307,17 @@ async function main() {
   }
 }
 
-// Run the script
-main();
+// Export for use in other scripts
+module.exports = {
+  processFile,
+  preProcessYAML,
+  assureYAMLProperties,
+  evaluateContent,
+  processOpenGraph,
+  main
+};
+
+// Run main function if this script is executed directly
+if (require.main === module) {
+  main();
+}
