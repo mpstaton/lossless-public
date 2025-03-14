@@ -1,4 +1,5 @@
 ---
+site_uuid: "8cd93874-f1a6-412b-a2e4-5d77249ac0b1"
 url: 'https://cassandra.apache.org/'
 parent_org: '[[The Apache Software Foundation]]'
 tags:

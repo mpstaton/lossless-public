@@ -1,4 +1,5 @@
 ---
+site_uuid: "29bbba65-1d02-4d27-92f7-8ebc30e1608e"
 parent_org: '[[UC Berkeley]]'
 url: 'https://gorilla.cs.berkeley.edu/'
 zinger: Large Language Model Connected with Massive APIs

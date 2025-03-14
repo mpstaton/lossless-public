@@ -1,4 +1,5 @@
 ---
+site_uuid: "9f240732-ae65-4f5c-a7a5-e22946686a44"
 url: 'https://www.vanta.com/'
 tags:
   - Software-Development

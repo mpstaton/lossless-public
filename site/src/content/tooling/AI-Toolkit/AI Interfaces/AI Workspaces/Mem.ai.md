@@ -1,4 +1,5 @@
 ---
+site_uuid: "f4d45233-9d13-4892-8b8b-7cc53bf9df63"
 url: 'https://mem.ai/'
 image: 'https://framerusercontent.com/images/ULLjDc352L91ujuHm78OCGd11c.png'
 site_name: Mem

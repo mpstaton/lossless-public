@@ -1,4 +1,5 @@
 ---
+site_uuid: "13f138b0-8ec8-413c-943d-5204f27580e4"
 url: 'https://www.raspberrypi.com/'
 zinger: The new standard for embedded computing.
 wikipedia_url: 'https://en.wikipedia.org/wiki/Raspberry_Pi'

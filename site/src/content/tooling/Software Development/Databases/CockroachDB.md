@@ -1,4 +1,5 @@
 ---
+site_uuid: "8f6b43c8-8f05-4d41-a4fb-45bc37700544"
 url: 'https://www.cockroachlabs.com/homepage/'
 tags:
   - Software-Development

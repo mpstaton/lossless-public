@@ -1,4 +1,5 @@
 ---
+site_uuid: "a01774a6-bfe3-4ee1-a733-3cbbf5a9346c"
 url: 'https://multitaskai.com/'
 tags:
   - AI-Toolkit

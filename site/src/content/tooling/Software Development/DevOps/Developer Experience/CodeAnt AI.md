@@ -1,4 +1,5 @@
 ---
+site_uuid: "f93cfda2-aca8-487c-b906-45e2cd87c6df"
 url: 'https://www.codeant.ai/'
 zinger: AI Code Reviewer
 image: 'https://framerusercontent.com/assets/D2BdJiZA43PJ2u2ovYMkwTYeQL4.png'

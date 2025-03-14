@@ -1,4 +1,5 @@
 ---
+site_uuid: "40650bd3-0ed7-4463-b6a3-5718b4112c77"
 url: 'https://legendapp.com/open-source/state/v3/'
 zinger: High performance state and local first sync
 description: >-

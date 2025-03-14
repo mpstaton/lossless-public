@@ -1,4 +1,5 @@
 ---
+site_uuid: "1d1b92f4-adda-4655-a7bd-ae1102acaa66"
 url: 'https://www.ruby-lang.org/en/'
 tags:
   - Software-Development

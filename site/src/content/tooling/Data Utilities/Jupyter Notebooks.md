@@ -1,4 +1,5 @@
 ---
+site_uuid: "1b8f0344-1a9e-4974-a9fa-61c24c3b7cc4"
 url: 'https://jupyter.org'
 image: 'https://jupyter.org/assets/share.png'
 site_name: Project Jupyter

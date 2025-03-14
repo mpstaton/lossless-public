@@ -1,4 +1,5 @@
 ---
+site_uuid: "c48b426e-d387-4a8b-818c-1c2296396eb9"
 url: 'https://graphwise.ai/'
 image: >-
   https://graphwise.ai/wp-content/uploads/2024/10/cropped-graphwise_favicon-180x180.png

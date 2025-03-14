@@ -1,4 +1,5 @@
 ---
+site_uuid: "a3da9fd1-64b3-4dc4-ab0e-044bd87670db"
 url: 'https://superwhisper.com/'
 tags:
   - AI-Toolkit

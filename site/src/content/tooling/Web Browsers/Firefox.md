@@ -1,4 +1,5 @@
 ---
+site_uuid: "3eade4cf-78b4-42ff-a41f-b5c7c4aad533"
 url: 'https://www.mozilla.org/en-US/firefox/'
 image: >-
   https://www.mozilla.org/media/protocol/img/logos/firefox/browser/og.4ad05d4125a5.png

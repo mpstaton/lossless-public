@@ -1,4 +1,5 @@
 ---
+site_uuid: "196f796c-01b8-4033-9d8d-382cd2624107"
 url: 'https://www.airtable.com/'
 image: 'https://www.airtable.com/images/airtable-seo.jpg'
 site_name: Airtable

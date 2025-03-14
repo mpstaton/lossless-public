@@ -1,4 +1,5 @@
 ---
+site_uuid: "67a01e27-2f41-4d3b-a4c1-eb4ffd0099fd"
 url: 'https://enki.com/'
 tags:
   - Training

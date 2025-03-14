@@ -1,4 +1,5 @@
 ---
+site_uuid: "7addde48-92bd-43f4-aab6-edddf5d1117a"
 url: 'https://pydantic.dev/logfire'
 parent_org: '[[Pydantic]]'
 image: 'https://pydantic.dev/logfire/opengraph-image.jpg?b57901e7917d2d58'

@@ -1,4 +1,5 @@
 ---
+site_uuid: "3f2a895d-4f3b-40e5-bdac-beed61a4eea5"
 url: 'https://www.heap.io/'
 description: >-
   Heap is the only digital insights platform that gives you complete

@@ -1,4 +1,5 @@
 ---
+site_uuid: "8f5b3d66-818d-43c5-82da-67bbbb585444"
 url: 'https://duckdb.org/'
 tags:
   - Software-Development

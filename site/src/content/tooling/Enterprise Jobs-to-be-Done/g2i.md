@@ -1,4 +1,5 @@
 ---
+site_uuid: "c32eab61-9130-41a0-8b48-a6abd6ad685c"
 url: 'https://www.g2i.co/'
 hero: '![[Screenshot 2025-02-22 at 9.50.16 PM_g2i--Hero.png]]'
 image: 'https://www.g2i.co/og'

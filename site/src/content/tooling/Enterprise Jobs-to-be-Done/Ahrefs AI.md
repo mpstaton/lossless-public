@@ -1,4 +1,5 @@
 ---
+site_uuid: "6309d7a5-49a9-49cd-b1b8-83463328d9f1"
 url: 'https://ahrefs.com/'
 zinger: 'Your digital marketing strategy backed by real, actionable data'
 description: 'All-in-one marketing intelligence platform:'

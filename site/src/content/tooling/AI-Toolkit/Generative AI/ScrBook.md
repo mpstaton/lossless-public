@@ -1,4 +1,5 @@
 ---
+site_uuid: "8279c842-cb73-465e-91ff-d36bd922e749"
 url: 'https://srcbook.com/'
 tags:
   - AI-Toolkit

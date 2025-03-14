@@ -1,4 +1,5 @@
 ---
+site_uuid: "4eba18f0-5cc0-4e32-840a-83855d6ce167"
 url: 'https://maps.google.com'
 parent_org: '[[Google]]'
 tags:

@@ -1,4 +1,5 @@
 ---
+site_uuid: "bc86e332-9713-49be-84bb-d5fc728daafc"
 url: 'https://aerospike.com/'
 zinger: 'The massively scalable, millisecond latency, real-time database.'
 description: >-

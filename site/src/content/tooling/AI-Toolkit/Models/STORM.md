@@ -1,4 +1,5 @@
 ---
+site_uuid: "93231b7b-ba51-41c1-98dd-3aed510c86f6"
 url: 'https://storm.genie.stanford.edu/'
 tags:
   - AI-Toolkit

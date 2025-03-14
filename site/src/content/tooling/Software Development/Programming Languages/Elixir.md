@@ -1,4 +1,5 @@
 ---
+site_uuid: "6c2a9837-0846-4dd9-be3a-77455e68b29c"
 url: 'https://elixir-lang.org/'
 tags:
   - Software-Development

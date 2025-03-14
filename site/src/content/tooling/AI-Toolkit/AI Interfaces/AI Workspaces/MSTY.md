@@ -1,4 +1,5 @@
 ---
+site_uuid: "bdccc07c-f8a4-44de-8cb7-4f7f662f3e0d"
 url: 'https://msty.app/'
 tags:
   - AI-Toolkit

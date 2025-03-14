@@ -1,4 +1,5 @@
 ---
+site_uuid: "4f576cee-33c0-4371-bd1e-db5e3b536f59"
 url: 'https://dollardeploy.com'
 image: 'https://dollardeploy.com/cover.jpg'
 site_name: DollarDeploy

@@ -1,4 +1,5 @@
 ---
+site_uuid: "984bd6fe-36bc-4c98-96a4-78ce83d0bc0f"
 github_url: 'https://github.com/ghostty-org'
 url: 'https://ghostty.org'
 image: 'https://ghostty.org/social-share-card.jpg'

@@ -1,4 +1,5 @@
 ---
+site_uuid: "9da8c258-ae3b-4075-9f79-2a502f5db9fd"
 url: 'https://FrontendMasters.com/'
 image: 'https://static.frontendmasters.com/assets/fm/med/home/fm-opengraph-v3.jpg'
 site_name: Frontend Masters

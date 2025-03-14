@@ -1,4 +1,5 @@
 ---
+site_uuid: "1679f042-d3d9-44dc-b73b-24eaf0e48984"
 url: 'https://whatfix.com/'
 tags:
   - Software-Development

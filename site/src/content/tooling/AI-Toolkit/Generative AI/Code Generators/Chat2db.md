@@ -1,4 +1,5 @@
 ---
+site_uuid: "3986e5b3-8fe0-42fb-985d-e048f503d190"
 url: 'https://chat2db.ai/'
 tags:
   - AI-Toolkit

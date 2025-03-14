@@ -1,4 +1,5 @@
 ---
+site_uuid: "dde4d6e0-00ed-4972-9644-627b88989ec9"
 url: 'https://www.pythagora.ai/'
 tags:
   - AI-Toolkit

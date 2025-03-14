@@ -1,4 +1,5 @@
 ---
+site_uuid: "1cef5118-0dbf-4108-bb38-7497b7cf06c9"
 url: 'https://www.eraser.io/'
 zinger: AI co-pilot‍ for technical design
 image: >-

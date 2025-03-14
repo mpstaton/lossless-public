@@ -1,4 +1,5 @@
 ---
+site_uuid: "47ed501f-62bc-4ad0-a816-7b30b2250adc"
 url: 'https://www.banani.co/'
 tags:
   - AI-Toolkit

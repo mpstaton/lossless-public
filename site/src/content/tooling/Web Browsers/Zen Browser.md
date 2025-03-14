@@ -1,4 +1,5 @@
 ---
+site_uuid: "599bd19e-2292-4175-8037-887d64efd9c8"
 url: 'https://zen-browser.app/'
 aliases:
   - Zen

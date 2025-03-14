@@ -1,4 +1,5 @@
 ---
+site_uuid: "ee9c8f2f-f828-448f-bb74-6ea67159a52a"
 url: 'https://lovable.dev'
 tags:
   - AI-Toolkit

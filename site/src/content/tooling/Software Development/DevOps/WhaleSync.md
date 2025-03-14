@@ -1,4 +1,5 @@
 ---
+site_uuid: "4755877e-1c2f-4d3c-9875-faec44661043"
 url: 'https://www.whalesync.com/'
 image: >-
   https://cdn.prod.website-files.com/6683792e42237a5f054af942/66e0aba4cc4c3cde2e9d52d0_general-dark-og.jpg

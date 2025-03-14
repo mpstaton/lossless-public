@@ -1,4 +1,5 @@
 ---
+site_uuid: "d274d1a1-49e1-4c68-b5bf-938dac4cd93b"
 url: 'https://www.feedhive.com/'
 image: 'https://www.feedhive.com/images/og-image.png'
 site_name: FeedHive

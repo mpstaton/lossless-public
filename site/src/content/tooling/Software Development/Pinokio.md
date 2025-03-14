@@ -1,4 +1,5 @@
 ---
+site_uuid: "fd7c7e1b-5d6e-416e-934c-9f64f62ba344"
 url: 'https://pinokio.computer'
 description: >-
   Pinokio is a browser that lets you install, run, and programmatically control

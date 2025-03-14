@@ -1,4 +1,5 @@
 ---
+site_uuid: "bc4d3894-6570-4810-98dc-84ce7825e8c0"
 url: 'https://monday.com/'
 image: 'https://s3.amazonaws.com/general-assets/monday-1200x628.png'
 site_name: monday.com

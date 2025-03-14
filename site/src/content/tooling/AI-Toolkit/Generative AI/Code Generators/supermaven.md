@@ -1,4 +1,5 @@
 ---
+site_uuid: "01753be1-e3dc-456d-840c-a3553419efba"
 zinger: The fastest copilot.
 description: Supermaven lets you write code 2x faster with AI.
 tags:

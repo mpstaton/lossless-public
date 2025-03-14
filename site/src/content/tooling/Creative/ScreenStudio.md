@@ -1,4 +1,5 @@
 ---
+site_uuid: "19f814e4-4319-440f-96e2-6771faf739ad"
 url: 'https://screen.studio'
 image: 'https://screen.studio/og-main-2.png'
 site_name: Screen Studio

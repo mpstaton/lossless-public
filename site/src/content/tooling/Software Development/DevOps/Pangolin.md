@@ -1,4 +1,5 @@
 ---
+site_uuid: "41a47504-afb6-44ad-ba5c-af60dca083fd"
 url: 'https://github.com/fosrl/pangolin'
 image: >-
   https://opengraph.githubassets.com/6d6fbf1edcdab6174113196c0efb8ec9f59e37236e9a4357487b03c4877a1744/fosrl/pangolin

@@ -1,4 +1,5 @@
 ---
+site_uuid: "b007620f-ec24-4a23-b6f2-37b70c831963"
 url: 'https://www.continue.dev/'
 tags:
   - AI-Toolkit

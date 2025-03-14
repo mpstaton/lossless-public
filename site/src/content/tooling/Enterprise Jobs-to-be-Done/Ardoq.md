@@ -1,4 +1,5 @@
 ---
+site_uuid: "a27f528b-a0fe-49c1-90e7-bad51b5cd0b2"
 url: 'https://www.ardoq.com'
 zinger: Reimagine Enterprise Architecture
 description: >-

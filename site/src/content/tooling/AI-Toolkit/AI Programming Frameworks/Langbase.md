@@ -1,4 +1,5 @@
 ---
+site_uuid: "3d5547ed-f0ed-468a-9648-8e7a274cd882"
 url: 'https://langbase.com'
 tags:
   - AI-Toolkit

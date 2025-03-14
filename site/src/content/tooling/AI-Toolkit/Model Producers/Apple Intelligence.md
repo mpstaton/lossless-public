@@ -1,4 +1,5 @@
 ---
+site_uuid: "288e08ba-912f-4b27-bf78-4f89f9d71a26"
 url: 'https://www.apple.com/apple-intelligence/'
 parent_org: '[[Apple]]'
 tags:

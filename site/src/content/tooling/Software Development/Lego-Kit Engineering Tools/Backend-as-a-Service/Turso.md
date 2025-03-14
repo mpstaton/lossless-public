@@ -1,4 +1,5 @@
 ---
+site_uuid: "ea219b75-daa6-4143-9034-5b00c99a4b4e"
 url: 'https://turso.tech/'
 image: 'https://turso.tech/opengraph-image.png?af897536fc917600'
 site_name: Turso

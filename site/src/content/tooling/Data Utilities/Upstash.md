@@ -1,4 +1,5 @@
 ---
+site_uuid: "d8a52fb4-26b3-4f63-8915-79e2d5512c92"
 url: 'https://upstash.com'
 image: 'https://upstash.com/og-home.jpg'
 site_name: 'Upstash: Serverless Data Platform'

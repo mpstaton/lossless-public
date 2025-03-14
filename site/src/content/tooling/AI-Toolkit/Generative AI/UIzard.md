@@ -1,4 +1,5 @@
 ---
+site_uuid: "c97e5e9e-a16a-45b5-99fb-5e36228b76d5"
 url: 'https://uizard.io/'
 tags:
   - AI-Toolkit

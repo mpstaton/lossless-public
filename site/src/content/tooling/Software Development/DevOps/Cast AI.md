@@ -1,4 +1,5 @@
 ---
+site_uuid: "0b6f57ab-6484-471f-a86b-faa4b93ea430"
 url: 'https://cast.ai/'
 zinger: 'Kubernetes Automation: Cut cloud costs, improve performance & enhance security'
 description: >-

@@ -1,4 +1,5 @@
 ---
+site_uuid: "030effa6-8eb1-4af3-8dec-8928452359fc"
 url: 'https://uxpilot.ai/'
 tags:
   - AI-Toolkit

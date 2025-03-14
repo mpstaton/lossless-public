@@ -1,4 +1,5 @@
 ---
+site_uuid: "e5005424-3511-4076-b5e3-7b2b4ef9cc36"
 url: 'https://rethinkdb.com/'
 tags:
   - Software-Development

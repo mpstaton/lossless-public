@@ -1,4 +1,5 @@
 ---
+site_uuid: "0be14573-a903-43a6-b828-862a4128a286"
 url: 'https://www.udemy.com/'
 image: 'https://s.udemycdn.com/meta/default-meta-image-v2.png'
 site_name: Udemy

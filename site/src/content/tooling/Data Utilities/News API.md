@@ -1,4 +1,5 @@
 ---
+site_uuid: "f01e70f9-8b39-47f8-8674-d627de158db1"
 url: 'https://newsapi.org'
 tags:
   - Data-Utilities

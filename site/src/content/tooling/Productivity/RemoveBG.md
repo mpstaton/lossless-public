@@ -1,4 +1,5 @@
 ---
+site_uuid: "d638adf7-9e49-487d-b27f-36553128fc59"
 url: 'https://www.remove.bg/'
 tags:
   - Productivity

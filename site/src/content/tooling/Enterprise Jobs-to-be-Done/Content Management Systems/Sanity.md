@@ -1,4 +1,5 @@
 ---
+site_uuid: "ae73de99-8f94-422c-a209-0d3acb887668"
 url: 'https://www.sanity.io/'
 tags:
   - Enterprise-Jobs-to-be-Done

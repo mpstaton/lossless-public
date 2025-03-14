@@ -1,4 +1,5 @@
 ---
+site_uuid: "94e38aab-9a68-4fb3-a01e-a1cf82e68dc0"
 url: 'https://www.agentic.ai'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "507b2391-50a0-45fb-9a77-7508679d14f5"
 url: 'https://svelte.dev/'
 image: 'https://svelte.dev/images/twitter-thumbnail.jpg'
 site_name: Svelte

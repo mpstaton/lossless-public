@@ -1,4 +1,5 @@
 ---
+site_uuid: "84a95bf8-c44d-4cc5-88c8-e36fc608e2ea"
 url: 'https://orbstack.dev/'
 image: 'https://orbstack.dev/img/icon-square256.png'
 site_name: OrbStack

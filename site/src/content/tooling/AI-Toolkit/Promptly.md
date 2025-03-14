@@ -1,4 +1,5 @@
 ---
+site_uuid: "8d5ae86d-0298-412f-adfe-e9c70a4fdb01"
 url: 'https://www.trypromptly.com/'
 tags:
   - AI-Toolkit

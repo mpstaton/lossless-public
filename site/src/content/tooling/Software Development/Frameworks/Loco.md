@@ -1,4 +1,5 @@
 ---
+site_uuid: "981e4f77-b938-4273-ae6e-f8ed8cbe5737"
 url: 'https://loco.rs/'
 zinger: 'It’s Like Ruby on Rails, but for Rust.'
 description: >-

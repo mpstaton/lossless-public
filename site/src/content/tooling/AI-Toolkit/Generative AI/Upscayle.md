@@ -1,4 +1,5 @@
 ---
+site_uuid: "3e4b9939-5cc7-4b32-a184-dfe52ce9b001"
 url: 'https://upscayl.org'
 tags:
   - AI-Toolkit

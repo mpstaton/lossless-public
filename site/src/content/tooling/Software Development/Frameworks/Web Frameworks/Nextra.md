@@ -1,4 +1,5 @@
 ---
+site_uuid: "4a42126d-4c2f-49a2-bda8-ecc2a2ccd657"
 url: 'https://nextra.site'
 image: >-
   https://nextra.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcard-1.4f54665c.png&w=3840&q=75

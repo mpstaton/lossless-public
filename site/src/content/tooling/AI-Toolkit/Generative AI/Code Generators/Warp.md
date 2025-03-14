@@ -1,4 +1,5 @@
 ---
+site_uuid: "80961394-c9bd-4679-a963-d37554ca545d"
 url: 'https://www.warp.dev'
 zinger: The intelligent terminal.
 description: >-

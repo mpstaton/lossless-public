@@ -1,4 +1,5 @@
 ---
+site_uuid: "1a7c1d08-1548-4d6d-a96e-676d95c13eb5"
 url: 'https://mode.com/'
 zinger: Business Intelligence built around data teams
 description: >-

@@ -1,4 +1,5 @@
 ---
+site_uuid: "69d949b9-4674-4fe0-a80b-cbde120fa24f"
 github_url: https://github.com/unclecode/crawl4ai
 ---
 An [[AI Powered Data Capture]] tool, 

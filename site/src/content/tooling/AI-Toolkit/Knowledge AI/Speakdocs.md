@@ -1,4 +1,5 @@
 ---
+site_uuid: "fa61c2c3-7b86-46d8-a0aa-8fb21c52ee2b"
 url: 'https://speakdocs.io/'
 tags:
   - AI-Toolkit

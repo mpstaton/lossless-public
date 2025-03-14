@@ -1,4 +1,5 @@
 ---
+site_uuid: "56dadd3e-7a1b-48c2-952c-5d205e879d27"
 url: 'https://courses.webdevsimplified.com/'
 youtube_url: 'https://www.youtube.com/@WebDevSimplified'
 image: 'https://i.imgur.com/USlZfVg.jpeg'

@@ -1,4 +1,5 @@
 ---
+site_uuid: "87fd3333-ef52-4d5e-bec8-a4f0205d4be5"
 url: 'https://www.numbersstation.ai'
 github_profile_url: 'https://github.com/NumbersStationAI'
 zinger: Agents for structured data.

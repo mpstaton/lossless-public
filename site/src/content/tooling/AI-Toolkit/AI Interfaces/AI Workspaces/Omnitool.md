@@ -1,4 +1,5 @@
 ---
+site_uuid: "b816913d-77ce-4e7c-a62c-0b20ad1df180"
 url: 'https://omnitool.ai/'
 zinger: Your Open Source AI Desktop
 description: 'Discover, Learn, Evaluate and Build with thousands of Generative AI Models.'

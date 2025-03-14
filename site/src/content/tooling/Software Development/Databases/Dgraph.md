@@ -1,4 +1,5 @@
 ---
+site_uuid: "39b1a805-5e93-4272-9cfa-a55567e94403"
 url: 'https://dgraph.io/'
 zinger: 'The only open source, AI-ready graph database'
 description: >-

@@ -1,4 +1,5 @@
 ---
+site_uuid: "0168ba08-fe52-4e6b-b097-2a6e97562bd7"
 url: 'https://www.singlestore.com/'
 image: >-
   https://images.contentstack.io/v3/assets/bltac01ee6daa3a1e14/blt65460a223657f85f/661047721952f027eefc0104/img_primary_opengraph_(1).png

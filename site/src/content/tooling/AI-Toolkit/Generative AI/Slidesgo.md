@@ -1,4 +1,5 @@
 ---
+site_uuid: "56a530ad-99c6-4465-b2de-9d2eb840454c"
 url: 'https://slidesgo.com/'
 tags:
   - AI-Toolkit

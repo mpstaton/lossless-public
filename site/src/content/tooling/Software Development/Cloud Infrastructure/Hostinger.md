@@ -1,4 +1,5 @@
 ---
+site_uuid: "90e06aa3-a2fc-485e-902d-9d0e5d5536d2"
 url: 'https://www.hostinger.com'
 zinger: 'Up to 80% off: Everything you need to grow online'
 image: 'https://www.hostinger.com/og-image.png'

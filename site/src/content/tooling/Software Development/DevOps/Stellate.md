@@ -1,4 +1,5 @@
 ---
+site_uuid: "1ad59f03-c5a1-4447-bae2-b18bad015550"
 url: 'https://stellate.co/'
 image: 'https://stellate.co/social.png'
 site_name: Stellate

@@ -1,4 +1,5 @@
 ---
+site_uuid: "d78a0888-cabd-474a-93bc-909ca542722b"
 github_url: 'https://github.com/SkipLabs/skip'
 url: 'https://skiplabs.io/'
 description: Skip makes your backend reactive so you can ship better features faster

@@ -1,4 +1,5 @@
 ---
+site_uuid: "3a991882-4f8d-47e7-bbb5-50c92ee7bf99"
 url: 'https://copycoder.ai/'
 tags:
   - AI-Toolkit

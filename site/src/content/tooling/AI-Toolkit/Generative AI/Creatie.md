@@ -1,4 +1,5 @@
 ---
+site_uuid: "83a43a73-0110-469c-9fd2-6d96451b0f99"
 url: 'https://creatie.ai/'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "a61ad827-3532-499e-bcba-e3de300df5d5"
 url: 'https://fal.ai'
 tags:
   - AI-Toolkit

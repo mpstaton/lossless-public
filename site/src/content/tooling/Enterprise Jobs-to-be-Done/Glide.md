@@ -1,4 +1,5 @@
 ---
+site_uuid: "2840b261-7a76-43da-bdf8-34249347136c"
 url: 'https://www.glideapps.com/'
 tags:
   - Enterprise-Jobs-to-be-Done

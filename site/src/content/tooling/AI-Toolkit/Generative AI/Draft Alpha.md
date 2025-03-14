@@ -1,4 +1,5 @@
 ---
+site_uuid: "65c9478f-3b6a-45bd-a0b6-30e3faf11066"
 url: 'https://www.draftalpha.com/'
 tags:
   - AI-Toolkit

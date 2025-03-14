@@ -1,4 +1,5 @@
 ---
+site_uuid: "6ab09662-97f2-4d17-821f-e2efb142ba8a"
 url: 'https://wwww.napkin.ai'
 tags:
   - AI-Toolkit

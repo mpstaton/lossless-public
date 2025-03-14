@@ -1,4 +1,5 @@
 ---
+site_uuid: "777e8528-f870-4b74-95e8-aa4772238e0b"
 url: 'https://yoast.com/'
 image: 'https://yoast.com/app/uploads/2021/12/yoast_seo_homepage_og_image.png'
 site_name: Yoast

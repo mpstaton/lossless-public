@@ -1,4 +1,5 @@
 ---
+site_uuid: "6ccbff08-f36f-4f36-9d65-ff05d505a9b6"
 url: 'https://www.livepeer.org/'
 docs_url: 'https://docs.livepeer.org/developers/introduction'
 image: >-

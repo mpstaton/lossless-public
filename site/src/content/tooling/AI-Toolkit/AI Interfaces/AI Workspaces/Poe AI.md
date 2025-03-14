@@ -1,4 +1,5 @@
 ---
+site_uuid: "de0522af-c0d6-49e1-9d18-dea1835369ce"
 tags:
   - AI-Toolkit
   - AI-Interfaces

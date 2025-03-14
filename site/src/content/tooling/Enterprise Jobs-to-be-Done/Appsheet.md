@@ -1,4 +1,5 @@
 ---
+site_uuid: "a5e4bdb6-590a-4bf0-8fc3-83436abebcf6"
 url: 'https://about.appsheet.com/home/'
 tags:
   - Enterprise-Jobs-to-be-Done

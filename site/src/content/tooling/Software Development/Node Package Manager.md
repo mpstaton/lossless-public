@@ -1,4 +1,5 @@
 ---
+site_uuid: "f98a1a53-bd57-4143-b912-b5ecd9c9cf59"
 aliases:
   - npm
 url: 'https://www.npmjs.com/'

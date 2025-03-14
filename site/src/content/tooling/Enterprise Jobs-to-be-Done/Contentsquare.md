@@ -1,4 +1,5 @@
 ---
+site_uuid: "a655fc07-88d8-4de9-95aa-c110a6c85458"
 url: 'https://contentsquare.com/'
 youtube_url: 'https://www.youtube.com/@Contentsquare'
 image: >-

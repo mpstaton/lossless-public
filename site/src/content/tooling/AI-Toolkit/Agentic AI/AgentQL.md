@@ -1,4 +1,5 @@
 ---
+site_uuid: "8da093ae-0e12-40e7-bd1f-2d3a1053a63a"
 url: 'https://www.agentql.com'
 docs_url: 'https://docs.agentql.com/home'
 tags:

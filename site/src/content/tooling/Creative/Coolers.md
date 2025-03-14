@@ -1,4 +1,5 @@
 ---
+site_uuid: "96b92c20-471f-46d6-9499-9e918d38caa9"
 url: 'https://coolors.co/'
 zinger: null
 tags:

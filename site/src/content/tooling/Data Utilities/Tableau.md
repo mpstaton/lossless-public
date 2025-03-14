@@ -1,4 +1,5 @@
 ---
+site_uuid: "02281c5f-88a0-4896-9cad-c248d247e9a0"
 url: 'https://www.tableau.com'
 image: >-
   https://www.tableau.com/sites/default/files/2024-05/TableauListImage_1024x512.png

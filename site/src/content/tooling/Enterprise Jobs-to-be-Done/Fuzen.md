@@ -1,4 +1,5 @@
 ---
+site_uuid: "87257087-1dda-4c02-a19b-6721ada925c6"
 url: 'https://fuzen.io'
 zinger: Build SaaS apps without any coding.
 description_site_cp: NoCode + AI to build fully scalable apps in quick time and low cost.

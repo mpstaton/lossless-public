@@ -1,4 +1,5 @@
 ---
+site_uuid: "1ffa65f6-736d-4535-90ab-a815f0b4ed54"
 url: 'https://www.snowflake.com/content/snowflake-site/global/en'
 tags:
   - Software-Development

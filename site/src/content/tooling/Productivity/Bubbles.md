@@ -1,4 +1,5 @@
 ---
+site_uuid: "f7fd3403-8c06-42c6-b9d2-aa1efba856f5"
 url: 'https://www.usebubbles.com/'
 image: >-
   https://cdn.prod.website-files.com/63cc43d53b100d36f4967cc3/63fe740caf59842acb4f1766_og-image.png

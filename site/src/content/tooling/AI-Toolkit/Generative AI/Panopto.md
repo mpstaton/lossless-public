@@ -1,4 +1,5 @@
 ---
+site_uuid: "73cdb137-3abc-4c3e-99c0-72b696c4406d"
 url: 'https://www.panopto.com/'
 zinger: Accelerate Success with Smarter AI Video Tools
 description: >-

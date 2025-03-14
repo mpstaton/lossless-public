@@ -1,4 +1,5 @@
 ---
+site_uuid: "96a4669a-346c-49b9-ac9f-9814f2e7f0cc"
 url: 'https://www.digitalocean.com/'
 image: >-
   https://www.digitalocean.com/_next/static/media/social-share-default.e8530e9e.jpeg

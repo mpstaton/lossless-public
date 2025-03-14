@@ -1,4 +1,5 @@
 ---
+site_uuid: "d1f01bda-f89b-4797-ba6f-a92aa95b9ae6"
 url: 'https://exa.ai'
 image: 'https://exa.imgix.net/og-image.png/'
 site_name: Exa

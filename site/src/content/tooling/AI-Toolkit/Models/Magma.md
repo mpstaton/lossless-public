@@ -1,4 +1,5 @@
 ---
+site_uuid: "652263ef-cb8e-427e-96b5-82e88d4db789"
 url: 'https://microsoft.github.io/Magma/'
 tags:
   - AI-Toolkit

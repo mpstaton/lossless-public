@@ -1,4 +1,5 @@
 ---
+site_uuid: "a4491f0b-d7bb-4424-96da-6a622b2dcd3c"
 url: 'https://granola.ai'
 zinger: The AI notepad for people inback-to-back meetings
 description: Granola takes your raw meeting notes and makes them awesome

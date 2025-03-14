@@ -1,4 +1,5 @@
 ---
+site_uuid: "87404fa1-5a64-427f-aea4-d5f62945247b"
 url: 'https://www.hedra.com/'
 tags:
   - AI-Toolkit

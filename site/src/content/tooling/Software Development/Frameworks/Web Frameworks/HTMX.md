@@ -1,4 +1,5 @@
 ---
+site_uuid: "9e920326-3c11-41fa-bc99-fa091ecd8db9"
 url: 'https://htmx.org/'
 image: 'https://htmx.org/img/ads_top.png'
 site_name: </> htmx

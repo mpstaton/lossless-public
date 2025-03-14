@@ -1,4 +1,5 @@
 ---
+site_uuid: "6f0ee5b7-861b-4680-abff-6bc88604c62b"
 url: 'https://anythingllm.com/'
 zinger: The all-in-one AI application
 description_site_cp: >-

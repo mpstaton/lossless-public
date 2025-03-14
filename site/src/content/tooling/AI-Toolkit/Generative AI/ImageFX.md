@@ -1,4 +1,5 @@
 ---
+site_uuid: "c4acaacc-ca8e-4c0f-9f5f-94b46d4a4ddf"
 parent_org: '[[Google Labs]]'
 tags:
   - AI-Toolkit

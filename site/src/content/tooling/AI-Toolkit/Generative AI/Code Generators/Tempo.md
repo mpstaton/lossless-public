@@ -1,4 +1,5 @@
 ---
+site_uuid: "6db9332e-d8df-43d7-954d-8ded1ab3bd67"
 url: 'https://www.tempo.new'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "2a208a1a-967d-44b4-8a7c-6620c77f1b38"
 url: 'https://www.papersapp.com/'
 image: 'https://www.papersapp.com/wp-content/uploads/2023/08/hero-w-character.svg'
 site_name: Papers

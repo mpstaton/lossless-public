@@ -1,4 +1,5 @@
 ---
+site_uuid: "1b313123-20b4-41fb-8d7c-43d3328e8726"
 url: 'https://typst.app/'
 tags:
   - Enterprise-Jobs-to-be-Done

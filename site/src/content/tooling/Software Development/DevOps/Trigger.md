@@ -1,4 +1,5 @@
 ---
+site_uuid: "af502ac5-8a2d-4379-8c63-f663a95a1a98"
 url: 'https://trigger.dev/'
 tags:
   - Software-Development

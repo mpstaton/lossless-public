@@ -1,4 +1,5 @@
 ---
+site_uuid: "0e7a6fb7-1600-4c63-81a2-0bba63e6bd67"
 url: 'https://kanochart.com/'
 image: 'https://kanochart.com/static/logo.svg'
 site_name: Kanochart

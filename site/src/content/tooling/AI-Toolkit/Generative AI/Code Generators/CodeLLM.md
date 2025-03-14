@@ -1,4 +1,5 @@
 ---
+site_uuid: "c658d255-31d6-4521-8220-83282920679b"
 url: 'https://abacus.ai/teams/'
 parent_org: '[[Abacus AI]]'
 tags:

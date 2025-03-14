@@ -1,4 +1,5 @@
 ---
+site_uuid: "46bbcbc5-7b90-43fc-8c76-0a1db7b43b92"
 url: 'https://www.clonbrowser.com/'
 tags:
   - Web-Browsers

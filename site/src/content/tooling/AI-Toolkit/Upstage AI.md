@@ -1,4 +1,5 @@
 ---
+site_uuid: "2586e786-a721-46dc-b788-e5849974d8e7"
 url: 'https://www.upstage.ai/'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "219d90c4-99d1-43a0-b02c-c0282f1d538f"
 url: 'https://openai.com/index/introducing-deep-research/'
 created_by: '[[OpenAI]]'
 tags:

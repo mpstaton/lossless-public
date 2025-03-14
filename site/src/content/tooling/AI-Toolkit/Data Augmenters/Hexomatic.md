@@ -1,4 +1,5 @@
 ---
+site_uuid: "08d5232c-c22f-47af-bd55-5c64eb617d87"
 url: 'https://hexomatic.com/'
 tags:
   - AI-Toolkit

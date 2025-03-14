@@ -1,4 +1,5 @@
 ---
+site_uuid: "3c69234a-1baa-48d7-85f1-fba29b64ac2c"
 url: 'https://hbase.apache.org/'
 tags:
   - Software-Development

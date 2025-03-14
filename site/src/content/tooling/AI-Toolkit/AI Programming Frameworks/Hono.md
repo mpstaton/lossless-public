@@ -1,4 +1,5 @@
 ---
+site_uuid: "4c966816-b8b7-456b-a57b-867cf08fc58e"
 url: 'https://hono.dev/'
 tags:
   - AI-Toolkit

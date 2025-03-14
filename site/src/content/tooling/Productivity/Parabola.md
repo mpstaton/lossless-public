@@ -1,4 +1,5 @@
 ---
+site_uuid: "7e94035f-2b3d-4660-bbe6-a1b8b8f37b6f"
 url: 'https://parabola.io/'
 image: >-
   https://cdn.prod.website-files.com/663559c9207f91d5a1ba91ba/6758bf034c4e5f674add5c84_generic-meta-lockup.png

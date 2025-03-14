@@ -1,4 +1,5 @@
 ---
+site_uuid: "b264dd92-d77d-48ec-9255-8241d8632f1a"
 url: 'https://www.deepseek.com/'
 tags:
   - AI-Toolkit

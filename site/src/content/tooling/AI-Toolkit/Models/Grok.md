@@ -1,4 +1,5 @@
 ---
+site_uuid: "3823f159-4818-4906-82a2-325b06a3f9f3"
 url: 'https://grok.com/'
 hero: '![[Screenshot 2025-02-20 at 2.28.53 PM_X_Grok--Hero.png]]'
 tags:

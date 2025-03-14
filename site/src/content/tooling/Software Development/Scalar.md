@@ -1,4 +1,5 @@
 ---
+site_uuid: "c8de203e-0dea-4f79-bffa-1badb5ca2e9f"
 url: 'https://scalar.com/'
 image: 'https://docs.scalar.com/scalar-com-og.png'
 site_name: 'Document, Discover and Test APIs'

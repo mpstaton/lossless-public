@@ -1,4 +1,5 @@
 ---
+site_uuid: "daf3c07d-c811-4413-964c-78aed318583c"
 url: 'https://www.tella.com/'
 image: 'https://framerusercontent.com/assets/ysCMaQjwjHzjGkGJF4ub4OEbU.png'
 site_name: Tella

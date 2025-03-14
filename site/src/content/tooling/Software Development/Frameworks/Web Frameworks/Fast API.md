@@ -1,4 +1,5 @@
 ---
+site_uuid: "efb9b03b-6bb3-4055-b59a-a777aa26e4a8"
 url: 'https://fastapi.tiangolo.com/'
 image: 'https://fastapi.tiangolo.com/assets/images/social/index.png'
 site_name: FastAPI

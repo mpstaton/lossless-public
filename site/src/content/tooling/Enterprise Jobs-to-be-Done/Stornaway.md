@@ -1,4 +1,5 @@
 ---
+site_uuid: "7d86145b-8332-4886-8f67-3bfefc676ad0"
 url: 'https://www.stornaway.io/'
 zinger: The world’s most popular Interactive Video
 description: >-

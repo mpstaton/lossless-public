@@ -1,4 +1,5 @@
 ---
+site_uuid: "19a3005d-7515-4e2f-9f41-41240607cc52"
 url: 'https://elai.io/'
 zinger: AI Video Generation Powerhouse for Learning and Development.
 description: Create avatar-based training videos with quizzes in minutes.

@@ -1,4 +1,5 @@
 ---
+site_uuid: "8128ddd8-c583-4c79-9451-7a9ef2377f91"
 url: 'https://ecma-international.org/publications-and-standards/standards/ecma-262/'
 tags:
   - Software-Development

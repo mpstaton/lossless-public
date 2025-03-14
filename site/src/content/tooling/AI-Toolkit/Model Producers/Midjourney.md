@@ -1,4 +1,5 @@
 ---
+site_uuid: "9a483906-9b6c-4b38-8fce-70acabfe6d47"
 url: 'https://www.midjourney.com/website'
 tags:
   - AI-Toolkit

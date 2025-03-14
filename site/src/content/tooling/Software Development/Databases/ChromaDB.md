@@ -1,4 +1,5 @@
 ---
+site_uuid: "ddbd7590-b048-4b6b-9ab9-833e98a216a3"
 url: 'https://www.trychroma.com/'
 tags:
   - Software-Development

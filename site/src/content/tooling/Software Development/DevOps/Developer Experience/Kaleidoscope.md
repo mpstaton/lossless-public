@@ -1,4 +1,5 @@
 ---
+site_uuid: "9d78c7cc-4756-4bb5-9516-3e7328cfa8b8"
 url: 'https://kaleidoscope.app/'
 tags:
   - Developer-Experience

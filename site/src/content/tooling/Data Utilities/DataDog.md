@@ -1,4 +1,5 @@
 ---
+site_uuid: "afec279b-cb06-45fa-a4ca-068535c75d9d"
 url: 'https://www.datadoghq.com/'
 zinger: Modern monitoring & security
 description: 'See inside any stack, any app, at any scale, anywhere.'

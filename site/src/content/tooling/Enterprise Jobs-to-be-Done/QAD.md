@@ -1,4 +1,5 @@
 ---
+site_uuid: "679bf7e7-5425-4967-a3e9-f4414c773aeb"
 zinger: Manufacturing & Supply Chain Solutions in the Cloud
 url: 'https://www.qad.com/'
 image: 'https://www.qad.com/o/qad-theme/images/logo_letters_QAD.svg'

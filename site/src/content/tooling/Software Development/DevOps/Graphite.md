@@ -1,4 +1,5 @@
 ---
+site_uuid: "9acf7ca9-f3af-4cd9-89dd-fad0635caeaf"
 url: 'https://graphite.dev/'
 image: 'https://graphite.dev/og.png'
 site_name: Graphite

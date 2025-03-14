@@ -1,4 +1,5 @@
 ---
+site_uuid: "35d871b0-8221-45b8-8707-74133976d38a"
 url: 'https://agpt.co/'
 description: >-
   AutoGPT aims to democratize AI, giving everyone access to powerful digital

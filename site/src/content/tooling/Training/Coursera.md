@@ -1,4 +1,5 @@
 ---
+site_uuid: "e9c02e9e-2c1f-4761-81ac-e8d2b728d539"
 url: 'https://www.coursera.org/'
 image: 'https://s3.amazonaws.com/coursera/media/Grid_Coursera_Partners_updated.png'
 site_name: Coursera

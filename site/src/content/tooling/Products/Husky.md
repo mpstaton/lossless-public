@@ -1,4 +1,5 @@
 ---
+site_uuid: "458d9c8a-1021-4ca6-94ee-f58db7930e3b"
 url: 'https://typicode.github.io/husky/#/'
 description: Husky is a lightweight Git Hook scripting markup format.
 image: 'https://typicode.github.io/husky/assets/sponsors.B1XtYgDj.svg'

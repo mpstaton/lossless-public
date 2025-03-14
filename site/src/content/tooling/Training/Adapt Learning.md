@@ -1,4 +1,5 @@
 ---
+site_uuid: "13a565c1-f3ee-46bd-9df4-f8587268d529"
 url: 'https://www.adaptlearning.org/'
 hero: '![[Screenshot 2025-02-20 at 9.30.38 PM_Adapt-Learning--Hero.png]]'
 image: >-

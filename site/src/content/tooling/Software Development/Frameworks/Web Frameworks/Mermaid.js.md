@@ -1,4 +1,5 @@
 ---
+site_uuid: "bb79d69d-447c-4dfa-8470-c07286797d5c"
 url: 'https://mermaid.js.org/'
 docs_url: 'https://mermaid.js.org/intro/'
 image: 'https://mermaid.js.org/mermaid-logo.svg'

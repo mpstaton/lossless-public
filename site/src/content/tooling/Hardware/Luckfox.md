@@ -1,4 +1,5 @@
 ---
+site_uuid: "947e4c7d-a12e-46c8-91fb-5a1b6c2ad21a"
 url: 'https://www.luckfox.com/'
 image: 'https://www.luckfox.com/image/cache/catalog/2-2x-600x315w.png'
 site_name: LUCKFOX

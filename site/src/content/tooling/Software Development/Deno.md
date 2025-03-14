@@ -1,4 +1,5 @@
 ---
+site_uuid: "8eaa13e0-9d6a-4d21-9952-eeff496eeefb"
 url: 'https://deno.com/'
 image: 'https://deno.com/og/image.jpg'
 site_name: Deno

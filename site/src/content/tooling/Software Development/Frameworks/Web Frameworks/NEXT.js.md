@@ -1,4 +1,5 @@
 ---
+site_uuid: "4acbcab9-ba38-494f-bb53-297eb86dd353"
 url: 'https://nextjs.org/'
 tags:
   - Software-Development

@@ -1,4 +1,5 @@
 ---
+site_uuid: "416ce9de-5deb-4763-875d-2ba893d282f5"
 url: 'https://siliconflow.cn/siliconcloud'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "24687c2e-39e7-4784-85dc-fed6d599f8a3"
 url: 'https://cloud.google.com/'
 parent_org: '[[Google]]'
 aliases:

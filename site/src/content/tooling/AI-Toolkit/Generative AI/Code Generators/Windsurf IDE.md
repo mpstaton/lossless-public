@@ -1,4 +1,5 @@
 ---
+site_uuid: "418d2c02-d3d8-4709-b788-4bae3a750346"
 url: 'https://codeium.com/windsurf'
 description: >-
   The first agentic IDE, and then some. The Windsurf Editor is where the work of

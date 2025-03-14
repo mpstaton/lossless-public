@@ -1,4 +1,5 @@
 ---
+site_uuid: "aa8a1986-761e-48b9-8019-d95aeb860074"
 url: 'https://www.solidjs.com'
 image: 'https://www.solidjs.com/og.jpg'
 site_name: SolidJS

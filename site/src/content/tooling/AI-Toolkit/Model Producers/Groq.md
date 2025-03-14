@@ -1,4 +1,5 @@
 ---
+site_uuid: "dc3cc78b-2337-47c7-8d73-b01981cc8477"
 zinger: Groq is Fast AI Inference
 url: 'https://groq.com/'
 tags:

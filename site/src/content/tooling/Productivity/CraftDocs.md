@@ -1,4 +1,5 @@
 ---
+site_uuid: "0b14feb0-3359-4328-89fe-c63cd954f921"
 url: 'https://www.craft.do'
 zinger: The best docs in the world
 hero: '![[Screenshot 2025-02-20 at 2.44.50 PM_CraftDocs--Hero.png]]'

@@ -1,4 +1,5 @@
 ---
+site_uuid: "58dff9be-30c1-4fc2-9594-922cc9067482"
 url: 'https://openrouter.ai'
 tags:
   - AI-Toolkit

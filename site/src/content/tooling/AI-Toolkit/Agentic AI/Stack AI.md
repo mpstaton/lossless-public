@@ -1,4 +1,5 @@
 ---
+site_uuid: "5052d76b-bc9e-499a-a330-b30c69e005be"
 url: 'https://www.stack-ai.com/'
 zinger: The Enterprise Generative AI Platform
 description: >-

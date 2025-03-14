@@ -1,4 +1,5 @@
 ---
+site_uuid: "beddc718-b05b-42ad-a46d-333c0fabc5da"
 url: 'https://www.pluralsight.com/'
 image: >-
   https://www.pluralsight.com/content/dam/pluralsight-creative-team/creative_portfolio/dex_unified_website2022program/dex_unified_websitehomeandskills2022project/final/octoberHomepage-socialShareImage1.png

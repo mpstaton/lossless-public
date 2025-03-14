@@ -1,4 +1,5 @@
 ---
+site_uuid: "afd3b55a-3a5c-4970-ab05-46eaf24805c5"
 url: 'https://lmstudio.ai'
 zinger: Your local AI toolkit.
 description: 'Download and run Llama, DeepSeek, Mistral, Phi on your computer.'

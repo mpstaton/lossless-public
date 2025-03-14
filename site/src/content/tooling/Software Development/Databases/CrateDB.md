@@ -1,4 +1,5 @@
 ---
+site_uuid: "1b08084b-7350-482f-be38-620a3530d615"
 url: 'https://cratedb.com'
 tags:
   - Software-Development

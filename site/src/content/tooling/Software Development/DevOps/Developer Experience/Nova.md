@@ -1,4 +1,5 @@
 ---
+site_uuid: "ddf75260-983f-44b2-9132-4cf2d258fa5d"
 url: 'https://nova.app/'
 tags:
   - Software-Development

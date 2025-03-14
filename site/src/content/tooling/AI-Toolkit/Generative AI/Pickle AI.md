@@ -1,4 +1,5 @@
 ---
+site_uuid: "db5188f0-6f40-4e6d-9644-044dfb55c032"
 url: 'https://getpickle.ai/'
 tags:
   - AI-Toolkit

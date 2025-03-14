@@ -1,4 +1,5 @@
 ---
+site_uuid: "3b4addd5-946c-44e9-9305-d938fd8b0eea"
 url: 'https://www.assemblyai.com/'
 tags:
   - AI-Toolkit

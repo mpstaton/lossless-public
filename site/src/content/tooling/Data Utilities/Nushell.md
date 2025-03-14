@@ -1,4 +1,5 @@
 ---
+site_uuid: "888dcb7f-1032-4fef-9e61-d73cd8e4820f"
 url: 'https://www.nushell.sh/'
 image: 'https://www.nushell.sh/frontpage/ls-example.png'
 site_name: Nushell

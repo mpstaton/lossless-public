@@ -1,4 +1,5 @@
 ---
+site_uuid: "f5851910-4064-405c-b335-e99da6d0058a"
 url: 'https://www.freshworks.com'
 zinger: Same easy software. New AI superpowers.
 tags:

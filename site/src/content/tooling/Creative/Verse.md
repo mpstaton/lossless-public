@@ -1,4 +1,5 @@
 ---
+site_uuid: "563ddae9-ecc5-40b7-b5d3-853c999af1b7"
 url: 'https://www.verse.com/'
 image: >-
   https://www.verse.com/wp-content/themes/verse_theme/dist/assets/images/verse-social.jpg

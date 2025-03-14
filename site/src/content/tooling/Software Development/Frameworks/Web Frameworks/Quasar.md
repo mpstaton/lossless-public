@@ -1,4 +1,5 @@
 ---
+site_uuid: "c00b3700-114a-4e76-9d55-3f9c71597dcf"
 url: 'https://quasar.dev/'
 zinger: The enterprise-ready cross-platform VueJs framework
 image: 'https://cdn.quasar.dev/logo-v2/social-cover.jpg'

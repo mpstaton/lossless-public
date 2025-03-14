@@ -1,4 +1,5 @@
 ---
+site_uuid: "701f809e-09bb-47ac-ad48-fbd3333c0c9e"
 url: 'https://hailuoai.video'
 tags:
   - AI-Toolkit

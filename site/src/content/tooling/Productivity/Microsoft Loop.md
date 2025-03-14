@@ -1,4 +1,5 @@
 ---
+site_uuid: "10dc429e-318a-4e07-89d9-8c3fb12b7362"
 parent_org: '[[Microsoft]]'
 aliases:
   - Loop

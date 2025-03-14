@@ -1,4 +1,5 @@
 ---
+site_uuid: "f5cf27a2-6d65-4750-a3e1-3417efe5fb2c"
 url: 'https://stability.ai'
 zinger: Activating humanity's potential through generative AI
 description: 'Open models in every modality, for everyone, everywhere.'

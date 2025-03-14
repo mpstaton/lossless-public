@@ -1,4 +1,5 @@
 ---
+site_uuid: "05a4331b-1568-488c-b265-84f93281a96e"
 url: 'https://sakana.ai/'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "b9bc08d5-cf83-48d1-b32b-77b9d22c5cdc"
 url: 'https://spider.cloud/'
 tags:
   - AI-Toolkit

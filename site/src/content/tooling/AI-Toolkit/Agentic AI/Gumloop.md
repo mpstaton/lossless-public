@@ -1,4 +1,5 @@
 ---
+site_uuid: "9b50a21a-f70e-4ef8-a9be-9c78113c76a3"
 url: 'https://gumloop.com'
 tags:
   - AI-Toolkit

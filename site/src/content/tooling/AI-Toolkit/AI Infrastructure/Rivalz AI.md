@@ -1,4 +1,5 @@
 ---
+site_uuid: "72adf1ca-6576-48ea-8837-5b5fc09f8665"
 url: 'https://rivalz.ai/'
 tags:
   - AI-Toolkit

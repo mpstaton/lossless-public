@@ -1,4 +1,5 @@
 ---
+site_uuid: "0a47e3c5-1701-41f6-8556-ba06633ae418"
 url: 'https://cognition.ai/'
 zinger: An applied AI lab building the future of software engineering
 description: >-

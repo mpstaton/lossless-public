@@ -1,4 +1,5 @@
 ---
+site_uuid: "875cbc52-023a-406f-8a44-96fc7da54d9c"
 url: 'https://segment.com/'
 tags:
   - Enterprise-Jobs-to-be-Done

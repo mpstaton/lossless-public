@@ -1,4 +1,5 @@
 ---
+site_uuid: "05f598c4-83f1-4e45-a296-f5fcfc9c50dd"
 url: 'https://mindsdb.com/'
 tags:
   - AI-Toolkit

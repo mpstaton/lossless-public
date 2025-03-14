@@ -1,4 +1,5 @@
 ---
+site_uuid: "7abf7722-e1f9-4d4e-b16d-0d824957cfc5"
 url: 'https://www.coveo.com/en'
 tags:
   - AI-Toolkit

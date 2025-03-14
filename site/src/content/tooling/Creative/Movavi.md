@@ -1,4 +1,5 @@
 ---
+site_uuid: "8712cbf6-afef-403d-a5be-e9099b144ab6"
 url: 'https://www.movavi.com'
 tags:
   - Screen-Recorders

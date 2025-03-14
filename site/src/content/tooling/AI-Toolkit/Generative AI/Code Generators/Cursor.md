@@ -1,4 +1,5 @@
 ---
+site_uuid: "2b053c07-c705-4885-b4f8-640aaf8e36ed"
 url: 'https://www.cursor.com/'
 tags:
   - AI-Toolkit

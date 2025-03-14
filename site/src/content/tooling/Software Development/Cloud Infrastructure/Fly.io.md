@@ -1,4 +1,5 @@
 ---
+site_uuid: "ff71adc9-4f0d-4295-bcb1-118bd045d835"
 url: 'https://fly.io/'
 zinger: A Public Cloud Built For Developers Who Ship
 description: >-

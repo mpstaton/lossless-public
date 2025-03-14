@@ -1,4 +1,5 @@
 ---
+site_uuid: "464fbb56-e705-48ae-8a81-debe495ac81e"
 url: 'https://jan.ai'
 docs_url: 'https://jan.ai/docs'
 tags:

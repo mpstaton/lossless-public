@@ -1,4 +1,5 @@
 ---
+site_uuid: "59da0551-e000-411d-8137-a2224ee8d8eb"
 github_url: 'https://github.com/thewh1teagle/vibe'
 url: 'https://thewh1teagle.github.io/vibe/'
 tags:

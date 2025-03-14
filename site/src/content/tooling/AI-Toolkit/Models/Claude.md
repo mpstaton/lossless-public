@@ -1,4 +1,5 @@
 ---
+site_uuid: "ce6ee375-d700-4369-89f0-a20ee34786c0"
 url: 'https://claude.ai/'
 tags:
   - AI-Toolkit

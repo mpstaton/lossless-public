@@ -1,4 +1,5 @@
 ---
+site_uuid: "2e60d7ce-e83a-4036-b8cb-68cb86aad36e"
 url: 'https://www.sqlite.org/'
 image: 'https://www.sqlite.org/images/sqlite370_banner.svg'
 site_name: SQLite Home Page

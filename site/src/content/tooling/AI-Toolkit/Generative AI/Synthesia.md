@@ -1,4 +1,5 @@
 ---
+site_uuid: "b4ee26a8-3cef-44b2-bb34-d7467937de92"
 url: 'https://www.synthesia.io/'
 tags:
   - AI-Toolkit

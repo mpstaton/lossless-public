@@ -1,4 +1,5 @@
 ---
+site_uuid: "9ce20c61-3d8d-498a-bf86-2f80d72e5f78"
 url: 'https://airfocus.com'
 zinger: Your roadmaps deserve better than slides & spreadsheets.
 description_site_cp: >-

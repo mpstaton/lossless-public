@@ -1,4 +1,5 @@
 ---
+site_uuid: "ab5ef266-f6c9-46d6-9273-e0042d6a5b92"
 url: 'https://meteor.com/'
 image: 'https://dmtgy0px4zdqn.cloudfront.net/images/OGs/oss/home.png'
 site_name: Meteor

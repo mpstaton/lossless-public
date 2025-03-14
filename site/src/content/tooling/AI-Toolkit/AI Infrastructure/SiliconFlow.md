@@ -1,4 +1,5 @@
 ---
+site_uuid: "90cef41c-cec3-4f59-af07-dd2dd9a2d4d3"
 url: 'https://siliconflow.cn/'
 zinger: Blazing Fast GenAI Stack with Low Cost
 tags:

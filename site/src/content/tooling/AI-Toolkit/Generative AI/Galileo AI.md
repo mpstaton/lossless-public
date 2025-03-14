@@ -1,4 +1,5 @@
 ---
+site_uuid: "ac7ddf0c-4448-44b9-87ef-6912614e1d6a"
 url: 'https://cdn.usegalileo.ai/og.png'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "adf0034e-27d2-4c1a-9835-3576adadf41f"
 url: 'https://github.com/maxnd/mxMarkEdit'
 image: >-
   https://opengraph.githubassets.com/f662e092254e7e498fafb60d5d7905a46f86a48fca1390581995856023a9cfb9/maxnd/mxMarkEdit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "94e71c8f-5fc0-41ec-9ff1-22da0d60862e"
 url: 'https://starlight.astro.build/'
 parent_org: '[[Astro]]'
 github_url: 'https://github.com/withastro/starlight'

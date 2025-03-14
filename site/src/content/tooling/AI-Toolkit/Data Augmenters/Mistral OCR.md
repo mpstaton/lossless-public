@@ -1,4 +1,5 @@
 ---
+site_uuid: "1d7f8db9-0901-4ec5-ab0b-767f2caace70"
 url: 'https://mistral.ai/en/news/mistral-ocr'
 tags:
   - AI-Toolkit

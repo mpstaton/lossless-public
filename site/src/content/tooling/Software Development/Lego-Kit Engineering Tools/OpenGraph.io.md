@@ -1,4 +1,5 @@
 ---
+site_uuid: "1a7b256d-a712-440c-84ed-b3746b41e037"
 url: 'https://www.opengraph.io/'
 hero: '![[Screenshot 2025-02-23 at 1.29.09 PM_OpenGraph-io--Hero.png]]'
 zinger: null

@@ -1,4 +1,5 @@
 ---
+site_uuid: "923f6ffa-5ed8-4ea7-9460-53e37d3cb1cc"
 url: 'https://ui.aceternity.com/'
 tags:
   - AI-Toolkit

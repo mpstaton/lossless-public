@@ -1,4 +1,5 @@
 ---
+site_uuid: "3be5f2d9-b427-484c-8d48-fa532877618d"
 url: 'https://liveportrait.org/'
 tags:
   - AI-Toolkit

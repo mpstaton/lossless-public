@@ -1,4 +1,5 @@
 ---
+site_uuid: "9b854d78-163a-4e58-b2f6-41a299bb7b03"
 url: 'https://app.pixverse.ai'
 tags:
   - AI-Toolkit

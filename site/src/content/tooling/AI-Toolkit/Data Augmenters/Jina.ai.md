@@ -1,4 +1,5 @@
 ---
+site_uuid: "52269f2a-4940-4cf4-9339-651facdc7a0b"
 url: 'https://jina.ai/'
 tags:
   - AI-Toolkit

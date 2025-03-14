@@ -1,4 +1,5 @@
 ---
+site_uuid: "97ac1b26-d0cb-4889-bf6b-f50d60415b3c"
 url: 'https://viggle.ai'
 tags:
   - AI-Toolkit

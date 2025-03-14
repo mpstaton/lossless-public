@@ -1,4 +1,5 @@
 ---
+site_uuid: "7183079c-d6b9-4ce1-81c6-7922141f4ab0"
 url: 'https://kaiber.ai/'
 tags:
   - AI-Toolkit

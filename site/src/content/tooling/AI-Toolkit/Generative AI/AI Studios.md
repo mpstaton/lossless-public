@@ -1,4 +1,5 @@
 ---
+site_uuid: "3d6a9cec-a2f7-4859-91cc-2e5838b02f2a"
 url: 'https://www.aistudios.com/'
 zinger: Create Videos with AI STUDIOS’ AI Video Generator
 description: >-

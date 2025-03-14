@@ -1,4 +1,5 @@
 ---
+site_uuid: "c7cd9af2-5429-460e-ab79-34375949a825"
 url: 'https://marimo.io'
 image: 'https://marimo.io/og.png'
 site_name: Marimo

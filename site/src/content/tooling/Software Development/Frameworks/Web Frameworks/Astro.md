@@ -1,4 +1,5 @@
 ---
+site_uuid: "545d904c-98c7-430d-b246-5d9b6def7029"
 url: 'https://astro.build/'
 zinger: The web framework for content-driven websites
 description: >-

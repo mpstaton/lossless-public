@@ -1,4 +1,5 @@
 ---
+site_uuid: "3671523c-8e07-4f00-b7b5-1bf3a4fc2eae"
 url: 'https://ai.google.dev/gemma/docs/codegemma'
 tags:
   - AI-Toolkit

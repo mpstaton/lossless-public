@@ -1,4 +1,5 @@
 ---
+site_uuid: "5332ff19-cf53-4740-bb3b-c86d695920f0"
 url: >-
   https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/
 zinger: A Generalist Multi-Agent System for Solving Complex Tasks

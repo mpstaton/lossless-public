@@ -1,4 +1,5 @@
 ---
+site_uuid: "fefa8f56-9537-4675-b1de-579ec71e91bf"
 url: 'https://twenty.com/'
 image: 'https://framerusercontent.com/assets/44L5tf46iK9v7QZCaZmwDNNw6Ts.png'
 site_name: Twenty

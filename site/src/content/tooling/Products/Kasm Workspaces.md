@@ -1,4 +1,5 @@
 ---
+site_uuid: "1d99c275-faa0-4b74-ac57-5a51b8ee408e"
 url: 'https://kasmweb.com/'
 zinger: >-
   Stream your workspace directly to your web browser on any device and from any

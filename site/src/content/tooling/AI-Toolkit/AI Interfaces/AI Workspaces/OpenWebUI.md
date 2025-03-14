@@ -1,4 +1,5 @@
 ---
+site_uuid: "da6b8a86-c4d2-4dea-a825-34f5a45b729f"
 url: 'https://www.openwebui.com'
 description: >-
   Open WebUI is an extensible, self-hosted AI interface that adapts to your

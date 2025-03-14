@@ -1,4 +1,5 @@
 ---
+site_uuid: "7f99d882-3f16-4850-ad17-53c0094ff80a"
 url: 'https://www.spotterstudio.com/'
 tags:
   - AI-Toolkit

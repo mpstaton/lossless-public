@@ -1,4 +1,5 @@
 ---
+site_uuid: "2532da89-6edb-4c1d-8677-89a520b499a1"
 url: 'https://www.trae.ai/'
 hero: '![Trae AI Hero](https://i.imgur.com/qJI4eV9.png)'
 tags:

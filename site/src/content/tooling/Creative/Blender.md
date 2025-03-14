@@ -1,4 +1,5 @@
 ---
+site_uuid: "c89dcebe-4dc1-4da9-b345-ad548ed4b698"
 url: 'https://www.blender.org/'
 image: >-
   https://www.blender.org/wp-content/uploads/2025/02/splash_artwork_2K-480x270.webp

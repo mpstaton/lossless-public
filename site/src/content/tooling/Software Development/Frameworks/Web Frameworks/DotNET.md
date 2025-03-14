@@ -1,4 +1,5 @@
 ---
+site_uuid: "83c0634e-c491-41d6-a68f-53d07cd46a34"
 docs_url: >-
   https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-9.0
 parent_org: '[[Microsoft]]'

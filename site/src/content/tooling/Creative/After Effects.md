@@ -1,4 +1,5 @@
 ---
+site_uuid: "c655c5b4-b187-49c2-8982-c00b685849af"
 url: 'https://www.adobe.com/products/aftereffects.html'
 parent_org: '[[Adobe]]'
 image: >-

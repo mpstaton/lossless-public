@@ -1,4 +1,5 @@
 ---
+site_uuid: "7f20d666-129f-4128-9085-9f834f0b194c"
 url: 'https://mindpal.space/'
 tags:
   - AI-Toolkit

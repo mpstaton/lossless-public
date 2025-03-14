@@ -1,4 +1,5 @@
 ---
+site_uuid: "828c6099-6b9d-428a-9503-15d1d1f97a6d"
 url: 'https://www.getguru.com/'
 zinger: Your company’s AI single source of truth
 description: >-

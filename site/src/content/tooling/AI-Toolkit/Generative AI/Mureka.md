@@ -1,4 +1,5 @@
 ---
+site_uuid: "623c9eea-932b-48dc-ab81-4ee8889331d6"
 url: 'https://www.mureka.ai/'
 tags:
   - AI-Toolkit

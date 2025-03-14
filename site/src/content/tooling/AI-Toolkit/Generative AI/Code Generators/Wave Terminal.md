@@ -1,4 +1,5 @@
 ---
+site_uuid: "14a6f114-c5ef-4631-8d1c-478423d5c764"
 docs_url: 'https://docs.waveterm.dev/'
 url: 'https://www.waveterm.dev/'
 tags:

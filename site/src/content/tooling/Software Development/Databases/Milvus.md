@@ -1,4 +1,5 @@
 ---
+site_uuid: "cb203229-43af-4a42-9c55-22e7b0eb904e"
 url: 'https://milvus.io/'
 image: 'https://assets.zilliz.com/meta_image_milvus_d6510e10e0.png'
 favicon: 'https://milvus.io/favicon-32x32.png'

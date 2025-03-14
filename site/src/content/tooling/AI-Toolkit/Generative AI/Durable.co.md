@@ -1,4 +1,5 @@
 ---
+site_uuid: "76618dcc-bb89-4003-b175-00eb0e7410f7"
 url: 'https://durable.co/'
 tags:
   - AI-Toolkit

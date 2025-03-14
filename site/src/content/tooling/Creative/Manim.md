@@ -1,4 +1,5 @@
 ---
+site_uuid: "a6b9f551-e78a-4737-91c5-0b0dcefc8aac"
 url: 'https://www.manim.community/'
 image: 'https://www.manim.community/banner.png'
 site_name: Manim Community

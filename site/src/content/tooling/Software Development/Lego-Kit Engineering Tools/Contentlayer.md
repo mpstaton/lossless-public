@@ -1,4 +1,5 @@
 ---
+site_uuid: "681e10f9-acc1-492a-a350-f8483a498ee3"
 url: 'https://www.contentlayer.dev/'
 image: 'https://www.contentlayer.dev/images/beta-launch-post-meta.png'
 site_name: Contentlayer

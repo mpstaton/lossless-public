@@ -1,4 +1,5 @@
 ---
+site_uuid: "b35b749b-7790-464c-b3a6-db6f26cd64b1"
 url: ' https://www.bluedothq.com'
 tags:
   - AI-Toolkit

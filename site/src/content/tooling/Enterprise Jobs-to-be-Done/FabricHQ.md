@@ -1,4 +1,5 @@
 ---
+site_uuid: "6bc0e735-0fa2-49d5-a9eb-3320432084cc"
 url: 'https://www.fabrichq.ai/'
 image: >-
   https://cdn.prod.website-files.com/650031343b3cb15970960aee/6759f31c057f5856fd2a85a7_Fabric%20Deck%20(AI%20Interviewing).jpg

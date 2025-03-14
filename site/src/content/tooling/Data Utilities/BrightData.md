@@ -1,4 +1,5 @@
 ---
+site_uuid: "5166c083-e0cb-4281-83fc-aa3d3681b4d2"
 url: 'https://brightdata.com/'
 zinger: How the world collects public web data
 description: >-

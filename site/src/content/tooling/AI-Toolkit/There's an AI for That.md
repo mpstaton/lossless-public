@@ -1,4 +1,5 @@
 ---
+site_uuid: "04b48528-bea3-45e1-a95b-65cff89db713"
 url: 'https://theresanaiforthat.com/'
 tags:
   - AI-Toolkit

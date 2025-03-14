@@ -1,4 +1,5 @@
 ---
+site_uuid: "b90257ac-d3a9-441a-b14b-096d40938a33"
 url: 'https://pptr.dev/'
 description: >-
   Puppeteer is a JavaScript library which provides a high-level API to control

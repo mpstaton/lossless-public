@@ -1,4 +1,5 @@
 ---
+site_uuid: "518321ad-f1ef-4d0a-b344-3ba34545fa7e"
 url: 'https://godmode.space/'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "002588af-8aff-4973-932f-dd166acac156"
 url: 'https://baserow.io/'
 image: 'https://baserow.io/img/baserow_open_graph.png'
 site_name: Baserow

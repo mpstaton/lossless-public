@@ -1,4 +1,5 @@
 ---
+site_uuid: "8b1798c1-ed47-4e2d-ae20-ac76dd93781e"
 url: 'https://www.aistudios.com/'
 image: >-
   https://cdn.prod.website-files.com/63da3362f67ed6f71c9489c1/67110c3309d814f76db52d4a_aistudios_deepbrainai.png

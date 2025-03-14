@@ -1,4 +1,5 @@
 ---
+site_uuid: "cbde7bf1-dc92-4f63-8d16-9cb39d78793b"
 youtube_url: https://youtube.com/@getwebstudio
 ---
 

@@ -1,4 +1,5 @@
 ---
+site_uuid: "bbfad7d4-a5c8-4aa1-b99a-53b4c256f2cf"
 docs_url: 'https://docs.expo.dev/build/setup/'
 url: 'https://expo.dev/'
 image: 'https://static.expo.dev/static/share/generic.jpg'

@@ -1,4 +1,5 @@
 ---
+site_uuid: "8fb51fd1-f0e6-48b4-8a7b-1485786ed7db"
 zinger: Build like a team of hundreds_
 url: 'https://appwrite.io/'
 description: >-

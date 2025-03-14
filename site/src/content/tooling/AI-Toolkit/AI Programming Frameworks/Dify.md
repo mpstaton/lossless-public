@@ -1,4 +1,5 @@
 ---
+site_uuid: "a944fc8b-8489-41f6-bf83-825029d386ab"
 url: 'https://dify.ai/'
 description: >-
   Dify is an open-source LLM app development platform. Orchestrate LLM apps from

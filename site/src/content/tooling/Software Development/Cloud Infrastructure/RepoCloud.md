@@ -1,4 +1,5 @@
 ---
+site_uuid: "b0bbeddb-2ad6-416b-923d-062b4f9ae7be"
 url: 'https://repocloud.io/'
 image: 'https://repocloud.io/static/favicons/apple-touch-icon.png'
 site_name: RepoCloud

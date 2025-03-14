@@ -1,4 +1,5 @@
 ---
+site_uuid: "f3a7bc6b-80ab-4414-818f-3b22e56c63c2"
 url: 'https://www.krea.ai'
 tags:
   - AI-Toolkit

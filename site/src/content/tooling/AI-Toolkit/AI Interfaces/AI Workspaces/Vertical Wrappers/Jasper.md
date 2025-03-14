@@ -1,4 +1,5 @@
 ---
+site_uuid: "1c6b3e86-b6fb-4086-acaa-6f03e7cab933"
 url: 'https://www.jasper.ai/'
 title: AI that’s built for marketing
 zinger: The AI your marketing deserves

@@ -1,4 +1,5 @@
 ---
+site_uuid: "5e0ddc4c-f59e-43ac-8e56-dd0501711de1"
 url: 'https://www.templafy.com/'
 tags:
   - AI-Toolkit

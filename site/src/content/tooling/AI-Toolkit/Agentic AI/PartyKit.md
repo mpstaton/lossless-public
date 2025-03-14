@@ -1,4 +1,5 @@
 ---
+site_uuid: "8213081d-4ca6-4882-9441-c6e4a1d6934f"
 url: 'https://www.partykit.io/'
 tags:
   - AI-Toolkit

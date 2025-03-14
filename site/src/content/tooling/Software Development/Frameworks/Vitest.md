@@ -1,4 +1,5 @@
 ---
+site_uuid: "27fcc611-4a10-485d-bdbc-a8985f75e222"
 url: 'https://vitest.dev/'
 image: 'https://vitest.dev/og.png'
 site_name: Vitest

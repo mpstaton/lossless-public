@@ -1,4 +1,5 @@
 ---
+site_uuid: "2547def5-fc19-49e2-9c17-e1651c8b6fb5"
 url: 'https://www.capcut.com/'
 tags:
   - AI-Toolkit

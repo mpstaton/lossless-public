@@ -1,4 +1,5 @@
 ---
+site_uuid: "54f4fad8-0c34-4bbe-a0c4-25f0426b4a43"
 url: 'https://rsbuild.dev'
 image: 'https://assets.rspack.dev/rsbuild/rsbuild-og-image.png'
 site_name: Rsbuild

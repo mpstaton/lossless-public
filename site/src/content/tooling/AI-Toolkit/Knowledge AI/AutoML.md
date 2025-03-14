@@ -1,4 +1,5 @@
 ---
+site_uuid: "1d39f10b-bf1d-4079-9ccf-07edd290bbb1"
 url: 'https://auto-rag.com'
 tags:
   - AI-Toolkit

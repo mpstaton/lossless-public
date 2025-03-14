@@ -1,4 +1,5 @@
 ---
+site_uuid: "ca672603-56c5-4c55-aa61-cdb350bee53b"
 url: 'https://appmap.io/'
 aliases:
   - Navie AI

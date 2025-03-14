@@ -1,4 +1,5 @@
 ---
+site_uuid: "c727e3a9-635e-47db-88b7-87e6a9c09452"
 url: 'https://www.limitless.ai/'
 hero: '![[Screenshot 2025-02-22 at 10.17.38 PM_Limitiless-AI--Hero.png]]'
 tags:

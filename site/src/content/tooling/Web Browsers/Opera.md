@@ -1,4 +1,5 @@
 ---
+site_uuid: "8309e69a-6fb2-4c4f-a422-d8a212a29de2"
 aliases:
   - Opera Browser
 url: 'https://www.opera.com/'

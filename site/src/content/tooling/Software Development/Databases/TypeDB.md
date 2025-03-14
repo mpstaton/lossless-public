@@ -1,4 +1,5 @@
 ---
+site_uuid: "ba0274f5-0c61-41d8-887a-172a42a610c0"
 url: 'https://typedb.com/'
 image: >-
   https://cdn.sanity.io/images/xndl14mc/production/57386eeb768e76f477854101fd8a8abf1677138a-3316x1850.png

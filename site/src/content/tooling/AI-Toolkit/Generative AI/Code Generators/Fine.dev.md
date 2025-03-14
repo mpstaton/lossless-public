@@ -1,4 +1,5 @@
 ---
+site_uuid: "dfced9f4-987e-476f-b01c-a74d56c39531"
 url: 'https://www.fine.dev/'
 zinger: Full-Stack AI Developer Agent for Startups
 description: >-

@@ -1,4 +1,5 @@
 ---
+site_uuid: "7bf26438-7f79-4a07-9b76-e3e109e0e5ad"
 url: 'https://jumpshare.com/'
 image: 'https://static.jumpshare.com/res/images/new_static/og/homepage.png'
 site_name: Jumpshare

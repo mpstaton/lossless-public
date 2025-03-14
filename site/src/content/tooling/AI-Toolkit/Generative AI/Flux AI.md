@@ -1,4 +1,5 @@
 ---
+site_uuid: "dcce4761-b332-4b0d-9050-e423787ebdf1"
 url: 'https://flux-ai.io/'
 tags:
   - AI-Toolkit

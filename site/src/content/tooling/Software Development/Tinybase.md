@@ -1,4 +1,5 @@
 ---
+site_uuid: "fa919cb8-1b61-4f45-a72e-372c055d7b40"
 url: 'https://tinybase.org/'
 github_url: 'https://github.com/tinyplex/tinybase/'
 image: 'https://tinybase.org/favicon_pad.png'

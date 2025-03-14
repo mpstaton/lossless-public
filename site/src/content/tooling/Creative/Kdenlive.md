@@ -1,4 +1,5 @@
 ---
+site_uuid: "7a1d008a-227d-4e9b-8b70-40e55a9b8669"
 url: 'https://kdenlive.org/en/'
 tags:
   - Creative

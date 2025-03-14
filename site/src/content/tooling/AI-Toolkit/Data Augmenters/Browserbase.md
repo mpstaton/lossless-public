@@ -1,4 +1,5 @@
 ---
+site_uuid: "a477ee16-d5f3-4ad8-b123-8d3ad7d15417"
 url: 'https://www.browserbase.com/'
 zinger: A web browser for your AI
 tags:

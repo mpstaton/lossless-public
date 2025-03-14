@@ -1,4 +1,5 @@
 ---
+site_uuid: "a6fe1d1f-1b18-4457-84a8-830f3ec58af8"
 url: 'http://www.nocobase.com/'
 image: 'https://static-docs.nocobase.com/20250223-173129.jpg'
 site_name: NocoBase

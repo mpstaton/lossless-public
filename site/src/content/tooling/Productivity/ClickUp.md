@@ -1,4 +1,5 @@
 ---
+site_uuid: "ced5bc2f-723c-4a6f-af09-2ef9078d6052"
 url: 'https://clickup.com/'
 image: 'https://clickup.com/assets/brand/clickup-meta.png'
 site_name: ClickUp™

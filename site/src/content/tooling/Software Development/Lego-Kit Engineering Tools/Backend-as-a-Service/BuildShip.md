@@ -1,4 +1,5 @@
 ---
+site_uuid: "fa68d48e-753a-4a6b-9807-92dbc7de5c2d"
 url: 'https://buildship.com/'
 image: 'https://framerusercontent.com/assets/aaCyZXQ3YVWFlDC7RJh6KsexeXM.png'
 site_name: BuildShip | Visual Low

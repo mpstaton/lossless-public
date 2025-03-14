@@ -1,4 +1,5 @@
 ---
+site_uuid: "a32472b6-2df6-49e7-a9fb-8417ab18826c"
 url: 'https://bolt.new/'
 tags:
   - AI-Toolkit

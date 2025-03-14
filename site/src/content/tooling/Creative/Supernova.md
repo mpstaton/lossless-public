@@ -1,4 +1,5 @@
 ---
+site_uuid: "e9547593-ec38-431a-83c8-5c5cc65bd16c"
 url: 'https://www.supernova.io/'
 tags:
   - Creative

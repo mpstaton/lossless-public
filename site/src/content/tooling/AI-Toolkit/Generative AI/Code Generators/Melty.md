@@ -1,4 +1,5 @@
 ---
+site_uuid: "596e88ea-157e-48d2-9aee-88c4ddf57582"
 url: 'https://melty.sh/'
 zinger: AI tools for weirdos and freaks.
 tags:

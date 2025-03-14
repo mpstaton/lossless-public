@@ -1,4 +1,5 @@
 ---
+site_uuid: "2fc2bac4-e088-4ff5-afc6-b0812a6b2ca1"
 url: 'https://mem0.ai/'
 zinger: The Memory Layer for your AI Agents
 description_site_cp: >-

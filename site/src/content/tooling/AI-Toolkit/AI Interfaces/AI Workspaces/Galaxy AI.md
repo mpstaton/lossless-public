@@ -1,4 +1,5 @@
 ---
+site_uuid: "4a74c202-c4d6-4c36-95f9-b732a1462dd9"
 url: 'https://galaxy.ai/'
 zinger: Every AI Tool You Need. Just $15/month.
 tags:

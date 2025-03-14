@@ -1,4 +1,5 @@
 ---
+site_uuid: "158b7f72-37cb-4eac-854f-e2b9880d796d"
 url: 'https://memoripy.com/'
 zinger: AI Memory Layer for Smarter Agents
 tags:

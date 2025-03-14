@@ -1,4 +1,5 @@
 ---
+site_uuid: "6aeaaee5-48b2-4798-8f46-b240944f5477"
 url: 'https://www.zotero.org/'
 image: 'https://www.zotero.org/static/images/bs4theme/zotero-logo.1707326075.svg'
 site_name: Zotero

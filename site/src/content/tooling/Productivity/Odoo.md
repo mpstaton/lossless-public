@@ -1,4 +1,5 @@
 ---
+site_uuid: "7f5d09b2-e637-43c5-9608-42ffea732a9c"
 url: 'https://www.odoo.com/'
 image: 'https://www.odoo.com/web/image/54404732-3d9bec26/SPI_homepage.png'
 site_name: Odoo

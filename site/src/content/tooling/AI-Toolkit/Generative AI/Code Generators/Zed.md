@@ -1,4 +1,5 @@
 ---
+site_uuid: "0cafad8f-594e-4b73-85da-303586640e5e"
 url: 'https://www.zed.dev'
 zinger: The editor for what's next
 description: >-

@@ -1,4 +1,5 @@
 ---
+site_uuid: "399fa012-a58f-43a2-9a88-9b7e45654934"
 url: 'https://about.grit.io'
 zinger: Software Maintenance. AI Autopilot
 description_site_cp: Grit handles your code migrations and dependency upgrades for you

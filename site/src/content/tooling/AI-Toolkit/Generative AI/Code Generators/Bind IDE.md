@@ -1,4 +1,5 @@
 ---
+site_uuid: "bcf85247-fc96-4337-a035-1d8df5141eb9"
 url: 'https://www.getbind.co/ide'
 tags:
   - AI-Toolkit

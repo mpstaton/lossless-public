@@ -1,4 +1,5 @@
 ---
+site_uuid: "86e3054a-b9c9-432d-ab7e-9783e317bd1c"
 url: 'https://ladybird.org/'
 zinger: A truly independent web browser.
 description_site_cp: 'We are building a brand-new browser from scratch, backed by a non-profit.'

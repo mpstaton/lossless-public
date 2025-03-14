@@ -1,4 +1,5 @@
 ---
+site_uuid: "122ed2f4-e71b-4c55-bdd3-b4b3a940b10f"
 url: 'https://chaos-mesh.org/'
 tags:
   - Software-Development

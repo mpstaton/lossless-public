@@ -1,4 +1,5 @@
 ---
+site_uuid: "85e94d82-c1c7-4162-92ef-234eaeecbfff"
 url: 'https://userlist.com/'
 image: 'https://userlist.com/assets/Userlist-Preview.png'
 site_name: Userlist

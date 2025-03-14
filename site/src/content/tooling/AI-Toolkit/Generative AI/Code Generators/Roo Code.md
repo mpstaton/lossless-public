@@ -1,6 +1,7 @@
 ---
+site_uuid: "47567cbb-e866-44a3-85b6-2a208cd8a510"
 github_url: https://github.com/RooVetGit/Roo-Code
-tags:
+tags: ["Code-Generators", "IDE-Plugins", "AI-Toolkit", "Generative-AI"]
   - Code-Generators
   - IDE-Plugins
 ---

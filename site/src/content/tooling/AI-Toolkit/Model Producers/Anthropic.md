@@ -1,4 +1,5 @@
 ---
+site_uuid: "0b506300-1c8b-4619-bc08-362bd9a3edb9"
 url: 'https://www.anthropic.com'
 tags:
   - AI-Toolkit

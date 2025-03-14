@@ -1,4 +1,5 @@
 ---
+site_uuid: "c5b23ac0-7060-40c8-9e17-bf05d09c59d3"
 url: 'https://sentient.foundation'
 tags:
   - AI-Toolkit

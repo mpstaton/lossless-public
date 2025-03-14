@@ -1,4 +1,5 @@
 ---
+site_uuid: "c03271f0-9b73-4b8d-96d2-c13cf9dabd42"
 url: 'https://www.stirlingpdf.com/'
 tags:
   - Software-Development

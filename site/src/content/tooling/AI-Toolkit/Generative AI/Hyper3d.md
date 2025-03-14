@@ -1,4 +1,5 @@
 ---
+site_uuid: "0f5e2caf-5916-48f1-87a9-e1946c677ee5"
 url: 'https://hyper3d.ai/'
 tags:
   - AI-Toolkit

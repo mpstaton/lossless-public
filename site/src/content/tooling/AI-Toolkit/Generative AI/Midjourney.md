@@ -1,4 +1,5 @@
 ---
+site_uuid: "42607bf2-7308-4881-89c3-51870ca54e46"
 url: 'https://www.midjourney.com/website'
 tags:
   - Generative-AI

@@ -1,4 +1,5 @@
 ---
+site_uuid: "07974b57-8cdf-4625-9109-e37cea5e92a6"
 url: 'https://anytype.io/'
 image: 'https://anytype.io/ogimage.jpg'
 site_name: the everything app

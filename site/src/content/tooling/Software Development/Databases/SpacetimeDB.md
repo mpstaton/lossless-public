@@ -1,4 +1,5 @@
 ---
+site_uuid: "9d1cdc1f-cf3d-4f05-904d-6d959c5a6af7"
 url: 'https://spacetimedb.com/'
 tags:
   - Software-Development

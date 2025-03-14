@@ -1,4 +1,5 @@
 ---
+site_uuid: "6690114d-57c9-4763-93f9-1e728f86e875"
 url: 'https://www.manning.com/'
 image: >-
   https://www.manning.com/assets/defaultOGCard-08086a2ba84a94613971a17812a34881.png

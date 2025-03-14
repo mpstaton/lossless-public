@@ -1,4 +1,5 @@
 ---
+site_uuid: "10c6e916-b3b0-4958-9788-f5388096c38c"
 url: 'https://www.ragic.com/'
 tags:
   - Enterprise-Jobs-to-be-Done

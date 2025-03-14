@@ -1,4 +1,5 @@
 ---
+site_uuid: "60e2a593-2fa5-4c40-85ec-3b475fb130ec"
 url: 'https://productfruits.com/'
 tags:
   - Software-Development

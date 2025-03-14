@@ -1,4 +1,5 @@
 ---
+site_uuid: "5baec612-d5d0-4855-8c99-9ef540fcd51e"
 url: 'https://coolify.io'
 tags:
   - Software-Development

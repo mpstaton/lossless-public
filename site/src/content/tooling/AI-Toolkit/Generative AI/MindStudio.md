@@ -1,4 +1,5 @@
 ---
+site_uuid: "601a5b30-d336-458f-b022-2c55883dd8e2"
 url: 'https://www.mindstudio.ai/'
 tags:
   - AI-Toolkit

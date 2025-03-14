@@ -1,4 +1,5 @@
 ---
+site_uuid: "a0b9f5fc-c295-4e03-bdf0-60a4c6a9ae52"
 url: 'https://get.mem.ai/'
 image: 'https://framerusercontent.com/images/ULLjDc352L91ujuHm78OCGd11c.png'
 site_name: "Mem\_– The AI Notes App That Keeps You Organized"

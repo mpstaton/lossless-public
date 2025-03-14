@@ -1,4 +1,5 @@
 ---
+site_uuid: "83a8b5c9-3b7d-4b46-b80f-46be69356263"
 url: 'https://grpc.io/'
 zinger: 'A high performance, open source universal RPC framework'
 created_by: '[[Google]]'

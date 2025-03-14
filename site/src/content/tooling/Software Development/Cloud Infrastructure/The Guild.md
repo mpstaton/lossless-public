@@ -1,4 +1,5 @@
 ---
+site_uuid: "eec28b42-8bbb-4a33-be5f-8a8f38572feb"
 url: 'https://the-guild.dev/'
 image: >-
   https://open-graph-image.theguild.workers.dev/?product=GUILD&title=GraphQL%20Tools

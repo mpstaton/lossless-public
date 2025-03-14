@@ -1,4 +1,5 @@
 ---
+site_uuid: "c7435124-041e-47ab-96c6-7ad8e70f879c"
 url: 'https://affinity.serif.com/en-us/'
 image: 'https://cdn.serif.com/affinity/img/home/og/og-all-080820220738.png'
 site_name: Affinity

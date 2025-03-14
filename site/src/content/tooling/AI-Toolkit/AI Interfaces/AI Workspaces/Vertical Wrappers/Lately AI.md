@@ -1,4 +1,5 @@
 ---
+site_uuid: "e7a71cb4-9c98-462c-ac53-d4763794ad81"
 url: 'https://www.lately.ai/'
 tags:
   - AI-Toolkit

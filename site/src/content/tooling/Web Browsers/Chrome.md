@@ -1,4 +1,5 @@
 ---
+site_uuid: "153e1603-df0d-41cf-b300-66ab7ddb6f4d"
 aliases:
   - Chrome Browser
 url: 'https://www.google.com/chrome/'

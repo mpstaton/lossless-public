@@ -1,4 +1,5 @@
 ---
+site_uuid: "ff1dfbfb-5d75-4fd7-abf5-2e799c01f274"
 url: 'https://www.zoom.com'
 image: 'https://st1.zoom.us/homepage/publish/static-image/thumb.png'
 site_name: Zoom

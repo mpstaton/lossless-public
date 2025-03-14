@@ -1,4 +1,5 @@
 ---
+site_uuid: "90679a6d-3c8f-41e5-9304-a97785f6f1d4"
 url: 'https://aws.amazon.com/lambda/'
 image: 'https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png'
 site_name: 'Amazon Web Services, Inc.'

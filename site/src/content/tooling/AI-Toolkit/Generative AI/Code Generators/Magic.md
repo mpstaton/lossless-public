@@ -1,4 +1,5 @@
 ---
+site_uuid: "eb50eb68-6fce-4b85-9dc6-0f934949a832"
 url: 'https://21st.dev/magic'
 parent_org: '[[21st.dev]]'
 tags:

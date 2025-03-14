@@ -1,4 +1,5 @@
 ---
+site_uuid: "c1d7ff8c-8b18-4fb4-8afc-82ea32771cab"
 url: 'https://deepseekcoder.github.io/'
 tags:
   - AI-Toolkit

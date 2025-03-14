@@ -1,4 +1,5 @@
 ---
+site_uuid: "9117608b-7c8d-4d98-a97d-920583cb61e2"
 url: 'https://www.foreplay.co/'
 image: >-
   https://cdn.prod.website-files.com/62a4ed18ddad95dde8b8bfa4/64764d3e078e7de02dd02991_Open%20Graph%20-%20Home.webp

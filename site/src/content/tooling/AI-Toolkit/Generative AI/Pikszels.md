@@ -1,4 +1,5 @@
 ---
+site_uuid: "885638c9-e8a3-4257-bf64-9dbb83d0623f"
 url: 'https://pikzels.com'
 tags:
   - AI-Toolkit

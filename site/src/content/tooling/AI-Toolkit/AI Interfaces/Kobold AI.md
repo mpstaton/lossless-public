@@ -1,4 +1,5 @@
 ---
+site_uuid: "0ef24e16-fde1-43bb-9847-a95fb0df95b9"
 url: 'https://lite.koboldai.net'
 tags:
   - AI-Toolkit

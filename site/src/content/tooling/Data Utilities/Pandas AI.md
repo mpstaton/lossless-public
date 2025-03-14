@@ -1,4 +1,5 @@
 ---
+site_uuid: "c1f4902e-53b3-4534-8a18-ad0b24550eb2"
 url: 'https://getpanda.ai/'
 zinger: Open Source AI Agents for Data Analysis
 description: >-

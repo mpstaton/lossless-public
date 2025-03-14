@@ -1,4 +1,5 @@
 ---
+site_uuid: "bd55d7af-1e33-4143-860c-1209990460c9"
 url: 'https://react.dev/'
 parent_org: '[[Meta]]'
 image: 'https://react.dev/images/og-home.png'

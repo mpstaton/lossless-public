@@ -1,4 +1,5 @@
 ---
+site_uuid: "7d6780de-f52a-4b3d-89f9-0fad1408a5c8"
 url: 'https://jitsi.org/'
 image: 'https://jitsi.org/wp-content/uploads/2020/04/Jitsi_opengraph.jpg'
 site_name: Jitsi

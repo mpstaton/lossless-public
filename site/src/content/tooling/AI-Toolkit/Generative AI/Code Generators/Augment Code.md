@@ -1,4 +1,5 @@
 ---
+site_uuid: "393a4a62-d992-4d9b-8acf-1917e4a57c9a"
 url: 'https://www.augmentcode.com/'
 zinger: Developer AI for real work
 description: >-

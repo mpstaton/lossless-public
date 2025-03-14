@@ -1,4 +1,5 @@
 ---
+site_uuid: "88545673-2ec1-4d7f-a322-6afbaaf81f60"
 url: 'https://lumalabs.ai/dream-machine'
 tags:
   - AI-Toolkit

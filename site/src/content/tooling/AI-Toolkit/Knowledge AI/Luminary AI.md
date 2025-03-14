@@ -1,4 +1,5 @@
 ---
+site_uuid: "34ab099c-b788-43eb-853d-d37e999e812a"
 url: 'https://luminary-ai.com/'
 tags:
   - AI-Toolkit

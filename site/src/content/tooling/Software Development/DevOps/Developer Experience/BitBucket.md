@@ -1,4 +1,5 @@
 ---
+site_uuid: "c5c86168-c21f-4a08-921f-8fc47418ce31"
 url: 'https://bitbucket.org/product'
 parent_org: '[[Atlassian]]'
 image: >-

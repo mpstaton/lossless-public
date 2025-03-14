@@ -1,4 +1,5 @@
 ---
+site_uuid: "67828fe1-6faf-4426-955b-99848a4114a5"
 url: 'https://trypear.ai'
 tags:
   - AI-Toolkit

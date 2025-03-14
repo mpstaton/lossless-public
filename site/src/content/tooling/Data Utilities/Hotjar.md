@@ -1,4 +1,5 @@
 ---
+site_uuid: "4f4cf1d8-ba11-4013-8959-af828de58eb5"
 zinger: >-
   Everything you ever wanted to know about your website... but your analytics
   never told you.

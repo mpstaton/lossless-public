@@ -1,4 +1,5 @@
 ---
+site_uuid: "3809e132-7d39-4426-ac76-114b132d21b5"
 url: 'https://adonisjs.com/'
 image: 'https://adonisjs.com/home_og_image.jpeg'
 site_name: AdonisJS

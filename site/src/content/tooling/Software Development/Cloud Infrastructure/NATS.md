@@ -1,4 +1,5 @@
 ---
+site_uuid: "fad216db-2487-446d-a76b-e74ab7226ff1"
 url: 'https://nats.io/'
 image: 'https://nats.io/img/new_social_nats.png'
 site_name: NATS.io

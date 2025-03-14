@@ -1,4 +1,5 @@
 ---
+site_uuid: "484a9b75-d327-4db8-bdd0-6c3f92739d8b"
 url: 'https://playground.com'
 tags:
   - AI-Toolkit

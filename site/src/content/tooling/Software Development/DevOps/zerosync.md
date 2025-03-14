@@ -1,4 +1,5 @@
 ---
+site_uuid: "e4e73182-f2df-4962-9ad5-2a8b4f368d92"
 url: 'https://zerosync.co/'
 tags:
   - Software-Development

@@ -1,4 +1,5 @@
 ---
+site_uuid: "c6478f3d-22d6-4ae7-811c-28dc034c703e"
 url: 'https://www.edenai.co/'
 tags:
   - AI-Toolkit

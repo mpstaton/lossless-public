@@ -1,4 +1,5 @@
 ---
+site_uuid: "96e7687c-4c7d-4a08-b9d4-265534a6c9ce"
 url: 'https://www.tribe.ai/'
 zinger: We build AI products that matter
 description: >-

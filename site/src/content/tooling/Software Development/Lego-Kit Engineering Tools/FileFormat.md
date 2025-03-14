@@ -1,4 +1,5 @@
 ---
+site_uuid: "5ed6e427-c559-4899-8998-9499130bae10"
 url: 'https://www.fileformat.com/'
 zinger: An Open-source File Format API Guide For Developers
 description: >-

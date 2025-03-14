@@ -1,4 +1,5 @@
 ---
+site_uuid: "e82bd599-382d-4cf4-b2bf-71915ce487a8"
 url: 'https://www.prisma.io'
 image: >-
   https://cdn.sanity.io/images/p2zxqf70/production/384386cb3c2c21b3ad27c6b6758547fe18b08ac1-1200x630.png

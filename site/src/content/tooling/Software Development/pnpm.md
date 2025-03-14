@@ -1,4 +1,5 @@
 ---
+site_uuid: "ac38bb15-8952-4730-b697-bf2e3de4cff6"
 url: 'https://pnpm.io/'
 tags:
   - Software-Development

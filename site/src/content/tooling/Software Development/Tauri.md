@@ -1,4 +1,5 @@
 ---
+site_uuid: "457f1aa3-592a-4579-8e22-8997d60ef218"
 url: 'https://v2.tauri.app/'
 zinger: 'Create small, fast, secure, cross-platform applications'
 image: 'https://v2.tauri.app/og.png?v=1'

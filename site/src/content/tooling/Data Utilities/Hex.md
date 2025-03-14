@@ -1,4 +1,5 @@
 ---
+site_uuid: "37d66d35-9150-45a2-a433-f6bac006fba9"
 url: 'https://hex.tech/'
 zinger: Bring everyone together with data.
 description: >-

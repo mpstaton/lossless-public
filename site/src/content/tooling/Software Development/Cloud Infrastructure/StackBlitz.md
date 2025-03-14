@@ -1,4 +1,5 @@
 ---
+site_uuid: "87deddfe-5586-4602-b7f3-ade3d7be83bc"
 url: 'https://stackblitz.com'
 tags:
   - Software-Development

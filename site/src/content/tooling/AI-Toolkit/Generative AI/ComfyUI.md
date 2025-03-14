@@ -1,4 +1,5 @@
 ---
+site_uuid: "98f5c83f-d613-45c4-a467-3229574204f0"
 url: 'https://www.comfy.org/'
 tags:
   - AI-Toolkit

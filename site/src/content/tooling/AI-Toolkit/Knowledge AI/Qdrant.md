@@ -1,4 +1,5 @@
 ---
+site_uuid: "99e99fce-4945-4af5-bb11-d4ab46e2cf43"
 url: 'https://qdrant.tech/'
 tags:
   - AI-Toolkit

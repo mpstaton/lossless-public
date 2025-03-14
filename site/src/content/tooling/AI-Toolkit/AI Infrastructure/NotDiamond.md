@@ -1,4 +1,5 @@
 ---
+site_uuid: "9a2616f1-a79e-480b-9bfe-13a6022d0d8a"
 url: 'https://www.notdiamond.net/'
 zinger: Optimize quality with automatic query-routing.
 description: >-

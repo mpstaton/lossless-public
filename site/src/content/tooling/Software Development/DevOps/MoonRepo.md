@@ -1,4 +1,5 @@
 ---
+site_uuid: "226c3548-9b8b-4022-af7f-ec706b81c412"
 url: 'https://moonrepo.dev/'
 zinger: New era of productivity tooling
 description: >-

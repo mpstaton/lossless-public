@@ -1,4 +1,5 @@
 ---
+site_uuid: "3638f637-1dfa-4216-828a-0b1b3e058f4e"
 url: 'https://paligo.net/'
 image: 'https://paligo.net/wp-content/uploads/technical-writers-banner.png'
 site_name: Paligo

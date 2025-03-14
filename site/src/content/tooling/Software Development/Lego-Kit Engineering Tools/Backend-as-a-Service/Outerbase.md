@@ -1,4 +1,5 @@
 ---
+site_uuid: "aa342756-add1-424f-a60b-f923871c5fcb"
 url: 'https://www.outerbase.com/'
 image: 'https://www.outerbase.com/og.jpg'
 site_name: Outerbase

@@ -1,4 +1,5 @@
 ---
+site_uuid: "b337b28b-99a3-493d-8feb-3c9781f0c749"
 url: 'https://www.microsoft.com/en-us/microsoft-loop'
 aliases:
   - Loop

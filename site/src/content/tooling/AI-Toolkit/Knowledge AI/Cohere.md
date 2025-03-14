@@ -1,4 +1,5 @@
 ---
+site_uuid: "ba4a9729-652d-4317-b3d0-c5021124853b"
 url: 'https://cohere.com'
 tags:
   - AI-Toolkit

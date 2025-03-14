@@ -1,4 +1,5 @@
 ---
+site_uuid: "b99e2bb9-8c8f-491d-adc3-09768b12a73d"
 url: 'https://www.proxmox.com/en/products/proxmox-virtual-environment/overview'
 image: 'https://www.proxmox.com/images/proxmox/Proxmox-logo-stacked-1240.png'
 site_name: Proxmox

@@ -1,4 +1,5 @@
 ---
+site_uuid: "368418c2-672a-400b-9730-dfbfd714ca8b"
 x: 'https://x.com/exolabs'
 github_profile_url: 'https://github.com/exo-explore/'
 url: 'https://exolabs.net/'

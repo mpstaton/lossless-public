@@ -1,4 +1,5 @@
 ---
+site_uuid: "501b5be6-df2e-4d24-a058-07075071f50e"
 url: 'https://www.rewind.ai/'
 zinger: Your AI assistant that has all the context
 description: >-

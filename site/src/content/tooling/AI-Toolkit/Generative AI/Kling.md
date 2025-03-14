@@ -1,4 +1,5 @@
 ---
+site_uuid: "93385751-d754-4919-9f8f-d3eec321e708"
 url: 'https://www.klingai.com/'
 tags:
   - AI-Toolkit

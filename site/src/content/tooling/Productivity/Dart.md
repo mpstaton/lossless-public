@@ -1,4 +1,5 @@
 ---
+site_uuid: "cddc683c-828c-4d2a-a628-4ff12e595599"
 url: 'https://www.itsdart.com/'
 zinger: AI project management software for smarter teams
 description_site_cp: Dart will save you seven hours per week in project management overhead

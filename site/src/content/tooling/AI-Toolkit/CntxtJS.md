@@ -1,4 +1,5 @@
 ---
+site_uuid: "2e5c845f-fb8d-4373-ba79-654b391f491d"
 url: 'https://github.com/brandondocusen/CntxtJS'
 zinger: Minify Your Codebase Context for LLMs
 description: >-

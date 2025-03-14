@@ -1,4 +1,5 @@
 ---
+site_uuid: "184bcd2f-140d-45fd-a18e-2439462804be"
 url: 'https://i-am-bee.github.io/bee-agent-framework/#/'
 tags:
   - AI-Toolkit

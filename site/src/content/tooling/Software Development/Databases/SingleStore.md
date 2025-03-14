@@ -1,4 +1,5 @@
 ---
+site_uuid: "bb1c531f-96c0-4200-9790-baadcc2a2366"
 url: 'https://www.singlestore.com/'
 tags:
   - Software-Development

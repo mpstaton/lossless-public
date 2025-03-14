@@ -1,4 +1,5 @@
 ---
+site_uuid: "9d8d6563-ba01-4c11-b830-7380a3cddb15"
 url: 'https://civet.dev'
 image: >-
   https://user-images.githubusercontent.com/18894/184558519-b675a903-7490-43ba-883e-0d8addacd4b9.png

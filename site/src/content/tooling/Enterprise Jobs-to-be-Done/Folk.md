@@ -1,4 +1,5 @@
 ---
+site_uuid: "3be931ba-8948-4aea-a06b-7a26c8d32ef5"
 url: 'https://www.folk.app/'
 tags:
   - Enterprise-Jobs-to-be-Done

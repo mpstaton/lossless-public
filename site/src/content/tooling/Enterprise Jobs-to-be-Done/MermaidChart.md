@@ -1,4 +1,5 @@
 ---
+site_uuid: "d6f36751-266f-4df2-a217-d1e48a842a0e"
 url: 'https://www.mermaidchart.com/'
 site_name: Mermaid Chart
 title: >-

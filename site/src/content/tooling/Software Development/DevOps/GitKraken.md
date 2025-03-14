@@ -1,4 +1,5 @@
 ---
+site_uuid: "40386478-2618-4d8b-8744-fe842dd127c1"
 url: 'https://www.gitkraken.com'
 zinger: Dev Tools that Simplify & Supercharge Git
 description: >-

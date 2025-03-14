@@ -1,4 +1,5 @@
 ---
+site_uuid: "817b94ac-2032-4e5c-a656-6171f8c224ef"
 url: 'https://nitro.build/'
 image: >-
   https://nitro.build/_og/_index.png?name=Nitro&title=Next+Generation+Server+Toolkit&description=Create+web+servers+with+everything+you+need+and+deploy+them+wherever+you+prefer.

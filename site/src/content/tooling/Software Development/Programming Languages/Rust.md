@@ -1,4 +1,5 @@
 ---
+site_uuid: "efeb0279-9c04-4bdb-a6be-8b1881eeecb9"
 url: 'https://www.rust-lang.org/'
 tags:
   - Software-Development

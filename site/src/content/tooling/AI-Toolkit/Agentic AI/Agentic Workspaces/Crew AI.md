@@ -1,4 +1,5 @@
 ---
+site_uuid: "b20861bb-37b7-499d-9691-1df69d79118c"
 url: 'https://www.crewai.com/'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "421ab263-d7d7-4210-92ec-f0384cb313a8"
 url: 'https://big-agi.com/'
 zinger: Deploy the most innovative and productive Generative AI suite.
 description_site_cp: >-

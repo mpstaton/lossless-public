@@ -1,4 +1,5 @@
 ---
+site_uuid: "7d89aaaa-f672-4ab4-aac9-df2539718a24"
 url: 'https://vuejs.org/'
 zinger: The Progressive JavaScript Framework
 image: 'https://vuejs.org/images/logo.png'

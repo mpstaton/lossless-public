@@ -1,4 +1,5 @@
 ---
+site_uuid: "bf340663-4cff-4724-a637-33a72809cc84"
 url: 'https://ezgif.com'
 tags:
   - Creative

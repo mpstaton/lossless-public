@@ -1,4 +1,5 @@
 ---
+site_uuid: "51d898e6-0f9f-410b-adfb-695aee43deb6"
 url: 'https://promptql.hasura.io/'
 tags:
   - AI-Toolkit

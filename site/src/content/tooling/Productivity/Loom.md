@@ -1,4 +1,5 @@
 ---
+site_uuid: "98071106-a64d-469e-8ee4-3b990254f6cc"
 url: 'https://www.loom.com/'
 parent_org: '[[Atlassian]]'
 image: >-

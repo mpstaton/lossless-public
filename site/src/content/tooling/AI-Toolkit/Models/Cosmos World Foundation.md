@@ -1,4 +1,5 @@
 ---
+site_uuid: "154e64df-1212-4e6a-bf52-982a288e9793"
 url: 'https://www.nvidia.com/en-us/ai/cosmos/'
 description_site_cp: >-
   NVIDIA Cosmos™ is a platform of state-of-the-art generative world foundation

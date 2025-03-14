@@ -1,4 +1,5 @@
 ---
+site_uuid: "3c870a2b-b3fe-4db9-afb9-6cac06668e94"
 url: 'https://gemini.google.com'
 tags:
   - AI-Toolkit

@@ -1,4 +1,5 @@
 ---
+site_uuid: "0f5ea898-265a-4339-8ced-95d17f796285"
 url: 'https://pocketbase.io/'
 zinger: Open Source backend in 1 file
 image: 'https://pocketbase.io/images/og.png'

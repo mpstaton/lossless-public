@@ -1,4 +1,5 @@
 ---
+site_uuid: "a43dc1e4-3ed5-46e4-97ce-c9c50e8582a6"
 url: 'https://www.skool.com/aiworkshop/about'
 image: >-
   https://assets.skool.com/f/4b37fc681d0d40a596990b588b6d4d2a/ea8d365cc54044b790a978ec5464c4995a86f32ec3f34da08d3c8c0a1540ffef

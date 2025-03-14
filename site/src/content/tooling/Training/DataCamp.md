@@ -1,4 +1,5 @@
 ---
+site_uuid: "8cf3f5f5-b59c-454e-8ccd-331bd9baab84"
 url: 'https://www.datacamp.com'
 tags:
   - Training

@@ -1,4 +1,5 @@
 ---
+site_uuid: "0722e857-fa4f-4d84-863a-251c10b2710d"
 url: 'https://www.geldata.com'
 tags:
   - Software-Development

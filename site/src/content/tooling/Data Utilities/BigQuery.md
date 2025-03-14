@@ -1,4 +1,5 @@
 ---
+site_uuid: "e07d8841-9581-4ff0-9463-ded16be5cd4a"
 url: 'https://cloud.google.com/bigquery'
 parent_org: '[[Google]]'
 zinger: 'From data warehouse to a unified, AI-ready data platform'

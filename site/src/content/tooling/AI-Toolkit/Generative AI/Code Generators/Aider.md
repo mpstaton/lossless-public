@@ -1,4 +1,5 @@
 ---
+site_uuid: "2f909b8f-fe7f-4b39-ac57-0e7879284f5c"
 github_url: 'https://github.com/Aider-AI/aider'
 url: 'https://aider.chat/'
 tags:

@@ -1,4 +1,5 @@
 ---
+site_uuid: "75c538cc-6c86-44b9-9068-2b6db9c10be3"
 url: 'https://poolside.ai/'
 tags:
   - AI-Toolkit

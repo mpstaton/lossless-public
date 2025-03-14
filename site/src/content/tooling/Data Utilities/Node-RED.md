@@ -1,4 +1,5 @@
 ---
+site_uuid: "5c705cfd-374e-4e3c-af55-d3c32b27db4c"
 url: 'https://nodered.org'
 tags:
   - Low-Code

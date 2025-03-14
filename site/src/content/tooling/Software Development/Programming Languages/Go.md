@@ -1,4 +1,5 @@
 ---
+site_uuid: "b2835dbe-e66d-40c4-b082-bb1bcff52d29"
 aliases:
   - Golang
 ---

@@ -1,4 +1,5 @@
 ---
+site_uuid: "a2c4a62b-f7f9-448f-9ef1-32b26352a5e4"
 url: 'https://jam.dev'
 image: 'https://storage.googleapis.com/jam-assets/jam-og-image.png'
 site_name: Jam

@@ -1,4 +1,5 @@
 ---
+site_uuid: "1bba1e40-d25d-4627-adbd-d8bbe704615b"
 url: 'https://leonardo.ai/'
 zinger: 'Creativity, Unleashed.'
 description: >-

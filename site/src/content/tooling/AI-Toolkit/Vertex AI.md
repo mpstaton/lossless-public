@@ -1,4 +1,5 @@
 ---
+site_uuid: "4e8c6f1a-6e4f-47d6-83ea-0aa3de90a3b6"
 url: 'https://cloud.google.com/vertex-ai'
 parent_org: '[[Google]]'
 tags:

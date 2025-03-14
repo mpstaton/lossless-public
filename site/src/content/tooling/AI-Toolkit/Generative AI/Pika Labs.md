@@ -1,4 +1,5 @@
 ---
+site_uuid: "c27857f6-69e1-4129-9762-a7b6c4eff230"
 url: 'https://pika.art/login'
 tags:
   - AI-Toolkit

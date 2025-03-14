@@ -1,4 +1,5 @@
 ---
+site_uuid: "4d2b3061-2709-4b11-b41c-d6d35e8f47bb"
 zinger: Turn websites into LLM-ready data
 url: 'https://www.firecrawl.dev'
 tags:

@@ -1,4 +1,5 @@
 ---
+site_uuid: "55bcf5d2-1e15-4bed-9bb0-0f7379682d37"
 url: 'https://www.browserless.io'
 hero: '![[Screenshot 2025-02-20 at 11.09.01 PM_browserless--Hero.png]]'
 image: >-

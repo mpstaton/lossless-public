@@ -1,4 +1,5 @@
 ---
+site_uuid: "cef69788-9fe1-41d9-bb95-d9f1bd97e548"
 url: 'https://www.skool.com/'
 tags:
   - Training

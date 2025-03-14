@@ -1,4 +1,5 @@
 ---
+site_uuid: "19769eac-c389-47d0-a84a-af0d81f08149"
 url: 'https://www.board.com/'
 zinger: Board is the Enterprise Planning Platform.
 image: 'https://www.board.com/wp-content/uploads/2025/01/homepage-opengraph_1.jpg'

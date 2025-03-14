@@ -1,4 +1,5 @@
 ---
+site_uuid: "5078941d-7a93-4e03-85bf-c9f17a868650"
 url: 'https://minimax-ai.org/'
 tags:
   - AI-Toolkit

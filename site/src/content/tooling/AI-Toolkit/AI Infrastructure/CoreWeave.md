@@ -1,4 +1,5 @@
 ---
+site_uuid: "3ef2cac6-bb1d-4176-aa82-108339d74b4a"
 url: 'https://www.coreweave.com/'
 zinger: The AI Hyperscaler
 tags:

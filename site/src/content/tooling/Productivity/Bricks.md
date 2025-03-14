@@ -1,4 +1,5 @@
 ---
+site_uuid: "c1dc5277-fbdd-4d5d-83f4-675574cd43ef"
 url: 'https://www.thebricks.com/'
 hero: '![[Screenshot 2025-02-23 at 4.02.56 AM_Bricks--Hero.png]]'
 tags:

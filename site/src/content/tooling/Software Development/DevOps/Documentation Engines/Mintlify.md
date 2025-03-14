@@ -1,4 +1,5 @@
 ---
+site_uuid: "c86ab012-1c1e-466c-9d6f-1cd963ea936b"
 url: 'https://mintlify.com/'
 image: >-
   https://cdn.prod.website-files.com/66cc2bd703ccf308a49a6188/6731aa4104da280d698c4084_Landing%20page%20OG%20Image.png

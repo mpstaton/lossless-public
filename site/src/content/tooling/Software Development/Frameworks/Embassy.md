@@ -1,4 +1,5 @@
 ---
+site_uuid: "19ed91c1-96b5-42a0-aad4-60c6cb3941bd"
 url: 'https://embassy.dev/'
 zinger: The next-generation framework for embedded applications
 description: >-

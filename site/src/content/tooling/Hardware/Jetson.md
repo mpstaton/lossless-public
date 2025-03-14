@@ -1,4 +1,5 @@
 ---
+site_uuid: "3436bd10-dc3f-467b-a112-9714de824aa2"
 url: 'https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/'
 parent_org: '[[Nvidia]]'
 image: >-

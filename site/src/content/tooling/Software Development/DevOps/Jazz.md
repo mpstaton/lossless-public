@@ -1,4 +1,5 @@
 ---
+site_uuid: "898580cc-ab50-4b5d-b02f-7578cab8a0d3"
 url: 'https://jazz.tools'
 image: 'https://jazz.tools/social-image.png'
 site_name: Jazz

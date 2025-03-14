@@ -1,4 +1,5 @@
 ---
+site_uuid: "16a8797f-a8ce-4c3f-b55b-a6b5c85c921a"
 parent_org: '[[Microsoft]]'
 url: 'https://www.microsoft.com/en-us/microsoft-365/microsoft-365-enterprise'
 tags:

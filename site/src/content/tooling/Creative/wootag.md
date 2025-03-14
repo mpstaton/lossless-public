@@ -1,4 +1,5 @@
 ---
+site_uuid: "6fe0394c-de6b-4f60-8034-f1206c3ed862"
 url: 'https://www.wootag.com/'
 zinger: >-
   Harnessing the power of human curiosity with simple, immersive interactions,
