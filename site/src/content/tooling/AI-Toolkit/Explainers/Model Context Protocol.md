@@ -1,8 +1,8 @@
 ---
 aliases:
-  - MCP
+- MCP
 tags:
-  - Agentic-AI
+- Agentic-AI
 ---
 https://youtu.be/oAoigBWLZgE?si=8AF2ooyl_EMhe2sM
 

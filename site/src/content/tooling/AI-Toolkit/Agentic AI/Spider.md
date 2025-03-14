@@ -1,17 +1,16 @@
 ---
 site_uuid: "b9bc08d5-cf83-48d1-b32b-77b9d22c5cdc"
-url: 'https://spider.cloud/'
+url: ""'https://spider.cloud/'""
 tags:
 - AI-Toolkit
 - Agentic-AI
 - data-capture
-image: 'https://spider.cloud/img/spider-og.png'
+image: ""'https://spider.cloud/img/spider-og.png'""
 site_name: Spider
 title: 'Spider: The Web Crawler for AI'
-favicon: 'https://spider.cloud/favicon-32x32.png'
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/be57bd56b91fbfa06989e638a4fa532dabee04f351d10636501dcb4cfac7588f.jpeg
+og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/be57bd56b91fbfa06989e638a4fa532dabee04f351d10636501dcb4cfac7588f.jpeg""
 last_jina_request: '2025-03-09T06:45:06.501Z'
-jina_error: "\"'HTTP error! status: 429'\""
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T05:20:40.123Z
 ---
 "Spider accurately crawls all necessary content without needing a sitemap." 

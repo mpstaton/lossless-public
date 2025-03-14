@@ -1,20 +1,20 @@
 ---
 site_uuid: "2b053c07-c705-4885-b4f8-640aaf8e36ed"
-url: 'https://www.cursor.com/'
+url: ""'https://www.cursor.com/'""
 tags:
 - AI-Toolkit
 - Generative-AI
 - Code-Generators
 - gen-ai--code
-image: 'https://www.cursor.com/en/opengraph-image.png?7a8fd201c972abca'
+image: ""'https://www.cursor.com/en/opengraph-image.png?7a8fd201c972abca'""
 site_name: Cursor
 title: Cursor - The AI Code Editor
-favicon: 'https://www.cursor.com/favicon-48x48.png'
+favicon: ""'https://www.cursor.com/favicon-48x48.png'""
 og_errors: true
 og_last_error: '2025-03-07T05:38:03.914Z'
-og_error_message: "\"'Screenshot fetch error: HTTP error! status: 500'\""
+og_error_message: "Error occurred"
 last_jina_request: '2025-03-09T06:45:14.581Z'
-jina_error: "\"'HTTP error! status: 429'\""
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T05:20:56.438Z
 ---
 

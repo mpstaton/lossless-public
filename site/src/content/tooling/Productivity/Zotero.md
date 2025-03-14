@@ -1,14 +1,13 @@
 ---
 site_uuid: 6aeaaee5-48b2-4798-8f46-b240944f5477
-url: 'https://www.zotero.org/'
-image: 'https://www.zotero.org/static/images/bs4theme/zotero-logo.1707326075.svg'
+image: ""'https://www.zotero.org/static/images/bs4theme/zotero-logo.1707326075.svg'""
 site_name: Zotero
 title: Zotero | Your personal research assistant
 tags:
 - Productivity
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c3d835cdb6f5d140980db9ff6a35fba147669db392a63685e1abd48bc32e28b9.jpeg
+og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c3d835cdb6f5d140980db9ff6a35fba147669db392a63685e1abd48bc32e28b9.jpeg""
 last_jina_request: '2025-03-09T06:45:00.532Z'
-jina_error: "Unexpected token ''Z'', \"Zotero | Y\"... is not valid JSON"
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-14T05:42:16.872Z
 ---
 

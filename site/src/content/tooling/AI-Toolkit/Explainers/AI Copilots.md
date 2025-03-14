@@ -1,8 +1,8 @@
 ---
 aliases:
-  - AI Copilot
-  - Copilot
-  - Copilots
+- AI Copilot
+- Copilot
+- Copilots
 ---
 
 A feature within any kind of software that provides assistance using [[Generative AI]].  

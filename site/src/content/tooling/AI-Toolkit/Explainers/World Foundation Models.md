@@ -1,5 +1,5 @@
 ---
 aliases:
-  - WFM
-  - World Foundation Model
+- WFM
+- World Foundation Model
 ---

@@ -5,16 +5,16 @@ aliases:
 tags:
 - Web-Browsers
 - Check-it-Out
-url: 'https://arc.net'
+url: ""'https://arc.net'""
 og_errors: true
 og_last_error: '2025-03-08T20:39:41.880Z'
-og_error_message: HTTP error 401
+og_error_message: "HTTP error 401"
 last_jina_request: '2025-03-09T06:45:02.500Z'
-jina_error: "Unexpected token ''A'', \"Arc from T\"... is not valid JSON"
-image: 'https://arc.net/og.png'
+jina_error: "Error occurred"
+image: ""'https://arc.net/og.png'""
 site_name: Arc from The Browser Company
 title: Arc from The Browser Company
-favicon: 'https://arc.net/favicon.png'
+favicon: ""'https://arc.net/favicon.png'""
 og_fetched_url: 'https://arc.net'
 og_last_fetch: '2025-03-14T04:41:14.912Z'
 ---

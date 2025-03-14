@@ -1,18 +1,17 @@
 ---
 site_uuid: "897f54fc-4895-4d58-806a-2e97862557ab"
-url: 'https://aide.dev/'
+url: ""'https://aide.dev/'""
 zinger: Parallel Agents on your Codebase
 tags:
 - AI-Toolkit
 - Generative-AI
 - Code-Generators
-image: 'https://aide.dev/og-image.png'
+image: ""'https://aide.dev/og-image.png'""
 site_name: Aide
 title: Aide - Your AI Programming Assistant
-favicon: 'https://aide.dev/favicon.ico'
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2c7b5bee8b50b726de07a9708dbf988fec9744fc0bb01ec7bb7dede0b2daade5.jpeg
+og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2c7b5bee8b50b726de07a9708dbf988fec9744fc0bb01ec7bb7dede0b2daade5.jpeg""
 last_jina_request: '2025-03-09T06:45:08.788Z'
-jina_error: "\"'HTTP error! status: 429'\""
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T05:20:56.442Z
 ---
 An [[Text Editors or IDEs|IDE]] with [[Code Generator]] powers.  

@@ -1,6 +1,6 @@
 ---
 aliases:
-  - AGI
+- AGI
 ---
 The [[O-Series Models]] models maintained by [[OpenAI]]
 

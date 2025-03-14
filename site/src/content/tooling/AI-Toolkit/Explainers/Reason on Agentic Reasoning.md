@@ -1,7 +1,7 @@
 ---
 aliases:
-  - RAR
-  - Agentic RAR
+- RAR
+- Agentic RAR
 ---
 
 

@@ -1,16 +1,15 @@
 ---
 site_uuid: "679bf7e7-5425-4967-a3e9-f4414c773aeb"
 zinger: Manufacturing & Supply Chain Solutions in the Cloud
-url: 'https://www.qad.com/'
-image: 'https://www.qad.com/o/qad-theme/images/logo_letters_QAD.svg'
+image: ""'https://www.qad.com/o/qad-theme/images/logo_letters_QAD.svg'""
 site_name: QAD
 title: QAD | Manufacturing & Supply Chain Solutions in the Cloud
-favicon: 'https://www.qad.com/o/qad-theme/images/favicon.ico'
+favicon: ""'https://www.qad.com/o/qad-theme/images/favicon.ico'""
 tags:
 - Enterprise-Jobs-to-be-Done
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9c0d96c6c9fb1deac367ba04058b3809532a4383c1b12e533fff7c06e14d91d0.jpeg
+og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9c0d96c6c9fb1deac367ba04058b3809532a4383c1b12e533fff7c06e14d91d0.jpeg""
 last_jina_request: '2025-03-09T06:45:05.952Z'
-jina_error: "\"'HTTP error! status: 429'\""
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T05:19:01.827Z
 ---
 

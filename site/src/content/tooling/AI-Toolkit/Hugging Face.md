@@ -1,16 +1,16 @@
 ---
 site_uuid: "41dc16a2-1ae7-492f-a3b1-f6362ff61ffc"
-url: 'https://huggingface.co/'
+url: ""'https://huggingface.co/'""
 tags:
 - AI-Toolkit
-image: 'https://huggingface.co/front/thumbnails/v2-2.png'
+image: ""'https://huggingface.co/front/thumbnails/v2-2.png'""
 site_name: Hugging Face
 title: The AI community building the future.
 description_site_cp:   The platform where the machine learning community collaborates on models,
 datasets, and applications.
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/453cb49f45b2d3e3003607d9987cfb5ca578753f989a8319ebc27ad4ecfad156.jpeg
+og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/453cb49f45b2d3e3003607d9987cfb5ca578753f989a8319ebc27ad4ecfad156.jpeg""
 last_jina_request: '2025-03-09T06:45:00.275Z'
-jina_error: "\"'HTTP error! status: 429'\""
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T05:19:02.892Z
 ---
 [[smolagents]]

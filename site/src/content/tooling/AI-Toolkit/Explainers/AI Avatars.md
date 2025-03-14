@@ -1,6 +1,6 @@
 ---
 aliases:
-  - AI Avatar
+- AI Avatar
 ---
 
 [[Pickle AI]]

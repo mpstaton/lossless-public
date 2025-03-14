@@ -1,9 +1,9 @@
 ---
 aliases:
-  - Code Generation
-  - Code Generators
-  - Coding Agent
-  - Coding Assistant
+- Code Generation
+- Code Generators
+- Coding Agent
+- Coding Assistant
 ---
 ##### Examples:
 - [[Text Editors or IDEs|IDEs]] include [[Cursor]], [[Windsurf IDE]], [[Trae AI]], [[Bloop.ai]], [[Zed]], [[Pear IDE]], [[CodeLLM]]

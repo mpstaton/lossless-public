@@ -1,16 +1,15 @@
 ---
 site_uuid: "372e1c80-df7f-4a3b-942c-0cdcf6f3d017"
-url: 'https://d3js.org/'
-image: 'https://d3js.org/logo.png'
+image: ""'https://d3js.org/logo.png'""
 site_name: D3
 title: D3
-favicon: 'https://d3js.org/logo.png'
+favicon: ""'https://d3js.org/logo.png'""
 tags:
 - Software-Development
 - Frameworks
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bac5fbb42b0d9792f965f4a1403458a88dc393115dbe6becf3b2db0c90f3347a.jpeg
+og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/bac5fbb42b0d9792f965f4a1403458a88dc393115dbe6becf3b2db0c90f3347a.jpeg""
 last_jina_request: '2025-03-09T06:45:04.171Z'
-jina_error: "\"'HTTP error! status: 429'\""
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T05:19:02.911Z
 ---
 

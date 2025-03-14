@@ -1,18 +1,17 @@
 ---
 site_uuid: "42607bf2-7308-4881-89c3-51870ca54e46"
-url: 'https://www.midjourney.com/website'
+url: ""'https://www.midjourney.com/website'""
 tags:
 - Generative-AI
 - AI-Toolkit
 - Model-Producers
 - gen-ai--image
-image: 'https://www.midjourney.com/apple-touch-icon.png'
+image: ""'https://www.midjourney.com/apple-touch-icon.png'""
 site_name: Midjourney
 title: Midjourney
-favicon: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADpUlEQVRYhe2WDUyUdRzHP4fHUXfcAcEhnS68LjKcLdcbRC+SK9udUmsWwjId1RyryC2tIS8OIyWzTGMmWBkzmZY4sCR7oaSR4ViuF14ixANGEXB3tHvuBO+4g/Y8bfayO+9s3GiN3/bf83//f/Z7+e6Rjbk9k0yjhU3n4zMAMwBBATid56YX4LEnnqKwuJShYUtIAGSBdOBEYxOtre38MvAri264nuysh6YUIKAH0hffwVlzD9vKNhMZqSK/oASr1caq1WvZ/+5BvF5vaAFkMhnJyfPp/OkMGcuNPJ7zKCUvlLGp6Hlq646xMjuHwcGh0AGIds+SdBobm6R+UpKBgvwN7CqvoOKN1wgPD2fds/l0dXWHDsBg0NPT23dhrNMlsGF9Hi+/soudO8qIiY5m9563/hVEUABiGMT2V9PPS2SZ6T4++PA4y0xLSU25mfLdexkYGJx6AH+25O67pOpYuHABzadaKNy4nq0vvXpJiRk0wOSk72pdl5dLReU+sjJX0PDFl2StXME7VdVTC+B0OlGpVD7XYmKi0emuJDbuClpaTnN7Wgrd3WZGRn4LCiCgEInW8Hkjbrcbk3Gpz3VRF/ZU7uMagx69PhGtNo7a2mNSogayoDzwWcMJ0hffyfj4OJ2dXXx18hRfN7dwpvusNBcXF4vdbsdovJfjHzdguFqPxWrl3OhowLvlgTb80NpOX1+/JD7yWXJJB7TaWCYmJujo6KSqpxqX201//8/YrCN4PB7yN5ZgNvdSX/8JmQ8/eNH7LxoCMfHW5OSSkWHkgQwTCoXC777vvm9lXuJVREQosNsFqTpE8KgojZQnN9246NIAHA4n5p5eBEFAEJzYBQGH4JC+guDA6/EyyR9HZcikvqgVSuXlaNRqNFEaXOddHK6pY0tpMampt/gE8BuCb05/y6H3j3D/chMajZq5c3VEaTRSX2xyuf/oieGpOXKUtrYODla/TXy81u/eWUXFm0p8ekBwUHe0XkouUenE2KvVkew/cIjDNbW4XC7mX5sk7a3/6FP2vlkl5Yvo/tfLK6VKEO9oOtnMnDk6aezLfIagdMt2LotQ8ExeLmNj5ynbtkPSgaGhYVY9ksltqbdyoPo96UHR7QuSr2PN6mza2n+koHAzaWkpDA9bKCp4DqVSyYtbt5OQEM/TT64NDkCs+X8mnMPhkCDCwv6s3NHRMSkBVSrlhTmPx4vNZmP27Pi/nbdYrD69EJQQhdL++3/FMwD/e4DfAf5WhGt8Cd3XAAAAAElFTkSuQmCC
-og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8619549a6912c68d5cbd733e4698ec6d69230412e60e2975eb927c791d7737ec.jpeg
+og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8619549a6912c68d5cbd733e4698ec6d69230412e60e2975eb927c791d7737ec.jpeg""
 last_jina_request: '2025-03-09T06:45:05.483Z'
-jina_error: "\"'HTTP error! status: 429'\""
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T05:19:59.537Z
 ---
 

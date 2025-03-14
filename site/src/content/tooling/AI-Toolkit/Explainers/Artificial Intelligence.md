@@ -1,9 +1,9 @@
 ---
 tags:
-  - tech-trend
+- tech-trend
 aliases:
-  - AI
-  - Enterprise AI
+- AI
+- Enterprise AI
 ---
 ## Enterprise AI
 [[n8n]], [[Flowise]], [[Dynamiq AI]], [[Coveo]], [[Glean]],  [[Abacus AI]], [[Tribe AI]]

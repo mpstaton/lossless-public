@@ -1,19 +1,18 @@
 ---
 site_uuid: "4f576cee-33c0-4371-bd1e-db5e3b536f59"
-url: 'https://dollardeploy.com'
-image: 'https://dollardeploy.com/cover.jpg'
+image: ""'https://dollardeploy.com/cover.jpg'""
 site_name: DollarDeploy
 title: DollarDeploy
-favicon: 'https://dollardeploy.com/icon-dark.png'
+favicon: ""'https://dollardeploy.com/icon-dark.png'""
 tags:
 - Software-Development
 - Cloud-Infrastructure
 - Self-Hosting-Cloud
 og_errors: true
 og_last_error: 2025-03-07T05:36:40.167Z
-og_error_message: "\"'Screenshot fetch error: HTTP error! status: 500'\""
+og_error_message: "Error occurred"
 last_jina_request: '2025-03-09T06:45:17.515Z'
-jina_error: "\"'HTTP error! status: 429'\""
+jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T05:19:02.929Z
 ---
 ##### [[DollarDeploy]] Hero

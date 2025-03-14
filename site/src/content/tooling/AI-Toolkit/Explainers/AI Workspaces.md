@@ -1,7 +1,7 @@
 ---
 aliases:
-  - AI Workspace
-  - AI Command Center
+- AI Workspace
+- AI Command Center
 ---
 [[Multitask AI]]
 

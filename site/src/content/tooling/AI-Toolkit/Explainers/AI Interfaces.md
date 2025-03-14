@@ -1,6 +1,6 @@
 ---
 aliases:
-  - AI-Interface
+- AI-Interface
 ---
 [[OpenRouter]]
 

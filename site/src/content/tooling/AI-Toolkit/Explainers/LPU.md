@@ -1,4 +1,4 @@
 ---
 aliases:
-  - Language Processing Unit
+- Language Processing Unit
 ---
