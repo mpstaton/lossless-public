@@ -13,7 +13,7 @@ title: Tribe AI | AI Talent Network and Consulting
 favicon: https://cdn.prod.website-files.com/63c0a7ce63e7241d23e5e2bc/63c0a819e709b92690089351_5fc41133bd65e8736185bc6d_mini.webp
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/078dbb8074582a3fb12ae6855387de3389e292484ddf0599da0c214c81c93d0f.jpeg
 last_jina_request: '2025-03-09T06:44:59.370Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:01.841Z
 ---
 ##### Tribe AI is [[Artificial Intelligence|Enterprise AI]]

@@ -10,7 +10,7 @@ tags:
 - Software-Development
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9acff6219921c86ad1e6c3aa03103f7ab99b25bec2d7f0e0b983e3960a7193d2.jpeg
 last_jina_request: '2025-03-09T06:45:12.242Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:01.813Z
 ---
 

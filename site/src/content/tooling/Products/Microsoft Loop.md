@@ -12,7 +12,7 @@ site_name: 'Microsoft Loop: Collaborative App'
 title: 'Microsoft Loop: Collaborative App | Microsoft 365'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e9d5855054048f1e4724f07e587368948a9ea7e4305876427ff65a5747ce2975.jpeg
 last_jina_request: '2025-03-09T06:44:59.868Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:01.810Z
 ---
 

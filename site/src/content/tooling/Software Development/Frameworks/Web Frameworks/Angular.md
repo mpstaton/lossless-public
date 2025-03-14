@@ -13,7 +13,7 @@ title: Superheroic JavaScript MVW Framework
 favicon: 'https://angularjs.org/favicon.ico'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b79f7a0024168491927e9bed26bc7de8fc6d8b5d31a06fae66b222d35fb86a17.jpeg
 last_jina_request: '2025-03-09T06:45:22.014Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:20:56.428Z
 ---
 

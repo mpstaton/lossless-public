@@ -9,7 +9,7 @@ title: '#1 Global Software Experience Management Platform | Pendo.io'
 favicon: 'https://www.pendo.io/wp-content/uploads/2022/12/favicon.png'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6925d993248807603dc2ccddf9c93a4b941881ce6f4ded7dc4bdf6cbd477bb1c.jpeg
 last_jina_request: '2025-03-09T06:45:05.574Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:01.815Z
 ---
 

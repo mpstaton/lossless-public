@@ -18,7 +18,7 @@ title: Deploy Your Generative AI Suite
 favicon: 'https://big-agi.com/icons/favicon-32x32.png'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/3f0ef748c3e0fd26bce9f4d1a8522adee2f7d40e351617ebcf0d138bc1cfeb35.jpeg
 last_jina_request: 2025-03-09T06:45:17.259Z
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:20:56.752Z
 ---
 

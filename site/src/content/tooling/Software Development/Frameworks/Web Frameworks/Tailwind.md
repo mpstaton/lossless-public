@@ -11,7 +11,7 @@ site_name: Tailwind CSS
 title: Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.
 favicon: 'https://tailwindcss.com/favicon.ico'
 last_jina_request: '2025-03-09T06:45:06.285Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-06T21:44:14.300Z
 ---
 A [[Web Frameworks|Web Framework]] for managing [[CSS]]. It's [[Opinionated]] about [[Inline Styles]]

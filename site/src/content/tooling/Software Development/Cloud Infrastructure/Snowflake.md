@@ -12,7 +12,7 @@ title: 'The Snowflake AI Data Cloud - Mobilize Data, Apps, and AI'
 favicon: https://www.snowflake.com/etc.clientlibs/snowflake-site/clientlibs/clientlib-react/resources/favicon-32x32.png?v=2
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/868c0915bc6da132b6d1923ef6ea6da02779590af4c8f2a91236335779a5f9d0.jpeg
 last_jina_request: '2025-03-09T06:45:07.518Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:02.927Z
 ---
 Snowflake Labs maintains [[Arctic Agentic RAG]]

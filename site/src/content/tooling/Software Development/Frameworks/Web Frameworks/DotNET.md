@@ -14,7 +14,7 @@ tags:
 - Frameworks
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/aba51b6c10fd1449e5700fc8c022c53157247b32bce5e33217495b11d9aee78a.jpeg
 last_jina_request: '2025-03-09T06:45:17.900Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:20:56.427Z
 ---
 

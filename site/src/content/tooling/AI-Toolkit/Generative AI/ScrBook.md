@@ -11,7 +11,7 @@ title: Srcbook
 favicon: 'https://assets.srcbook.com/favicon-96x96.png'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/986813a2f37df68634a3f133876a4cff7c95b474b6240ec78e2f60b7a17ad86c.jpeg
 last_jina_request: '2025-03-09T06:45:05.648Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:19.169Z
 ---
 

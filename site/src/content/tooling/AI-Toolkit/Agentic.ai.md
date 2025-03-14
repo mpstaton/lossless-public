@@ -9,7 +9,7 @@ site_name: Agentic
 title: Agentic | AI Players As a Service
 favicon: https://static.wixstatic.com/shapes/1f98e0_b18ba777dbc540a5ac25df4ffeba76aa.svg
 last_jina_request: '2025-03-09T06:45:19.670Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:02.895Z
 ---
 

@@ -16,7 +16,7 @@ jina_error: "Unexpected token ''B'', \"B2B Sales \"... is not valid JSON"
 og_last_fetch: 2025-03-07T05:19:01.830Z
 og_errors: true
 og_last_error: '2025-03-14T05:42:36.687Z'
-og_error_message: "'Screenshot fetch error: HTTP error! status: 500'"
+og_error_message: "\"'Screenshot fetch error: HTTP error! status: 500'\""
 ---
 ##### [[Apollo]] is a [[State of the Art]] tool for [[Demand Generation]]
 ![[Screenshot 2025-02-25 at 3.52.02 PM_Apollo--Hero.png]]

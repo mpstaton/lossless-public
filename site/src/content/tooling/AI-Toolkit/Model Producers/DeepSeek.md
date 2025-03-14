@@ -10,7 +10,7 @@ site_name: DeepSeek
 title: DeepSeek
 favicon: 'https://www.deepseek.com/favicon.ico'
 last_jina_request: '2025-03-09T06:45:08.080Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:18.720Z
 ---
 One of the primary organizations creating [[AI Models]].

@@ -10,7 +10,7 @@ title: Animated gif tools
 favicon: 'https://ezgif.com/favicon.ico'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b5caa85941f32e986e1af1b0f3f794a849a57836369a8dc10bc4d1cd02ef2535.jpeg
 last_jina_request: '2025-03-09T06:45:21.070Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 og_last_fetch: 2025-03-07T05:19:01.838Z
 ---
 

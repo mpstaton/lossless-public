@@ -9,7 +9,7 @@ og_errors: true
 og_last_error: '2025-03-08T20:39:42.484Z'
 og_error_message: HTTP error 401
 last_jina_request: '2025-03-09T06:45:12.838Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 image: https://a.slack-edge.com/737c9d1/marketing/img/homepage/revamped-24/unfurl/hp-revamp-unfurl.en-GB.jpg
 site_name: Slack
 title: AI Work Management & Productivity Tools

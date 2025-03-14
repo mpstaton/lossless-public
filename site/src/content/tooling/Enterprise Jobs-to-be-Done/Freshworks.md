@@ -13,7 +13,7 @@ og_errors: true
 og_last_error: '2025-03-08T20:39:43.219Z'
 og_error_message: HTTP error 401
 last_jina_request: '2025-03-09T06:45:05.544Z'
-jina_error: "'HTTP error! status: 429'"
+jina_error: "\"'HTTP error! status: 429'\""
 image: 'https://dam.freshworks.com/m/649806346f713583/original/Homepage-og-image.webp'
 site_name: Freshworks
 title: 'Freshworks: Uncomplicated Software | IT Service, Customer Service'
