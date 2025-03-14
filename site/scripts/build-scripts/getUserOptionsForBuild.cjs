@@ -78,7 +78,17 @@ const USER_OPTIONS = {
         validate: value => !value || !isNaN(Date.parse(value))
       },
       jina_error: {
-        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value
+        format: value => {
+          if (!value) return value;
+          // Aggressive quote stripping
+          let cleanValue = value;
+          // Remove all escaped quotes
+          cleanValue = cleanValue.replace(/\\["']/g, '');
+          // Remove all remaining quotes
+          cleanValue = cleanValue.replace(/["']/g, '');
+          // Trim and return with double quotes
+          return `"${cleanValue.trim()}"`;
+        }
       },
       og_last_fetch: {
         format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value,
@@ -92,7 +102,17 @@ const USER_OPTIONS = {
         validate: value => !value || !isNaN(Date.parse(value))
       },
       og_error_message: {
-        format: value => value ? value.replace(/^["'](.*)["']$/, '$1') : value
+        format: value => {
+          if (!value) return value;
+          // Aggressive quote stripping
+          let cleanValue = value;
+          // Remove all escaped quotes
+          cleanValue = cleanValue.replace(/\\["']/g, '');
+          // Remove all remaining quotes
+          cleanValue = cleanValue.replace(/["']/g, '');
+          // Trim and return with double quotes
+          return `"${cleanValue.trim()}"`;
+        }
       }
     },
 
@@ -168,8 +188,34 @@ const USER_OPTIONS = {
             const [, key, value] = keyMatch;
             lastKey = key;
             
+            // Handle error messages (specifically target properties that need double quotes)
+            if (key === 'jina_error' || key === 'og_error_message') {
+              const trimmedValue = value.trim();
+              
+              // Extract the actual content, stripping all quotes
+              let cleanValue = trimmedValue;
+              
+              // Handle extremely nested quotes like "\"'HTTP error! status: 429'\""
+              // This strips ALL quotes and escapes, then we'll add proper quotes back
+              if (trimmedValue) {
+                // First remove all escaped quotes
+                cleanValue = trimmedValue.replace(/\\["']/g, '');
+                // Then remove all remaining quotes
+                cleanValue = cleanValue.replace(/["']/g, '');
+                // Trim again to get clean content
+                cleanValue = cleanValue.trim();
+              }
+              
+              // If the value is completely empty after cleaning, use a fallback
+              if (!cleanValue) {
+                cleanValue = "Unknown error";
+              }
+              
+              // Always add double quotes, escaping any double quotes in the content
+              processedLines.push(`${key}: "${cleanValue.replace(/"/g, '\\"')}"`);
+            } 
             // If this is a special property that might contain colons, quote it
-            if (USER_OPTIONS.frontmatter.preprocessing.specialProperties.includes(key) && 
+            else if (USER_OPTIONS.frontmatter.preprocessing.specialProperties.includes(key) && 
                 value.includes(':') && 
                 !/^["'].*["']$/.test(value.trim())) {
               processedLines.push(`${key}: "${value.replace(/"/g, '\\"')}"`);
@@ -352,7 +398,7 @@ const USER_OPTIONS = {
         
         if (!hasFootnoteRef) {
           formats.citeMarkdown = `[^${randHex}]`;
-          formats.fullLineCite = `${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]]. [^${randHex}]`;
+          formats.fullLineCite = `${formattedDate.year}, ${formattedDate.month} ${formattedDate.day}. "[${youtubeData.title}](${youtubeUrl})," [[${youtubeData.channelTitle}]] [^${randHex}]`;
         }
         
         if (!hasFootnoteDef) {

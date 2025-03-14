@@ -20,6 +20,10 @@ const { formatEvaluationReport, writeOutput } = require('./getReportingFormatFor
 const {
   processFile: processYAMLFile
 } = require('./assureYAMLPropertiesCorrect.cjs');
+const {
+  sortFilesIntoTwoArraysBasedOnFilesystemRegex,
+  getScreenedInFiles
+} = require('./prescreenFilesWithFilesystemRegex.cjs');
 
 // ============================================================================
 // YAML Processing Functions
@@ -216,7 +220,7 @@ async function processFile(filePath) {
     let modifications = { modified: false, replacements: 0, changes: {} };
 
     // Step 2: Process OpenGraph if needed
-    if (yamlResult.evaluation.openGraph.needsProcessing) {
+    if (yamlResult.evaluation && yamlResult.evaluation.openGraph && yamlResult.evaluation.openGraph.needsProcessing) {
       await processOpenGraph(filePath, yamlResult.evaluation);
     }
 
@@ -236,19 +240,15 @@ async function processFile(filePath) {
  */
 async function main() {
   try {
-    console.log('Starting content evaluation and YAML assurance...');
+    console.log('Starting content prescreening and evaluation...');
 
-    // Get all content files
-    const contentPath = USER_OPTIONS.directories.content;
-    const excludeDirs = USER_OPTIONS.directories.excludeUrlCheck;
+    // Run the prescreening to filter out files with potential YAML issues
+    console.log('Prescreening files for potential YAML corruption...');
+    sortFilesIntoTwoArraysBasedOnFilesystemRegex();
     
-    const excludePattern = excludeDirs.length > 0 
-      ? `!(${excludeDirs.join('|')})` 
-      : '*';
-    const globPattern = path.join(contentPath, '**', excludePattern, '*.md');
-
-    console.log(`Searching for files with pattern: ${globPattern}`);
-    const files = await glob(globPattern);
+    // Get the files that passed the prescreening
+    const files = getScreenedInFiles();
+    console.log(`Prescreening complete. ${files.length} files are safe for processing.`);
 
     // Initialize processing stats
     const processingStats = {
@@ -267,7 +267,7 @@ async function main() {
       }
     };
 
-    console.log(`Found ${files.length} files to process`);
+    console.log(`Processing ${files.length} safe files...`);
 
     // Process each file
     const results = {};
@@ -323,4 +323,139 @@ module.exports = {
 // Run main function if this script is executed directly
 if (require.main === module) {
   main();
+}
+
+// Function to process a file with better error handling
+async function processFileWithErrorHandling(file, userOptions, errorLogPrefix = '') {
+  try {
+    const result = await processFile(file);
+    return result;
+  } catch (error) {
+    const fileName = path.basename(file);
+    
+    // Create a more detailed error message
+    let errorDetails = `Error processing ${fileName}: ${error.message}`;
+    
+    // Add helpful context based on common errors
+    if (error.message.includes('Unexpected token')) {
+      errorDetails += `\nThis appears to be a YAML syntax error, possibly with quotes or special characters.`;
+    } else if (error.message.includes('duplicate key')) {
+      errorDetails += `\nCheck for duplicate property names in the frontmatter.`;
+    } else if (error.message.includes('end of the stream')) {
+      errorDetails += `\nCheck for missing closing delimiter (---) in the YAML frontmatter.`;
+    }
+    
+    // Log to console with colors for better visibility
+    console.error(`\x1b[31m${errorLogPrefix}${errorDetails}\x1b[0m`);
+    
+    // Return null to indicate failure but allow processing to continue
+    return null;
+  }
+}
+
+async function buildSite() {
+  console.log('Building site with advanced error handling...');
+  
+  try {
+    // Step 1: Get user options
+    const userOptions = getUserOptionsForBuild();
+    
+    // Step 2: Run prescreening to filter out files with known YAML issues
+    console.log('Prescreening files for potential YAML issues...');
+    await runCommand('node ./scripts/build-scripts/prescreenFilesWithFilesystemRegex.cjs');
+    
+    // Read screened files lists
+    let screenedOutFiles = [];
+    let screenedInFiles = [];
+    
+    try {
+      const screenedOutPath = path.resolve(process.cwd(), './site/@Screened-Out-Files.md');
+      const screenedInPath = path.resolve(process.cwd(), './site/@Screened-In-Files.md');
+      
+      if (fs.existsSync(screenedOutPath)) {
+        const screenedOutContent = fs.readFileSync(screenedOutPath, 'utf8');
+        screenedOutFiles = screenedOutContent
+          .split('\n')
+          .filter(line => line.startsWith('- '))
+          .map(line => line.substring(2).trim());
+      }
+      
+      if (fs.existsSync(screenedInPath)) {
+        const screenedInContent = fs.readFileSync(screenedInPath, 'utf8');
+        screenedInFiles = screenedInContent
+          .split('\n')
+          .filter(line => line.startsWith('- '))
+          .map(line => line.substring(2).trim());
+      }
+      
+      console.log(`Prescreening complete: ${screenedInFiles.length} files passed, ${screenedOutFiles.length} files filtered out.`);
+    } catch (error) {
+      console.warn(`Warning: Error reading prescreened files lists: ${error.message}`);
+      // Continue with normal processing if prescreening fails
+    }
+    
+    // Step 3: Get content files
+    console.log('Getting content files...');
+    const files = await getContentFiles(userOptions);
+    
+    // Filter out screened out files if available
+    const filteredFiles = screenedOutFiles.length > 0 
+      ? files.filter(file => !screenedOutFiles.includes(file))
+      : files;
+    
+    console.log(`Processing ${filteredFiles.length} content files...`);
+    
+    // Step 4: Process each file with improved error handling
+    const processedFiles = [];
+    const failedFiles = [];
+    
+    for (const file of filteredFiles) {
+      const fileName = path.basename(file);
+      const processPrefix = `[${fileName}] `;
+      
+      try {
+        console.log(`${processPrefix}Processing...`);
+        
+        // Use our new error handling wrapper
+        const processed = await processFileWithErrorHandling(file, userOptions, processPrefix);
+        
+        if (processed) {
+          processedFiles.push(processed);
+          console.log(`${processPrefix}Successfully processed.`);
+        } else {
+          failedFiles.push(file);
+          console.error(`${processPrefix}Failed to process.`);
+        }
+      } catch (error) {
+        // This catch block should rarely be needed since processFileWithErrorHandling has its own error handling
+        failedFiles.push(file);
+        console.error(`${processPrefix}Unexpected error: ${error.message}`);
+      }
+    }
+    
+    console.log(`\nProcessing complete: ${processedFiles.length} files processed successfully, ${failedFiles.length} files failed.`);
+    
+    if (failedFiles.length > 0) {
+      console.log('\nFailed files:');
+      failedFiles.forEach(file => console.log(`- ${file}`));
+      
+      // Write failed files to a report
+      const failedFilesReport = 
+        `# Failed Files\n\n` +
+        `The following files failed to process during the build:\n\n` +
+        failedFiles.map(file => `- ${file}`).join('\n');
+      
+      const failedFilesPath = path.resolve(process.cwd(), './site/@Failed-Files.md');
+      fs.writeFileSync(failedFilesPath, failedFilesReport);
+      console.log(`Failed files report written to ${failedFilesPath}`);
+    }
+    
+    // Step 5: Write output
+    await writeOutput(processedFiles, userOptions);
+    
+    console.log('Build complete!');
+  } catch (error) {
+    console.error(`Build failed: ${error.message}`);
+    process.exit(1);
+  }
 }
