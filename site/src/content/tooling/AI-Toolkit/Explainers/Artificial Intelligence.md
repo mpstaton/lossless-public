@@ -40,6 +40,9 @@ https://youtu.be/yRV8HjxJhl8?si=QKECush59iwSq-it
 https://youtu.be/huu_9rAEiQU?si=-tdyebDzaL73083p
 
 https://youtu.be/UeQQHbcqN0s?si=PTeXQd0Cqc_C7vtO
+
+https://youtube.com/playlist?list=PL2xnrU4RbY0B69mhYZPpxMH9UI4f14YMj&si=X137r01JaPT3-ws6
+
 ### AI Assisted Data Capture
 
 [[AI Powered Data Capture]]

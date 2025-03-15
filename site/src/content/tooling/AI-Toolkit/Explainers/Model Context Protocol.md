@@ -17,6 +17,8 @@ https://youtu.be/m46tZX6vceI?si=Xhuz94XNYIa1y3Xp
 https://youtu.be/TcNd6rTOpJA?si=R-DAf8H-dhfbPiVc
 
 
+https://youtu.be/nNLshWCoe0o?si=LXuc5U8142jU2y67
+
 [[Prompt Engineering]]
 [[RAG]]
 

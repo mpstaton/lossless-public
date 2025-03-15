@@ -22,3 +22,4 @@ Competitive with [[STORM]].
 https://youtu.be/8uHbMRUiT7c?si=ShQVcOMU4316b9SN
 
 ![[Screenshot 2025-02-20 at 11.21.24 PM_Open-AI--Deep-Research--Hero.png]]
+https://youtu.be/5I6hX9dDgtc?si=yAYHV9ldvhdQCPQf
