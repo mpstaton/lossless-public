@@ -7,6 +7,17 @@ require('dotenv').config();
 // ============================================================================
 
 const USER_OPTIONS = {
+
+    // output file for quality assurance
+    preprocessingOutputPathAndFile: {
+      baseFile: path.join(process.cwd(), 'src/content/changelog--content/preprocessing-output.md'),
+      pattern: {
+        dateFormat: 'YYYY-MM-DD',
+        iterationFormat: '00', // 01, 02, etc.
+        separator: '_',
+        extension: '.md'
+      }
+    },
   // output file for quality assurance
   evaluationOutputPathAndFile: {
     baseFile: path.join(process.cwd(), 'src/content/changelog--content/evaluation-output.md'),
@@ -42,9 +53,7 @@ const USER_OPTIONS = {
       url: {
         required: false,
         format: value => {
-          // Always remove quotes from URL values
           if (!value) return value;
-          return value.replace(/^["'](.*)["']$/, '$1').trim();
         },
         validate: value => !value || /^https?:\/\/.+/i.test(value)
       },

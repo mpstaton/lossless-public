@@ -6,20 +6,27 @@ const { v4: uuidv4 } = require('uuid');
 
 // Import configurations and evaluation functions
 const USER_OPTIONS = require('./getUserOptionsForBuild.cjs');
+
 const { 
   evaluateFile, 
   cleanYAMLFrontmatter 
 } = require('./evaluateTargetContent.cjs');
+
 const { 
   getFromOpenGraphIo, 
   fetchScreenshotUrlInBackground, 
   cleanDuplicateYamlKeys,
   markFileWithError 
 } = require('./fetchOpenGraphData.cjs');
-const { formatEvaluationReport, writeOutput } = require('./getReportingFormatForBuild.cjs');
+
+const { 
+  formatEvaluationReport, 
+  writeOutput } = require('./getReportingFormatForBuild.cjs');
+
 const {
   processFile: processYAMLFile
 } = require('./assureYAMLPropertiesCorrect.cjs');
+
 const {
   sortFilesIntoTwoArraysBasedOnFilesystemRegex,
   getScreenedInFiles
