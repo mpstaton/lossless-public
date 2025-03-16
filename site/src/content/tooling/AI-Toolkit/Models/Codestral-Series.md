@@ -1,2 +1,4 @@
-[[AI Models|AI Model]]
+---
+
+---[[AI Models|AI Model]]
 [[Mistral]]
