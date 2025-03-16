@@ -1,6 +1,6 @@
-import { USER_OPTIONS } from './getUserOptions.cjs';
-import path from 'path';
-import fs from 'fs';
+const USER_OPTIONS = require('./getUserOptions.cjs');
+const path = require('path');
+const fs = require('fs');
 
 const ERROR_MESSAGE_PROPERTIES = USER_OPTIONS.frontmatterPropertySets.errorMessageProperties;
 const URL_PROPERTIES = USER_OPTIONS.frontmatterPropertySets.urlProperties;
@@ -269,11 +269,10 @@ const correctionFunctions = {
     // Once detected from the detectError regular expression, 
     // the correction function will attempt to fix the error
     // by surrounding error messages with a ' single mark quote on both sides 
-    async surroundErrorMessagePropertyWithSingleMarkQuotes(markdownFileContent, markdownFilePath) {
-        // Extract frontmatter using helper function
-        const frontmatterData = extractFrontmatter(markdownFileContent);
+    async surroundErrorMessagePropertyWithSingleMarkQuotes(markdownContent, markdownFilePath) {
+        const frontmatterData = helperFunctions.extractFrontmatter(markdownContent);
         if (!frontmatterData.success) {
-            return createErrorMessage(markdownFilePath, frontmatterData.error);
+            return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
         }
 
         let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -305,17 +304,17 @@ const correctionFunctions = {
         }
 
         if (wasModified) {
-            const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
+            const correctedContent = markdownContent.slice(0, frontmatterData.startIndex) +
                 '---\n' + isolatedFrontmatterString + '\n---' +
-                markdownFileContent.slice(frontmatterData.endIndex);
+                markdownContent.slice(frontmatterData.endIndex);
 
             return {
-                ...createSuccessMessage(markdownFilePath, true, modifications),
+                ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
                 content: correctedContent
             };
         }
 
-        return createSuccessMessage(markdownFilePath, false);
+        return helperFunctions.createSuccessMessage(markdownFilePath, false);
     },
 
     // Once detected from the detectError regular expression, 
@@ -324,9 +323,9 @@ const correctionFunctions = {
     // the primary cause of this error is a mix of double and single mark quotes in sequence
     // so be sure to remove all instances of single or double mark quotes as well as any other characters that are not part of the URL
     async removeImproperCharacterSetAddSingleMarkQuotes(markdownFileContent, markdownFilePath) {
-        const frontmatterData = extractFrontmatter(markdownFileContent);
+        const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
         if (!frontmatterData.success) {
-            return createErrorMessage(markdownFilePath, frontmatterData.error);
+            return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
         }
 
         let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -362,21 +361,21 @@ const correctionFunctions = {
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
-                ...createSuccessMessage(markdownFilePath, true, modifications),
+                ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
                 content: correctedContent
             };
         }
 
-        return createSuccessMessage(markdownFilePath, false);
+        return helperFunctions.createSuccessMessage(markdownFilePath, false);
     },
 
     // Once detected from the detectError regular expression, 
     // the correction function will attempt to fix the error
     // by removing any quotes found on on either side of a URL
     async removeAnyQuoteCharactersfromEitherOrBothSidesOfURL(markdownFileContent, markdownFilePath) {
-        const frontmatterData = extractFrontmatter(markdownFileContent);
+        const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
         if (!frontmatterData.success) {
-            return createErrorMessage(markdownFilePath, frontmatterData.error);
+            return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
         }
 
         let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -412,21 +411,21 @@ const correctionFunctions = {
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
-                ...createSuccessMessage(markdownFilePath, true, modifications),
+                ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
                 content: correctedContent
             };
         }
 
-        return createSuccessMessage(markdownFilePath, false);
+        return helperFunctions.createSuccessMessage(markdownFilePath, false);
     },
 
     // Once detected from the detectError regular expression, 
     // the correction function will attempt to fix the error
     // by removing any block scalar syntax found in the property
     async attemptToFixBlockScalar(markdownFileContent, markdownFilePath) {
-        const frontmatterData = extractFrontmatter(markdownFileContent);
+        const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
         if (!frontmatterData.success) {
-            return createErrorMessage(markdownFilePath, frontmatterData.error);
+            return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
         }
 
         let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -461,21 +460,21 @@ const correctionFunctions = {
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
-                ...createSuccessMessage(markdownFilePath, true, modifications),
+                ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
                 content: correctedContent
             };
         }
 
-        return createSuccessMessage(markdownFilePath, false);
+        return helperFunctions.createSuccessMessage(markdownFilePath, false);
     },
 
     // Once detected from the detectError regular expression, 
     // the correction function will attempt to fix the error
     // by attempting to fix unbalanced quotes
     async attemptToFixUnbalancedQuotes(markdownFileContent, markdownFilePath) {
-        const frontmatterData = extractFrontmatter(markdownFileContent);
+        const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
         if (!frontmatterData.success) {
-            return createErrorMessage(markdownFilePath, frontmatterData.error);
+            return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
         }
 
         let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -510,21 +509,21 @@ const correctionFunctions = {
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
-                ...createSuccessMessage(markdownFilePath, true, modifications),
+                ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
                 content: correctedContent
             };
         }
 
-        return createSuccessMessage(markdownFilePath, false);
+        return helperFunctions.createSuccessMessage(markdownFilePath, false);
     },
 
     // Once detected from the detectError regular expression, 
     // the correction function will attempt to fix the error
     // by deleting all instances of the key
     async deleteAllInstancesOfKey(markdownFileContent, markdownFilePath) {
-        const frontmatterData = extractFrontmatter(markdownFileContent);
+        const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
         if (!frontmatterData.success) {
-            return createErrorMessage(markdownFilePath, frontmatterData.error);
+            return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
         }
 
         let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -551,21 +550,21 @@ const correctionFunctions = {
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
-                ...createSuccessMessage(markdownFilePath, true, modifications),
+                ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
                 content: correctedContent
             };
         }
 
-        return createSuccessMessage(markdownFilePath, false);
+        return helperFunctions.createSuccessMessage(markdownFilePath, false);
     },
    
    // Once detected from the detectError regular expression, 
    // the correction function will attempt to fix the error
    // by removing unnecessary spacing
    async removeUnnecessarySpacing(markdownFileContent, markdownFilePath) {
-      const frontmatterData = extractFrontmatter(markdownFileContent);
+      const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
       if (!frontmatterData.success) {
-         return createErrorMessage(markdownFilePath, frontmatterData.error);
+         return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
       }
 
       let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -600,21 +599,21 @@ const correctionFunctions = {
             markdownFileContent.slice(frontmatterData.endIndex);
 
          return {
-            ...createSuccessMessage(markdownFilePath, true, modifications),
+            ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
             content: correctedContent
          };
       }
 
-      return createSuccessMessage(markdownFilePath, false);
+      return helperFunctions.createSuccessMessage(markdownFilePath, false);
    },
    
    // Once detected from the detectError regular expression, 
    // the correction function will attempt to fix the error
    // by attempting to fix a broken url
    async attemptToFixBrokenUrl(markdownFileContent, markdownFilePath) {
-      const frontmatterData = extractFrontmatter(markdownFileContent);
+      const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
       if (!frontmatterData.success) {
-         return createErrorMessage(markdownFilePath, frontmatterData.error);
+         return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
       }
 
       let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -649,12 +648,12 @@ const correctionFunctions = {
             markdownFileContent.slice(frontmatterData.endIndex);
 
          return {
-            ...createSuccessMessage(markdownFilePath, true, modifications),
+            ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
             content: correctedContent
          };
       }
 
-      return createSuccessMessage(markdownFilePath, false);
+      return helperFunctions.createSuccessMessage(markdownFilePath, false);
    },
    
    // This function should first be sure the file is not in a directory that is excluded from URL checks. 
@@ -664,9 +663,9 @@ const correctionFunctions = {
    // by adding the file name to the missing url list 
    // which will then be used in otherscripts for reporting purposes.
    async addFileNameToMissingUrlList(markdownFileContent, markdownFilePath) {
-      const frontmatterData = extractFrontmatter(markdownFileContent);
+      const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
       if (!frontmatterData.success) {
-         return createErrorMessage(markdownFilePath, frontmatterData.error);
+         return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
       }
 
       let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -693,21 +692,21 @@ const correctionFunctions = {
             markdownFileContent.slice(frontmatterData.endIndex);
 
          return {
-            ...createSuccessMessage(markdownFilePath, true, modifications),
+            ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
             content: correctedContent
          };
       }
 
-      return createSuccessMessage(markdownFilePath, false);
+      return helperFunctions.createSuccessMessage(markdownFilePath, false);
    },
    
    // Once detected from the detectError regular expression, 
    // the correction function will attempt to fix the error
    // by removing quotes from the UUID property
    async removeQuotesFromUUIDProperty(markdownFileContent, markdownFilePath) {
-      const frontmatterData = extractFrontmatter(markdownFileContent);
+      const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
       if (!frontmatterData.success) {
-         return createErrorMessage(markdownFilePath, frontmatterData.error);
+         return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
       }
 
       let isolatedFrontmatterString = frontmatterData.frontmatterString;
@@ -742,13 +741,13 @@ const correctionFunctions = {
             markdownFileContent.slice(frontmatterData.endIndex);
 
          return {
-            ...createSuccessMessage(markdownFilePath, true, modifications),
+            ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
             content: correctedContent
          };
       }
 
-      return createSuccessMessage(markdownFilePath, false);
+      return helperFunctions.createSuccessMessage(markdownFilePath, false);
    }
 };
 
-export { knownErrorCases, correctionFunctions, helperFunctions };
+module.exports = { knownErrorCases, correctionFunctions, helperFunctions };

@@ -1,4 +1,4 @@
-
+const path = require('path');
 
 const USER_OPTIONS = {
     // Directory Configuration
@@ -85,5 +85,4 @@ const USER_OPTIONS = {
 
   }
 
-
-export { USER_OPTIONS };
+module.exports = USER_OPTIONS;
