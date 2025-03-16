@@ -122,7 +122,7 @@ All correction functions return a standardized object:
    - Add test cases
 
 2. **Modifying Existing Patterns**
-   - Update regex in single source of truth
+   - Update regex in single source of truth only to `knownErrorCases.${caseName}.detectError`
    - Maintain backwards compatibility
    - Document pattern changes
    - Update affected test cases
