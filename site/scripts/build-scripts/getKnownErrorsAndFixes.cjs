@@ -189,22 +189,22 @@ const knownErrorCases = {
    // No corection, just a message to log.
    missingUrlPropertyNeededForOpenGraph: {
       exampleErrors: [
-         `---
-         tags:
+         `tags:
+         - AI-Toolkit
+         - creative-tools`,
+         `tags:
          - AI-Toolkit
          - creative-tools
-         ---`,
-         `---
-         tags:
+         url:`,
+         `tags:
          - AI-Toolkit
-         - creative-tools
-         url: 
-         ---`
+         url: ` // empty url property
       ],
-      detectError: /^---\n(?:(?!url:[\s\S]+[^\s]).)*\n---/m,
+      // Simple check - if we can't find "url:" followed by non-whitespace
+      detectError: /^(?![\s\S]*?\burl:[ \t]*\S)/,
       messageToLog: 'Missing URL property needed for OpenGraph',
       preventsOperations: ['fetchOpenGraphData.cjs'],
-      correctionFunction: 'addToMissingUrlListForReporting',
+      correctionFunction: 'addFileNameToMissingUrlList',
       isCritical: false
    },
 

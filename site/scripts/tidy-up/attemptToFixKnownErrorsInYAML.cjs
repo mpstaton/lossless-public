@@ -10,13 +10,13 @@ const TARGET_FILES = {
   targetDir: "site/src/content/tooling/AI-Toolkit"
 }
 
-const REPORT_FILE = "site/scripts/data-or-content-generation/fixes-needed/errors-processing/2025-03-16-Corrected-Duplicate-Keys-in-Frontmatter_02.md"
+const REPORT_FILE = "site/scripts/data-or-content-generation/fixes-needed/errors-processing/2025-03-16-Identified-Missing-URL-Property_01.md"
 
 // ================================================
 // Setup by the user
 // ================================================
 
-const issueToAttemptToFix = knownErrorCases.duplicateKeysInFrontmatter
+const issueToAttemptToFix = knownErrorCases.missingUrlPropertyNeededForOpenGraph
 
 // ================================================
 // Helper Functions
