@@ -172,89 +172,91 @@ const knownErrorCases = {
 // Helper Functions
 // ===================================
 
-/**
- * Extracts frontmatter from markdown file content
- * @param {string} markdownFileContent - Raw content of markdown file
- * @returns {Object} Object containing frontmatter string and indices
- */
-function extractFrontmatter(markdownFileContent) {
-    const frontmatterMatch = markdownFileContent.match(/^---\n([\s\S]*?)\n---/m);
-    if (!frontmatterMatch) {
+const helperFunctions = {
+    /**
+     * Extracts frontmatter from markdown file content
+     * @param {string} markdownFileContent - Raw content of markdown file
+     * @returns {Object} Object containing frontmatter string and indices
+     */
+    extractFrontmatter(markdownFileContent) {
+        const frontmatterMatch = markdownFileContent.match(/^---\n([\s\S]*?)\n---/m);
+        if (!frontmatterMatch) {
+            return {
+                success: false,
+                error: 'No frontmatter found'
+            };
+        }
+
+        return {
+            success: true,
+            frontmatterString: frontmatterMatch[1],
+            startIndex: frontmatterMatch.index,
+            endIndex: frontmatterMatch.index + frontmatterMatch[0].length
+        };
+    },
+
+    /**
+     * Creates a standardized success message object
+     * @param {string} markdownFilePath - Path to the markdown file
+     * @param {boolean} wasModified - Whether the file was modified
+     * @param {Array} modifications - Array of modifications made
+     * @returns {Object} Standardized success message
+     */
+    createSuccessMessage(markdownFilePath, wasModified, modifications = []) {
+        return {
+            success: true,
+            modified: wasModified,
+            modifications,
+            filePath: markdownFilePath,
+            fileName: path.basename(markdownFilePath),
+            errors: []
+        };
+    },
+
+    /**
+     * Creates a standardized error message object
+     * @param {string} markdownFilePath - Path to the markdown file
+     * @param {string} errorMessage - Error message
+     * @returns {Object} Standardized error message
+     */
+    createErrorMessage(markdownFilePath, errorMessage) {
         return {
             success: false,
-            error: 'No frontmatter found'
+            modified: false,
+            modifications: [],
+            filePath: markdownFilePath,
+            fileName: path.basename(markdownFilePath),
+            errors: [errorMessage]
         };
-    }
+    },
 
-    return {
-        success: true,
-        frontmatterString: frontmatterMatch[1],
-        startIndex: frontmatterMatch.index,
-        endIndex: frontmatterMatch.index + frontmatterMatch[0].length
-    };
-}
+    /**
+     * Processes an array of markdown files with a correction function
+     * @param {Array<string>} markdownFilePaths - Array of file paths
+     * @param {Function} correctionFunction - Function to apply to each file
+     * @returns {Array<Object>} Array of results for each file
+     */
+    async processMarkdownFiles(markdownFilePaths, correctionFunction) {
+        const processingResults = [];
 
-/**
- * Creates a standardized success message object
- * @param {string} markdownFilePath - Path to the markdown file
- * @param {boolean} wasModified - Whether the file was modified
- * @param {Array} modifications - Array of modifications made
- * @returns {Object} Standardized success message
- */
-function createSuccessMessage(markdownFilePath, wasModified, modifications = []) {
-    return {
-        success: true,
-        modified: wasModified,
-        modifications,
-        filePath: markdownFilePath,
-        fileName: path.basename(markdownFilePath),
-        errors: []
-    };
-}
-
-/**
- * Creates a standardized error message object
- * @param {string} markdownFilePath - Path to the markdown file
- * @param {string} errorMessage - Error message
- * @returns {Object} Standardized error message
- */
-function createErrorMessage(markdownFilePath, errorMessage) {
-    return {
-        success: false,
-        modified: false,
-        modifications: [],
-        filePath: markdownFilePath,
-        fileName: path.basename(markdownFilePath),
-        errors: [errorMessage]
-    };
-}
-
-/**
- * Processes an array of markdown files with a correction function
- * @param {Array<string>} markdownFilePaths - Array of file paths
- * @param {Function} correctionFunction - Function to apply to each file
- * @returns {Array<Object>} Array of results for each file
- */
-async function processMarkdownFiles(markdownFilePaths, correctionFunction) {
-    const processingResults = [];
-
-    for (const markdownFilePath of markdownFilePaths) {
-        try {
-            const markdownFileContent = fs.readFileSync(markdownFilePath, 'utf8');
-            const result = await correctionFunction(markdownFileContent, markdownFilePath);
-            
-            if (result.modified) {
-                fs.writeFileSync(markdownFilePath, result.content);
+        for (const markdownFilePath of markdownFilePaths) {
+            try {
+                const markdownFileContent = fs.readFileSync(markdownFilePath, 'utf8');
+                const result = await correctionFunction(markdownFileContent, markdownFilePath);
+                
+                if (result.modified) {
+                    fs.writeFileSync(markdownFilePath, result.content);
+                }
+                
+                processingResults.push(result);
+            } catch (error) {
+                processingResults.push(this.createErrorMessage(markdownFilePath, error.message));
             }
-            
-            processingResults.push(result);
-        } catch (error) {
-            processingResults.push(createErrorMessage(markdownFilePath, error.message));
         }
-    }
 
-    return processingResults;
-}
+        return processingResults;
+    }   
+};
 
 // ===================================
 // Correction Functions
@@ -749,4 +751,4 @@ const correctionFunctions = {
    }
 };
 
-export { knownErrorCases, correctionFunctions, processMarkdownFiles };
+export { knownErrorCases, correctionFunctions, helperFunctions };
