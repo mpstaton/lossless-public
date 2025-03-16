@@ -1,9 +1,7 @@
 ---
 site_uuid: 418d2c02-d3d8-4709-b788-4bae3a750346
 url: https://codeium.com/windsurf
-description: The first agentic IDE, and then some. The Windsurf Editor is where the work of
-developers and AI truly flow together, allowing for a coding experience that
-feels like literal magic.
+description: The first agentic IDE, and then some. The Windsurf Editor is where the work of developers and AI truly flow together, allowing for a coding experience thatfeels like literal magic.
 zinger: Built to keep you in flow state
 image: https://exafunction.github.io/public/images/windsurf/windsurf-ide-thumbnail.jpg
 site_name: Windsurf Editor by Codeium
@@ -29,6 +27,8 @@ https://youtu.be/I_T-k-io1wc?si=z5BccJ-ZxzHfABtg
 https://youtu.be/824Fyh146_w?si=4aP0xSweKHfOnGCO
 
 https://youtu.be/A5Bjc-3sQPg?si=3y-ltdp5RU9O0tg6
+
+https://youtu.be/kEgXtRMPwdQ?si=mdo6rHejFQShE-E3
 
 https://youtu.be/tztQJ5MKNgs?si=rv9Aj1PymR9WEuUt
 

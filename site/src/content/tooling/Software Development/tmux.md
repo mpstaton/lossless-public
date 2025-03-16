@@ -3,6 +3,8 @@
 ---
 https://youtu.be/DzNmUNvnB04?si=NZZ9SQhJ3W40P6D5
 
+https://youtu.be/fcygG-qHJC4?si=AApfzz3-1-DQrWUa
+
 [[Perplexity AI]] explains [[tmux]]
 **tmux** (short for *terminal multiplexer*) is a command-line tool that allows users to manage multiple terminal sessions within a single window. Each session can contain multiple windows, which can be further split into panes, each running its own process. Here’s why people use it:
 

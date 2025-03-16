@@ -10,3 +10,4 @@ Made and maintained by [[Microsoft]]
 [[Community Engagement]] on [[Discord]]
 
 ![[Screenshot 2025-01-22 at 9.15.27 PM_Autogen-by-Microsoft.png]]
+https://youtu.be/0PFexhfA4Pk?si=CXGg3be1xouyTbVg

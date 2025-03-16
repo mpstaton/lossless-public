@@ -1,6 +1,5 @@
 ---
-site_uuid: bd879dea-4289-4b68-b46f-5bd4a743ee57
-url: https://nuxt.com/
+site_uuid: bd879dea-4289-4b68-b46f-5bd4a743ee57url:https://nuxt.com/
 tags:
 - Software-Development
 - Frameworks
