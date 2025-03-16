@@ -13,7 +13,7 @@ image: https://cdn.sanity.io/images/4zrzovbb/website/4b8bc05b916dc4fbaf2543f76f9
 site_name: Home
 title: Home
 favicon: https://www.anthropic.com/favicon.ico
-og_fetched_url: 'https://www.anthropic.com'
+og_fetched_url: https://www.anthropic.com
 og_last_fetch: '2025-03-14T04:43:29.669Z'
 ---
 

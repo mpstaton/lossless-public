@@ -9,7 +9,7 @@ const sleep = promisify(setTimeout);
 // Configuration by the user
 // ================================================
 const TARGET_FILES = {
-  targetDir: "site/src/content/tooling/Enterprise Jobs-to-be-Done"
+  targetDir: "site/src/content/tooling/"
 };
 
 const REPORTS_DIR = "site/scripts/data-or-content-generation/fixes-needed/errors-processing/";
@@ -105,12 +105,16 @@ async function main() {
       
       do {
         const paddedIndex = String(reportIndex).padStart(2, '0');
-        reportPath = path.join(REPORTS_DIR, `${today}-${errorCase.reportName}_${paddedIndex}.md`);
+        reportPath = path.join(REPORTS_DIR, `${today}_${errorCase.reportName}__${paddedIndex}.md`);
         reportIndex++;
       } while (fs.existsSync(reportPath));
 
       // Create report using your template
       const reportTemplate = `
+      ---
+      title: ${errorCase.reportName}
+      date: ${today}
+      ---
 ## Summary of Files Processed
 Files processed: ${filesProcessed}
 Files with issue: ${namesOfFilesWithIssue.length}

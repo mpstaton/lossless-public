@@ -1,5 +1,5 @@
 ---
-site_uuid: "507b2391-50a0-45fb-9a77-7508679d14f5"
+site_uuid: 507b2391-50a0-45fb-9a77-7508679d14f5
 image: ""'https://svelte.dev/images/twitter-thumbnail.jpg'""
 site_name: Svelte
 title: Svelte
@@ -10,8 +10,8 @@ tags:
 - Frameworks
 og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d5ce42d3352af3144b253670b8c6e9d274edd84ae1a6d00f4bcb57078b7e303f.jpeg""
 last_jina_request: '2025-03-09T06:45:08.577Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:20:56.419Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:20:56.419Z'
 ---
 
 | Release-Date | Version | Announcement                                                                             |

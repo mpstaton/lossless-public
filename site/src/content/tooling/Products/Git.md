@@ -1,22 +1,22 @@
 ---
 site_uuid: 9c6dba50-6d21-4799-b46b-9ad198aa5d6b
-url: ""'https://git-scm.com'""
+url: https://git-scm.com
 tags:
 - Products
 - Developer-Experience
 - Workflow-Management
 docs_url: 'https://git-scm.com/doc'
-og_errors: true
+og_errors: 'true'
 og_last_error: '2025-03-08T20:39:42.148Z'
-og_error_message: HTTP error 401
+og_error_message: 'HTTP error 401'
 last_jina_request: '2025-03-09T06:45:03.928Z'
-jina_error:   Unexpected token 'G', "Git
+jina_error: 'Unexpected token G, Git'
 ======"... is not valid JSON
-image: ""'https://git-scm.com/images/logo@2x.png'""
+image: https://git-scm.com/images/logo@2x.png
 site_name: Git
 title: Git
-favicon: ""'https://git-scm.com/favicon.ico'""
-og_fetched_url: 'https://git-scm.com'
+favicon: https://git-scm.com/favicon.ico
+og_fetched_url: https://git-scm.com
 og_last_fetch: '2025-03-14T04:41:46.355Z'
 ---
 

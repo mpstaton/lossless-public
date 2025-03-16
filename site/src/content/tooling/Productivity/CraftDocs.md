@@ -1,18 +1,18 @@
 ---
-site_uuid: "0b14feb0-3359-4328-89fe-c63cd954f921"
-url: ""'https://www.craft.do'""
+site_uuid: 0b14feb0-3359-4328-89fe-c63cd954f921
+url: https://www.craft.do
 zinger: The best docs in the world
 hero: '![[Screenshot 2025-02-20 at 2.44.50 PM_CraftDocs--Hero.png]]'
-image: ""'https://www.craft.do/craft_og.png'""
+image: https://www.craft.do/craft_og.png
 site_name: Craft
 title: The best docs in the world
-favicon: ""'https://www.craft.do/favicons/light/light_192.png'""
+favicon: https://www.craft.do/favicons/light/light_192.png
 tags:
 - Productivity
-og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/556bf6b3049fb4f3673395b171fb9224e36bc14e8491f17d4a9aac8ab7bc46c7.jpeg""
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/556bf6b3049fb4f3673395b171fb9224e36bc14e8491f17d4a9aac8ab7bc46c7.jpeg
 last_jina_request: '2025-03-09T06:45:02.426Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:19:01.823Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:01.823Z'
 ---
 [[Advanced Documents]]
 ### CraftDocs managing the Innovation Cookbook:

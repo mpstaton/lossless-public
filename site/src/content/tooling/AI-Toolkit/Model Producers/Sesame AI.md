@@ -15,7 +15,7 @@ jina_error: 'Error occurred'
 image: https://www.ai-sesame.com/logo.png
 site_name: Sesame AI
 title: Sesame AI - AI Voice Model for Natural and Expressive Speech
-og_fetched_url: 'https://www.ai-sesame.com'
+og_fetched_url: https://www.ai-sesame.com
 og_last_fetch: '2025-03-14T04:43:28.338Z'
 ---
 https://www.youtube.com/live/PD76HCowEvI?si=

@@ -1,17 +1,17 @@
 ---
-site_uuid: "a2320830-f25b-4266-9349-921d3028f77e"
-url: ""'https://www.replit.com/'""
+site_uuid: a2320830-f25b-4266-9349-921d3028f77e
+url: https://www.replit.com/
 tags:
 - Software-Development
 - Cloud-Infrastructure
 - opsless-deploy
-image: ""https://cdn.sanity.io/images/bj34pdbp/migration/2017ad20cbb1770bcb0d23d6d4be8ff9a5105df1-1200x650.png?auto=format&q=75&w=1200&format=png""
+image: https://cdn.sanity.io/images/bj34pdbp/migration/2017ad20cbb1770bcb0d23d6d4be8ff9a5105df1-1200x650.png?auto=format&q=75&w=1200&format=png
 site_name: Replit
 title: "Replit –\_Build apps and sites with AI"
-og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e39c8b31528100188ae439afe37b8fe7322fdbb176cb5a125b2c88d9bce8d334.jpeg""
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e39c8b31528100188ae439afe37b8fe7322fdbb176cb5a125b2c88d9bce8d334.jpeg
 last_jina_request: '2025-03-09T06:45:15.735Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:19:02.927Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:02.927Z'
 ---
 
 https://youtu.be/pZrKB9J33IQ?si=XaIW6L5FVxUCPFrf

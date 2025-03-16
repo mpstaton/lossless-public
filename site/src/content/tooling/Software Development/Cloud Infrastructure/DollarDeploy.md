@@ -1,5 +1,5 @@
 ---
-site_uuid: "4f576cee-33c0-4371-bd1e-db5e3b536f59"
+site_uuid: 4f576cee-33c0-4371-bd1e-db5e3b536f59
 image: ""'https://dollardeploy.com/cover.jpg'""
 site_name: DollarDeploy
 title: DollarDeploy
@@ -8,12 +8,12 @@ tags:
 - Software-Development
 - Cloud-Infrastructure
 - Self-Hosting-Cloud
-og_errors: true
-og_last_error: 2025-03-07T05:36:40.167Z
-og_error_message: "Error occurred"
+og_errors: 'true'
+og_last_error: '2025-03-07T05:36:40.167Z'
+og_error_message: 'Error occurred'
 last_jina_request: '2025-03-09T06:45:17.515Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:19:02.929Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:02.929Z'
 ---
 ##### [[DollarDeploy]] Hero
 ![[Screenshot 2025-02-18 at 1.07.02 PM_DollarDeploy--Hero.png]]

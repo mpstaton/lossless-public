@@ -1,5 +1,5 @@
 ---
-site_uuid: "b258b305-fbca-4088-a5b9-a60641e45cf1"
+site_uuid: b258b305-fbca-4088-a5b9-a60641e45cf1
 image: ""'https://railway.app/og.png?v=2'""
 site_name: Railway
 title: Railway
@@ -10,8 +10,8 @@ tags:
 - Self-Hosting-Cloud
 og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/f9c54fe1585ef1f2a93ec452d39798ea7298ae9e76b43bb0024bb36aeee71592.jpeg""
 last_jina_request: '2025-03-09T06:45:19.615Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:19:02.928Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:02.928Z'
 ---
 [[Opsless Deployment Providers]]
 

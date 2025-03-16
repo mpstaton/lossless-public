@@ -1,5 +1,5 @@
 ---
-site_uuid: "141e3602-7b3b-458e-bafe-5e52d8c90a3b"
+site_uuid: 141e3602-7b3b-458e-bafe-5e52d8c90a3b
 expanded_acronym: Cascading Style Sheets
 ---
 https://youtu.be/gj2REv4D380?si=P8UWBX3L5Ei7pOyE

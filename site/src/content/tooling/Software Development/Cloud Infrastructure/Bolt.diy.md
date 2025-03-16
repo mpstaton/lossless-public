@@ -1,5 +1,5 @@
 ---
-site_uuid: "5ddbfad4-5a45-4758-bdba-ddacdcd73ca4"
+site_uuid: 5ddbfad4-5a45-4758-bdba-ddacdcd73ca4
 github_url: https://github.com/stackblitz-labs/bolt.diy
 ---
 [[Open Source]] version of [[Tooling/Software Development/Cloud Infrastructure/Bolt.new]], a [[Open Source, DIY Variant|DIY Variant]]

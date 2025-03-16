@@ -1,20 +1,20 @@
 ---
-site_uuid: "748c400c-cbb4-46d8-a770-5b166e1a3e45"
-url: ""'https://www.docker.com/wp'""
+site_uuid: 748c400c-cbb4-46d8-a770-5b166e1a3e45
+url: https://www.docker.com/wp
 zinger: 'Develop faster. Run anywhere. Build with the #1 most-used developer tool.'
 description:   Docker helps developers build, share, run, and verify applications anywhere —
 without tedious environment configuration or management.
-image: ""'https://www.docker.com/app/uploads/2023/06/meta-image-homepage-1110x580.png'""
+image: https://www.docker.com/app/uploads/2023/06/meta-image-homepage-1110x580.png
 site_name: Docker
 title: 'Docker: Accelerated Container Application Development'
-favicon: ""https://www.docker.com/app/uploads/2024/02/cropped-docker-logo-favicon-192x192.png""
+favicon: https://www.docker.com/app/uploads/2024/02/cropped-docker-logo-favicon-192x192.png
 tags:
 - Software-Development
 - DevOps
-og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b9f67154bc6abfc949f785b488b9db7cdc0c8646d623112aafb52316d4b64864.jpeg""
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b9f67154bc6abfc949f785b488b9db7cdc0c8646d623112aafb52316d4b64864.jpeg
 last_jina_request: '2025-03-09T06:45:09.462Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:19:02.917Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:02.917Z'
 ---
 [[Docker]] is a tool for [[Containers|Container]] creation and management, and enables [[Reproducible Builds]]. 
 

@@ -1,5 +1,5 @@
 ---
-site_uuid: "e9fd2096-449e-4cb9-b4bd-dfaab0a2e7d8"
+site_uuid: e9fd2096-449e-4cb9-b4bd-dfaab0a2e7d8
 aliases:
 - O3G Engine
 - O3GE

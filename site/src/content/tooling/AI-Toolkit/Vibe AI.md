@@ -13,7 +13,7 @@ og_error_message: 'HTTP error 401'
 last_jina_request: '2025-03-09T06:45:05.547Z'
 jina_error: 'Error occurred'
 favicon: https://thewh1teagle.github.io/vibe/./favicon.ico
-og_fetched_url: 'https://thewh1teagle.github.io/vibe/'
+og_fetched_url: https://thewh1teagle.github.io/vibe/
 og_last_fetch: '2025-03-14T04:43:14.595Z'
 ---
 

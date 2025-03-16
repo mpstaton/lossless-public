@@ -1,16 +1,16 @@
 ---
-site_uuid: "00fefaa9-0fc4-42ae-b126-6f010f33bbf2"
-url: ""'https://orientdb.org/'""
+site_uuid: 00fefaa9-0fc4-42ae-b126-6f010f33bbf2
+url: https://orientdb.org/
 tags:
 - Software-Development
 - Databases
 - database
-image: ""'https://orientdb.org/themes/custom/orientdb/images/OrientDB_Org.png'""
+image: https://orientdb.org/themes/custom/orientdb/images/OrientDB_Org.png
 site_name: Home
 title: Home | OrientDB Community Edition
-og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/27a02af846cd7181bea4fc6d0c789c3c91119c25be37ab532f5f316e50772b2c.jpeg""
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/27a02af846cd7181bea4fc6d0c789c3c91119c25be37ab532f5f316e50772b2c.jpeg
 last_jina_request: '2025-03-09T06:45:18.445Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:19:02.920Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:02.920Z'
 ---
 Acquired by SAP

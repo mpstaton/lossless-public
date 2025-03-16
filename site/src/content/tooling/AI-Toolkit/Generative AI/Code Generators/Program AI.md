@@ -14,7 +14,7 @@ image: https://cdn.prod.website-files.com/63e36d09413f83c58ac5d998/6412f00572c3c
 site_name: Program AI
 title: Program AI | The Future of AI Code Generation
 favicon: https://cdn.prod.website-files.com/64780d5347347bd4fd40e7a3/6580e2014a31f78cb2882440_32.png
-og_fetched_url: 'https://www.programai.co'
+og_fetched_url: https://www.programai.co
 og_last_fetch: '2025-03-14T04:43:49.535Z'
 ---
 

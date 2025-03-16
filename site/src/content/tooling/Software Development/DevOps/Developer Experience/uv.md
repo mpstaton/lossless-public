@@ -1,5 +1,5 @@
 ---
-site_uuid: "aa08f849-658c-4b3a-abd6-dfc46e0abaec"
+site_uuid: aa08f849-658c-4b3a-abd6-dfc46e0abaec
 github_url: https://github.com/astral-sh/uv
 created_by: "[[Microsoft]]"
 docs_url: https://docs.astral.sh/uv/

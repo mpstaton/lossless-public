@@ -1,21 +1,21 @@
 ---
-site_uuid: "40650bd3-0ed7-4463-b6a3-5718b4112c77"
-url: ""'https://legendapp.com/open-source/state/v3/'""
+site_uuid: 40650bd3-0ed7-4463-b6a3-5718b4112c77
+url: https://legendapp.com/open-source/state/v3/
 zinger: High performance state and local first sync
 description:   Legend State is an extremely fast signal-based state library with fine-grained
 reactivity and a powerful sync engine that works with any backend.
-image: ""https://legendapp.com/open-source/state/v3/_astro/Logomark_(White).BFbx2HQ__ZXR6FG.svg""
+image: https://legendapp.com/open-source/state/v3/_astro/Logomark_(White).BFbx2HQ__ZXR6FG.svg
 site_name: Legend State
 title: Legend State
-favicon: ""'https://legendapp.com/open-source/state/v3/favicon.ico'""
+favicon: https://legendapp.com/open-source/state/v3/favicon.ico
 tags:
 - Web-Frameworks
 - Software-Development
 - Frameworks
-og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/15d0aa3a80b9ec3bef65a28eb8b598aec3eeedf543e25ee159661e10c83c663b.jpeg""
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/15d0aa3a80b9ec3bef65a28eb8b598aec3eeedf543e25ee159661e10c83c663b.jpeg
 last_jina_request: '2025-03-09T06:45:22.239Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:20:56.425Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:20:56.425Z'
 ---
 
 [[Legend State]] is designed for [[React]] Ecosystem, enabling [[Local-First Applications]] and doubling as a [[State Management]] [[Packages and Libraries|Library]].

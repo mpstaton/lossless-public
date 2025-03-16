@@ -1,5 +1,5 @@
 ---
-site_uuid: "bd55d7af-1e33-4143-860c-1209990460c9"
+site_uuid: bd55d7af-1e33-4143-860c-1209990460c9
 url: ""'https://react.dev/'""
 parent_org: '[[Meta]]'
 image: ""'https://react.dev/images/og-home.png'""
@@ -12,8 +12,8 @@ tags:
 - Frameworks
 og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ddc6a11b6e0607cf0fced41dbc927d3f8e8cc05491223bb082beae0cd2b4bdef.jpeg""
 last_jina_request: '2025-03-09T06:45:12.860Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:20:56.420Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:20:56.420Z'
 ---
 Created and maintained by [[Meta]]. It is the most popular, thus [[Market Standard]], for [[Front-End]] development.  It's essentially a [[JavaScript]] library that enables [[Component-Based Software Architecture]]. 
 

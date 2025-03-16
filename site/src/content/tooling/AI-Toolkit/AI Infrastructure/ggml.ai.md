@@ -11,7 +11,7 @@ last_jina_request: '2025-03-09T06:45:15.549Z'
 jina_error: 'Error occurred'
 site_name: ggml.ai
 title: ggml.ai
-og_fetched_url: 'https://ggml.ai'
+og_fetched_url: https://ggml.ai
 og_last_fetch: '2025-03-14T04:43:48.101Z'
 ---
 

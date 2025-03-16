@@ -16,7 +16,7 @@ image: https://framerusercontent.com/images/QFQ0FBkLFAAepowMaiOxNgLUdRE.png
 site_name: Grit
 title: Grit
 favicon: https://framerusercontent.com/images/BsRdbvMW49SCjXuXNDsoc0M.png
-og_fetched_url: 'https://about.grit.io'
+og_fetched_url: https://about.grit.io
 og_last_fetch: '2025-03-14T04:43:50.662Z'
 ---
 

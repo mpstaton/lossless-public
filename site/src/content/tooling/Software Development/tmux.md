@@ -1,4 +1,6 @@
+---
 
+---
 https://youtu.be/DzNmUNvnB04?si=NZZ9SQhJ3W40P6D5
 
 [[Perplexity AI]] explains [[tmux]]

@@ -1,5 +1,5 @@
 ---
-site_uuid: "7a1bb7b1-7c21-4a28-bc5b-65dc388ece03"
+site_uuid: 7a1bb7b1-7c21-4a28-bc5b-65dc388ece03
 tags: ["database", "Software-Development", "Databases"]
 - database
 ---
