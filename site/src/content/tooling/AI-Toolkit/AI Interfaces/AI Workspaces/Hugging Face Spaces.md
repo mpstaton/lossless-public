@@ -1,5 +1,5 @@
 ---
-url: ""https://huggingface.co/spaces""
+url: https://huggingface.co/spaces
 parent_org: "[[Hugging Face]]"
 ---
 

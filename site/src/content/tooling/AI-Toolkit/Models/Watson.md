@@ -1,11 +1,11 @@
 ---
 site_uuid: "e2155c1c-aff5-41f4-93b7-6b51e3e1561c"
-url: 'https://www.ibm.com/watson'
+url: https://www.ibm.com/watson
 parent_org: '[[IBM]]'
 tags:
 - AI-Toolkit
 - Models
-image: 'https://assets.ibm.com/is/image/ibm/ibm-8bar-logo-2560x2560?$original
+image: undefined: https://assets.ibm.com/is/image/ibm/ibm-8bar-logo-2560x2560?$original
 ---
 One of the [[AI Models]]. 
 

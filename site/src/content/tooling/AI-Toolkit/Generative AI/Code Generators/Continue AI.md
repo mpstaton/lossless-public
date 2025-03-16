@@ -1,16 +1,16 @@
 ---
 site_uuid: "b007620f-ec24-4a23-b6f2-37b70c831963"
-url: ""'https://www.continue.dev/'""
+url: https://www.continue.dev/
 tags:
 - AI-Toolkit
 - Generative-AI
 - Code-Generators
-image: ""https://cdn.prod.website-files.com/663e06c56841363663ffbbcf/66ec6feca7bf0098d3110173_social%20card%402x.webp""
+image: https://cdn.prod.website-files.com/663e06c56841363663ffbbcf/66ec6feca7bf0098d3110173_social%20card%402x.webp
 site_name: Continue
 title: Continue
-og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ae32ba215c4f07be8226cffd1d62f72d6bf7599d88182904e4e37583966be6d1.jpeg""
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ae32ba215c4f07be8226cffd1d62f72d6bf7599d88182904e4e37583966be6d1.jpeg
 last_jina_request: '2025-03-09T06:45:09.135Z'
-jina_error: "Error occurred"
+jina_error: 'Error occurred'
 og_last_fetch: 2025-03-07T05:20:56.439Z
 ---
 
