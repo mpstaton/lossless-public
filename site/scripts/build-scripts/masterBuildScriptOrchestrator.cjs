@@ -5,7 +5,11 @@ const matter = require('gray-matter');
 const { v4: uuidv4 } = require('uuid');
 
 // Import configurations and evaluation functions
-const USER_OPTIONS = require('./getUserOptionsForBuild.cjs');
+const USER_OPTIONS = require('./archive/getUserOptionsForBuild.cjs');
+
+const {
+  extractPlainTextFrontmatter
+} = require('./prescreenFilesWithFilesystemRegex.cjs');
 
 const { 
   evaluateFile, 
@@ -25,7 +29,7 @@ const {
 
 const {
   processFile: processYAMLFile
-} = require('./assureYAMLPropertiesCorrect.cjs');
+} = require('./archive/assureYAMLPropertiesCorrect.cjs');
 
 const {
   sortFilesIntoTwoArraysBasedOnFilesystemRegex,
@@ -38,7 +42,9 @@ const {
 
 /**
  * Process and validate YAML frontmatter before any other operations
- * @param {string} content - Raw file content
+* @param {string} filePath - Path to the file
+* @param {string} fileName
+* @param {string} content - Raw file content
  * @returns {Object} Processed content and validation info
  */
 function preProcessYAML(content) {

@@ -3,7 +3,7 @@ const path = require('path');
 const matter = require('gray-matter');
 
 // Import user options
-const USER_OPTIONS = require('./getUserOptionsForBuild.cjs');
+const USER_OPTIONS = require('./archive/getUserOptionsForBuild.cjs');
 
 // ============================================================================
 // YAML Processing Functions

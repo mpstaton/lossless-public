@@ -131,94 +131,6 @@ function extractPlainTextFrontmatter(filepPath, fileName, isolatedFrontmatter) {
 const CORRUPTION_PATTERNS = [
 
 
-  // Any quote characters surrounding a URL
-  // Remove any quotes found on on either side of a URL
-  {
-    pattern: /^---\n(?:[\s\S]*?)((?:jina_error|og_error_message):[ \t]*(?:["'](?:.*?)['"](?:.*?)["']|'(?:.*?)'|[^"\n]*:[^"\n]*\S))/m,
-    messageToLog: '',
-    preventsOperations: ['assureYAMLPropertiesCorrect.cjs', 'fetchOpenGraphData.cjs', 'trackVideosInRegistry.cjs'],
-    correctionFunction: 'removeAnyQuoteCharactersfromEitherOrBothSidesOfURL',
-    isCritical: true
-  },
-
-  // Block scalar syntax found in property
-  // Remove block scalar syntax, and assure one single string
-  { 
-    pattern: /^([^:\n]+):[ \t]*(>-|>|[|][-]?)[ \t]*(\S.*)$/gm, 
-    messageToLog: 'Block scalar syntax found in property',
-    preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
-    correctionFunction: 'attemptToFixBlockScalar',
-    isCritical: true
-  },
-   
-  // Unquoted error message properties (critical)
-  // Surround the error message property with double mark quotes
-  {
-    pattern: new RegExp(`^(${ERROR_MESSAGE_PROPERTIES.join('|')}):[ \\t]+([^\\n"'][^\\n]*:[^\\n]*)$`, 'm'),
-    messageToLog: 'Contains unquoted error message property',
-    preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
-    correctionFunction: 'surroundErrorMessagePropertyWithQuotes',
-    isCritical: true
-  },
-      // Unbalanced quotes (critical)
-      {
-        pattern: /^([^:]+):[ \t]*(['"])((?:(?!\2).)*(?=\n|$))/m,
-        messageToLog: 'Contains unbalanced quotes in value',
-        preventsOperations: ['assureYAMLPropertiesCorrect.cjs', 'fetchOpenGraphData.cjs'],
-        correctionFunction: 'attemptToFixUnbalancedQuotes',
-        isCritical: true
-      },
-  
-  // More than one instance of the same key
-  // Delete all instances of the key, further scripting will add the key back in with the correct value
-  { 
-    pattern: /^([\w-]+):[^\n]*\n(?:[\s\S]*?)^\1:/m, 
-    messageToLog: 'Duplicate keys in frontmatter',
-    preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
-    correctionFunction: 'deleteAllInstancesOfKey',
-    isCritical: true
-  },
-  
-  // Improper use of single mark quotes
-  // Remove the single mark quotes and add double mark quotes
-  { 
-    pattern: /^---\n(?:[\s\S]*?)((?:jina_error|og_error_message):[ \t]*(?:["'](?:.*?)['"](?:.*?)["']|'(?:.*?)'|[^"\n]*:[^"\n]*\S))/m, 
-    messageToLog: 'Error message with single mark quotes',
-    preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
-    correctionFunction: 'replaceSingleMarkQuotesWithDoubleMarkQuotes',
-    isCritical: true
-  },
-
-  // Improper character set surrounding error message (like "\"'HTTP error!'\""
-  // Remove the improper character set and add double mark quotes
-  {
-    pattern: /^---\n(?:[\s\S]*?)((?:jina_error|og_error_message):[ \t]*(?:\\["']|["']\\["']|["'].*\\["'].*["']))/m,
-    messageToLog: 'Error message with improperly formatted character set',
-    preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
-    correctionFunction: 'removeImproperCharacterSetThenAddDoubleMarkQuotes',
-    isCritical: true
-  },
-    // URLs broken across multiple lines
-  // Replace the broken url with the intended url as one continguous sting with no surrounding quotes
-  { 
-    pattern: /^([\w-]+):[ \t]*https?:[ \t]*$/m, 
-    messageToLog: 'URL split across multiple lines',
-    preventsOperations: ['fetchOpenGraphData.cjs'],
-    correctionFunction: 'attemptToFixBrokenUrl',
-    isCritical: true
-  },
-  
-  // Missing URL property not found within a directory not found in the excludeUrlCheck array
-  // No corection, just a message to log.
-  {
-    pattern: /^---\n(?:[\s\S]*?)(?!\burl:)[\s\S]*?\n---/m,
-    messageToLog: 'Missing URL property needed for OpenGraph',
-    preventsOperations: ['fetchOpenGraphData.cjs'],
-    correctionFunction: addFileNameToMissingUrlList
-    isCritical: false
-  },
-  
-];
 
 // Common properties in files that often have errors
 const listOfCommonKnownErrors = [
@@ -261,17 +173,12 @@ function readFilesRecursive(dir, fileList = []) {
   
   return fileList;
 }
-
-/**
- * Collection of correction functions that attempt to fix common issues
- */
-const correctionFunctions = {
   /**
-   * Attempt to fix missing YAML delimiter
-   * @param {string} filePath - Path to the file
-   * @param {string} content - Content of the file
-   * @returns {Object} Result with success flag, message, and updated content if successful
-   */
+    * Attempt to fix missing YAML delimiter
+    * @param {string} filePath - Path to the file
+    * @param {string} content - Content of the file
+    * @returns {Object} Result with success flag, message, and updated content if successful
+    */
   attemptToFixMissingDelimiter: (filePath, content) => {
     try {
       // Check if content has opening delimiter but not closing
@@ -836,23 +743,6 @@ const correctionFunctions = {
     }
   }
 };
-
-/**
- * Checks for issues in a file and attempts to correct them if possible
- * @param {string} filePath - Path to the file
- * @param {string} content - Content of the file
- * @returns {Object} Result with issues, prevented operations, and correction attempts
- */
-function checkAndCorrectFile(filePath, content) {
-  // Skip empty files
-  if (!content || content.trim() === '') {
-    console.log(`${filePath} - Empty file or no content`);
-    return {
-      hasCriticalIssues: true,
-      preventedOperations: ['all'],
-      correctionAttempts: []
-    };
-  }
   
   try {
     // Special pre-check for properly formatted frontmatter

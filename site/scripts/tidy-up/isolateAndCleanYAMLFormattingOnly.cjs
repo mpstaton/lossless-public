@@ -9,7 +9,7 @@ const path = require('path');
 // - 'sample': Process a random sample of corrupted files (uses MAX_SAMPLE_SIZE)
 // - 'specific': Process only the files listed in SPECIFIC_FILES_TO_PROCESS
 // - 'all': Process all corrupted files found in the report
-const PROCESSING_MODE = 'all';
+const PROCESSING_MODE = 'specific';
 
 // Maximum number of files to process when in 'sample' mode
 const MAX_SAMPLE_SIZE = 5;
