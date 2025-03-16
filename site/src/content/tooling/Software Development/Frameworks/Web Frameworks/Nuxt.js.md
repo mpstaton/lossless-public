@@ -17,3 +17,5 @@ og_last_fetch: 2025-03-07T05:20:56.422Z
 
 
 A [[Web Frameworks|Web Framework]] for [[Vue.js]] that handles [[Server Side Rendering]]
+
+https://youtu.be/X0M4R0Qx6n4?si=_q7ApfESUalAhKBu

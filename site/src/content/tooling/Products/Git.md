@@ -22,6 +22,10 @@ og_last_fetch: '2025-03-14T04:41:46.355Z'
 
 https://youtu.be/0Hk2XjGSzbA?si=idNrPLL_nQg2oDpR
 
+https://youtu.be/rH3zE7VlIMs?si=cmf5DCQPv0kkT3DJ
+
+https://youtu.be/leYrUhWSBUk?si=JraVnHylZg21xnQt
+
 https://git-scm.com/book/en/v2
 ## Git Hooks
 

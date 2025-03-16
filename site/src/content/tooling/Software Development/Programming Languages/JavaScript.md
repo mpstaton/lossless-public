@@ -14,6 +14,8 @@ last_jina_request: '2025-03-09T06:45:19.160Z'
 jina_error: "Error occurred"
 og_last_fetch: 2025-03-07T06:11:14.691Z
 ---
+https://youtu.be/k4xuEl6TmT4?si=0hxbL-1xVxjeTqSD
+
 
 [[Web Frameworks]] include [[NEXT.js]], [[React]], [[Vue.js]], [[Solid.js]], [[Nextra]], [[Astro]].
 

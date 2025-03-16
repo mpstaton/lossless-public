@@ -1,4 +1,5 @@
 
+https://youtu.be/RPbmMmcNvYA?si=2HVnqr9U2mQ607Bn
 
 An organization that researches, develops, and publishes [[Large Language Models]]. Run by [[Sam Altman]], funded primarily by [[Microsoft]]
 

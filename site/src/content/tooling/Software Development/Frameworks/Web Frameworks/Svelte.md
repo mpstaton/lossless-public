@@ -18,3 +18,5 @@ og_last_fetch: 2025-03-07T05:20:56.419Z
 | ------------ | ------- | ---------------------------------------------------------------------------------------- |
 | 2024-10-22   | 5       | [Svelte 5 is alive: Our biggest release yet.](https://svelte.dev/blog/svelte-5-is-alive) |
 
+
+https://youtube.com/playlist?list=PLA9WiRZ-IS_zU2j29HQy478UCuHyDZQXC&si=vgwA5c9DP-OrDrFE

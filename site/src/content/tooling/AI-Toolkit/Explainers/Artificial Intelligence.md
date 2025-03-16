@@ -11,6 +11,8 @@ aliases:
 
 https://youtu.be/kbG2CWrmKTw?si=IszFpFxy41V-XjbI
 
+https://youtu.be/JrLt5LXW1mo?si=-bF3fAMZ6PCocRWT
+
 https://youtu.be/RtQmNp5FKsk?si=siw13Vg91ch5CSRb
 
 https://youtu.be/LEwgy73sVKk?si=A9_f_lD7zQfmlo7S
