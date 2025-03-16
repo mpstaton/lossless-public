@@ -1,5 +1,5 @@
 ---
-site_uuid: "19769eac-c389-47d0-a84a-af0d81f08149"
+site_uuid: 19769eac-c389-47d0-a84a-af0d81f08149
 url: ""'https://www.board.com/'""
 zinger: Board is the Enterprise Planning Platform.
 image: ""'https://www.board.com/wp-content/uploads/2025/01/homepage-opengraph_1.jpg'""
@@ -10,8 +10,8 @@ tags:
 - Enterprise-Jobs-to-be-Done
 og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b48b87d9fe4d7bd770ef01b9ff1f7c7046cb11a5c1ca97e943c510f1fd33f461.jpeg""
 last_jina_request: '2025-03-09T06:45:05.684Z'
-jina_error: "Error occurred"
-og_last_fetch: 2025-03-07T05:19:01.830Z
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:01.830Z'
 ---
 [[Enterprise Resource Planning|ERP]]
 
