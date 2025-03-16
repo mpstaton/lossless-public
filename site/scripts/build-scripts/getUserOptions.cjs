@@ -69,19 +69,21 @@ const USER_OPTIONS = {
         timestampProperties: ['og_last_error', 'og_error_message', 'last_jina_request', 'og_last_fetch', 'last_jina_error']
     },
   
-    // Regular Expressions
-    regex: {
-      detectUrlProperties: /(?:url|image|favicon|og_screenshot_url|og_image)/g,
-      detectYoutubeUrls: /()/g,
-      extractYoutubeIds: /()/g,
-      frontmatter: /^---\r?\n([\s\S]*?)\r?\n---/,
+    // Regular Expression Utilities
+    regexUtils: {
+      detectUrlProperties: /((?:https?:)?\/\/[^\s'"]+)(?:'|")?$/gm,
+      detectYoutubeUrls: /https?:\/\/(?:(?:www\.)?youtube\.com\/|youtu\.be\/)([a-zA-Z0-9_-]+)/g,
+      extractYoutubeIds: /([a-zA-Z0-9_-]+)/g,
+      extractFrontmatterWithDelimiters: /^---\r?\n[\s\S]*?\r?\n---/,
+      extractFrontmatterWithoutDelimiters: /^---\r?\n([\s\S]*?)\r?\n---/,
       yamlKey: /^(\w+(?:-\w+)*?):/
     },
 
 
   // File Generation
     dataFiles: {
-      youtubeUrls: 'site/src/content/data/video-registry.json'
+      videoRegistry: 'site/src/content/data/video-registry.json',
+      markdownFileRegistry: 'site/src/content/data/markdown-file-registry.json'
     },
 
   }

@@ -167,6 +167,21 @@ const knownErrorCases = {
       correctionFunction: 'removeUnnecessarySpacing',
       isCritical: false
    },
+
+   // Multi-line strings present in properties
+   // Convert multi-line strings to single-line strings
+   // Under NO CIRCUMSTANCES use Block Scalar syntax. 
+   stringPropertyWithMultiLineString: {
+      exampleErrors: [
+         "description: Supercharge your LLM's understanding of JavaScript/TypeScript codebases.\nTransform your text into natural, expressive speech with precision and ease\nusing our cutting-edge AI technology."
+      ],
+      properSyntax: "description: Supercharge your LLM's understanding of JavaScript/TypeScript codebases. Transform your text into natural, expressive speech with precision and ease using our cutting-edge AI technology.",
+      detectError: new RegExp(`^(${PLAIN_TEXT_PROPERTIES.join('|')}):[ \t]*[^\n]*(\\n|\\r\n|\\r)[^\n]*`, 'gm'),
+      messageToLog: 'Fixed spacing and merged multiline text in property',
+      preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
+      correctionFunction: 'convertMultiLineStringsToSingleLineStrings',
+      isCritical: false
+   },
    
    // URLs broken across multiple lines
    // Replace the broken url with the intended url as one continguous sting with no surrounding quotes
@@ -913,6 +928,53 @@ const correctionFunctions = {
          const newFrontmatter = processedLines.join('\n');
          const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
             '---\n' + newFrontmatter + '\n---' +
+            markdownFileContent.slice(frontmatterData.endIndex);
+
+         return {
+            ...helperFunctions.createSuccessMessage(markdownFilePath, true, modifications),
+            content: correctedContent
+         };
+      }
+
+      return helperFunctions.createSuccessMessage(markdownFilePath, false);
+   },
+
+   // Convert multi-line strings to single-line strings
+   // Multi-line strings are not allowed in frontmatter
+   // Block scalar syntax is not allowed in frontmatter
+   async convertMultiLineStringsToSingleLineStrings(markdownFileContent, markdownFilePath) {
+      const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
+      if (!frontmatterData.success) {
+         return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
+      }
+
+      let isolatedFrontmatterString = frontmatterData.frontmatterString;
+      let wasModified = false;
+      const modifications = [];
+
+      const errorDetectionRegex = knownErrorCases.stringPropertyWithMultiLineString.detectError;
+
+      const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
+      if (propertyMatch) {
+         const [fullMatch, propertyName, valueWithError] = propertyMatch;
+         const correctedValue = `${propertyName}: '${valueWithError.trim()}'`;
+
+         modifications.push({
+            property: propertyName,
+            from: fullMatch,
+            to: correctedValue
+         });
+
+         isolatedFrontmatterString = isolatedFrontmatterString.replace(
+            fullMatch,
+            correctedValue
+         );
+         wasModified = true;
+      }
+
+      if (wasModified) {
+         const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
+            '---\n' + isolatedFrontmatterString + '\n---' +
             markdownFileContent.slice(frontmatterData.endIndex);
 
          return {
