@@ -356,12 +356,6 @@ const USER_OPTIONS = {
     }
   },
 
-  // Regular Expressions
-  regex: {
-    youtubeUrl: /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/g,
-    frontmatter: /^---\r?\n([\s\S]*?)\r?\n---/,
-    yamlKey: /^(\w+(?:-\w+)*?):/
-  },
 
   // YouTube Formatting Configuration
   youtube: {
