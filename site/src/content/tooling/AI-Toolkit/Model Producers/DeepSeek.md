@@ -1,5 +1,5 @@
 ---
-site_uuid: "b264dd92-d77d-48ec-9255-8241d8632f1a"
+site_uuid: b264dd92-d77d-48ec-9255-8241d8632f1a
 url: https://www.deepseek.com/
 tags:
 - AI-Toolkit
@@ -10,7 +10,7 @@ title: DeepSeek
 favicon: https://www.deepseek.com/favicon.ico
 last_jina_request: '2025-03-09T06:45:08.080Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:18.720Z
+og_last_fetch: '2025-03-07T05:19:18.720Z'
 ---
 One of the primary organizations creating [[AI Models]].
 <iframe 

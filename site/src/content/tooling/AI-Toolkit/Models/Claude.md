@@ -1,5 +1,5 @@
 ---
-site_uuid: "ce6ee375-d700-4369-89f0-a20ee34786c0"
+site_uuid: ce6ee375-d700-4369-89f0-a20ee34786c0
 url: https://claude.ai/
 tags:
 - AI-Toolkit
@@ -10,7 +10,7 @@ title: Claude
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4c1282370971cad9188c46732eb691491d9c98a4b9866acb4c0afd8014b79943.jpeg
 last_jina_request: '2025-03-09T06:45:06.973Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:19.161Z
+og_last_fetch: '2025-03-07T05:19:19.161Z'
 ---
 
 

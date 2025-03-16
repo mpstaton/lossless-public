@@ -1,5 +1,5 @@
 ---
-site_uuid: "d43bbbfa-424f-4990-8f07-5a574930007b"
+site_uuid: d43bbbfa-424f-4990-8f07-5a574930007b
 aliases:
 parent_org: "[[Microsoft]]"
 ---

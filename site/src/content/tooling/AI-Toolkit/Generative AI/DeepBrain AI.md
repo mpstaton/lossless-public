@@ -1,5 +1,5 @@
 ---
-site_uuid: "2b6c9d2f-f2e8-4d76-8c93-993f3b19917b"
+site_uuid: 2b6c9d2f-f2e8-4d76-8c93-993f3b19917b
 youtube_url: https://www.youtube.com/@deepbrainai
 ---
 - **Focus**: Realistic and interactive [[AI Avatars]] for [[Virtual Humans]], such as AI anchors, customer service agents, and conversational avatars.

@@ -1,5 +1,5 @@
 ---
-site_uuid: "05f598c4-83f1-4e45-a296-f5fcfc9c50dd"
+site_uuid: 05f598c4-83f1-4e45-a296-f5fcfc9c50dd
 url: https://mindsdb.com/
 tags:
 - AI-Toolkit
@@ -10,7 +10,7 @@ title: 'The #1 Enterprise Data Platform for AI'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/87aa1853aeeadae4cc0c2ac46335deaf8d092ef63e887bb5a67a8d88efa5beb3.jpeg
 last_jina_request: '2025-03-09T06:44:58.275Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:18.722Z
+og_last_fetch: '2025-03-07T05:19:18.722Z'
 ---
 Backed by [[Nvidia]]
 

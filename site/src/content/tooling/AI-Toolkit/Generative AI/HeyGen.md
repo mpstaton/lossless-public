@@ -1,5 +1,5 @@
 ---
-site_uuid: "8bccd87d-6ae8-4098-9bd4-09828323e68d"
+site_uuid: 8bccd87d-6ae8-4098-9bd4-09828323e68d
 url: https://www.heygen.com/
 tags:
 - AI-Toolkit
@@ -12,6 +12,6 @@ title: 'AI Video Generator | #1 on G2’s 2025 Top 100 List | HeyGen'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c0fadff54acb974981c2160509946bb429736ff7bee1b8892218f022386d33b8.jpeg
 last_jina_request: '2025-03-09T06:45:00.076Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:39.775Z
+og_last_fetch: '2025-03-07T05:20:39.775Z'
 ---
 

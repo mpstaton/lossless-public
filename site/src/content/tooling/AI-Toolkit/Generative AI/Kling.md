@@ -1,5 +1,5 @@
 ---
-site_uuid: "93385751-d754-4919-9f8f-d3eec321e708"
+site_uuid: 93385751-d754-4919-9f8f-d3eec321e708
 url: https://www.klingai.com/
 tags:
 - AI-Toolkit
@@ -13,6 +13,6 @@ title: KLING AI
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/031ede4e043b47e970e244a088d9c1f6846241652186a15da74a417731da9ef4.jpeg
 last_jina_request: '2025-03-09T06:44:58.714Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:21:09.893Z
+og_last_fetch: '2025-03-07T05:21:09.893Z'
 ---
 

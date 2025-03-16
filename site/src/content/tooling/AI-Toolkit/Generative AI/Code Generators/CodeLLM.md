@@ -1,5 +1,5 @@
 ---
-site_uuid: "c658d255-31d6-4521-8220-83282920679b"
+site_uuid: c658d255-31d6-4521-8220-83282920679b
 url: https://abacus.ai/teams/
 parent_org: '[[Abacus AI]]'
 tags:
@@ -12,7 +12,7 @@ title: Abacus.AI - CodeLLM
 favicon: https://codellm.abacus.ai/static/icon2/favicon-192.png
 last_jina_request: '2025-03-09T06:45:00.466Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.440Z
+og_last_fetch: '2025-03-07T05:20:56.440Z'
 ---
 
 

@@ -1,8 +1,8 @@
 ---
-site_uuid: "67a5175b-01b7-4a63-b2c5-a2bc60645de7"
+site_uuid: 67a5175b-01b7-4a63-b2c5-a2bc60645de7
 url: https://www.langchain.com/
 zinger: Applications that can reason. Powered by LangChain.
-description:   Build context-aware, reasoning applications with LangChain’s flexible
+description: Build context-aware, reasoning applications with LangChain’s flexible
 framework that leverages your company’s data and APIs. Future-proof your
 application by making vendor optionality part of your LLM infrastructure
 design.
@@ -16,7 +16,7 @@ title: LangChain
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/43e98c38a6c67f47395ec5af51c0b1f996afca78784e2679c009ea9c8be70153.jpeg
 last_jina_request: '2025-03-09T06:45:17.702Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.177Z
+og_last_fetch: '2025-03-07T05:20:56.177Z'
 ---
 
 2024, Sep 29. [LangChain and OLlama: Build your personal coding assistant in 10 minutes](https://youtu.be/fOUng7fMQ1Y?si=zumizOmuEk1H6vyh)

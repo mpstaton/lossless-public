@@ -1,5 +1,5 @@
 ---
-site_uuid: "bdccc07c-f8a4-44de-8cb7-4f7f662f3e0d"
+site_uuid: bdccc07c-f8a4-44de-8cb7-4f7f662f3e0d
 url: https://msty.app/
 tags:
 - AI-Toolkit
@@ -14,7 +14,7 @@ title: Msty - Using AI Models made Simple and Easy
 favicon: https://msty.app/favicon.ico
 last_jina_request: '2025-03-09T06:45:20.658Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.747Z
+og_last_fetch: '2025-03-07T05:20:56.747Z'
 ---
 https://youtu.be/5U_lOjfZiXg?si=EJWZpDXYAT98xgCb
 

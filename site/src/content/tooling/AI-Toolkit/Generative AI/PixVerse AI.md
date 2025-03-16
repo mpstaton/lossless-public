@@ -1,5 +1,5 @@
 ---
-site_uuid: "9b854d78-163a-4e58-b2f6-41a299bb7b03"
+site_uuid: 9b854d78-163a-4e58-b2f6-41a299bb7b03
 url: https://app.pixverse.ai
 tags:
 - AI-Toolkit
@@ -12,6 +12,6 @@ title: Create breath-taking videos with PixVerse AI
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/272f7a33d73103acd7648d939efb5ff773f0ebe2f1741878cab9ebeb51f83c0b.jpeg
 last_jina_request: '2025-03-09T06:45:07.935Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:19.173Z
+og_last_fetch: '2025-03-07T05:19:19.173Z'
 ---
 

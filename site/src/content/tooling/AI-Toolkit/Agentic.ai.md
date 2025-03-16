@@ -1,5 +1,5 @@
 ---
-site_uuid: "94e38aab-9a68-4fb3-a01e-a1cf82e68dc0"
+site_uuid: 94e38aab-9a68-4fb3-a01e-a1cf82e68dc0
 url: https://www.agentic.ai
 tags:
 - AI-Toolkit
@@ -9,6 +9,6 @@ title: Agentic | AI Players As a Service
 favicon: https://static.wixstatic.com/shapes/1f98e0_b18ba777dbc540a5ac25df4ffeba76aa.svg
 last_jina_request: '2025-03-09T06:45:19.670Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:02.895Z
+og_last_fetch: '2025-03-07T05:19:02.895Z'
 ---
 

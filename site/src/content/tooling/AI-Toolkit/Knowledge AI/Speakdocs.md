@@ -1,5 +1,5 @@
 ---
-site_uuid: "fa61c2c3-7b86-46d8-a0aa-8fb21c52ee2b"
+site_uuid: fa61c2c3-7b86-46d8-a0aa-8fb21c52ee2b
 url: https://speakdocs.io/
 tags:
 - AI-Toolkit
@@ -11,6 +11,6 @@ title: 'SpeakDocs - Intelligent conversations, Instant insights'
 favicon: https://speakdocs.io/favicon.ico
 last_jina_request: '2025-03-09T06:44:58.143Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:18.721Z
+og_last_fetch: '2025-03-07T05:19:18.721Z'
 ---
 [[Knowledge Base AI]], provides the ability to chat or speak with your own [[RAG]] or [[Knowledge Augmented Generation|KAG]] setup. 

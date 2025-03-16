@@ -1,5 +1,5 @@
 ---
-site_uuid: "be235eba-8643-4719-af6a-85e41fdc4d23"
+site_uuid: be235eba-8643-4719-af6a-85e41fdc4d23
 parent_org: "[[Hugging Face]]"
 ---
 

@@ -1,8 +1,8 @@
 ---
-site_uuid: "80961394-c9bd-4679-a963-d37554ca545d"
+site_uuid: 80961394-c9bd-4679-a963-d37554ca545d
 url: https://www.warp.dev
 zinger: The intelligent terminal.
-description:   Become a command line power user on day one. Warp combines AI and your dev
+description: Become a command line power user on day one. Warp combines AI and your dev
 team’s knowledge in one fast, intuitive terminal.
 image: https://leading-bell-3e1c02e64d.media.strapiapp.com/hero_og_1017_0fe1efb432.png
 site_name: Warp
@@ -15,7 +15,7 @@ tags:
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8d73894f4f6f87fe2f4d245c0b83e68bcdcbf71a3e1522fd70aeebdc4c5e1a12.jpeg
 last_jina_request: '2025-03-09T06:45:14.839Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.434Z
+og_last_fetch: '2025-03-07T05:20:56.434Z'
 ---
 
 A [[Terminal Emulators]] that uses [[Code Generator]] for developers.

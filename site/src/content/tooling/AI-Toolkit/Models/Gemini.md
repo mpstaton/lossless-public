@@ -1,5 +1,5 @@
 ---
-site_uuid: "3c870a2b-b3fe-4db9-afb9-6cac06668e94"
+site_uuid: 3c870a2b-b3fe-4db9-afb9-6cac06668e94
 url: https://gemini.google.com
 tags:
 - AI-Toolkit
@@ -10,7 +10,7 @@ title: ‎Gemini - chat to supercharge your ideas
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5b7d54409f2a9b2acd4605ebe227548df996beaca597edf919951a9838e5338e.jpeg
 last_jina_request: '2025-03-09T06:45:04.634Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:18.955Z
+og_last_fetch: '2025-03-07T05:19:18.955Z'
 ---
 
 ## Gemini Deep

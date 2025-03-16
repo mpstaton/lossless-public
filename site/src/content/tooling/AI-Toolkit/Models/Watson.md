@@ -1,5 +1,5 @@
 ---
-site_uuid: "e2155c1c-aff5-41f4-93b7-6b51e3e1561c"
+site_uuid: e2155c1c-aff5-41f4-93b7-6b51e3e1561c
 url: https://www.ibm.com/watson
 parent_org: '[[IBM]]'
 tags:

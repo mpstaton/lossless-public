@@ -1,5 +1,5 @@
 ---
-site_uuid: "5332ff19-cf53-4740-bb3b-c86d695920f0"
+site_uuid: 5332ff19-cf53-4740-bb3b-c86d695920f0
 url: https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/
 zinger: A Generalist Multi-Agent System for Solving Complex Tasks
 parent_org: '[[Microsoft]]'
@@ -13,7 +13,7 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 created_by: '[[Microsoft Research]]'
 last_jina_request: '2025-03-09T06:45:14.415Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:02.891Z
+og_last_fetch: '2025-03-07T05:19:02.891Z'
 ---
 
 A [[Code Generator]] by [[Microsoft Research]]. A [[Python]] [[Packages and Libraries|Package]]

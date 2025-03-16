@@ -1,5 +1,5 @@
 ---
-site_uuid: "33e10d09-7c3b-4f5e-af07-e60e3e06b27d"
+site_uuid: 33e10d09-7c3b-4f5e-af07-e60e3e06b27d
 url: 
 tags: ["Runs-Local", "Open-Source", "AI-Models", "AI-Toolkit", "Models"]
 - Runs-Local

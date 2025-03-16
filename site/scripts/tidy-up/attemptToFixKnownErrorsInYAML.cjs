@@ -10,13 +10,13 @@ const TARGET_FILES = {
   targetDir: "site/src/content/tooling/AI-Toolkit"
 }
 
-const REPORT_FILE = "site/scripts/data-or-content-generation/fixes-needed/errors-processing/Stripped-All-Quotes-from-URL-Properties.md"
+const REPORT_FILE = "site/scripts/data-or-content-generation/fixes-needed/errors-processing/2025-03-16-Corrected-Duplicate-Keys-in-Frontmatter_02.md"
 
 // ================================================
 // Setup by the user
 // ================================================
 
-const issueToAttemptToFix = knownErrorCases.undesiredQuotesPresentInURLProperty
+const issueToAttemptToFix = knownErrorCases.duplicateKeysInFrontmatter
 
 // ================================================
 // Helper Functions
@@ -144,10 +144,10 @@ Files with issue: ${namesOfFilesWithIssue.length}
 Successful corrections: ${namesOfFilesCorrected.length}
 
 ### Files with Issues
-${namesOfFilesWithIssue.map(file => `- [[${path.relative('site/src/content', file)}]]`).join('\n')}
+${namesOfFilesWithIssue.map(file => `[[${path.basename(file, '.md')}]]`)}
 
 ### Files Successfully Corrected
-${namesOfFilesCorrected.map(file => `- [[${path.relative('site/src/content', file)}]]`).join('\n')}
+${namesOfFilesCorrected.map(file => `[[${path.basename(file, '.md')}]]`)}
 `
 
     fs.writeFileSync(REPORT_FILE, reportTemplate);

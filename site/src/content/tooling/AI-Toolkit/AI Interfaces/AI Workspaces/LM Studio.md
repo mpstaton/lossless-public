@@ -1,5 +1,5 @@
 ---
-site_uuid: "afd3b55a-3a5c-4970-ab05-46eaf24805c5"
+site_uuid: afd3b55a-3a5c-4970-ab05-46eaf24805c5
 url: https://lmstudio.ai
 zinger: Your local AI toolkit.
 description: 'Download and run Llama, DeepSeek, Mistral, Phi on your computer.'
@@ -14,7 +14,7 @@ title: 'Discover, download, and run local LLMs'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/6751d818724ffdd34db94495dff2ad1b8f9768ba269fb8575395e2fdc3884040.jpeg
 last_jina_request: '2025-03-09T06:45:14.904Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.748Z
+og_last_fetch: '2025-03-07T05:20:56.748Z'
 ---
 
 https://youtu.be/6X1nOiUVboI?si=lrk6LNXKVjKepkKV

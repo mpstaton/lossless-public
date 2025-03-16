@@ -1,5 +1,5 @@
 ---
-site_uuid: "cd2f42bf-6671-453e-92f1-7f305f6bfe8c"
+site_uuid: cd2f42bf-6671-453e-92f1-7f305f6bfe8c
 url: https://www.langchain.com/langgraph
 tags:
 - AI-Toolkit
@@ -9,11 +9,11 @@ site_name: LangGraph
 title: LangGraph
 favicon: https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/65c50ca4352352dd6a747e69_favicon.png
 og_errors: 'true'
-og_last_error: 2025-03-07T05:36:42.151Z'
+og_last_error: '2025-03-07T05:36:42.151Z'
 og_error_message: 'Error occurred'
 last_jina_request: '2025-03-09T06:45:19.159Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.175Z
+og_last_fetch: '2025-03-07T05:20:56.175Z'
 ---
 
 https://youtu.be/qAF1NjEVHhY?si=Y8WR_QHl3BzoINQ

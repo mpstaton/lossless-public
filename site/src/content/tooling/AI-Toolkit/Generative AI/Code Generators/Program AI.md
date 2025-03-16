@@ -6,11 +6,11 @@ tags:
 - Generative-AI
 - Code-Generators
 og_errors: 'true'
-og_last_error: 2025-03-08T20:39:44.764Z'
+og_last_error: '2025-03-08T20:39:44.764Z'
 og_error_message: 'HTTP error 401'
 last_jina_request: '2025-03-09T06:45:10.327Z'
 jina_error: 'Error occurred'
-image: https://cdn.prod.website-files.com/63e36d09413f83c58ac5d998/6412f00572c3c34d3914aa5d_OpenGraph.jpg'
+image: https://cdn.prod.website-files.com/63e36d09413f83c58ac5d998/6412f00572c3c34d3914aa5d_OpenGraph.jpg
 site_name: Program AI
 title: Program AI | The Future of AI Code Generation
 favicon: https://cdn.prod.website-files.com/64780d5347347bd4fd40e7a3/6580e2014a31f78cb2882440_32.png

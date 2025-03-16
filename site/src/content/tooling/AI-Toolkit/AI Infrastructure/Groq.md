@@ -1,5 +1,5 @@
 ---
-site_uuid: "e993e701-04ad-48cb-bc59-01a00a43bfbd"
+site_uuid: e993e701-04ad-48cb-bc59-01a00a43bfbd
 zinger: Groq is Fast AI Inference
 url: https://groq.com/
 tags:
@@ -11,7 +11,7 @@ title: Groq is Fast AI Inference
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7a536c4a7b6faf0c9b52cba239432629c3758985c167add98ce1b1c770c73e86.jpeg
 last_jina_request: '2025-03-09T06:45:17.383Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.412Z
+og_last_fetch: '2025-03-07T05:20:56.412Z'
 ---
 
 [https://chat.groq.com](https://chat.groq.com/)

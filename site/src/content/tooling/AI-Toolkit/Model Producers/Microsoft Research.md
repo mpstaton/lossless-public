@@ -1,5 +1,5 @@
 ---
-site_uuid: "323f44e6-0c4c-4706-9da1-ce18795faf63"
+site_uuid: 323f44e6-0c4c-4706-9da1-ce18795faf63
 url: https://www.microsoft.com/en-us/research/
 parent_org: '[[Microsoft]]'
 tags:
@@ -11,6 +11,6 @@ title: 'Microsoft Research – Emerging Technology, Computer, and Software Resea
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/058ff9d6c86939fdad25992b4fade7ba6cceb3fd2e2d62dfbbe8a3fa2b7ba12d.jpeg
 last_jina_request: '2025-03-09T06:45:08.271Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:02.933Z
+og_last_fetch: '2025-03-07T05:19:02.933Z'
 ---
 [[Magentic-One]]

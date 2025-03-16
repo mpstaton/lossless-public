@@ -1,5 +1,5 @@
 ---
-site_uuid: "2fa9b5aa-f31b-44bb-aa66-f6952138592e"
+site_uuid: 2fa9b5aa-f31b-44bb-aa66-f6952138592e
 created_by: "[[Meta]]"
 ---
 

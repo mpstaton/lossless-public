@@ -1,5 +1,5 @@
 ---
-site_uuid: "67828fe1-6faf-4426-955b-99848a4114a5"
+site_uuid: 67828fe1-6faf-4426-955b-99848a4114a5
 url: https://trypear.ai
 tags:
 - AI-Toolkit
@@ -12,7 +12,7 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 docs_url: 'https://github.com/thewh1teagle/vibe'
 last_jina_request: '2025-03-09T06:45:13.785Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.436Z
+og_last_fetch: '2025-03-07T05:20:56.436Z'
 ---
 
 https://youtu.be/EJaJBLFM2kI?si=Nq5R9Zc4IZ60JXcU

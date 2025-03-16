@@ -1,5 +1,5 @@
 ---
-site_uuid: "4e5ed788-ace5-4f3c-ab27-18736571c1e8"
+site_uuid: 4e5ed788-ace5-4f3c-ab27-18736571c1e8
 url: https://www.archonlabs.com/
 tags:
 - AI-Toolkit
@@ -9,6 +9,6 @@ title: Archon – Push Every Business Vertical
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/9ec8d380195400916f530ba2269235c0240eee261a78ea2e840ba942e89b7e26.jpeg
 last_jina_request: '2025-03-09T06:44:59.151Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:19:31.550Z
+og_last_fetch: '2025-03-07T05:19:31.550Z'
 ---
 [[Artificial Intelligence|Enterprise AI]]

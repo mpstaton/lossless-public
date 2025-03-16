@@ -1,5 +1,5 @@
 ---
-site_uuid: "bcf85247-fc96-4337-a035-1d8df5141eb9"
+site_uuid: bcf85247-fc96-4337-a035-1d8df5141eb9
 url: https://www.getbind.co/ide
 tags:
 - AI-Toolkit
@@ -16,7 +16,7 @@ jina_error: 'Error occurred'
 og_errors: 'true'
 og_last_error: '2025-03-09T08:16:01.731Z'
 og_error_message: 'Fetch error: fetch failed'
-og_last_fetch: 2025-03-07T05:20:56.440Z
+og_last_fetch: '2025-03-07T05:20:56.440Z'
 ---
 
 https://youtu.be/_0eBjpNdarE?si=TDcZTby0LTbv_tPa

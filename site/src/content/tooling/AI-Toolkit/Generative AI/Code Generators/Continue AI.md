@@ -1,5 +1,5 @@
 ---
-site_uuid: "b007620f-ec24-4a23-b6f2-37b70c831963"
+site_uuid: b007620f-ec24-4a23-b6f2-37b70c831963
 url: https://www.continue.dev/
 tags:
 - AI-Toolkit
@@ -11,7 +11,7 @@ title: Continue
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ae32ba215c4f07be8226cffd1d62f72d6bf7599d88182904e4e37583966be6d1.jpeg
 last_jina_request: '2025-03-09T06:45:09.135Z'
 jina_error: 'Error occurred'
-og_last_fetch: 2025-03-07T05:20:56.439Z
+og_last_fetch: '2025-03-07T05:20:56.439Z'
 ---
 
 <iframe 
