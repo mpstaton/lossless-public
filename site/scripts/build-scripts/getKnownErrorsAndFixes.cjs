@@ -793,28 +793,34 @@ const correctionFunctions = {
 
         // First pass: find all keys and their last occurrence
         lines.forEach((line, index) => {
-            const match = line.trim().match(/^([\w-]+):(.*)$/);
+            const match = line.trim().match(/^([^:\s]+):(.*)$/);
             if (match) {
                 const [, key, value] = match;
-                seenKeys.set(key, { lineNum: index, value: value.trim() });
+                // Only consider it a match if it's an exact key match
+                if (!key.includes('_')) {  // Skip properties that are part of other properties
+                    seenKeys.set(key, { lineNum: index, value: value.trim() });
+                }
             }
         });
 
         // Second pass: remove duplicate keys (keeping only the last instance)
         const linesToRemove = new Set();
         lines.forEach((line, index) => {
-            const match = line.trim().match(/^([\w-]+):/);
+            const match = line.trim().match(/^([^:\s]+):/);
             if (match) {
                 const [, key] = match;
-                const lastInstance = seenKeys.get(key);
-                if (lastInstance && lastInstance.lineNum !== index) {
-                    linesToRemove.add(index);
-                    wasModified = true;
-                    modifications.push({
-                        property: key,
-                        from: line.trim(),
-                        to: `${key}: ${lastInstance.value}`
-                    });
+                // Only consider it a match if it's an exact key match
+                if (!key.includes('_')) {  // Skip properties that are part of other properties
+                    const lastInstance = seenKeys.get(key);
+                    if (lastInstance && lastInstance.lineNum !== index) {
+                        linesToRemove.add(index);
+                        wasModified = true;
+                        modifications.push({
+                            property: key,
+                            from: line.trim(),
+                            to: `${key}: ${lastInstance.value}`
+                        });
+                    }
                 }
             }
         });
