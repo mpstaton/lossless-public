@@ -5,6 +5,7 @@ const fs = require('fs');
 const ERROR_MESSAGE_PROPERTIES = USER_OPTIONS.frontmatterPropertySets.errorMessageProperties;
 const URL_PROPERTIES = USER_OPTIONS.frontmatterPropertySets.urlProperties;
 const PLAIN_TEXT_PROPERTIES = USER_OPTIONS.frontmatterPropertySets.plainTextProperties;
+const TIMESTAMP_PROPERTIES = USER_OPTIONS.frontmatterPropertySets.timestampProperties;
 
 const knownErrorCases = {
 
@@ -99,14 +100,33 @@ const knownErrorCases = {
       // Unbalanced quotes (critical)
       // This is when one or more quotes on either side is not balanced by the other side. 
       // This is a critical error that prevents any script from running.
-   unbalancedQuotesFoundInProperty:     {
+   unbalancedQuotesFoundInProperty: {
          exampleErrors: [
-            "description: 'Supercharge your LLM's understanding of JavaScript/TypeScript codebases.",
-            "last_jina_request: '2025-03-09T06:45:20.458Z'"
+            "description: 'Supercharge your LLM's understanding of JavaScript/TypeScript codebases",  // missing closing single quote
+            "title: \"My awesome title",                                                             // missing closing double quote
+            "summary: This is a summary'",                                                          // only closing quote
+            "description: My description\"",                                                        // only closing quote
+            "tags: ['tag1\", \"tag2']",                                                            // mixed quotes
+            "image: 'undefined: 'https://example.com/image.jpg",                                    // malformed with embedded colon
+            "url: 'https://example.com",                                                           // unbalanced quote in URL
+            "og_screenshot_url: \"https://example.com"                                             // unbalanced quote in URL
          ],
-         properSyntax: "description: 'Supercharge your LLM's understanding of JavaScript/TypeScript codebases.'",
-         detectError: /^([^:]+):[ \t]*(?:(['"])(?:(?!\2)|$)|[^'"]*['"][^'"]*$)/m,
-         messageToLog: 'Contains unbalanced quotes in value',
+         properSyntax: {
+            nonUrl: "description: 'Supercharge your LLM's understanding of JavaScript/TypeScript codebases.'",
+            url: "url: https://example.com"
+         },
+         // Regex patterns to be used in correction function
+         patterns: {
+            propertyAndValue: /^([^:]+):[ \t]*(.+)$/,
+            embeddedColon: /^.*?:\s*['"]?/,
+            undefined: /undefined:?\s*/
+         },
+         // Match if:
+         // 1. Property has unbalanced quotes (opening without matching closing or vice versa)
+         // 2. Property has malformed value with embedded colons
+         // 3. URL property has any quotes (balanced or unbalanced)
+         detectError: /^([^:]+):[ \t]*(?:(?:['"][^'"]*(?:$|[^'"]*$))|(?:[^'"]*['"][^'"]*$)|(?:['"][^'"]*:[ \t]*['"][^\n]*$)|(?:['"]https?:\/\/[^'"]*['"]?))/m,
+         messageToLog: 'Contains unbalanced quotes or incorrectly quoted URL',
          preventsOperations: ['assureYAMLPropertiesCorrect.cjs', 'fetchOpenGraphData.cjs'],
          correctionFunction: 'attemptToFixUnbalancedQuotes',
          isCritical: true
@@ -115,27 +135,34 @@ const knownErrorCases = {
    // Delete all instances of the key, further scripting will add the key back in with the correct value
    duplicateKeysInFrontmatter: { 
       exampleErrors: [
-         "og_last_fetch: 2025-03-07T05:19:02.891Z",
-         "og_last_fetch: '2025-03-09T06:45:20.458Z'"
+         `og_last_fetch: 2025-03-07T05:19:02.891Z
+         og_last_fetch: '2025-03-09T06:45:20.458Z'`,
+         `title: First Title
+         description: Some description
+         title: Second Title`,
+         `  og_last_fetch: 2025-03-07T05:19:02.891Z
+            og_last_fetch: '2025-03-09T06:45:20.458Z'`
       ],
-      //Detect when the same key is used more than once in the frontmatter. 
-      //This is a critical error that prevents any script from running.
-      detectError: /^([\w-]+):[^\n]*\n(?:[\s\S]*?)^\1:/m, 
+      properSyntax: "og_last_fetch: '2025-03-09T06:45:20.458Z'", // only the last instance remains
+      detectError: /^[ \t]*([\w-]+):.*\r?\n(?:.*\r?\n)*?[ \t]*\1:/m,
       messageToLog: 'Duplicate keys in frontmatter',
       preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
-      correctionFunction: 'deleteAllInstancesOfKey',
+      correctionFunction: 'deleteAllInstancesOfDuplicateKeys',
       isCritical: true
    },
 
    unnecessarySpacingFoundInProperty: {
       //YAML syntax is only one space between the colon and the value. 
       //This is a common error that can cause issues in rendering.
+      //Also removes newlines and escape characters from plain text properties
       exampleErrors: [
-         "description:   Supercharge your LLM's understanding of JavaScript/TypeScript codebases."
+         "description:   Supercharge your LLM's understanding of JavaScript/TypeScript codebases.",
+         "description:   Experience the power of advanced text-to-speech synthesis with F5-TTS.\nTransform your text into natural, expressive speech with precision and ease\nusing our cutting-edge AI technology.",
+         "description_site_cp:   The platform where the machine learning community collaborates on models,\ndatasets, and applications."
       ],
-      properSyntax: "description: Supercharge your LLM's understanding of JavaScript/TypeScript codebases.",
-      detectError: /^([^:]+):[ \t]{2,}/m,
-      messageToLog: 'Unnecessary spacing found in property',
+      properSyntax: "description: Experience the power of advanced text-to-speech synthesis with F5-TTS. Transform your text into natural, expressive speech with precision and ease using our cutting-edge AI technology.",
+      detectError: new RegExp(`^(${PLAIN_TEXT_PROPERTIES.join('|')}):[ \\t]{2,}|^(${PLAIN_TEXT_PROPERTIES.join('|')}):[ \\t]*[^\\n]*(\\n|\\r\\n|\\r)[^\\n]*`, 'gm'),
+      messageToLog: 'Fixed spacing and merged multiline text in property',
       preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
       correctionFunction: 'removeUnnecessarySpacing',
       isCritical: false
@@ -209,10 +236,13 @@ const knownErrorCases = {
     exampleErrors: [
       "og_last_error: `'\"2025-03-09T06:45:20.458Z\"",
       "last_jina_request: \"2025-03-09T06:45:20.458Z\"",
-      "og_last_fetch: 2025-03-09T06:45:20.458Z"
+      "og_last_fetch: 2025-03-09T06:45:20.458Z",
+      "og_last_fetch: 2025-03-09T06:45:20.458Z'",
+      "og_last_fetch: '2025-03-09T06:45:20.458Z\"",
+      "og_last_fetch: \"2025-03-09T06:45:20.458Z\""
     ],
     properSyntax: "og_last_error: '2025-03-09T06:45:20.458Z'",
-    detectError: /^(og_last_error|last_jina_request|og_last_fetch):[ \t]*['"]+[ \t]*$/m,
+    detectError: new RegExp(`^(${TIMESTAMP_PROPERTIES.join('|')}):[ \t]*(?![ \t]*'[^']*'[ \t]*$)(.+)$`, 'm'),
     messageToLog: 'Assured only one set of single mark quotes around timestamp properties',
     preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
     correctionFunction: 'assureProperQuotesAroundTimestampProperties',
@@ -563,31 +593,62 @@ const correctionFunctions = {
         let wasModified = false;
         const modifications = [];
 
-        // Use regex from knownErrorCases
-        const errorDetectionRegex = knownErrorCases.blockScalarSyntaxFoundInProperty.detectError;
+        // Process each line
+        const lines = isolatedFrontmatterString.split('\n');
+        const processedLines = [];
+        let inBlockScalar = false;
+        let currentProperty = null;
+        let blockLines = [];
 
-        const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
-        if (propertyMatch) {
-            const [fullMatch, propertyName, valueWithError] = propertyMatch;
-            // Remove block scalar syntax and add single quotes
-            const correctedValue = `${propertyName}: '${valueWithError.trim()}'`;
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            const blockScalarMatch = line.match(knownErrorCases.blockScalarSyntaxFoundInProperty.detectError);
 
-            modifications.push({
-                property: propertyName,
-                from: fullMatch,
-                to: correctedValue
-            });
+            if (blockScalarMatch) {
+                // Start of a block scalar
+                inBlockScalar = true;
+                currentProperty = blockScalarMatch[1];
+                if (blockScalarMatch[3]) {
+                    blockLines.push(blockScalarMatch[3]);
+                }
+            } else if (inBlockScalar && line.match(/^\s+\S/)) {
+                // Continuation of block scalar
+                blockLines.push(line.trim());
+            } else if (inBlockScalar) {
+                // End of block scalar
+                const value = blockLines.join(' ').trim();
+                processedLines.push(`${currentProperty}: ${value}`);
+                wasModified = true;
+                modifications.push({
+                    property: currentProperty,
+                    from: `${currentProperty}: >-\n${blockLines.join('\n')}`,
+                    to: `${currentProperty}: ${value}`
+                });
+                inBlockScalar = false;
+                currentProperty = null;
+                blockLines = [];
+                if (line) processedLines.push(line);
+            } else {
+                processedLines.push(line);
+            }
+        }
 
-            isolatedFrontmatterString = isolatedFrontmatterString.replace(
-                fullMatch,
-                correctedValue
-            );
+        // Handle any remaining block scalar
+        if (inBlockScalar) {
+            const value = blockLines.join(' ').trim();
+            processedLines.push(`${currentProperty}: ${value}`);
             wasModified = true;
+            modifications.push({
+                property: currentProperty,
+                from: `${currentProperty}: >-\n${blockLines.join('\n')}`,
+                to: `${currentProperty}: ${value}`
+            });
         }
 
         if (wasModified) {
+            const newFrontmatter = processedLines.join('\n');
             const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
-                '---\n' + isolatedFrontmatterString + '\n---' +
+                '---\n' + newFrontmatter + '\n---' +
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
@@ -612,31 +673,97 @@ const correctionFunctions = {
         let wasModified = false;
         const modifications = [];
 
-        // Use regex from knownErrorCases
-        const errorDetectionRegex = knownErrorCases.unbalancedQuotesFoundInProperty.detectError;
+        // Get regex patterns from knownErrorCases
+        const { propertyAndValue, embeddedColon, undefined: undefinedPattern } = knownErrorCases.unbalancedQuotesFoundInProperty.patterns;
 
-        const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
-        if (propertyMatch) {
-            const [fullMatch, propertyName, valueWithError] = propertyMatch;
-            // Attempt to fix unbalanced quotes
-            const correctedValue = `${propertyName}: '${valueWithError.trim()}'`;
+        // Process each line
+        const lines = isolatedFrontmatterString.split('\n');
+        const processedLines = lines.map(line => {
+            const propertyMatch = line.match(propertyAndValue);
+            if (!propertyMatch) return line;
 
-            modifications.push({
-                property: propertyName,
-                from: fullMatch,
-                to: correctedValue
-            });
+            const [fullMatch, propertyName, value] = propertyMatch;
+            const trimmedValue = value.trim();
 
-            isolatedFrontmatterString = isolatedFrontmatterString.replace(
-                fullMatch,
-                correctedValue
-            );
-            wasModified = true;
-        }
+            // For URL properties, remove all quotes
+            if (URL_PROPERTIES.includes(propertyName)) {
+                if (trimmedValue.includes("'") || trimmedValue.includes('"')) {
+                    const cleanUrl = trimmedValue.replace(/['"]/g, '').trim();
+                    const correctedValue = `${propertyName}: ${cleanUrl}`;
+                    
+                    if (correctedValue !== line) {
+                        wasModified = true;
+                        modifications.push({
+                            property: propertyName,
+                            from: line,
+                            to: correctedValue
+                        });
+                        return correctedValue;
+                    }
+                }
+                return line;
+            }
+
+            // Handle malformed properties with embedded colons
+            if (trimmedValue.includes(": '") || trimmedValue.includes(': "')) {
+                const cleanValue = trimmedValue
+                    .replace(embeddedColon, '')
+                    .replace(/['"]$/, '')
+                    .replace(undefinedPattern, '')
+                    .trim();
+
+                const correctedValue = `${propertyName}: ${cleanValue}`;
+                wasModified = true;
+                modifications.push({
+                    property: propertyName,
+                    from: line,
+                    to: correctedValue
+                });
+                return correctedValue;
+            }
+
+            // Check for unbalanced quotes
+            const openingSingle = trimmedValue.startsWith("'");
+            const closingSingle = trimmedValue.endsWith("'");
+            const openingDouble = trimmedValue.startsWith('"');
+            const closingDouble = trimmedValue.endsWith('"');
+
+            // If quotes are balanced (both present or both absent), leave it alone
+            if ((openingSingle === closingSingle) && (openingDouble === closingDouble)) {
+                return line;
+            }
+
+            // Determine which quote type to use based on what's present
+            let quoteType = "'"; // default to single quotes
+            if (openingDouble || closingDouble) {
+                quoteType = '"';
+            }
+
+            // Clean the value and reapply the correct quotes
+            const cleanValue = trimmedValue
+                .replace(/^['"]/, '')
+                .replace(/['"]$/, '')
+                .replace(undefinedPattern, '')
+                .trim();
+
+            const correctedValue = `${propertyName}: ${quoteType}${cleanValue}${quoteType}`;
+
+            if (correctedValue !== line) {
+                wasModified = true;
+                modifications.push({
+                    property: propertyName,
+                    from: line,
+                    to: correctedValue
+                });
+                return correctedValue;
+            }
+            return line;
+        });
 
         if (wasModified) {
+            const newFrontmatter = processedLines.join('\n');
             const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
-                '---\n' + isolatedFrontmatterString + '\n---' +
+                '---\n' + newFrontmatter + '\n---' +
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
@@ -651,33 +778,52 @@ const correctionFunctions = {
     // Once detected from the detectError regular expression, 
     // the correction function will attempt to fix the error
     // by deleting all instances of the key
-    async deleteAllInstancesOfKey(markdownFileContent, markdownFilePath) {
+    async deleteAllInstancesOfDuplicateKeys(markdownFileContent, markdownFilePath) {
         const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
         if (!frontmatterData.success) {
             return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
         }
 
-        let isolatedFrontmatterString = frontmatterData.frontmatterString;
         let wasModified = false;
         const modifications = [];
 
-        // Use regex from knownErrorCases
-        const errorDetectionRegex = knownErrorCases.duplicateKeysInFrontmatter.detectError;
+        // Split into lines and process
+        const lines = frontmatterData.frontmatterString.split('\n');
+        const seenKeys = new Map(); // key -> {lineNum, value}
 
-        const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
-        if (propertyMatch) {
-            const [fullMatch, propertyName] = propertyMatch;
-            // Remove all instances of the key
-            isolatedFrontmatterString = isolatedFrontmatterString.replace(
-                fullMatch,
-                ''
-            );
-            wasModified = true;
-        }
+        // First pass: find all keys and their last occurrence
+        lines.forEach((line, index) => {
+            const match = line.trim().match(/^([\w-]+):(.*)$/);
+            if (match) {
+                const [, key, value] = match;
+                seenKeys.set(key, { lineNum: index, value: value.trim() });
+            }
+        });
+
+        // Second pass: remove duplicate keys (keeping only the last instance)
+        const linesToRemove = new Set();
+        lines.forEach((line, index) => {
+            const match = line.trim().match(/^([\w-]+):/);
+            if (match) {
+                const [, key] = match;
+                const lastInstance = seenKeys.get(key);
+                if (lastInstance && lastInstance.lineNum !== index) {
+                    linesToRemove.add(index);
+                    wasModified = true;
+                    modifications.push({
+                        property: key,
+                        from: line.trim(),
+                        to: `${key}: ${lastInstance.value}`
+                    });
+                }
+            }
+        });
 
         if (wasModified) {
+            // Create new content without the duplicate lines
+            const newLines = lines.filter((_, index) => !linesToRemove.has(index));
             const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
-                '---\n' + isolatedFrontmatterString + '\n---' +
+                '---\n' + newLines.join('\n') + '\n---' +
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
@@ -702,31 +848,65 @@ const correctionFunctions = {
       let wasModified = false;
       const modifications = [];
 
-      // Use regex from knownErrorCases
-      const errorDetectionRegex = knownErrorCases.unnecessarySpacingFoundInProperty.detectError;
+      // Function to process a property value
+      function cleanPropertyValue(value) {
+         return value
+            .split(/\r?\n/)         // Split on any type of newline
+            .map(line => line.trim()) // Trim each line
+            .join(' ')              // Join with spaces
+            .replace(/\s+/g, ' ')   // Replace multiple spaces with one
+            .trim();                // Final trim
+      }
 
-      const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
-      if (propertyMatch) {
-         const [fullMatch, propertyName, valueWithError] = propertyMatch;
-         // Remove unnecessary spacing
-         const correctedValue = `${propertyName}: ${valueWithError.trim()}`;
+      // Process each line
+      const lines = isolatedFrontmatterString.split('\n');
+      let currentProperty = null;
+      let currentValue = [];
+      let processedLines = [];
 
-         modifications.push({
-            property: propertyName,
-            from: fullMatch,
-            to: correctedValue
-         });
+      for (let i = 0; i < lines.length; i++) {
+         const line = lines[i];
+         const propMatch = line.match(new RegExp(`^(${PLAIN_TEXT_PROPERTIES.join('|')}):[ \\t]*(.*)$`));
 
-         isolatedFrontmatterString = isolatedFrontmatterString.replace(
-            fullMatch,
-            correctedValue
-         );
+         if (propMatch) {
+            // If we were processing a previous property, clean and add it
+            if (currentProperty) {
+               const cleanValue = cleanPropertyValue(currentValue.join('\n'));
+               processedLines.push(`${currentProperty}: ${cleanValue}`);
+               wasModified = true;
+            }
+
+            // Start new property
+            currentProperty = propMatch[1];
+            currentValue = [propMatch[2]];
+         } else if (currentProperty && line.match(/^\s+\S/)) {
+            // This line is a continuation of the current property
+            currentValue.push(line);
+         } else {
+            // If we were processing a property, finish it
+            if (currentProperty) {
+               const cleanValue = cleanPropertyValue(currentValue.join('\n'));
+               processedLines.push(`${currentProperty}: ${cleanValue}`);
+               wasModified = true;
+               currentProperty = null;
+               currentValue = [];
+            }
+            // Add non-matching line as is
+            processedLines.push(line);
+         }
+      }
+
+      // Handle the last property if any
+      if (currentProperty) {
+         const cleanValue = cleanPropertyValue(currentValue.join('\n'));
+         processedLines.push(`${currentProperty}: ${cleanValue}`);
          wasModified = true;
       }
 
       if (wasModified) {
+         const newFrontmatter = processedLines.join('\n');
          const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
-            '---\n' + isolatedFrontmatterString + '\n---' +
+            '---\n' + newFrontmatter + '\n---' +
             markdownFileContent.slice(frontmatterData.endIndex);
 
          return {

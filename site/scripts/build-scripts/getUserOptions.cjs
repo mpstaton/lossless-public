@@ -63,9 +63,9 @@ const USER_OPTIONS = {
 
     // Frontmatter Property Sets
     frontmatterPropertySets: {
-        urlProperties: ['url', 'image', 'favicon', 'og_screenshot_url', 'og_image', 'github_url', 'github_profile_url', 'youtube_url'],
+        urlProperties: ['url', 'image', 'favicon', 'og_screenshot_url', 'og_image', 'github_url', 'github_profile_url', 'youtube_url', 'og_fetched_url'],
         errorMessageProperties: ['jina_error', 'og_errors', 'og_error_message'],
-        plainTextProperties: ['description', 'og_description', 'zinger', 'site_description_cp'],
+        plainTextProperties: ['description', 'og_description', 'zinger', 'site_description_cp', 'description_site_cp', 'title', 'site_name'],
         timestampProperties: ['og_last_error', 'og_error_message', 'last_jina_request', 'og_last_fetch', 'last_jina_error']
     },
   
