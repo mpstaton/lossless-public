@@ -10,13 +10,13 @@ const TARGET_FILES = {
   targetDir: "site/src/content/tooling/AI-Toolkit"
 }
 
-const REPORT_FILE = "site/scripts/data-or-content-generation/fixes-needed/errors-processing/Added-Quotes-Around-Errors.md"
+const REPORT_FILE = "site/scripts/data-or-content-generation/fixes-needed/errors-processing/Stripped-All-Quotes-from-URL-Properties.md"
 
 // ================================================
 // Setup by the user
 // ================================================
 
-const issueToAttemptToFix = knownErrorCases.unquotedErrorMessageProperty
+const issueToAttemptToFix = knownErrorCases.undesiredQuotesPresentInURLProperty
 
 // ================================================
 // Helper Functions
@@ -30,19 +30,34 @@ const issueToAttemptToFix = knownErrorCases.unquotedErrorMessageProperty
 function findMarkdownFilesRecursively(dirPath) {
   let markdownFiles = [];
   
-  const items = fs.readdirSync(dirPath);
-  
-  for (const item of items) {
-    const fullPath = path.join(dirPath, item);
-    const stat = fs.statSync(fullPath);
+  try {
+    const items = fs.readdirSync(dirPath);
     
-    if (stat.isDirectory()) {
-      // Recursively search subdirectories
-      markdownFiles = markdownFiles.concat(findMarkdownFilesRecursively(fullPath));
-    } else if (item.endsWith('.md')) {
-      // Add markdown files to the array
-      markdownFiles.push(fullPath);
+    for (const item of items) {
+      const fullPath = path.join(dirPath, item);
+      
+      try {
+        const stat = fs.statSync(fullPath);
+        
+        if (stat.isDirectory()) {
+          // Skip .git and node_modules directories
+          if (item === '.git' || item === 'node_modules') continue;
+          
+          // Recursively search subdirectories
+          markdownFiles = markdownFiles.concat(findMarkdownFilesRecursively(fullPath));
+        } else if (item.endsWith('.md')) {
+          // Skip files starting with . (like .DS_Store)
+          if (item.startsWith('.')) continue;
+          
+          // Add markdown files to the array
+          markdownFiles.push(fullPath);
+        }
+      } catch (error) {
+        console.error(`Error processing ${fullPath}:`, error);
+      }
     }
+  } catch (error) {
+    console.error(`Error reading directory ${dirPath}:`, error);
   }
   
   return markdownFiles;
@@ -85,17 +100,23 @@ async function kickoffErrorCorrection() {
         
         if (issueDetected) {
           // Add to files with issues count
-          namesOfFilesWithIssue.push(path.basename(markdownFilePath));
+          namesOfFilesWithIssue.push(markdownFilePath); // Changed to full path for clarity
           
           // Get the correction function name from the issue definition
           const correctionFunctionName = issueToAttemptToFix.correctionFunction;
+          
+          // Check if the correction function exists
+          if (!correctionFunctions[correctionFunctionName]) {
+            console.error(`Error: Correction function '${correctionFunctionName}' not found for ${markdownFilePath}`);
+            continue;
+          }
           
           // Call the appropriate correction function
           const result = await correctionFunctions[correctionFunctionName](markdownContent, markdownFilePath);
           
           if (result.modified) {
             // If file was modified, add to corrected files list
-            namesOfFilesCorrected.push(path.basename(markdownFilePath));
+            namesOfFilesCorrected.push(markdownFilePath); // Changed to full path for clarity
             
             // Write the corrected content back to file
             fs.writeFileSync(markdownFilePath, result.content);
@@ -123,10 +144,10 @@ Files with issue: ${namesOfFilesWithIssue.length}
 Successful corrections: ${namesOfFilesCorrected.length}
 
 ### Files with Issues
-${namesOfFilesWithIssue.map(file => `[[${file}]]`).join(', ')}
+${namesOfFilesWithIssue.map(file => `- [[${path.relative('site/src/content', file)}]]`).join('\n')}
 
 ### Files Successfully Corrected
-${namesOfFilesCorrected.map(file => `[[${file}]]`).join(', ')}
+${namesOfFilesCorrected.map(file => `- [[${path.relative('site/src/content', file)}]]`).join('\n')}
 `
 
     fs.writeFileSync(REPORT_FILE, reportTemplate);

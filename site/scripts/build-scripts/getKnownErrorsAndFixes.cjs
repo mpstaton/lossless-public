@@ -8,33 +8,56 @@ const PLAIN_TEXT_PROPERTIES = USER_OPTIONS.frontmatterPropertySets.plainTextProp
 
 const knownErrorCases = {
 
+    // Example frontmatter section in full with many errors and issuesl:
+    exampleCorruptedFrontmatterSectionInFull:`---
+    site_uuid: 2547def5-fc19-49e2-9c17-e1651c8b6fb5
+    url: https://www.capcut.com/
+    tags:
+    - AI-Toolkit
+    - Generative-AI
+    og_screenshot_url: "https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/080b8ca5fc3b8b4fff4e350e8d4d501f167b01c72862170bfe22b70c4d62041e.jpeg
+    og_errors: 'true
+    og_last_error: 2025-03-07T10:19:45.897Z'
+    og_error_message: "''"HTTP error 401"
+    last_jina_request: "2025-03-09T06:45:08.064Z"
+    jina_error: "Error occurred"
+    og_last_fetch: 2025-03-07T06:12:36.466Z
+    ---`,
+
    // Unquoted error message properties (critical)
-   // Surround the error message property with double mark quotes
+   // Surround the error message property with single mark quotes
    unquotedErrorMessageProperty: {
       exampleErrors: [
          "HTTP error!",
          "Error occurred 404"
       ],
       properSyntax: "'Error occurred 404'", // only one set of single mark quotes. 
-      detectError: /^(error_message|og_errors|jine_error|validation_errors):[ \t]*[^"'][^"\n]+$/m,
+      detectError: new RegExp(`^(${ERROR_MESSAGE_PROPERTIES.join('|')}):[ \t]*(?![ \t]*'[^']*'[ \t]*$)(.+)$`, 'm'),
       messageToLog: 'Contains unquoted error message property',
       preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
-      correctionFunction: 'surroundErrorMessagePropertyWithSingleMarkQuotes',
+      correctionFunction: 'surroundErrorMessagePropertiesWithSingleMarkQuotes',
       isCritical: true
    },
 
    // Improper character set surrounding error message
    // This is a critical error that prevents any script from running
-   // Remove the improper character set and add double mark quotes
+   // Remove the improper character set and add single mark quotes
    improperCharacterSetSurroundingErrorMessage: {
       exampleErrors: [
-         "\'\"Error occurred 404\"\'"
+         "jina_error: \"Error occurred 404\"",           // double quotes
+         "jina_error: 'Error occurred 404'",             // single quotes (when not the only quotes)
+         "jina_error: \"'Error occurred 404'\"",         // nested quotes
+         "jina_error: '\"Error occurred 404\"'",         // nested quotes reversed
+         "jina_error: \"\"\"Error occurred 404\"\"\"",   // multiple double quotes
+         "jina_error: '''Error occurred 404'''",         // multiple single quotes
+         "jina_error: '\"\"Error occurred 404\"\"'",     // mixed multiple quotes
+         "jina_error: \"''Error occurred 404''\"",       // mixed multiple quotes reversed
       ],
-      properSyntax: "'Error occurred 404'", // only one set of single mark quotes. 
-      detectError: /^["']{2,}|["']{2,}$|^"|"$/m,
+      properSyntax: "jina_error: 'Error occurred 404'", // only one set of single mark quotes
+      detectError: new RegExp(`^(${ERROR_MESSAGE_PROPERTIES.join('|')}):[ \t]*(?:["'].*["']|["'].*|.*["'])[ \t]*$`, 'm'),
       messageToLog: 'Error message with improperly formatted character set',
       preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
-      correctionFunction: 'removeImproperCharacterSetThenAddSingleMarkQuotes',
+      correctionFunction: 'removeImproperCharacterSetAddSingleMarkQuotes',
       isCritical: true
    },
 
@@ -44,11 +67,16 @@ const knownErrorCases = {
    undesiredQuotesPresentInURLProperty: {
       exampleErrors: [
          `""'https://www.archonlabs.com/'""`, 
-         "\"https://cdn.prod.website-files.com/66c5c2bab55d37d8e443322b/66cc6d2f0f6b41b86ea33f83_archon-og.jpg\""
-      ], //any kind of quote on eitherside of a url witll throw errors in several crucial build scripts.  
-      detectError: /^(https?:\/\/[^\s"']+)["']+|["']+(https?:\/\/[^\s"']+)$/m,
-      propertSyntax: "https://www.archonlabs.com/", //only the URL, NO QUOTES, quotes will later throw errors. The quotes are in this proper esyntax but only to demarcate a string. 
-      messageToLog: '',
+         "\"https://cdn.prod.website-files.com/66c5c2bab55d37d8e443322b/66cc6d2f0f6b41b86ea33f83_archon-og.jpg\"",
+         `""https://example.com""`,
+         `"'https://example.com'"`,
+         `" 'https://example.com' "`,
+         `url: ""'https://www.numbersstation.ai'""`,
+         `favicon: ""https://www.numbersstation.ai/wp-content/uploads/2024/08/cropped-logo-3-192x192.png""`
+      ],
+      detectError: new RegExp(`^(${URL_PROPERTIES.join('|')}):[ \t]*["'\`]`, 'gm'),
+      properSyntax: "url: https://www.archonlabs.com/", //only the URL, NO QUOTES
+      messageToLog: 'Removed quotes from URL property',
       preventsOperations: ['assureYAMLPropertiesCorrect.cjs', 'fetchOpenGraphData.cjs', 'trackVideosInRegistry.cjs'],
       correctionFunction: 'removeAnyQuoteCharactersfromEitherOrBothSidesOfURL',
       isCritical: true
@@ -158,15 +186,39 @@ const knownErrorCases = {
       exampleErrors: [
          'uuid: "123e4567-e89b-12d3-a456-426614174000"',
          "uuid: '123e4567-e89b-12d3-a456-426614174000'",
+         'site_uuid: "41dc16a2-1ae7-492f-a3b1-f6362ff61ffc"'
       ],
       properSyntax: "uuid: 123e4567-e89b-12d3-a456-426614174000",
-      detectError: /^(uuid+):[ \t]*['"]+[ \t]*$/m,
+      detectError: /^((?:site_)?uuid):[ \t]*["'\`]+([\w-]+)["'\`]+$/m,
       messageToLog: 'UUID property with quotes',
       preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
       correctionFunction: 'removeQuotesFromUUIDProperty',
       isCritical: false
+   },
+
+   // assure only one single set of single mark quotes around any Timestamp property
+   // There can be any number of timestamp properties in the 
+   // Timestamp property values may have no quotes, 
+   // or may have double quotes, or may have mixed quotes or unclosing quotes. It doesn't matter.
+   // If there are no quotes, then add one single set of single mark quotes.
+   // Detect any variation of existing quotes before and aftera valid timestamp syntax 
+   // and remove all of them and replace them with one single set of single mark quotes.
+   // If there is one set of single mark quotes, then leave it alone and add an "alreadyCorrect" message.
+   // In the reporting also report the number of timestamps alreadyCorrect. 
+   assureOnlyOneSetOfSingleMarkQuotesAroundTimestampProperties: {
+    exampleErrors: [
+      "og_last_error: `'\"2025-03-09T06:45:20.458Z\"",
+      "last_jina_request: \"2025-03-09T06:45:20.458Z\"",
+      "og_last_fetch: 2025-03-09T06:45:20.458Z"
+    ],
+    properSyntax: "og_last_error: '2025-03-09T06:45:20.458Z'",
+    detectError: /^(og_last_error|last_jina_request|og_last_fetch):[ \t]*['"]+[ \t]*$/m,
+    messageToLog: 'Assured only one set of single mark quotes around timestamp properties',
+    preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
+    correctionFunction: 'assureProperQuotesAroundTimestampProperties',
+    isCritical: false
    }
-}
+};
 
 // ===================================
 // Helper Functions
@@ -179,19 +231,38 @@ const helperFunctions = {
      * @returns {Object} Object containing frontmatter string and indices
      */
     extractFrontmatter(markdownFileContent) {
-        const frontmatterMatch = markdownFileContent.match(/^---\n([\s\S]*?)\n---/m);
-        if (!frontmatterMatch) {
+        // First check for opening delimiter
+        const openingMatch = markdownFileContent.match(/^---\n/m);
+        if (!openingMatch) {
             return {
-                success: false,
-                error: 'No frontmatter found'
+                success: true, // Still return success but with empty frontmatter
+                frontmatterString: '',
+                startIndex: 0,
+                endIndex: 0,
+                noFrontmatter: true // Flag to indicate no frontmatter found
             };
         }
 
+        // Look for closing delimiter only after the opening delimiter
+        const remainingContent = markdownFileContent.slice(openingMatch.index + 4); // Skip past opening ---\n
+        const closingMatch = remainingContent.match(/\n---/m);
+        
+        // If no closing delimiter found, treat everything after opening as frontmatter
+        // This allows us to still attempt fixes on malformed frontmatter
+        const endIndex = closingMatch 
+            ? openingMatch.index + 4 + closingMatch.index + closingMatch[0].length
+            : markdownFileContent.length;
+        
+        const frontmatterString = closingMatch
+            ? remainingContent.slice(0, closingMatch.index)
+            : remainingContent;
+
         return {
             success: true,
-            frontmatterString: frontmatterMatch[1],
-            startIndex: frontmatterMatch.index,
-            endIndex: frontmatterMatch.index + frontmatterMatch[0].length
+            frontmatterString,
+            startIndex: openingMatch.index,
+            endIndex,
+            hasClosingDelimiter: !!closingMatch
         };
     },
 
@@ -241,16 +312,40 @@ const helperFunctions = {
 
         for (const markdownFilePath of markdownFilePaths) {
             try {
+                // Process each file independently
                 const markdownFileContent = fs.readFileSync(markdownFilePath, 'utf8');
+                
+                // Extract frontmatter (this will work even if there's no frontmatter or no closing delimiter)
+                const frontmatterData = this.extractFrontmatter(markdownFileContent);
+                
+                // Skip files with no frontmatter but don't treat it as an error
+                if (frontmatterData.noFrontmatter) {
+                    processingResults.push(this.createSuccessMessage(markdownFilePath, false));
+                    continue;
+                }
+
+                // Apply the correction function
                 const result = await correctionFunction(markdownFileContent, markdownFilePath);
                 
-                if (result.modified) {
-                    fs.writeFileSync(markdownFilePath, result.content);
+                // If the file was modified, write the changes
+                if (result.modified && result.content) {
+                    try {
+                        fs.writeFileSync(markdownFilePath, result.content);
+                    } catch (writeError) {
+                        // If we can't write the file, add it as an error but continue processing
+                        result.errors.push(`Failed to write changes: ${writeError.message}`);
+                        result.modified = false;
+                        delete result.content;
+                    }
                 }
                 
                 processingResults.push(result);
             } catch (error) {
-                processingResults.push(this.createErrorMessage(markdownFilePath, error.message));
+                // Log the error but continue processing other files
+                processingResults.push(this.createErrorMessage(
+                    markdownFilePath,
+                    `Error processing file: ${error.message}`
+                ));
             }
         }
 
@@ -269,25 +364,27 @@ const correctionFunctions = {
     // Once detected from the detectError regular expression, 
     // the correction function will attempt to fix the error
     // by surrounding error messages with a ' single mark quote on both sides 
-    async surroundErrorMessagePropertyWithSingleMarkQuotes(markdownContent, markdownFilePath) {
+    async surroundErrorMessagePropertiesWithSingleMarkQuotes(markdownContent, markdownFilePath) {
+        let wasModified = false;
+        const modifications = [];
         const frontmatterData = helperFunctions.extractFrontmatter(markdownContent);
+        
         if (!frontmatterData.success) {
             return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
         }
 
         let isolatedFrontmatterString = frontmatterData.frontmatterString;
-        let wasModified = false;
-        const modifications = [];
-
-        // Use regex from knownErrorCases
-        const errorDetectionRegex = knownErrorCases.unquotedErrorMessageProperty.detectError;
         
         // Process each error message property
         for (const errorProperty of ERROR_MESSAGE_PROPERTIES) {
-            const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
+            const propertyRegex = new RegExp(`^(${errorProperty}):[ \t]*(?![ \t]*'[^']*'[ \t]*$)(.+)$`, 'm');
+            const propertyMatch = isolatedFrontmatterString.match(propertyRegex);
+            
             if (propertyMatch) {
                 const [fullMatch, propertyName, valueWithError] = propertyMatch;
-                const correctedValue = `${propertyName}: '${valueWithError.trim()}'`;
+                // Clean the value by removing any existing quotes and trimming
+                const cleanValue = valueWithError.replace(/['"]/g, '').trim();
+                const correctedValue = `${propertyName}: '${cleanValue}'`;
                 
                 modifications.push({
                     property: propertyName,
@@ -332,27 +429,36 @@ const correctionFunctions = {
         let wasModified = false;
         const modifications = [];
 
-        // Use regex from knownErrorCases
-        const errorDetectionRegex = knownErrorCases.improperCharacterSetSurroundingErrorMessage.detectError;
+        // Process each error message property
+        for (const errorProperty of ERROR_MESSAGE_PROPERTIES) {
+            const propertyRegex = new RegExp(`^(${errorProperty}):[ \t]*(?:["'].*["']|["'].*|.*["'])[ \t]*$`, 'm');
+            const propertyMatch = isolatedFrontmatterString.match(propertyRegex);
+            
+            if (propertyMatch) {
+                const [fullMatch, propertyName] = propertyMatch;
+                // Extract the value part (everything after the colon)
+                const valueWithQuotes = fullMatch.slice(fullMatch.indexOf(':') + 1).trim();
+                
+                // Clean the value by removing all quotes and trimming
+                const cleanValue = valueWithQuotes
+                    .replace(/^['"]+|['"]+$/g, '') // Remove quotes from start/end
+                    .replace(/['"]/g, '')          // Remove any remaining quotes
+                    .trim();
 
-        const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
-        if (propertyMatch) {
-            const [fullMatch, propertyName, valueWithError] = propertyMatch;
-            // Remove all quotes and add single quotes
-            const cleanValue = valueWithError.replace(/["']/g, '').trim();
-            const correctedValue = `${propertyName}: '${cleanValue}'`;
+                const correctedValue = `${propertyName}: '${cleanValue}'`;
 
-            modifications.push({
-                property: propertyName,
-                from: fullMatch,
-                to: correctedValue
-            });
+                modifications.push({
+                    property: propertyName,
+                    from: fullMatch,
+                    to: correctedValue
+                });
 
-            isolatedFrontmatterString = isolatedFrontmatterString.replace(
-                fullMatch,
-                correctedValue
-            );
-            wasModified = true;
+                isolatedFrontmatterString = isolatedFrontmatterString.replace(
+                    fullMatch,
+                    correctedValue
+                );
+                wasModified = true;
+            }
         }
 
         if (wasModified) {
@@ -382,32 +488,57 @@ const correctionFunctions = {
         let wasModified = false;
         const modifications = [];
 
-        // Use regex from knownErrorCases
-        const errorDetectionRegex = knownErrorCases.undesiredQuotesPresentInURLProperty.detectError;
+        // Function to process a single line
+        function processLine(line) {
+            // Check if this is a URL property line
+            const urlPropMatch = line.match(new RegExp(`^(${URL_PROPERTIES.join('|')}):[ \t]*(.+)$`));
+            if (!urlPropMatch) return line;
 
-        const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
-        if (propertyMatch) {
-            const [fullMatch, propertyName, valueWithError] = propertyMatch;
-            // Remove all quotes and add single quotes
-            const cleanValue = valueWithError.replace(/["']/g, '').trim();
-            const correctedValue = `${propertyName}: '${cleanValue}'`;
+            const [fullMatch, propName, value] = urlPropMatch;
+            
+            // Extract URL by removing all quotes and spaces around it
+            let cleanValue = value;
+            let hadQuotes = false;
 
-            modifications.push({
-                property: propertyName,
-                from: fullMatch,
-                to: correctedValue
-            });
+            // Keep removing quotes until no more quotes exist
+            let previousValue;
+            do {
+                previousValue = cleanValue;
+                cleanValue = cleanValue
+                    .replace(/^[\s"'`]+/, '') // Remove leading quotes and spaces
+                    .replace(/[\s"'`]+$/, '') // Remove trailing quotes and spaces
+                    .replace(/["'`]/g, '');   // Remove any remaining quotes
+                
+                if (cleanValue !== previousValue) {
+                    hadQuotes = true;
+                }
+            } while (cleanValue !== previousValue);
 
-            isolatedFrontmatterString = isolatedFrontmatterString.replace(
-                fullMatch,
-                correctedValue
-            );
-            wasModified = true;
+            if (hadQuotes) {
+                return `${propName}: ${cleanValue}`;
+            }
+            return line;
         }
 
+        // Process each line
+        const lines = isolatedFrontmatterString.split('\n');
+        const processedLines = lines.map(line => {
+            const processed = processLine(line.trim());
+            if (processed !== line.trim()) {
+                wasModified = true;
+                modifications.push({
+                    property: line.split(':')[0],
+                    from: line,
+                    to: processed
+                });
+            }
+            return processed;
+        });
+
         if (wasModified) {
+            const newFrontmatter = processedLines.join('\n');
             const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
-                '---\n' + isolatedFrontmatterString + '\n---' +
+                '---\n' + newFrontmatter + '\n---' +
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
@@ -620,13 +751,11 @@ const correctionFunctions = {
       let wasModified = false;
       const modifications = [];
 
-      // Use regex from knownErrorCases
       const errorDetectionRegex = knownErrorCases.brokenUrlAcrossMultipleLines.detectError;
 
       const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
       if (propertyMatch) {
          const [fullMatch, propertyName, valueWithError] = propertyMatch;
-         // Remove broken url and add correct url
          const correctedValue = `${propertyName}: '${valueWithError.trim()}'`;
 
          modifications.push({
@@ -713,14 +842,13 @@ const correctionFunctions = {
       let wasModified = false;
       const modifications = [];
 
-      // Use regex from knownErrorCases
-      const errorDetectionRegex = knownErrorCases.uuidPropertyWithQuotes.detectError;
-
-      const propertyMatch = isolatedFrontmatterString.match(errorDetectionRegex);
+      const propertyRegex = /^((?:site_)?uuid):[ \t]*["'\`]+([\w-]+)["'\`]+$/m;
+      const propertyMatch = isolatedFrontmatterString.match(propertyRegex);
+      
       if (propertyMatch) {
-         const [fullMatch, propertyName, valueWithError] = propertyMatch;
+         const [fullMatch, propertyName, uuid] = propertyMatch;
          // Remove quotes from UUID property
-         const correctedValue = `${propertyName}: ${valueWithError.trim()}`;
+         const correctedValue = `${propertyName}: ${uuid}`;
 
          modifications.push({
             property: propertyName,
@@ -747,7 +875,73 @@ const correctionFunctions = {
       }
 
       return helperFunctions.createSuccessMessage(markdownFilePath, false);
+   },
+
+   // Once detected from the detectError regular expression,
+   // the correction function will attempt to fix the error
+   // by ensuring timestamp properties have exactly one set of single quotes
+   async assureProperQuotesAroundTimestampProperties(markdownFileContent, markdownFilePath) {
+      const frontmatterData = helperFunctions.extractFrontmatter(markdownFileContent);
+      if (!frontmatterData.success) {
+         return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
+      }
+
+      let isolatedFrontmatterString = frontmatterData.frontmatterString;
+      let wasModified = false;
+      const modifications = [];
+      const alreadyCorrect = [];
+
+      const errorDetectionRegex = knownErrorCases.assureOnlyOneSetOfSingleMarkQuotesAroundTimestampProperties.detectError;
+      const matches = [...isolatedFrontmatterString.matchAll(new RegExp(errorDetectionRegex.source, 'gm'))];
+      
+      for (const match of matches) {
+         const [fullMatch, propertyName] = match;
+         const valueWithQuotes = fullMatch.slice(propertyName.length + 1).trim();
+         const cleanValue = valueWithQuotes
+            .replace(/^[`'"]+/g, '')
+            .replace(/[`'"]+$/g, '')
+            .replace(/[`'"]/g, '')
+            .trim();
+
+         if (valueWithQuotes === `'${cleanValue}'`) {
+            alreadyCorrect.push(propertyName);
+            continue;
+         }
+
+         const correctedValue = `${propertyName}: '${cleanValue}'`;
+         modifications.push({
+            property: propertyName,
+            from: fullMatch,
+            to: correctedValue
+         });
+
+         isolatedFrontmatterString = isolatedFrontmatterString.replace(
+            fullMatch,
+            correctedValue
+         );
+         wasModified = true;
+      }
+
+      if (wasModified || alreadyCorrect.length > 0) {
+         const correctedContent = wasModified ? (
+            markdownFileContent.slice(0, frontmatterData.startIndex) +
+            '---\n' + isolatedFrontmatterString + '\n---' +
+            markdownFileContent.slice(frontmatterData.endIndex)
+         ) : markdownFileContent;
+
+         return {
+            ...helperFunctions.createSuccessMessage(markdownFilePath, wasModified, modifications),
+            content: correctedContent,
+            alreadyCorrect
+         };
+      }
+
+      return helperFunctions.createSuccessMessage(markdownFilePath, false);
    }
 };
 
-module.exports = { knownErrorCases, correctionFunctions, helperFunctions };
+module.exports = {
+   knownErrorCases,
+   helperFunctions,
+   correctionFunctions
+};
