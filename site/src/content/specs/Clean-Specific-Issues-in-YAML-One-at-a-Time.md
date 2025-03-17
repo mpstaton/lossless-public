@@ -1,6 +1,8 @@
 ---
 title: Clean Specific Issues in YAML One at a Time
 date: 2025-03-16
+author: "Michael Staton"
+generated_with: "Windsurf IDE with Claude 3.5 Sonnet"
 tags:
 - Scripts
 - YAML

@@ -15,12 +15,23 @@ READ THIS ENTIRE FILE AND ALL FILES MENTIONED IN THIS FILE BEFORE BEGINNING.
 
 The code we will write the specification for is in the following paths:
 
-`site/scripts/tidy-up/tidy-one-property/convertMultiLineStringsToSingleLineStrings.cjs`
-`site/scripts/tidy-up/tidy-one-property/convertKeyNamesInYAML.cjs`
+`site/scripts/build-scripts/trackMarkdownFilesInRegistry.cjs`
+`site/src/content/data/markdown-content-registry.json`
+
+
+Mention supporting work such as:
+`site/src/content/lost-in-public/prompting/Create-a-Content-Registry-Script.md`
+`site/src/content/data/markdown-content-registry-model.json`
+`site/scripts/tidy-up/tidy-one-property/listAllUsedPropertyNamesEverywhere.cjs`
+`site/src/content/lost-in-public/prompting/Meticulous-Constraints-for-Every-Prompt.md`
+
+
 
 Look to previous examples.  
 
 `site/src/content/specs/Get-Known-Errors-and-Fixes.md`
+`site/src/content/specs/Clean-Specific-Issues-in-YAML-One-at-a-Time.md`
+`site/src/content/specs/Cases-and-Corrections-for-YAML-Content-Wide.md`
 
 ***
 
@@ -49,4 +60,5 @@ Being longwinded and thorough, so long as the layout is easy to follow, is bette
 
 # Now, write the specification in the pre-created Markdown file:
 
-`site/src/content/specs/Clean-Specific-Issues-in-YAML-One-at-a-Time.md`
+I HAVE ALREADY CREATED THE FILE, JUST WRITE TO IT.
+`site/src/content/specs/Create-a-Content-Registry-for-Markdown-Files.md`

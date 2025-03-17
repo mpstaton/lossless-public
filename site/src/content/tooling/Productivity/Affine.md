@@ -1,6 +1,7 @@
 ---
 site_uuid: 32e4500c-1d6b-40ac-8524-b566904e5dc5
 url: https://affine.pro
+parent_org: Affine Foundation
 tags:
 - Productivity
 - Advanced-Documents

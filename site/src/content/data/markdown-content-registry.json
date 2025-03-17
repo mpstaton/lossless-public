@@ -1,0 +1,2900 @@
+{
+  "documents": {
+    "32e4500c-1d6b-40ac-8524-b566904e5dc5": {
+      "referredToAs": {
+        "primaryFileName": "Affine",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://affine.pro"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Affine.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": [
+          {
+            "type": "parentOrganization",
+            "reference": "[[Affine Foundation]]"
+          }
+        ]
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.825Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.825Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.925Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://affine.pro",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.132Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://affine.pro",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.132Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "Affine Foundation",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.240Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://affine.pro",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.240Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "Affine Foundation",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.240Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[Affine Foundation]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.138Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://affine.pro",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.138Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "Affine Foundation",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.138Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[Affine Foundation]]",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.137Z",
+          "last_modified": "2025-03-17T06:09:16.138Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "32e4500c-1d6b-40ac-8524-b566904e5dc5"
+    },
+    "196f796c-01b8-4033-9d8d-382cd2624107": {
+      "referredToAs": {
+        "primaryFileName": "Airtable",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Airtable.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.824Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.824Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "196f796c-01b8-4033-9d8d-382cd2624107"
+    },
+    "07974b57-8cdf-4625-9109-e37cea5e92a6": {
+      "referredToAs": {
+        "primaryFileName": "Anytype",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Anytype.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.824Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.824Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "07974b57-8cdf-4625-9109-e37cea5e92a6"
+    },
+    "7be2c4e0-bd72-48fd-8a78-82b68485a761": {
+      "referredToAs": {
+        "primaryFileName": "Asana",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://asana.com/"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Asana.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.824Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.824Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.926Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://asana.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.132Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://asana.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.241Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://asana.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.139Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://asana.com/",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "7be2c4e0-bd72-48fd-8a78-82b68485a761"
+    },
+    "c1dc5277-fbdd-4d5d-83f4-675574cd43ef": {
+      "referredToAs": {
+        "primaryFileName": "Bricks",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://www.thebricks.com/"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Bricks.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.824Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.824Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.926Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.thebricks.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.133Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.thebricks.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.241Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.thebricks.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.139Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.thebricks.com/",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "c1dc5277-fbdd-4d5d-83f4-675574cd43ef"
+    },
+    "f7fd3403-8c06-42c6-b9d2-aa1efba856f5": {
+      "referredToAs": {
+        "primaryFileName": "Bubbles",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Bubbles.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.823Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.823Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "f7fd3403-8c06-42c6-b9d2-aa1efba856f5"
+    },
+    "ced5bc2f-723c-4a6f-af09-2ef9078d6052": {
+      "referredToAs": {
+        "primaryFileName": "ClickUp",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/ClickUp.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.823Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.823Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "ced5bc2f-723c-4a6f-af09-2ef9078d6052",
+      "ogLastFetchError": "2025-03-07T05:36:38.596Z"
+    },
+    "0b14feb0-3359-4328-89fe-c63cd954f921": {
+      "referredToAs": {
+        "primaryFileName": "CraftDocs",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://www.craft.do"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/CraftDocs.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.823Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.823Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.926Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.craft.do",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.133Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.craft.do",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.241Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.craft.do",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.139Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.craft.do",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "0b14feb0-3359-4328-89fe-c63cd954f921"
+    },
+    "cddc683c-828c-4d2a-a628-4ff12e595599": {
+      "referredToAs": {
+        "primaryFileName": "Dart",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://www.itsdart.com/"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Dart.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.823Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.823Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.926Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.itsdart.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.133Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.itsdart.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.241Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.itsdart.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.139Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.itsdart.com/",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "cddc683c-828c-4d2a-a628-4ff12e595599"
+    },
+    "2547def5-fc19-49e2-9c17-e1651c8b6fb5": {
+      "referredToAs": {
+        "primaryFileName": "Eloqua",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://www.oracle.com/cx/marketing/campaign-management/"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Eloqua.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-17T05:14:27.000Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-17T05:14:27.000Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.926Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.oracle.com/cx/marketing/campaign-management/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.133Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.oracle.com/cx/marketing/campaign-management/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.241Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.oracle.com/cx/marketing/campaign-management/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.139Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.oracle.com/cx/marketing/campaign-management/",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "2547def5-fc19-49e2-9c17-e1651c8b6fb5"
+    },
+    "6007069b-ce50-4642-ac6f-6a958233ec61": {
+      "referredToAs": {
+        "primaryFileName": "Excel",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Excel.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": [
+          {
+            "type": "parentOrganization",
+            "reference": "[[[[Microsoft]]]]"
+          }
+        ]
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-17T06:06:42.926Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.133Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.242Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Microsoft]]]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.139Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.140Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Microsoft]]]]",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.139Z",
+          "last_modified": "2025-03-17T06:09:16.139Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "6007069b-ce50-4642-ac6f-6a958233ec61",
+      "parentOrganization": "[[Microsoft]]"
+    },
+    "9a598f57-1fa9-4365-97f3-2edf50840034": {
+      "referredToAs": {
+        "primaryFileName": "Fathom AI",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Fathom AI.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.822Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.822Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.140Z",
+          "last_modified": "2025-03-17T06:09:16.140Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "9a598f57-1fa9-4365-97f3-2edf50840034"
+    },
+    "7d6780de-f52a-4b3d-89f9-0fad1408a5c8": {
+      "referredToAs": {
+        "primaryFileName": "Jitsi",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Jitsi.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.822Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.822Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.140Z",
+          "last_modified": "2025-03-17T06:09:16.140Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "7d6780de-f52a-4b3d-89f9-0fad1408a5c8"
+    },
+    "98071106-a64d-469e-8ee4-3b990254f6cc": {
+      "referredToAs": {
+        "primaryFileName": "Loom",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://www.loom.com/"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Loom.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": [
+          {
+            "type": "parentOrganization",
+            "reference": "[[[[Atlassian]]]]"
+          }
+        ]
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.821Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.821Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.927Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.loom.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.927Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Atlassian]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.134Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.loom.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.134Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Atlassian]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.loom.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Atlassian]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Atlassian]]]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.140Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://www.loom.com/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.140Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Atlassian]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.140Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Atlassian]]]]",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.140Z",
+          "last_modified": "2025-03-17T06:09:16.140Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "98071106-a64d-469e-8ee4-3b990254f6cc",
+      "parentOrganization": "[[Atlassian]]",
+      "ogLastFetchError": "2025-03-07T05:36:38.559Z"
+    },
+    "e7f96e0f-6ed1-412e-8718-460c3ea3aee6": {
+      "referredToAs": {
+        "primaryFileName": "Mattermost",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "'https://mattermost.com/'"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Mattermost.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.821Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.821Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.927Z",
+          "type": "metadata_update",
+          "action": "version_increment",
+          "details": {
+            "previous_version": 1,
+            "new_version": 2,
+            "reason": "Content changes detected",
+            "changes": {
+              "urls": {
+                "siteUrl": {
+                  "previous": "\"'https://mattermost.com/'\"",
+                  "new": "'https://mattermost.com/'"
+                }
+              },
+              "primaryFileName": null
+            }
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.927Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "'https://mattermost.com/'",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.134Z",
+          "type": "metadata_update",
+          "action": "version_increment",
+          "details": {
+            "previous_version": 2,
+            "new_version": 3,
+            "reason": "Content changes detected",
+            "changes": {
+              "urls": {
+                "siteUrl": {
+                  "previous": "\"'https://mattermost.com/'\"",
+                  "new": "'https://mattermost.com/'"
+                }
+              },
+              "primaryFileName": null
+            }
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.134Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "'https://mattermost.com/'",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "metadata_update",
+          "action": "version_increment",
+          "details": {
+            "previous_version": 3,
+            "new_version": 4,
+            "reason": "Content changes detected",
+            "changes": {
+              "urls": {
+                "siteUrl": {
+                  "previous": "\"'https://mattermost.com/'\"",
+                  "new": "'https://mattermost.com/'"
+                }
+              },
+              "primaryFileName": null
+            }
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "'https://mattermost.com/'",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.140Z",
+          "type": "metadata_update",
+          "action": "version_increment",
+          "details": {
+            "previous_version": 4,
+            "new_version": 5,
+            "reason": "Content changes detected",
+            "changes": {
+              "urls": {
+                "siteUrl": {
+                  "previous": "\"'https://mattermost.com/'\"",
+                  "new": "'https://mattermost.com/'"
+                }
+              },
+              "primaryFileName": null
+            }
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.140Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "'https://mattermost.com/'",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.140Z",
+          "last_modified": "2025-03-17T06:09:16.140Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "e7f96e0f-6ed1-412e-8718-460c3ea3aee6"
+    },
+    "a0b9f5fc-c295-4e03-bdf0-60a4c6a9ae52": {
+      "referredToAs": {
+        "primaryFileName": "Mem.ai",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Mem.ai.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-14T05:42:20.585Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-14T05:42:20.585Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.140Z",
+          "last_modified": "2025-03-17T06:09:16.140Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "a0b9f5fc-c295-4e03-bdf0-60a4c6a9ae52"
+    },
+    "10dc429e-318a-4e07-89d9-8c3fb12b7362": {
+      "referredToAs": {
+        "primaryFileName": "Microsoft Loop",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Microsoft Loop.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": [
+          {
+            "type": "parentOrganization",
+            "reference": "[[[[Microsoft]]]]"
+          }
+        ]
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.821Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.821Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.927Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.134Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Microsoft]]]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Microsoft]]]]",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.140Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "10dc429e-318a-4e07-89d9-8c3fb12b7362",
+      "parentOrganization": "[[Microsoft]]"
+    },
+    "bc4d3894-6570-4810-98dc-84ce7825e8c0": {
+      "referredToAs": {
+        "primaryFileName": "Monday",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Monday.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.821Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.821Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "bc4d3894-6570-4810-98dc-84ce7825e8c0"
+    },
+    "b7364d8a-6871-4352-b7bc-7c8e7ef5acdf": {
+      "referredToAs": {
+        "primaryFileName": "Notion",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Notion.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.820Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.820Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "b7364d8a-6871-4352-b7bc-7c8e7ef5acdf"
+    },
+    "8d47def5-fc19-49e2-9c17-e1651c8b6fb6": {
+      "referredToAs": {
+        "primaryFileName": "Obsidian",
+        "aliases": []
+      },
+      "urls": {
+        "youtubeChannelUrl": "https://www.youtube.com/@ObsidianOfficial",
+        "siteUrl": "https://obsidian.md/"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Obsidian.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-17T05:14:27.000Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-17T05:14:27.000Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.927Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "youtubeChannelUrl",
+            "value": "https://www.youtube.com/@ObsidianOfficial",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.927Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://obsidian.md/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.135Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "youtubeChannelUrl",
+            "value": "https://www.youtube.com/@ObsidianOfficial",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.135Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://obsidian.md/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "youtubeChannelUrl",
+            "value": "https://www.youtube.com/@ObsidianOfficial",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.243Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://obsidian.md/",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "youtubeChannelUrl",
+            "value": "https://www.youtube.com/@ObsidianOfficial",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://obsidian.md/",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "8d47def5-fc19-49e2-9c17-e1651c8b6fb6"
+    },
+    "7f5d09b2-e637-43c5-9608-42ffea732a9c": {
+      "referredToAs": {
+        "primaryFileName": "Odoo",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Odoo.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.820Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.820Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "7f5d09b2-e637-43c5-9608-42ffea732a9c"
+    },
+    "2a208a1a-967d-44b4-8a7c-6620c77f1b38": {
+      "referredToAs": {
+        "primaryFileName": "PapersApp",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/PapersApp.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.820Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.820Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "2a208a1a-967d-44b4-8a7c-6620c77f1b38"
+    },
+    "7e94035f-2b3d-4660-bbe6-a1b8b8f37b6f": {
+      "referredToAs": {
+        "primaryFileName": "Parabola",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Parabola.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.820Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.820Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "7e94035f-2b3d-4660-bbe6-a1b8b8f37b6f"
+    },
+    "84402745-139d-4879-a257-5159ba81b9e7": {
+      "referredToAs": {
+        "primaryFileName": "Quip",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://quip.com"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Quip.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": [
+          {
+            "type": "parentOrganization",
+            "reference": "[[[[Salesforce]]]]"
+          }
+        ]
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-14T04:41:55.367Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-14T04:41:55.367Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.928Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://quip.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.928Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Salesforce]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.135Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://quip.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.135Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Salesforce]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://quip.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Salesforce]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Salesforce]]]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://quip.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Salesforce]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Salesforce]]]]",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "84402745-139d-4879-a257-5159ba81b9e7",
+      "parentOrganization": "[[Salesforce]]",
+      "ogLastFetchError": "2025-03-08T20:39:42.623Z"
+    },
+    "d638adf7-9e49-487d-b27f-36553128fc59": {
+      "referredToAs": {
+        "primaryFileName": "RemoveBG",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "'https://www.remove.bg/'"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/RemoveBG.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-14T05:42:19.756Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-14T05:42:19.756Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.928Z",
+          "type": "metadata_update",
+          "action": "version_increment",
+          "details": {
+            "previous_version": 1,
+            "new_version": 2,
+            "reason": "Content changes detected",
+            "changes": {
+              "urls": {
+                "siteUrl": {
+                  "previous": "\"'https://www.remove.bg/'\"",
+                  "new": "'https://www.remove.bg/'"
+                }
+              },
+              "primaryFileName": null
+            }
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.928Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "'https://www.remove.bg/'",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.135Z",
+          "type": "metadata_update",
+          "action": "version_increment",
+          "details": {
+            "previous_version": 2,
+            "new_version": 3,
+            "reason": "Content changes detected",
+            "changes": {
+              "urls": {
+                "siteUrl": {
+                  "previous": "\"'https://www.remove.bg/'\"",
+                  "new": "'https://www.remove.bg/'"
+                }
+              },
+              "primaryFileName": null
+            }
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.135Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "'https://www.remove.bg/'",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "metadata_update",
+          "action": "version_increment",
+          "details": {
+            "previous_version": 3,
+            "new_version": 4,
+            "reason": "Content changes detected",
+            "changes": {
+              "urls": {
+                "siteUrl": {
+                  "previous": "\"'https://www.remove.bg/'\"",
+                  "new": "'https://www.remove.bg/'"
+                }
+              },
+              "primaryFileName": null
+            }
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "'https://www.remove.bg/'",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "metadata_update",
+          "action": "version_increment",
+          "details": {
+            "previous_version": 4,
+            "new_version": 5,
+            "reason": "Content changes detected",
+            "changes": {
+              "urls": {
+                "siteUrl": {
+                  "previous": "\"'https://www.remove.bg/'\"",
+                  "new": "'https://www.remove.bg/'"
+                }
+              },
+              "primaryFileName": null
+            }
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "'https://www.remove.bg/'",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "d638adf7-9e49-487d-b27f-36553128fc59"
+    },
+    "92f82a1e-df77-4985-a46f-bcd24e3d1d6a": {
+      "referredToAs": {
+        "primaryFileName": "Roam",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://roamresearch.com"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Roam.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-14T04:41:54.453Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-14T04:41:54.453Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.928Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://roamresearch.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.135Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://roamresearch.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://roamresearch.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://roamresearch.com",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "92f82a1e-df77-4985-a46f-bcd24e3d1d6a",
+      "ogLastFetchError": "2025-03-08T20:39:42.555Z"
+    },
+    "d88f9867-e07a-4344-afaf-323bc605faf0": {
+      "referredToAs": {
+        "primaryFileName": "Slack",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://slack.com"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Slack.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-14T04:41:52.247Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-14T04:41:52.247Z"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:06:42.928Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://slack.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.135Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://slack.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://slack.com",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "content_update",
+          "action": "url_added",
+          "details": {
+            "property": "siteUrl",
+            "value": "https://slack.com",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "d88f9867-e07a-4344-afaf-323bc605faf0",
+      "ogLastFetchError": "2025-03-08T20:39:42.484Z"
+    },
+    "8ca22658-91ff-406f-8490-c3eb386c77c0": {
+      "referredToAs": {
+        "primaryFileName": "Tana",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Tana.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.819Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.819Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "8ca22658-91ff-406f-8490-c3eb386c77c0"
+    },
+    "09c2a7cc-7cd0-4e66-9a50-3f80e16a64ef": {
+      "referredToAs": {
+        "primaryFileName": "Teams",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Teams.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": [
+          {
+            "type": "parentOrganization",
+            "reference": "[[[[Microsoft]]]]"
+          }
+        ]
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-17T06:06:42.928Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:07:59.136Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:08:42.244Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Microsoft]]]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.141Z",
+          "type": "reference_update",
+          "action": "parent_org_linked",
+          "details": {
+            "type": "parentOrganization",
+            "value": "[[Microsoft]]",
+            "source": "frontmatter"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T06:09:16.142Z",
+          "type": "reference_update",
+          "action": "parent_org_changed",
+          "details": {
+            "type": "parentOrganization",
+            "previous": null,
+            "new": "[[[[Microsoft]]]]",
+            "source": "frontmatter"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.141Z",
+          "last_modified": "2025-03-17T06:09:16.141Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "09c2a7cc-7cd0-4e66-9a50-3f80e16a64ef",
+      "parentOrganization": "[[Microsoft]]"
+    },
+    "daf3c07d-c811-4413-964c-78aed318583c": {
+      "referredToAs": {
+        "primaryFileName": "Tella.tv",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Tella.tv.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-14T05:42:29.884Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-14T05:42:29.884Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.142Z",
+          "last_modified": "2025-03-17T06:09:16.142Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "daf3c07d-c811-4413-964c-78aed318583c"
+    },
+    "28fb258d-45f7-4d5b-b8fb-95f2f8853784": {
+      "referredToAs": {
+        "primaryFileName": "Typora",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Typora.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.819Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.819Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.142Z",
+          "last_modified": "2025-03-17T06:09:16.142Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "28fb258d-45f7-4d5b-b8fb-95f2f8853784"
+    },
+    "ff1dfbfb-5d75-4fd7-abf5-2e799c01f274": {
+      "referredToAs": {
+        "primaryFileName": "Zoom",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Zoom.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.819Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.819Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.142Z",
+          "last_modified": "2025-03-17T06:09:16.142Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "ff1dfbfb-5d75-4fd7-abf5-2e799c01f274",
+      "ogLastFetchError": "2025-03-14T05:42:36.724Z"
+    },
+    "6aeaaee5-48b2-4798-8f46-b240944f5477": {
+      "referredToAs": {
+        "primaryFileName": "Zotero",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Zotero.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-14T05:42:16.872Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-14T05:42:16.872Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.142Z",
+          "last_modified": "2025-03-17T06:09:16.142Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "6aeaaee5-48b2-4798-8f46-b240944f5477"
+    },
+    "adf0034e-27d2-4c1a-9835-3576adadf41f": {
+      "referredToAs": {
+        "primaryFileName": "mxMarkEdit",
+        "aliases": []
+      },
+      "urls": {},
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/mxMarkEdit.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": []
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-06T21:43:57.839Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-06T21:43:57.839Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T06:09:16.142Z",
+          "last_modified": "2025-03-17T06:09:16.142Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "adf0034e-27d2-4c1a-9835-3576adadf41f"
+    }
+  },
+  "indices": {
+    "by_filename": {
+      "Affine": {
+        "uuid": "32e4500c-1d6b-40ac-8524-b566904e5dc5",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Airtable": {
+        "uuid": "196f796c-01b8-4033-9d8d-382cd2624107",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Anytype": {
+        "uuid": "07974b57-8cdf-4625-9109-e37cea5e92a6",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Asana": {
+        "uuid": "7be2c4e0-bd72-48fd-8a78-82b68485a761",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Bricks": {
+        "uuid": "c1dc5277-fbdd-4d5d-83f4-675574cd43ef",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Bubbles": {
+        "uuid": "f7fd3403-8c06-42c6-b9d2-aa1efba856f5",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "ClickUp": {
+        "uuid": "ced5bc2f-723c-4a6f-af09-2ef9078d6052",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "CraftDocs": {
+        "uuid": "0b14feb0-3359-4328-89fe-c63cd954f921",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Dart": {
+        "uuid": "cddc683c-828c-4d2a-a628-4ff12e595599",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Eloqua": {
+        "uuid": "2547def5-fc19-49e2-9c17-e1651c8b6fb5",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Excel": {
+        "uuid": "6007069b-ce50-4642-ac6f-6a958233ec61",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Fathom AI": {
+        "uuid": "9a598f57-1fa9-4365-97f3-2edf50840034",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Jitsi": {
+        "uuid": "7d6780de-f52a-4b3d-89f9-0fad1408a5c8",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Loom": {
+        "uuid": "98071106-a64d-469e-8ee4-3b990254f6cc",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Mattermost": {
+        "uuid": "e7f96e0f-6ed1-412e-8718-460c3ea3aee6",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Mem.ai": {
+        "uuid": "a0b9f5fc-c295-4e03-bdf0-60a4c6a9ae52",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Microsoft Loop": {
+        "uuid": "10dc429e-318a-4e07-89d9-8c3fb12b7362",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Monday": {
+        "uuid": "bc4d3894-6570-4810-98dc-84ce7825e8c0",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Notion": {
+        "uuid": "b7364d8a-6871-4352-b7bc-7c8e7ef5acdf",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Obsidian": {
+        "uuid": "8d47def5-fc19-49e2-9c17-e1651c8b6fb6",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Odoo": {
+        "uuid": "7f5d09b2-e637-43c5-9608-42ffea732a9c",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "PapersApp": {
+        "uuid": "2a208a1a-967d-44b4-8a7c-6620c77f1b38",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Parabola": {
+        "uuid": "7e94035f-2b3d-4660-bbe6-a1b8b8f37b6f",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Quip": {
+        "uuid": "84402745-139d-4879-a257-5159ba81b9e7",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "RemoveBG": {
+        "uuid": "d638adf7-9e49-487d-b27f-36553128fc59",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Roam": {
+        "uuid": "92f82a1e-df77-4985-a46f-bcd24e3d1d6a",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Slack": {
+        "uuid": "d88f9867-e07a-4344-afaf-323bc605faf0",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Tana": {
+        "uuid": "8ca22658-91ff-406f-8490-c3eb386c77c0",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Teams": {
+        "uuid": "09c2a7cc-7cd0-4e66-9a50-3f80e16a64ef",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Tella.tv": {
+        "uuid": "daf3c07d-c811-4413-964c-78aed318583c",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Typora": {
+        "uuid": "28fb258d-45f7-4d5b-b8fb-95f2f8853784",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Zoom": {
+        "uuid": "ff1dfbfb-5d75-4fd7-abf5-2e799c01f274",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "Zotero": {
+        "uuid": "6aeaaee5-48b2-4798-8f46-b240944f5477",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      },
+      "mxMarkEdit": {
+        "uuid": "adf0034e-27d2-4c1a-9835-3576adadf41f",
+        "context": "tooling/Productivity",
+        "is_canonical": true
+      }
+    },
+    "by_path": {
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Affine.md": "32e4500c-1d6b-40ac-8524-b566904e5dc5",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Airtable.md": "196f796c-01b8-4033-9d8d-382cd2624107",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Anytype.md": "07974b57-8cdf-4625-9109-e37cea5e92a6",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Asana.md": "7be2c4e0-bd72-48fd-8a78-82b68485a761",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Bricks.md": "c1dc5277-fbdd-4d5d-83f4-675574cd43ef",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Bubbles.md": "f7fd3403-8c06-42c6-b9d2-aa1efba856f5",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/ClickUp.md": "ced5bc2f-723c-4a6f-af09-2ef9078d6052",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/CraftDocs.md": "0b14feb0-3359-4328-89fe-c63cd954f921",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Dart.md": "cddc683c-828c-4d2a-a628-4ff12e595599",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Eloqua.md": "2547def5-fc19-49e2-9c17-e1651c8b6fb5",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Excel.md": "6007069b-ce50-4642-ac6f-6a958233ec61",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Fathom AI.md": "9a598f57-1fa9-4365-97f3-2edf50840034",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Jitsi.md": "7d6780de-f52a-4b3d-89f9-0fad1408a5c8",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Loom.md": "98071106-a64d-469e-8ee4-3b990254f6cc",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Mattermost.md": "e7f96e0f-6ed1-412e-8718-460c3ea3aee6",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Mem.ai.md": "a0b9f5fc-c295-4e03-bdf0-60a4c6a9ae52",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Microsoft Loop.md": "10dc429e-318a-4e07-89d9-8c3fb12b7362",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Monday.md": "bc4d3894-6570-4810-98dc-84ce7825e8c0",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Notion.md": "b7364d8a-6871-4352-b7bc-7c8e7ef5acdf",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Obsidian.md": "8d47def5-fc19-49e2-9c17-e1651c8b6fb6",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Odoo.md": "7f5d09b2-e637-43c5-9608-42ffea732a9c",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/PapersApp.md": "2a208a1a-967d-44b4-8a7c-6620c77f1b38",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Parabola.md": "7e94035f-2b3d-4660-bbe6-a1b8b8f37b6f",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Quip.md": "84402745-139d-4879-a257-5159ba81b9e7",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/RemoveBG.md": "d638adf7-9e49-487d-b27f-36553128fc59",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Roam.md": "92f82a1e-df77-4985-a46f-bcd24e3d1d6a",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Slack.md": "d88f9867-e07a-4344-afaf-323bc605faf0",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Tana.md": "8ca22658-91ff-406f-8490-c3eb386c77c0",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Teams.md": "09c2a7cc-7cd0-4e66-9a50-3f80e16a64ef",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Tella.tv.md": "daf3c07d-c811-4413-964c-78aed318583c",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Typora.md": "28fb258d-45f7-4d5b-b8fb-95f2f8853784",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Zoom.md": "ff1dfbfb-5d75-4fd7-abf5-2e799c01f274",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Zotero.md": "6aeaaee5-48b2-4798-8f46-b240944f5477",
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/mxMarkEdit.md": "adf0034e-27d2-4c1a-9835-3576adadf41f"
+    },
+    "by_uuid": {
+      "32e4500c-1d6b-40ac-8524-b566904e5dc5": {
+        "memory": 4.196723937988281,
+        "timestamp": "2025-03-17T06:09:16.138Z"
+      },
+      "196f796c-01b8-4033-9d8d-382cd2624107": {
+        "memory": 4.221824645996094,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "07974b57-8cdf-4625-9109-e37cea5e92a6": {
+        "memory": 4.240882873535156,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "7be2c4e0-bd72-48fd-8a78-82b68485a761": {
+        "memory": 4.26104736328125,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "c1dc5277-fbdd-4d5d-83f4-675574cd43ef": {
+        "memory": 4.281951904296875,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "f7fd3403-8c06-42c6-b9d2-aa1efba856f5": {
+        "memory": 4.298896789550781,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "ced5bc2f-723c-4a6f-af09-2ef9078d6052": {
+        "memory": 4.320014953613281,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "0b14feb0-3359-4328-89fe-c63cd954f921": {
+        "memory": 4.340095520019531,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "cddc683c-828c-4d2a-a628-4ff12e595599": {
+        "memory": 4.362236022949219,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "2547def5-fc19-49e2-9c17-e1651c8b6fb5": {
+        "memory": 4.377166748046875,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "6007069b-ce50-4642-ac6f-6a958233ec61": {
+        "memory": 4.389678955078125,
+        "timestamp": "2025-03-17T06:09:16.139Z"
+      },
+      "9a598f57-1fa9-4365-97f3-2edf50840034": {
+        "memory": 4.05987548828125,
+        "timestamp": "2025-03-17T06:09:16.140Z"
+      },
+      "7d6780de-f52a-4b3d-89f9-0fad1408a5c8": {
+        "memory": 4.074760437011719,
+        "timestamp": "2025-03-17T06:09:16.140Z"
+      },
+      "98071106-a64d-469e-8ee4-3b990254f6cc": {
+        "memory": 4.096893310546875,
+        "timestamp": "2025-03-17T06:09:16.140Z"
+      },
+      "e7f96e0f-6ed1-412e-8718-460c3ea3aee6": {
+        "memory": 4.120201110839844,
+        "timestamp": "2025-03-17T06:09:16.140Z"
+      },
+      "a0b9f5fc-c295-4e03-bdf0-60a4c6a9ae52": {
+        "memory": 4.141387939453125,
+        "timestamp": "2025-03-17T06:09:16.140Z"
+      },
+      "10dc429e-318a-4e07-89d9-8c3fb12b7362": {
+        "memory": 4.159881591796875,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "bc4d3894-6570-4810-98dc-84ce7825e8c0": {
+        "memory": 4.177894592285156,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "b7364d8a-6871-4352-b7bc-7c8e7ef5acdf": {
+        "memory": 4.19317626953125,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "8d47def5-fc19-49e2-9c17-e1651c8b6fb6": {
+        "memory": 4.2094879150390625,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "7f5d09b2-e637-43c5-9608-42ffea732a9c": {
+        "memory": 4.22857666015625,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "2a208a1a-967d-44b4-8a7c-6620c77f1b38": {
+        "memory": 4.243415832519531,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "7e94035f-2b3d-4660-bbe6-a1b8b8f37b6f": {
+        "memory": 4.258689880371094,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "84402745-139d-4879-a257-5159ba81b9e7": {
+        "memory": 4.281990051269531,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "d638adf7-9e49-487d-b27f-36553128fc59": {
+        "memory": 4.303337097167969,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "92f82a1e-df77-4985-a46f-bcd24e3d1d6a": {
+        "memory": 4.330863952636719,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "d88f9867-e07a-4344-afaf-323bc605faf0": {
+        "memory": 4.3533477783203125,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "8ca22658-91ff-406f-8490-c3eb386c77c0": {
+        "memory": 4.3726348876953125,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "09c2a7cc-7cd0-4e66-9a50-3f80e16a64ef": {
+        "memory": 4.382926940917969,
+        "timestamp": "2025-03-17T06:09:16.141Z"
+      },
+      "daf3c07d-c811-4413-964c-78aed318583c": {
+        "memory": 4.400764465332031,
+        "timestamp": "2025-03-17T06:09:16.142Z"
+      },
+      "28fb258d-45f7-4d5b-b8fb-95f2f8853784": {
+        "memory": 4.415779113769531,
+        "timestamp": "2025-03-17T06:09:16.142Z"
+      },
+      "ff1dfbfb-5d75-4fd7-abf5-2e799c01f274": {
+        "memory": 4.4330596923828125,
+        "timestamp": "2025-03-17T06:09:16.142Z"
+      },
+      "6aeaaee5-48b2-4798-8f46-b240944f5477": {
+        "memory": 4.447357177734375,
+        "timestamp": "2025-03-17T06:09:16.142Z"
+      },
+      "adf0034e-27d2-4c1a-9835-3576adadf41f": {
+        "memory": 4.463935852050781,
+        "timestamp": "2025-03-17T06:09:16.142Z"
+      }
+    }
+  }
+}
