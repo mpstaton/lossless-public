@@ -2,8 +2,7 @@
 site_uuid: 40386478-2618-4d8b-8744-fe842dd127c1
 url: https://www.gitkraken.com
 zinger: Dev Tools that Simplify & Supercharge Git
-description:   Join 30M+ developers who rely on GitKraken to move faster and collaborate more
-effectively
+description: Join 30M+ developers who rely on GitKraken to move faster and collaborate more effectively
 image: https://www.gitkraken.com/wp-content/uploads/2023/08/OG-3.png
 site_name: GitKraken
 title: GitKraken Legendary Git Tools | GitKraken

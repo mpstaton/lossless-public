@@ -2,8 +2,7 @@
 site_uuid: 40650bd3-0ed7-4463-b6a3-5718b4112c77
 url: https://legendapp.com/open-source/state/v3/
 zinger: High performance state and local first sync
-description:   Legend State is an extremely fast signal-based state library with fine-grained
-reactivity and a powerful sync engine that works with any backend.
+description: Legend State is an extremely fast signal-based state library with fine-grained reactivity and a powerful sync engine that works with any backend.
 image: https://legendapp.com/open-source/state/v3/_astro/Logomark_(White).BFbx2HQ__ZXR6FG.svg
 site_name: Legend State
 title: Legend State

@@ -2,8 +2,7 @@
 site_uuid: 26438fdf-6446-4e71-8ad1-457541ffce64
 url: https://www.embra.ai/
 zinger: The AI Operating System to simplify your workday
-description: Embra organizes your team's communications, tracks what's important, and turns
-an hour of work into 5 minutes — every day.
+description: Embra organizes your team's communications, tracks what's important, and turns an hour of work into 5 minutes — every day.
 tags:
 - AI-Toolkit
 - Knowledge-AI

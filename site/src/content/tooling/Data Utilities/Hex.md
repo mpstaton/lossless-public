@@ -2,8 +2,7 @@
 site_uuid: 37d66d35-9150-45a2-a433-f6bac006fba9
 url: https://hex.tech/
 zinger: Bring everyone together with data.
-description:   Go end-to-end from quick queries to deep-dive analyses to beautiful
-interactive data apps – all in one collaborative, AI-powered workspace.
+description: Go end-to-end from quick queries to deep-dive analyses to beautiful interactive data apps – all in one collaborative, AI-powered workspace.
 image: https://images.ctfassets.net/mmgv7yhaaeds/5jRZp586ZZUrpYDsgm6dtL/1f29413e09f12d60743799e68c827541/social-sharing-default.png
 site_name: Hex
 title: Bring everyone together with data

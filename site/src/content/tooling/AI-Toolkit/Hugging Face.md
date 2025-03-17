@@ -1,8 +1,7 @@
 ---
 site_uuid: 41dc16a2-1ae7-492f-a3b1-f6362ff61ffc
 url: https://huggingface.co/
-tags:
-  - AI-Toolkit
+tags: - AI-Toolkit
 image: https://huggingface.co/front/thumbnails/v2-2.png
 site_name: Hugging Face
 title: The AI community building the future.

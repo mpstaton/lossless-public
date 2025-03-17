@@ -2,10 +2,7 @@
 site_uuid: 897f54fc-4895-4d58-806a-2e97862557ab
 url: https://aide.dev/
 zinger: Parallel Agents on your Codebase
-tags:
-  - AI-Toolkit
-  - Generative-AI
-  - Code-Generators
+tags: - AI-Toolkit - Generative-AI - Code-Generators
 image: https://aide.dev/og-image.png
 site_name: Aide
 title: Your AI Programming Assistant

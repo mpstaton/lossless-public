@@ -1,9 +1,7 @@
 ---
 site_uuid: 15ad9d0f-03b1-45c4-92ea-22d5d09618bc
 url: https://www.astronomer.io/
-description:   Take Apache Airflow® to the next level with Astro. From AI and Large Language
-Models to data-driven applications, Astronomer delivers reliability at any
-scale and accelerates innovation.
+description: Take Apache Airflow® to the next level with Astro. From AI and Large Language Models to data-driven applications, Astronomer delivers reliability at any scale and accelerates innovation.
 image: https://www.astronomer.io/images/General.png
 site_name: Astronomer
 title: The Best Place to Run Apache Airflow®

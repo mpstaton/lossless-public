@@ -3,9 +3,7 @@ site_uuid: e07d8841-9581-4ff0-9463-ded16be5cd4a
 url: https://cloud.google.com/bigquery
 parent_org: '[[Google]]'
 zinger: 'From data warehouse to a unified, AI-ready data platform'
-description:   BigQuery is a fully managed, AI-ready data analytics platform that helps you
-maximize value from your data and is designed to be multi-engine,
-multi-format, and multi-cloud.
+description: BigQuery is a fully managed, AI-ready data analytics platform that helps you maximize value from your data and is designed to be multi-engine, multi-format, and multi-cloud.
 image: https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png
 site_name: Google Cloud
 title: BigQuery enterprise data warehouse

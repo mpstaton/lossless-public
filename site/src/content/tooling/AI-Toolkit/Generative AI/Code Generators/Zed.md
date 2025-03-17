@@ -2,8 +2,7 @@
 site_uuid: 0cafad8f-594e-4b73-85da-303586640e5e
 url: https://www.zed.dev
 zinger: 'The editor for whats next'
-description: Zed is a next-generation code editor designed forhigh-performance
-collaboration with humans and AI.
+description: Zed is a next-generation code editor designed forhigh-performance collaboration with humans and AI.
 tags:
 - AI-Toolkit
 - Generative-AI

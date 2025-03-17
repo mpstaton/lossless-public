@@ -2,8 +2,7 @@
 site_uuid: e73c9b16-5258-42bd-98ad-4baf0f569872
 url: https://www.bardeen.ai/
 zinger: Turn complex workflows into a single click
-description: Bardeen is an AI agent that effortlessly does your repetitive work with a
-simple prompt.
+description: Bardeen is an AI agent that effortlessly does your repetitive work with a simple prompt.
 tags:
 - AI-Toolkit
 - Agentic-AI

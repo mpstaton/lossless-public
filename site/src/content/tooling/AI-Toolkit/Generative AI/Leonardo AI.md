@@ -2,8 +2,7 @@
 site_uuid: 1bba1e40-d25d-4627-adbd-d8bbe704615b
 url: https://leonardo.ai/
 zinger: 'Creativity, Unleashed.'
-description: Leverage generative AI with a unique suite of tools to convey your ideas to
-the world.
+description: Leverage generative AI with a unique suite of tools to convey your ideas to the world.
 tags:
 - AI-Toolkit
 - Generative-AI

@@ -2,8 +2,7 @@
 site_uuid: 24a2b4d4-6131-4d5e-bf9c-a3b4fc958bb8
 url: https://kairos.io/
 github_url: https://github.com/kairos-io/kairos
-description_site_cp:   Transform your Linux system and preferred Kubernetes distribution into a
-secure bootable image for your edge devices.
+description_site_cp: Transform your Linux system and preferred Kubernetes distribution into a secure bootable image for your edge devices.
 zinger: More than an edge OS
 tags:
 - Software-Development

@@ -3,8 +3,7 @@ site_uuid: adf0034e-27d2-4c1a-9835-3576adadf41f
 image: https://opengraph.githubassets.com/f662e092254e7e498fafb60d5d7905a46f86a48fca1390581995856023a9cfb9/maxnd/mxMarkEdit
 site_name: mxMarkEdit
 title: Markdown documents for Mac
-GitHub _ maxnd/mxMarkEdit:   A free app for Mac to create Markdown documents with stylistic support, tasks,
-simple databases, bibliographies and presentations
+GitHub _ maxnd/mxMarkEdit: A free app for Mac to create Markdown documents with stylistic support, tasks, simple databases, bibliographies and presentations
 favicon: https://github.githubassets.com/favicons/favicon.svg
 tags:
 - Productivity

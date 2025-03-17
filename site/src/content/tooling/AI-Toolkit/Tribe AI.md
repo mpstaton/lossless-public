@@ -2,8 +2,7 @@
 site_uuid: 96e7687c-4c7d-4a08-b9d4-265534a6c9ce
 url: https://www.tribe.ai/
 zinger: We build AI products that matter
-description: Tribe helps organizations rapidly deploy AI solutions that have real business
-impact.
+description: Tribe helps organizations rapidly deploy AI solutions that have real business impact.
 hero: '![[Screenshot 2025-02-23 at 4.19.00 AM_Tribe-AI--Hero.png]]'
 tags:
 - AI-Toolkit

@@ -45,19 +45,8 @@ Here is a timeline of OpenAI's major model releases, their features, and use cas
 
 ### **O-Series Models**
 1. **o1 (September 2024)**  
-   - **Key Features**: Focus on reasoning for scientific research, coding, and legal analysis. Designed to "think" longer before responding for accuracy.  
-   - **Use Cases**:
-     - Advanced coding and debugging[3].
-     - Scientific research assistance[7].
-     - Legal document processing[7].
-
-2. **o3 (December 2024)**  
-   - **Key Features**: Improved reasoning over o1 with faster performance; excels in STEM tasks and competitive coding benchmarks like Codeforces.  
-   - **Use Cases**:
-     - Research-level mathematics[4].
-     - Software engineering (SWE-bench)[4].
-     - Competitive programming[6].
-
+   - **Key Features**: Focus on reasoning for scientific research, coding, and legal analysis. Designed to "think" longer before responding for accuracy. - **Use Cases**: - Advanced coding and debugging[3]. - Scientific research assistance[7]. - Legal document processing[7]. 2. **o3 (December 2024)**
+   - **Key Features**: Improved reasoning over o1 with faster performance; excels in STEM tasks and competitive coding benchmarks like Codeforces. - **Use Cases**: - Research-level mathematics[4]. - Software engineering (SWE-bench)[4]. - Competitive programming[6].
 ---
 
 ### Other Models

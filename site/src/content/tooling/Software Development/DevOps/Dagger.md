@@ -1,9 +1,7 @@
 ---
 site_uuid: 765e7ace-a0f6-4ffd-b7ba-0be3545202b4
 url: https://dagger.io/
-description:   Welcome to Dagger, a programmable tool that lets you replace your software
-project's artisanal scripts with a modern API and cross-language scripting
-engine.
+description: Welcome to Dagger, a programmable tool that lets you replace your software project's artisanal scripts with a modern API and cross-language scripting engine.
 docs_url: 'https://docs.dagger.io/'
 image: https://framerusercontent.com/assets/borZ0wXDoDM6d5a77COSqFZSqJc.webp
 site_name: Dagger.io

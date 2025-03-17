@@ -8,8 +8,7 @@ tags:
 - Video-Generators
 - Text-to-Video
 zinger: 'Turn text to video, in minutes.'
-description: Create studio-quality videos with AI avatars and voiceovers in 140+ languages.
-It’s as easy as making a slide deck.
+description: Create studio-quality videos with AI avatars and voiceovers in 140+ languages. It’s as easy as making a slide deck.
 image: https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/664dff84b972812764843b0f_NEW_OG.gif
 site_name: Synthesia
 title: Free AI Video Generator - Create AI Videos in 140 Languages

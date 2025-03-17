@@ -1,8 +1,7 @@
 ---
 url: 
 github_url: https://github.com/stackblitz-labs/bolt.diy
-tags:
-  - Open-Source
+tags: - Open-Source
 parent_org: "[[Tooling/AI-Toolkit/Generative AI/Code Generators/Bolt.new|Bolt.new]]"
 ---
 

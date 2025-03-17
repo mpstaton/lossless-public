@@ -2,8 +2,7 @@
 site_uuid: c1f4902e-53b3-4534-8a18-ad0b24550eb2
 url: https://getpanda.ai/
 zinger: Open Source AI Agents for Data Analysis
-description:   Ask questions to your enterprise data in natural language. Get real time data
-insights.
+description: Ask questions to your enterprise data in natural language. Get real time data insights.
 image: https://framerusercontent.com/assets/sHgde5XSsI6TC2ml8cAhutjDRB0.png
 site_name: PandaAI
 title: PandaAI - Chat with your Data

@@ -2,8 +2,7 @@
 site_uuid: ac9ccac5-3f10-4da8-9f5f-441f562b8dcd
 url: https://www.advex.ai/
 zinger: "Deliver Top Performing\LComputer Vision in Hours"
-description: Leverage Generative AI and Synthetic Data to increase efficiency and reduce
-cost.
+description: Leverage Generative AI and Synthetic Data to increase efficiency and reduce cost.
 tags:
 - AI-Toolkit
 - Data-Augmenters

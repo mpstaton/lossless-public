@@ -2,8 +2,7 @@
 site_uuid: 6f0ee5b7-861b-4680-abff-6bc88604c62b
 url: https://anythingllm.com/
 zinger: The all-in-one AI application
-description_site_cp: Everything great about AI in one desktop application. Chat with docs, use AI
-Agents, and more - full locally and offline.
+description_site_cp: Everything great about AI in one desktop application. Chat with docs, use AI Agents, and more - full locally and offline.
 tags:
 - AI-Toolkit
 - AI-Interfaces

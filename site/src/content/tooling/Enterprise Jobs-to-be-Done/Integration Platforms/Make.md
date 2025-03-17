@@ -8,8 +8,7 @@ tags:
 site_name: Just a moment...
 title: Just a moment...
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8b667ed7b130b673134c1692b7e6298ac9339d52df72062cff54f219648bab23.jpeg
-description_site_cp:   Realize your business’s full potential with Make’s intuitive no-code
-development platform.
+description_site_cp: Realize your business’s full potential with Make’s intuitive no-code development platform.
 og_errors: 'true'
 og_last_error: '2025-03-07T10:19:45.328Z'
 og_error_message: 'HTTP error 401'

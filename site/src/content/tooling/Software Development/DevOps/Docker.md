@@ -2,8 +2,7 @@
 site_uuid: 748c400c-cbb4-46d8-a770-5b166e1a3e45
 url: https://www.docker.com/wp
 zinger: 'Develop faster. Run anywhere. Build with the #1 most-used developer tool.'
-description:   Docker helps developers build, share, run, and verify applications anywhere —
-without tedious environment configuration or management.
+description: Docker helps developers build, share, run, and verify applications anywhere — without tedious environment configuration or management.
 image: https://www.docker.com/app/uploads/2023/06/meta-image-homepage-1110x580.png
 site_name: Docker
 title: 'Docker: Accelerated Container Application Development'

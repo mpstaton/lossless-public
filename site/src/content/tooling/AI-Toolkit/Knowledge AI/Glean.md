@@ -2,8 +2,7 @@
 site_uuid: 4cd87863-f20f-4d2b-b81f-f4048adb1357
 url: https://www.glean.com/
 zinger: Work AI for all.
-description: The Work AI platform connected to all your data. Find, create, and automate
-anything.
+description: The Work AI platform connected to all your data. Find, create, and automate anything.
 tags:
 - AI-Toolkit
 - Knowledge-AI

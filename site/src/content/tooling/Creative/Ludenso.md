@@ -2,8 +2,7 @@
 site_uuid: 7cb24c9b-d639-4b89-a1f4-9f229062a54e
 url: https://www.ludenso.com/
 zinger: Bringing textbooks to life
-description:   The world’s leading AI and AR driven authoring platform, built specifically
-for publishers
+description: The world’s leading AI and AR driven authoring platform, built specifically for publishers
 image: https://cdn.prod.website-files.com/6335527195a2bb0d2605ffa0/633fe6b0c8860a04fd591907_favicon.png
 site_name: Ludenso
 title: Ludenso | Bringing textbooks to life in AR

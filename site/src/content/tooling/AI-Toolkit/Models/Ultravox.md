@@ -3,8 +3,7 @@ site_uuid: f6a8b5d4-fea0-47b4-8d11-bc3ae9686fec
 github_url: https://github.com/fixie-ai/ultravox
 url: https://www.ultravox.ai/
 zinger: Build AI voice agents that communicate like we do
-description: Cutting-edge AI speech for 5¢ per minute. Create and deploy highly effective
-and natural Voice Agents in no time.
+description: Cutting-edge AI speech for 5¢ per minute. Create and deploy highly effective and natural Voice Agents in no time.
 tags:
 - AI-Toolkit
 - Models

@@ -2,9 +2,7 @@
 site_uuid: de26e744-d336-46a5-a3a1-99e701fecc77
 url: https://unsloth.ai
 github_url: https://github.com/unslothai/unsloth
-tags:
-  - AI-Toolkit
-  - Check-it-Out
+tags: - AI-Toolkit - Check-it-Out
 og_errors: "true"
 og_last_error: 2025-03-08T20:39:43.823Z
 og_error_message: HTTP error 401

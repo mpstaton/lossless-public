@@ -2,8 +2,7 @@
 site_uuid: fc136633-d33d-4df0-b127-483a1b47c7b6
 url: https://linear.app/
 zinger: Linear is a purpose-built tool for planning and building products
-description:   Meet the system for modern software development. Streamline issues, projects,
-and product roadmaps.
+description: Meet the system for modern software development. Streamline issues, projects, and product roadmaps.
 image: https://linear.app/static/og/homepage-2024.jpg
 site_name: Linear
 title: Plan and build products

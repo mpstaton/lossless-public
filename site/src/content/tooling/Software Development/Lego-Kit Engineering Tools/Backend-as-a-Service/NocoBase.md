@@ -2,8 +2,7 @@
 site_uuid: a6fe1d1f-1b18-4457-84a8-830f3ec58af8
 image: https://static-docs.nocobase.com/20250223-173129.jpg
 site_name: NocoBase
-title:   NocoBase - Open source, self-hosted, lightweight no-code & low-code
-development platform
+title: NocoBase - Open source, self-hosted, lightweight no-code & low-code development platform
 favicon: https://www.nocobase.com/images/favicon/favicon-32x32.png
 tags:
 - Lego-Kit-Engineering-Tools

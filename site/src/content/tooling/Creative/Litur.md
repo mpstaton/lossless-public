@@ -2,8 +2,7 @@
 site_uuid: d78e122e-6893-4ac1-9359-3accd3703164
 url: https://litur.app/
 zinger: A color picker for the real world.
-description:   Find, collect and organize all the colors around you. A designer’s best-kept
-secret, a developer's best friend.
+description: Find, collect and organize all the colors around you. A designer’s best-kept secret, a developer's best friend.
 image: https://litur.app/assets/og_image.png
 site_name: Litur
 title: Litur

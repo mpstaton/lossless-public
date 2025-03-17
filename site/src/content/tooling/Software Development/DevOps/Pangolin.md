@@ -2,8 +2,7 @@
 site_uuid: 41a47504-afb6-44ad-ba5c-af60dca083fd
 image: ""https://opengraph.githubassets.com/6d6fbf1edcdab6174113196c0efb8ec9f59e37236e9a4357487b03c4877a1744/fosrl/pangolin""
 site_name: Pangolin
-title:   Tunneled Mesh Reverse Proxy Server with Identity and Access Control and
-Dashboard UI
+title: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and Dashboard UI
 favicon: ""'https://github.githubassets.com/favicons/favicon.svg'""
 tags:
 - Software-Development

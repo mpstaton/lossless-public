@@ -2,10 +2,7 @@
 site_uuid: 67a5175b-01b7-4a63-b2c5-a2bc60645de7
 url: https://www.langchain.com/
 zinger: Applications that can reason. Powered by LangChain.
-description: Build context-aware, reasoning applications with LangChain’s flexible
-framework that leverages your company’s data and APIs. Future-proof your
-application by making vendor optionality part of your LLM infrastructure
-design.
+description: Build context-aware, reasoning applications with LangChain’s flexible framework that leverages your company’s data and APIs. Future-proof your application by making vendor optionality part of your LLM infrastructure design.
 youtube_url: https://youtube.com/@langchain
 tags:
 - AI-Toolkit

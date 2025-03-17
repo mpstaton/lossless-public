@@ -2,8 +2,7 @@
 site_uuid: d26c960b-c198-4676-b031-46af9709fd57
 url: https://auth0.com/
 zinger: 'Secure access for everyone, but not just anyone.'
-description:   Auth0 is an easy to implement, adaptable authentication and authorization
-platform.
+description: Auth0 is an easy to implement, adaptable authentication and authorization platform.
 site_name: Auth0
 title: 'Secure access for everyone, but not just anyone.'
 tags:

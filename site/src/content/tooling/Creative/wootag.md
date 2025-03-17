@@ -1,8 +1,7 @@
 ---
 site_uuid: 6fe0394c-de6b-4f60-8034-f1206c3ed862
 url: https://www.wootag.com/
-zinger:   Harnessing the power of human curiosity with simple, immersive interactions,
-directly within any visuals.
+zinger: Harnessing the power of human curiosity with simple, immersive interactions, directly within any visuals.
 image: https://www.wootag.com/assets/images/og.png
 site_name: Wootag
 title: Interactive Video Platform to power your videos

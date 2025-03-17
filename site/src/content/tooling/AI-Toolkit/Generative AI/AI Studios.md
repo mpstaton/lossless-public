@@ -2,8 +2,7 @@
 site_uuid: 3d6a9cec-a2f7-4859-91cc-2e5838b02f2a
 url: https://www.aistudios.com/
 zinger: Create Videos with AI STUDIOS’ AI Video Generator
-description: Generate studio-quality videos with AI avatars and voiceovers in 80+ languages
-as easy as just typing in text.
+description: Generate studio-quality videos with AI avatars and voiceovers in 80+ languages as easy as just typing in text.
 tags:
 - AI-Toolkit
 - Generative-AI

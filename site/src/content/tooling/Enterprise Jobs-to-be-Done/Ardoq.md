@@ -2,9 +2,7 @@
 site_uuid: a27f528b-a0fe-49c1-90e7-bad51b5cd0b2
 url: https://www.ardoq.com
 zinger: Reimagine Enterprise Architecture
-description:   Ardoq's data-driven platform unites your enterprise views, charting a clear
-path to navigate change, unlock revenue growth, fuel innovation, and
-accelerate transformation.
+description: Ardoq's data-driven platform unites your enterprise views, charting a clear path to navigate change, unlock revenue growth, fuel innovation, and accelerate transformation.
 image: https://www.ardoq.com/hubfs/Images/Logos/Ardoq/Other/ardoq%20logo%20on%20purple%20background.png
 site_name: ' Ardoq'
 title: Reimagine Enterprise Architecture

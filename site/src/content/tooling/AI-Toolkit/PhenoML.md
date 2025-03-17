@@ -1,8 +1,7 @@
 ---
 site_uuid: 5a062ef9-80d6-4226-b683-e37864be48b3
 url: https://www.phenoml.com/
-description: built for healthcare tech teams to rapidly develop and scale AI-native
-solutions for your patients, providers, and employees
+description: built for healthcare tech teams to rapidly develop and scale AI-native solutions for your patients, providers, and employees
 tags:
 - AI-Toolkit
 image: https://cdn.prod.website-files.com/66df4a47c5838b888ee3a917/6721a9a35bef5c883e76ab71_256.png

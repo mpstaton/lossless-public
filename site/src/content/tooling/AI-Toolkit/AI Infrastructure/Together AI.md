@@ -2,8 +2,7 @@
 site_uuid: 43eff549-fd43-41b9-98ae-e113c302b87a
 url: https://www.together.ai/
 zinger: The AI Acceleration Cloud
-description_site_cp: Turbocharge model training and inference on NVIDIA GPUs. Build with open
-source and fine-tune your own AI.
+description_site_cp: Turbocharge model training and inference on NVIDIA GPUs. Build with open source and fine-tune your own AI.
 tags:
 - AI-Toolkit
 - AI-Infrastructure

@@ -2,11 +2,7 @@
 site_uuid: 421ab263-d7d7-4210-92ec-f0384cb313a8
 url: https://big-agi.com/
 zinger: Deploy the most innovative and productive Generative AI suite.
-description_site_cp: Big-AGI is a groundbreaking AI suite designed to democratize access to
-advanced artificial intelligence for everyone. From professionals and
-developers to AI enthusiasts, Big-AGI provides a comprehensive,
-productivity-focused platform that combines state-of-the-art models with
-high-performance tools and complete data control.
+description_site_cp: Big-AGI is a groundbreaking AI suite designed to democratize access to advanced artificial intelligence for everyone. From professionals and developers to AI enthusiasts, Big-AGI provides a comprehensive, productivity-focused platform that combines state-of-the-art models with high-performance tools and complete data control.
 github_url: https://github.com/enricoros/big-agi
 tags:
 - AI-Toolkit

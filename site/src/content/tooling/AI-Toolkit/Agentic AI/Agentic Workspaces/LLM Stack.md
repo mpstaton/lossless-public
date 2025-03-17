@@ -1,8 +1,7 @@
 ---
 site_uuid: 2cb805c2-b45e-40ed-990d-0e12ad1387ad
 github_url: https://github.com/trypromptly/LLMStack
-zinger: No-code multi-agent framework to build LLM Agents, workflows and applications
-with your data
+zinger: No-code multi-agent framework to build LLM Agents, workflows and applications with your data
 url: https://llmstack.ai/
 tags:
 - AI-Toolkit

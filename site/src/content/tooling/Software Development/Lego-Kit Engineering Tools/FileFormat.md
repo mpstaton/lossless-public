@@ -2,9 +2,7 @@
 site_uuid: 5ed6e427-c559-4899-8998-9499130bae10
 url: https://www.fileformat.com/
 zinger: An Open-source File Format API Guide For Developers
-description:   Using open-source APIs and libraries, learn to create, edit, convert, and
-manipulate PDF, 3D, CAD, Spreadsheet, image, & other file formats with
-examples.
+description: Using open-source APIs and libraries, learn to create, edit, convert, and manipulate PDF, 3D, CAD, Spreadsheet, image, & other file formats with examples.
 hero: '![[Screenshot 2025-02-23 at 4.00.57 AM_File-Format--Hero.png]]'
 image: https://www.fileformat.com/images/fileformat/favicon/apple-touch-icon.png
 site_name: FileFormat

@@ -1,8 +1,7 @@
 ---
 site_uuid: fd952296-f64b-470b-9a39-624849480b2f
 url: https://fireworks.ai
-description_site_cp: The fastest and most efficient inference engine to build production-ready,
-compound AI systems.
+description_site_cp: The fastest and most efficient inference engine to build production-ready, compound AI systems.
 zinger: Go from hype to high-value AI
 tags:
 - AI-Toolkit

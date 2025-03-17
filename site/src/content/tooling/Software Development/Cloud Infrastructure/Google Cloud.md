@@ -13,8 +13,7 @@ tags:
 - Cloud-Infrastructure
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cd8183ccec2672cfff185ec3191cff01ba1a53a7c1b898db2f5d14df2204e4cb.jpeg
 title: The new way to cloud starts here.
-description_site_cp:   Build with generative AI, deploy apps fast, and analyze data in seconds—all
-with Google-grade security.
+description_site_cp: Build with generative AI, deploy apps fast, and analyze data in seconds—all with Google-grade security.
 last_jina_request: '2025-03-09T06:45:12.951Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.929Z'

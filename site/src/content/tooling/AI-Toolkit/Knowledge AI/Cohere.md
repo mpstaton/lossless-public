@@ -5,9 +5,7 @@ tags:
 - AI-Toolkit
 - Knowledge-AI
 - ai--rag-stack
-description: Cohere brings you cutting-edge multilingual models, advanced retrieval, and an
-AI workspace tailored for the modern enterprise — all within a single, secure
-platform.
+description: Cohere brings you cutting-edge multilingual models, advanced retrieval, and an AI workspace tailored for the modern enterprise — all within a single, secure platform.
 image: https://cdn.sanity.io/images/rjtqmwfu/web3-prod/0750efbc3db33b1a67bc77575525b076f0137f26-1200x630.jpg?w=1200&h=630
 site_name: Cohere
 title: 'The Worlds Leading AI Platform for Enterprise | Cohere'

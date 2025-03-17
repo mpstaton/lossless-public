@@ -6,8 +6,7 @@ tags:
 - knowledge-ai
 url: https://www.dashworks.ai/
 zinger: AI that answers all your team’s questions
-description: Stop searching through endless tools and answering internal FAQs. Get instant
-answers with AI that searches all your company knowledge at once.
+description: Stop searching through endless tools and answering internal FAQs. Get instant answers with AI that searches all your company knowledge at once.
 image: https://cdn.prod.website-files.com/6564f1a6b003d2f4a39394ed/66199c50193eddf2d2d84709_Dashworks-Open-Graph-Apr-2024.png
 site_name: Dashworks
 title: Dashworks | AI Assistant for Workplace Questions

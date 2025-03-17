@@ -2,8 +2,7 @@
 site_uuid: 39b1a805-5e93-4272-9cfa-a55567e94403
 url: https://dgraph.io/
 zinger: 'The only open source, AI-ready graph database'
-description:   A fault-tolerant, distributed graph database, that gives developers the tools
-to rapidly build applications that scale
+description: A fault-tolerant, distributed graph database, that gives developers the tools to rapidly build applications that scale
 github_url: https://github.com/dgraph-io/dgraph
 image: https://cdn.prod.website-files.com/63fa3e9d303f20f698270a7a/6419f91b6297a72e0ea955c5_Open%20Graph.webp
 site_name: Dgraph

@@ -2,9 +2,7 @@
 site_uuid: edcb60ea-c919-476b-9ba9-abec78954e05
 url: https://boomi.com/
 zinger: Make complexity solvable.
-description:   Connect everything with one AI-powered solution for API management,
-integration and automation, and data management.Turn the promise of AI into
-practice
+description: Connect everything with one AI-powered solution for API management, integration and automation, and data management.Turn the promise of AI into practice
 hero: '![[Screenshot 2025-02-20 at 10.11.56 PM_Boomi--Hero.png]]'
 image: https://boomi.com/wp-content/uploads/social-media-icon.png
 site_name: Boomi

@@ -2,9 +2,7 @@
 site_uuid: 94774b55-b13b-4bd5-81e5-856da169cb7a
 url: https://www.builder.io/
 zinger: 'Take Ideas to Production in Seconds, Not Sprints'
-description:   Accelerate your digital teams with AI-powered design-to-code, visual editing,
-and enterprise CMS, all in our Visual Development Platform.Get started
-freeContact sales
+description: Accelerate your digital teams with AI-powered design-to-code, visual editing, and enterprise CMS, all in our Visual Development Platform.Get started freeContact sales
 image: https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fd0d4f1f35cf54b5f8b957c50216cb314?width=1200
 site_name: Builder.io
 title: Visual Development Platform

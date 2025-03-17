@@ -2,8 +2,7 @@
 site_uuid: 828c6099-6b9d-428a-9503-15d1d1f97a6d
 url: https://www.getguru.com/
 zinger: Your company’s AI single source of truth
-description: All your company info, all in one place. Guru brings everything together so
-your teams can find, document, and share knowledge instantly.
+description: All your company info, all in one place. Guru brings everything together so your teams can find, document, and share knowledge instantly.
 tags:
 - AI-Toolkit
 - Knowledge-AI

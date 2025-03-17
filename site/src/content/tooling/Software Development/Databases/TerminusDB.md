@@ -1,8 +1,7 @@
 ---
 site_uuid: 79d6b1b2-953a-4edb-bd09-f3c615816a40
 url: https://terminusdb.com/
-description:   We specialize in entity resolution, semantic search, AI classification, RAG,
-and KYC solutions. Visit vectorlink.ai for more information.
+description: We specialize in entity resolution, semantic search, AI classification, RAG, and KYC solutions. Visit vectorlink.ai for more information.
 tags:
 - Software-Development
 - Databases

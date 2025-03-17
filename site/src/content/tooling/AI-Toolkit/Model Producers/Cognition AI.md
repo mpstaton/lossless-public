@@ -2,8 +2,7 @@
 site_uuid: 0a47e3c5-1701-41f6-8556-ba06633ae418
 url: https://cognition.ai/
 zinger: An applied AI lab building the future of software engineering
-description: We’re the makers of Devin, a collaborative AI teammate that helps ambitious
-engineering teams achieve more.
+description: We’re the makers of Devin, a collaborative AI teammate that helps ambitious engineering teams achieve more.
 tags:
 - AI-Toolkit
 - Model-Producers

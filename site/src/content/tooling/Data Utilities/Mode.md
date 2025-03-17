@@ -2,8 +2,7 @@
 site_uuid: 1a7c1d08-1548-4d6d-a96e-676d95c13eb5
 url: https://mode.com/
 zinger: Business Intelligence built around data teams
-description:   Mode is the central hub for your organization’s analysis, uniting data teams
-and business teams around data to drive business outcomes.
+description: Mode is the central hub for your organization’s analysis, uniting data teams and business teams around data to drive business outcomes.
 image: https://cdn.sanity.io/images/alf6wlua/production/8bb05dc9552d1fa2840b8177ae46f9e5615797e6-1200x630.png?w=1200&h=630&auto=format
 site_name: Mode
 title: 'Modern Business Intelligence, Better data, better decisions'

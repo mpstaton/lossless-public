@@ -2,8 +2,7 @@
 site_uuid: 5052d76b-bc9e-499a-a330-b30c69e005be
 url: https://www.stack-ai.com/
 zinger: The Enterprise Generative AI Platform
-description: Augment your workforce with AI Agents. Outsource back office processes to
-LLMs. Make your organization smarter.
+description: Augment your workforce with AI Agents. Outsource back office processes to LLMs. Make your organization smarter.
 tags:
 - AI-Toolkit
 - Agentic-AI

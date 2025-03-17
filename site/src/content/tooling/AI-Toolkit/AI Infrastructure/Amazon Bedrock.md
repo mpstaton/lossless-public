@@ -2,8 +2,7 @@
 site_uuid: dbe23d2b-730e-4715-ae73-b92abc0a138f
 url: https://aws.amazon.com/bedrock/
 parent_org: '[[Amazon]]'
-zinger: The easiest way to build and scale generative AI applications with foundation
-models
+zinger: The easiest way to build and scale generative AI applications with foundation models
 tags:
 - AI-Toolkit
 - AI-Infrastructure

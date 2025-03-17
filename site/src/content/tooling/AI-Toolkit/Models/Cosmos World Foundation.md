@@ -1,10 +1,7 @@
 ---
 site_uuid: 154e64df-1212-4e6a-bf52-982a288e9793
 url: https://www.nvidia.com/en-us/ai/cosmos/
-description_site_cp: NVIDIA Cosmos™ is a platform of state-of-the-art generative world foundation
-models (WFM), advanced tokenizers, guardrails, and an accelerated data
-processing and curation pipeline built to accelerate the development of
-physical AI systems such as autonomous vehicles (AVs) and robots.
+description_site_cp: NVIDIA Cosmos™ is a platform of state-of-the-art generative world foundation models (WFM), advanced tokenizers, guardrails, and an accelerated data processing and curation pipeline built to accelerate the development of physical AI systems such as autonomous vehicles (AVs) and robots.
 tags:
 - AI-Toolkit
 - Models

@@ -2,10 +2,7 @@
 site_uuid: 73cdb137-3abc-4c3e-99c0-72b696c4406d
 url: https://www.panopto.com/
 zinger: Accelerate Success with Smarter AI Video Tools
-description: Panopto equips leading organizations and universities with AI video tools to
-scale smarter and move faster with video. Transform files and text into
-high-quality videos and host them in Panopto’s secure, searchable, and
-accessible cloud library.
+description: Panopto equips leading organizations and universities with AI video tools to scale smarter and move faster with video. Transform files and text into high-quality videos and host them in Panopto’s secure, searchable, and accessible cloud library.
 tags:
 - AI-Toolkit
 - Generative-AI

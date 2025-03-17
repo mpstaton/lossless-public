@@ -2,8 +2,7 @@
 site_uuid: 80961394-c9bd-4679-a963-d37554ca545d
 url: https://www.warp.dev
 zinger: The intelligent terminal.
-description: Become a command line power user on day one. Warp combines AI and your dev
-team’s knowledge in one fast, intuitive terminal.
+description: Become a command line power user on day one. Warp combines AI and your dev team’s knowledge in one fast, intuitive terminal.
 image: https://leading-bell-3e1c02e64d.media.strapiapp.com/hero_og_1017_0fe1efb432.png
 site_name: Warp
 title: 'Warp: The intelligent terminal'

@@ -2,10 +2,7 @@
 site_uuid: 8fb51fd1-f0e6-48b4-8a7b-1485786ed7db
 zinger: Build like a team of hundreds_
 url: https://appwrite.io/
-description:   Build your entire backend within minutes and scale effortlessly using
-Appwrite's open-source platform. Add Authentication, Databases, Functions,
-Storage, and Messaging to your projects using the frameworks and languages of
-your choice.
+description: Build your entire backend within minutes and scale effortlessly using Appwrite's open-source platform. Add Authentication, Databases, Functions, Storage, and Messaging to your projects using the frameworks and languages of your choice.
 image: https://appwrite.io/images/open-graph/website.png
 site_name: Appwrite
 title: Appwrite - Build like a team of hundreds
