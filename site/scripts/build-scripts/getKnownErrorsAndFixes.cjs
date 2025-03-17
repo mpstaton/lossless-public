@@ -25,6 +25,31 @@ const knownErrorCases = {
     og_last_fetch: 2025-03-07T06:12:36.466Z
     ---`,
 
+    noSiteUUIDinFrontmatter: {
+        exampleErrors: [
+            "",
+            ```---
+            url: https://www.archonlabs.com/
+            site_name: Archon Labs'
+            ---```,
+            ```---
+            url: https://www.archonlabs.com/
+            site_name: Archon Labs'
+            site_uuid:
+            ---```,
+        ],
+        properSyntax: `---
+            url: https://www.archonlabs.com/
+            site_name: Archon Labs
+            site_uuid: 2547def5-fc19-49e2-9c17-e1651c8b6fb5
+            ---`,
+        detectError: new RegExp(/^(?![\s\S]*?---[\s\S]*?site_uuid:\s*[^\s\n][\s\S]*?---)[\s\S]*$/),
+        messageToLog: 'Missing UUID in frontmatter',
+        preventsOperations: ['assureYAMLPropertiesCorrect.cjs', 'trackVideosInRegistry.cjs'],
+        correctionFunction: 'createUUIDinFrontmatterIfNone',
+        isCritical: false
+    },
+
    // Unquoted error message properties (critical)
    // Surround the error message property with single mark quotes
    unquotedErrorMessageProperty: {
@@ -477,6 +502,61 @@ const correctionFunctions = {
         return helperFunctions.createSuccessMessage(markdownFilePath, false);
     },
 
+    async createUUIDinFrontmatterIfNone(markdownContent, markdownFilePath) {
+        const frontmatterData = helperFunctions.extractFrontmatter(markdownContent);
+        if (!frontmatterData.success) {
+            return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
+        }
+
+        // If no frontmatter exists, create it
+        if (frontmatterData.noFrontmatter) {
+            const { v4: uuidv4 } = require('uuid');
+            const newUUID = uuidv4();
+            const newContent = `---\nsite_uuid: ${newUUID}\n---\n${markdownContent}`;
+            return {
+                ...helperFunctions.createSuccessMessage(markdownFilePath, true, ['Created frontmatter with site_uuid']),
+                content: newContent
+            };
+        }
+
+        const lines = frontmatterData.frontmatterString.split('\n');
+        let modified = false;
+        let hasUUID = false;
+
+        // Check if site_uuid already exists
+        for (const line of lines) {
+            if (line.trim().startsWith('site_uuid:')) {
+                const value = line.split(':')[1]?.trim();
+                if (value && value.length > 0) {
+                    hasUUID = true;
+                    break;
+                }
+            }
+        }
+
+        // Only add UUID if it doesn't exist or is empty
+        if (!hasUUID) {
+            const { v4: uuidv4 } = require('uuid');
+            const newUUID = uuidv4();
+            lines.push(`site_uuid: ${newUUID}`);
+            modified = true;
+        }
+
+        if (!modified) {
+            return helperFunctions.createSuccessMessage(markdownFilePath, false);
+        }
+
+        const newFrontmatter = lines.join('\n');
+        const correctedContent = markdownContent.slice(0, frontmatterData.startIndex) +
+            '---\n' + newFrontmatter + '\n---' +
+            markdownContent.slice(frontmatterData.endIndex);
+
+        return {
+            ...helperFunctions.createSuccessMessage(markdownFilePath, true, ['Added site_uuid']),
+            content: correctedContent
+        };
+    },
+
     // Once detected from the detectError regular expression, 
     // the correction function will attempt to fix the error
     // by removing the improper character set and adding a ' single mark quote on both sides
@@ -634,7 +714,7 @@ const correctionFunctions = {
         let blockLines = [];
 
         for (let i = 0; i < lines.length; i++) {
-            const line = lines[i].trim();
+            const line = lines[i];
             const blockScalarMatch = line.match(knownErrorCases.blockScalarSyntaxFoundInProperty.detectError);
 
             if (blockScalarMatch) {
@@ -679,9 +759,10 @@ const correctionFunctions = {
         }
 
         if (wasModified) {
-            const newFrontmatter = processedLines.join('\n');
+            // Create new content without the duplicate lines
+            const newLines = processedLines.join('\n');
             const correctedContent = markdownFileContent.slice(0, frontmatterData.startIndex) +
-                '---\n' + newFrontmatter + '\n---' +
+                '---\n' + newLines + '\n---' +
                 markdownFileContent.slice(frontmatterData.endIndex);
 
             return {
