@@ -10,7 +10,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Import user options
-const USER_OPTIONS = require('./archive/getUserOptionsForBuild.cjs');
+const USER_OPTIONS = require('./getUserOptionsForBuild.cjs');
 
 // Constants for file paths
 const CONTENT_DIR = path.resolve(process.cwd(), USER_OPTIONS.directories.content || 'site/src/content/tooling');

@@ -5,7 +5,7 @@
 
 const USER_OPTIONS = {
     // Directory to process for markdown files
-    TARGET_DIR: 'site/src/content/tooling/Productivity',
+    TARGET_DIR: 'site/src/content/tooling/',
     
     // Output file for the content registry
     TARGET_OUTPUT_FILE: 'site/src/content/data/markdown-content-registry.json',
