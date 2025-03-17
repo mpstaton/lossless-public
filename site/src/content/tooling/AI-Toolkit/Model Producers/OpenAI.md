@@ -1,3 +1,11 @@
+---
+site_uuid: 541235f6-b488-4042-8a76-9f144ccccf36
+title: OpenAI
+tags:
+  - AI-Toolkit
+  - Model Producers
+site_visibility: public
+---
 
 https://youtu.be/RPbmMmcNvYA?si=2HVnqr9U2mQ607Bn
 
@@ -104,4 +112,3 @@ https://youtu.be/uW8C6u-fwVo?si=3QV6TDUGhIDWc6xH
 ![[Screenshot From 2025-03-04 01-00-02_OpenAI--Spigot-Pricing.png]]
 
 ![[Screenshot From 2025-03-04 01-00-17_OpenAI--Spigot-Pricing.png]]
-

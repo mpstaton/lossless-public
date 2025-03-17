@@ -1,6 +1,13 @@
 ---
+site_uuid: 8f6ca1f9-09cd-4e3d-9358-2d48cd0aa8ba
+title: Small
+tags:
+  - AI-Toolkit
+  - Models
+site_visibility: public
+---
 
----An [[AI Models|AI Model]] by [[Mistral]]
+An [[AI Models|AI Model]] by [[Mistral]]
 
 [[Mistral]] launched [[Small]] version 3 on January 30, 2025. (Read the [announcement](https://mistral.ai/news/mistral-small-3/) on the Mistral blog.  
 ![[Pasted image 20250131122008.png]]
