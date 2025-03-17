@@ -9,7 +9,7 @@ image: https://images.prismic.io/launchdarkly-marketingsite/Zkvxryol0Zci9TSn_soc
 site_name: LaunchDarkly
 title: 'LaunchDarkly: Feature Flags, Feature Management, and Experimentation'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/fe269158e15420f50b86a735a800322b0f66896285513f89db27efe7c0de152e.jpeg
-last_jina_request: '2025-03-09T06:45:20.804Z'
+jina_last_request: '2025-03-09T06:45:20.804Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.916Z'
 ---

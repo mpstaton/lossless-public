@@ -10,7 +10,7 @@ image: https://cdn.prod.website-files.com/666c8329825732540ce3c301/666c832982573
 site_name: Not Diamond
 title: Not Diamond
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5cebfb5962687c9da9e393580f9d4cad96647fa1ba2038f837ad51a64f78ed35.jpeg
-last_jina_request: '2025-03-09T06:44:58.144Z'
+jina_last_request: '2025-03-09T06:44:58.144Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.412Z'
 ---

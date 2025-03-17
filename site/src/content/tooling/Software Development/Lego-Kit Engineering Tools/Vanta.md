@@ -11,7 +11,7 @@ image: https://cdn.prod.website-files.com/64009032676f24f376f002fc/6696ff4592cb5
 site_name: Vanta
 title: 'SOC 2, HIPAA, ISO 27001, PCI, and GDPR Compliance'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/4aa14ef0db3c73bef2abb29311daa949d4c20594446fc8d2d18f2fc470881ab7.jpeg
-last_jina_request: '2025-03-09T06:45:10.995Z'
+jina_last_request: '2025-03-09T06:45:10.995Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.903Z'
 ---

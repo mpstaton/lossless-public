@@ -7,7 +7,7 @@ tags:
 og_errors: 'true'
 og_last_error: '2025-03-08T20:39:44.305Z'
 og_error_message: 'HTTP error 401'
-last_jina_request: '2025-03-09T06:44:58.405Z'
+jina_last_request: '2025-03-09T06:44:58.405Z'
 jina_error: 'Error occurred'
 image: https://cms.mistral.ai/assets/060bdeb1-fbff-419c-b2ae-b32b5e441864
 site_name: Mistral OCR

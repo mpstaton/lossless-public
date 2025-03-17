@@ -13,7 +13,7 @@ tags:
 - Opinionated-Analytics
 - Product-Analytics
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/f01df92ad3cb3a4c08bee06f4b68ef53437c72e1d5fce0f536529988a5230752.jpeg
-last_jina_request: '2025-03-09T06:45:20.181Z'
+jina_last_request: '2025-03-09T06:45:20.181Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.834Z'
 ---

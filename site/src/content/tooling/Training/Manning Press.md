@@ -6,7 +6,7 @@ title: Manning
 tags:
 - Training
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2aa533919210ece76615183b3d5a7895ef92b2d007d1a2583a5d33bd7b35921c.jpeg
-last_jina_request: '2025-03-09T06:45:03.135Z'
+jina_last_request: '2025-03-09T06:45:03.135Z'
 jina_error: 'Unexpected token M, Manning' =="... is not valid JSON
 og_last_fetch: '2025-03-07T05:19:01.807Z'
 ---

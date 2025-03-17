@@ -12,7 +12,7 @@ image: https://copycoder.ai/apple-touch-icon.png
 site_name: CopyCoder
 title: CopyCoder
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/8556a4c5ef9c370bf263257b377a46a5019de056f86807ad0796f70e1e50ecb4.jpeg
-last_jina_request: '2025-03-09T06:45:17.174Z'
+jina_last_request: '2025-03-09T06:45:17.174Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.439Z'
 ---

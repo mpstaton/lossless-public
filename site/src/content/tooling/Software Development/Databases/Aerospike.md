@@ -11,7 +11,7 @@ image: https://images.ctfassets.net/drk57q8lctrm/7Lu0enPkmC1UBPCAdNiAzl/4a4e5982
 site_name: Aerospike
 title: Aerospike | Aerospike
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/596d4aa0511326d039f40b456b3a6788edbf4c229e7cfa0312c22fef2e0b8801.jpeg
-last_jina_request: '2025-03-09T06:45:05.685Z'
+jina_last_request: '2025-03-09T06:45:05.685Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.926Z'
 ---

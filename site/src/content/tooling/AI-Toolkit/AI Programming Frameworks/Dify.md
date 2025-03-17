@@ -10,7 +10,7 @@ image: https://framerusercontent.com/assets/wh4qGCAanwpqHs0Kot8VLBSty4.png
 site_name: Dify.AI
 title: The Innovation Engine for Generative AI Applications
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/eb274cb892747ac14f78de65eeac7dc2009c4cd83c0ba16e2dc7ca292f8e6490.jpeg
-last_jina_request: '2025-03-09T06:45:49.291Z'
+jina_last_request: '2025-03-09T06:45:49.291Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.179Z'
 ---

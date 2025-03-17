@@ -9,7 +9,7 @@ image: https://upscayl.org/og-image.webp
 site_name: Upscayl
 title: Upscayl - AI Image Upscaler
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cfe28d1101cd81df250a1834fb0964fbccd0be95377182d9e281c3b3b69bc19c.jpeg
-last_jina_request: '2025-03-09T06:45:19.101Z'
+jina_last_request: '2025-03-09T06:45:19.101Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:19.166Z'
 ---

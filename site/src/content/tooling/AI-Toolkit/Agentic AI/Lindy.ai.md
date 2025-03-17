@@ -10,7 +10,7 @@ image: https://cdn.prod.website-files.com/63e15df811f9df22b231e58f/6724d4fc6feb5
 site_name: Meet Your AI Assistant
 title: Lindy — Meet Your AI Assistant
 favicon: https://cdn.prod.website-files.com/63e15df811f9df22b231e58f/6733c559fa6a679364b58973_32.png
-last_jina_request: '2025-03-09T06:45:19.786Z'
+jina_last_request: '2025-03-09T06:45:19.786Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:40.126Z'
 ---

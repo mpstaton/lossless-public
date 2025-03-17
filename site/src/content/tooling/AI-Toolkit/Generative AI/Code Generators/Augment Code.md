@@ -13,7 +13,7 @@ image: https://cdn.prod.website-files.com/66d76c2202b335e39ad2b5e8/675cb87f1ba91
 site_name: Augment Code
 title: Developer AI for real work
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/daf5d9ff6b9cfd77540b05bea208c5939fa58f864462d8c95e7aea8f0f442d3c.jpeg
-last_jina_request: '2025-03-09T06:45:21.522Z'
+jina_last_request: '2025-03-09T06:45:21.522Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.440Z'
 ---

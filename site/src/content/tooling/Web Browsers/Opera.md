@@ -9,7 +9,7 @@ favicon: https://cdn-production-opera-website.operacdn.com/staticfiles/assets/im
 tags:
 - Web-Browsers
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/e86723fc0a4176fdd336ac0802c453e457a05c1f857d082a340fa18de55ba253.jpeg
-last_jina_request: '2025-03-09T06:44:58.721Z'
+jina_last_request: '2025-03-09T06:44:58.721Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.782Z'
 ---

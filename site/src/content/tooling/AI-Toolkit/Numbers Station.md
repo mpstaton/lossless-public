@@ -12,7 +12,7 @@ description_site_cp: Bring GenAI to your data applications. Embed AI agents that
 og_errors: 'true'
 og_last_error: '2025-03-08T20:39:43.895Z'
 og_error_message: 'HTTP error 401'
-last_jina_request: '2025-03-09T06:45:12.493Z'
+jina_last_request: '2025-03-09T06:45:12.493Z'
 jina_error: 'Error occurred'
 image: https://www.numbersstation.ai/wp-content/uploads/2024/10/seo-card.png
 site_name: Numbers Station

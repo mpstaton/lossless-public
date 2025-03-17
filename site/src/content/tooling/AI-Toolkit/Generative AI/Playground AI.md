@@ -8,7 +8,7 @@ tags:
 image: https://playground.com/og/default.png
 site_name: Playground
 title: 'Free AI Design Tool: Logos, T-Shirts, Social Media - Playground'
-last_jina_request: '2025-03-09T06:45:17.298Z'
+jina_last_request: '2025-03-09T06:45:17.298Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:19.172Z'
 ---

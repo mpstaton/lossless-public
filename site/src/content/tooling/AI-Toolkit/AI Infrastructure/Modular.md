@@ -8,7 +8,7 @@ image: https://cdn.prod.website-files.com/63f9f100025c058594957cca/669d3b736774b
 site_name: Modular
 title: 'Modular: A Fast, Scalable Gen AI Inference Platform'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/3ebb2f29af869bcb006daec0b2e69eb5c2fad680db28ff41975f05898474a19f.jpeg
-last_jina_request: '2025-03-09T06:45:03.218Z'
+jina_last_request: '2025-03-09T06:45:03.218Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.412Z'
 ---

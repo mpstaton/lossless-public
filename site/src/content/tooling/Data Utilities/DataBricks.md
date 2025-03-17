@@ -9,7 +9,7 @@ image: ""https://www.databricks.com/sites/default/files/2023-11/databricks-og-un
 site_name: Databricks
 title: The Data and AI Company — Databricks
 og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/42aaa147ffc4a84ee2f837ee8c5005842c36c79fea79f9e5644cd8c215635c40.jpeg""
-last_jina_request: '2025-03-09T06:44:59.870Z'
+jina_last_request: '2025-03-09T06:44:59.870Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.835Z'
 ---

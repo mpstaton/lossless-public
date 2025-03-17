@@ -11,7 +11,7 @@ tags:
 site_name: Bind AI IDE
 title: 'IDE by Bind AI | Alternative to Lovable, Cursor, Replit'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/821d2f71b0b3f450add5a7747eaec1da1356b2cd9ccd286965901a43b589ac4e.jpeg
-last_jina_request: '2025-03-09T06:45:13.603Z'
+jina_last_request: '2025-03-09T06:45:13.603Z'
 jina_error: 'Error occurred'
 og_errors: 'true'
 og_last_error: '2025-03-09T08:16:01.731Z'

@@ -11,7 +11,7 @@ image: https://framerusercontent.com/images/PYav0IxmYsEwtUsorGdJyrwUJQ.png
 site_name: Omnitool.ai
 title: Omnitool.ai - Your AI Desktop
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/113f2075cc26de708037efbb9f4963608112d2686da569647dc672d062005018.jpeg
-last_jina_request: '2025-03-09T06:45:12.251Z'
+jina_last_request: '2025-03-09T06:45:12.251Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:21:10.663Z'
 ---

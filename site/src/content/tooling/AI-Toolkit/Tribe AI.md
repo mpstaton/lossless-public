@@ -10,7 +10,7 @@ image: https://cdn.prod.website-files.com/63c0a7ce63e7241d23e5e2bc/63c0a81e6584d
 site_name: Tribe AI
 title: Tribe AI | AI Talent Network and Consulting
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/078dbb8074582a3fb12ae6855387de3389e292484ddf0599da0c214c81c93d0f.jpeg
-last_jina_request: '2025-03-09T06:44:59.370Z'
+jina_last_request: '2025-03-09T06:44:59.370Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.841Z'
 ---

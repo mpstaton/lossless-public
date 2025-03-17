@@ -9,7 +9,7 @@ favicon: https://www.g2i.co/favicon.ico
 tags:
 - Enterprise-Jobs-to-be-Done
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/361a5787b8729489800c009c5d26b986759483cdb9c75f6cf952bbad82d2289e.jpeg
-last_jina_request: '2025-03-09T06:45:17.901Z'
+jina_last_request: '2025-03-09T06:45:17.901Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.826Z'
 ---

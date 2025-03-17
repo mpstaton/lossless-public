@@ -1,11 +1,14 @@
 ---
+import Layout from "@layouts/Layout.astro";
 import ArticlesLayout from "@layouts/Articles.astro";
 ---
 
+<Layout>
 <ArticlesLayout
   title="Notes from the near future"
   description="A collection of articles and resources about the future of software development."
 />
+</Layout>
 
 <style>
   body {
@@ -14,5 +17,9 @@ import ArticlesLayout from "@layouts/Articles.astro";
   h1 {
     font-family: "Poppins", sans-serif;
     color: var(--clr-lossless-primary-light);
+  }
+  p {
+    color: var(--clr-lossless-primary-light);
+    font-family: "", sans-serif;
   }
 </style>

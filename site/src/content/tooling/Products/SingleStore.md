@@ -7,7 +7,7 @@ favicon: https://www.singlestore.com/favicon-32x32.png?v=277b9cbbe31e8bc416504cf
 tags:
 - Products
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2d238e31187dd06a0fbe1c477af1007f580d954c638cd97a64e11f4e2271d69b.jpeg
-last_jina_request: '2025-03-09T06:45:09.296Z'
+jina_last_request: '2025-03-09T06:45:09.296Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.809Z'
 ---

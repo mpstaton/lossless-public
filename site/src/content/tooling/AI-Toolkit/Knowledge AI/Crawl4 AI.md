@@ -1,6 +1,6 @@
 ---
 site_uuid: 69d949b9-4674-4fe0-a80b-cbde120fa24f
-github_url: https://github.com/unclecode/crawl4ai
+github_repo_url: https://github.com/unclecode/crawl4ai
 ---
 https://youtu.be/FHVfMxOYTBM?si=WHLeAinIWsfPz3mY
 

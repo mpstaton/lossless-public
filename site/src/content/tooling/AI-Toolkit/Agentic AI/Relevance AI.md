@@ -12,7 +12,7 @@ image: https://cdn.prod.website-files.com/636cad09a1159553a45e8ba1/65ee971034ef6
 site_name: Relevance AI
 title: Relevance AI - Build your AI Workforce - AI for Business
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/ff20f00519bcd4bd711892e9aa52da7bee1e3ae560006fc34cf505405050da09.jpeg
-last_jina_request: '2025-03-09T06:45:02.158Z'
+jina_last_request: '2025-03-09T06:45:02.158Z'
 jina_error: 'fetch failed'
 og_last_fetch: '2025-03-07T05:20:40.124Z'
 ---

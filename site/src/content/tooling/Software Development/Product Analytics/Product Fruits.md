@@ -9,7 +9,7 @@ site_name: Product Fruits
 title: The leading customer onboarding platform
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/abc4daaa867585d47da64dba24cf4110364abf79f33eb19275afe0fb9fc37c06.jpeg
 zinger: Smarter user onboarding and retention
-last_jina_request: '2025-03-09T06:45:12.916Z'
+jina_last_request: '2025-03-09T06:45:12.916Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.902Z'
 ---

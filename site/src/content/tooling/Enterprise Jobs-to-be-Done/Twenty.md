@@ -7,7 +7,7 @@ favicon: https://framerusercontent.com/images/jFBfPDVaJx9kQOwGT4WiIwZCos.png
 tags:
 - Enterprise-Jobs-to-be-Done
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2ef97ffe0b869e2e8316b66eef4a59b959cc88d038ed23bec41951e3a7d6527c.jpeg
-last_jina_request: '2025-03-09T06:45:14.644Z'
+jina_last_request: '2025-03-09T06:45:14.644Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.826Z'
 ---

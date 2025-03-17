@@ -7,7 +7,7 @@ favicon: https://affinity.serif.com/favicon-32.png
 tags:
 - Creative
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/7f39b43a9ca4f463936049e7a9f94bcdb87ae1c5074a57f84f026cd94bd42303.jpeg
-last_jina_request: '2025-03-09T06:45:15.744Z'
+jina_last_request: '2025-03-09T06:45:15.744Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.839Z'
 ---

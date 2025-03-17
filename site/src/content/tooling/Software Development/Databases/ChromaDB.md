@@ -9,7 +9,7 @@ image: https://www.trychroma.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fchr
 site_name: Chroma
 title: Chroma
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/095d2c9fb3f127bf5ce51db84b52efc92ff3d23b74629a79de8e46b18f106d4f.jpeg
-last_jina_request: '2025-03-09T06:45:14.088Z'
+jina_last_request: '2025-03-09T06:45:14.088Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.925Z'
 ---

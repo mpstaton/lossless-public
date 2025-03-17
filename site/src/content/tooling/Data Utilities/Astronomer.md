@@ -9,7 +9,7 @@ favicon: https://www.astronomer.io/favicon.svg?_cchid=9c757aba2122bd77699d0b55ce
 tags:
 - Data-Utilities
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c3636c9adad3e69e9e40f4d1c90fbbc94a75074ddfee7365577f5124be2c0e3a.jpeg
-last_jina_request: '2025-03-09T06:45:09.836Z'
+jina_last_request: '2025-03-09T06:45:09.836Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.836Z'
 ---

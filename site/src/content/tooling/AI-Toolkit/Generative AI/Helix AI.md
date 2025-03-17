@@ -11,7 +11,7 @@ favicon: https://tryhelix.ai/assets/display/favicon-16x16.png
 og_errors: 'true'
 og_last_error: '2025-03-07T05:38:03.264Z'
 og_error_message: 'Error occurred'
-last_jina_request: '2025-03-09T06:44:59.411Z'
+jina_last_request: '2025-03-09T06:44:59.411Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:39.776Z'
 ---

@@ -9,7 +9,7 @@ title: 'Figma: The Collaborative Interface Design Tool'
 favicon: https://static.figma.com/app/icon/1/icon-192.png
 youtube_url: https://www.youtube.com/@Figma
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/68fedf64924894e13bb99abb21c12be64ecfb0387bc39c7acd2c64cd5949932f.jpeg
-last_jina_request: '2025-03-09T06:45:10.742Z'
+jina_last_request: '2025-03-09T06:45:10.742Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.838Z'
 ---

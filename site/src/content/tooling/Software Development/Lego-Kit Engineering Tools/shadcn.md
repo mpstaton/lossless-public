@@ -11,7 +11,7 @@ image: https://ui.shadcn.com/og?title=Build%20your%20component%20library&descrip
 site_name: shad/cn
 title: Build your component library
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/11217e97399022d963ebaf46f7eff4832e7abeb22aad7e0b24c37fe7470e69ed.jpeg
-last_jina_request: '2025-03-09T06:45:12.507Z'
+jina_last_request: '2025-03-09T06:45:12.507Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.902Z'
 ---

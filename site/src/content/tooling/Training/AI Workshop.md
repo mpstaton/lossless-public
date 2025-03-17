@@ -7,7 +7,7 @@ favicon: https://assets.skool.com/skool/ed24268642ae417a9b8e3b9827cdd1fd.ico
 tags:
 - Training
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/1d3b73a72099128c63c2eea5f2e52fa4597d4938c06d90fe1a55e288e5716c92.jpeg
-last_jina_request: '2025-03-09T06:44:59.621Z'
+jina_last_request: '2025-03-09T06:44:59.621Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.809Z'
 ---

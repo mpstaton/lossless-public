@@ -7,7 +7,7 @@ og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fa
 og_errors: 'true'
 og_last_error: '2025-03-07T10:19:44.201Z'
 og_error_message: 'HTTP error 401'
-last_jina_request: '2025-03-09T06:45:03.552Z'
+jina_last_request: '2025-03-09T06:45:03.552Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T06:11:14.101Z'
 ---

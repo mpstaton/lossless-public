@@ -12,7 +12,7 @@ tags:
 - Software-Development
 - Frameworks
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/0ea1e02c7fe5afc1e858ef9f4cb74623c2beac1690f6b9bd60d46b5188b23009.jpeg
-last_jina_request: '2025-03-09T06:45:08.724Z'
+jina_last_request: '2025-03-09T06:45:08.724Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.428Z'
 ---

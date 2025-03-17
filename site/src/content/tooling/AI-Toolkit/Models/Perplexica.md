@@ -5,7 +5,7 @@ tags: ["Runs-Local", "Open-Source", "AI-Models", "AI-Toolkit", "Models"]
 - Runs-Local
 - Open-Source
 - AI-Models
-github_url: https://github.com/ItzCrazyKns/Perplexica
+github_repo_url: https://github.com/ItzCrazyKns/Perplexica
 ---
 
 

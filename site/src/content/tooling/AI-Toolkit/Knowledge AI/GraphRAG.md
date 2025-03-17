@@ -9,7 +9,7 @@ image: https://microsoft.github.io/graphrag/img/GraphRag-Figure1.jpg
 site_name: Welcome
 title: Welcome - GraphRAG
 favicon: https://microsoft.github.io/graphrag/assets/images/favicon.png
-last_jina_request: '2025-03-09T06:44:58.144Z'
+jina_last_request: '2025-03-09T06:44:58.144Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:18.723Z'
 ---

@@ -10,7 +10,7 @@ favicon: ""'https://zen-browser.app/favicon.svg'""
 tags:
 - Web-Browsers
 og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/20bbce1a48869323374bd13c1659cb6b7875e041f78bbb477eaca42dd04844a6.jpeg""
-last_jina_request: '2025-03-09T06:45:01.685Z'
+jina_last_request: '2025-03-09T06:45:01.685Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-14T05:42:21.374Z'
 ---

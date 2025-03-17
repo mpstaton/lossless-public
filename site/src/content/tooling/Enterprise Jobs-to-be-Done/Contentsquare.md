@@ -9,7 +9,7 @@ favicon: https://contentsquare.com/favicons/favicon-32x32.png
 tags:
 - Enterprise-Jobs-to-be-Done
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/a61bebc689f99610f965f262c490e65f0e7e3c0f390105fd2128ba44bfff650c.jpeg
-last_jina_request: '2025-03-09T06:45:05.177Z'
+jina_last_request: '2025-03-09T06:45:05.177Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.830Z'
 ---

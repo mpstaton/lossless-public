@@ -7,7 +7,7 @@ favicon: https://www.prisma.io/images/favicon-32x32.png
 tags:
 - Data-Utilities
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/21eb8d2b8a560f67e14af1a9c4078967a03840fc96a86c2830ce946376c912ee.jpeg
-last_jina_request: '2025-03-09T06:45:21.821Z'
+jina_last_request: '2025-03-09T06:45:21.821Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.832Z'
 ---

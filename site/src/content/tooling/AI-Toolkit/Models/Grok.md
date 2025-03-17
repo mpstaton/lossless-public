@@ -9,7 +9,7 @@ image: https://grok.com/opengraph-image.png?e8d593eb60fd5bd1
 site_name: Grok
 title: Grok
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/cd560a68164e0221ed2774aa27b320b2ba17ba5bd612b628566169edba609027.jpeg
-last_jina_request: '2025-03-09T06:45:20.378Z'
+jina_last_request: '2025-03-09T06:45:20.378Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:18.954Z'
 ---

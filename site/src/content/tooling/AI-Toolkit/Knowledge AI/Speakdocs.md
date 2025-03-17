@@ -9,7 +9,7 @@ image: https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=6
 site_name: SpeakDocs
 title: 'SpeakDocs - Intelligent conversations, Instant insights'
 favicon: https://speakdocs.io/favicon.ico
-last_jina_request: '2025-03-09T06:44:58.143Z'
+jina_last_request: '2025-03-09T06:44:58.143Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:18.721Z'
 ---

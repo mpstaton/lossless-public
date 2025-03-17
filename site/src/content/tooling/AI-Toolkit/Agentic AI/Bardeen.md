@@ -10,7 +10,7 @@ image: https://cdn.prod.website-files.com/61f1e1f5e79d214f7f0df5a0/65a932a0a97b2
 site_name: Bardeen AI
 title: 'Bardeen AI: GTM Copilot for Workflow Automation'
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/974116f6b2e6e477ff7a5644fd9e56477724a3f0c9f0c04580d405202de21df1.jpeg
-last_jina_request: '2025-03-09T06:45:16.762Z'
+jina_last_request: '2025-03-09T06:45:16.762Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.170Z'
 ---

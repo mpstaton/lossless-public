@@ -11,7 +11,7 @@ image: https://zerosync.co/zerosync-logo.png
 site_name: ZeroSync
 title: ZeroSync
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/57225e86925aec48819247c13bd22ae847f25040ed8c1f660127e1feac186111.jpeg
-last_jina_request: '2025-03-09T06:45:20.153Z'
+jina_last_request: '2025-03-09T06:45:20.153Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.911Z'
 ---

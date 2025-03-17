@@ -1,6 +1,6 @@
 ---
 site_uuid: af0ad643-4a71-4862-8bff-fc4b6b46dd25
-github_url: https://github.com/QwenLM
+github_repo_url: https://github.com/QwenLM
 parent_org: "[[Alibaba]]"
 huggingface_url: https://huggingface.co/Qwen
 ---

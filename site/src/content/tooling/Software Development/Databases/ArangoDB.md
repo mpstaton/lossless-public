@@ -11,7 +11,7 @@ favicon: ""'https://arangodb.com/wp-content/uploads/2023/08/cropped-favicon-192x
 og_errors: 'true'
 og_last_error: '2025-03-07T05:36:34.550Z'
 og_error_message: 'Error occurred'
-last_jina_request: '2025-03-09T06:45:04.202Z'
+jina_last_request: '2025-03-09T06:45:04.202Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.925Z'
 ---

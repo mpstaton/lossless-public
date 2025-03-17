@@ -7,7 +7,7 @@ favicon: ""'https://www.manim.community/favicon-32x32.png'""
 tags:
 - Creative
 og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/c0f64b5de366cf8f303b5b8be64ef39d13087eb16002e41c9faa2054bd1bee05.jpeg""
-last_jina_request: '2025-03-09T06:45:20.239Z'
+jina_last_request: '2025-03-09T06:45:20.239Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.837Z'
 ---

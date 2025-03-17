@@ -8,7 +8,7 @@ tags:
 og_errors: 'true'
 og_last_error: '2025-03-07T10:19:44.412Z'
 og_error_message: 'HTTP error 401'
-last_jina_request: '2025-03-09T06:44:58.186Z'
+jina_last_request: '2025-03-09T06:44:58.186Z'
 jina_error: 'Error occurred'
 image: https://airfocus.com/static/9153e167c28e4c21d4ed3a1ff387c8a0/meta-default.png
 site_name: Strategic Product Management Platform

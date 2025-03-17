@@ -11,7 +11,7 @@ tags:
 og_errors: 'true'
 og_last_error: '2025-03-07T05:38:03.788Z'
 og_error_message: 'Error occurred'
-last_jina_request: '2025-03-09T06:45:03.344Z'
+jina_last_request: '2025-03-09T06:45:03.344Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.744Z'
 ---

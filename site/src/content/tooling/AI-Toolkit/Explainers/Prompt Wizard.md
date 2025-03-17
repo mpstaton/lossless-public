@@ -1,5 +1,5 @@
 ---
-github_url: https://github.com/microsoft/PromptWizard
+github_repo_url: https://github.com/microsoft/PromptWizard
 created_by: "[[Microsoft]]"
 ---
 

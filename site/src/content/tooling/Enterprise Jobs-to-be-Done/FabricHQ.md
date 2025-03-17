@@ -7,7 +7,7 @@ favicon: https://cdn.prod.website-files.com/650031343b3cb15970960aee/650ab274e1d
 tags:
 - Enterprise-Jobs-to-be-Done
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/d3813120a803dbfcec1175f3f34eaaafe0bc0dc7eb5508d85111f9c0cee29f86.jpeg
-last_jina_request: '2025-03-09T06:45:17.273Z'
+jina_last_request: '2025-03-09T06:45:17.273Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.829Z'
 ---

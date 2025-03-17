@@ -8,7 +8,7 @@ favicon: https://edgestatic.azureedge.net/welcome/static/favicon.png
 tags:
 - Web-Browsers
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/76ba71ece8c53c686d8b27f4046552c41a072811cf81cc488e322095c192e981.jpeg
-last_jina_request: '2025-03-09T06:44:58.296Z'
+jina_last_request: '2025-03-09T06:44:58.296Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.784Z'
 ---
