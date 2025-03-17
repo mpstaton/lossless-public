@@ -7,12 +7,27 @@ const sleep = promisify(setTimeout);
 
 // ================================================
 // Configuration by the user
+/*
+ - [ ] Set the file directory you want processed as TARGET_FILES.targetDir
+ - [ ] Set the report directory as REPORTS_DIR
+ - [ ] Set either a single case to attempt to fix as singleCaseToAttemptToFix
+ - [ ] Or, set the sequence of cases to attempt to fix as sequenceOfCasesToAttemptToFix
+*/
 // ================================================
 const TARGET_FILES = {
   targetDir: "site/src/content/tooling/"
 };
 
 const REPORTS_DIR = "site/scripts/data-or-content-generation/fixes-needed/errors-processing/";
+
+// ====== 
+// Single case to attempt to fix
+// ================================================
+const singleCaseToAttemptToFix = {
+  case: knownErrorCases.unquotedErrorMessageProperty,
+  reportName: "Added-Quotes-to-Error-Message-Properties"
+};
+
 
 // ================================================
 // Sequence of cases to attempt to fix
@@ -22,6 +37,7 @@ const REPORTS_DIR = "site/scripts/data-or-content-generation/fixes-needed/errors
 // ================================================
 const sequenceOfCasesToAttemptToFix = [
   { case: knownErrorCases.blockScalarSyntaxFoundInProperty, reportName: "Removed-Block-Scalar-Syntax-from-Properties" },
+  { case: knownErrorCases.convertMultiLineStringsToSingleLineStrings, reportName: "Converted-Multi-Line-Strings-to-Single-Line-Strings" },
   { case: knownErrorCases.unquotedErrorMessageProperty, reportName: "Added-Quotes-to-Error-Message-Properties" },
   { case: knownErrorCases.improperCharacterSetSurroundingErrorMessage, reportName: "Fixed-Character-Set-Around-Error-Messages" },
   { case: knownErrorCases.undesiredQuotesPresentInURLProperty, reportName: "Removed-Quotes-from-URL-Properties" },

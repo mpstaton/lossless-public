@@ -3,6 +3,28 @@ const matter = require('gray-matter');
 const fs = require('fs');
 const glob = require('glob');
 
+
+// ============================================================================
+// Single Issue resolution reporting section
+// ============================================================================
+
+const singleIssueReportTemplate =`
+---
+title: ${errorCase.reportName}
+date: ${today}
+---
+## Summary of Files Processed
+Files processed: ${filesProcessed}
+Files with issue: ${namesOfFilesWithIssue.length}
+Successful corrections: ${namesOfFilesCorrected.length}
+
+### Files with Issues
+${namesOfFilesWithIssue.map(file => `[[${path.basename(file, '.md')}]]`).join(', ')}
+
+### Files Successfully Corrected
+${namesOfFilesCorrected.map(file => `[[${path.basename(file, '.md')}]]`).join(', ')}
+`;
+
 /**
  * @typedef {Object} ProcessingStats
  * @property {number} totalFound - Total number of files found
@@ -471,5 +493,6 @@ function writeOutput(markdown, options) {
 
 module.exports = {
   formatEvaluationReport,
-  writeOutput
+  writeOutput,
+  singleIssueReportTemplate
 };

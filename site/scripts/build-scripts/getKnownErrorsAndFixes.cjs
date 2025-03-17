@@ -180,6 +180,7 @@ const knownErrorCases = {
       messageToLog: 'Fixed spacing and merged multiline text in property',
       preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
       correctionFunction: 'convertMultiLineStringsToSingleLineStrings',
+      reportName: 'Multi-line-strings-to-single-line-strings',
       isCritical: false
    },
    
@@ -262,6 +263,23 @@ const knownErrorCases = {
     preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
     correctionFunction: 'assureProperQuotesAroundTimestampProperties',
     isCritical: false
+   },
+
+   // Sometimes the site admins will want to change a property name for easier management.
+   // This is a non-critical issue.
+   // Run through every Markdown file in the target directory, looking for the property name.
+   // If found, replace it with the new property name.
+   // All new properties must use underscores as separators. No camelCase or Train-Case.
+   propertyRename: {
+      exampleErrors: [
+         'property: old_property'
+      ],
+      properSyntax: 'property: new_property',
+      detectError: /^property:[ \t]*old_property[ \t]*$/m,
+      messageToLog: 'Property rename',
+      preventsOperations: ['assureYAMLPropertiesCorrect.cjs'],
+      correctionFunction: 'renamePropertyEverywhere',
+      isCritical: false
    }
 };
 
