@@ -11,6 +11,14 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 jina_last_request: '2025-03-09T06:45:09.178Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:19.175Z'
+site_uuid: 43fe1704-8782-4173-bac0-6136e15959e7
+site_uuid: 73ec3b55-de5d-415b-a8fd-3cddb8512ec7
+site_uuid: c055c832-900d-442c-bba1-241a5bfbfbea
+site_uuid: 041d02f9-5512-481c-a574-f0cafb56017f
+site_uuid: 1dfa8aff-5161-4311-aaa6-98cca1811b31
+site_uuid: 96adfaa3-4a96-4091-aa61-954ebcc55c2a
+site_uuid: d1c0d66d-11c0-4836-8768-48d8805cc5e6
+site_uuid: 354c8d57-af6a-40d5-8a34-c6c910c1cc88
 ---
 [[Generative AI]]
 [[AI Avatars]]

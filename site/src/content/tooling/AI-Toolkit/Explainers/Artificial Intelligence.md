@@ -4,6 +4,13 @@ tags:
 aliases:
 - AI
 - Enterprise AI
+site_uuid: 2714bd4b-69e5-434c-89cd-4f215ebcb114
+site_uuid: 8a647237-aede-4ae8-9a5c-ddd60f0a0507
+site_uuid: 875028bd-06c0-433f-b8ee-354f156b2835
+site_uuid: d1765e2a-954a-4e19-91d7-4d440320333d
+site_uuid: 0a74f6bd-3702-4d06-bd01-25289b4a0082
+site_uuid: e47900f1-0c64-4840-b0c7-a618b34b02e9
+site_uuid: a2a81bf6-7fa9-4537-a2e3-3a98cc46cf59
 ---
 ## Enterprise AI
 [[n8n]], [[Flowise]], [[Dynamiq AI]], [[Coveo]], [[Glean]],  [[Abacus AI]], [[Tribe AI]]
@@ -11,7 +18,13 @@ aliases:
 
 https://youtu.be/kbG2CWrmKTw?si=IszFpFxy41V-XjbI
 
+https://youtube.com/playlist?list=PLoROMvodv4rPgrvmYbBrxZCK_GwXvDVL3&si=LjXEu5jUJ3GJlxyF
+
 https://youtu.be/JrLt5LXW1mo?si=-bF3fAMZ6PCocRWT
+
+https://youtu.be/XNqpySV97IU?si=3grm_Z79Rs-w2qXb
+
+https://youtu.be/LgUjLcxJxVg?si=2UoT3Fn0Q8N_k6u2
 
 https://youtu.be/RtQmNp5FKsk?si=siw13Vg91ch5CSRb
 

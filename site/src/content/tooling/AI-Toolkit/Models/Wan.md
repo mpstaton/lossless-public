@@ -8,6 +8,12 @@ tags: ["AI-Models", "Video-Generators", "Check-it-Out", "Open-Source", "AI-Toolk
 - Video-Generators
 - Check-it-Out
 - Open-Source
+site_uuid: 8494e45b-f587-4c49-9482-9066cad786aa
+site_uuid: 3fd06f3e-2a3e-495b-98ee-cdd50bca5b41
+site_uuid: 637c2f99-d6a1-4c03-b0e1-cd40e1c9d448
+site_uuid: da913119-0b5b-4318-86f8-bea31b46faba
+site_uuid: c15bd566-f384-4ca5-892a-7458f6a0fb23
+site_uuid: 896ca697-41ae-4a72-bf73-244b9ca40a24
 ---
 [[Open Source]]
 https://youtu.be/S4jS9l-Xtvc?si=hLxbmoF_6VKH9f5G

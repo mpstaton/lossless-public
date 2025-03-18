@@ -14,6 +14,14 @@ jina_last_request: '2025-03-09T06:45:22.047Z'
 jina_error: 'Error occurred'
 parent_org: '[[ByteDance]]'
 og_last_fetch: '2025-03-07T05:20:56.434Z'
+site_uuid: 21f0997b-d940-4138-8aa6-9a78bc1186da
+site_uuid: dbadf91b-e154-4803-a5d0-b9778b75eaa9
+site_uuid: b604626b-a940-402f-a13e-615c629cad14
+site_uuid: b72f570a-fe20-4108-acb0-c7bab5560652
+site_uuid: 33f7618b-33bd-45e3-b476-b23035a1ee8d
+site_uuid: e032cd29-cabf-4931-9b2b-7f9bf16ac7f4
+site_uuid: 57c63db8-6457-4a9c-aa8c-4789a126f105
+site_uuid: be82121f-6789-4cf0-b4e7-60bd4aec9fad
 ---
 ##### [[Trae AI]] is an  [[AI Native Applications|AI Native]] [[Text Editors or IDEs|IDE]] [[Code Generator]]
 Similar to [[Cursor]], [[Windsurf IDE]].

@@ -21,5 +21,13 @@ title: Home
 favicon: https://www.knack.com/wp-content/smush-webp/2023/06/cropped-favicon-1-192x192.png.webp
 og_fetched_url: https://www.knack.com
 og_last_fetch: '2025-03-14T04:42:10.316Z'
+site_uuid: 0313f8dd-0059-41e7-8240-d4bedb772d1b
+site_uuid: bb87cbfa-f922-418a-a639-06a02eb9f396
+site_uuid: fbbc3fa5-e5b6-47d7-8f90-58cea99dc672
+site_uuid: 95903767-0eae-4bef-bd18-99b5c27caa62
+site_uuid: 8dc5ab31-544f-4e23-8419-ee8fe0bb5fb1
+site_uuid: b6e9f812-ea3c-468a-beea-4118fbf2be19
+site_uuid: f12af080-7f0f-4e71-a4e5-7467f1be4f46
+site_uuid: fef515bd-2c2b-45a1-9f33-a0d79ed67f43
 ---
 

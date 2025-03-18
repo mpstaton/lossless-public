@@ -1,6 +1,13 @@
 ---
 aliases:
 - AI Avatar
+site_uuid: 441829c6-ee96-4b4c-b6e7-2f9803f8f7ac
+site_uuid: c9e05f93-42af-46d6-aee5-42458d5b8e05
+site_uuid: 4050a132-605d-48a5-9ffd-c48a64d31119
+site_uuid: c08f9740-6159-4426-adf5-38d5118e3fd5
+site_uuid: 01b5b5cb-45b4-4513-b1bd-54a56d794144
+site_uuid: d134ee91-6dc1-482d-b204-2451f6234c92
+site_uuid: 09025f19-eb0e-4cd2-aa8d-0e49b84cd967
 ---
 
 [[Pickle AI]]

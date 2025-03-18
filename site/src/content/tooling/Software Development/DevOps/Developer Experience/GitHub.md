@@ -14,6 +14,14 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 jina_last_request: '2025-03-09T06:45:19.022Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.432Z'
+site_uuid: 940c1a48-fe14-44fd-8d32-15fcf5cede39
+site_uuid: 10dbf0c6-9330-47d8-9706-b94d6c01a298
+site_uuid: 51de1bb5-9b8a-4e60-a2dd-ab00192d5987
+site_uuid: f3ead81f-a088-4c62-94f6-f9d075e4498d
+site_uuid: 196c49f6-5cc1-4eba-81d8-347ae835a3e0
+site_uuid: 7ae1d6cb-c3ae-4a17-ad77-f5b01064970d
+site_uuid: c6b4806f-e36d-4ff6-9a75-ba70aec30aca
+site_uuid: 2375ef77-9e10-45a9-a168-a8e69d17333b
 ---
 [[Microsoft]] acquired [[GitHub]].
 

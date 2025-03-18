@@ -15,6 +15,14 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 jina_last_request: '2025-03-09T06:45:22.239Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.425Z'
+site_uuid: 0738b8b7-e9ab-4997-8f25-6e64c96f49ff
+site_uuid: 7e58e9dc-78ea-4e05-a40e-fc43d09fa48f
+site_uuid: 82b72668-9d6e-4ab8-81e0-dd7c3432e5fa
+site_uuid: fcad9cb1-4a96-4d91-89df-7e6c54d91ef7
+site_uuid: 92b785ee-8e02-4bb2-abcd-ddeffc28cd7b
+site_uuid: daebea73-4686-457c-bd47-b7d9e826bf58
+site_uuid: a2dd2a39-6915-4d00-b4a0-64547f93fc42
+site_uuid: 08d38e33-0e4b-4fd7-a3a6-4df078fcd4d3
 ---
 
 [[Legend State]] is designed for [[React]] Ecosystem, enabling [[Local-First Applications]] and doubling as a [[State Management]] [[Packages and Libraries|Library]].

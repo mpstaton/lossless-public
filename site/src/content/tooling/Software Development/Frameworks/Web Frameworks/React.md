@@ -14,6 +14,14 @@ og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fa
 jina_last_request: '2025-03-09T06:45:12.860Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.420Z'
+site_uuid: ea8ad4b4-e127-463c-98e9-0abd89e3a9fc
+site_uuid: 6b423755-8f9b-4a8f-985d-c493e28a632f
+site_uuid: 3fabf9ae-d449-4e4f-a2bc-cd6ef3d5bfb9
+site_uuid: 10ade4bf-f30a-427b-8c77-b4558a764f67
+site_uuid: d6a8f2f3-0f7f-4481-aaed-66f1dbadd1ab
+site_uuid: 02301d0d-cced-48a6-b068-910db4a57746
+site_uuid: c3d3c093-0339-45de-a4e5-c6ea10e51942
+site_uuid: 9e64e62a-99e0-4719-9ec5-1f4b0c8ad126
 ---
 Created and maintained by [[Meta]]. It is the most popular, thus [[Market Standard]], for [[Front-End]] development.  It's essentially a [[JavaScript]] library that enables [[Component-Based Software Architecture]]. 
 

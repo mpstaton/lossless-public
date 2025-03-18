@@ -16,6 +16,14 @@ og_error_message: 'Error occurred'
 jina_last_request: '2025-03-09T06:45:14.581Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.438Z'
+site_uuid: 2379be62-99d7-4dbc-89d1-e74f96726f3a
+site_uuid: dbe9d7a3-a8a0-41c4-9d43-926f8d916940
+site_uuid: bc3a134f-0396-4324-98de-ab18a146a5fb
+site_uuid: 5723a869-dfad-48ea-85f4-53b7b1c5c201
+site_uuid: ca7b1b94-0f48-4535-a44a-19f3343ed177
+site_uuid: b5d8a848-dcab-4a67-ab95-1b86caafa95a
+site_uuid: bc8347b6-5ed6-4b51-8d7b-979225144ada
+site_uuid: 8c225442-0085-4892-8d67-eb0650c8f63d
 ---
 
 https://youtu.be/mxX1TYrhPFo?si=8CkQuOXx0X0Tvu0q
@@ -23,6 +31,8 @@ https://youtu.be/mxX1TYrhPFo?si=8CkQuOXx0X0Tvu0q
 A [[Text Editors or IDEs]].  [[AI Native Applications|AI Native]]
 
 https://youtu.be/ztT6Bu1MPpY?si=qSsApKldevoF0pX4
+
+https://www.youtube.com/live/RNIFvvvETM4?si=99qwzdC0HtjiodZS
 
 https://youtu.be/oAoigBWLZgE?si=b2RiATcxOELgxELL
 

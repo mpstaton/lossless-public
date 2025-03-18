@@ -1,6 +1,12 @@
 ---
 site_uuid: 141e3602-7b3b-458e-bafe-5e52d8c90a3b
 expanded_acronym: Cascading Style Sheets
+site_uuid: 3db55cba-09cc-4434-aad2-ab9715431f2c
+site_uuid: 37208e5c-b3de-4bf2-b20e-bee1b51c9e0f
+site_uuid: 8686e9ba-9001-4f35-9b0f-90a06064eca3
+site_uuid: dd97310b-1def-4b22-a2ec-fac9d750f91e
+site_uuid: b74b6717-14ef-43db-931b-90d431ac32d3
+site_uuid: fd5f2103-6830-48d8-947b-db811e44d95a
 ---
 https://youtu.be/gj2REv4D380?si=P8UWBX3L5Ei7pOyE
 

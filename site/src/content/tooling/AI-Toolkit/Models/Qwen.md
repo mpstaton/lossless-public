@@ -3,6 +3,12 @@ site_uuid: af0ad643-4a71-4862-8bff-fc4b6b46dd25
 github_repo_url: https://github.com/QwenLM
 parent_org: "[[Alibaba]]"
 huggingface_url: https://huggingface.co/Qwen
+site_uuid: 96f3ecb5-4fd0-4e0a-b3c2-5696d7977300
+site_uuid: f2de06cb-8061-4b6e-9b75-43f45d98e4df
+site_uuid: 6815ff1d-6ded-46b4-95a3-87bab7b1a236
+site_uuid: 03b103bc-9c5f-4b1b-a279-fc38771c6c92
+site_uuid: 3c7e38f4-14ae-4a1e-964c-d77b627bfe85
+site_uuid: b3085336-8def-46ac-b6f0-7ebb2827bdfd
 ---
 
 

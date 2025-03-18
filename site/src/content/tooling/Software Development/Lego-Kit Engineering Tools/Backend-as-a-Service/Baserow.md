@@ -13,6 +13,12 @@ og_screenshot_url: ""https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fa
 jina_last_request: '2025-03-09T06:45:18.404Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.416Z'
+site_uuid: 20a8313c-c4bf-46b9-a775-9685732c346a
+site_uuid: fbb6dc72-8feb-483a-ad5b-a59ac04c24ad
+site_uuid: 8f12f55a-f6e8-4e60-a2bf-9d5599aa759b
+site_uuid: 2d3c14f6-d4c7-4275-babe-10b934c65513
+site_uuid: 8256c65f-23c0-4271-a802-f1f3414d06fd
+site_uuid: 7be5ef56-ad68-4484-be30-20caabf037e5
 ---
 
 [[Database Apps]], defaults to [[Open Source]] as an alternative to [[Airtable]]

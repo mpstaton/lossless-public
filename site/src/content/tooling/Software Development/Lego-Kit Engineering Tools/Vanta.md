@@ -14,6 +14,14 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 jina_last_request: '2025-03-09T06:45:10.995Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:02.903Z'
+site_uuid: b5e67fbb-1bd9-4682-b260-a9f07fe9c064
+site_uuid: 2d3ebcec-cc97-47dd-82b7-bf6875b76904
+site_uuid: 54b4a861-454f-40b8-ade7-74b6cccec5d2
+site_uuid: ba408a6d-f098-46ac-8fcd-e2475c4642a2
+site_uuid: c1ba887a-ac06-4783-97de-320a84b80888
+site_uuid: 3c99e44d-a532-43aa-94f8-ac6844555514
+site_uuid: 92c0ea5f-5ba2-4c7c-a084-7ee36482efb3
+site_uuid: eb86fc6e-21c7-4873-bc48-a9c0ce96e3ab
 ---
 [[(GDPR) General Data Protection Regulation]]
 

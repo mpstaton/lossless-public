@@ -12,6 +12,12 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 jina_last_request: '2025-03-09T06:44:58.721Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.782Z'
+site_uuid: 7fce09fc-0578-4257-979c-43dde6ccfd46
+site_uuid: 064c6a9c-c46b-43b6-8a5f-b83c6ead605e
+site_uuid: 10c48487-497d-46a4-af46-06edf61f3ce5
+site_uuid: 1eac7bdf-7539-441f-a3c1-10b121cb04c1
+site_uuid: 2cd0c67d-5bd5-4b2f-aadd-d15af0526438
+site_uuid: 0a45f456-a105-4469-b733-9f8c1f8ae4d1
 ---
 ##### Opera has a dead simple Onboarding.
 ![[Screenshot From 2024-12-24 16-20-19_Opera--Onboarding.png]]

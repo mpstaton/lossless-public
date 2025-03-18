@@ -17,6 +17,14 @@ title: Git
 favicon: https://git-scm.com/favicon.ico
 og_fetched_url: https://git-scm.com
 og_last_fetch: '2025-03-14T04:41:46.355Z'
+site_uuid: 393a3b13-ad58-4c41-9c45-28dc96cd3ea9
+site_uuid: 8f9fac52-17b7-4f09-b4da-40ec30c956d5
+site_uuid: 2f52b80a-bffd-4e33-8d75-e3ffe3ae77fc
+site_uuid: a574f0b3-1e31-461e-af03-99e1ae93b5b8
+site_uuid: f13c26c6-8e91-48d3-8a9c-fa3cf61121ac
+site_uuid: c303754a-b4b3-43d8-ade1-dc12e6ec0959
+site_uuid: a559894f-7f2c-4445-b4cc-363ccaa31ebf
+site_uuid: 312bfe83-d627-4f21-adda-a138c20fdeb5
 ---
 
 https://youtu.be/0Hk2XjGSzbA?si=idNrPLL_nQg2oDpR

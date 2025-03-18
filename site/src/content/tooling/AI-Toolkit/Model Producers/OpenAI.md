@@ -5,9 +5,17 @@ tags:
   - AI-Toolkit
   - Model Producers
 site_visibility: public
+site_uuid: 1bfcee54-d4b9-4b38-8bc9-3af1cc14b7f7
+site_uuid: bcf34361-3844-4d42-93e0-1f7da1bc6661
+site_uuid: 0e2b415e-331d-4641-9c65-052fa95cea78
+site_uuid: 520fd931-0dab-4680-bcbd-40b0caf64307
+site_uuid: 1d440411-6af2-4d55-be1c-ae013048a9cb
+site_uuid: b0251e90-3929-4917-9f63-71dc41fcbcd8
 ---
 
 https://youtu.be/RPbmMmcNvYA?si=2HVnqr9U2mQ607Bn
+
+https://youtu.be/0pGxoubWI6s?si=i_PDvzO-oGJIcSko
 
 An organization that researches, develops, and publishes [[Large Language Models]]. Run by [[Sam Altman]], funded primarily by [[Microsoft]]
 

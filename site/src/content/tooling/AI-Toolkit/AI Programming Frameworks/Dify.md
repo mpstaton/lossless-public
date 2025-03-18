@@ -13,6 +13,14 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 jina_last_request: '2025-03-09T06:45:49.291Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:20:56.179Z'
+site_uuid: 71c5e7ad-aa09-480f-9056-65b63e34296b
+site_uuid: da883169-1ae9-4386-bac0-61f5280fee4c
+site_uuid: 535d3078-cd4c-4e56-acec-4d7edd0d273f
+site_uuid: a442f22d-9927-4499-8cc5-893d836d18e8
+site_uuid: 58b06719-5fd6-4372-99e7-8b417e0d2340
+site_uuid: c98acb92-a0d0-4497-b109-1d4bf8f868c0
+site_uuid: c46d6339-eefa-48c3-8cf0-809d6ede8700
+site_uuid: 0cc0aaa6-0229-42cb-b2c7-c1c6d9bea3ee
 ---
 2024, Nov 04. [How to Pick the Best AI Open-source Projects for Production Use](https://youtu.be/wVXojxS_hak?si=VRBRN-O_QjGR0rcA)
 

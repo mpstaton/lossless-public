@@ -16,6 +16,14 @@ og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/fals
 jina_last_request: '2025-03-09T06:45:20.181Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T05:19:01.834Z'
+site_uuid: 13a76e89-4965-4293-9584-e510a667deac
+site_uuid: edd87edb-2181-44ef-8326-b885977bab69
+site_uuid: 257b9cc4-eb02-49d2-a86a-e5c494962dac
+site_uuid: 7ce914a6-424a-46f8-ada5-fa430d46d1da
+site_uuid: e75b9188-196f-4c7e-b568-53f41eb2e531
+site_uuid: b26265ba-b6a8-42a0-ad86-ac4bd9207b71
+site_uuid: 7fd78a37-0f39-4ccb-a4c0-b478f37bf278
+site_uuid: bf7c9bab-d2ca-4894-950d-71b1a6f42f4b
 ---
 Part of the [[Current Stack|Laerdal Stack]]
 

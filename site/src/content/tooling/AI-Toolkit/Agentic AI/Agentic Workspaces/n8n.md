@@ -7,6 +7,12 @@ tags: ["iPaaS", "Workflow-Automation", "Agentic-AI", "Agentic-Workspaces", "Chec
 - Agentic-AI
 - Agentic-Workspaces
 - Check-it-Out
+site_uuid: df6e00d9-d4d8-490f-aad7-6eaa1b70dd33
+site_uuid: d7d573ea-c19a-4240-9626-de2c67465ea6
+site_uuid: 0e652ddc-dfab-4186-944c-9952b664f740
+site_uuid: cf0a9af4-e0ef-4322-84b0-f4ef5d6c1dae
+site_uuid: 7c85b224-02da-4932-aea6-b20ac87ee71e
+site_uuid: 2f34530a-7a6a-4d72-a6e6-008db8a3c738
 ---
 Here's an [[n8n]] beginner course on [[YouTube]] created by n8n. The [n8n Beginner course](https://youtube.com/playlist?list=PLlET0GsrLUL59YbxstZE71WszP3pVnZfI&si=T8vhC2cKnjVlxh4u)
 

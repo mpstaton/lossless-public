@@ -13,6 +13,14 @@ og_error_message: 'HTTP error 401'
 jina_last_request: '2025-03-09T06:45:08.083Z'
 jina_error: 'Error occurred'
 og_last_fetch: '2025-03-07T06:11:14.355Z'
+site_uuid: 61a2a6ae-ddda-40de-846e-98b250631098
+site_uuid: 6e2d2d45-118d-408c-bbfc-608c4725fe6d
+site_uuid: f7df7777-ce40-4862-a392-2e4b1d5fb4a5
+site_uuid: b2d61481-fac4-4841-b0c3-32528deed224
+site_uuid: 044ff437-1fa3-4737-897b-d5cd4e743245
+site_uuid: 0b8b0ee8-dc54-4a5e-bdee-b63d55121223
+site_uuid: 1c042749-8bc2-4acd-80ab-39f8c5dc712d
+site_uuid: f0b8ddb6-25f7-4fe7-aaa5-c6724e04b3ea
 ---
 [[Visual Software Development]], [[CARBS]].
 
