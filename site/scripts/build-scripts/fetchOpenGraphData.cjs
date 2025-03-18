@@ -1,14 +1,19 @@
 const fs = require('fs');
 const path = require('path');
-const { glob } = require('glob');
-const matter = require('gray-matter');
 const dotenv = require('dotenv');
 const { fetch } = require('undici');
 
 // Load environment variables
-dotenv.config();
+const envPath = path.join(process.cwd(), 'site', '.env');
+console.log(`Loading .env from: ${envPath}`);
+dotenv.config({ path: envPath });
 
 const openGraphKey = process.env.PUBLIC_OPEN_GRAPH_API_KEY;
+console.log(`OpenGraph API key ${openGraphKey ? 'found' : 'not found'} in environment`);
+
+if (!openGraphKey && process.env.VERBOSE) {
+  console.log('Warning: PUBLIC_OPEN_GRAPH_API_KEY not found in environment');
+}
 
 // Track URLs that we've already started fetching screenshots for
 const screenshotFetchInProgress = new Set();
@@ -118,12 +123,12 @@ async function fetchScreenshotUrlInBackground(url, filePath) {
 
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const cleanedContent = cleanDuplicateYamlKeys(fileContent);
-    const { data: frontmatter, content } = matter(cleanedContent);
+    const frontmatter = getFrontmatter(cleanedContent);
     
     frontmatter.og_screenshot_url = stripQuotes(data.screenshotUrl);
     frontmatter.og_last_fetch = new Date().toISOString();
     
-    fs.writeFileSync(filePath, matter.stringify(content, frontmatter));
+    updateFrontmatterInFile(filePath, frontmatter);
     console.log(`✅ Updated ${path.basename(filePath)} with screenshot URL`);
   } catch (error) {
     console.error(`Error in background screenshot fetch for ${url}:`, error);
@@ -142,13 +147,13 @@ function markFileWithError(filePath, errorMessage) {
   try {
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const cleanedContent = cleanDuplicateYamlKeys(fileContent);
-    const { data: frontmatter, content } = matter(cleanedContent);
+    const frontmatter = getFrontmatter(cleanedContent);
     
     frontmatter.og_errors = true;
     frontmatter.og_last_error = new Date().toISOString();
     frontmatter.og_error_message = stripQuotes(errorMessage);
     
-    fs.writeFileSync(filePath, matter.stringify(content, frontmatter));
+    updateFrontmatterInFile(filePath, frontmatter);
     console.log(`⚠️ Marked ${path.basename(filePath)} with error: ${errorMessage}`);
   } catch (error) {
     console.error(`Error marking file with error: ${error.message}`);
@@ -156,113 +161,231 @@ function markFileWithError(filePath, errorMessage) {
 }
 
 /**
- * Determine if OpenGraph data needs to be fetched
- * @param {Object} frontmatter - The file's frontmatter
- * @returns {Object} Evaluation result
+ * Update frontmatter in a file
+ * @param {string} filePath - Path to the markdown file
+ * @param {Object} updates - Frontmatter updates
  */
-function needsOpenGraphFetch(frontmatter) {
-  // If no URL, no fetch needed
-  if (!frontmatter.url) {
-    return { needsFetch: false, reason: 'no_url' };
+function updateFrontmatterInFile(filePath, updates) {
+  const content = fs.readFileSync(filePath, 'utf8');
+  
+  // Find frontmatter section
+  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!match) {
+    throw new Error('No frontmatter found');
   }
 
-  // If no OpenGraph data at all, needs fetch
-  if (!hasAnyOpenGraphData(frontmatter)) {
-    return { needsFetch: true, reason: 'no_data' };
-  }
-
-  // Check for specific error conditions that warrant a retry
-  if (frontmatter.og_errors) {
-    const error = frontmatter.og_errors.toLowerCase();
-    
-    // Only retry on timeout or rate limit errors
-    if (error.includes('timeout') || error.includes('rate limit')) {
-      return { needsFetch: true, reason: 'retryable_error' };
+  // Split content into parts
+  const beforeFrontmatter = '---\n';
+  const afterFrontmatter = content.slice(match[0].length);
+  
+  // Update frontmatter lines
+  const lines = match[1].split('\n');
+  const updatedLines = [];
+  const seenKeys = new Set();
+  
+  // Keep existing lines that aren't being updated
+  for (const line of lines) {
+    const keyMatch = line.match(/^(\w+(?:-\w+)*?):/);
+    if (keyMatch) {
+      const key = keyMatch[1];
+      seenKeys.add(key);
+      if (!updates.hasOwnProperty(key)) {
+        updatedLines.push(line);
+      }
+    } else {
+      updatedLines.push(line);
     }
-    
-    // All other errors should not trigger a refetch
-    return { needsFetch: false, reason: 'non_retryable_error' };
   }
-
-  // Check if URL has changed since last fetch
-  if (frontmatter.og_fetched_url && frontmatter.og_fetched_url !== frontmatter.url) {
-    return { needsFetch: true, reason: 'url_changed' };
+  
+  // Add new/updated properties
+  for (const [key, value] of Object.entries(updates)) {
+    if (!seenKeys.has(key)) {
+      updatedLines.push(`${key}: ${value}`);
+    }
   }
-
-  // If we have OpenGraph data and no retryable errors, no fetch needed
-  return { needsFetch: false, reason: 'has_valid_data' };
+  
+  // Reconstruct the file content
+  const newContent = beforeFrontmatter + updatedLines.join('\n') + '\n---' + afterFrontmatter;
+  fs.writeFileSync(filePath, newContent);
 }
 
 /**
- * Check if frontmatter has any OpenGraph data
+ * Get frontmatter from a file
+ * @param {string} content - File content
+ * @returns {Object} Frontmatter
+ */
+function getFrontmatter(content) {
+  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!match) {
+    return {};
+  }
+
+  const lines = match[1].split('\n');
+  const frontmatter = {};
+
+  for (const line of lines) {
+    const keyMatch = line.match(/^(\w+(?:-\w+)*?):/);
+    if (keyMatch) {
+      const key = keyMatch[1];
+      const valueMatch = line.match(/: (.*)$/);
+      if (valueMatch) {
+        frontmatter[key] = stripQuotes(valueMatch[1]);
+      }
+    }
+  }
+
+  return frontmatter;
+}
+
+/**
+ * Update content registry
+ * @param {string} filePath - Path to the markdown file
  * @param {Object} frontmatter - The file's frontmatter
- * @returns {boolean} Whether any OpenGraph data exists
+ * @param {Object} event - Event data
  */
-function hasAnyOpenGraphData(frontmatter) {
-  const ogProperties = [
-    'og_title',
-    'og_description',
-    'og_image',
-    'og_url',
-    'og_site_name',
-    'og_type'
-  ];
+function updateContentRegistry(filePath, frontmatter, event) {
+  const registryPath = 'site/src/content/data/markdown-content-registry.json';
+  let registry = {};
 
-  return ogProperties.some(prop => frontmatter[prop]);
+  // Load existing registry
+  if (fs.existsSync(registryPath)) {
+    registry = JSON.parse(fs.readFileSync(registryPath, 'utf8'));
+  }
+
+  const fileUuid = frontmatter.site_uuid;
+  if (!fileUuid) {
+    throw new Error('No site_uuid found in frontmatter');
+  }
+
+  // Initialize document entry if it doesn't exist
+  if (!registry.documents) registry.documents = {};
+  if (!registry.documents[fileUuid]) {
+    registry.documents[fileUuid] = {
+      content: {},
+      relationships: {},
+      history: [],
+      metadata: {}
+    };
+  }
+
+  // Add history entry
+  const historyEntry = {
+    timestamp: new Date().toISOString(),
+    type: 'metadata_update',
+    action: 'update_open_graph',
+    details: {
+      event_type: event.type,
+      success: event.success,
+      url: event.url,
+      screenshot_url: event.screenshotUrl,
+      error: event.error
+    }
+  };
+
+  registry.documents[fileUuid].history.push(historyEntry);
+  
+  // Update metadata
+  registry.documents[fileUuid].metadata = {
+    ...registry.documents[fileUuid].metadata,
+    last_og_fetch: event.timestamp,
+    last_og_status: event.success ? 'success' : 'error'
+  };
+
+  // Update indices
+  if (!registry.indices) registry.indices = { by_filename: {}, by_path: {} };
+  registry.indices.by_filename[path.basename(filePath)] = fileUuid;
+  registry.indices.by_path[filePath] = fileUuid;
+
+  // Write back to registry
+  fs.writeFileSync(registryPath, JSON.stringify(registry, null, 2));
 }
 
 /**
- * Process OpenGraph data for a file
- * @param {string} url - The URL to fetch OpenGraph data for
- * @param {string} filePath - Path to the file being processed
- * @returns {Promise<Object|null>} OpenGraph data or null if error
+ * Fetch OpenGraph data and update content registry
+ * @param {string} filePath - Path to the markdown file
+ * @param {Object} frontmatter - The file's frontmatter
+ * @returns {Promise<Object>} Event data
  */
-async function getFromOpenGraphIo(url, filePath) {
+async function getFromOpenGraphIo(filePath, frontmatter) {
   if (!openGraphKey) {
-    console.error('OpenGraph API key not found in environment variables');
-    return null;
+    return {
+      success: false,
+      error: 'OpenGraph API key not found in environment variables'
+    };
+  }
+
+  if (!frontmatter.url) {
+    return {
+      success: false,
+      error: 'No URL found in frontmatter'
+    };
   }
 
   try {
-    const proxyUrl = `https://opengraph.io/api/1.1/site/${encodeURIComponent(url)}?dimensions:lg?accept_lang=auto&use_proxy=true&app_id=${openGraphKey}`;
-    const response = await fetch(proxyUrl);
+    const url = frontmatter.url;
+    const screenshotUrl = `https://opengraph.io/api/1.1/screenshot/${encodeURIComponent(url)}?dimensions:lg?quality:80?accept_lang=en&use_proxy=true&app_id=${openGraphKey}`;
+    const response = await fetch(screenshotUrl);
     
     if (!response.ok) {
-      markFileWithError(filePath, `HTTP error ${response.status}`);
-      return null;
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-
+    
     const data = await response.json();
-    const ogProperties = {};
-    
-    if (data.hybridGraph) {
-      const properties = ['image', 'site_name', 'title', 'url', 'favicon'];
-      properties.forEach(prop => {
-        if (data.hybridGraph[prop]) {
-          // Strip quotes from each property value
-          ogProperties[prop] = stripQuotes(data.hybridGraph[prop]);
-        }
-      });
+    if (!data.screenshotUrl) {
+      throw new Error('No screenshot URL in response');
     }
-    
-    // Add URL to the OpenGraph data for change detection
-    ogProperties.og_fetched_url = stripQuotes(url);
-    ogProperties.og_last_fetch = new Date().toISOString();
 
-    return ogProperties;
+    // Update the frontmatter
+    const updates = {
+      og_screenshot_url: data.screenshotUrl,
+      og_last_fetch: new Date().toISOString(),
+      og_fetched_url: url
+    };
+
+    updateFrontmatterInFile(filePath, updates);
+
+    const event = {
+      type: 'success',
+      success: true,
+      url: url,
+      screenshotUrl: data.screenshotUrl,
+      timestamp: updates.og_last_fetch
+    };
+
+    // Update content registry
+    updateContentRegistry(filePath, frontmatter, event);
+
+    return event;
+
   } catch (error) {
-    console.error('Error fetching OpenGraph properties for', url, ':', error);
-    markFileWithError(filePath, `Fetch error: ${error.message}`);
-    return null;
+    const errorUpdate = {
+      og_errors: 'true',
+      og_last_error: new Date().toISOString(),
+      og_error_message: error.message
+    };
+
+    updateFrontmatterInFile(filePath, errorUpdate);
+
+    const event = {
+      type: 'error',
+      success: false,
+      error: error.message,
+      url: frontmatter.url,
+      timestamp: errorUpdate.og_last_error
+    };
+
+    // Update content registry
+    updateContentRegistry(filePath, frontmatter, event);
+
+    return event;
   }
 }
 
-// Export the functions needed by the orchestrator
 module.exports = {
   getFromOpenGraphIo,
   fetchScreenshotUrlInBackground,
   cleanDuplicateYamlKeys,
   markFileWithError,
-  needsOpenGraphFetch,
-  hasAnyOpenGraphData
+  updateFrontmatterInFile,
+  getFrontmatter
 };

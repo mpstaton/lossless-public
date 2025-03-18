@@ -171,6 +171,22 @@ function extractPrimaryFileName(filePath) {
 }
 
 /**
+ * Helper to check if a history entry already exists
+ * @param {Array} history - Array of history entries
+ * @param {string} type - Type of history entry
+ * @param {string} action - Action of history entry
+ * @param {Object} details - Details of history entry
+ * @returns {boolean} Whether a matching history entry exists
+ */
+function hasMatchingHistoryEntry(history, type, action, details) {
+    return history.some(entry => 
+        entry.type === type && 
+        entry.action === action && 
+        JSON.stringify(entry.details) === JSON.stringify(details)
+    );
+}
+
+/**
  * Creates a history entry
  * @param {string} timestamp - ISO timestamp
  * @param {string} type - Event type
@@ -198,31 +214,9 @@ function createHistoryEntry(timestamp, type, action, details = {}) {
  */
 async function processMarkdownFile(filePath) {
     const content = fs.readFileSync(filePath, 'utf8');
+    const frontmatterData = extractFrontmatter(content);
+    const frontmatter = frontmatterData?.frontmatter || {};
     
-    // Ensure file has UUID
-    const uuidResult = await createUUIDinFrontmatterIfNone(content, filePath);
-    const processedContent = uuidResult.content || content;
-    
-    // Extract frontmatter
-    const frontmatterData = extractFrontmatter(processedContent);
-    if (!frontmatterData.success) {
-        console.error(`Failed to extract frontmatter from ${filePath}`);
-        return null;
-    }
-
-    // Parse frontmatter
-    const frontmatterLines = frontmatterData.frontmatterString.split('\n');
-    const frontmatter = {};
-    const history = [];
-    
-    frontmatterLines.forEach(line => {
-        const match = line.match(/^([^:]+):\s*(.+)$/);
-        if (match) {
-            const [, key, value] = match;
-            frontmatter[key.trim()] = value.trim().replace(/^['"](.*)['"]$/, '$1'); // Remove quotes
-        }
-    });
-
     // Create registry entry structure following the model
     const registryEntry = {
         referredToAs: {
@@ -231,9 +225,7 @@ async function processMarkdownFile(filePath) {
         },
         urls: {},
         primaryFiles: {
-            canonical: {
-                path: filePath
-            },
+            canonical: { path: filePath },
             document_variants: []
         },
         connectedDocuments: {
@@ -241,13 +233,7 @@ async function processMarkdownFile(filePath) {
         },
         history: [],
         metadata: {
-            siteVisibility: "public",
-            semanticVersion: {
-                version: 1,
-                created_at: new Date().toISOString(),
-                last_modified: new Date().toISOString(),
-                status: "active"
-            }
+            siteVisibility: "public"
         },
         mediaInContent: {
             media: []
@@ -257,106 +243,70 @@ async function processMarkdownFile(filePath) {
     // Process direct mappings and URLs
     Object.entries(USER_OPTIONS.frontmatterMappings.direct).forEach(([frontmatterKey, registryKey]) => {
         if (frontmatter[frontmatterKey]) {
-            // Check if this is a URL property that should go in urls object
-            if (USER_OPTIONS.registryConfig.documents.urls.includes(registryKey)) {
-                // Clean and validate URL
-                let urlValue = frontmatter[frontmatterKey].trim();
-                // Remove quotes if present
-                urlValue = urlValue.replace(/^['"](.*)['"]$/, '$1');
-                // Add history entry for URL update
-                history.push(createHistoryEntry(
+            registryEntry[registryKey] = frontmatter[frontmatterKey];
+        }
+    });
+
+    // Process URLs
+    Object.entries(USER_OPTIONS.frontmatterMappings.urls).forEach(([frontmatterKey, urlType]) => {
+        if (frontmatter[frontmatterKey]) {
+            const urlValue = frontmatter[frontmatterKey];
+            registryEntry.urls[urlType] = urlValue;
+            const urlDetails = {
+                type: urlType,
+                value: urlValue,
+                source: "frontmatter"
+            };
+            if (!hasMatchingHistoryEntry(registryEntry.history, "content_update", "url_added", urlDetails)) {
+                registryEntry.history.push(createHistoryEntry(
                     new Date().toISOString(),
                     "content_update",
                     "url_added",
-                    {
-                        property: registryKey,
-                        value: urlValue,
-                        source: "frontmatter"
-                    }
+                    urlDetails
                 ));
-                registryEntry.urls[registryKey] = urlValue;
-            } else {
-                registryEntry[registryKey] = frontmatter[frontmatterKey];
             }
         }
     });
 
-    // Handle parent organization separately
-    if (frontmatter['parent_org']) {
-        const parentOrgValue = frontmatter['parent_org'].trim().replace(/^['"](.*)['"]$/, '$1');
-        const parentOrgRef = {
+    // Process parent organization
+    if (frontmatter.parent_org) {
+        const parentOrgValue = frontmatter.parent_org;
+        registryEntry.connectedDocuments.connected_documents.push({
             type: "parentOrganization",
-            reference: `${parentOrgValue}`
+            reference: parentOrgValue,
+            source: "frontmatter"
+        });
+        const parentOrgDetails = {
+            type: "parentOrganization",
+            value: parentOrgValue,
+            source: "frontmatter"
         };
-        registryEntry.connectedDocuments.connected_documents.push(parentOrgRef);
-        
-        // Add history entry for parent organization update
-        history.push(createHistoryEntry(
-            new Date().toISOString(),
-            "reference_update",
-            "parent_org_linked",
-            {
-                type: "parentOrganization",
-                value: parentOrgValue,
-                source: "frontmatter"
-            }
-        ));
-    }
-
-    // Process snake_case URLs
-    USER_OPTIONS.frontmatterMappings.snakeToCamel.forEach(prop => {
-        if (frontmatter[prop]) {
-            const camelProp = snakeToCamelCase(prop);
-            // Ensure URL is properly formatted
-            let urlValue = frontmatter[prop].trim();
-            // Remove quotes if present
-            urlValue = urlValue.replace(/^['"](.*)['"]$/, '$1');
-            // Add history entry for URL update
-            history.push(createHistoryEntry(
+        if (!hasMatchingHistoryEntry(registryEntry.history, "reference_update", "parent_org_linked", parentOrgDetails)) {
+            registryEntry.history.push(createHistoryEntry(
                 new Date().toISOString(),
-                "content_update",
-                "url_added",
-                {
-                    property: camelProp,
-                    original_property: prop,
-                    value: urlValue,
-                    source: "frontmatter"
-                }
+                "reference_update",
+                "parent_org_linked",
+                parentOrgDetails
             ));
-            registryEntry.urls[camelProp] = urlValue;
         }
-    });
+    }
 
     // Process history entries
     Object.entries(USER_OPTIONS.frontmatterMappings.historyProperties).forEach(([prop, config]) => {
         if (frontmatter[prop]) {
-            history.push(createHistoryEntry(
+            registryEntry.history.push(createHistoryEntry(
                 frontmatter[prop],
                 config.type,
                 config.action,
                 {
-                    ...config.details,
-                    original_property: prop,
-                    original_value: frontmatter[prop]
+                    source: "frontmatter",
+                    value: frontmatter[prop]
                 }
             ));
         }
     });
 
-    // Add UUID issuance to history if it was just created
-    if (uuidResult.modified) {
-        history.push(createHistoryEntry(
-            new Date().toISOString(),
-            'content_creation',
-            'site_uuid_issued',
-            { 
-                uuid: frontmatter.site_uuid,
-                path: filePath
-            }
-        ));
-    }
-
-    registryEntry.history = history.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+    registryEntry.history.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 
     // Create indices
     const indices = {
@@ -395,208 +345,112 @@ async function processMarkdownFile(filePath) {
 // ===============================
 
 async function main() {
-    try {
-        const contentDir = path.join(process.cwd(), USER_OPTIONS.TARGET_DIR);
-        const outputFile = path.join(process.cwd(), USER_OPTIONS.TARGET_OUTPUT_FILE);
-        
-        console.log(`Processing content from: ${contentDir}`);
-        console.log(`Output will be written to: ${outputFile}`);
-        
-        // Load existing registry if it exists
-        let registry = {
-            documents: {},
-            indices: {
-                by_filename: {},
-                by_path: {},
-                by_uuid: {}
-            }
-        };
-        
-        if (fs.existsSync(outputFile)) {
-            try {
-                console.log('Found existing registry, loading...');
-                const content = fs.readFileSync(outputFile, 'utf8');
-                if (content && content.trim()) {
-                    const existingRegistry = JSON.parse(content);
-                    registry = existingRegistry;
-                    console.log(`Loaded ${Object.keys(registry.documents).length} existing documents`);
-                } else {
-                    console.log('Existing registry file is empty, starting fresh');
-                }
-            } catch (error) {
-                if (error instanceof SyntaxError) {
-                    console.error('Registry file contains invalid JSON, starting fresh');
-                    console.error('Parse error:', error.message);
-                } else {
-                    console.error('Error reading existing registry:', error);
-                    throw new Error(`Failed to read registry file: ${error.message}`);
-                }
-            }
-        } else {
-            console.log('No existing registry found, creating new one');
-            // Ensure directory exists
-            const dir = path.dirname(outputFile);
-            if (!fs.existsSync(dir)) {
-                fs.mkdirSync(dir, { recursive: true });
-                console.log(`Created directory: ${dir}`);
-            }
+    const contentDir = path.join(process.cwd(), USER_OPTIONS.TARGET_DIR);
+    const outputFile = path.join(process.cwd(), USER_OPTIONS.TARGET_OUTPUT_FILE);
+    
+    console.log(`Processing content from: ${contentDir}`);
+    console.log(`Output will be written to: ${outputFile}`);
+    
+    // Load existing registry if it exists
+    let registry = {
+        documents: {},
+        indices: {
+            by_filename: {},
+            by_path: {},
+            by_uuid: {}
         }
-        
-        // Get all markdown files
-        const markdownFiles = [];
-        function walkDir(dir) {
-            if (!fs.existsSync(dir)) {
-                throw new Error(`Directory does not exist: ${dir}`);
+    };
+    
+    if (fs.existsSync(outputFile)) {
+        console.log('Found existing registry, loading...');
+        const content = fs.readFileSync(outputFile, 'utf8');
+        if (content && content.trim()) {
+            registry = JSON.parse(content);
+            console.log(`Loaded ${Object.keys(registry.documents).length} existing documents`);
+        } else {
+            console.log('Existing registry file is empty, starting fresh');
+        }
+    } else {
+        console.log('No existing registry found, creating new one');
+        // Ensure directory exists
+        const dir = path.dirname(outputFile);
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+            console.log(`Created directory: ${dir}`);
+        }
+    }
+    
+    // Get all markdown files
+    const markdownFiles = [];
+    function walkDir(dir) {
+        const files = fs.readdirSync(dir);
+        files.forEach(file => {
+            const filePath = path.join(dir, file);
+            if (fs.statSync(filePath).isDirectory()) {
+                walkDir(filePath);
+            } else if (file.endsWith('.md')) {
+                markdownFiles.push(filePath);
             }
-            const files = fs.readdirSync(dir);
-            files.forEach(file => {
-                const filePath = path.join(dir, file);
-                if (fs.statSync(filePath).isDirectory()) {
-                    walkDir(filePath);
-                } else if (file.endsWith('.md')) {
-                    markdownFiles.push(filePath);
+        });
+    }
+    walkDir(contentDir);
+    
+    console.log(`Found ${markdownFiles.length} markdown files to process`);
+
+    // Process each file
+    let processedCount = 0;
+    let updatedCount = 0;
+    let newCount = 0;
+
+    for (const filePath of markdownFiles) {
+        const result = await processMarkdownFile(filePath);
+        if (result) {
+            processedCount++;
+            const uuid = Object.keys(result.document)[0];
+            
+            if (registry.documents[uuid]) {
+                updatedCount++;
+                const existingDoc = registry.documents[uuid];
+                
+                // Merge the new document with the existing one
+                registry.documents[uuid] = {
+                    ...existingDoc,
+                    ...result.document[uuid],
+                    // Merge histories without duplicates
+                    history: [
+                        ...existingDoc.history,
+                        ...result.document[uuid].history.filter(newEntry => 
+                            !hasMatchingHistoryEntry(existingDoc.history, 
+                                newEntry.type, 
+                                newEntry.action, 
+                                newEntry.details)
+                        )
+                    ].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp))
+                };
+            } else {
+                newCount++;
+                registry.documents[uuid] = result.document[uuid];
+            }
+
+            // Update indices
+            Object.entries(result.indices).forEach(([indexType, indexData]) => {
+                if (!registry.indices[indexType]) {
+                    registry.indices[indexType] = {};
                 }
+                Object.assign(registry.indices[indexType], indexData);
             });
         }
-        walkDir(contentDir);
-        
-        console.log(`Found ${markdownFiles.length} markdown files to process`);
+    }
 
-        // Process each file
-        let processedCount = 0;
-        let updatedCount = 0;
-        let newCount = 0;
-
-        for (const filePath of markdownFiles) {
-            try {
-                const result = await processMarkdownFile(filePath);
-                if (result) {
-                    processedCount++;
-                    const uuid = Object.keys(result.document)[0];
-                    
-                    if (registry.documents[uuid]) {
-                        updatedCount++;
-                        const existingDoc = registry.documents[uuid];
-                        
-                        // Check for meaningful changes that warrant a version increment
-                        const hasContentChanges = JSON.stringify(existingDoc.urls) !== JSON.stringify(result.document[uuid].urls) ||
-                                        existingDoc.referredToAs.primaryFileName !== result.document[uuid].referredToAs.primaryFileName;
-                        
-                        if (hasContentChanges) {
-                            // Increment version and update timestamps
-                            registry.documents[uuid].metadata.semanticVersion = {
-                                ...registry.documents[uuid].metadata.semanticVersion,
-                                version: registry.documents[uuid].metadata.semanticVersion.version + 1,
-                                last_modified: new Date().toISOString()
-                            };
-                            
-                            // Add version update to history with URL changes
-                            const urlChanges = {};
-                            Object.entries(result.document[uuid].urls).forEach(([key, value]) => {
-                                if (!existingDoc.urls[key] || existingDoc.urls[key] !== value) {
-                                    urlChanges[key] = {
-                                        previous: existingDoc.urls[key] || null,
-                                        new: value
-                                    };
-                                }
-                            });
-                            
-                            registry.documents[uuid].history.push(createHistoryEntry(
-                                new Date().toISOString(),
-                                "metadata_update",
-                                "version_increment",
-                                {
-                                    previous_version: registry.documents[uuid].metadata.semanticVersion.version - 1,
-                                    new_version: registry.documents[uuid].metadata.semanticVersion.version,
-                                    reason: "Content changes detected",
-                                    changes: {
-                                        urls: urlChanges,
-                                        primaryFileName: existingDoc.referredToAs.primaryFileName !== result.document[uuid].referredToAs.primaryFileName ? {
-                                            previous: existingDoc.referredToAs.primaryFileName,
-                                            new: result.document[uuid].referredToAs.primaryFileName
-                                        } : null
-                                    }
-                                }
-                            ));
-                        }
-
-                        // Merge the new document with the existing one
-                        registry.documents[uuid] = {
-                            ...existingDoc,
-                            ...result.document[uuid],
-                            history: [
-                                ...existingDoc.history,
-                                ...result.document[uuid].history.filter(
-                                    newEntry => !existingDoc.history.some(
-                                        existingEntry => 
-                                            existingEntry.timestamp === newEntry.timestamp &&
-                                            existingEntry.type === newEntry.type &&
-                                            existingEntry.action === newEntry.action
-                                    )
-                                )
-                            ].sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp)),
-                            connectedDocuments: {
-                                connected_documents: [
-                                    ...result.document[uuid].connectedDocuments.connected_documents
-                                ]
-                            }
-                        };
-
-                        // Check if this is a new or changed parent organization
-                        const newParentOrg = result.document[uuid].connectedDocuments.connected_documents.find(
-                            doc => doc.type === "parentOrganization"
-                        );
-                        const existingParentOrg = existingDoc.connectedDocuments.connected_documents.find(
-                            doc => doc.type === "parentOrganization"
-                        );
-                        
-                        if (newParentOrg && (!existingParentOrg || existingParentOrg.reference !== newParentOrg.reference)) {
-                            registry.documents[uuid].history.push(createHistoryEntry(
-                                new Date().toISOString(),
-                                "reference_update",
-                                "parent_org_changed",
-                                {
-                                    type: "parentOrganization",
-                                    previous: existingParentOrg ? existingParentOrg.reference : null,
-                                    new: newParentOrg.reference,
-                                    source: "frontmatter"
-                                }
-                            ));
-                        }
-                    } else {
-                        newCount++;
-                        registry.documents[uuid] = result.document[uuid];
-                    }
-                    
-                    // Update indices
-                    Object.assign(registry.indices.by_filename, result.indices.by_filename);
-                    Object.assign(registry.indices.by_path, result.indices.by_path);
-                    Object.assign(registry.indices.by_uuid, result.indices.by_uuid);
-                }
-            } catch (error) {
-                console.error(`Error processing file ${filePath}:`, error);
-                throw error;
-            }
-        }
-
-        // Write registry to file
-        try {
-            fs.writeFileSync(outputFile, JSON.stringify(registry, null, 2));
-            console.log(`
+    // Write registry to file
+    fs.writeFileSync(outputFile, JSON.stringify(registry, null, 2));
+    console.log(`
 Content registry updated successfully:
 - Total files processed: ${processedCount}
 - New documents added: ${newCount}
 - Existing documents updated: ${updatedCount}
 - Output written to: ${outputFile}
-            `);
-        } catch (error) {
-            console.error('Error writing registry file:', error);
-            throw new Error(`Failed to write registry file: ${error.message}`);
-        }
-    } catch (error) {
-        console.error('Fatal error:', error);
-        process.exit(1);
-    }
+    `);
 }
 
 main().catch(console.error);
