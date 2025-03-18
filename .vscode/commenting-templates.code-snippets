@@ -1,0 +1,74 @@
+{
+	// Place your 202503_lossless-public workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Comment on Top of Section": {
+		"scope": "javascript,typescript,astro",
+		"prefix": "section-top-comment",
+		"body": [
+			"// section ===========================================================================",
+			"// Open: ${1:Section Name} .", 
+			"// Type: ${2:Utility Functions}",
+			"// Includes:", 
+			"//   ${3:list of functions with arguments}",
+			"//",   
+			"// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+		],
+		"description": "Comment block on top of section or block"
+	},
+	"Comment to Open a Function": {
+		"scope": "javascript,typescript,astro",
+		"prefix": "function-top-comment-block",
+		"body": [
+			"/* ${1:function}: -------------------------------------------------->",
+			"??-- Purpose",
+			"   //-- ${2:Lines describing desired functionality}",
+			"   --- ${3:continued from previous line.}",
+			"-->",
+			"??-- Logic",
+			"   //-- ${4:Explain how this function would be called}",
+			"   ---- ${5:with arguments and arguments}",
+			"   ---- 1. ${6:with steps and steps}",
+			"-->",
+			"----------------------------------------*/"
+		],
+		"description": "Comment block to open a function"
+	},
+	"Comment on Top of Page": {
+		"scope": "javascript,typescript,astro",
+		"prefix": "page-top-comment",
+		"body": [
+			"/* =====================================================================>",
+			"   Functions that allow Obsidian Backlinks to work in Astro Components",
+			"/* =====================================================================>",
+			"",
+			"??-- Type: User Options",
+			"??-- Includes:",
+			"   //---- Function to convert all Backlink syntax on a page to relative paths for hrefs.",
+			"   //---- Function to convert a single Backlink syntax to a relative path for hrefs. ",
+			"??-- Affects:",
+			"   //---- Markdown files, Article Components",
+			"/* <======================================< */"
+		],
+		"description": "Comment block on top of page"
+	}
+}
+
+
+
+
+
