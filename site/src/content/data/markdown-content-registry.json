@@ -980,6 +980,24 @@
             "new": "[[Microsoft]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.975Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.162Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -989,7 +1007,9 @@
           "created_at": "2025-03-17T06:23:17.385Z",
           "last_modified": "2025-03-17T06:23:17.385Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.159Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -2652,6 +2672,24 @@
             "new": "[[Microsoft]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.984Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.171Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -2661,7 +2699,9 @@
           "created_at": "2025-03-17T06:23:17.386Z",
           "last_modified": "2025-03-17T06:23:17.386Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.166Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -3668,7 +3708,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.144Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.382Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -3676,7 +3735,9 @@
           "created_at": "2025-03-17T06:23:17.360Z",
           "last_modified": "2025-03-17T06:23:17.360Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.377Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -3698,7 +3759,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.152Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.392Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -3706,7 +3786,9 @@
           "created_at": "2025-03-17T06:23:17.360Z",
           "last_modified": "2025-03-17T06:23:17.360Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.387Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -4340,7 +4422,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.167Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.409Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -4348,7 +4449,9 @@
           "created_at": "2025-03-17T06:23:17.361Z",
           "last_modified": "2025-03-17T06:23:17.361Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.405Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -4955,7 +5058,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.182Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.429Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -4963,7 +5085,9 @@
           "created_at": "2025-03-17T06:23:17.362Z",
           "last_modified": "2025-03-17T06:23:17.362Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.422Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -5286,6 +5410,24 @@
             "value": "[[Nvidia]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.190Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.437Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -5295,7 +5437,9 @@
           "created_at": "2025-03-17T06:23:17.363Z",
           "last_modified": "2025-03-17T06:23:17.363Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.432Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -5506,6 +5650,24 @@
             "value": "[[Microsoft]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.198Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.445Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -5515,7 +5677,9 @@
           "created_at": "2025-03-17T06:23:17.363Z",
           "last_modified": "2025-03-17T06:23:17.363Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.440Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -6047,6 +6211,24 @@
             "value": "https://www.youtube.com/@n8n-io",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.206Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.453Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -6056,7 +6238,9 @@
           "created_at": "2025-03-17T06:23:17.364Z",
           "last_modified": "2025-03-17T06:23:17.364Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.449Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -6078,7 +6262,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.213Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.461Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -6086,7 +6289,9 @@
           "created_at": "2025-03-17T06:23:17.364Z",
           "last_modified": "2025-03-17T06:23:17.364Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.456Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -6216,7 +6421,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.221Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.469Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -6224,7 +6448,9 @@
           "created_at": "2025-03-17T06:23:17.364Z",
           "last_modified": "2025-03-17T06:23:17.364Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.464Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -6853,7 +7079,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.228Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.476Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -6861,7 +7106,9 @@
           "created_at": "2025-03-17T06:23:17.365Z",
           "last_modified": "2025-03-17T06:23:17.365Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.472Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -7397,6 +7644,24 @@
             "value": "[[Hugging Face]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.240Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.488Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -7406,7 +7671,9 @@
           "created_at": "2025-03-17T06:23:17.365Z",
           "last_modified": "2025-03-17T06:23:17.365Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.484Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -8174,7 +8441,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.248Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.497Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -8182,7 +8468,9 @@
           "created_at": "2025-03-17T06:23:17.366Z",
           "last_modified": "2025-03-17T06:23:17.366Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.492Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -10549,7 +10837,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.611Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.856Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -10557,7 +10864,9 @@
           "created_at": "2025-03-17T06:23:17.371Z",
           "last_modified": "2025-03-17T06:23:17.371Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.852Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -10809,6 +11118,24 @@
             "value": "https://youtu.be/hNOAEYek1q4?si=BcM7noGFuyjhxNmG",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.620Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.863Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -10818,7 +11145,9 @@
           "created_at": "2025-03-17T06:23:17.371Z",
           "last_modified": "2025-03-17T06:23:17.371Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.860Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -10840,7 +11169,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.628Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.870Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -10848,7 +11196,9 @@
           "created_at": "2025-03-17T06:23:17.371Z",
           "last_modified": "2025-03-17T06:23:17.371Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.866Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -11483,6 +11833,24 @@
             "value": "https://www.youtube.com/@deepbrainai",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.636Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.878Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -11492,7 +11860,9 @@
           "created_at": "2025-03-17T06:23:17.372Z",
           "last_modified": "2025-03-17T06:23:17.372Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.874Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -11568,7 +11938,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.645Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.885Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -11576,7 +11965,9 @@
           "created_at": "2025-03-17T06:23:17.372Z",
           "last_modified": "2025-03-17T06:23:17.372Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.881Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -14214,7 +14605,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.665Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.901Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -14222,7 +14632,9 @@
           "created_at": "2025-03-17T06:23:17.375Z",
           "last_modified": "2025-03-17T06:23:17.375Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.897Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -14583,7 +14995,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.673Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.908Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -14591,7 +15022,9 @@
           "created_at": "2025-03-17T06:23:17.375Z",
           "last_modified": "2025-03-17T06:23:17.375Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.904Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -14613,7 +15046,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.681Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.916Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -14621,7 +15073,9 @@
           "created_at": "2025-03-17T06:23:17.375Z",
           "last_modified": "2025-03-17T06:23:17.375Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.911Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16106,7 +16560,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.737Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.963Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -16114,7 +16587,9 @@
           "created_at": "2025-03-17T06:23:17.377Z",
           "last_modified": "2025-03-17T06:23:17.377Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.959Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16151,6 +16626,24 @@
             "value": "[[OpenAI]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.754Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.977Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -16160,7 +16653,9 @@
           "created_at": "2025-03-17T06:23:17.377Z",
           "last_modified": "2025-03-17T06:23:17.377Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.973Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16372,6 +16867,46 @@
             "value": "https://www.ibm.com/granite",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.763Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.984Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:17:14.165Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "https://www.ibm.com/granite",
+            "error": "HTTP error! status: 401"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:19:21.965Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "success",
+            "success": true,
+            "url": "https://www.ibm.com/granite",
+            "screenshot_url": "https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/63b529e55f0c47ec5a43ca5667bdbc6f19dba16c394f894f59572346ea63978a.jpeg"
+          }
         }
       ],
       "metadata": {
@@ -16381,7 +16916,11 @@
           "created_at": "2025-03-17T06:23:17.377Z",
           "last_modified": "2025-03-17T06:23:17.377Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.980Z",
+        "process_result": "error",
+        "last_og_fetch": "2025-03-17T09:19:21.959Z",
+        "last_og_status": "success"
       },
       "mediaInContent": {
         "media": []
@@ -16620,7 +17159,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.780Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.999Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -16628,7 +17186,9 @@
           "created_at": "2025-03-17T06:23:17.377Z",
           "last_modified": "2025-03-17T06:23:17.377Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:23.995Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16650,7 +17210,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.788Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.006Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -16658,7 +17237,9 @@
           "created_at": "2025-03-17T06:23:17.377Z",
           "last_modified": "2025-03-17T06:23:17.377Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.002Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16680,7 +17261,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.797Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.013Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -16688,7 +17288,9 @@
           "created_at": "2025-03-17T06:23:17.377Z",
           "last_modified": "2025-03-17T06:23:17.377Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.009Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16725,6 +17327,24 @@
             "value": "[[Alibaba]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.813Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.027Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -16734,7 +17354,9 @@
           "created_at": "2025-03-17T06:23:17.377Z",
           "last_modified": "2025-03-17T06:23:17.377Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.023Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16810,7 +17432,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.839Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.048Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -16818,7 +17459,9 @@
           "created_at": "2025-03-17T06:23:17.378Z",
           "last_modified": "2025-03-17T06:23:17.378Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.044Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16906,6 +17549,24 @@
             "value": "https://github.com/Wan-Video",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.855Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.064Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -16915,7 +17576,9 @@
           "created_at": "2025-03-17T06:23:17.378Z",
           "last_modified": "2025-03-17T06:23:17.378Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.060Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -16964,6 +17627,46 @@
             "value": "[[IBM]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.864Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.071Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:17:14.246Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "https://www.ibm.com/watson",
+            "error": "HTTP error! status: 401"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:19:43.952Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "success",
+            "success": true,
+            "url": "https://www.ibm.com/watson",
+            "screenshot_url": "https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/2b6c490b5bf12de55c4caf7167234c13df7722b1463cab9a930a01d12c5ac939.jpeg"
+          }
         }
       ],
       "metadata": {
@@ -16973,7 +17676,11 @@
           "created_at": "2025-03-17T06:23:17.378Z",
           "last_modified": "2025-03-17T06:23:17.378Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.067Z",
+        "process_result": "error",
+        "last_og_fetch": "2025-03-17T09:19:43.945Z",
+        "last_og_status": "success"
       },
       "mediaInContent": {
         "media": []
@@ -16995,7 +17702,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.872Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.078Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -17003,7 +17729,9 @@
           "created_at": "2025-03-17T06:23:17.378Z",
           "last_modified": "2025-03-17T06:23:17.378Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.074Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -17025,7 +17753,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.881Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.084Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -17033,7 +17780,9 @@
           "created_at": "2025-03-17T06:23:17.378Z",
           "last_modified": "2025-03-17T06:23:17.378Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.081Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -18475,7 +19224,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.890Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.092Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -18483,7 +19251,9 @@
           "created_at": "2025-03-17T06:23:17.379Z",
           "last_modified": "2025-03-17T06:23:17.379Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.088Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -19968,6 +20738,24 @@
             "value": "[[Microsoft]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.911Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.107Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -19977,7 +20765,9 @@
           "created_at": "2025-03-17T06:23:17.381Z",
           "last_modified": "2025-03-17T06:23:17.381Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.103Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -20137,7 +20927,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.919Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.114Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -20145,7 +20954,9 @@
           "created_at": "2025-03-17T06:23:17.381Z",
           "last_modified": "2025-03-17T06:23:17.381Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.110Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -21216,6 +22027,46 @@
             "value": "https://www.glideapps.com/",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.941Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.133Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:17:14.334Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "https://www.glideapps.com/",
+            "error": "HTTP error! status: 401"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:19:56.470Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "success",
+            "success": true,
+            "url": "https://www.glideapps.com/",
+            "screenshot_url": "https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/23948c7b21243f037125e6a1cb0762a49ba51bf54b5bcf5c4e98e076e505479c.jpeg"
+          }
         }
       ],
       "metadata": {
@@ -21225,7 +22076,11 @@
           "created_at": "2025-03-17T06:23:17.383Z",
           "last_modified": "2025-03-17T06:23:17.383Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.129Z",
+        "process_result": "error",
+        "last_og_fetch": "2025-03-17T09:19:56.460Z",
+        "last_og_status": "success"
       },
       "mediaInContent": {
         "media": []
@@ -22322,6 +23177,57 @@
             "value": "https://bambulab.com/en-us",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.950Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.140Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:17:14.417Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "\"https://bambulab.com/en-us\"",
+            "error": "HTTP error! status: 401"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:19:56.687Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "\"https://bambulab.com/en-us\"",
+            "error": "HTTP error! status: 400"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:21:51.971Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "\"https://bambulab.com/en-us\"",
+            "error": "HTTP error! status: 400"
+          }
         }
       ],
       "metadata": {
@@ -22331,7 +23237,11 @@
           "created_at": "2025-03-17T06:23:17.384Z",
           "last_modified": "2025-03-17T06:23:17.384Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.137Z",
+        "process_result": "error",
+        "last_og_fetch": "2025-03-17T09:21:51.963Z",
+        "last_og_status": "error"
       },
       "mediaInContent": {
         "media": []
@@ -22366,6 +23276,24 @@
             "value": "https://en.wikipedia.org/wiki/ESP32",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.966Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.155Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -22375,7 +23303,9 @@
           "created_at": "2025-03-17T06:23:17.384Z",
           "last_modified": "2025-03-17T06:23:17.384Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.151Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -22673,6 +23603,24 @@
             "value": "[[Microsoft]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:14.992Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.178Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -22682,7 +23630,9 @@
           "created_at": "2025-03-17T06:23:17.386Z",
           "last_modified": "2025-03-17T06:23:17.386Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.174Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -23117,7 +24067,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.010Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.192Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -23125,7 +24094,9 @@
           "created_at": "2025-03-17T06:23:17.387Z",
           "last_modified": "2025-03-17T06:23:17.387Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.188Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -23204,7 +24175,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.028Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.206Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -23212,7 +24202,9 @@
           "created_at": "2025-03-17T06:23:17.387Z",
           "last_modified": "2025-03-17T06:23:17.387Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.202Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -23249,6 +24241,24 @@
             "value": "[[Microsoft]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:15.036Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.213Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -23258,7 +24268,9 @@
           "created_at": "2025-03-17T06:23:17.387Z",
           "last_modified": "2025-03-17T06:23:17.387Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.209Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -23419,7 +24431,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.046Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.220Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -23427,7 +24458,9 @@
           "created_at": "2025-03-17T06:23:17.387Z",
           "last_modified": "2025-03-17T06:23:17.387Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.216Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -23464,6 +24497,24 @@
             "value": "[[Microsoft]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:15.055Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.227Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -23473,7 +24524,9 @@
           "created_at": "2025-03-17T06:23:17.387Z",
           "last_modified": "2025-03-17T06:23:17.387Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.223Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -23495,7 +24548,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.063Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.235Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -23503,7 +24575,9 @@
           "created_at": "2025-03-17T06:23:17.388Z",
           "last_modified": "2025-03-17T06:23:17.388Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.230Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -25619,7 +26693,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.152Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.309Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -25627,7 +26720,9 @@
           "created_at": "2025-03-17T06:23:17.390Z",
           "last_modified": "2025-03-17T06:23:17.390Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.305Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -26496,7 +27591,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.178Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.330Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -26504,7 +27618,9 @@
           "created_at": "2025-03-17T06:23:17.391Z",
           "last_modified": "2025-03-17T06:23:17.391Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.326Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -27441,7 +28557,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.196Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.345Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -27449,7 +28584,9 @@
           "created_at": "2025-03-17T06:23:17.392Z",
           "last_modified": "2025-03-17T06:23:17.392Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.341Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -30918,6 +32055,24 @@
             "value": "https://youtube.com/@getwebstudio",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:15.206Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.354Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -30927,7 +32082,9 @@
           "created_at": "2025-03-17T06:23:17.395Z",
           "last_modified": "2025-03-17T06:23:17.395Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.350Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -31659,7 +32816,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.223Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.365Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -31667,7 +32843,9 @@
           "created_at": "2025-03-17T06:23:17.396Z",
           "last_modified": "2025-03-17T06:23:17.396Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.361Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -31731,7 +32909,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.232Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.372Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -31739,7 +32936,9 @@
           "created_at": "2025-03-17T06:23:17.396Z",
           "last_modified": "2025-03-17T06:23:17.396Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.368Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -31857,7 +33056,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.241Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.379Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -31865,7 +33083,9 @@
           "created_at": "2025-03-17T06:23:17.396Z",
           "last_modified": "2025-03-17T06:23:17.396Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.376Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -32039,7 +33259,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.254Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.390Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -32047,7 +33286,9 @@
           "created_at": "2025-03-17T06:23:17.396Z",
           "last_modified": "2025-03-17T06:23:17.396Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.387Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -32123,7 +33364,26 @@
       "connectedDocuments": {
         "connected_documents": []
       },
-      "history": [],
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.276Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.409Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
       "metadata": {
         "siteVisibility": "public",
         "semanticVersion": {
@@ -32131,7 +33391,9 @@
           "created_at": "2025-03-17T06:23:17.396Z",
           "last_modified": "2025-03-17T06:23:17.396Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.405Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -32620,6 +33882,24 @@
             "value": "[[Microsoft]]",
             "source": "frontmatter"
           }
+        },
+        {
+          "timestamp": "2025-03-17T08:01:15.293Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.424Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
         }
       ],
       "metadata": {
@@ -32629,7 +33909,9 @@
           "created_at": "2025-03-17T06:23:17.396Z",
           "last_modified": "2025-03-17T06:23:17.396Z",
           "status": "active"
-        }
+        },
+        "last_processed": "2025-03-17T08:08:24.420Z",
+        "process_result": "error"
       },
       "mediaInContent": {
         "media": []
@@ -33744,6 +35026,1551 @@
         "media": []
       },
       "uuid": "599bd19e-2292-4175-8037-887d64efd9c8"
+    },
+    "d73ca267-6a77-41b4-b996-39dad92d2d83": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.279Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.530Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.526Z",
+        "process_result": "error"
+      }
+    },
+    "96d1977c-da12-4ed1-9c28-13e4cec7ac6b": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.298Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.554Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.550Z",
+        "process_result": "error"
+      }
+    },
+    "c49c29a5-5086-4c9d-8358-5436322ca5d7": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.310Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.566Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.562Z",
+        "process_result": "error"
+      }
+    },
+    "bfd6f8f6-d92c-491e-8079-b3c3de244145": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.337Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.593Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.589Z",
+        "process_result": "error"
+      }
+    },
+    "7c1ba279-b05f-4b9a-9bce-b522a4ee4c01": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.352Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.609Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.605Z",
+        "process_result": "error"
+      }
+    },
+    "4b082378-63d7-4ef2-bd66-3795548b5a6a": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.365Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.620Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.616Z",
+        "process_result": "error"
+      }
+    },
+    "94991f57-64f2-42b8-adfb-cb0899fa8999": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.373Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.628Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.623Z",
+        "process_result": "error"
+      }
+    },
+    "21c2128b-b637-40ff-92dc-3f8b0bbaa911": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.385Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.639Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.635Z",
+        "process_result": "error"
+      }
+    },
+    "e4d2ce0c-1db4-48c9-9d2d-05a33d1b7588": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.399Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.654Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.650Z",
+        "process_result": "error"
+      }
+    },
+    "e86be12b-57f9-4566-bdf2-61c5dc462431": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.411Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.666Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.662Z",
+        "process_result": "error"
+      }
+    },
+    "08bbfec8-dc7e-46ea-aa03-2de6d747388d": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.434Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.689Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.685Z",
+        "process_result": "error"
+      }
+    },
+    "a39804c3-335c-4e41-a606-802ed74cd4c3": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.445Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.700Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.696Z",
+        "process_result": "error"
+      }
+    },
+    "69cef0d5-c7c0-454b-a7b7-f332c89e8465": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.457Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.712Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.708Z",
+        "process_result": "error"
+      }
+    },
+    "27d8ffc1-0a05-44ff-976e-ae12188e3749": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.482Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.735Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.732Z",
+        "process_result": "error"
+      }
+    },
+    "17aed151-a8a0-4059-8d00-041cfd3f894d": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.489Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.744Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.739Z",
+        "process_result": "error"
+      }
+    },
+    "8486705f-940f-4d1b-9951-a8f515818ec8": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.504Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.759Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.755Z",
+        "process_result": "error"
+      }
+    },
+    "dd143ba8-324b-43a6-83db-111257d54abd": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.520Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.775Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.770Z",
+        "process_result": "error"
+      }
+    },
+    "ddfb4fd8-fc00-40de-a64d-10ea42dcf771": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.528Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.782Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.778Z",
+        "process_result": "error"
+      }
+    },
+    "951da079-eb42-4e5e-acea-6095744a57a5": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.536Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.789Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.785Z",
+        "process_result": "error"
+      }
+    },
+    "652629e2-3fbc-4cf5-afcd-bac6897a92e9": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.544Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.796Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.792Z",
+        "process_result": "error"
+      }
+    },
+    "d0c1d56b-4d89-4e63-9615-036aae33266f": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.553Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.803Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.799Z",
+        "process_result": "error"
+      }
+    },
+    "507c3628-01c2-45ad-972f-3e1d47bac716": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.569Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.818Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.814Z",
+        "process_result": "error"
+      }
+    },
+    "c054a1e3-1848-4586-89df-2522f963df41": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.576Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.825Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.821Z",
+        "process_result": "error"
+      }
+    },
+    "4aa3dffa-9d8f-4ac4-a72d-2c3e518836e0": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.599Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.845Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.841Z",
+        "process_result": "error"
+      }
+    },
+    "9e6fdc60-22b9-4060-875d-978b3554a7c0": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.690Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.923Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.919Z",
+        "process_result": "error"
+      }
+    },
+    "306772bc-4272-4014-adb7-c701dcba6faa": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.699Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.930Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.926Z",
+        "process_result": "error"
+      }
+    },
+    "541235f6-b488-4042-8a76-9f144ccccf36": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.707Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.938Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.934Z",
+        "process_result": "error"
+      }
+    },
+    "886458eb-3d0a-4fb4-838c-c6eba1a5136f": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.715Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.945Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.941Z",
+        "process_result": "error"
+      }
+    },
+    "d7272576-08e0-4526-b8e9-fef718a491ac": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.724Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.952Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.948Z",
+        "process_result": "error"
+      }
+    },
+    "5fee55a6-5ef6-436c-adda-09d5a27dc6b9": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.746Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.970Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.966Z",
+        "process_result": "error"
+      }
+    },
+    "82f6a85f-6cba-4f94-a1e4-5912ef743169": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.771Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:23.992Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:23.988Z",
+        "process_result": "error"
+      }
+    },
+    "cc338791-32de-4637-a16c-a28f21a2fc62": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.805Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.020Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.016Z",
+        "process_result": "error"
+      }
+    },
+    "8f6ca1f9-09cd-4e3d-9358-2d48cd0aa8ba": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.821Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.034Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.030Z",
+        "process_result": "error"
+      }
+    },
+    "a0bd8e63-f05a-4cd8-ab5c-1796ec411039": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.831Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.041Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.037Z",
+        "process_result": "error"
+      }
+    },
+    "c3d391f1-4fba-4364-bc84-7bc9f5159e8f": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.847Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.056Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.052Z",
+        "process_result": "error"
+      }
+    },
+    "407f67b9-8c74-47e2-94e7-f90b3a86b3c6": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.902Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.099Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.095Z",
+        "process_result": "error"
+      }
+    },
+    "b28eda54-a0c7-4a22-84c0-23bf5afe099f": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:14.928Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.121Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.118Z",
+        "process_result": "error"
+      }
+    },
+    "f3b1ff36-ce7c-4957-83f9-a6e28cb40efe": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.001Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.185Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.181Z",
+        "process_result": "error"
+      }
+    },
+    "a63a5607-e8f3-40de-8b96-961bf1993862": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.020Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.199Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.195Z",
+        "process_result": "error"
+      }
+    },
+    "5a65808d-a07e-4602-b125-5ea27ab2195b": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.077Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.246Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.242Z",
+        "process_result": "error"
+      }
+    },
+    "7a532555-a3e9-48e6-a6a7-d623432caaf9": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.086Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.253Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.249Z",
+        "process_result": "error"
+      }
+    },
+    "b4e6879d-f217-4d7f-a564-c1d3c822aa49": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.095Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.261Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.257Z",
+        "process_result": "error"
+      }
+    },
+    "2d287ce2-4f76-4b31-b0a9-42597cd73973": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.104Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.268Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.264Z",
+        "process_result": "error"
+      }
+    },
+    "e00d8371-85ba-4135-a088-e22326abb59e": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.112Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.276Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.272Z",
+        "process_result": "error"
+      }
+    },
+    "d78ff056-9c1b-45c0-b584-b75a8fb44374": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.121Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.283Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.279Z",
+        "process_result": "error"
+      }
+    },
+    "b6e95aac-0b8c-48fc-9c4f-0b43a6f49de3": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.130Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.290Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.286Z",
+        "process_result": "error"
+      }
+    },
+    "df31cacf-599d-4f91-9b07-b88f311ade6d": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.142Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.301Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.297Z",
+        "process_result": "error"
+      }
+    },
+    "0bd965cd-5dc2-4516-8047-aa5536b44fa7": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.160Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.316Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.312Z",
+        "process_result": "error"
+      }
+    },
+    "b8486c9f-e113-41d1-a989-5fe0f06ee10f": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.169Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.323Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.319Z",
+        "process_result": "error"
+      }
+    },
+    "1229c014-048b-47a6-b70e-9e9885d92848": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.187Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.338Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.334Z",
+        "process_result": "error"
+      }
+    },
+    "96805db7-017d-4391-bf52-716975c68b64": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T08:01:15.263Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T08:08:24.398Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "success": false,
+            "error": "OpenGraph API key not found in environment variables"
+          }
+        }
+      ],
+      "metadata": {
+        "last_processed": "2025-03-17T08:08:24.393Z",
+        "process_result": "error"
+      }
+    },
+    "17c7dbb6-205f-4bcc-a2bc-4d87dde90cb8": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T09:17:13.757Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "https://huggingface.co/spaces",
+            "error": "HTTP error! status: 401"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:18:35.724Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "success",
+            "success": true,
+            "url": "https://huggingface.co/spaces",
+            "screenshot_url": "https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/009faf582a31ba7adf1f4c826c44f3014cc98fd9b70b5325299d55a84408d0bf.jpeg"
+          }
+        }
+      ],
+      "metadata": {
+        "last_og_fetch": "2025-03-17T09:18:35.715Z",
+        "last_og_status": "success"
+      }
+    },
+    "44b591cd-372e-4571-a466-dc2d29e0f891": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T09:17:13.981Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "https://superduper.io/",
+            "error": "HTTP error! status: 401"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:18:47.816Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "success",
+            "success": true,
+            "url": "https://superduper.io/",
+            "screenshot_url": "https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/55a6738e568d2600c0d99e34c0c9f4a64d6fcdab0e168b457eb30b762129142e.jpeg"
+          }
+        }
+      ],
+      "metadata": {
+        "last_og_fetch": "2025-03-17T09:18:47.810Z",
+        "last_og_status": "success"
+      }
+    },
+    "53e7a7ce-498b-48b2-9e95-4da27f78f838": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T09:17:14.076Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "https://www.kodu.ai/",
+            "error": "HTTP error! status: 401"
+          }
+        },
+        {
+          "timestamp": "2025-03-17T09:19:06.609Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "success",
+            "success": true,
+            "url": "https://www.kodu.ai/",
+            "screenshot_url": "https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/26ad0f36ac6691f9b00649b4352c5579473b239fe2296eb93ec0da40c8eb89f3.jpeg"
+          }
+        }
+      ],
+      "metadata": {
+        "last_og_fetch": "2025-03-17T09:19:06.595Z",
+        "last_og_status": "success"
+      }
+    },
+    "96badd4a-631e-475f-9b20-04764334e41f": {
+      "content": {},
+      "relationships": {},
+      "history": [
+        {
+          "timestamp": "2025-03-17T09:37:29.672Z",
+          "type": "metadata_update",
+          "action": "update_open_graph",
+          "details": {
+            "event_type": "error",
+            "success": false,
+            "url": "\"https://bambulab.com/en-us\"",
+            "error": "HTTP error! status: 400"
+          }
+        }
+      ],
+      "metadata": {
+        "last_og_fetch": "2025-03-17T09:37:29.667Z",
+        "last_og_status": "error"
+      }
     }
   },
   "indices": {
@@ -36887,7 +39714,116 @@
         "uuid": "599bd19e-2292-4175-8037-887d64efd9c8",
         "context": "tooling/Web Browsers",
         "is_canonical": true
-      }
+      },
+      "gguf.md": "d5ce7795-af0c-494d-85d3-8280655b111c",
+      "Abacus AI.md": "12e6679c-c4f5-4b2b-9a5d-5332cf7e9469",
+      "OLlama.md": "2fa9b5aa-f31b-44bb-aa66-f6952138592e",
+      "Kobold CPP.md": "960d4161-b7b0-475c-88b5-1b845a1dfc00",
+      "JetPack.md": "d2d9fa18-a864-421c-bed2-e476c650d885",
+      "Microsoft Copilot Studio.md": "d43bbbfa-424f-4990-8f07-5a574930007b",
+      "n8n.md": "676fbd61-103c-4ac1-834f-96e693ca0528",
+      "Arctic Agentic RAG.md": "ad593ca9-143f-4c2b-9513-70aabd564271",
+      "AutoGen.md": "2daa0152-7f46-4b8e-9d83-a683c135460c",
+      "OctoTools.md": "97880311-5d6d-41ac-b010-15e3555d96c7",
+      "smolagents.md": "be235eba-8643-4719-af6a-85e41fdc4d23",
+      "Exo.md": "f8c58f55-69c0-4ced-be84-48d28d1a7932",
+      "AI Powered Personal Assistant.md": "d73ca267-6a77-41b4-b996-39dad92d2d83",
+      "AI Video Editing.md": "96d1977c-da12-4ed1-9c28-13e4cec7ac6b",
+      "AI Wrappers.md": "c49c29a5-5086-4c9d-8358-5436322ca5d7",
+      "Auto-Regression.md": "bfd6f8f6-d92c-491e-8079-b3c3de244145",
+      "CoNLT.md": "7c1ba279-b05f-4b9a-9bce-b522a4ee4c01",
+      "Content Agents.md": "4b082378-63d7-4ef2-bd66-3795548b5a6a",
+      "D-RAG.md": "94991f57-64f2-42b8-adfb-cb0899fa8999",
+      "Design Generators.md": "21c2128b-b637-40ff-92dc-3f8b0bbaa911",
+      "Graph Convolution Network.md": "e4d2ce0c-1db4-48c9-9d2d-05a33d1b7588",
+      "HealthTech AI Examples.md": "e86be12b-57f9-4566-bdf2-61c5dc462431",
+      "Memory Layer.md": "08bbfec8-dc7e-46ea-aa03-2de6d747388d",
+      "Mixture of Experts.md": "82f6a85f-6cba-4f94-a1e4-5912ef743169",
+      "Multimodal AI Agents.md": "69cef0d5-c7c0-454b-a7b7-f332c89e8465",
+      "Quantization.md": "27d8ffc1-0a05-44ff-976e-ae12188e3749",
+      "Rag Agent.md": "17aed151-a8a0-4059-8d00-041cfd3f894d",
+      "Simulated Human.md": "8486705f-940f-4d1b-9951-a8f515818ec8",
+      "Swarm.md": "dd143ba8-324b-43a6-83db-111257d54abd",
+      "Synthetic Customers.md": "ddfb4fd8-fc00-40de-a64d-10ea42dcf771",
+      "Synthetic Data.md": "951da079-eb42-4e5e-acea-6095744a57a5",
+      "Text-to-Speech.md": "652629e2-3fbc-4cf5-afcd-bac6897a92e9",
+      "Tokens.md": "d0c1d56b-4d89-4e63-9615-036aae33266f",
+      "Voice to Text.md": "507c3628-01c2-45ad-972f-3e1d47bac716",
+      "Website Cloning.md": "c054a1e3-1848-4586-89df-2522f963df41",
+      "Google Code Assist.md": "4aa3dffa-9d8f-4ac4-a72d-2c3e518836e0",
+      "OpenCodeInterpreter.md": "f8ddeab3-3a3e-48b3-bf24-5cdebd7a2a2e",
+      "RepoPrompt.md": "831aff8a-59ae-4ab7-aaaa-6f23ab86ea2c",
+      "Roo Code.md": "47567cbb-e866-44a3-85b6-2a208cd8a510",
+      "DeepBrain AI.md": "2b6c9d2f-f2e8-4d76-8c93-993f3b19917b",
+      "Dreammachine.md": "c0800902-35e5-40f5-acb1-8f8555a37d3d",
+      "Crawl4 AI.md": "69d949b9-4674-4fe0-a80b-cbde120fa24f",
+      "Kotaemon.md": "92d8290d-0da8-4a37-948a-ec30577fcf74",
+      "LightRAG.md": "e7211a66-affd-4033-b873-bc00e6671cfb",
+      "Marvin.md": "9e6fdc60-22b9-4060-875d-978b3554a7c0",
+      "Black Forest Labs.md": "306772bc-4272-4014-adb7-c701dcba6faa",
+      "OpenAI.md": "541235f6-b488-4042-8a76-9f144ccccf36",
+      "CPM-Series.md": "886458eb-3d0a-4fb4-838c-c6eba1a5136f",
+      "Codestral-Series.md": "d7272576-08e0-4526-b8e9-fef718a491ac",
+      "Diffusion Language Models.md": "ec214e49-26aa-4210-8f6f-647a96653d1b",
+      "Flux.md": "5fee55a6-5ef6-436c-adda-09d5a27dc6b9",
+      "GPT-Series Models.md": "65625f4e-f53d-43a7-be9d-2ce5aa3c4f39",
+      "Granite.md": "65885b67-f117-48ad-b2f3-fa954f22dd9a",
+      "O-Series Models.md": "1e9b70c1-62bb-4a4e-b97a-0904c39fcde7",
+      "OpenBMB.md": "9ba4f35d-aac4-4e2d-a526-b0f70b2d8ce5",
+      "Perplexica.md": "33e10d09-7c3b-4f5e-af07-e60e3e06b27d",
+      "Phi-Series Models.md": "cc338791-32de-4637-a16c-a28f21a2fc62",
+      "Qwen.md": "af0ad643-4a71-4862-8bff-fc4b6b46dd25",
+      "Small.md": "8f6ca1f9-09cd-4e3d-9358-2d48cd0aa8ba",
+      "Sora-Series Models.md": "a0bd8e63-f05a-4cd8-ab5c-1796ec411039",
+      "Stable Diffusion.md": "62d75551-ddf4-4924-b3a3-b7d700c98b61",
+      "Veo.md": "c3d391f1-4fba-4364-bc84-7bc9f5159e8f",
+      "Wan.md": "c2331aab-7b37-40c8-af25-690014f4b555",
+      "Watson.md": "e2155c1c-aff5-41f4-93b7-6b51e3e1561c",
+      "Whisper.cpp.md": "969023c2-2608-4813-a4b0-fce2205c4704",
+      "r1.md": "93ca14bb-3d8c-4c6f-b52c-a0b5ab04afb7",
+      "O3G Engine.md": "e9fd2096-449e-4cb9-b4bd-dfaab0a2e7d8",
+      "AdaptCMS.md": "407f67b9-8c74-47e2-94e7-f90b3a86b3c6",
+      "PowerBI.md": "02f33ce8-0bf8-4571-a603-e178b6372451",
+      "Totem.md": "0c91c650-37f9-4434-a04f-316b2ac29c70",
+      "Hygraph.md": "b28eda54-a0c7-4a22-84c0-23bf5afe099f",
+      "Glide.md": "2840b261-7a76-43da-bdf8-34249347136c",
+      "Bambu Lab.md": "96badd4a-631e-475f-9b20-04764334e41f",
+      "ESP32.md": "7734dcdb-6a9e-4949-ab3d-f49c1d6a83b0",
+      "Excel.md": "38e738e3-80d5-4cb6-9f71-bee345cabc35",
+      "Teams.md": "09c2a7cc-7cd0-4e66-9a50-3f80e16a64ef",
+      "Google Illuminate.md": "f3b1ff36-ce7c-4957-83f9-a6e28cb40efe",
+      "Mirror.md": "41b257e4-2d0e-4ef0-ad9c-23034a151132",
+      "NotebookLM.md": "a63a5607-e8f3-40de-8b96-961bf1993862",
+      "Salesforce.md": "25bf3393-e8f4-43e6-a4ce-c30436f54fbb",
+      "SharePoint.md": "8d4b0d15-b4f3-49cf-b50c-c9f10440a2a7",
+      "Amazon Web Services.md": "a5912b2a-b000-430f-8ca0-1955e18ac36d",
+      "Azure.md": "bc5687cb-167f-4729-ba0d-cdea86c1304a",
+      "Bolt.diy.md": "5ddbfad4-5a45-4758-bdba-ddacdcd73ca4",
+      "Netlify.md": "5a65808d-a07e-4602-b125-5ea27ab2195b",
+      "Render.md": "7a532555-a3e9-48e6-a6a7-d623432caaf9",
+      "Vercel.md": "b4e6879d-f217-4d7f-a564-c1d3c822aa49",
+      "IndexedDB.md": "2d287ce2-4f76-4b31-b0a9-42597cd73973",
+      "MariaDB.md": "e00d8371-85ba-4135-a088-e22326abb59e",
+      "MongoDB.md": "d78ff056-9c1b-45c0-b584-b75a8fb44374",
+      "MySQL.md": "b6e95aac-0b8c-48fc-9c4f-0b43a6f49de3",
+      "Redis.md": "df31cacf-599d-4f91-9b07-b88f311ade6d",
+      "Supabase.md": "7a1bb7b1-7c21-4a28-bc5b-65dc388ece03",
+      "SurrealDB.md": "0bd965cd-5dc2-4516-8047-aa5536b44fa7",
+      "Xata.md": "b8486c9f-e113-41d1-a989-5fe0f06ee10f",
+      "uv.md": "aa08f849-658c-4b3a-abd6-dfc46e0abaec",
+      "Kubernetes.md": "1229c014-048b-47a6-b70e-9e9885d92848",
+      "Postman.md": "92c2fd95-4cb8-456a-acee-515f2d19e9dc",
+      "WebStudio.md": "cbde7bf1-dc92-4f63-8d16-9cb39d78793b",
+      "C Sharp.md": "98f06019-0228-4bc7-8067-908c1e892071",
+      "CSS.md": "141e3602-7b3b-458e-bafe-5e52d8c90a3b",
+      "Go.md": "b2835dbe-e66d-40c4-b082-bb1bcff52d29",
+      "Vite Federation Plugin.md": "8db83b42-9219-46d4-a516-9b4977faa6f9",
+      "PHP.md": "96805db7-017d-4391-bf52-716975c68b64",
+      "R Programming Language.md": "25117541-be73-4ac8-bfd0-491b02de2c07",
+      "Visual Studio Code.md": "032efa58-39ff-4ab8-b51f-a0a407921b2c",
+      "Hugging Face Spaces.md": "17c7dbb6-205f-4bcc-a2bc-4d87dde90cb8",
+      "SuperDuper Agents.md": "44b591cd-372e-4571-a466-dc2d29e0f891",
+      "Kodu AI.md": "53e7a7ce-498b-48b2-9e95-4da27f78f838"
     },
     "by_path": {
       "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Affine.md": "32e4500c-1d6b-40ac-8524-b566904e5dc5",
@@ -37528,7 +40464,118 @@
       "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Firefox.md": "3eade4cf-78b4-42ff-a41f-b5c7c4aad533",
       "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Ladybird.md": "86e3054a-b9c9-432d-ab7e-9783e317bd1c",
       "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Opera.md": "8309e69a-6fb2-4c4f-a422-d8a212a29de2",
-      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Zen Browser.md": "599bd19e-2292-4175-8037-887d64efd9c8"
+      "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Zen Browser.md": "599bd19e-2292-4175-8037-887d64efd9c8",
+      "site/src/content/tooling/AI-Toolkit/AI Infrastructure/gguf.md": "d5ce7795-af0c-494d-85d3-8280655b111c",
+      "site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Abacus AI.md": "12e6679c-c4f5-4b2b-9a5d-5332cf7e9469",
+      "site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/OLlama.md": "2fa9b5aa-f31b-44bb-aa66-f6952138592e",
+      "site/src/content/tooling/AI-Toolkit/AI Interfaces/Kobold CPP.md": "960d4161-b7b0-475c-88b5-1b845a1dfc00",
+      "site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/JetPack.md": "d2d9fa18-a864-421c-bed2-e476c650d885",
+      "site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Microsoft Copilot Studio.md": "d43bbbfa-424f-4990-8f07-5a574930007b",
+      "site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/n8n.md": "676fbd61-103c-4ac1-834f-96e693ca0528",
+      "site/src/content/tooling/AI-Toolkit/Agentic AI/Arctic Agentic RAG.md": "ad593ca9-143f-4c2b-9513-70aabd564271",
+      "site/src/content/tooling/AI-Toolkit/Agentic AI/AutoGen.md": "2daa0152-7f46-4b8e-9d83-a683c135460c",
+      "site/src/content/tooling/AI-Toolkit/Agentic AI/OctoTools.md": "97880311-5d6d-41ac-b010-15e3555d96c7",
+      "site/src/content/tooling/AI-Toolkit/Agentic AI/smolagents.md": "be235eba-8643-4719-af6a-85e41fdc4d23",
+      "site/src/content/tooling/AI-Toolkit/Exo.md": "f8c58f55-69c0-4ced-be84-48d28d1a7932",
+      "site/src/content/tooling/AI-Toolkit/Explainers/AI Powered Personal Assistant.md": "d73ca267-6a77-41b4-b996-39dad92d2d83",
+      "site/src/content/tooling/AI-Toolkit/Explainers/AI Video Editing.md": "96d1977c-da12-4ed1-9c28-13e4cec7ac6b",
+      "site/src/content/tooling/AI-Toolkit/Explainers/AI Wrappers.md": "c49c29a5-5086-4c9d-8358-5436322ca5d7",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Auto-Regression.md": "bfd6f8f6-d92c-491e-8079-b3c3de244145",
+      "site/src/content/tooling/AI-Toolkit/Explainers/CoNLT.md": "7c1ba279-b05f-4b9a-9bce-b522a4ee4c01",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Content Agents.md": "4b082378-63d7-4ef2-bd66-3795548b5a6a",
+      "site/src/content/tooling/AI-Toolkit/Explainers/D-RAG.md": "94991f57-64f2-42b8-adfb-cb0899fa8999",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Design Generators.md": "21c2128b-b637-40ff-92dc-3f8b0bbaa911",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Graph Convolution Network.md": "e4d2ce0c-1db4-48c9-9d2d-05a33d1b7588",
+      "site/src/content/tooling/AI-Toolkit/Explainers/HealthTech AI Examples.md": "e86be12b-57f9-4566-bdf2-61c5dc462431",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Memory Layer.md": "08bbfec8-dc7e-46ea-aa03-2de6d747388d",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Mixture of Experts.md": "a39804c3-335c-4e41-a606-802ed74cd4c3",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Multimodal AI Agents.md": "69cef0d5-c7c0-454b-a7b7-f332c89e8465",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Quantization.md": "27d8ffc1-0a05-44ff-976e-ae12188e3749",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Rag Agent.md": "17aed151-a8a0-4059-8d00-041cfd3f894d",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Simulated Human.md": "8486705f-940f-4d1b-9951-a8f515818ec8",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Swarm.md": "dd143ba8-324b-43a6-83db-111257d54abd",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Synthetic Customers.md": "ddfb4fd8-fc00-40de-a64d-10ea42dcf771",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Synthetic Data.md": "951da079-eb42-4e5e-acea-6095744a57a5",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Text-to-Speech.md": "652629e2-3fbc-4cf5-afcd-bac6897a92e9",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Tokens.md": "d0c1d56b-4d89-4e63-9615-036aae33266f",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Voice to Text.md": "507c3628-01c2-45ad-972f-3e1d47bac716",
+      "site/src/content/tooling/AI-Toolkit/Explainers/Website Cloning.md": "c054a1e3-1848-4586-89df-2522f963df41",
+      "site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Google Code Assist.md": "4aa3dffa-9d8f-4ac4-a72d-2c3e518836e0",
+      "site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/OpenCodeInterpreter.md": "f8ddeab3-3a3e-48b3-bf24-5cdebd7a2a2e",
+      "site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/RepoPrompt.md": "831aff8a-59ae-4ab7-aaaa-6f23ab86ea2c",
+      "site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Roo Code.md": "47567cbb-e866-44a3-85b6-2a208cd8a510",
+      "site/src/content/tooling/AI-Toolkit/Generative AI/DeepBrain AI.md": "2b6c9d2f-f2e8-4d76-8c93-993f3b19917b",
+      "site/src/content/tooling/AI-Toolkit/Generative AI/Dreammachine.md": "c0800902-35e5-40f5-acb1-8f8555a37d3d",
+      "site/src/content/tooling/AI-Toolkit/Knowledge AI/Crawl4 AI.md": "69d949b9-4674-4fe0-a80b-cbde120fa24f",
+      "site/src/content/tooling/AI-Toolkit/Knowledge AI/Kotaemon.md": "92d8290d-0da8-4a37-948a-ec30577fcf74",
+      "site/src/content/tooling/AI-Toolkit/Knowledge AI/LightRAG.md": "e7211a66-affd-4033-b873-bc00e6671cfb",
+      "site/src/content/tooling/AI-Toolkit/Knowledge AI/Marvin.md": "9e6fdc60-22b9-4060-875d-978b3554a7c0",
+      "site/src/content/tooling/AI-Toolkit/Model Producers/Black Forest Labs.md": "306772bc-4272-4014-adb7-c701dcba6faa",
+      "site/src/content/tooling/AI-Toolkit/Model Producers/OpenAI.md": "541235f6-b488-4042-8a76-9f144ccccf36",
+      "site/src/content/tooling/AI-Toolkit/Models/CPM-Series.md": "886458eb-3d0a-4fb4-838c-c6eba1a5136f",
+      "site/src/content/tooling/AI-Toolkit/Models/Codestral-Series.md": "d7272576-08e0-4526-b8e9-fef718a491ac",
+      "site/src/content/tooling/AI-Toolkit/Models/Diffusion Language Models.md": "ec214e49-26aa-4210-8f6f-647a96653d1b",
+      "site/src/content/tooling/AI-Toolkit/Models/Flux.md": "5fee55a6-5ef6-436c-adda-09d5a27dc6b9",
+      "site/src/content/tooling/AI-Toolkit/Models/GPT-Series Models.md": "65625f4e-f53d-43a7-be9d-2ce5aa3c4f39",
+      "site/src/content/tooling/AI-Toolkit/Models/Granite.md": "65885b67-f117-48ad-b2f3-fa954f22dd9a",
+      "site/src/content/tooling/AI-Toolkit/Models/Mixture of Experts.md": "82f6a85f-6cba-4f94-a1e4-5912ef743169",
+      "site/src/content/tooling/AI-Toolkit/Models/O-Series Models.md": "1e9b70c1-62bb-4a4e-b97a-0904c39fcde7",
+      "site/src/content/tooling/AI-Toolkit/Models/OpenBMB.md": "9ba4f35d-aac4-4e2d-a526-b0f70b2d8ce5",
+      "site/src/content/tooling/AI-Toolkit/Models/Perplexica.md": "33e10d09-7c3b-4f5e-af07-e60e3e06b27d",
+      "site/src/content/tooling/AI-Toolkit/Models/Phi-Series Models.md": "cc338791-32de-4637-a16c-a28f21a2fc62",
+      "site/src/content/tooling/AI-Toolkit/Models/Qwen.md": "af0ad643-4a71-4862-8bff-fc4b6b46dd25",
+      "site/src/content/tooling/AI-Toolkit/Models/Small.md": "8f6ca1f9-09cd-4e3d-9358-2d48cd0aa8ba",
+      "site/src/content/tooling/AI-Toolkit/Models/Sora-Series Models.md": "a0bd8e63-f05a-4cd8-ab5c-1796ec411039",
+      "site/src/content/tooling/AI-Toolkit/Models/Stable Diffusion.md": "62d75551-ddf4-4924-b3a3-b7d700c98b61",
+      "site/src/content/tooling/AI-Toolkit/Models/Veo.md": "c3d391f1-4fba-4364-bc84-7bc9f5159e8f",
+      "site/src/content/tooling/AI-Toolkit/Models/Wan.md": "c2331aab-7b37-40c8-af25-690014f4b555",
+      "site/src/content/tooling/AI-Toolkit/Models/Watson.md": "e2155c1c-aff5-41f4-93b7-6b51e3e1561c",
+      "site/src/content/tooling/AI-Toolkit/Models/Whisper.cpp.md": "969023c2-2608-4813-a4b0-fce2205c4704",
+      "site/src/content/tooling/AI-Toolkit/Models/r1.md": "93ca14bb-3d8c-4c6f-b52c-a0b5ab04afb7",
+      "site/src/content/tooling/Creative/O3G Engine.md": "e9fd2096-449e-4cb9-b4bd-dfaab0a2e7d8",
+      "site/src/content/tooling/Data Utilities/AdaptCMS.md": "407f67b9-8c74-47e2-94e7-f90b3a86b3c6",
+      "site/src/content/tooling/Data Utilities/PowerBI.md": "02f33ce8-0bf8-4571-a603-e178b6372451",
+      "site/src/content/tooling/Data Utilities/Totem.md": "0c91c650-37f9-4434-a04f-316b2ac29c70",
+      "site/src/content/tooling/Enterprise Jobs-to-be-Done/Content Management Systems/Hygraph.md": "b28eda54-a0c7-4a22-84c0-23bf5afe099f",
+      "site/src/content/tooling/Enterprise Jobs-to-be-Done/Glide.md": "2840b261-7a76-43da-bdf8-34249347136c",
+      "site/src/content/tooling/Hardware/Bambu Lab.md": "96badd4a-631e-475f-9b20-04764334e41f",
+      "site/src/content/tooling/Hardware/ESP32.md": "7734dcdb-6a9e-4949-ab3d-f49c1d6a83b0",
+      "site/src/content/tooling/Productivity/Excel.md": "6007069b-ce50-4642-ac6f-6a958233ec61",
+      "site/src/content/tooling/Productivity/Teams.md": "09c2a7cc-7cd0-4e66-9a50-3f80e16a64ef",
+      "site/src/content/tooling/Products/Excel.md": "38e738e3-80d5-4cb6-9f71-bee345cabc35",
+      "site/src/content/tooling/Products/Google Illuminate.md": "f3b1ff36-ce7c-4957-83f9-a6e28cb40efe",
+      "site/src/content/tooling/Products/Mirror.md": "41b257e4-2d0e-4ef0-ad9c-23034a151132",
+      "site/src/content/tooling/Products/NotebookLM.md": "a63a5607-e8f3-40de-8b96-961bf1993862",
+      "site/src/content/tooling/Products/Salesforce.md": "25bf3393-e8f4-43e6-a4ce-c30436f54fbb",
+      "site/src/content/tooling/Products/SharePoint.md": "8d4b0d15-b4f3-49cf-b50c-c9f10440a2a7",
+      "site/src/content/tooling/Software Development/Cloud Infrastructure/Amazon Web Services.md": "a5912b2a-b000-430f-8ca0-1955e18ac36d",
+      "site/src/content/tooling/Software Development/Cloud Infrastructure/Azure.md": "bc5687cb-167f-4729-ba0d-cdea86c1304a",
+      "site/src/content/tooling/Software Development/Cloud Infrastructure/Bolt.diy.md": "5ddbfad4-5a45-4758-bdba-ddacdcd73ca4",
+      "site/src/content/tooling/Software Development/Cloud Infrastructure/Netlify.md": "5a65808d-a07e-4602-b125-5ea27ab2195b",
+      "site/src/content/tooling/Software Development/Cloud Infrastructure/Render.md": "7a532555-a3e9-48e6-a6a7-d623432caaf9",
+      "site/src/content/tooling/Software Development/Cloud Infrastructure/Vercel.md": "b4e6879d-f217-4d7f-a564-c1d3c822aa49",
+      "site/src/content/tooling/Software Development/Databases/IndexedDB.md": "2d287ce2-4f76-4b31-b0a9-42597cd73973",
+      "site/src/content/tooling/Software Development/Databases/MariaDB.md": "e00d8371-85ba-4135-a088-e22326abb59e",
+      "site/src/content/tooling/Software Development/Databases/MongoDB.md": "d78ff056-9c1b-45c0-b584-b75a8fb44374",
+      "site/src/content/tooling/Software Development/Databases/MySQL.md": "b6e95aac-0b8c-48fc-9c4f-0b43a6f49de3",
+      "site/src/content/tooling/Software Development/Databases/Redis.md": "df31cacf-599d-4f91-9b07-b88f311ade6d",
+      "site/src/content/tooling/Software Development/Databases/Supabase.md": "7a1bb7b1-7c21-4a28-bc5b-65dc388ece03",
+      "site/src/content/tooling/Software Development/Databases/SurrealDB.md": "0bd965cd-5dc2-4516-8047-aa5536b44fa7",
+      "site/src/content/tooling/Software Development/Databases/Xata.md": "b8486c9f-e113-41d1-a989-5fe0f06ee10f",
+      "site/src/content/tooling/Software Development/DevOps/Developer Experience/uv.md": "aa08f849-658c-4b3a-abd6-dfc46e0abaec",
+      "site/src/content/tooling/Software Development/DevOps/Kubernetes.md": "1229c014-048b-47a6-b70e-9e9885d92848",
+      "site/src/content/tooling/Software Development/DevOps/Postman.md": "92c2fd95-4cb8-456a-acee-515f2d19e9dc",
+      "site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/UI Builders/WebStudio.md": "cbde7bf1-dc92-4f63-8d16-9cb39d78793b",
+      "site/src/content/tooling/Software Development/Programming Languages/C Sharp.md": "98f06019-0228-4bc7-8067-908c1e892071",
+      "site/src/content/tooling/Software Development/Programming Languages/CSS.md": "141e3602-7b3b-458e-bafe-5e52d8c90a3b",
+      "site/src/content/tooling/Software Development/Programming Languages/Go.md": "b2835dbe-e66d-40c4-b082-bb1bcff52d29",
+      "site/src/content/tooling/Software Development/Programming Languages/Libraries/Vite Federation Plugin.md": "8db83b42-9219-46d4-a516-9b4977faa6f9",
+      "site/src/content/tooling/Software Development/Programming Languages/PHP.md": "96805db7-017d-4391-bf52-716975c68b64",
+      "site/src/content/tooling/Software Development/Programming Languages/R Programming Language.md": "25117541-be73-4ac8-bfd0-491b02de2c07",
+      "site/src/content/tooling/Software Development/Visual Studio Code.md": "032efa58-39ff-4ab8-b51f-a0a407921b2c",
+      "site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Hugging Face Spaces.md": "17c7dbb6-205f-4bcc-a2bc-4d87dde90cb8",
+      "site/src/content/tooling/AI-Toolkit/Agentic AI/SuperDuper Agents.md": "44b591cd-372e-4571-a466-dc2d29e0f891",
+      "site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Kodu AI.md": "53e7a7ce-498b-48b2-9e95-4da27f78f838"
     },
     "by_uuid": {
       "32e4500c-1d6b-40ac-8524-b566904e5dc5": {
