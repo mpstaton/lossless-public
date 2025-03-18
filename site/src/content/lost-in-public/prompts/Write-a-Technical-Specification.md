@@ -13,25 +13,59 @@ tags:
 
 READ THIS ENTIRE FILE AND ALL FILES MENTIONED IN THIS FILE BEFORE BEGINNING. 
 
-The code we will write the specification for is in the following paths:
+**_After_** we have completed a coherent task or a related cluster of tasks, the user will ask the Code assistant to write a "Technical Specification" to codify and memorialize a completed task or cluster of tasks. 
 
-`site/scripts/build-scripts/trackMarkdownFilesInRegistry.cjs`
-`site/src/content/data/markdown-content-registry.json`
+If you are reading this **_after_** the user has requested a Technical Specification, you may commence with the task.  
+
+***
+# Context for the Specification being requested:
+>![Configuration-Start] Configuration Section:
+> Between this callout and the next callout are configuration variables the user will change to prompt each specification task.
+
+#### New or Update Existing?
+Update an existing specifcation with the recent work. 
+`site/src/content/specs/Cases-and-Corrections-for-YAML-Content-Wide.md`
+DO NOT DELETE OR EDIT PRIOR WORK BEFORE READING AND USING PRIOR WORK AS IMPORTANT CONTEXT.
+
+#### The code we will write the specification for is in the following paths:
+
+`site/scripts/build-scripts/getKnownErrorsAndFixes.cjs`
 
 
-Mention supporting work such as:
-`site/src/content/lost-in-public/prompting/Create-a-Content-Registry-Script.md`
-`site/src/content/data/markdown-content-registry-model.json`
-`site/scripts/tidy-up/tidy-one-property/listAllUsedPropertyNamesEverywhere.cjs`
-`site/src/content/lost-in-public/prompting/Meticulous-Constraints-for-Every-Prompt.md`
+#### Mention supporting work such as:
+`site/src/content/changelog--code/2025-03-18_01.md`
 
 
 
-Look to previous examples.  
+#### Look to previous examples.  
 
 `site/src/content/specs/Get-Known-Errors-and-Fixes.md`
 `site/src/content/specs/Clean-Specific-Issues-in-YAML-One-at-a-Time.md`
-`site/src/content/specs/Cases-and-Corrections-for-YAML-Content-Wide.md`
+
+## Constraint: use the following standardized frontmatter template:
+```yaml
+---
+title: 'Technical Specification: YAML Frontmatter Error Detection and Correction System.'
+lede: 'Let content teams develop content. Handle frontmatter inconsistencies gracefully for a seamless user experience.'
+date_authored: 2025-03-18
+at_semantic_version: "0.0.1.2"
+authors: "Michael Staton"
+generated_with: "Windsurf Cascade on Claude 3.5 Sonnet"
+category: Technical-Specification
+tags: 
+- YAML
+- Data-Wrangling
+- Frontmatter 
+- Error-Detection
+- Error-Handling 
+- Workflow-Automation 
+- Content-Management 
+- Markdown
+---
+```
+
+>![Configuration-End] End of Configuration.
+> Below this callout resumes the prompt for writing the requested technical specification.
 
 ***
 
@@ -62,3 +96,11 @@ Being longwinded and thorough, so long as the layout is easy to follow, is bette
 
 I HAVE ALREADY CREATED THE FILE, JUST WRITE TO IT.
 `site/src/content/specs/Create-a-Content-Registry-for-Markdown-Files.md`
+
+# Now, reflecting on the specifcation, write the frontmatter using the template in the configuration section above.
+
+Pretend to be a creative marketing copywriter. Write an impactful title and lede -- functionally, a compelling subtitle -- that will draw in business leaders and technologists.
+
+Use tags liberally and with the correct syntax for YAML arrays. Be sure to use a "-" dash character as the separator between words for tags that are more than one word. 
+
+If you are familiar with SEO, reason on possible edits to the frontmatter that will improve rankings in search engines. Then make those edits.

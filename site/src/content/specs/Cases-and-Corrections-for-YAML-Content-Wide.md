@@ -1,10 +1,21 @@
 ---
 title: "Technical Specification: YAML Frontmatter Error Detection and Correction System"
-date: 2025-03-16
-author: "Michael Staton"
-generated_with: "Cursor on Claude 3.5 Sonnet"
-category: "Technical Specification"
-tags: ["YAML", "Frontmatter", "Error Detection", "Automation", "Content Management", "Markdown"]
+lede: "Let content teams develop content. Handle frontmatter inconsistencies gracefully for a seamless user experience."
+date_authored: 2025-03-18
+at_semantic_version: "0.0.1.2"
+authors: "Michael Staton"
+generated_with: "Windsurf Cascade on Claude 3.5 Sonnet"
+category: "Technical-Specification"
+tags:
+- YAML
+- Data-Wrangling
+- Frontmatter
+- Error-Detection
+- Error-Handling
+- Workflow-Automation
+- Content-Management
+- Build-Scripts
+- Markdown
 ---
 
 # YAML Frontmatter Error Detection and Correction System
@@ -15,7 +26,7 @@ Our content management system relies heavily on YAML frontmatter in markdown fil
 
 We've developed a robust error detection and correction system that:
 
-1. **Identifies 10 distinct types of YAML formatting issues** across the content library
+1. **Identifies 11 distinct types of YAML formatting issues** across the content library
 2. **Automatically corrects formatting problems** while preserving content integrity
 3. **Generates detailed reports** for each type of correction
 4. **Prevents critical errors** from affecting downstream build processes
@@ -28,6 +39,7 @@ In our initial deployment, the system successfully processed 729 files, identify
 - 300 files missing URL properties
 - 273 UUID properties requiring quote removal
 - 274 timestamp properties needing quote standardization
+- 158 files with inconsistent tag syntax requiring normalization
 
 This represents a significant improvement in content quality and build reliability with zero manual intervention required.
 
@@ -45,17 +57,19 @@ graph TD
     C --> G[Block Scalar]
     C --> H[Duplicate Keys]
     C --> I[Missing Properties]
-    D --> J[Correction Functions]
-    E --> J
-    F --> J
-    G --> J
-    H --> J
-    I --> J
-    J --> K[Report Generation]
-    K --> L[Individual Reports]
-    K --> M[Summary Report]
-    L --> N[File System]
-    M --> N
+    C --> J[Tag Syntax]
+    D --> K[Correction Functions]
+    E --> K
+    F --> K
+    G --> K
+    H --> K
+    I --> K
+    J --> K
+    K --> L[Report Generation]
+    L --> M[Individual Reports]
+    L --> N[Summary Report]
+    M --> O[File System]
+    N --> O
 ```
 
 ### 2. Core Components
@@ -67,7 +81,8 @@ const USER_OPTIONS = {
         urlProperties: ['url', 'image', 'favicon', 'og_screenshot_url', ...],
         errorMessageProperties: ['jina_error', 'og_errors', 'og_error_message'],
         plainTextProperties: ['description', 'og_description', 'zinger', ...],
-        timestampProperties: ['og_last_error', 'og_error_message', ...]
+        timestampProperties: ['og_last_error', 'og_error_message', ...],
+        tagProperties: ['tags']
     }
 };
 ```
@@ -90,18 +105,24 @@ const knownErrorCases = {
         preventsOperations: ['operation1'],
         correctionFunction: 'functionName',
         isCritical: boolean
+    },
+    tagsMayHaveInconsistentSyntax: {
+        detectError: new RegExp(/(?:tags:\s*(?:\[.*?\]|.*?,.*?|['"].*?['"])|(?:^|\n)\s*-\s*\w+[^\S\n]+\w+)/),
+        exampleErrors: [
+            'tags: ["tag1", "tag2"]',
+            'tags: tag1, tag2',
+            'tags: "tag1", "tag2"',
+            'tags:\n- Tag With Spaces'
+        ],
+        properSyntax: `tags:\n- tag-one\n- tag-two`,
+        messageToLog: 'Tags may have inconsistent syntax',
+        preventsOperations: ['assureYAMLPropertiesCorrect.cjs', "getCollection('tooling')"],
+        correctionFunction: 'assureOrFixTagSyntaxInFrontmatter',
+        isCritical: true
     }
     // ... additional cases
 };
 ```
-
-#### 2.3 Main Processing Script (`attemptToFixKnownErrorsInYAML.cjs`)
-Orchestrates:
-- File discovery
-- Error detection
-- Correction application
-- Report generation
-- Progress tracking
 
 ### 3. Error Types and Correction Strategies
 
@@ -152,6 +173,39 @@ Orchestrates:
    description: Text
    ```
 
+#### 3.7 Tag Syntax Issues
+1. **Array Syntax with Quotes**
+   ```yaml
+   # Before
+   tags: ["Technology-Consultants", "Organizations"]
+   # After
+   tags:
+   - Technology-Consultants
+   - Organizations
+   ```
+
+2. **Comma-Separated Tags**
+   ```yaml
+   # Before
+   tags: Technology-Consultants, Organizations
+   # After
+   tags:
+   - Technology-Consultants
+   - Organizations
+   ```
+
+3. **Space-Separated Words**
+   ```yaml
+   # Before
+   tags:
+   - Technology Consultants
+   - Organizations
+   # After
+   tags:
+   - Technology-Consultants
+   - Organizations
+   ```
+
 ### 4. Correction Functions
 
 #### 4.1 Error Message Property Correction
@@ -179,6 +233,95 @@ async removeAnyQuoteCharactersfromEitherOrBothSidesOfURL(markdownFileContent, ma
     // Remove all quotes from URL properties
     // Preserve the URL itself
     // Return cleaned content
+}
+```
+
+#### 4.7 Tag Syntax Correction
+```javascript
+async assureOrFixTagSyntaxInFrontmatter(markdownContent, markdownFilePath) {
+    const frontmatterData = helperFunctions.extractFrontmatter(markdownContent);
+    
+    // Process frontmatter lines
+    const lines = frontmatterData.frontmatterString.split('\n');
+    let modified = false;
+    let inTagsBlock = false;
+    let tagsArray = [];
+    let tagsStartIndex = -1;
+
+    // Process each line for tag formatting
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        
+        if (line.startsWith('tags:')) {
+            inTagsBlock = true;
+            tagsStartIndex = i;
+            
+            // Handle inline tags
+            const tagsContent = line.substring(5).trim();
+            if (tagsContent) {
+                const rawTags = tagsContent
+                    .replace(/^\[|\]$/g, '')  // Remove array brackets
+                    .replace(/["']/g, '')     // Remove quotes
+                    .split(',')               // Split by commas
+                    .map(tag => tag.trim())   // Clean whitespace
+                    .filter(tag => tag);      // Remove empty
+                
+                tagsArray = rawTags.map(tag => 
+                    tag.replace(/\s+/g, '-')  // Replace spaces
+                );
+                modified = true;
+            }
+            continue;
+        }
+
+        // Process bullet list tags
+        if (inTagsBlock && line.startsWith('-')) {
+            const tag = line.substring(1).trim()
+                .replace(/["']/g, '')      // Remove quotes
+                .replace(/\s+/g, '-');     // Replace spaces
+            tagsArray.push(tag);
+            modified = true;
+            continue;
+        }
+
+        // End of tags block
+        if (inTagsBlock && !line.startsWith('-') && line.trim()) {
+            inTagsBlock = false;
+        }
+    }
+
+    // Return if no changes needed
+    if (!modified) {
+        return {
+            success: true,
+            modified: false,
+            filePath: markdownFilePath
+        };
+    }
+
+    // Reconstruct frontmatter with proper tag format
+    const beforeTags = lines.slice(0, tagsStartIndex);
+    const afterTags = lines.slice(tagsStartIndex + 1)
+        .filter(line => !line.trim().startsWith('-') || !inTagsBlock);
+
+    const formattedTags = ['tags:']
+        .concat(tagsArray.map(tag => `- ${tag}`));
+
+    const newFrontmatter = beforeTags
+        .concat(formattedTags)
+        .concat(afterTags)
+        .join('\n');
+
+    // Return modified content
+    return {
+        success: true,
+        modified: true,
+        filePath: markdownFilePath,
+        content: markdownContent.slice(0, frontmatterData.startIndex) +
+            '---\n' + newFrontmatter + '\n---' +
+            markdownContent.slice(frontmatterData.endIndex),
+        modifications: ['Reformatted tags to proper YAML bullet list syntax']
+    };
 }
 ```
 
@@ -318,14 +461,15 @@ Our system has demonstrated significant success in maintaining YAML frontmatter 
 
 1. **Processing Statistics**
    - 729 files processed
-   - 10 error cases checked
-   - 1,957 total corrections made
+   - 11 error cases checked
+   - 2,115 total corrections made
 
 2. **Success Rates**
    - 100% of error message quote issues fixed
    - 100% of URL quote issues resolved
    - 96% of character set issues corrected
    - 100% of timestamp format issues resolved
+   - 100% of tag syntax issues resolved
 
 3. **Build Impact**
    - Zero YAML parsing errors in build

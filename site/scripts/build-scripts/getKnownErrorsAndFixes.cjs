@@ -50,6 +50,54 @@ const knownErrorCases = {
         isCritical: false
     },
 
+    // Tags may have inconsistent syntax which may affect or cause errors in content collections
+    // Reformat tags to have one consistent syntax, which is compliant with Obsidian. 
+
+    // Proper syntax must be in a yaml array format using syntax as in a markdown bullet list
+    //---- Tags CANNOT be surrounded by any type of quote. 
+    //---- Tags CANNOT be comma separated.
+    //---- Tags CANNOT have a " " space character separating two words. 
+
+    tagsMayHaveInconsistentSyntax: {
+        exampleErrors: [
+            "",
+            ```---
+            url: https://www.archonlabs.com/
+            site_name: Archon Labs'
+            tags: ["Technology-Consultants", "Organizations"]
+            ---```,
+            ```---
+            url: https://www.archonlabs.com/
+            site_name: Archon Labs'
+            tags: Technology-Consultants, Organizations
+            ---```,
+            ```---
+            url: https://www.archonlabs.com/
+            site_name: Archon Labs'
+            tags: 
+            - Technology Consultants
+            - Organizations
+            ---```,
+            ```---
+            url: https://www.archonlabs.com/
+            site_name: Archon Labs'
+            tags: 'Technology-Consultants', 'Organizations'
+            ---```,
+        ],
+        properSyntax: `---
+            url: https://www.archonlabs.com/
+            site_name: Archon Labs
+            tags:
+            - Technology Consultants
+            - Organizations
+            ---`,
+        detectError: new RegExp(/(?:tags:\s*(?:\[.*?\]|.*?,.*?|['"].*?['"])|(?:^|\n)\s*-\s*\w+[^\S\n]+\w+)/),
+        messageToLog: 'Tags may have inconsistent syntax',
+        preventsOperations: ['assureYAMLPropertiesCorrect.cjs', "function getCollection('tooling')"],
+        correctionFunction: 'assureOrFixTagSyntaxInFrontmatter',
+        isCritical: true
+    },
+
    // Unquoted error message properties (critical)
    // Surround the error message property with single mark quotes
    unquotedErrorMessageProperty: {
@@ -501,7 +549,173 @@ const correctionFunctions = {
 
         return helperFunctions.createSuccessMessage(markdownFilePath, false);
     },
+    async assureOrFixTagSyntaxInFrontmatter(markdownContent, markdownFilePath) {    
+    /* function: assureOrFixTagSyntaxInFrontmatter -------------------------------------------------->
+    -->
+    ??-- Purpose
+       //-- Ensure tag syntax in frontmatter is consistent with Obsidian standards
+       --- Reformats tags to use YAML array format with markdown bullet list syntax
+       --- Handles multiple invalid formats:
+       ------ 1. Array syntax: ["tag1", "tag2"]
+       ------ 2. Comma separated: tag1, tag2
+       ------ 3. Quoted tags: 'tag1', "tag2"
+       ------ 4. Space-separated words: Tag With Spaces
+       
+       --- Example: where the | character is the leftmost character slot in the file line. 
+       --------|_other frontmatter properties_
+       --------|....
+       --------|tags:
+       --------|- Tag-Number-One
+       --------|- Tag-Number-Two
+       --------|- Tag-Number-Three
+       --------|....
+       --------|_other frontmatter properties_
+    -->
+    -->
+    ??-- Logic
+       //-- Called by getCollection('tooling') when processing markdown files
+       ---- Arguments:
+       ------ markdownContent: string 
+       -------- Full content of the markdown file including frontmatter and body
+       ------ markdownFilePath: string 
+       -------- Absolute path to the markdown file being processed
+       ---- Returns:
+       ------ success: boolean - Operation completed successfully
+       ------ modified: boolean - Whether any changes were made
+       ------ filePath: string - Path to the processed file
+       ------ content?: string - Modified content if changes were made
+       ------ modifications?: string[] - Description of changes made
+       ---- Steps:
+       ------ 1. Extract frontmatter
+       -------- Use helperFunctions.extractFrontmatter for parsing
+       -------- Return early if no frontmatter or extraction error
+       ------ 2. Process frontmatter lines
+       -------- Detect tags property start with 'tags:'
+       -------- Handle inline formats (arrays, quotes, commas)
+       -------- Process bullet list items starting with '-'
+       ------ 3. Clean and normalize tags
+       -------- Remove quotes and array syntax
+       -------- Replace spaces with hyphens
+       -------- Remove empty tags
+       ------ 4. Reconstruct frontmatter
+       -------- Format as YAML bullet list
+       -------- Preserve other frontmatter properties
+       ------ 5. Return result
+       -------- Include modified content if changes made
+       -------- Return original if no changes needed
+    -->
+    -->
+    ??-- Dependencies
+       //-- helperFunctions.extractFrontmatter
+       ---- Purpose: Parse and extract YAML frontmatter
+       ---- Returns: { success, frontmatterString, startIndex, endIndex }
+       //-- helperFunctions.createErrorMessage
+       ---- Purpose: Format error response
+       ---- Returns: { success: false, error }
+    -->
+    ----------------------------------------*/
+        // Extract frontmatter using helper function
+        const frontmatterData = helperFunctions.extractFrontmatter(markdownContent);
+        if (!frontmatterData.success) {
+            return helperFunctions.createErrorMessage(markdownFilePath, frontmatterData.error);
+        }
 
+        // If no frontmatter exists, return unmodified
+        if (frontmatterData.noFrontmatter) {
+            return {
+                success: true,
+                modified: false,
+                filePath: markdownFilePath
+            };
+        }
+
+        const lines = frontmatterData.frontmatterString.split('\n');
+        let modified = false;
+        let inTagsBlock = false;
+        let tagsArray = [];
+        let tagsStartIndex = -1;
+
+        // Process frontmatter lines
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            
+            // Detect start of tags property
+            if (line.startsWith('tags:')) {
+                inTagsBlock = true;
+                tagsStartIndex = i;
+                
+                // Handle inline tags (array, comma-separated, or quoted)
+                const tagsContent = line.substring(5).trim();
+                if (tagsContent) {
+                    // Remove array brackets and quotes, split by commas
+                    const rawTags = tagsContent
+                        .replace(/^\[|\]$/g, '') // Remove array brackets
+                        .replace(/["']/g, '')    // Remove quotes
+                        .split(',')              // Split by commas
+                        .map(tag => tag.trim())  // Clean up whitespace
+                        .filter(tag => tag);     // Remove empty tags
+                    
+                    tagsArray = rawTags.map(tag => 
+                        tag.replace(/\s+/g, '-') // Replace spaces with hyphens
+                    );
+                    modified = true;
+                }
+                continue;
+            }
+
+            // Collect bullet-list style tags
+            if (inTagsBlock && line.startsWith('-')) {
+                const tag = line.substring(1).trim()
+                    .replace(/["']/g, '')     // Remove quotes
+                    .replace(/\s+/g, '-');    // Replace spaces with hyphens
+                tagsArray.push(tag);
+                modified = true;
+                continue;
+            }
+
+            // End of tags block
+            if (inTagsBlock && !line.startsWith('-') && line.trim()) {
+                inTagsBlock = false;
+            }
+        }
+
+        // If no modifications needed, return original
+        if (!modified) {
+            return {
+                success: true,
+                modified: false,
+                filePath: markdownFilePath
+            };
+        }
+
+        // Reconstruct frontmatter with properly formatted tags
+        const beforeTags = lines.slice(0, tagsStartIndex);
+        const afterTags = lines.slice(tagsStartIndex + 1).filter(line => 
+            !line.trim().startsWith('-') || !inTagsBlock
+        );
+
+        const formattedTags = ['tags:']
+            .concat(tagsArray.map(tag => `- ${tag}`));
+
+        const newFrontmatter = beforeTags
+            .concat(formattedTags)
+            .concat(afterTags)
+            .join('\n');
+
+        // Reconstruct full content
+        const newContent = markdownContent.slice(0, frontmatterData.startIndex) +
+            '---\n' + newFrontmatter + '\n---' +
+            markdownContent.slice(frontmatterData.endIndex);
+
+        return {
+            success: true,
+            modified: true,
+            filePath: markdownFilePath,
+            content: reformattedContent,
+            modifications: ['Reformatted tags to proper YAML bullet list syntax']
+        };
+    },
+   
     async createUUIDinFrontmatterIfNone(markdownContent, markdownFilePath) {
         const frontmatterData = helperFunctions.extractFrontmatter(markdownContent);
         if (!frontmatterData.success) {

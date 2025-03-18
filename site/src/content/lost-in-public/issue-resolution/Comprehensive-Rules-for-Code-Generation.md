@@ -1,3 +1,18 @@
+---
+title: "Comprehensive Rules to tame Code Generator LLMs"
+date_authored_initial_draft: 2025-03-17
+date_authored_final_draft: 2025-03-17
+date_first_published: 2025-03-17
+at_semantic_version: "0.0.0.1"
+authors: "Michael Staton"
+with_writing_assistant: "Windsurf on Claude 3.7 Sonnet"
+category: "Code-Generators"
+tags: 
+- Workspace-Configuration
+- Workflow-Management 
+- Client-Updates
+- Platform-Mechanisms
+---
 # Stack, Libraries, Dependencies
 
 #### Preliminaries
@@ -48,7 +63,10 @@ We will use an evolving, adaptive, but consistent comment style and syntax clari
    1. where a function is defined (if it is in another file, say so.  If it is imported at the top of the file, repeat the logic in lay terms in comments directly above the function),
    2. the list of ALL places the function is called, accompanied by the parameters and arguments passed to the function from the place it is called. 
 
-- Continuously update the comment blocks, and simultaneously update the comment blocks in two places: where the function is defined and where the function is called. If the function is called in more than one places, that's good -- reveal the whole list of them in the comment blocks. Large comment blocks are expected and helpful. 
+- **Continuously update** the comment blocks, and **simultaneously update the comment blocks in two places**: 
+	1. where the function is defined ,and 
+	2. where the function is called. 
+	If the function is called in more than one places, that's good -- reveal the whole list of them in the comment blocks. Large comment blocks are expected and helpful. 
 
 - Strict adherence to **DRY (Don't Repeat Yourself) principles** and a strict **"Single Source of Truth"**.
 
@@ -84,6 +102,52 @@ We will use an evolving, adaptive, but consistent comment style and syntax clari
    - If you are struggling to work through logic because you lack relavant context, reaveal your current context in chat and ask the user "Is this all the relevant context?"
    - I will say something like "Let's start on a new issue." to tell you to forget the current context. 
    - If you think we have moved on to a new issue, and your current context memory is no longer needed and is causing confusing, go ahead and reveal your current context and ask if you may forget it. 
+
+
+### For Markdown Content: Minimal Validation, Preprocessing to Report or Fix Errors, Graceful Error Handling, Script through All Target Files, Render or Process as much as Possible. No critical failures. 
+
+**Minimum Validation** as we will have thousands of Markdown files in our content directories. Many of them will have missing properties, null values, corrupted syntax, inconsistent value formats, etc. 
+
+   > NEVER INTRODUCE HARD VALIDATION FOR FRONTMATTER. 
+
+Instead, we will both maintain and iterate on our current scripts in `site/scripts`  
+   - Build scripts to run prior to or during the `pnpm build` process. `site/scripts/build-scripts` 
+   - Tidy up scripts to run as needed on specific issues. `site/scripts/tidy-up`
+   - Pre-function call utility/helper functions that are in production that prevent problematic fontmatter handling during the user experience. `site/src/utils/` `preventFrontmatterIrregularitiesFromCausingErrors.ts`
+
+Why do all this?  Because it will be impossible to have prodigeous content generation and also have a working, error free user experience with hard data validation, type validation, or frontmatter validation. We have a team that is creating content with AI. They are creaties that lack attention to detail. Frontmatter will be inconsistent, we have to deal with it. 
+
+When we write scripts, we must never use glob or grey-matter or libraries that process frontmatter in Markdown files.  It causes too many errors. We must handle frontmatter using .cjs Common JS and use only the built in filesystem and path modules in Node.  
+
+So build scripts, tidy scripts, graceful error handling, and helper/utility functions will follow the PREVENT critical errors and app failures by introducing the following pipeline:
+
+1. Pre-process markdown Frontmatter to _detect any abnormalities that may prevent proper processing or rendering_ based on the operation about to initiate. 
+
+2. Use async, non-blocking actions to create two arrays: `filteredInMarkdownFiles` and `filteredOutMarkdownFiles.` and then:
+   1. Run a single array of `markdownFilesToBeFiltered`
+   2. Process `markdownFilesToBeFiltered` through the `targetFilterPipeline`
+   3. Return `filteredInMarkdownFiles` to the anticipating function or operation, and
+   4. Pass the `filteredOutMarkdownFiles` to a handler designed to 
+      1. Diagnose any frontmatter abnormalities, 
+      2. Use async, non-blocking actions to create two arrays: `fixedMarkdownFiles` and `unfixedMarkdownFiles`
+      3. Attempt to fix them, and 
+         1. If fixed, add the files with success messages into `fixedMarkdownFiles`
+         2. If not fixed or receiving errors, add the files with error messages into the `unfixedMarkdownFiles` array. 
+         3. Return the `fixedMarkdownFiles` to the original function or operation, if relevant. 
+   5. Generate a report with the naming convention `${YYYY-DD-MM_report-[issueIndex].md` that details that summarizes the results of the whole pipeline:
+      1. ## Filtered In: `filteredInMarkdownFiles.length + "/" + markdownFilesToBeFiltered.length+ "\n"` 
+      2. ### Files Filtered In: `"\n" + filteredInMarkdownFiles.map(f => ("[[" + f.pageName + "]], ") + "\n\n\n"`
+
+      3. ## Filtered Out: `filteredOutMarkdownFiles.length + "/" + markdownFilesToBeFiltered.length+ "\n"` 
+      4. ### Files Filtered Out: `"\n" + filteredOutMarkdownFiles.map(f => ("[[" + f.pageName + "]], ") + "\n\n\n"`
+
+      5. ## Fixed: `fixedMarkdownFiles.length + "/" + markdownFilesToBeFiltered.length+ "\n"` 
+      6. ### Files Fixed: `"\n" + fixedMarkdownFiles.map(f => ("[[" + f.pageName + "]], ") + "\n\n\n"`
+
+      7. ## Unfixed: `unfixedMarkdownFiles.length + "/" + markdownFilesToBeFiltered.length+ "\n"` 
+      8. ### Files Unfixed: `"\n" + unfixedMarkdownFiles.map(f => ("[[" + f.pageName + "]], ") + "\n\n\n"` 
+   6. Add report to the specified directory, or default to `site/src/content/changelog--content/reports` 
+
 
 ## ABSOLUTE BEHAVIOR ETIQUETTE
 - Do not perform "overzealous", rapid output, radical change initiatives without discussing them first. 
