@@ -1,6 +1,7 @@
-# Content Evaluation and Modification Results
-Generated: 2025-03-14T07:16:57.843Z
-
+---
+title: Content Evaluation Results
+date: 2025-03-14T07:16:57.843Z
+type: evaluation-report
 ---
 
 ## Summary
