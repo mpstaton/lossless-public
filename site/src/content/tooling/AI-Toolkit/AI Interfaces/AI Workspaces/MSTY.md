@@ -24,6 +24,12 @@ site_uuid: 4aa0aa70-72d0-4b2c-b2f7-bf88d86822b0
 site_uuid: 71d1df37-3dbd-4b33-93f1-5e5101a3f730
 site_uuid: 9f9634f3-6cff-4e27-b288-45b2afa68099
 ---
+[[MSTY]] installs LLM [[AI Models]] that [[Local LLM|run local]] deep in your filesystem:
+`/home/[user]/.config/Msty/models`
+
+
+
+
 https://youtu.be/5U_lOjfZiXg?si=EJWZpDXYAT98xgCb
 
 https://youtu.be/xATApLtF92w?si=XkDLyC6tQ0hOvhmP
