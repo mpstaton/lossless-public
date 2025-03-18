@@ -1,17 +1,11 @@
 ---
-site_uuid: 8d47def5-fc19-49e2-9c17-e1651c8b6fb6
+site_uuid: 899f0f78-5761-43ef-8da8-1cdd5488a0ae
 url: https://obsidian.md/
 site_name: Obsidian
 og_last_fetch: 2025-03-17T05:14:27.000Z
 youtube_url: https://www.youtube.com/@ObsidianOfficial
-site_uuid: 2d861bdc-6296-47b3-8f9e-dad8ad21ccab
-site_uuid: 3dbb797a-7f9c-4fd9-8683-346c149137d2
-site_uuid: 909aaeb3-5142-4007-ab73-693eeb215409
-site_uuid: d081ae4c-196a-4cb4-8c82-fab9c58d8768
-site_uuid: f752fd72-310a-4b1d-af83-b588d58a430b
-site_uuid: 0a2bda3f-c5b1-4ec9-a208-b262d3c3e151
-site_uuid: b9bb68f4-6c97-4e75-a681-33dbbdfbbcbc
-site_uuid: 899f0f78-5761-43ef-8da8-1cdd5488a0ae
+github_profile_url: https://github.com/obsidianmd
+docs_url: https://docs.obsidian.md/
 ---
 [[Markdown Editor]]
 
