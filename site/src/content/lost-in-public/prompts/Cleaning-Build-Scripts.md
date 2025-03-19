@@ -1,3 +1,24 @@
+---
+title: 'Cleaning Build Scripts'
+lede: 'Improve build scripts by following strict naming conventions and error handling patterns'
+date_authored_initial_draft: 2025-03-18
+date_authored_current_draft: 2025-03-18
+date_authored_final_draft: null
+date_first_published: null
+date_last_updated: null
+at_semantic_version: '0.0.0.1'
+authors: Michael Staton
+status: To-Do
+augmented_with: 'Windsurf Cascade on Claude 3.5 Sonnet'
+category: Prompts
+tags:
+- Build-Scripts
+- Code-Quality
+- Error-Handling
+- Variable-Naming
+- Best-Practices
+---
+
 # Context
 We are currently trying create a build script that prepares a directory of Markdown files for publishing using Astro, the JavaScript framework for Static Site Generation. Read the full specification at `site/src/content/specs/Build-Script-Spec.md`
 
@@ -98,7 +119,7 @@ Now, the `prescreenFilesWithFilesystemRegex.cjs` will iterate through all of the
 4. We want all of the Markdown files in the `CONTENT_DIR` to make it through this script. 
 	1. Do not require anything, do not enforce validation rules, simply do your best to write any errors in the output files and move through the file set in the `CONTENT_DIR`
 5. Use robust commenting. 
-6. Try to use variable names that any person can understand and avoid simplified abstractions like ‘e’, 'a', 'results' or 'files'.)
+6. Try to use variable names that any person can understand and avoid simplified abstractions like ‘e’, 'a', 'results' or 'files’.)
 
 	For each file in the iteration, STEPS:
 7. Successfully establish parameters of `content`, `filePath`, `fileName`.  
@@ -225,3 +246,5 @@ const CORRUPTION_PATTERNS = [
 
 
 
+
+```

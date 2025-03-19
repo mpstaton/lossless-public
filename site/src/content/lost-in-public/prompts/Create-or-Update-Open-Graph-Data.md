@@ -1,11 +1,18 @@
+---
+title: 'Create or Update Open Graph Data'
+authors: Michael Staton
+tags:
+- Open-Graph
+- Data-Management
+- Build-Scripts
+---
 
 # Goal:
 
 To start a build orchestrator from scrach as simple as possible, with no overly zealous validations, error corrections, or even error handlig.  
 
 # Before we proceed, read the Constraints instructions. 
-`site/src/content/lost-in-public/prompting/Meticulous-Constraints-for-Every-Prompt.md
-
+`site/src/content/lost-in-public/prompting/Meticulous-Constraints-for-Every-Prompt.md`
 
 Now, we are working from the `site/scripts/build-scripts/simpleBuildOrchestrator.cjs` file.  
 

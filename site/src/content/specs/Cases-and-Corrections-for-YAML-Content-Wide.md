@@ -3,7 +3,8 @@ title: "Technical Specification: YAML Frontmatter Error Detection and Correction
 lede: "Let content teams develop content. Handle frontmatter inconsistencies gracefully for a seamless user experience."
 date_authored: 2025-03-18
 at_semantic_version: "0.0.1.2"
-authors: "Michael Staton"
+authors: 
+- Michael Staton
 generated_with: "Windsurf Cascade on Claude 3.5 Sonnet"
 category: "Technical-Specification"
 tags:
@@ -124,6 +125,15 @@ const knownErrorCases = {
 };
 ```
 
+Troubleshooting quotes on urls
+```javascript
+const knownErrorCases = {
+	quoteCharactersFoundOnEitherOrBothSidesOfUrl:
+	exampleErros: [
+		'og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/5916148b9afbd26e770c8ff3838ad81a0d97176ab6cba9887cb83e17bc3b7d80.jpeg""'
+	]
+}
+```
 ### 3. Error Types and Correction Strategies
 
 #### 3.1 Quote-Related Issues

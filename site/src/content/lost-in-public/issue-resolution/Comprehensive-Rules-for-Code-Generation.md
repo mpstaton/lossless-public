@@ -4,7 +4,8 @@ date_authored_initial_draft: 2025-03-17
 date_authored_final_draft: 2025-03-17
 date_first_published: 2025-03-17
 at_semantic_version: "0.0.0.1"
-authors: "Michael Staton"
+authors: 
+- Michael Staton
 with_writing_assistant: "Windsurf on Claude 3.7 Sonnet"
 category: "Code-Generators"
 tags: 

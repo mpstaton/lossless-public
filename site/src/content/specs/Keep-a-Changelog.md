@@ -7,7 +7,8 @@ date_authored_final_draft: null
 date_first_published: 2025-03-18
 date_last_updated: null
 at_semantic_version: '0.0.0.1'
-authors: Michael Staton
+authors: 
+- Michael Staton
 status: To-Do
 generated_with: 'Windsurf Cascade on Claude 3.5 Sonnet'
 category: Technical-Specification

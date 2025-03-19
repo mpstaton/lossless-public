@@ -1,3 +1,23 @@
+---
+title: 'Create a Content Registry Script'
+lede: 'Build a registry system for tracking and managing Markdown files'
+date_authored_initial_draft: 2025-03-18
+date_authored_current_draft: 2025-03-18
+date_authored_final_draft: null
+date_first_published: null
+date_last_updated: null
+at_semantic_version: '0.0.0.1'
+authors: Michael Staton
+status: To-Do
+augmented_with: 'Windsurf Cascade on Claude 3.5 Sonnet'
+category: Prompts
+tags:
+- Content-Registry
+- File-Management
+- Data-Tracking
+- UUID-Management
+---
+
 # Create a Content Registry for Markdown Files
 
 ## Constraints:
@@ -76,8 +96,3 @@ Okay, enough of that. Just set up the data model information you need in the Use
 
 Now that this document and all mentioned documents have been read, write the script in the file at the following path:
 `site/scripts/build-scripts/trackMarkdownFilesInRegistry.cjs`
-
-
-
-
-

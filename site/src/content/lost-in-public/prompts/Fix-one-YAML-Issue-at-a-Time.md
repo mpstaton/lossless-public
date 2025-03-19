@@ -1,3 +1,12 @@
+---
+title: 'Fix one YAML Issue at a Time'
+authors: Michael Staton
+tags:
+- YAML-Validation
+- Error-Handling
+- Build-Scripts
+---
+
 We are developing a script at:
 site/scripts/tidy-up/attemptToFixKnownErrorsInYAML.cjs
 ## Objective:

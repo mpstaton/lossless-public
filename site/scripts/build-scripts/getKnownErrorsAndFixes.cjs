@@ -144,6 +144,8 @@ const knownErrorCases = {
          "\"https://cdn.prod.website-files.com/66c5c2bab55d37d8e443322b/66cc6d2f0f6b41b86ea33f83_archon-og.jpg\"",
          `""https://example.com""`,
          `"'https://example.com'"`,
+         `image: ""'https://arangodb.com/wp-content/uploads/2024/02/Image-5-2.gif'""`,
+        `favicon: ""'https://arangodb.com/wp-content/uploads/2023/08/cropped-favicon-192x192.png'""`,
          `" 'https://example.com' "`,
          `url: ""'https://www.numbersstation.ai'""`,
          `favicon: ""https://www.numbersstation.ai/wp-content/uploads/2024/08/cropped-logo-3-192x192.png""`
