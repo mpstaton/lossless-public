@@ -30,3 +30,6 @@ Here's a good background on [[YouTube]]: [The story of NextJS](https://youtu.be/
 https://youtu.be/EPUmfA8QFM8?si=ra0v_e5-HsDo_Cmk
 
 https://youtu.be/yoiBv0K6_1U?si=JMESrSwA1VuNlIhz
+
+
+https://youtube.com/shorts/Ou_3Pcmkim0?si=dAcgnKa0M15-7H6b

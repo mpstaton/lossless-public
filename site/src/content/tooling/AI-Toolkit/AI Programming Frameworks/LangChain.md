@@ -1,27 +1,20 @@
 ---
-site_uuid: 67a5175b-01b7-4a63-b2c5-a2bc60645de7
+site_uuid: 0d572cce-9f9f-4339-800a-d95f214be63b
 url: https://www.langchain.com/
 zinger: Applications that can reason. Powered by LangChain.
 description: Build context-aware, reasoning applications with LangChain’s flexible framework that leverages your company’s data and APIs. Future-proof your application by making vendor optionality part of your LLM infrastructure design.
 youtube_url: https://youtube.com/@langchain
 tags:
-- AI-Toolkit
-- AI-Programming-Frameworks
+  - AI-Toolkit
+  - AI-Programming-Frameworks
 image: https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/65c69af1f3035ff97de2cc38_HomePage-metaImage.jpg
 site_name: LangChain
 title: LangChain
 og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/43e98c38a6c67f47395ec5af51c0b1f996afca78784e2679c009ea9c8be70153.jpeg
-jina_last_request: '2025-03-09T06:45:17.702Z'
-jina_error: 'Error occurred'
-og_last_fetch: '2025-03-07T05:20:56.177Z'
-site_uuid: 507bc4d0-287f-4b43-b4d3-04f904c2a5f2
-site_uuid: 14aa9321-c2a5-4fbd-9b2d-237c3ad276e0
-site_uuid: 8742145f-62e4-4228-8d74-f7c27a51a41e
-site_uuid: fdac65f4-63a8-4448-bae2-90b1ed7b1204
-site_uuid: 771973c5-0915-41c1-b6b2-c25cadcea32c
-site_uuid: df3da7d9-fac7-4662-bc34-606ccc10dcbe
-site_uuid: 34b49dad-3150-4bb7-a57d-58dfc1d7d6c3
-site_uuid: 0d572cce-9f9f-4339-800a-d95f214be63b
+jina_last_request: 2025-03-09T06:45:17.702Z
+jina_error: Error occurred
+og_last_fetch: 2025-03-07T05:20:56.177Z
+docs_url: https://python.langchain.com/docs/introduction/
 ---
 
 2024, Sep 29. [LangChain and OLlama: Build your personal coding assistant in 10 minutes](https://youtu.be/fOUng7fMQ1Y?si=zumizOmuEk1H6vyh)

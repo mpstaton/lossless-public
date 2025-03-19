@@ -21,5 +21,5 @@ site_uuid: bd560f1f-3410-4497-a323-e7ed422a0fb7
 site_uuid: ea5eb04c-89db-4688-84a2-496b762ead3d
 site_uuid: 5396c95f-b7c4-4c45-8601-4fd18d9b8d86
 ---
-A [[Vector Database]] commonly used in [[RAG]] and [[Knowledge Augmented Generation|KAG]] systems.  
+A [[Vector Databases]] commonly used in [[RAG]] and [[Knowledge Augmented Generation|KAG]] systems.  
 

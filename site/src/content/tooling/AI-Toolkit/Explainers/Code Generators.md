@@ -1,15 +1,10 @@
 ---
 aliases:
-- Code Generation
-- Code Generators
-- Coding Agent
-- Coding Assistant
-site_uuid: 8a66ca20-9962-43c6-bb2a-bd0107b824ce
-site_uuid: d1ae87d0-0c26-4c5e-9910-af2ee7d78438
-site_uuid: 66d1865c-14bc-4ed5-96a5-36076b822410
-site_uuid: 62867bab-bf26-4d7f-8424-6f7a2465a003
-site_uuid: 41729a4d-8401-4975-b0ad-8da27431f87d
-site_uuid: 1a330b6c-56ba-44e7-9070-469c92a6e239
+  - Code Generation
+  - Code Generators
+  - Coding Agent
+  - Coding Assistant
+  - Code Generator
 site_uuid: 691a7615-2aa5-4a1b-9ad9-519a48dac670
 ---
 ##### Examples:

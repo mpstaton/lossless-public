@@ -20,5 +20,5 @@ site_uuid: 9574b8b8-a3ea-4609-bcb7-5698406a4c84
 ---
 https://youtu.be/3bftbAjQF7Q?si=Nl1s6c8MhIw0YLGS
 
-[[Vector Database]]
+[[Vector Databases]]
 

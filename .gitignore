@@ -27,6 +27,7 @@ package-lock.json
 # environment variables
 .env
 .env.production
+.env.mcp
 
 # macOS-specific files
 */.DS_Store
