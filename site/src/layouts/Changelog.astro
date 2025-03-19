@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+
+const changelogEntries = await getCollection("changelog");
+---
+
+<style>
+  body {
+    background-color: var(--clr-primary-bg);
+  }
+  h1 {
+    font-family: "Poppins", sans-serif;
+    color: var(--clr-lossless-primary-light);
+  }
+</style>
+
+<ChangelogLayout title="Changelog" description="A collection of changes to the site">
+  <ChangelogEntries entries={changelogEntries} />
+</ChangelogLayout>

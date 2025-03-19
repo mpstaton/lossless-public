@@ -85,7 +85,7 @@ The Option Sets are demarcated in callouts before the next header.
 **_Paths for this commit_**:
 site/src/content/lost-in-public/prompts
 
-content, docs, yaml: Standardize frontmatter across prompts directory
+content, prompts, yaml: Standardize frontmatter across prompts directory
 
 Comprehensive frontmatter standardization for all prompt files:
 - Added complete frontmatter to 7 files that were missing it
@@ -100,12 +100,13 @@ Enhance documentation standards across prompts directory
 - Standardized YAML tag syntax and validation patterns
 - Implemented aggressive inline commenting
 
-
+===== New Files
 site/src/content/lost-in-public/prompts
    Create-a-Basic-Changelog.md
    Maintain-a-Session-Log.md
    Write-a-Changelog-Entry.md
 
+==== Updated Files
 site/src/content/lost-in-public/prompts
    Ask-a-Model-API-to-perform-a-task-via-API.md
    Create-a-Canvas-UI-of-our-Content-and-Data-Models.md
