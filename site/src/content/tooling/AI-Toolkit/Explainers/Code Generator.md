@@ -20,6 +20,7 @@ site_uuid: 691a7615-2aa5-4a1b-9ad9-519a48dac670
 - [[Plug-ins,  Add-ons,  Extensions|Plug-ins]] to other Text Editors include [[Aider]], [[Databutton]], [[Claude#Cline|Cline]], [[Devin]], [[supermaven]], [[Augment Code]], [[Continue AI]], [[AppMap]] who embed into [[Text Editors or IDEs]], such as [[JetBrains]] but especially [[Visual Studio Code|VS Code]].
 - Starting from your own code repositories, services like [[Poolside]], [[AppMap]], [[smolagents]], [[RepoPrompt]]
 - Specializing in [[Bug Reporting]] is [[CodeAnt AI]]
+- Specialized [[AI Models]] include [[InceptionLabs]] [[Mercury Coder]]
 
 We don't know what some even claim to be, such as [[Fine.dev]]
 

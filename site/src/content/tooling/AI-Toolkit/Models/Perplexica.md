@@ -9,6 +9,8 @@ tags:
 github_repo_url: https://github.com/ItzCrazyKns/Perplexica
 docs_url: https://github.com/ItzCrazyKns/Perplexica/blob/master/docs/API/SEARCH.md
 ---
+![](https://i.imgur.com/3BW2nlx.png)
+
 #### Installation
 Read the [GitHub repository landing page.](https://github.com/ItzCrazyKns/Perplexica)
 

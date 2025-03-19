@@ -28,3 +28,8 @@ site_uuid: 0a45f456-a105-4469-b733-9f8c1f8ae4d1
 Available at https://addons.opera.com/
 
 ![[Pasted image 20241224213557.png|An "addon" page from Opera]]
+
+![](https://i.imgur.com/XRXVVoy.png)
+
+
+![](https://i.imgur.com/WueMrnY.png)

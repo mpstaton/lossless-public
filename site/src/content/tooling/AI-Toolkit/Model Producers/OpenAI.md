@@ -21,41 +21,22 @@ An organization that researches, develops, and publishes [[Large Language Models
 
 Here is a timeline of OpenAI's major model releases, their features, and use cases:
 
-### **GPT Series**
-1. **GPT-1 (June 2018)**  
-   - **Parameters**: 117 million  
-   - **Key Features**: Introduced the transformer architecture for language modeling.  
-   - **Use Cases**: Basic text generation and understanding[1][2].
 
-2. **GPT-2 (February 2019)**  
-   - **Parameters**: 1.5 billion  
-   - **Key Features**: Significantly improved coherence and relevance in text generation.  
-   - **Use Cases**: Creative writing, summarization, and basic chatbot applications[1][2].
+![](https://i.imgur.com/7IrU6X0.png)
 
-3. **GPT-3 (June 2020)**  
-   - **Parameters**: 175 billion  
-   - **Key Features**: Zero-shot and few-shot learning capabilities, producing human-like text.  
-   - **Use Cases**: Content creation, coding assistance, and conversational AI[1][2].
+![](https://i.imgur.com/jWQE72H.png)
 
-4. **GPT-3.5 (December 2022)**  
-   - **Key Features**: Enhanced conversational abilities over GPT-3.  
-   - **Use Cases**: Customer support, virtual assistants, and interactive applications[2].
 
-5. **GPT-4 (March 2023)**  
-   - **Parameters**: 1.5 trillion  
-   - **Key Features**: Multimodal capabilities (text and image processing), deeper contextual understanding.  
-   - **Use Cases**: Advanced research, complex problem-solving, and multimodal tasks[1][2].
+![](https://i.imgur.com/LjoNtVM.png)
 
-6. **GPT-4 Turbo (November 2023)**  
-   - **Key Features**: Optimized for faster performance with lower costs.  
-   - **Use Cases**: High-demand commercial applications[2].
 
-7. **GPT-4o (May 2024)**  
-   - **Key Features**: Added voice and multilingual capabilities; state-of-the-art benchmarks in vision and speech recognition.  
-   - **Use Cases**: Multimodal AI agents, translation, and accessibility tools[5].
 
-8. **GPT-5 (Expected Early 2025)**  
-   - **Projected Features**: Autonomous reasoning, improved reliability, and real-world task automation without human oversight[2].
+![](https://i.imgur.com/TK3RCJt.png)
+
+![](https://i.imgur.com/fvZFsWH.png)
+
+![](https://i.imgur.com/EAV74I1.png)
+
 
 ---
 

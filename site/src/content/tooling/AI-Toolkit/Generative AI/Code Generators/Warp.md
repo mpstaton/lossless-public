@@ -25,7 +25,14 @@ site_uuid: 8454acd5-7cf8-438f-980a-40c579ea868f
 site_uuid: b294b775-e3e5-4707-876e-a5b089fb3e49
 ---
 
+
 A [[Terminal Emulators]] that uses [[Code Generator]] for developers.
+
+![](https://i.imgur.com/yFe5uL5.png)
+![](https://i.imgur.com/qykrfQe.png)
+
+![](https://i.imgur.com/VKjSK0G.png)
+
 
 <iframe style="aspect-ratio:16/9;width:100%;height:auto" src="https://www.youtube.com/embed/0LZpt0pKWsQ?si=EAnc9fega4Lf4mEo&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
