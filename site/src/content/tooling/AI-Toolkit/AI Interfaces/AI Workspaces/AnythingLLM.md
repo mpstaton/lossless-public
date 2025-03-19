@@ -24,4 +24,5 @@ site_uuid: b3942059-983c-4653-833b-e61d870cfd19
 site_uuid: d956911a-7019-437a-817e-67659800a389
 ---
 [[AI Workspaces|AI Workspace]]
-]
+
+https://youtu.be/Z6kK4DXqCOI?si=hl9_1R1nKtMKGpCy

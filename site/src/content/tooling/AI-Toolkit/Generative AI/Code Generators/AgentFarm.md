@@ -19,7 +19,7 @@ site_uuid: 5fb4aab0-7244-4c05-9c93-5879b06a6c23
 site_uuid: 0bc6befa-a7d3-4afd-aad9-d04ccb6b7f6c
 site_uuid: 3fbddfbe-cf17-4cb0-bfb3-15587aa22223
 ---
-An [[Text Editors or IDEs|IDE]] with [[Code Generator]] powers.  
+An [[Text Editors or IDEs|IDE]] with [[Code Generators]] powers.  
 
-##### AgentFarm is a [[Code Generator]]
+##### AgentFarm is a [[Code Generators]]
 ![[Screenshot 2025-02-20 at 2.01.27 AM_AgentFarm--Hero.png]]

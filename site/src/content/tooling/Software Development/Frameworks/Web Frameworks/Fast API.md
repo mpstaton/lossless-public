@@ -18,6 +18,8 @@ github_profile_url: https://github.com/fastapi
 ---
 A light, stable [[Web Frameworks|Web Framework]] in [[Python]] designed to get developers up and running with an [[Application Programming Interface|API]].
 
+https://youtube.com/shorts/Z1XHeMgpg8A?si=7uQXcdKGVIqr1IT7
+
 > [!NOTE]
 > "The key features are:
 > - Fast: Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic). One of the fastest Python frameworks available.

@@ -29,7 +29,7 @@ Now has a [[Generative AI]] feature that will build webpages, apps, and [[User I
 
 
 ### Replit Assistant
-[[App Builder]], [[Code Generator]]
+[[App Builder]], [[Code Generators]]
 
 [Introducing Replit Assistant](https://youtu.be/fxiVDlylORQ?si=HRQ85Vq-G_ZtRy5R)
 

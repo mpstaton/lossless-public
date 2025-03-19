@@ -25,7 +25,7 @@ site_uuid: 66c58474-e2a8-4056-87fc-ef212db46f1f
 ---
 
 
-##### [[Databutton]] is a [[Code Generator]]
+##### [[Databutton]] is a [[Code Generators]]
 
 ![](https://i.imgur.com/cC7sfBi.png)
 

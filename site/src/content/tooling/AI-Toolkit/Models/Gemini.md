@@ -31,3 +31,5 @@ https://youtu.be/2sdXSczmvNc?si=wCzDm30QUvC5tC9u
 
 ### Transformer 2.0
 https://youtu.be/UMkCmOTX5Ow?si=lg7DaSPYpqmaN2OE
+
+https://youtu.be/9ct_Yr-GcvU?si=DgKjIzQIzbNU-ZTE

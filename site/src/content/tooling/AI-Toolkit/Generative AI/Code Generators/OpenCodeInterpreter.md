@@ -8,7 +8,7 @@ site_uuid: fd670275-70ed-45eb-9064-a3d4301454bc
 site_uuid: a5430122-73ab-48c7-8165-e6ef5962bf2a
 site_uuid: 8c695d38-5dd1-4b32-a498-b3327205bb7b
 ---
-An [[Open Source]] [[Code Generator]]
+An [[Open Source]] [[Code Generators]]
 
 ```dataviewjs
 customJS.MacroGuide.helloWorld(dv);

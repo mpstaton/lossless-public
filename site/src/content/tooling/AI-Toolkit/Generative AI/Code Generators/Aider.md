@@ -26,14 +26,14 @@ site_uuid: 1da619f7-17fd-4b6c-86e3-f795fcf5845e
 site_uuid: 78390a4f-4c9a-4740-afe0-8ae41b3cb3ba
 ---
 
-[[Code Generator]] inside [[Terminal Emulators]], it simulates [[Pair Programming]] and is helpful for [[Code Review]].
+[[Code Generators]] inside [[Terminal Emulators]], it simulates [[Pair Programming]] and is helpful for [[Code Review]].
 
 It seems only helpful for [[Python]].
 
 2024, Nov 11. [Aider vs. Cline vs. Continue : The ULTIMATE Coding Assistant for Developers?](https://youtu.be/wFWoSvLijSE?si=F5PQvRot8JCx-2Hg) 
 
 ### Aider Composer
-[[Aider#Aider Composer|Aider Composer]] is a [[Visual Studio Code]] [[Plug-ins,  Add-ons,  Extensions|Extension]], that assists with [[Code Generator]].
+[[Aider#Aider Composer|Aider Composer]] is a [[Visual Studio Code]] [[Plug-ins,  Add-ons,  Extensions|Extension]], that assists with [[Code Generators]].
 
 ## Aider Release Notes
 [[Aider]] is an example of a technology project vigilant about its [[Release Notes]].  

@@ -27,6 +27,8 @@ site_uuid: 2375ef77-9e10-45a9-a168-a8e69d17333b
 
 https://youtu.be/Oaj3RBIoGFc?si=HiT-RnoDJ7kKkXLQ
 
+https://youtu.be/Oaj3RBIoGFc?si=20UOAFvl5oSiVs7s
+
 https://youtu.be/oa1wXWeH1IQ?si=AqDPU2_cmIPkhJrx
 
 ![[How GitHub Changes Everything#AI Explains GitHub]]

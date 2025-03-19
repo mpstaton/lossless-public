@@ -21,7 +21,7 @@ reddit_forum_url: https://www.reddit.com/r/Codeium/
 ---
 
 
-[[Code Generator]] [[AI Native Applications|AI Native]] [[Text Editors or IDEs|IDE]]
+[[Code Generators]] [[AI Native Applications|AI Native]] [[Text Editors or IDEs|IDE]]
 
 ### Cascade
 From [Memories and Rules](https://docs.codeium.com/windsurf/memories):

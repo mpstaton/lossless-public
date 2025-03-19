@@ -23,7 +23,7 @@ site_uuid: 53b0cffb-489e-4150-9bf1-29c38d58ccdb
 ---
 One of the [[AI Models]]. 
 
-Also provides a [[Code Generator]], and can be accessed through [[Visual Studio Code|VS Code]] with an [[Plug-ins,  Add-ons,  Extensions|Extension]]. 
+Also provides a [[Code Generators]], and can be accessed through [[Visual Studio Code|VS Code]] with an [[Plug-ins,  Add-ons,  Extensions|Extension]]. 
 
 ![[Screenshot 2025-01-22 at 1.43.58 PM_watsonX--VSCode-Extension.png]]
 
@@ -40,7 +40,7 @@ og_last_fetch: 2025-03-07T05:19:18.725Z
 ---
 One of the [[AI Models]]. 
 
-Also provides a [[Code Generator]], and can be accessed through [[Visual Studio Code|VS Code]] with an [[Plug-ins,  Add-ons,  Extensions|Extension]]. 
+Also provides a [[Code Generators]], and can be accessed through [[Visual Studio Code|VS Code]] with an [[Plug-ins,  Add-ons,  Extensions|Extension]]. 
 
 ![[Screenshot 2025-01-22 at 1.43.58 PM_watsonX--VSCode-Extension.png]]
 

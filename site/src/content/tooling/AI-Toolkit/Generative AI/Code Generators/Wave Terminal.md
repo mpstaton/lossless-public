@@ -26,4 +26,4 @@ site_uuid: 5f0d2c67-8c17-4692-bcac-4358431ae4cd
 ---
 Supports [[LocalAI.io]]
 [[Terminal Emulators|Terminal Emulator]]
-[[Code Generator]]
+[[Code Generators]]

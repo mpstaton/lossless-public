@@ -22,4 +22,4 @@ site_uuid: ae4b3454-3719-407f-9acd-e0cf5f473a4a
 site_uuid: ed18d11e-0767-402a-b878-7d97728c5969
 site_uuid: f9750536-0a0a-4953-b51e-9f6e6fc0dd53
 ---
-Cognition AI is an [[Artificial Intelligence|AI]] research lab, and are the creators and maintainers of [[Devin]], one of the [[AI Models]] that can perform [[Code Generator]]
+Cognition AI is an [[Artificial Intelligence|AI]] research lab, and are the creators and maintainers of [[Devin]], one of the [[AI Models]] that can perform [[Code Generators]]

@@ -16,11 +16,13 @@ Another [[Large Language Models]]
 
 https://youtu.be/y6Wh4SpRoao?si=QDMF9bqfn4GvX21x
 
-
+https://youtu.be/RrXLXNr0BFM?si=OHofVqPvtJ-Ro9DS
 
 https://youtu.be/BtVIMKQfj38?si=cdBetfOSS4Lt0dBE
 
 https://youtu.be/jCv0KSxMqlo?si=Cbj33B_epaAUuNSs
+
+https://youtu.be/-deQfN3rcBU?si=_TAijrWe2eZuruQf
 
 https://youtu.be/oU0_vc1YT0k?si=01Cok9Y-exBjkg8I
 

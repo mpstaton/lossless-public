@@ -26,6 +26,6 @@ site_uuid: 6d837e96-1ba1-4229-b88b-3892cd82a2ae
 ---
 https://youtube.com/shorts/_9SCg4aIFB0?si=CBxq1RYwhm1XfKK0
 
-[[Code Generator]]
+[[Code Generators]]
 
 an [[AI Native Applications|AI Native]] [[Internal Tool Builders]]

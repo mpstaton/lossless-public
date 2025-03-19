@@ -26,5 +26,5 @@ site_uuid: 457b8bdd-a769-4398-8d83-d7085fc491ef
 Helps with [[Reproducible Builds]]. 
 
 [[WebAssembly]], [[WebAssembly|WASM]]
-[[JavaScript]], [[Compiler]]
+[[JavaScript]], [[Compilers]]
 

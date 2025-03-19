@@ -26,4 +26,4 @@ site_uuid: 59612545-12a4-4837-bc3d-06d737b0adbf
 https://youtu.be/EJaJBLFM2kI?si=Nq5R9Zc4IZ60JXcU
 
 [[Text Editors or IDEs]]
-[[Code Generator]]
+[[Code Generators]]

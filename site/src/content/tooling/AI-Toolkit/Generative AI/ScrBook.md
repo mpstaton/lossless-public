@@ -22,11 +22,11 @@ site_uuid: 04de0d35-7ec8-4173-b3f8-61577b8f8ba7
 site_uuid: 3e12f8b8-dabc-4ce5-8d64-b0a38855673a
 ---
 
-[[Code Generator]]
+[[Code Generators]]
 [[Interactive Notebooks]]
 
 In [[TypeScript]]
 
-##### SrcBook is a [[Code Generator]]
+##### SrcBook is a [[Code Generators]]
 ![[Screenshot 2025-02-20 at 2.28.59 AM_SrcBook--Hero.png]]
 

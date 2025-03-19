@@ -28,6 +28,7 @@ site_uuid: 9f9634f3-6cff-4e27-b288-45b2afa68099
 `/home/[user]/.config/Msty/models`
 
 
+##### [[MSTY]] paired with [[Obsidian]]
 
 
 https://youtu.be/5U_lOjfZiXg?si=EJWZpDXYAT98xgCb

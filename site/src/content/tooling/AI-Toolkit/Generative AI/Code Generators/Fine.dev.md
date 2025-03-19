@@ -24,4 +24,4 @@ site_uuid: 14300eb2-f608-4c00-9a77-f264b23b53d6
 site_uuid: a96fe747-30c1-4abd-95eb-da273d96c29e
 site_uuid: 4ffdb170-879a-4d9a-a73b-e4b45128d34b
 ---
-[[Code Generator]]
+[[Code Generators]]

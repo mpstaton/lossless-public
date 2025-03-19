@@ -27,9 +27,9 @@ site_uuid: b77a0c8b-4132-4b6e-bb28-d5f0c3123fc4
 
 Low cost [[Opsless Deployment Providers]]
 
-Also launched a [[Generative AI]] [[Code Generator]]]
+Also launched a [[Generative AI]] [[Code Generators]]]
 
-[Hostinger website builder review! | One tool for everything?!](https://youtu.be/XgqF-I390_w?si=aLem07Yb-YcAZYrt) on [[YouTube]].  Shows a [[Code Generator]]
+[Hostinger website builder review! | One tool for everything?!](https://youtu.be/XgqF-I390_w?si=aLem07Yb-YcAZYrt) on [[YouTube]].  Shows a [[Code Generators]]
 
 
 

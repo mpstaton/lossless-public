@@ -60,6 +60,8 @@ Here's a curated list of some of the best open source coding models currently av
 
 https://youtu.be/tztQJ5MKNgs?si=FdmnZGtzR0ghNyGV
 
+https://youtu.be/AGJi_yXGSB8?si=uQ8OgZZ4S8AszdRQ
+
 https://youtu.be/3A-gqHJ1ENI?si=EQdlgcJvF4Z4RmVc
 
 https://youtu.be/gXmakVsIbF0?si=w1m_R_ZYjSJxdT9I

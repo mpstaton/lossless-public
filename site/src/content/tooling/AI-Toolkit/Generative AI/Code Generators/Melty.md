@@ -23,4 +23,4 @@ site_uuid: c38b73cc-2165-4036-98fe-9411ac07373a
 site_uuid: 9ed29442-5c40-412f-9006-ebc5edb2519e
 ---
 
-a [[Text Editors or IDEs]] that has a [[Code Generator]]
+a [[Text Editors or IDEs]] that has a [[Code Generators]]

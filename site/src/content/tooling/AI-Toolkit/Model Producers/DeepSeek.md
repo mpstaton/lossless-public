@@ -43,6 +43,8 @@ One of the primary organizations creating [[AI Models]].
 ></iframe>
 2025, February 3. [Can China Really Defeat the U.S. in Technology? | @VisualPolitikEN](https://youtu.be/FuTFid1iFBw?si=Pg4-T5q5sjzNTXrc). VisualPolitik EN.
 
+https://youtu.be/0VLAoVGf_74?si=Xe11X1pLiysmX0DM
+
 <iframe 
   style="aspect-ratio:16/9;width:100%;height:auto" 
   src="https://www.youtube.com/embed/ajTFSiko2Qw?si=79eB0MuI8EvtAX8_" 

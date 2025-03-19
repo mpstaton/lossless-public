@@ -32,6 +32,8 @@ A [[Text Editors or IDEs]].  [[AI Native Applications|AI Native]]
 
 https://youtu.be/ztT6Bu1MPpY?si=qSsApKldevoF0pX4
 
+https://youtube.com/shorts/qGptsqbbC9A?si=h8EW8LP_CgWkAuaF
+
 https://youtu.be/lCbhobY6pKI?si=0EJv2_3szDLIuXuN
 
 https://www.youtube.com/live/RNIFvvvETM4?si=99qwzdC0HtjiodZS

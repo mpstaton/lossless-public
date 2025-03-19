@@ -22,7 +22,7 @@ site_uuid: 5854a968-6693-4139-b66c-92912756dfea
 site_uuid: 46c5348a-f839-46d4-81bb-8f437f70a39f
 site_uuid: 2948118e-dc9c-490e-aae9-811227e7c019
 ---
-[[Code Generator]]
+[[Code Generators]]
 
 
 https://youtu.be/En4ifwACpNg?si=kDmlGplsHD9fMnhy

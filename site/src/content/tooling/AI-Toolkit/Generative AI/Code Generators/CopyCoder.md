@@ -25,7 +25,7 @@ site_uuid: 93a8f4f6-8c83-4c1e-863a-7acac09f108c
 site_uuid: 8b1843d1-d1d9-4eef-918c-1842600e5537
 ---
 
-##### [[CopyCoder]] is a [[Code Generator]], working from Images
+##### [[CopyCoder]] is a [[Code Generators]], working from Images
 <span query="get(hero)"></span>![[Screenshot 2025-02-20 at 2.34.55 PM_CopyCoder--Hero.png]]<span type="end"></span>
 
 https://youtu.be/YgcJHpFV3ug?si=OfJVm1I83rJp8u2p

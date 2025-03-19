@@ -30,7 +30,7 @@ https://youtu.be/LEOSWYlQyVw?si=28jhDOW5h9Pe8ZJZ
 
 https://youtu.be/IF8lhAB2iHE?si=AnealFDUXxUaoryx
 
-##### [[Augment Code]] is a [[Code Generator]] [[Plug-ins,  Add-ons,  Extensions|Plug-in]] to [[Visual Studio Code|VS Code]]
+##### [[Augment Code]] is a [[Code Generators]] [[Plug-ins,  Add-ons,  Extensions|Plug-in]] to [[Visual Studio Code|VS Code]]
 
 [[Augment Code]] specializes in [[RAG]] techniques to be more contextually aware in [[Complex Codebases]]
 ![[Screenshot 2025-02-22 at 9.03.38 PM_AugmentCode--Hero.png]]

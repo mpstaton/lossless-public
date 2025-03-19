@@ -25,5 +25,5 @@ https://youtu.be/Nmxozp7FyvM?si=iqxaqXI7kd6ShN0B
 
 https://youtu.be/XU9uwRCT3NM?si=trdiO6HeAwcXIocu
 
-##### [[Chat2db]] is a [[Code Generator]] specializing in [[SQL]]
+##### [[Chat2db]] is a [[Code Generators]] specializing in [[SQL]]
 ![[Screenshot 2025-02-25 at 3.56.18 PM_Chat2db--Hero.png]]

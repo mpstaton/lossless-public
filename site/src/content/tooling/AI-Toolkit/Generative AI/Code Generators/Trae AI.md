@@ -23,7 +23,7 @@ site_uuid: e032cd29-cabf-4931-9b2b-7f9bf16ac7f4
 site_uuid: 57c63db8-6457-4a9c-aa8c-4789a126f105
 site_uuid: be82121f-6789-4cf0-b4e7-60bd4aec9fad
 ---
-##### [[Trae AI]] is an  [[AI Native Applications|AI Native]] [[Text Editors or IDEs|IDE]] [[Code Generator]]
+##### [[Trae AI]] is an  [[AI Native Applications|AI Native]] [[Text Editors or IDEs|IDE]] [[Code Generators]]
 Similar to [[Cursor]], [[Windsurf IDE]].
 ![Trae AI Hero](https://i.imgur.com/qJI4eV9.png)
 

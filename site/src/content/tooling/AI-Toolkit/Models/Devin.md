@@ -8,4 +8,4 @@ site_uuid: 0934f89b-bdde-46e1-a324-8edee3c768f9
 site_uuid: 235ad97d-cb04-4dc9-9ea5-dcee0eb86916
 site_uuid: e666e6cd-5c96-49fa-974b-244c817854be
 ---
-An [[AI Models]] that performs [[Code Generator|Code Generation]].  Made by [[Cognition AI]].
+An [[AI Models]] that performs [[Code Generators|Code Generation]].  Made by [[Cognition AI]].
