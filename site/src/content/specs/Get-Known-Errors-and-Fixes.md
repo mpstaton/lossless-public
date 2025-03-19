@@ -49,6 +49,13 @@ unquotedErrorMessageProperty: {
 }
 ```
 
+
+‘’’javascript
+
+
+tags: ["Code-Generators", "IDE-Plugins", "AI-Toolkit", "Generative-AI"]
+
+‘’
 #### 2. Correction Functions
 Each error type has a corresponding correction function that:
 - Isolates the frontmatter
