@@ -1,19 +1,100 @@
 ---
-import { getCollection } from "astro:content";
+/**
+ * Changelog.astro
+ * Specialized layout for changelog pages, extending the base CollectionStructure--OneColumn--Scroll
+ * 
+ * EXTENDS:
+ * - site/src/layouts/CollectionStructure--OneColumn--Scroll.astro
+ * 
+ * USED BY:
+ * - site/src/pages/workflow/changelog.astro
+ * 
+ * @component
+ * @example
+ * ```astro
+ * <Changelog title="Project Changelog">
+ *   <ChangelogEntries maxHeight="80vh" />
+ * </Changelog>
+ * ```
+ */
 
-const changelogEntries = await getCollection("changelog");
+import CollectionStructureOneColumnScroll from './CollectionStructure--OneColumn--Scroll.astro';
+
+interface Props {
+  /**
+   * Title for the changelog page
+   */
+  title: string;
+
+  /**
+   * Optional description text
+   */
+  description?: string;
+
+  /**
+   * Optional CSS classes
+   */
+  class?: string;
+}
+
+const {
+  title = "Changelog",
+  description = "Latest updates and changes to the project",
+  class: className
+} = Astro.props;
 ---
 
+<CollectionStructureOneColumnScroll
+  title={title}
+  description={description}
+  class:list={["changelog-layout", className]}
+>
+  <div class="changelog-container">
+    <slot />
+  </div>
+</CollectionStructureOneColumnScroll>
+
 <style>
-  body {
-    background-color: var(--clr-primary-bg);
+  .changelog-layout {
+    /* Additional layout-specific styles */
+    --content-max-width: 800px;
   }
-  h1 {
-    font-family: "Poppins", sans-serif;
-    color: var(--clr-lossless-primary-light);
+
+  .changelog-container {
+    /* Content container */
+    width: 100%;
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* Timeline effect */
+  .changelog-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -2rem;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      var(--clr-lossless-accent--brightest) 0%,
+      var(--clr-lossless-primary-glass) 100%
+    );
+    opacity: 0.3;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .changelog-container::before {
+      left: -1rem;
+    }
+  }
+
+  /* Dark mode optimizations */
+  @media (prefers-color-scheme: dark) {
+    .changelog-container::before {
+      opacity: 0.2;
+    }
   }
 </style>
-
-<ChangelogLayout title="Changelog" description="A collection of changes to the site">
-  <ChangelogEntries entries={changelogEntries} />
-</ChangelogLayout>

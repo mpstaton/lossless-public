@@ -1,0 +1,141 @@
+---
+/**
+ * CollectionStructure--OneColumn--Scroll.astro
+ * Base layout for single-column scrollable content collections
+ * 
+ * USED BY:
+ * - site/src/layouts/Changelog.astro
+ * - [Add other layouts that use this as they are created]
+ * 
+ * @component
+ * @example
+ * ```astro
+ * <CollectionStructureOneColumnScroll title="Changelog">
+ *   <ChangelogEntries />
+ * </CollectionStructureOneColumnScroll>
+ * ```
+ */
+
+interface Props {
+  /**
+   * Title of the collection page
+   */
+  title: string;
+
+  /**
+   * Optional subtitle or description
+   */
+  description?: string;
+
+  /**
+   * Optional CSS classes
+   */
+  class?: string;
+}
+
+const {
+  title,
+  description,
+  class: className
+} = Astro.props;
+---
+
+<div class:list={["collection-structure", className]}>
+  <header class="collection-header">
+    <div class="collection-header__content">
+      <h1>{title}</h1>
+      {description && <p class="collection-description">{description}</p>}
+    </div>
+  </header>
+
+  <main class="collection-content">
+    <slot />
+  </main>
+</div>
+
+<style>
+  .collection-structure {
+    /* Structure */
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .collection-header {
+    /* Header styling */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 1rem 0;
+    background: var(--clr-primary-bg);
+  }
+
+  .collection-header::after {
+    /* Bottom fade effect */
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(
+      to bottom,
+      var(--clr-primary-bg) 0%,
+      transparent 100%
+    );
+  }
+
+  .collection-header__content {
+    /* Header content container */
+    max-width: 800px;
+  }
+
+  .collection-header h1 {
+    /* Title styling */
+    font-size: var(--fs-900);
+    color: var(--clr-heading);
+    margin: 0;
+    line-height: 1.2;
+    background: var(--grd__primary-bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .collection-description {
+    /* Description styling */
+    font-family: var(--ff-legible);
+    font-size: var(--fs-400);
+    color: var(--clr-body);
+    margin-top: 1rem;
+    line-height: 1.6;
+    max-width: 60ch;
+  }
+
+  .collection-content {
+    /* Main content area */
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .collection-structure {
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    .collection-header h1 {
+      font-size: var(--fs-700);
+    }
+
+    .collection-description {
+      font-size: var(--fs-300);
+    }
+  }
+</style>

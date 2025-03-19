@@ -1,0 +1,149 @@
+---
+/**
+ * ChangelogEntries.astro
+ * Renders a scrollable list of changelog entries with sorting and filtering
+ * 
+ * USES:
+ * - site/src/components/basics/CollectionListScroll.astro (Base scrollable container)
+ * - site/src/components/changelog/ChangelogEntry.astro (Individual entry rendering)
+ * 
+ * @component
+ * @example
+ * ```astro
+ * <ChangelogEntries
+ *   entries={changelogEntries}
+ *   maxHeight="90vh"
+ * />
+ * ```
+ */
+
+import { getCollection } from 'astro:content';
+import CollectionListScroll from '../basics/CollectionListScroll.astro';
+import ChangelogEntry from '../changelog/ChangelogEntry.astro';
+
+interface Props {
+  /**
+   * Optional CSS classes
+   */
+  class?: string;
+
+  /**
+   * Optional maximum height for scroll container
+   */
+  maxHeight?: string;
+
+  /**
+   * Optional filter function for entries
+   */
+  filter?: (entry: any) => boolean;
+
+  /**
+   * Optional sort function for entries
+   * @default Sort by date descending
+   */
+  sort?: (a: any, b: any) => number;
+}
+
+const {
+  class: className,
+  maxHeight,
+  filter,
+  sort = (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+} = Astro.props;
+
+// Get all changelog entries
+let entries = await getCollection('changelog--content');
+
+// Apply filter if provided
+if (filter) {
+  entries = entries.filter(filter);
+}
+
+// Sort entries
+entries = entries.sort(sort);
+---
+
+<CollectionListScroll class:list={["changelog-entries", className]} maxHeight={maxHeight}>
+  {entries.map(entry => (
+    <ChangelogEntry
+      title={entry.data.title}
+      date={entry.data.date}
+      version={entry.data.version}
+      category={entry.data.category}
+    >
+      <div class="changelog-entry__content" set:html={entry.body} />
+    </ChangelogEntry>
+  ))}
+</CollectionListScroll>
+
+<style>
+  .changelog-entries {
+    /* Additional styling specific to changelog entries list */
+    container-type: inline-size;
+    container-name: changelog-entries;
+  }
+
+  /* Responsive adjustments */
+  @container changelog-entries (max-width: 768px) {
+    :global(.changelog-entry__header) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  /* Content styling */
+  .changelog-entry__content {
+    line-height: 1.6;
+  }
+
+  .changelog-entry__content :global(h1),
+  .changelog-entry__content :global(h2),
+  .changelog-entry__content :global(h3) {
+    color: var(--clr-heading);
+    margin: 1.5rem 0 1rem;
+  }
+
+  .changelog-entry__content :global(p) {
+    margin: 0.5rem 0;
+  }
+
+  .changelog-entry__content :global(ul) {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .changelog-entry__content :global(li) {
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .changelog-entry__content :global(li::before) {
+    content: "•";
+    color: var(--clr-lossless-accent--brightest);
+    position: absolute;
+    left: -1.5rem;
+  }
+
+  .changelog-entry__content :global(code) {
+    font-family: var(--ff-legible);
+    background: var(--clr-lossless-primary-glass);
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
+    font-size: 0.9em;
+  }
+
+  .changelog-entry__content :global(pre) {
+    background: var(--clr-lossless-primary-dark);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+
+  .changelog-entry__content :global(pre code) {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+</style>

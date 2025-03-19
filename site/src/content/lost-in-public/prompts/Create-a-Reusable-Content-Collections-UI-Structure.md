@@ -59,29 +59,59 @@ graph TD
 - **Output**: Configured layout component
 - **Example**: `/changelog` or `/blog` pages
 
+### User Created page:
+`site/src/pages/workflow/changelog.astro`
+
+Eventually renders target collection:
+`site/src/content/changelog--content` 
+
 ## 2. Layout Level  # Visual structure
 - **Purpose**: Define overall page structure
 - **Input**: Collection object and layout preferences
 - **Output**: Structured content container
 - **Example**: Grid, list, or card layouts
 
+### User Created layout:
+`site/src/layouts/CollectionStructure--OneColumn--Scroll.astro`
+`site/src/layouts/Changelog.astro` // only if we need something more specific that doesn't happen in components
+
 ## 3. Content Structure  # Data organization
 - **Purpose**: Organize and prepare collection data
-- **Input**: Raw collection entries
+- **Input**: Content Collection Object and Raw collection
 - **Output**: Processed data for rendering
 - **Example**: Sorting, filtering, grouping
 
+### User Created content structure:
+`site/src/content/changelog--content` 
+
+#### Run this utility function to ONLY FILTER out files with invalid frontmatter, include files with valid frontmatter:
+`site/src/utils/frontmatterIrregularityFilterReturnsValidFrontmatterOnly.ts`
+
 ## 4. Collection Array  # Entry management
+
+User created component:
+`site/src/components/basics/CollectionListScroll.astro` // abstract structure for single column list scroll.
+`site/src/components/workflow/ChangelogEntries.astro` // specific to Changelog array. 
 - **Purpose**: Handle multiple collection entries
 - **Input**: Processed collection data
 - **Output**: Mapped entry components
+- **Action**: Sort by Date, most recent on top. 
 - **Example**: List or grid container
 
+
+
 ## 5. Entry Components  # Individual items
+
+User created empty component:
+
+`site/src/components/basics/CollectionEntryRow.astro` // abstract structure for single row of content.
+`site/src/components/changelog/ChangelogEntry.astro` // specific to rendering each changelog entry. 
+
 - **Purpose**: Render single collection items
 - **Input**: Individual entry data
 - **Output**: Styled content component
 - **Example**: Blog post card or changelog entry
+
 
 ## 6. Presentation Layer  # Visual styling
 - **Purpose**: Apply collection-specific styles
@@ -89,7 +119,11 @@ graph TD
 - **Output**: Final styled UI
 - **Example**: Colors, typography, spacing
 
+`site/src/components/changelog/ChangelogEntry.astro`
+
 # Implementation Guidelines  # Best practices
+
+Write your reasoning and problem solving down in your Session Log!  
 
 ## 1. Separation of Concerns  # Modularity
 - Structure separate from presentation

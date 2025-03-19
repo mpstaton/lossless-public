@@ -1,0 +1,111 @@
+---
+/**
+ * CollectionListScroll.astro
+ * Generic scrollable list component for collections
+ * 
+ * CALLED BY:
+ * - site/src/components/workflow/ChangelogEntries.astro
+ * - [Add other components that use this as they are created]
+ * 
+ * @component
+ * @example
+ * ```astro
+ * <CollectionListScroll>
+ *   {entries.map(entry => (
+ *     <CollectionEntryRow>{entry.content}</CollectionEntryRow>
+ *   ))}
+ * </CollectionListScroll>
+ * ```
+ */
+
+interface Props {
+  /**
+   * Optional CSS classes to apply to the list container
+   */
+  class?: string;
+
+  /**
+   * Optional maximum height for the scrollable container
+   * @default "80vh"
+   */
+  maxHeight?: string;
+}
+
+const { 
+  class: className,
+  maxHeight = "80vh"
+} = Astro.props;
+---
+
+<div class:list={["collection-list-scroll", className]} style={`--max-height: ${maxHeight}`}>
+  <slot />
+</div>
+
+<style>
+  .collection-list-scroll {
+    /* Structure */
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    max-height: var(--max-height);
+    overflow-y: auto;
+    padding: 1rem;
+    
+    /* Scrollbar Styling - Webkit */
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: var(--clr-lossless-primary-dark);
+      border-radius: 4px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: var(--clr-lossless-primary-glass);
+      border-radius: 4px;
+      
+      &:hover {
+        background: var(--clr-lossless-accent--brightest);
+      }
+    }
+
+    /* Scrollbar Styling - Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--clr-lossless-primary-glass) var(--clr-lossless-primary-dark);
+
+    /* Smooth Scrolling */
+    scroll-behavior: smooth;
+  }
+
+  /* Fade effect at top and bottom */
+  .collection-list-scroll::before,
+  .collection-list-scroll::after {
+    content: "";
+    position: sticky;
+    left: 0;
+    right: 0;
+    height: 20px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .collection-list-scroll::before {
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      var(--clr-primary-bg) 0%,
+      transparent 100%
+    );
+  }
+
+  .collection-list-scroll::after {
+    bottom: 0;
+    background: linear-gradient(
+      to top,
+      var(--clr-primary-bg) 0%,
+      transparent 100%
+    );
+  }
+</style>
