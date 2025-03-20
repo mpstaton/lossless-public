@@ -56,3 +56,7 @@ Available functions:
 Of these, for this Lossless content site, I think `view_node` will be quite useful!
 
 session-close::'2025-03-19T04:51:05.362Z'
+
+https://youtu.be/6G9yb-LrEqg?si=7bk-GatMg64Ow1FI
+
+https://youtu.be/X-aX1TuGP0s?si=wJiAgV4x5nyKgvYL
