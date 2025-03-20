@@ -15,7 +15,11 @@ jina_last_request: 2025-03-09T06:45:17.702Z
 jina_error: Error occurred
 og_last_fetch: 2025-03-07T05:20:56.177Z
 docs_url: https://python.langchain.com/docs/introduction/
+date_created: 2025-03-09
+date_modified: 2025-03-20
 ---
+![[visualFor__LangChain--Model.svg]]
+
 
 2024, Sep 29. [LangChain and OLlama: Build your personal coding assistant in 10 minutes](https://youtu.be/fOUng7fMQ1Y?si=zumizOmuEk1H6vyh)
 

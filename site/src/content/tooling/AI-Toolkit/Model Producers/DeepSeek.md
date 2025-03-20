@@ -20,6 +20,8 @@ site_uuid: 5c08f7ef-a6b2-4512-be9b-393112659809
 site_uuid: eda60c7c-b30f-47d0-9501-b1d109a9edd8
 site_uuid: 3fb14133-fabe-4983-8124-bebdc5b668db
 ---
+https://youtu.be/48GRiu-TMmg?si=pHoh4c7zcwk69AAC
+
 One of the primary organizations creating [[AI Models]].
 <iframe 
   style="aspect-ratio:16/9;width:100%;height:auto" 
