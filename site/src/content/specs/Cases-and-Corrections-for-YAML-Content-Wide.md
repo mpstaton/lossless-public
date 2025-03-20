@@ -1,6 +1,6 @@
 ---
 title: "Technical Specification: YAML Frontmatter Error Detection and Correction System"
-lede: "Let content teams develop content. Handle frontmatter inconsistencies gracefully for a seamless user experience."
+lede: Let content teams develop content. Handle frontmatter inconsistencies gracefully for a seamless user experience.
 date_authored: 2025-03-18
 at_semantic_version: "0.0.1.2"
 authors: 
@@ -17,6 +17,8 @@ tags:
 - Content-Management
 - Build-Scripts
 - Markdown
+date_created: 2025-03-18
+date_modified: 2025-03-19
 ---
 
 # YAML Frontmatter Error Detection and Correction System
@@ -24,6 +26,13 @@ tags:
 ## Executive Summary
 
 Our content management system relies heavily on YAML frontmatter in markdown files to drive site functionality, metadata, and content organization. With over 700 markdown files and growing, maintaining consistency in YAML formatting has become increasingly challenging, especially with the integration of AI assistants and automated content generation tools.
+
+
+| Property | Desired Syntax                                                                         | Irregular Syntax                                                                         | Level of Problem |
+| -------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------- |
+| title    | title: Technical Specification: YAML Frontmatter Error Detection and Correction System | title: "Technical Specification: YAML Frontmatter Error Detection and Correction System" | Uncertain        |
+| site_url | docs_url: https://developers.raycast.com/                                              |                                                                                          |                  |
+
 
 We've developed a robust error detection and correction system that:
 

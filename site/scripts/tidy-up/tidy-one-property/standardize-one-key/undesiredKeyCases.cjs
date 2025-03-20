@@ -18,6 +18,9 @@ og_fetched_url: https://www.ibm.com/granite
 
 //Desired 
 ```yaml
+jina_has_errors: true
+jina_error_most_recent:
+jina_request_most_recent:
 og_has_errors: true
 og_error_most_recent: 2025-03-17T09:17:14.158Z
 og_fetch_most_recent: 2025-03-17T09:19:21.959Z
