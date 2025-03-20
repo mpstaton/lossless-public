@@ -22,6 +22,8 @@ site_uuid: 196c49f6-5cc1-4eba-81d8-347ae835a3e0
 site_uuid: 7ae1d6cb-c3ae-4a17-ad77-f5b01064970d
 site_uuid: c6b4806f-e36d-4ff6-9a75-ba70aec30aca
 site_uuid: 2375ef77-9e10-45a9-a168-a8e69d17333b
+date_created: 2025-03-04
+date_modified: 2025-03-20
 ---
 [[Microsoft]] acquired [[GitHub]].
 
@@ -33,9 +35,16 @@ https://youtu.be/oa1wXWeH1IQ?si=AqDPU2_cmIPkhJrx
 
 ![[How GitHub Changes Everything#AI Explains GitHub]]
 
-[[GitHub]] has a Command Line Interface called [GitHub CLI](https://cli.github.com).
+# GitHub Features
 
-##### [[GitHub]] has a [[Code Generator]] [[AI Copilots|Copilot]], a [[Plug-ins,  Add-ons,  Extensions|Plug-in]] to [[Visual Studio Code|VS Code]]
+## Pull Requests
+https://youtu.be/8lGpZkjnkt4?si=9JA-0OH8QhF3dbIB
+
+## [[GitHub]] has a Command Line Interface called [GitHub CLI](https://cli.github.com).
+
+
+
+## [[GitHub]] has a [[Code Generator]] [[AI Copilots|Copilot]], a [[Plug-ins,  Add-ons,  Extensions|Plug-in]] to [[Visual Studio Code|VS Code]]
 An [[AI Copilots]] from [[GitHub]] that performs [[Code Generator|Code Generation]].
 
 ![[Screenshot 2025-02-20 at 7.57.47 PM_GitHub-Copilot--Getting-Started.png]]
