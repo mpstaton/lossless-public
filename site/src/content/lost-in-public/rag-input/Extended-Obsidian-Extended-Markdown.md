@@ -39,11 +39,12 @@ modification date: Thursday 7th January 2021 17:20:43
 ## Case Handling
 
 
-| Syntax                                            | Purpose                       | Path                           |
-| ------------------------------------------------- | ----------------------------- | ------------------------------ |
-| `![[visualFor__LangChain--Model.svg]]`            | Image Placement               | site/src/assets/Visuals        |
-| `[[Object Storage]]`                              |                               |                                |
-| <br>`[[Tooling/Products/Git#Git Hooks\|Git]]`<br> | Jump to Header on linked page | Tooling/Products/Git#Git Hooks |
+| Syntax                                                 | Purpose                       | Path                           |
+| ------------------------------------------------------ | ----------------------------- | ------------------------------ |
+| `![[visualFor__LangChain--Model.svg]]`                 | Image Placement               | site/src/assets/Visuals        |
+| `[[Object Storage]]`                                   |                               |                                |
+| <br>`[[Tooling/Products/Git#Git Hooks\|Git]]`<br>      | Jump to Header on linked page | Tooling/Products/Git#Git Hooks |
+| parent_org: `"[[Organizations/Microsoft\|Microsoft]]"` | Backlink in YAML              |                                |
 
 
 
