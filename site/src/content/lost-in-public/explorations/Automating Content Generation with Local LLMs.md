@@ -20,7 +20,7 @@ After working extensively on a few "patterns", I found that the kind of output d
 ## [[Perplexica]] for Search Results with Sources
 [[Perplexica]] has installation instructions on the [Perplexica GitHub Repo](https://github.com/ItzCrazyKns/Perplexica/tree/master).  As of March 20, 2025, it's 1 GB in size and here are the steps I am walking through:
 
-Open the terminal or [[Terminal Emulators|Terminal Emulator]]. (I use [[Ghostty]] when I know what I am doing, and [[Warp]] when I need an [[AI Terminal Assistants|AI Terminal Assistant]].)
+Open the terminal or [[Terminal Emulators|Terminal Emulator]]. (I use [[Ghostty]] when I know what I am doing, and [[Warp]] when I need an [[Tooling/AI-Toolkit/Explainers/AI Terminal Assistant|AI Terminal Assistant]].)
 
 Figure out where you want to install it.  Given my [[Dev Machine]] is on [[Ubuntu]], I chose:
 `/home/mps/Applications`

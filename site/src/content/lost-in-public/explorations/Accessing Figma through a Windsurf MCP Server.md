@@ -1,8 +1,8 @@
 ---
-title: "Accessing Figma through a Windsurf MCP Server"  # Core purpose of this prompt
-lede: 'Interact with Figma Designs'  # Brief description
+title: "Accessing Figma through a Windsurf MCP Server"  
+lede: 'Interact with Figma Designs while building an application, straight from the IDE'  
 date_authored_initial_draft: 2025-03-19
-date_authored_current_draft: null # Updated today
+date_authored_current_draft: null 
 date_authored_final_draft: null
 date_first_published: null
 date_last_updated: null
@@ -15,6 +15,8 @@ tags:
   - Model-Context-Protocols
 authors: 
 - Michael Staton
+date_created: 2025-03-20
+date_modified: 2025-03-20
 ---
 session-open::'2025-03-19T04:51:05.362Z'
 

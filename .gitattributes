@@ -1,0 +1,42 @@
+# Default behavior: normalize line endings to LF on checkin
+* text=auto
+
+# Explicitly declare text files to normalize
+*.md text diff=markdown
+*.txt text
+*.js text
+*.ts text
+*.jsx text
+*.tsx text
+*.json text
+*.yml text
+*.yaml text
+*.css text
+*.scss text
+*.html text
+
+# Declare files that will always have CRLF line endings
+*.bat text eol=crlf
+
+# Denote all files that are truly binary and should not be modified
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# Better diff handling for specific file types
+*.md diff=markdown
+*.png diff=exif
+package-lock.json -diff
+yarn.lock -diff
+pnpm-lock.yaml -diff
+
+# Handle large files
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
