@@ -1,0 +1,35 @@
+
+ul {
+   list-style-type: disc;
+   margin-left: 1em;
+   border-left: 1px solid var(--clr--text__default);
+}
+
+ul > li {
+   list-style-type: disc;
+   margin-left: 2em;
+}
+
+unordered-list {
+   list-style-type: disc;
+   margin-left: 1em;
+}
+
+unordered-list > li {
+   list-style-type: disc;
+   margin-left: 2em;
+}
+
+ol {
+   list-style-type: decimal;
+   margin-left: 1rem;
+}
+
+ol > li {
+   margin-left: 2rem;
+}
+
+ordered-list {
+   list-style-type: decimal;
+   margin-left: 1rem;
+}
