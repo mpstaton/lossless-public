@@ -1,3 +1,18 @@
+---
+site_uuid: a39804c3-335c-4e41-a606-802ed74cd4c3
+title: Mixture of Experts
+tags:
+  - AI-Toolkit
+  - Explainers
+site_visibility: public
+site_uuid: b986b547-21f0-4818-9e89-aa31c4d649be
+site_uuid: 25eb3d38-558a-412d-ba7c-f68700d568a2
+site_uuid: 7c34fa51-20d2-48b8-9646-ccfd743755a4
+site_uuid: 55b0b9a4-b91d-47d0-aa7e-01beb1eddd10
+site_uuid: 429e5c3d-56e6-407d-b8a2-3d3a946f0653
+site_uuid: b8356f0d-1579-4feb-adb6-c77335329868
+---
+
 [[Perplexity AI]] explains [[Mixture of Experts]]
 The **Mixture of Experts (MoE)** model differs from other statistical models in large language models (LLMs) primarily through its **sparse computation and dynamic specialization**:
 

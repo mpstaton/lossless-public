@@ -73,34 +73,57 @@ export function getHostnameFromUrl(urlString: string): string {
   }
 }
 
+// Title separator patterns - ADD NEW ONES HERE
+const TITLE_SEPARATORS = [
+    ' - ',    // space-hyphen-space
+    ' – ',    // space-en-dash-space
+    ' — ',    // space-em-dash-space
+    ' | ',    // space-pipe-space
+    ' : ',    // space-colon-space
+    ' • ',    // space-bullet-space
+    ' · ',    // space-middle-dot-space
+    '-',      // hyphen
+    '–',      // en-dash
+    '—',      // em-dash
+    '|',      // pipe
+    ':',      // colon
+    '•',      // bullet
+    '·',      // middle dot
+    ' -- ',   // space-double-hyphen-space
+    ' * '     // space-asterisk-space
+];
+
+// Create the regex pattern - DO NOT MODIFY THIS
+const SEPARATOR_PATTERN = TITLE_SEPARATORS
+    .map(sep => sep.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .join('|');
+
 /**
  * Filters a title by removing the site name and extracting the relevant part.
+ * Add new separators to TITLE_SEPARATORS array above.
  * 
- * @param fullTitle The full title to filter
+ * @param title The full title to filter
  * @param siteName The site name to remove from the title
  * @returns The filtered title
  */
-export function filterTitle(fullTitle: string, siteName: string): string {
-  if (!fullTitle || !siteName || !fullTitle.includes(siteName)) {
-    return fullTitle || "";
-  }
+export function filterTitle(title: string, siteName: string): string {
+    if (!title || !siteName) return title || '';
+    
+    const separatorRegex = new RegExp(`\\s*(${SEPARATOR_PATTERN})\\s*`);
+    let cleanTitle = title;
 
-  // Find the position after the site_name
-  const siteNameEndPos = fullTitle.indexOf(siteName) + siteName.length;
-
-  // Look for the next capital letter after any punctuation and spaces
-  const remainingPart = fullTitle.substring(siteNameEndPos);
-  const capitalLetterMatch = remainingPart.match(/[^\w\s][\s]*([A-Z])/);
-
-  if (capitalLetterMatch && capitalLetterMatch.index !== undefined) {
-    // Return the part starting from the capital letter
-    return remainingPart.substring(
-      capitalLetterMatch.index + capitalLetterMatch[0].length - 1
-    );
-  }
-
-  // If no capital letter found, return the original title
-  return fullTitle;
+    // Split site name into parts and clean each part
+    const siteNameParts = siteName.split(separatorRegex).filter(Boolean);
+    
+    siteNameParts.forEach(part => {
+        const escapedPart = part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        // Remove "Part <separator> Rest"
+        cleanTitle = cleanTitle.replace(new RegExp(`^${escapedPart}\\s*(${SEPARATOR_PATTERN})\\s*`), '');
+        // Remove "Rest <separator> Part"
+        cleanTitle = cleanTitle.replace(new RegExp(`\\s*(${SEPARATOR_PATTERN})\\s*${escapedPart}$`), '');
+    });
+    
+    return cleanTitle.trim();
 }
 
 /**
@@ -116,9 +139,17 @@ export function getEffectiveSiteName(
   filename?: string,
   url?: string
 ): string {
-  const nameFromFilename = filename ? getSiteNameFromFilename(filename) : "";
-  const extractedSiteName = url ? getHostnameFromUrl(url) : "";
-  return site_name || nameFromFilename || extractedSiteName;
+  if (site_name) return site_name;
+  if (filename) return filename.replace(/\.md$/, '');
+  if (url) {
+    try {
+      const urlObj = new URL(url);
+      return urlObj.hostname.replace(/^www\./, '');
+    } catch {
+      return url;
+    }
+  }
+  return '';
 }
 
 /**

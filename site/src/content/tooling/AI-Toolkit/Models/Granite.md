@@ -1,18 +1,23 @@
 ---
-url: 'https://www.ibm.com/granite'
+site_uuid: 65885b67-f117-48ad-b2f3-fa954f22dd9a
+url: https://www.ibm.com/granite
 tags:
   - AI-Toolkit
   - Models
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/63b529e55f0c47ec5a43ca5667bdbc6f19dba16c394f894f59572346ea63978a.jpeg
-image: 'https://assets.ibm.com/is/image/ibm/ibm-8bar-logo-2560x2560?$original$'
-site_name: Granite
-title: Granite | IBM
-favicon: 'https://www.ibm.com/content/dam/adobe-cms/default-images/icon-512x512.png'
-og_last_fetch: 2025-03-07T05:19:18.954Z
+image: https://assets.ibm.com/is/image/ibm/ibm-8bar-logo-2560x2560?$original
+og_errors: true
+og_last_error: 2025-03-17T09:17:14.158Z
+og_error_message: "HTTP error! status: 401"
+og_last_fetch: 2025-03-17T09:19:21.959Z
+og_fetched_url: https://www.ibm.com/granite
+parent_org: "[[IBM]]"
 ---
 
-Another [[Large Language Models]]
+Another [[Large Language Models|Large Language Model]]
+
 
 [[IBM]]
+
+
+
 

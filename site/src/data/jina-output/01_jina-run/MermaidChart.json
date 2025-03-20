@@ -1,0 +1,15 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {},
+    "title": "Mermaid Chart - Create complex, visual diagrams with text. A smarter way of creating diagrams.",
+    "description": "",
+    "url": "https://www.mermaidchart.com/",
+    "content": "Mermaid Chart - Create complex, visual diagrams with text. A smarter way of creating diagrams.\n===============",
+    "warning": "",
+    "usage": {
+      "tokens": 20
+    }
+  }
+}

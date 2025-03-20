@@ -1,0 +1,19 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "": "https://zerosync.co/",
+      "Blog": "https://zerosync.co/blog",
+      "Docs": "https://docs.zerosync.co/",
+      "Go to ZeroSync's GitHub repo": "https://github.com/zerosync-co/"
+    },
+    "title": "ZeroSync",
+    "description": "Orchestrate integrations",
+    "url": "https://zerosync.co/",
+    "content": "ZeroSync\n===============\n \n\n[![Image 1: zerosync-main-black](https://zerosync.co/zerosync-main-black.png)](https://zerosync.co/)\n\n[Home](https://zerosync.co/) [Blog](https://zerosync.co/blog) [Docs](https://docs.zerosync.co/)\n\n[Go to ZeroSync's GitHub repo](https://github.com/zerosync-co/)\n\nBuild integration modules once,  \nautomatically sync data anywhere\n==================================================================\n\nZeroSync is an orchestration platform for building modules, synchronizing data and deploying integrations across cloud, edge, and on-premise.\n--------------------------------------------------------------------------------------------------------------------------------\n\n![Image 2: zerosync-logo](https://zerosync.co/zerosync-logo.png) The Problem\n\nBuilding and maintaining integrations is very hard – existing tools are difficult to add to architectures, and significantly increase levels of complexity.\n\n![Image 3: zerosync-logo](https://zerosync.co/zerosync-logo.png) Our Solution\n\nWith ZeroSync, developers can write and reuse custom code to describe the different pieces of a workflow without having to use specific languages or services.\n\n![Image 4: zerosync-logo](https://zerosync.co/zerosync-logo.png) How It Works\n\nZeroSync enables integration code to run inside any app, facilitating workflows to safely and automatically run within any environment.\n\nPricing\n=======\n\nTailored pricing for every business customer, adaptable to any integration and scale\n\nFree\n----\n\nGet your hands on the product\n\nWhat’s included:\n----------------\n\n3 modules\n\n1 workflow\n\n100 executions per month\n\nPro\n---\n\nEverything you need for integrations\n\nEverything in Free, Plus:\n-------------------------\n\nEmail and chat support\n\nArchitecture design reviews\n\n20 modules\n\n10 workflows with edge capabilities\n\n10k execucutions per month\n\nEnterprise\n----------\n\nEnterprise-grade features and services\n\nEverything in Pro, Plus:\n------------------------\n\n24/7 on-call support\n\nUnlimited modules and workflows\n\nDynamic execution pricing\n\nCustom implementation services\n\nOngoing maintenance\n\nPrivate Deployment\n------------------\n\nDeploy on-premise and at the edge\n\nEverything in Enterprise, Plus:\n-------------------------------\n\nImplement at any scale, for all needs\n\nOn site support\n\n© ZeroSync 2025",
+    "usage": {
+      "tokens": 450
+    }
+  }
+}

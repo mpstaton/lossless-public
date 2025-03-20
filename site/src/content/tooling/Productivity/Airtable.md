@@ -1,18 +1,25 @@
 ---
-url: 'https://www.airtable.com/'
-image: 'https://www.airtable.com/images/airtable-seo.jpg'
+site_uuid: 196f796c-01b8-4033-9d8d-382cd2624107
+image: https://www.airtable.com/images/airtable-seo.jpg
 site_name: Airtable
 title: The platform to build next‒gen apps
-favicon: 'https://www.airtable.com/favicon.ico'
+favicon: https://www.airtable.com/favicon.ico
 tags:
-  - Productivity
-  - Database-Apps
-  - Asynchronous-Communication
-  - Workflow-Management
-  - JAM-Stack
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/78242d8f3ebfd297f184895df2c4cb1f76fe53ad45f507c83d9cda105e3df0ac.jpeg
-og_last_fetch: 2025-03-07T05:19:01.824Z
+- Productivity
+- Database-Apps
+- Asynchronous-Communication
+- Workflow-Management
+- JAM-Stack
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/78242d8f3ebfd297f184895df2c4cb1f76fe53ad45f507c83d9cda105e3df0ac.jpeg
+jina_last_request: '2025-03-09T06:45:04.681Z'
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:01.824Z'
+site_uuid: c16e18cd-1944-45fe-bc33-6720ad29e5ac
+site_uuid: 5b90bfff-edf4-4d84-aaef-70dc4303a63c
+site_uuid: 4de29124-1131-4a71-9b1f-ddd5c4aad302
+site_uuid: 8df2c3ba-173a-4b5b-b5a0-f1d4259be395
+site_uuid: 4bae43e0-f5b1-4181-ba0d-6acaba8094d2
+site_uuid: 4f9de32c-0a40-4fc4-9150-2068db75ab71
 ---
 One of the [[Database Apps]], and is also partially an [[Advanced Spreadsheets]] Applies [[API First]] and [[Documentation First Development|Documentation First]] strategies. 
 

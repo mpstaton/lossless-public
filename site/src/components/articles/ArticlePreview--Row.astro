@@ -1,0 +1,112 @@
+---
+import type { any } from "astro:schema";
+
+/* =====================================================================>
+   A wide, responsive preview of a content Article item in a content collection.
+   Designed to be called as a list in a column. 
+/* =====================================================================>
+
+??-- Type: Row Component
+??-- Includes:
+   //---- Styles to fill a column body.
+   //---- Rendering of an pageName as Article Title, relevant frontmatter and image. 
+??-- Affects:
+   //---- Markdown files, Article Components, Articles Layout
+
+??-- Rendered In:
+   //---- pages/more-about/[more-about].astro
+/* <======================================< */
+
+const { pageName, relativePath, frontmatter }: { pageName: string; relativePath: string; frontmatter: any } = Astro.props;
+
+const imageRenderedInThumbnail = frontmatter.image;
+
+---
+<article class="article-preview-row">
+   <div class="image-thumb responsive-image">
+      <a href={relativePath}>
+         <img src={imageRenderedInThumbnail} alt={`Image representing an article about ${pageName}`} />
+      </a>
+   </div>
+   <div class="content-preview-column">
+      <div class="header-box">
+         <h3>{pageName}</h3>
+      </div>
+      <div class="text-box preview-text">
+         <p class="zinger">{ frontmatter.zinger || frontmatter.title }</p>
+         <p class="legible">{ frontmatter.synopsis || frontmatter.description_site_cp || frontmatter.description || }</p>
+      </div>
+   </div>
+</article>
+
+
+
+<script>
+/* script ===========================================================================
+// JavaScript for Component
+//
+// Type: Utility Functions
+// Includes:
+//   Use the body of the Markdown page if values are in the frontmatter to render in zinger p or legible p element. 
+//   Hide text content after 3 lines of text and introduce a "...."
+//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> */
+
+
+
+
+</script>
+
+
+
+<style>
+/* styles ===========================================================================
+|
+??-- Type: Responsive width rows in column. 
+|
+??-- Local Styles:
+   //---- .article-preview-row      // flex-direction: row; thin; soft border; responsive width; auto-height; padding 1em, corner-radius 1em, 
+   //---- .image-thumb              // float left, 1em padding, 1em corner-radius, width: 24%. 
+   //---- .image-thumb > img        // float left, width 100%; height auto; , 
+   //---- .header-box > h3          // Text within aligns left, width 100%, height auto;
+   //---- .preview-text             // Text within aligns left, width 100%, height auto; clip content. 
+
+??-- Global Styles:
+   //---- .text-box > p.legible
+|
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> */
+
+.article-preview-row: {
+
+}
+.image-thumb {
+
+
+} 
+
+.image-thumb > img {
+
+}
+
+.header-box {
+
+} 
+
+.header-box > h3 {
+
+}
+
+.preview-text {
+
+}
+
+
+.text-box {
+
+}
+
+.text-box > p.legible {
+
+}
+
+</style>

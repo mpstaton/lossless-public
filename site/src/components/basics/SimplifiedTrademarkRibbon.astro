@@ -1,0 +1,102 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+
+// Get all trademark SVGs
+const componentsDir = path.join(
+  process.cwd(),
+  "src/assets/Visuals/Standardized-Tooling-Trademarks/fits-ribbon"
+);
+
+const trademarks = fs
+  .readdirSync(componentsDir)
+  .filter((file) => file.endsWith(".svg"))
+  .sort(() => Math.random() - 0.5)
+  .map((filename) => {
+    const content = fs.readFileSync(path.join(componentsDir, filename), "utf8");
+    // Extract SVG and modify its attributes
+    const svgMatch = content.match(/<svg[^>]*>[\s\S]*?<\/svg>/i);
+    if (svgMatch) {
+      return svgMatch[0]
+        .replace(/height="[^"]*"/, 'height="80%"')
+        .replace(/width="[^"]*"/, "100%");
+    }
+    return "";
+  })
+
+  .filter(Boolean);
+---
+
+<div class="trademark-ribbon">
+  <div class="ribbon-overlay">
+    <div class="ribbon-track">
+      {
+        trademarks.map((svg) => (
+          <div class="trademark-container" set:html={svg} />
+        ))
+      }
+      {/* Duplicate for seamless loop */}
+      {
+        trademarks.map((svg) => (
+          <div class="trademark-container" set:html={svg} />
+        ))
+      }
+    </div>
+  </div>
+
+  <style>
+    .trademark-ribbon {
+      width: 100%;
+      height: 180px;
+      overflow: visible;
+      position: relative;
+      background: transparent;
+    }
+    .ribbon-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 160px;
+    }
+
+    .ribbon-track {
+      display: flex;
+      align-items: center;
+      animation: scroll 100s linear infinite;
+      width: max-content;
+      height: 100%;
+      gap: 5em;
+    }
+
+    .trademark-container {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trademark-container :global(svg) {
+      height: 100px;
+      width: auto;
+      max-width: none;
+      display: block;
+      overflow: visible;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ribbon-track {
+        animation: none;
+      }
+    }
+  </style>
+</div>

@@ -1,3 +1,5 @@
+@import url("structure.css");
+
 :root {
     --elephant: hsl(191, 75%, 17%);
     --bastille: #19141D;
@@ -38,8 +40,11 @@
     --clr-lossless-primary-glass-gr--60-40p: var(--gr-white--60-40p);
     --clr-lossless-attn-action: var(--purple-heart);
     --clr-lossless-ui-btn-border: var(--clr-lossless-primary-light);
+    --grd--lossless-eastern-crimson: linear-gradient(107deg, #22A6B5 5.36%, #9138E0 23.14%, #D9233B 47.56%, #F59C49 72.33%);
 
     --clr-primary-bg: var(--clr-stolen--github--dark);
+    --clr-secondary-bg: var(--white--pure--20p);
+    --grd__primary-bg: var(--grd--lossless-eastern-crimson);
 
 
     --clr-heading: var(--clr-lossless-accent--brightest);
@@ -82,14 +87,6 @@ a, p {
     text-decoration: none;
     color: var(--clr-body);
     font-family: var(--ff-base);
-};
-
-.separator--thin {
-    width: 100%;
-    height: 1px;
-    background-color: var(--clr-lossless-primary-light);
-  }
-
-*, *::before, *::after {
-box-sizing: border-box;
 }
+
+

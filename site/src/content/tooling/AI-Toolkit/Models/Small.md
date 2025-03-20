@@ -1,3 +1,18 @@
+---
+site_uuid: 8f6ca1f9-09cd-4e3d-9358-2d48cd0aa8ba
+title: Small
+tags:
+  - AI-Toolkit
+  - Models
+site_visibility: public
+site_uuid: e2d742d1-ad28-4b62-83e3-7ef900ce46f7
+site_uuid: c11cdabb-1519-4c41-aa42-232e408480f6
+site_uuid: 3da38b13-601a-4066-8bb8-c0c5a78f0ed9
+site_uuid: 2e6df273-f2de-4370-a408-6127d943f43a
+site_uuid: e3088cfa-a28d-4836-b6c5-cebd117fbdde
+site_uuid: f208ceea-0972-40a0-b4bc-e52bb812f64a
+---
+
 An [[AI Models|AI Model]] by [[Mistral]]
 
 [[Mistral]] launched [[Small]] version 3 on January 30, 2025. (Read the [announcement](https://mistral.ai/news/mistral-small-3/) on the Mistral blog.  

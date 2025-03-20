@@ -1,4 +1,13 @@
+---
 
+site_uuid: 76fda6f5-16b2-429f-800d-22dc41d2b12b
+site_uuid: e9c4b104-d8d8-4533-82ff-995b1d9e7917
+site_uuid: 0baf6cc0-1537-4302-9d83-929a119949e1
+site_uuid: 76c958e2-fa53-4fed-85c1-ea5e06cb4a66
+site_uuid: c210f356-91e4-4514-acf1-dcdd778a95c3
+site_uuid: 4a4aab56-77cf-4581-9dc6-d7ca33b0980c
+site_uuid: 7796f672-efe1-4a17-bcd0-c5ce6a997c8e
+---
 ### Illuminating AI-Generated Customer Insights
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1031915810?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="20241121_Gen-AI-Customer-Insights"></iframe><script src="https://player.vimeo.com/api/player.js"></script></div>
 

@@ -1,0 +1,46 @@
+"32e4500c-1d6b-40ac-8524-b566904e5dc5": {
+      "referredToAs": {
+        "primaryFileName": "Affine",
+        "aliases": []
+      },
+      "urls": {
+        "siteUrl": "https://affine.pro"
+      },
+      "primaryFiles": {
+        "canonical": {
+          "path": "/Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Affine.md"
+        },
+        "document_variants": []
+      },
+      "connectedDocuments": {
+        "connected_documents": [
+        "parentOrganization": "[[Affine Foundation]]"
+        ]
+      },
+      "history": [
+        {
+          "timestamp": "2025-03-07T05:19:01.825Z",
+          "type": "metadata_update",
+          "action": "og_fetch_01",
+          "details": {
+            "source": "opengraph",
+            "operation": "fetch",
+            "original_property": "og_last_fetch",
+            "original_value": "2025-03-07T05:19:01.825Z"
+          }
+        }
+      ],
+      "metadata": {
+        "siteVisibility": "public",
+        "semanticVersion": {
+          "version": 1,
+          "created_at": "2025-03-17T05:59:45.450Z",
+          "last_modified": "2025-03-17T05:59:45.450Z",
+          "status": "active"
+        }
+      },
+      "mediaInContent": {
+        "media": []
+      },
+      "uuid": "32e4500c-1d6b-40ac-8524-b566904e5dc5"
+    },

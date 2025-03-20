@@ -1,0 +1,261 @@
+Hugging Face – The AI community building the future.
+=============== 
+
+ [![Image 1: Hugging Face's logo](https://huggingface.co/front/assets/huggingface_logo-noborder.svg) Hugging Face](https://huggingface.co/)
+
+*   [Models](https://huggingface.co/models)
+*   [Datasets](https://huggingface.co/datasets)
+*   [Spaces](https://huggingface.co/spaces)
+*   [Posts](https://huggingface.co/posts)
+*   [Docs](https://huggingface.co/docs)
+*   [Enterprise](https://huggingface.co/enterprise)
+*   [Pricing](https://huggingface.co/pricing)
+
+*   * * *
+    
+*   [Log In](https://huggingface.co/login)
+*   [Sign Up](https://huggingface.co/join)
+
+![Image 2](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)
+
+The AI community building the future.
+=====================================
+
+The platform where the machine learning community collaborates on models, datasets, and applications.
+
+[Explore AI Apps](https://huggingface.co/spaces)
+
+or [Browse 1M+ models](https://huggingface.co/models)
+
+![Image 3: Hugging Face models](https://huggingface.co/front/assets/homepage/models-mobile.svg) ![Image 4: Hugging Face models](https://huggingface.co/front/assets/homepage/models-tablet.svg) ![Image 5: Hugging Face models](https://huggingface.co/front/assets/homepage/models.svg)
+
+Trending on![Image 6](https://huggingface.co/front/assets/huggingface_logo-noborder.svg)this week
+
+Models
+------
+
+[#### Qwen/QwQ-32B Updated 2 days ago • 83.8k • 1.62k](https://huggingface.co/Qwen/QwQ-32B)
+
+[#### deepseek-ai/DeepSeek-R1 Updated 13 days ago • 3.89M • 11k](https://huggingface.co/deepseek-ai/DeepSeek-R1)
+
+[#### microsoft/Phi-4-multimodal-instruct Updated 1 day ago • 155k • 1.02k](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
+
+[#### Wan-AI/Wan2.1-T2V-14B Updated 11 days ago • 182k • 938](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B)
+
+[#### CohereForAI/aya-vision-8b Updated 5 days ago • 119k • 200](https://huggingface.co/CohereForAI/aya-vision-8b)
+
+[Browse 1M+ models](https://huggingface.co/models)
+
+Spaces
+------
+
+[Running 1.02k 1.02k #### Wan2.1 💻 Wan: Open and Advanced Large-Scale Video Generative Models](https://huggingface.co/spaces/Wan-AI/Wan2.1)
+
+[Running 2.14k 2.14k #### The Ultra-Scale Playbook 🌌 The ultimate guide to training LLM on large GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook)
+
+[Running on Zero 282 282 #### Di♪♪Rhythm 🎶 Blazingly Fast and Embarrassingly Simple Song Generation](https://huggingface.co/spaces/ASLP-lab/DiffRhythm)
+
+[Running 253 253 #### QwQ 32B Demo 🌖 Generate text responses based on user input](https://huggingface.co/spaces/Qwen/QwQ-32B-Demo)
+
+[Running on Zero 7.72k 7.72k #### FLUX.1 \[dev\] 🖥 Generate images from text prompts](https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev)
+
+[Browse 400k+ applications](https://huggingface.co/spaces)
+
+Datasets
+--------
+
+[#### facebook/natural\_reasoning Updated 16 days ago • 8.25k • 346](https://huggingface.co/datasets/facebook/natural_reasoning)
+
+[#### Congliu/Chinese-DeepSeek-R1-Distill-data-110k Updated 16 days ago • 6.56k • 484](https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k)
+
+[#### FreedomIntelligence/medical-o1-reasoning-SFT Updated 15 days ago • 26.4k • 391](https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT)
+
+[#### GeneralReasoning/GeneralThought-195K Updated 6 days ago • 497 • 54](https://huggingface.co/datasets/GeneralReasoning/GeneralThought-195K)
+
+[#### KodCode/KodCode-V1 Updated 3 days ago • 1.81k • 51](https://huggingface.co/datasets/KodCode/KodCode-V1)
+
+[Browse 250k+ datasets](https://huggingface.co/datasets)
+
+The Home of Machine Learning
+----------------------------
+
+Create, discover and collaborate on ML better.
+
+### The collaboration platform
+
+Host and collaborate on unlimited public models, datasets and applications.
+
+![Image 7: Hub activity feed](https://huggingface.co/front/assets/homepage/activity.svg) ![Image 8: Hub activity feed](https://huggingface.co/front/assets/homepage/activity-dark.svg)
+
+### Move faster
+
+With the HF Open source stack.
+
+![Image 9: Code snippets from HF libraries](https://huggingface.co/front/assets/homepage/snippets.svg) ![Image 10: Code snippets from HF libraries](https://huggingface.co/front/assets/homepage/snippets-dark.svg)
+
+### Explore all modalities
+
+Text, image, video, audio or even 3D.
+
+![Image 11: Hugging face tasks ](https://huggingface.co/front/assets/homepage/modalities.svg) ![Image 12: Hugging face tasks ](https://huggingface.co/front/assets/homepage/modalities-dark.svg)
+
+### Build your portfolio
+
+Share your work with the world and build your ML profile.
+
+[Sign Up](https://huggingface.co/join)
+
+![Image 13: Younes Belkada Hugging Face profile](https://huggingface.co/front/assets/homepage/younes.svg) ![Image 14: Youne Belkada Hugging Face profile](https://huggingface.co/front/assets/homepage/younes-dark.svg)
+
+Accelerate your ML
+------------------
+
+We provide paid Compute and Enterprise solutions.
+
+### Compute
+
+Deploy on optimized [Inference Endpoints](https://huggingface.co/pricing#endpoints) or update your [Spaces applications](https://huggingface.co/pricing#spaces) to a GPU in a few clicks.
+
+[View pricing](https://huggingface.co/pricing)Starting at $0.60/hour for GPU
+
+![Image 15: Hugging face compute offering](https://huggingface.co/front/assets/homepage/compute.svg) ![Image 16: Hugging face compute offering](https://huggingface.co/front/assets/homepage/compute-dark.svg)
+
+### Enterprise
+
+Give your team the most advanced platform to build AI with enterprise-grade security, access controls and dedicated support.
+
+[Getting started](https://huggingface.co/enterprise)Starting at $20/user/month
+
+[Single Sign-On](https://huggingface.co/enterprise)[Regions](https://huggingface.co/enterprise)[Priority Support](https://huggingface.co/enterprise)[Audit Logs](https://huggingface.co/enterprise)[Resource Groups](https://huggingface.co/enterprise)[Private Datasets Viewer](https://huggingface.co/enterprise)
+
+More than 50,000 organizations are using Hugging Face
+-----------------------------------------------------
+
+[![Image 17: Ai2's profile picture](https://cdn-avatars.huggingface.co/v1/production/uploads/652db071b62cf1f8463221e2/CxxwFiaomTa1MCX_B7-pT.png) #### Ai2 Enterprise non-profit • 391 models • 2.74k followers](https://huggingface.co/allenai)
+
+[![Image 18: AI at Meta's profile picture](https://cdn-avatars.huggingface.co/v1/production/uploads/1592839207516-noauth.png) #### AI at Meta Enterprise company • 2.07k models • 4.98k followers](https://huggingface.co/facebook)
+
+[![Image 19: Amazon's profile picture](https://cdn-avatars.huggingface.co/v1/production/uploads/66f19ed428ae41c20c470792/8y7msN6A6W82LdQhQd85a.png) #### Amazon company • 20 models • 2.83k followers](https://huggingface.co/amazon)
+
+[![Image 20: Google's profile picture](https://cdn-avatars.huggingface.co/v1/production/uploads/5dd96eb166059660ed1ee413/WtA3YYitedOr9n02eHfJe.png) #### Google company • 959 models • 8.61k followers](https://huggingface.co/google)
+
+[![Image 21: Intel's profile picture](https://cdn-avatars.huggingface.co/v1/production/uploads/1616186257611-60104afcc75e19ac1738fe70.png) #### Intel company • 219 models • 2.32k followers](https://huggingface.co/Intel)
+
+[![Image 22: Microsoft's profile picture](https://cdn-avatars.huggingface.co/v1/production/uploads/1583646260758-5e64858c87403103f9f1055d.png) #### Microsoft company • 362 models • 10k followers](https://huggingface.co/microsoft)
+
+[![Image 23: Grammarly's profile picture](https://cdn-avatars.huggingface.co/v1/production/uploads/60985a0547dc3dbf8a976607/rRv-TjtvhN66uwh-xYaCf.png) #### Grammarly Enterprise company • 10 models • 131 followers](https://huggingface.co/grammarly)
+
+[![Image 24: Writer's profile picture](https://cdn-avatars.huggingface.co/v1/production/uploads/1625001569797-60db8b5ad8b4797b129145d5.png) #### Writer Enterprise company • 20 models • 247 followers](https://huggingface.co/Writer)
+
+Our Open Source
+---------------
+
+We are building the foundation of ML tooling with the community.
+
+[#### Transformers 140,836 State-of-the-art ML for PyTorch, TensorFlow, JAX](https://huggingface.co/docs/transformers)[#### Diffusers 27,925 State-of-the-art Diffusion models in PyTorch](https://huggingface.co/docs/diffusers)[#### Safetensors 3,152 Safe way to store/distribute neural network weights](https://huggingface.co/docs/safetensors)[#### Hub Python Library 2,406 Python client to interact with the Hugging Face Hub](https://huggingface.co/docs/huggingface_hub)[#### Tokenizers 9,451 Fast tokenizers optimized for research & production](https://huggingface.co/docs/tokenizers)[#### TRL 12,330 Train transformers LMs with reinforcement learning](https://huggingface.co/docs/trl)[#### Transformers.js 13,156 State-of-the-art ML running directly in your browser](https://huggingface.co/docs/transformers.js)[#### smolagents 14,076 Smol library to build great agents in Python](https://huggingface.co/docs/smolagents)[#### PEFT 17,673 Parameter-efficient finetuning for large language models](https://huggingface.co/docs/peft)[#### Datasets 19,748 Access & share datasets for any ML tasks](https://huggingface.co/docs/datasets)[#### Text Generation Inference 9,859 Serve language models with TGI optimized toolkit](https://huggingface.co/docs/text-generation-inference)[#### Accelerate 8,444 Train PyTorch models with multi-GPU, TPU, mixed precision](https://huggingface.co/docs/accelerate)
+
+![Image 25: Pile of Hugging Face logos](https://huggingface.co/front/assets/homepage/hugs.svg) ![Image 26: Pile of Hugging Face logos](https://huggingface.co/front/assets/homepage/hugs-mobile.svg)
+
+System theme
+
+Website
+
+*   [Models](https://huggingface.co/models)
+*   [Datasets](https://huggingface.co/datasets)
+*   [Spaces](https://huggingface.co/spaces)
+*   [Tasks](https://huggingface.co/tasks)
+*   [Inference Endpoints](https://ui.endpoints.huggingface.co/)
+*   [HuggingChat](https://huggingface.co/chat)
+
+Company
+
+*   [About](https://huggingface.co/huggingface)
+*   [Brand assets](https://huggingface.co/brand)
+*   [Terms of service](https://huggingface.co/terms-of-service)
+*   [Privacy](https://huggingface.co/privacy)
+*   [Jobs](https://apply.workable.com/huggingface/)
+*   [Press](mailto:press@huggingface.co)
+
+Resources
+
+*   [Learn](https://huggingface.co/learn)
+*   [Documentation](https://huggingface.co/docs)
+*   [Blog](https://huggingface.co/blog)
+*   [Forum](https://discuss.huggingface.co/)
+*   [Service Status](https://status.huggingface.co/)
+
+Social
+
+*   [GitHub](https://github.com/huggingface)
+*   [Twitter](https://twitter.com/huggingface)
+*   [LinkedIn](https://www.linkedin.com/company/huggingface/)
+*   [Discord](https://huggingface.co/join/discord)
+*   [Zhihu](https://www.zhihu.com/org/huggingface)
+*   [WeChat](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/chinese-language-blog/wechat.jpg)
+
+Links/Buttons:
+- [Hugging Face](https://huggingface.co/)
+- [Models](https://huggingface.co/models)
+- [Datasets](https://huggingface.co/datasets)
+- [Spaces](https://huggingface.co/spaces)
+- [Posts](https://huggingface.co/posts)
+- [Docs](https://huggingface.co/docs)
+- [Enterprise](https://huggingface.co/enterprise)
+- [Pricing](https://huggingface.co/pricing)
+- [Log In](https://huggingface.co/login)
+- [Sign Up](https://huggingface.co/join)
+- [Qwen/QwQ-32B Updated 2 days ago • 83.8k • 1.62k](https://huggingface.co/Qwen/QwQ-32B)
+- [deepseek-ai/DeepSeek-R1 Updated 13 days ago • 3.89M • 11k](https://huggingface.co/deepseek-ai/DeepSeek-R1)
+- [microsoft/Phi-4-multimodal-instruct Updated 1 day ago • 155k • 1.02k](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
+- [Wan-AI/Wan2.1-T2V-14B Updated 11 days ago • 182k • 938](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B)
+- [CohereForAI/aya-vision-8b Updated 5 days ago • 119k • 200](https://huggingface.co/CohereForAI/aya-vision-8b)
+- [Running 1.02k 1.02k Wan2.1 💻 Wan: Open and Advanced Large-Scale Video Generative Models](https://huggingface.co/spaces/Wan-AI/Wan2.1)
+- [Running 2.14k 2.14k The Ultra-Scale Playbook 🌌 The ultimate guide to training LLM on large GPU Clusters](https://huggingface.co/spaces/nanotron/ultrascale-playbook)
+- [Running on Zero 282 282 Di♪♪Rhythm 🎶 Blazingly Fast and Embarrassingly Simple Song Generation](https://huggingface.co/spaces/ASLP-lab/DiffRhythm)
+- [Running 253 253 QwQ 32B Demo 🌖 Generate text responses based on user input](https://huggingface.co/spaces/Qwen/QwQ-32B-Demo)
+- [Running on Zero 7.72k 7.72k FLUX.1 [dev] 🖥 Generate images from text prompts](https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev)
+- [facebook/natural_reasoning Updated 16 days ago • 8.25k • 346](https://huggingface.co/datasets/facebook/natural_reasoning)
+- [Congliu/Chinese-DeepSeek-R1-Distill-data-110k Updated 16 days ago • 6.56k • 484](https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k)
+- [FreedomIntelligence/medical-o1-reasoning-SFT Updated 15 days ago • 26.4k • 391](https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT)
+- [GeneralReasoning/GeneralThought-195K Updated 6 days ago • 497 • 54](https://huggingface.co/datasets/GeneralReasoning/GeneralThought-195K)
+- [KodCode/KodCode-V1 Updated 3 days ago • 1.81k • 51](https://huggingface.co/datasets/KodCode/KodCode-V1)
+- [Inference Endpoints](https://ui.endpoints.huggingface.co/)
+- [Spaces applications](https://huggingface.co/pricing#spaces)
+- [Ai2 Enterprise non-profit • 391 models • 2.74k followers](https://huggingface.co/allenai)
+- [AI at Meta Enterprise company • 2.07k models • 4.98k followers](https://huggingface.co/facebook)
+- [Amazon company • 20 models • 2.83k followers](https://huggingface.co/amazon)
+- [Google company • 959 models • 8.61k followers](https://huggingface.co/google)
+- [Intel company • 219 models • 2.32k followers](https://huggingface.co/Intel)
+- [Microsoft company • 362 models • 10k followers](https://huggingface.co/microsoft)
+- [Grammarly Enterprise company • 10 models • 131 followers](https://huggingface.co/grammarly)
+- [Writer Enterprise company • 20 models • 247 followers](https://huggingface.co/Writer)
+- [Transformers 140,836 State-of-the-art ML for PyTorch, TensorFlow, JAX](https://huggingface.co/docs/transformers)
+- [Diffusers 27,925 State-of-the-art Diffusion models in PyTorch](https://huggingface.co/docs/diffusers)
+- [Safetensors 3,152 Safe way to store/distribute neural network weights](https://huggingface.co/docs/safetensors)
+- [Hub Python Library 2,406 Python client to interact with the Hugging Face Hub](https://huggingface.co/docs/huggingface_hub)
+- [Tokenizers 9,451 Fast tokenizers optimized for research & production](https://huggingface.co/docs/tokenizers)
+- [TRL 12,330 Train transformers LMs with reinforcement learning](https://huggingface.co/docs/trl)
+- [Transformers.js 13,156 State-of-the-art ML running directly in your browser](https://huggingface.co/docs/transformers.js)
+- [smolagents 14,076 Smol library to build great agents in Python](https://huggingface.co/docs/smolagents)
+- [PEFT 17,673 Parameter-efficient finetuning for large language models](https://huggingface.co/docs/peft)
+- [Datasets 19,748 Access & share datasets for any ML tasks](https://huggingface.co/docs/datasets)
+- [Text Generation Inference 9,859 Serve language models with TGI optimized toolkit](https://huggingface.co/docs/text-generation-inference)
+- [Accelerate 8,444 Train PyTorch models with multi-GPU, TPU, mixed precision](https://huggingface.co/docs/accelerate)
+- [Tasks](https://huggingface.co/tasks)
+- [HuggingChat](https://huggingface.co/chat)
+- [About](https://huggingface.co/huggingface)
+- [Brand assets](https://huggingface.co/brand)
+- [Terms of service](https://huggingface.co/terms-of-service)
+- [Privacy](https://huggingface.co/privacy)
+- [Jobs](https://apply.workable.com/huggingface/)
+- [Press](mailto:press@huggingface.co)
+- [Learn](https://huggingface.co/learn)
+- [Blog](https://huggingface.co/blog)
+- [Forum](https://discuss.huggingface.co/)
+- [Service Status](https://status.huggingface.co/)
+- [GitHub](https://github.com/huggingface)
+- [Twitter](https://twitter.com/huggingface)
+- [LinkedIn](https://www.linkedin.com/company/huggingface/)
+- [Discord](https://huggingface.co/join/discord)
+- [Zhihu](https://www.zhihu.com/org/huggingface)
+- [WeChat](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/chinese-language-blog/wechat.jpg)

@@ -1,0 +1,149 @@
+---
+/**
+ * ChangelogEntry.astro
+ * Renders a single changelog entry using the base CollectionEntryRow component
+ * 
+ * @component
+ * @example
+ * ```astro
+ * <ChangelogEntry
+ *   title="New Feature Release"
+ *   date="2025-03-18"
+ *   version="1.0.0"
+ *   category="Feature"
+ * >
+ *   <p>Added new functionality...</p>
+ * </ChangelogEntry>
+ * ```
+ */
+
+import CollectionEntryRow from '../basics/CollectionEntryRow.astro';
+import { formatDate } from '../../utils/formatDate';
+
+interface Props {
+  /**
+   * Title of the changelog entry
+   */
+  title: string;
+
+  /**
+   * Publication date of the entry
+   */
+  date: Date | string;
+
+  /**
+   * Optional version number
+   */
+  version?: string;
+
+  /**
+   * Optional category (Feature, Fix, etc.)
+   */
+  category?: string;
+
+  /**
+   * Optional CSS classes
+   */
+  class?: string;
+}
+
+const { 
+  title, 
+  date, 
+  version, 
+  category,
+  class: className 
+} = Astro.props;
+
+// Format the date consistently
+const formattedDate = formatDate(new Date(date));
+---
+
+<CollectionEntryRow class:list={["changelog-entry", className]}>
+  <div class="changelog-entry__header">
+    <div class="changelog-entry__meta">
+      <time datetime={formattedDate}>{formattedDate}</time>
+      {version && <span class="changelog-entry__version">v{version}</span>}
+      {category && <span class="changelog-entry__category">{category}</span>}
+    </div>
+    <h2 class="changelog-entry__title">{title}</h2>
+  </div>
+  <div class="changelog-entry__content">
+    <slot />
+  </div>
+</CollectionEntryRow>
+
+<style>
+  /* Header Section */
+  .changelog-entry__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Meta Information */
+  .changelog-entry__meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--ff-legible);
+    font-size: var(--fs-300);
+    color: var(--clr-lossless-primary-light);
+  }
+
+  time {
+    color: var(--clr-lossless-accent--brightest);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .changelog-entry__version {
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    background: var(--clr-lossless-primary-glass);
+    font-family: var(--ff-legible);
+  }
+
+  .changelog-entry__category {
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    background: var(--clr-lossless-attn-action);
+    color: var(--white--pure);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  /* Title */
+  .changelog-entry__title {
+    font-size: var(--fs-600);
+    color: var(--clr-heading);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  /* Content Section */
+  .changelog-entry__content {
+    font-family: var(--ff-legible);
+    font-size: var(--fs-400);
+    color: var(--clr-body);
+    line-height: 1.6;
+  }
+
+  /* List Styling within Content */
+  .changelog-entry__content :global(ul) {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .changelog-entry__content :global(li) {
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .changelog-entry__content :global(li::before) {
+    content: "•";
+    color: var(--clr-lossless-accent--brightest);
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+  }
+</style>

@@ -1,5 +1,5 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/base",
   "include": [".astro/types.d.ts", "src/**/*"],
   "exclude": ["dist"],
   "compilerOptions": {
@@ -26,6 +26,18 @@
       ],
       "@styles/*": [
         "./src/styles/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@scripts/*": [
+        "./scripts/*"
+      ],
+      "@changelog--code/*": [
+        ".src/content/changelog-code/*"
+      ],
+      "@changelog--content/*": [
+        ".src/content/changelog-content/*"
       ]
     },
     "types": ["astro/client"],

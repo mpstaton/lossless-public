@@ -1,4 +1,13 @@
+---
 
+site_uuid: 800eb7d5-144f-4b76-9c39-f1d08bab549c
+site_uuid: 03706663-9947-4189-9beb-d3823c500dd4
+site_uuid: 89df73b0-b1e5-45e3-82a9-91b9a4f46455
+site_uuid: ef3034a6-8c30-486a-871c-65a152ffc838
+site_uuid: eae37def-a839-4fba-a7ce-8debdb9756c6
+site_uuid: e9f7c466-780d-4ce9-9d3f-f36152eefdb9
+site_uuid: be60577e-46bc-4f6b-bf14-a56ac5045dc7
+---
 ### AI Powered Web Crawlers
 Tools like [[Hexomatic]], [[Spider]], [[Jina.ai]], [[Firecrawl]]
 [[Crawl4 AI]]

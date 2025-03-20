@@ -1,0 +1,33 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "Skip to main content": "https://moonrepo.dev/#__docusaurus_skipToContent_fallback",
+      "": "https://gallery.so/?ref=moonrepo",
+      "moonBuild system for managing codebases": "https://moonrepo.dev/moon",
+      "protoMulti-language version manager": "https://moonrepo.dev/proto",
+      "moon": "https://moonrepo.dev/docs",
+      "proto": "https://moonrepo.dev/docs/proto",
+      "Guides": "https://moonrepo.dev/docs/guides/ci",
+      "Blog": "https://moonrepo.dev/blog",
+      "GitHub": "https://github.com/moonrepo",
+      "Sign in": "https://moonrepo.app/",
+      "integrated toolchain": "https://moonrepo.dev/#proto",
+      "API": "https://moonrepo.dev/api",
+      "Releases": "https://github.com/moonrepo/moon/releases",
+      "Shared configs": "https://github.com/moonrepo/moon-configs",
+      "Developer tools": "https://github.com/moonrepo/dev",
+      "Examples repository": "https://github.com/moonrepo/examples",
+      "Discord": "https://discord.gg/qCh9MEynv2",
+      "Twitter": "https://twitter.com/tothemoonrepo"
+    },
+    "title": "A developer productivity tooling platform. | moonrepo",
+    "description": "From build to deploy, moonrepo is a better way to manage codebases, save developer time, and boost your business.",
+    "url": "https://moonrepo.dev/",
+    "content": "A developer productivity tooling platform. | moonrepo\n===============  \n\n[Skip to main content](https://moonrepo.dev/#__docusaurus_skipToContent_fallback)\n\n[![Image 1: moon](https://moonrepo.dev/img/logo.svg)](https://moonrepo.dev/)\n\n[Products](https://moonrepo.dev/)\n\n*   [**moon** Build system for managing codebases](https://moonrepo.dev/moon)\n*   [**proto** Multi-language version manager](https://moonrepo.dev/proto)\n\n[Docs](https://moonrepo.dev/)\n\n*   [**moon**](https://moonrepo.dev/docs)\n*   [**proto**](https://moonrepo.dev/docs/proto)\n\n[Guides](https://moonrepo.dev/docs/guides/ci)[Blog](https://moonrepo.dev/blog)[GitHub](https://github.com/moonrepo)\n\n[Sign in](https://moonrepo.app/)\n\nSearchK\n\nNew era of productivity tooling\n-------------------------------\n\nFrom build to deploy, moonrepo is a better way to manage codebases, save developer time, and boost your business.\n\n##### A system for a solid foundation\n\n![Image 2](https://moonrepo.dev/brand/moon/icon.svg)\n\nSupercharge your codebase\n-------------------------\n\nFor repositories with multiple projects, any number of languages, and team members constantly pushing changes, [moon](https://moonrepo.dev/moon) will help simplify the experience of working in and maintaining a complex monorepo.\n\n[Learn more about moon](https://moonrepo.dev/moon)\n\n*   ##### Efficient task orchestation\n    \n    Never run the same task twice. With our smart hashing, robust caching, and efficient task execution, moon will avoid unnecessary work.\n    \n*   ##### Better project organization\n    \n    Neatly organize your codebase, declare ownership information, and simplify project discovery.\n    \n*   ##### Integrated development environment\n    \n    With our [integrated toolchain](https://moonrepo.dev/#proto), development environments will be spun up in minutes, ensuring the exact tools and versions are used across developers and machines.\n    \n\n##### A toolchain for the modern era\n\n![Image 3](https://moonrepo.dev/brand/proto/icon.svg)\n\nAutomate your environments\n--------------------------\n\nRemove the hassle of managing and enforcing specific versions of programming languages across teams or projects. With [proto](https://moonrepo.dev/moon), our modern version manager, this entire workflow is automated away through a single tool.\n\n[Learn more about proto](https://moonrepo.dev/proto)\n\n*   ##### Multi-language support\n    \n    Manage versions of multiple languages and dependency managers through a single interface. A single source of truth.\n    \n*   ##### Contextual version detection\n    \n    Detects and infers versions and semantics from a language's ecosystem for maximum compatibility and interoperability.\n    \n*   ##### Lightspeed interface\n    \n    Download, install, and run tools with lightspeed, thanks to our Rust based foundation.\n    \n\n### Used by these innovative companies\n\n[](https://depot.dev/?ref=moonrepo \"Depot\")\n\n[](https://gallery.so/?ref=moonrepo \"(Gallery)\")\n\n[](https://moonrepo.dev/ \"List your company here\")\n\nFooter\n------\n\n###### Learn\n\n*   [Docs](https://moonrepo.dev/docs)\n*   [Guides](https://moonrepo.dev/docs/guides/ci)\n*   [Blog](https://moonrepo.dev/blog)\n*   [API](https://moonrepo.dev/api)\n\n###### Ecosystem\n\n*   [Releases](https://github.com/moonrepo/moon/releases)\n*   [Shared configs](https://github.com/moonrepo/moon-configs)\n*   [Developer tools](https://github.com/moonrepo/dev)\n*   [Examples repository](https://github.com/moonrepo/examples)\n\n###### Support\n\n*   [GitHub](https://github.com/moonrepo)\n*   [Discord](https://discord.gg/qCh9MEynv2)\n*   [Twitter](https://twitter.com/tothemoonrepo)\n\n###### Contact us\n\nWant to learn more about moonrepo? Have questions?\n\nSubject\n\nNext\n\nBacked by\n\nCopyright © 2025, moonrepo, Inc.\n\n[GitHub](https://github.com/moonrepo)[Discord](https://discord.gg/qCh9MEynv2)[Twitter](https://twitter.com/tothemoonrepo)",
+    "usage": {
+      "tokens": 905
+    }
+  }
+}

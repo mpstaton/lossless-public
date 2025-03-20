@@ -1,9 +1,16 @@
 ---
 tags:
-  - tech-trend
+- tech-trend
 aliases:
-  - AI
-  - Enterprise AI
+- AI
+- Enterprise AI
+site_uuid: 2714bd4b-69e5-434c-89cd-4f215ebcb114
+site_uuid: 8a647237-aede-4ae8-9a5c-ddd60f0a0507
+site_uuid: 875028bd-06c0-433f-b8ee-354f156b2835
+site_uuid: d1765e2a-954a-4e19-91d7-4d440320333d
+site_uuid: 0a74f6bd-3702-4d06-bd01-25289b4a0082
+site_uuid: e47900f1-0c64-4840-b0c7-a618b34b02e9
+site_uuid: a2a81bf6-7fa9-4537-a2e3-3a98cc46cf59
 ---
 ## Enterprise AI
 [[n8n]], [[Flowise]], [[Dynamiq AI]], [[Coveo]], [[Glean]],  [[Abacus AI]], [[Tribe AI]]
@@ -11,13 +18,27 @@ aliases:
 
 https://youtu.be/kbG2CWrmKTw?si=IszFpFxy41V-XjbI
 
+https://youtube.com/playlist?list=PLoROMvodv4rPgrvmYbBrxZCK_GwXvDVL3&si=LjXEu5jUJ3GJlxyF
+
+https://youtu.be/JrLt5LXW1mo?si=-bF3fAMZ6PCocRWT
+
+https://youtu.be/XNqpySV97IU?si=3grm_Z79Rs-w2qXb
+
+https://youtu.be/LgUjLcxJxVg?si=2UoT3Fn0Q8N_k6u2
+
 https://youtu.be/RtQmNp5FKsk?si=siw13Vg91ch5CSRb
 
 https://youtu.be/LEwgy73sVKk?si=A9_f_lD7zQfmlo7S
+
 https://youtu.be/3sYBe7yEJ3U?si=jxo1Lx5ZmpC3b0tx
+
 https://youtu.be/fN3gdUMB_Yc?si=lKSP6ugt866CHqOB
 
+https://youtu.be/LXUw0xSib-g?si=NpGju211hMoHtrfq
+
 https://youtu.be/aIKfA3gIXwo?si=nin9ebWKU_zl4EcM
+
+https://youtu.be/MG9oqntiJKg?si=RdorDZ1v_vWcUkCe
 
 https://youtu.be/_IOh0S_L3C4?si=`FIXF0YYNOLWMWxdX
 
@@ -33,7 +54,14 @@ https://youtu.be/561dyCTvGlQ?si=w59IWRCh1rc6vB_u
 
 https://youtu.be/XrQjJML8BhM?si=BJrfaXHwvFYBwa_7
 
+https://youtu.be/yRV8HjxJhl8?si=QKECush59iwSq-it
+
 https://youtu.be/huu_9rAEiQU?si=-tdyebDzaL73083p
+
+https://youtu.be/UeQQHbcqN0s?si=PTeXQd0Cqc_C7vtO
+
+https://youtube.com/playlist?list=PL2xnrU4RbY0B69mhYZPpxMH9UI4f14YMj&si=X137r01JaPT3-ws6
+
 ### AI Assisted Data Capture
 
 [[AI Powered Data Capture]]
@@ -43,6 +71,8 @@ https://youtu.be/huu_9rAEiQU?si=-tdyebDzaL73083p
 https://youtu.be/UGO_Ehywuxc?si=QimsVzGpbGrE2iCf
 
 https://youtu.be/379s4W_EaTk?si=InM4l_p7xSad8YXh
+
+https://youtu.be/SjSl2re_Fm8?si=hfX2YFP0tJND5eH4
 
 > [!NOTE] AI Explains
 > ### **How Does AI Work?**
@@ -244,3 +274,5 @@ https://youtu.be/379s4W_EaTk?si=InM4l_p7xSad8YXh
 2024, Nov 20. [Visualizing transformers and attention](https://youtu.be/KJtZARuO3JY?si=ZKOnYprOiwIb8CQB). 3blue1brown. [[YouTube]].
 
 https://youtu.be/-RyUERQL-Y8?si=y2ARMOtiZY9Tt5ty
+
+https://www.youtube.com/live/esCSpbDPJik?si=5_zCH4nwkSlWPxJA

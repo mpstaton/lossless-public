@@ -1,0 +1,36 @@
+---
+/**
+ * changelog.astro
+ * Entry point for the changelog page, integrating all changelog components
+ * 
+ * USES:
+ * - site/src/layouts/Changelog.astro (Page layout)
+ * - site/src/components/workflow/ChangelogEntries.astro (Content rendering)
+ * - site/src/utils/frontmatterIrregularityFilterReturnsValidFrontmatterOnly.ts (Data validation)
+ * 
+ * @page
+ */
+
+import ChangelogLayout from '../../layouts/Changelog.astro';
+import ChangelogEntries from '../../components/workflow/ChangelogEntries.astro';
+import { filterValidFrontmatter } from '../../utils/frontmatterIrregularityFilterReturnsValidFrontmatterOnly';
+
+// Page metadata
+const pageTitle = "Project Changelog";
+const pageDescription = "Track the evolution of our project through detailed changelog entries. View recent updates, improvements, and fixes.";
+---
+
+<ChangelogLayout 
+  title={pageTitle}
+  description={pageDescription}
+>
+  <ChangelogEntries
+    maxHeight="80vh"
+    filter={filterValidFrontmatter}
+  />
+</ChangelogLayout>
+
+<style>
+  /* Page-specific styles can be added here */
+  /* Currently using styles from layout and components */
+</style>

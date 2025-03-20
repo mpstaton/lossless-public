@@ -1,0 +1,1918 @@
+---
+updated_on: "2025-03-14T11:17:31.326Z"
+included_file_count: 692
+totally_clean_files: 623
+files_with_minor_inconsistencies: 69
+total_file_count: 729
+successful_corrections: 565
+---
+
+# Markdown Files Screened-In for Processing
+Last updated: 2025-03-14T11:17:31.326Z
+
+## Summary
+- Totally clean files: 623
+- Files with minor inconsistencies: 69
+- Total included files: 692 (out of 729 total)
+- Successful auto-corrections: 565
+
+## Files with Minor Inconsistencies
+These files have issues that prevent specific operations, but can still be processed by other operations:
+
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/gguf.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/OLlama.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/Kobold CPP.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/JetPack.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Microsoft Copilot Studio.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/n8n.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Archon.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Arctic Agentic RAG.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/AutoGen.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/OctoTools.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/smolagents.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Exo.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Avatars.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Copilots.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Interfaces.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Programming Frameworks.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Studios.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Workspaces.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Artificial General Intelligence.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Artificial Intelligence.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Code Generator.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Image Generator.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/LPU.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Model Context Protocol.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Music Generators.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Prompt Wizard.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Reason on Agentic Reasoning.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Topological Graph Contrastive Learning.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/World Foundation Models.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/OpenCodeInterpreter.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/RepoPrompt.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Roo Code.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/DeepBrain AI.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Dreammachine.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Crawl4 AI.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Kotaemon.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/LightRAG.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/OpenAI.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Diffusion Language Models.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/GPT-Series Models.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/O-Series Models.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/OpenBMB.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Qwen.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Stable Diffusion.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Wan.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Whisper.cpp.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/r1.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/O3G Engine.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/PowerBI.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Totem.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/ESP32.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Excel.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Teams.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Excel.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Mirror.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Salesforce.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/SharePoint.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Amazon Web Services.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Bolt.diy.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Supabase.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/uv.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Postman.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/UI Builders/WebStudio.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/C Sharp.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/CSS.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Go.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Libraries/Vite Federation Plugin.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/R Programming Language.md
+  - Prevented operations: fetchOpenGraphData.cjs
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Visual Studio Code.md
+  - Prevented operations: fetchOpenGraphData.cjs
+
+## Auto-Correction Attempts
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Amazon Bedrock.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/CoreWeave.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Fireworks AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Groq.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Lambda Labs.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/MemoriPy.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Modular.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/NotDiamond.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Novita AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Rivalz AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/SiliconCloud.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/SiliconFlow.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Together AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/ggml.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Abacus AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/AnythingLLM.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Big AGI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Cortex.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Galaxy AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Hugging Face Spaces.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Jan.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/LM Studio.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/MSTY.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Mem.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Multitask AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/NotebookLM.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Omnitool.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/OpenRouter.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/OpenWebUI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Poe AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Coveo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Granola.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Jasper.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Keak.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Lately AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/Hume AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/Kobold AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Azure AI Foundry.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Composio.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Dataloop.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Dify.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Hono.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/LangChain.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/LangGraph.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Langbase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/TensorFlow.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Vellum.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Acree AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Active Pieces.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/AgentQL.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/Crew AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/Dynamiq AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/Kestra.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/LLM Stack.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Assembly AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Auto GPT.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Bardeen.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Bee Agent.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Convergence AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Firecrawl.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Flowise.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/GodMode.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Gumloop.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Lindy AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Lindy.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Mem0.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/MindPal AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/PartyKit.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/PromptQL.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Pydantic AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Relevance AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Rewind AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/RunBear.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Spider.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Stack AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Archon Labs.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/CntxtJS.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Advex AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/BluedotHQ.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Browserbase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Context AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Exa.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Hexomatic.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Jina.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Limitless AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Mistral OCR.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Unstract.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/olmOCR.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Deep Graph Library.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Voice Generator.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/AI Studios.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Aceternity AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Adobe Express.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/AppGen.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Banani.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/CapCut.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/CinemaFlow.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/AgentFarm.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Aider.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/AppMap.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Augment Code.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Bind IDE.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Bolt.new.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Chat2db.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/CodeLLM.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Continue AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/CopyCoder.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Cursor.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Databutton.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Deepseek Coder.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Fine.dev.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/GitHub Copilot.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Grit.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Lovable.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Magic.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Melty.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Pear IDE.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Poolside.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Program AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Pythagora.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Tempo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Trae AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Warp.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Wave Terminal.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Windsurf IDE.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Zed.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/supermaven.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/v0.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/ComfyUI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Creatie.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Davinci.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Draft Alpha.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Durable.co.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Elai.io.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Fal Ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Feedhive.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Flux AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Galileo AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Hailuo AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Hedra.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Helix AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/HeyGen.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Hyper3d.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/ImageFX.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Immersity AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Jellypod.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Kaliber.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Kling.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Krea AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Leonardo AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Live Portait AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/LivePeer.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Luny AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Midjourney.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/MindStudio.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Minimax AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Mureka.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Napkin AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Orbit AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Panopto.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Pickle AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Pika Labs.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Pikszels.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/PixVerse AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Playground AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Plus AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Relume AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Runway.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/ScrBook.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Slidesgo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Synthesia.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/UI Bakery.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/UIzard.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/UX Pilot.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Udio.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Upscayle.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Viggle AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Hugging Face.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/AutoML.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Cohere.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Dashworks.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Eden AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Embra AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Glean.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/GraphRAG.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Guru.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Luminary AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/MindsDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Pienso.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Qdrant.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Speakdocs.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Templafy.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Magentic-One.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/AI2.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Anthropic.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Apple Intelligence.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Cognition AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/DeepSeek.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/ElevenLabs.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Exo Labs.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Fixie AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Groq.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Luma Labs.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Microsoft Research.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Midjourney.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Sakana.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Sentient AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Sesame AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Stability AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Claude.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Cosmos World Foundation.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Deep Research.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Gemini.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Gemma.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Gorilla.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Grok.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/LLaMA.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/LLaVa.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Magma.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Perplexica.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/STORM.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Ultravox.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Numbers Station.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/PhenoML.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Promptly.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Spotter Studio.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/There's an AI for That.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Tribe AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Unsloth.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Upstage AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Vertex AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Vibe AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/f5-TSS.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/superwhisper.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Affinity.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/After Effects.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Blender.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Coolers.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/EZgf.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Figma.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/IconScout.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Kdenlive.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Linearity.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Litur.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Ludenso.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Manim.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Material Design.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Movavi.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/OnShape.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/ScreenStudio.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Supernova.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Ultimate Vocal Remover.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Unreal Engine.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Verse.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/wootag.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Astronomer.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Atlan.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/BigQuery.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/BrightData.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/DataBricks.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/DataDog.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Encord.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Fivetran.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Heap.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Hevo Data.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Hex.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Hotjar.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Jupyter Notebooks.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/KanoChart.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Marimo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Mode.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/News API.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Node-RED.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Nushell.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Pandas AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/PipeKit.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Prisma.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Streamlit.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Tableau.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Trino.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Upstash.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/browserless.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Ahrefs AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Apollo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Appsheet.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Ardoq.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Board.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Bubble.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Coda.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Content Management Systems/Craft CMS.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Content Management Systems/Sanity.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Content Management Systems/Yext.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Contentsquare.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/FabricHQ.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Feedhive.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Folk.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Foreplay.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Freshworks.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Fuzen.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Glide.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Industrial and Financial Systems.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Integration Platforms/Boomi.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Integration Platforms/Make.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Jumpshare.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Keap.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Knack.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/MermaidChart.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Optimizely.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/PIXLpath.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/QAD.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Ragic!.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Segment.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Stornaway.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/TLDraw.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Tadabase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Twenty.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Typst.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Userlist.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Yoast.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/g2i.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Aria.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Bambu Lab.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Jetson.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Luckfox.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Raspberry Pi.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Affine.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Airtable.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Anytype.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Asana.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Bricks.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Bubbles.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/ClickUp.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/CraftDocs.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Dart.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Fathom AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Jitsi.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Loom.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Mattermost.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Mem.ai.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Microsoft Loop.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Monday.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Notion.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Odoo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/PapersApp.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Parabola.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Quip.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/RemoveBG.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Roam.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Slack.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Tana.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Tella.tv.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Typora.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Zoom.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Zotero.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/mxMarkEdit.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/AI Studios.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Discord.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/FaceSwap.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Git.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Google Maps.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Husky.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Kasm Workspaces.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Microsoft 365.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Microsoft Loop.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Rovo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/SingleStore.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/AirFocus.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Bun.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Azure.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Cloudflare.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Coolify.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Digital Ocean.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/DollarDeploy.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Fly.io.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Google Cloud.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Hostinger.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Lambda.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/NATS.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Nitro.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Podman.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Railway.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Replit.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/RepoCloud.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Snowflake.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/StackBlitz.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/The Guild.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Tigris.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Conan.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Aerospike.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/ArangoDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Cassandra.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/ChromaDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/CockroachDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Couchbase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/CrateDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Dgraph.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/DragonflyDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/DuckDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/EdgeDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Fauna.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Graphwise.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/HBase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/JanusGraph.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Milvus.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/OrientDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Postgres.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/RethinkDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/SQLite.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/SingleStore.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/SpacetimeDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/TerminusDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/TypeDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Vitess.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Deno.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Apache Airflow.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Cast AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Chaos Mesh.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Dagger.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/BitBucket.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/CodeAnt AI.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/Ghostty.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/GitHub.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/Jira.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/Kaleidoscope.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/Nova.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/OrbStack.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Docker.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Documentation Engines/Mintlify.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Documentation Engines/Nuclino.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Eraser.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/GitKraken.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Graphite.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Hatica.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Jam.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Jazz.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Kairos.io.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/LaunchDarkly.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Linear.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Logfire.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Merge.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/MoonRepo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Nx.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Pangolin.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Porrfor.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Proxmox.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Quorini.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Starlight.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Stellate.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Trigger.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/WhaleSync.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Zapier.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/gRPC.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/zerosync.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/D3js.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Embassy.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Expo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Loco.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Replicache.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Skip.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Vitest.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Adonis.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Alpine JS.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Angular.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Astro.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Blazor.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Django.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/DotNET.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Fast API.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Fastify.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Flask.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/HTMX.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Laravel.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Legend State.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Mermaid.js.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Meteor.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/NEXT.js.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/NestJS.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Nextra.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Nuxt.js.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Phoenix.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Quasar.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/React.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Remix.js.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Ruby on Rails.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Solid.js.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/StyleX.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Svelte.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Tailwind.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Unpoly.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Vue.js.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/21st.dev.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Auth0.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/AppWrite.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Baserow.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/BuildShip.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Convex.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Google Sheets.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/NocoBase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/NocoDB.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Outerbase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/SingleStore.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Turso.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/pocketbase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Clerk.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Contentlayer.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/FileFormat.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/ImageKit.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Metriport.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/OpenGraph.io.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/OpenZeppelin.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/StirlingPDF.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/UI Builders/Builder.io.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Vanta.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/shadcn.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/uploadthing.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lucide React.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Node Package Manager.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Node.js.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Paligo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Pendo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Pinokio.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Product Analytics/Product Fruits.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Product Analytics/Userpilot.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Product Analytics/Whatfix.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Product Plan.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/ProductBoard.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/C++.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Civet.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Elixir.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/JavaScript.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Julia.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Libraries/Antora.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Odin.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Ruby.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Rust.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Puppeteer.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/RS Build.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Scalar.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Tailscale.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Tauri.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Tinybase.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Turborepo.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Vite.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Whimsical.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/pnpm.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/AI Workshop.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Adapt Learning.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Coursera.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/DataCamp.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Enki.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Frontend Masters.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Manning Press.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Pluralsight.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Skool.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Udemy.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/WebDev Simplified.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Arc Browser.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Chrome.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Clonbrowser.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Edge Browser.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Firefox.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Ladybird.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Opera.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Zen Browser.md
+  - URL property spans multiple lines: ✅ Fixed multi-line URL property
+
+## Totally Clean Files
+These files have no issues and can be fully processed:
+
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Amazon Bedrock.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/CoreWeave.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Fireworks AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Groq.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Lambda Labs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/MemoriPy.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Modular.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/NotDiamond.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Novita AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Rivalz AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/SiliconCloud.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/SiliconFlow.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/Together AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Infrastructure/ggml.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Abacus AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/AnythingLLM.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Big AGI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Cortex.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Galaxy AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Hugging Face Spaces.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Jan.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/LM Studio.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/MSTY.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Mem.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Multitask AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/NotebookLM.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Omnitool.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/OpenRouter.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/OpenWebUI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Perplexity Spaces.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Poe AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Coveo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Granola.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Jasper.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Keak.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Lately AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Vertical Wrappers/Microsoft Copilot.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/Hume AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Interfaces/Kobold AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Azure AI Foundry.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Composio.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Dataloop.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Dify.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Hono.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/LangChain.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/LangGraph.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Langbase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/TensorFlow.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/Vellum.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Acree AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Active Pieces.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/AgentQL.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/Crew AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/Dynamiq AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/Kestra.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Agentic Workspaces/LLM Stack.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Assembly AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Auto GPT.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Bardeen.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Bee Agent.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Convergence AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Firecrawl.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Flowise.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/GodMode.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Gumloop.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Lindy AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Lindy.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Mem0.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/MindPal AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/PartyKit.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/PromptQL.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Pydantic AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Relevance AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Rewind AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/RunBear.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Spider.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic AI/Stack AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Agentic.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Archon Labs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/CntxtJS.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Advex AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/BluedotHQ.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Browserbase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Context AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Exa.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Hexomatic.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Jina.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Limitless AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Mistral OCR.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/Unstract.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Data Augmenters/olmOCR.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Cloud Infrastructure.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Generated Documentation.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Powered Personal Assistant.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI Reasoning.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI-Generated Customer Insights.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/AI-Powered Language Translation.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Agent Builders.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Auto-Regression.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Browser Agents.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/CoNLT.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Content Agents.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/D-RAG.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Deep Graph Library.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Deep Learning.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Design Generators.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Enhanced Graphs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Fine Tuning.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Graph Convolution Network.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/HealthTech AI Examples.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Knowledge Graph.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/LLM Parameters/LLM Streaming.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Mixture of Block Attention.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Mixture of Experts.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Open Source AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Quantization.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Simulated Human.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Sparse Mixture of Experts.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Subagents.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Swarm.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Synthetic Customers.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Voice Assistant.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Voice Generator.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Explainers/Website Cloning.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/AI Studios.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Aceternity AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Adobe Express.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/AppGen.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Banani.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/CapCut.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/CinemaFlow.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/AgentFarm.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Aider.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/AppMap.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Augment Code.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Bind IDE.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Bloop.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Bolt.diy.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Bolt.new.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Chat2db.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/CodeLLM.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Continue AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/CopyCoder.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Cursor.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Databutton.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Deepseek Coder.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Fine.dev.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/GitHub Copilot.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Google Code Assist.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Grit.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Lovable.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Magic.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Melty.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Pear IDE.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Poolside.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Program AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Pythagora.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Tempo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Trae AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Warp.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Wave Terminal.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Windsurf IDE.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Zed.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/supermaven.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/v0.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/ComfyUI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Creatie.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Davinci.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Draft Alpha.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Durable.co.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Elai.io.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Fal Ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Feedhive.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Flux AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Galileo AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Hailuo AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Hedra.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Helix AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/HeyGen.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Hyper3d.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/ImageFX.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Immersity AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Jellypod.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Kaliber.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Kling.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Krea AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Leonardo AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Live Portait AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/LivePeer.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Luny AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Midjourney.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/MindStudio.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Minimax AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Mureka.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Napkin AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Orbit AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Panopto.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Pickle AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Pika Labs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Pikszels.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/PixVerse AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Playground AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Plus AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Relume AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Runway.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/ScrBook.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Slidesgo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Synthesia.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/UI Bakery.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/UIzard.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/UX Pilot.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Udio.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Upscayle.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/VideoFX.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Generative AI/Viggle AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Hugging Face.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/AutoML.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Browser Use.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Cohere.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Dashworks.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Eden AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Embra AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Glean.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/GraphRAG.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Guru.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Luminary AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/MindsDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Pienso.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Qdrant.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Speakdocs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Knowledge AI/Templafy.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Magentic-One.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/AI2.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Anthropic.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Apple Intelligence.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Black Forest Labs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Cognition AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/DeepSeek.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/ElevenLabs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Exo Labs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Fixie AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Groq.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Luma Labs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Microsoft Research.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Midjourney.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Sakana.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Sentient AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Sesame AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Model Producers/Stability AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/CPM-Series.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Claude.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Codestral-Series.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Cosmos World Foundation.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Deep Research.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Devin.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Flux.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Gemini.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Gemma.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Gorilla.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Grok.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/LLaMA.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/LLaVa.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Magma.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Mixture of Experts.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Perplexica.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/STORM.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Small.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Sora-Series Models.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Models/Ultravox.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Numbers Station.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/PhenoML.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Promptly.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Spotter Studio.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/There's an AI for That.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Tribe AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Unsloth.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Upstage AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Vertex AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/Vibe AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/f5-TSS.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/AI-Toolkit/superwhisper.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Affinity.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/After Effects.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Blender.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Coolers.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/EZgf.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Figma.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/IconScout.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Kdenlive.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Linearity.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Litur.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Ludenso.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Manim.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Material Design.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Movavi.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/OnShape.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/ScreenStudio.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Supernova.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Ultimate Vocal Remover.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Unreal Engine.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/Verse.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Creative/wootag.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/AdaptCMS.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Astronomer.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Atlan.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/BigQuery.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/BrightData.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/DataBricks.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/DataDog.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Encord.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Fivetran.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Heap.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Hevo Data.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Hex.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Hotjar.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Jupyter Notebooks.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/KanoChart.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Marimo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Mode.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/News API.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Node-RED.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Nushell.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Pandas AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/PipeKit.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Prisma.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Streamlit.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Tableau.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Trino.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/Upstash.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Data Utilities/browserless.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Ahrefs AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Apollo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Appsheet.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Ardoq.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Board.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Bubble.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Coda.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Content Management Systems/Craft CMS.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Content Management Systems/Sanity.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Content Management Systems/Yext.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Contentsquare.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Docusign.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/FabricHQ.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Feedhive.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Folk.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Foreplay.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Freshworks.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Fuzen.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Glide.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Industrial and Financial Systems.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Integration Platforms/Boomi.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Integration Platforms/Make.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Jumpshare.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Keap.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Knack.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/MermaidChart.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Optimizely.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/PIXLpath.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/QAD.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Ragic!.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Segment.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Stornaway.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/TLDraw.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Tadabase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Twenty.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Typst.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Userlist.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/Yoast.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Enterprise Jobs-to-be-Done/g2i.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Aria.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Bambu Lab.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Coral Edge TPU.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Jetson.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Luckfox.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Hardware/Raspberry Pi.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Affine.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Airtable.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Anytype.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Asana.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Bricks.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Bubbles.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/ClickUp.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/CraftDocs.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Dart.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Eloqua.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Fathom AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Jitsi.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Loom.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Mattermost.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Mem.ai.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Microsoft Loop.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Monday.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Notion.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Odoo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/PapersApp.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Parabola.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Quip.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/RemoveBG.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Roam.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Slack.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Tana.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Tella.tv.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Typora.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Zoom.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/Zotero.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Productivity/mxMarkEdit.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/AI Studios.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Discord.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/FaceSwap.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Git.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Google Maps.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Husky.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Kasm Workspaces.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Microsoft 365.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Microsoft Loop.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/NotebookLM.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/Rovo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Products/SingleStore.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/AirFocus.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Bun.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Azure.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Bolt.new.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Cloudflare.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Coolify.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Digital Ocean.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/DollarDeploy.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Fly.io.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Google Cloud.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Hostinger.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Lambda.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/NATS.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Nitro.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Podman.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Railway.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Replit.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/RepoCloud.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Snowflake.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/StackBlitz.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/The Guild.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Cloud Infrastructure/Tigris.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Conan.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Aerospike.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/ArangoDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Cassandra.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/ChromaDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/CockroachDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Couchbase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/CrateDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Dgraph.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/DragonflyDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/DuckDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/EdgeDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Fauna.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Graphwise.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/HBase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/IndexedDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/JanusGraph.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Milvus.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/MongoDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Neo4j.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/OrientDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Postgres.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/RethinkDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/SQLite.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/SingleStore.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/SpacetimeDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/TerminusDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/TypeDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Databases/Vitess.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Deno.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Apache Airflow.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Cast AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Chaos Mesh.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Dagger.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/BitBucket.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/CodeAnt AI.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/Ghostty.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/GitHub.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/Jira.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/Kaleidoscope.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/Nova.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Developer Experience/OrbStack.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Docker.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Documentation Engines/Mintlify.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Documentation Engines/Nuclino.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Eraser.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/GitKraken.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Graphite.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Hatica.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Jam.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Jazz.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Kairos.io.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/LaunchDarkly.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Linear.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Logfire.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Merge.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/MoonRepo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Nx.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Pangolin.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Porrfor.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Proxmox.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Quorini.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Starlight.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Stellate.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Trigger.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/WhaleSync.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/Zapier.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/gRPC.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/DevOps/zerosync.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/D3js.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Embassy.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Expo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Loco.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Replicache.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Skip.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Vitest.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Adonis.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Alpine JS.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Angular.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Astro.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Blazor.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Django.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/DotNET.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Fast API.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Fastify.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Flask.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/HTMX.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Laravel.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Legend State.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Mermaid.js.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Meteor.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/NEXT.js.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/NestJS.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Nextra.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Nuxt.js.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Phoenix.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Quasar.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/React.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Remix.js.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Ruby on Rails.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Solid.js.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/StyleX.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Svelte.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Tailwind.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Unpoly.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Frameworks/Web Frameworks/Vue.js.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/21st.dev.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Auth0.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/AppWrite.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Baserow.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/BuildShip.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Convex.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Google Sheets.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/NocoBase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/NocoDB.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Outerbase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/SingleStore.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/Turso.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Backend-as-a-Service/pocketbase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Clerk.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Contentlayer.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/FileFormat.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/ImageKit.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Metriport.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/OpenGraph.io.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/OpenZeppelin.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/StirlingPDF.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/UI Builders/Builder.io.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Vanta.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/shadcn.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/uploadthing.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Lucide React.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Node Package Manager.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Node.js.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Paligo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Pendo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Pinokio.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Product Analytics/Product Fruits.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Product Analytics/Userpilot.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Product Analytics/Whatfix.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Product Plan.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/ProductBoard.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/AppScript.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/C++.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Civet.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Elixir.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/JavaScript.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Julia.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Libraries/Antora.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Odin.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/PHP.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Ruby.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Programming Languages/Rust.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Puppeteer.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/RS Build.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Scalar.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Tailscale.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Tauri.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Tinybase.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Turborepo.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Vite.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/Whimsical.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/pnpm.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Software Development/tmux.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/AI Workshop.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Adapt Learning.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Coursera.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/DataCamp.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Enki.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Frontend Masters.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Manning Press.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Pluralsight.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Skool.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/Udemy.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Training/WebDev Simplified.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Arc Browser.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Chrome.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Clonbrowser.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Edge Browser.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Firefox.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Ladybird.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Opera.md
+- /Users/mpstaton/code/lossless/202503_lossless-public/site/src/content/tooling/Web Browsers/Zen Browser.md

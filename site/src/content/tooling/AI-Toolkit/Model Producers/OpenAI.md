@@ -1,62 +1,51 @@
+---
+site_uuid: 541235f6-b488-4042-8a76-9f144ccccf36
+title: OpenAI
+tags:
+  - AI-Toolkit
+  - Model Producers
+site_visibility: public
+site_uuid: 1bfcee54-d4b9-4b38-8bc9-3af1cc14b7f7
+site_uuid: bcf34361-3844-4d42-93e0-1f7da1bc6661
+site_uuid: 0e2b415e-331d-4641-9c65-052fa95cea78
+site_uuid: 520fd931-0dab-4680-bcbd-40b0caf64307
+site_uuid: 1d440411-6af2-4d55-be1c-ae013048a9cb
+site_uuid: b0251e90-3929-4917-9f63-71dc41fcbcd8
+---
 
+https://youtu.be/RPbmMmcNvYA?si=2HVnqr9U2mQ607Bn
+
+https://youtu.be/e7qvd2bOITc?si=RmqPAEhUk6F4-Qrd
+
+https://youtu.be/0pGxoubWI6s?si=i_PDvzO-oGJIcSko
 
 An organization that researches, develops, and publishes [[Large Language Models]]. Run by [[Sam Altman]], funded primarily by [[Microsoft]]
 
 Here is a timeline of OpenAI's major model releases, their features, and use cases:
 
-### **GPT Series**
-1. **GPT-1 (June 2018)**  
-   - **Parameters**: 117 million  
-   - **Key Features**: Introduced the transformer architecture for language modeling.  
-   - **Use Cases**: Basic text generation and understanding[1][2].
 
-2. **GPT-2 (February 2019)**  
-   - **Parameters**: 1.5 billion  
-   - **Key Features**: Significantly improved coherence and relevance in text generation.  
-   - **Use Cases**: Creative writing, summarization, and basic chatbot applications[1][2].
+![](https://i.imgur.com/7IrU6X0.png)
 
-3. **GPT-3 (June 2020)**  
-   - **Parameters**: 175 billion  
-   - **Key Features**: Zero-shot and few-shot learning capabilities, producing human-like text.  
-   - **Use Cases**: Content creation, coding assistance, and conversational AI[1][2].
+![](https://i.imgur.com/jWQE72H.png)
 
-4. **GPT-3.5 (December 2022)**  
-   - **Key Features**: Enhanced conversational abilities over GPT-3.  
-   - **Use Cases**: Customer support, virtual assistants, and interactive applications[2].
 
-5. **GPT-4 (March 2023)**  
-   - **Parameters**: 1.5 trillion  
-   - **Key Features**: Multimodal capabilities (text and image processing), deeper contextual understanding.  
-   - **Use Cases**: Advanced research, complex problem-solving, and multimodal tasks[1][2].
+![](https://i.imgur.com/LjoNtVM.png)
 
-6. **GPT-4 Turbo (November 2023)**  
-   - **Key Features**: Optimized for faster performance with lower costs.  
-   - **Use Cases**: High-demand commercial applications[2].
 
-7. **GPT-4o (May 2024)**  
-   - **Key Features**: Added voice and multilingual capabilities; state-of-the-art benchmarks in vision and speech recognition.  
-   - **Use Cases**: Multimodal AI agents, translation, and accessibility tools[5].
 
-8. **GPT-5 (Expected Early 2025)**  
-   - **Projected Features**: Autonomous reasoning, improved reliability, and real-world task automation without human oversight[2].
+![](https://i.imgur.com/TK3RCJt.png)
+
+![](https://i.imgur.com/fvZFsWH.png)
+
+![](https://i.imgur.com/EAV74I1.png)
+
 
 ---
 
 ### **O-Series Models**
 1. **o1 (September 2024)**  
-   - **Key Features**: Focus on reasoning for scientific research, coding, and legal analysis. Designed to "think" longer before responding for accuracy.  
-   - **Use Cases**:
-     - Advanced coding and debugging[3].
-     - Scientific research assistance[7].
-     - Legal document processing[7].
-
-2. **o3 (December 2024)**  
-   - **Key Features**: Improved reasoning over o1 with faster performance; excels in STEM tasks and competitive coding benchmarks like Codeforces.  
-   - **Use Cases**:
-     - Research-level mathematics[4].
-     - Software engineering (SWE-bench)[4].
-     - Competitive programming[6].
-
+   - **Key Features**: Focus on reasoning for scientific research, coding, and legal analysis. Designed to "think" longer before responding for accuracy. - **Use Cases**: - Advanced coding and debugging[3]. - Scientific research assistance[7]. - Legal document processing[7]. 2. **o3 (December 2024)**
+   - **Key Features**: Improved reasoning over o1 with faster performance; excels in STEM tasks and competitive coding benchmarks like Codeforces. - **Use Cases**: - Research-level mathematics[4]. - Software engineering (SWE-bench)[4]. - Competitive programming[6].
 ---
 
 ### Other Models
@@ -114,4 +103,3 @@ https://youtu.be/uW8C6u-fwVo?si=3QV6TDUGhIDWc6xH
 ![[Screenshot From 2025-03-04 01-00-02_OpenAI--Spigot-Pricing.png]]
 
 ![[Screenshot From 2025-03-04 01-00-17_OpenAI--Spigot-Pricing.png]]
-

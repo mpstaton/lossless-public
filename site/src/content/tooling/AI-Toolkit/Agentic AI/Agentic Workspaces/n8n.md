@@ -1,11 +1,18 @@
 ---
+site_uuid: 676fbd61-103c-4ac1-834f-96e693ca0528
 youtube_url: https://www.youtube.com/@n8n-io
-tags:
-  - iPaaS
-  - Workflow-Automation
-  - Agentic-AI
-  - Agentic-Workspaces
-  - Check-it-Out
+tags: 
+- iPaaS
+- Workflow-Automation
+- Agentic-AI
+- Agentic-Workspaces
+- Check-it-Out
+site_uuid: df6e00d9-d4d8-490f-aad7-6eaa1b70dd33
+site_uuid: d7d573ea-c19a-4240-9626-de2c67465ea6
+site_uuid: 0e652ddc-dfab-4186-944c-9952b664f740
+site_uuid: cf0a9af4-e0ef-4322-84b0-f4ef5d6c1dae
+site_uuid: 7c85b224-02da-4932-aea6-b20ac87ee71e
+site_uuid: 2f34530a-7a6a-4d72-a6e6-008db8a3c738
 ---
 Here's an [[n8n]] beginner course on [[YouTube]] created by n8n. The [n8n Beginner course](https://youtube.com/playlist?list=PLlET0GsrLUL59YbxstZE71WszP3pVnZfI&si=T8vhC2cKnjVlxh4u)
 
@@ -17,7 +24,11 @@ https://youtu.be/omw1MEvMCo0?si=EAqibsjQKqQE57EK
 
 https://youtu.be/oEG06WVBBVg?si=e8cBuWEKZOYArLST
 
+https://youtu.be/MNYx_0a2XqI?si=sb3j42It8Qb2eL9f
+
 https://youtu.be/tr5_S1FGoUI?si=WXxAHOnGkc7Nx686
+
+https://youtu.be/EWBuSSNXKcQ?si=h7APe91vWniTXy6Z
 
 https://youtu.be/WHJyOP08-GE?si=s2RbjLtAzDaL18F1
 
@@ -50,6 +61,14 @@ https://youtu.be/p-CV-zSHp6E?si=O03YjjHKq6fT_Zlv
 https://youtu.be/so5CpsnNado?si=WCEi0fhDBC-8Uhzu
 
 https://youtu.be/iT9xpiUwVbI?si=BBxShEsavCby3HXw
+
+https://youtu.be/XaKybLDUlLk?si=Zk5f_ikTzM7Ac9uv
+
+https://youtu.be/pIfT9e-zPO0?si=QSN1imb_pXnAQ6O5
+
+https://youtu.be/vUnG7hsPe5E?si=XZLDVgBobq5rHcg8
+
+https://youtu.be/m8NqaHUuGX0?si=4vj9nYp_nZ0gRJFB
 
 https://youtu.be/_lsXx-3jz-0?si=HiMDr3zhZqK8G1kJ
 

@@ -1,5 +1,16 @@
+---
 
+site_uuid: 1ef23481-4805-429d-a259-6e63b2d82fb5
+site_uuid: 24f3f944-9511-4069-a212-2565c2c979ec
+site_uuid: f5ed4e13-b51c-44b6-85d8-7ef40b5176b8
+site_uuid: b1850e60-a635-4b6e-b191-19760db8f3b1
+site_uuid: 46cbdcc3-4922-41c3-9035-6374e57c9b42
+site_uuid: 9ba0767b-3110-4470-b82d-3b9dc71c5b00
+site_uuid: f2907171-d8a7-4087-8a39-3440b7762c00
+---
 https://youtu.be/DzNmUNvnB04?si=NZZ9SQhJ3W40P6D5
+
+https://youtu.be/fcygG-qHJC4?si=AApfzz3-1-DQrWUa
 
 [[Perplexity AI]] explains [[tmux]]
 **tmux** (short for *terminal multiplexer*) is a command-line tool that allows users to manage multiple terminal sessions within a single window. Each session can contain multiple windows, which can be further split into panes, each running its own process. Here’s why people use it:

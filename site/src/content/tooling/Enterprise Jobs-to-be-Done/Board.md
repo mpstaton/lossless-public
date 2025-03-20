@@ -1,16 +1,25 @@
 ---
-url: 'https://www.board.com/'
+site_uuid: 19769eac-c389-47d0-a84a-af0d81f08149
+url: https://www.board.com/
 zinger: Board is the Enterprise Planning Platform.
-image: 'https://www.board.com/wp-content/uploads/2025/01/homepage-opengraph_1.jpg'
+image: https://www.board.com/wp-content/uploads/2025/01/homepage-opengraph_1.jpg
 site_name: Board
 title: Board | The Enterprise Planning Platform
-favicon: >-
-  https://www.board.com/wp-content/themes/board/assets/images/favicon/favicon-32x32.png
+favicon: https://www.board.com/wp-content/themes/board/assets/images/favicon/favicon-32x32.png
 tags:
-  - Enterprise-Jobs-to-be-Done
-og_screenshot_url: >-
-  https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b48b87d9fe4d7bd770ef01b9ff1f7c7046cb11a5c1ca97e943c510f1fd33f461.jpeg
-og_last_fetch: 2025-03-07T05:19:01.830Z
+- Enterprise-Jobs-to-be-Done
+og_screenshot_url: https://og-screenshots-prod.s3.amazonaws.com/1366x768/80/false/b48b87d9fe4d7bd770ef01b9ff1f7c7046cb11a5c1ca97e943c510f1fd33f461.jpeg
+jina_last_request: '2025-03-09T06:45:05.684Z'
+jina_error: 'Error occurred'
+og_last_fetch: '2025-03-07T05:19:01.830Z'
+site_uuid: 17c4fd13-e98f-48a9-87fe-fe0056821688
+site_uuid: a41c9434-9fc0-44a2-bf5b-08dc335d55d9
+site_uuid: 26945adf-f6ef-4895-bcc0-296c5197099d
+site_uuid: 900ad330-7271-4e42-bbef-a757f6ba5e6d
+site_uuid: af4a9ada-7d82-4fbc-b482-9be48c3a2da8
+site_uuid: b01d201d-d02d-4548-aa1b-b1d459af6d8a
+site_uuid: 8c4b28d8-d2b4-42b6-8952-5537a8af5a37
+site_uuid: 4f086116-0294-402a-9068-f7b7bb53cdcf
 ---
 [[Enterprise Resource Planning|ERP]]
 

@@ -1,0 +1,95 @@
+On branch development-temp
+Your branch is up to date with 'origin/development-temp'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   site/src/content/lost-in-public/explorations/Accessing Figma through a Windsurf MCP Server.md
+	new file:   site/src/content/lost-in-public/explorations/Automating Content Generation with Local LLMs.md
+	new file:   site/src/content/lost-in-public/explorations/Automating Routine Tasks on my PC.md
+	new file:   site/src/content/lost-in-public/explorations/Forcing modular code and multi-file context on AI Code Assistants.md
+	new file:   site/src/content/lost-in-public/explorations/Foundational Workflow in the Terminal and Command Line.md
+	new file:   site/src/content/lost-in-public/explorations/Using Obsidian to manage Markdown-based Content Collections for Static-Site Generation Frameworks.md
+	new file:   site/src/content/lost-in-public/explorations/Version Control on tons of content files..md
+	new file:   site/src/content/lost-in-public/inspiration-cases/AI Toolkit.md
+	new file:   site/src/content/lost-in-public/inspiration-cases/Map of Analogies.md
+	new file:   site/src/content/lost-in-public/inspiration-cases/Map of Inspiration.md
+	new file:   site/src/content/lost-in-public/issue-resolution/YAML Consistency for Content Collections & Script Actions.md
+	new file:   site/src/content/lost-in-public/practices/Conventions for using Git and GitHub.md
+	renamed:    site/src/content/lost-in-public/prompts/Maintain-Manageable-User-Options.md -> site/src/content/lost-in-public/prompts/code-style/Maintain-Manageable-User-Options.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-a-Content-Registry-Script.md -> site/src/content/lost-in-public/prompts/data-integrity/Create-a-Content-Registry-Script.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-or-Update-Open-Graph-Data.md -> site/src/content/lost-in-public/prompts/data-integrity/Create-or-Update-Open-Graph-Data.md
+	new file:   site/src/content/lost-in-public/prompts/data-integrity/Exclude-Rendering-Internal-Tags.md
+	renamed:    site/src/content/lost-in-public/prompts/Fix-one-YAML-Issue-at-a-Time--alt.md -> site/src/content/lost-in-public/prompts/data-integrity/Fix-one-YAML-Issue-at-a-Time--alt.md
+	renamed:    site/src/content/lost-in-public/prompts/Fix-one-YAML-Issue-at-a-Time.md -> site/src/content/lost-in-public/prompts/data-integrity/Fix-one-YAML-Issue-at-a-Time.md
+	renamed:    site/src/content/lost-in-public/prompts/Return-only-files-with-valid-Frontmatter..md -> site/src/content/lost-in-public/prompts/data-integrity/Return-only-files-with-valid-Frontmatter..md
+	renamed:    site/src/content/lost-in-public/prompts/Writing-Correction-Functions.md -> site/src/content/lost-in-public/prompts/data-integrity/Writing-Correction-Functions.md
+	new file:   site/src/content/lost-in-public/prompts/render-logic/Conditional-Logic-for-Content.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-a-Canvas-UI-of-our-Content-and-Data-Models.md -> site/src/content/lost-in-public/prompts/user-interface/Create-a-Canvas-UI-of-our-Content-and-Data-Models.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-a-Changelog-UI.md -> site/src/content/lost-in-public/prompts/user-interface/Create-a-Changelog-UI.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-a-Price-Card.md -> site/src/content/lost-in-public/prompts/user-interface/Create-a-Price-Card.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-a-Reusable-Content-Collections-UI-Structure.md -> site/src/content/lost-in-public/prompts/user-interface/Create-a-Reusable-Content-Collections-UI-Structure.md
+	new file:   site/src/content/lost-in-public/prompts/user-interface/Render-Site-Flavoured-Markdown-in-Layers.md
+	renamed:    site/src/content/lost-in-public/prompts/Ask-a-Model-API-to-perform-a-task-via-API.md -> site/src/content/lost-in-public/prompts/workflow/Ask-a-Model-API-to-perform-a-task-via-API.md
+	renamed:    site/src/content/lost-in-public/prompts/Cleaning-Build-Scripts.md -> site/src/content/lost-in-public/prompts/workflow/Build-Scripts-that-Clean-Data.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-Permanent-Project-Memory-for-YAML-Handling.md -> site/src/content/lost-in-public/prompts/workflow/Create-Permanent-Project-Memory-for-YAML-Handling.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-a-Basic-Changelog.md -> site/src/content/lost-in-public/prompts/workflow/Create-a-Basic-Changelog.md
+	renamed:    site/src/content/lost-in-public/prompts/Create-a-Content-Generation-Engine.md -> site/src/content/lost-in-public/prompts/workflow/Create-a-Content-Generation-Engine.md
+	renamed:    site/src/content/lost-in-public/prompts/Maintain-a-Session-Log.md -> site/src/content/lost-in-public/prompts/workflow/Maintain-a-Session-Log.md
+	renamed:    site/src/content/lost-in-public/prompts/Meticulous-Constraints-for-Every-Prompt.md -> site/src/content/lost-in-public/prompts/workflow/Meticulous-Constraints-for-Every-Prompt.md
+	new file:   site/src/content/lost-in-public/prompts/workflow/Remind-a-Model-to-Read-Documentation-Sources.md
+	renamed:    site/src/content/lost-in-public/prompts/Use-LLM-Gateway-to-Augment-Content.md -> site/src/content/lost-in-public/prompts/workflow/Use-LLM-Gateway-to-Augment-Content.md
+	renamed:    site/src/content/lost-in-public/prompts/Write-a-Changelog-Entry.md -> site/src/content/lost-in-public/prompts/workflow/Write-a-Changelog-Entry.md
+	new file:   site/src/content/lost-in-public/prompts/workflow/Write-a-Git-Commit-for-one-Dir.md
+	renamed:    site/src/content/lost-in-public/prompts/Write-a-Raw-Text-Git-Commit.md -> site/src/content/lost-in-public/prompts/workflow/Write-a-Raw-Text-Git-Commit.md
+	renamed:    site/src/content/lost-in-public/prompts/Write-a-Technical-Specification.md -> site/src/content/lost-in-public/prompts/workflow/Write-a-Technical-Specification.md
+	new file:   site/src/content/lost-in-public/rag-input/Extended-Obsidian-Extended-Markdown.md
+	new file:   site/src/content/lost-in-public/rag-input/Map-of-Dependencies.md
+	new file:   site/src/content/lost-in-public/rag-input/Map-of-Relevant-Paths.md
+	new file:   site/src/content/lost-in-public/sessions/2025-03-19_02.md
+	new file:   site/src/content/lost-in-public/up-and-running/Up and Running with Docker.md
+	new file:   site/src/content/lost-in-public/up-and-running/Up and Running with Fabric.md
+	new file:   site/src/content/lost-in-public/up-and-running/Up and Running with Husky.md
+	new file:   site/src/content/tooling/AI-Toolkit/AI Infrastructure/DashVector.md
+	modified:   site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/OLlama.md
+	modified:   site/src/content/tooling/AI-Toolkit/AI Interfaces/AI Workspaces/Poe AI.md
+	new file:   site/src/content/tooling/AI-Toolkit/AI Interfaces/Felo.ai.md
+	modified:   site/src/content/tooling/AI-Toolkit/AI Programming Frameworks/LangChain.md
+	modified:   site/src/content/tooling/AI-Toolkit/Explainers/Model Context Protocol.md
+	modified:   site/src/content/tooling/AI-Toolkit/Generative AI/Code Generators/Cursor.md
+	modified:   site/src/content/tooling/AI-Toolkit/Model Producers/DeepSeek.md
+	modified:   site/src/content/tooling/AI-Toolkit/Models/Claude.md
+	new file:   site/src/content/tooling/AI-Toolkit/Models/Scribe.md
+	new file:   site/src/content/tooling/Enterprise Jobs-to-be-Done/Content Management Systems/Strapi.md
+	new file:   site/src/content/tooling/Enterprise Jobs-to-be-Done/Refine.dev.md
+	new file:   site/src/content/tooling/Enterprise Jobs-to-be-Done/Strapi.md
+	modified:   site/src/content/tooling/Hardware/Digits.md
+	new file:   site/src/content/tooling/Productivity/Raycast.md
+	modified:   site/src/content/tooling/Products/Git.md
+	modified:   site/src/content/tooling/Products/Husky.md
+	new file:   site/src/content/tooling/Software Development/Databases/Qdrant.md
+	modified:   site/src/content/tooling/Software Development/DevOps/Zapier.md
+	new file:   site/src/content/tooling/Software Development/Lego-Kit Engineering Tools/Radix UI.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   site/api-calls/openai-api--examples.md
+	modified:   site/package.json
+	modified:   site/scripts/tidy-up/tidy-one-property/assure-one-site-uuid/casesOfConflictingUuids.cjs
+	modified:   site/scripts/tidy-up/tidy-one-property/assure-safe-erros/casesUnsafeErrors.cjs
+	modified:   site/scripts/tidy-up/tidy-one-property/standardize-one-key/casesUndesiredKeys.cjs
+	modified:   site/scripts/tidy-up/tidy-one-property/standardize-one-key/undesiredKeyCases.cjs
+	modified:   site/src/content/specs/Cases-and-Corrections-for-YAML-Content-Wide.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.husky/
+	husky-tree.txt
+	node_modules/
+	package.json
+	site/src/components/articles/UnorderedList.astro
+	site/src/components/basics/callouts/
+	site/src/content/tooling/Software Development/DevOps/Git Lens.md
+	site/src/data/changelog-data/
+	site/src/styles/markdown.css
+

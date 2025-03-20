@@ -1,0 +1,17 @@
+{
+  "code": 200,
+  "status": 20000,
+  "data": {
+    "links": {
+      "Cloudflare": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m"
+    },
+    "warning": "Target URL returned error 403: Forbidden\nThis page contains iframe that are currently hidden, consider enabling iframe processing.\nThis page maybe requiring CAPTCHA, please make sure you are authorized to access this page.",
+    "title": "Just a moment...",
+    "description": "",
+    "url": "https://grok.com/",
+    "content": "Just a moment...\n===============\n\ngrok.com\n========\n\nVerify you are human by completing the action below.\n\ngrok.com needs to review the security of your connection before proceeding.\n\nVerification successful\n\nWaiting for grok.com to respond...\n\nRay ID: `91d8763bfbba10d8`\n\nPerformance & security by [Cloudflare](https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m)",
+    "usage": {
+      "tokens": 84
+    }
+  }
+}

@@ -1,0 +1,2144 @@
+Tailscale · Best VPN Service for Secure Networks
+===============
+
+ 
+
+[Just-in-time Network Access: Demo and Q&ASign up now](https://tailscale.com/events-webinars/jit-network-access)
+
+[](https://tailscale.com/ "Homepage")
+
+Product
+
+Solutions
+
+[Enterprise](https://tailscale.com/enterprise)[Customers](https://tailscale.com/customers)[Docs](https://tailscale.com/kb/1017/install)[Blog](https://tailscale.com/blog)[Pricing](https://tailscale.com/pricing)
+
+[Download](https://tailscale.com/download)[Log in](https://login.tailscale.com/welcome)[Get started - it's free!](https://login.tailscale.com/start)
+
+Product
+
+Meet Tailscale
+
+*   [How it works](https://tailscale.com/blog/how-tailscale-works)
+*   [Why Tailscale](https://tailscale.com/why-tailscale)
+*   [WireGuard® for Enterprises](https://tailscale.com/wireguard-vpn)
+*   [Bring Tailscale to Work](https://tailscale.com/bring-tailscale-to-work)
+
+Explore
+
+*   [Integrations](https://tailscale.com/integrations)
+*   [Features](https://tailscale.com/features)
+*   [Compare Tailscale](https://tailscale.com/compare)
+*   [Partnerships](https://tailscale.com/partnerships)
+
+Solutions
+
+By use-case
+
+*   [Remote Access](https://tailscale.com/use-cases/remote-access)
+*   [Site-to-site Networking](https://tailscale.com/use-cases/site-to-site-networking)
+*   [Multi-Cloud Networking](https://tailscale.com/use-cases/multi-cloud-networking)
+*   [Kubernetes Networking](https://tailscale.com/use-cases/kubernetes)
+*   [Edge & IoT Deployments](https://tailscale.com/use-cases/iot)
+*   [Zero Trust Networking](https://tailscale.com/use-cases/zero-trust-networking)
+*   [AI Workloads](https://tailscale.com/use-cases/ai)
+*   [Secure SaaS](https://tailscale.com/use-cases/secure-saas)
+*   [Business VPN](https://tailscale.com/use-cases/business-vpn)
+*   [Homelab](https://tailscale.com/use-cases/homelab)
+
+By role
+
+*   [DevOps](https://tailscale.com/solutions/devops)
+*   [IT](https://tailscale.com/solutions/it)
+*   [Security](https://tailscale.com/solutions/security)
+
+[Enterprise](https://tailscale.com/enterprise)
+
+[Customers](https://tailscale.com/customers)
+
+Nav heading here
+
+*   [![Image 1: Alt text ](https://cdn.sanity.io/images/w77i7m8x/production/a06dc612b1e3e4f4df53a72030002600639a8738-300x120.png?w=640&q=75&fit=clip&auto=format) Title here How Cribl Enables Secure Work From Anywhere with Tailscale](https://tailscale.com/customers)
+
+[Docs](https://tailscale.com/kb/1017/install)
+
+[Blog](https://tailscale.com/blog)
+
+[Pricing](https://tailscale.com/pricing)
+
+[Download](https://tailscale.com/download)
+
+[Get started - it's free!](https://login.tailscale.com/start)[Login](https://login.tailscale.com/welcome)
+
+WireGuard is a registered trademark of Jason A. Donenfeld.
+
+[Terms of Service](https://tailscale.com/terms)[Privacy Policy](https://tailscale.com/privacy-policy)
+
+© 2025 Tailscale Inc. All rights reserved. Tailscale is a registered trademark of Tailscale Inc.
+
+Secure, remoteaccess to
+
+access to
+
+on-premises
+
+
+
+
+
+
+=====================================================
+
+Tailscale makes creating software-defined networks easy: securely connecting users, services, and devices.
+
+[Start connecting devices](https://login.tailscale.com/start)[Contact Sales](https://tailscale.com/contact/sales)
+
+![Image 2: masthead static](https://cdn.sanity.io/images/w77i7m8x/production/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg?w=3840&q=75&fit=clip&auto=format)
+
+Trusted by 10,000+ companies
+----------------------------
+
+![Image 3: mercury](https://cdn.sanity.io/images/w77i7m8x/production/2d5625f8b997bfe471095e4a2b3c081de9563bcc-250x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 4: Hugging Face](https://cdn.sanity.io/images/w77i7m8x/production/f8c7dcbddbb8807b75fd05f13e47bb8f4de9c181-265x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 5: instacart](https://cdn.sanity.io/images/w77i7m8x/production/3eba14eb6213be6d2eb482907653dedc410de7b0-230x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 6: duolingo](https://cdn.sanity.io/images/w77i7m8x/production/e15d2c707826879949b5ed333bc03c433fb7ab10-252x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 7: mercari](https://cdn.sanity.io/images/w77i7m8x/production/cf48e949a271688ec45afb32a59b7519a847097e-209x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 8: retool](https://cdn.sanity.io/images/w77i7m8x/production/1e74fca6d4c3686951c2bc6627556276bf1ca894-201x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 9: patreon](https://cdn.sanity.io/images/w77i7m8x/production/43596383477a3708265d28f0944b63b9b6f11391-198x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 10: yugabyteDB](https://cdn.sanity.io/images/w77i7m8x/production/739ab732a3185129f223ce66b8be5b548cd90b05-268x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 11: mercury](https://cdn.sanity.io/images/w77i7m8x/production/2d5625f8b997bfe471095e4a2b3c081de9563bcc-250x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 12: Hugging Face](https://cdn.sanity.io/images/w77i7m8x/production/f8c7dcbddbb8807b75fd05f13e47bb8f4de9c181-265x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 13: instacart](https://cdn.sanity.io/images/w77i7m8x/production/3eba14eb6213be6d2eb482907653dedc410de7b0-230x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 14: duolingo](https://cdn.sanity.io/images/w77i7m8x/production/e15d2c707826879949b5ed333bc03c433fb7ab10-252x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 15: mercari](https://cdn.sanity.io/images/w77i7m8x/production/cf48e949a271688ec45afb32a59b7519a847097e-209x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 16: retool](https://cdn.sanity.io/images/w77i7m8x/production/1e74fca6d4c3686951c2bc6627556276bf1ca894-201x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 17: patreon](https://cdn.sanity.io/images/w77i7m8x/production/43596383477a3708265d28f0944b63b9b6f11391-198x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 18: yugabyteDB](https://cdn.sanity.io/images/w77i7m8x/production/739ab732a3185129f223ce66b8be5b548cd90b05-268x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 19: mercury](https://cdn.sanity.io/images/w77i7m8x/production/2d5625f8b997bfe471095e4a2b3c081de9563bcc-250x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 20: Hugging Face](https://cdn.sanity.io/images/w77i7m8x/production/f8c7dcbddbb8807b75fd05f13e47bb8f4de9c181-265x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 21: instacart](https://cdn.sanity.io/images/w77i7m8x/production/3eba14eb6213be6d2eb482907653dedc410de7b0-230x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 22: duolingo](https://cdn.sanity.io/images/w77i7m8x/production/e15d2c707826879949b5ed333bc03c433fb7ab10-252x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 23: mercari](https://cdn.sanity.io/images/w77i7m8x/production/cf48e949a271688ec45afb32a59b7519a847097e-209x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 24: retool](https://cdn.sanity.io/images/w77i7m8x/production/1e74fca6d4c3686951c2bc6627556276bf1ca894-201x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 25: patreon](https://cdn.sanity.io/images/w77i7m8x/production/43596383477a3708265d28f0944b63b9b6f11391-198x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 26: yugabyteDB](https://cdn.sanity.io/images/w77i7m8x/production/739ab732a3185129f223ce66b8be5b548cd90b05-268x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 27: mercury](https://cdn.sanity.io/images/w77i7m8x/production/2d5625f8b997bfe471095e4a2b3c081de9563bcc-250x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 28: Hugging Face](https://cdn.sanity.io/images/w77i7m8x/production/f8c7dcbddbb8807b75fd05f13e47bb8f4de9c181-265x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 29: instacart](https://cdn.sanity.io/images/w77i7m8x/production/3eba14eb6213be6d2eb482907653dedc410de7b0-230x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 30: duolingo](https://cdn.sanity.io/images/w77i7m8x/production/e15d2c707826879949b5ed333bc03c433fb7ab10-252x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 31: mercari](https://cdn.sanity.io/images/w77i7m8x/production/cf48e949a271688ec45afb32a59b7519a847097e-209x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 32: retool](https://cdn.sanity.io/images/w77i7m8x/production/1e74fca6d4c3686951c2bc6627556276bf1ca894-201x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 33: patreon](https://cdn.sanity.io/images/w77i7m8x/production/43596383477a3708265d28f0944b63b9b6f11391-198x100.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 34: yugabyteDB](https://cdn.sanity.io/images/w77i7m8x/production/739ab732a3185129f223ce66b8be5b548cd90b05-268x100.svg?w=640&q=75&fit=clip&auto=format)
+
+100.78.14.63
+
+100.108.47.7
+
+100.81.144.123
+
+100.101.33.15
+
+Tailscale makes secure networking easy
+--------------------------------------
+
+Achieve point-to-point network connectivity that enforces least privilege.
+
+[How it works](https://tailscale.com/blog/how-tailscale-works)
+
+Deploy a zero-config, no-fuss VPN
+---------------------------------
+
+Deploy a WireGuard®-based VPN that eliminates single points of failure.
+
+[Business VPN](https://tailscale.com/use-cases/business-vpn)
+
+![Image 35: vpn](https://cdn.sanity.io/images/w77i7m8x/production/90cf45c63952df42559acc35b4d963591f730e84-1280x584.svg?w=3840&q=75&fit=clip&auto=format)
+
+Securely access resources on any infrastructure 
+------------------------------------------------
+
+Granularly segment your network to ensure the right users get access to the right resources.
+
+[Remote Access](https://tailscale.com/use-cases/remote-access)
+
+![Image 36: remote access](https://cdn.sanity.io/images/w77i7m8x/production/5ff73194885114fb388d818654a3879b44fafe18-1280x584.svg?w=3840&q=75&fit=clip&auto=format)
+
+Unlock site-to-site networking
+------------------------------
+
+Connect clouds, VPCs, and on-premises networks without opening firewall ports with NAT traversal.
+
+[Site-to-Site Networking](https://tailscale.com/use-cases/site-to-site-networking)
+
+Tailscale for Enterprise
+------------------------
+
+Gain the tools to protect enterprises of any scale with automated user onboarding, SSH session recording, and audit log streaming.
+
+[Enterprise](https://tailscale.com/enterprise)
+
+![Image 37: enterprise](https://cdn.sanity.io/images/w77i7m8x/production/b28070ff99bd5c70593be4004e2c07c2af0719f5-1280x584.svg?w=3840&q=75&fit=clip&auto=format)
+
+100+ integrations means you can incorporate Tailscale into any workflow
+-----------------------------------------------------------------------
+
+![Image 38: apple](https://cdn.sanity.io/images/w77i7m8x/production/f2165c578beeb00eba8d8ab9b9f497582ef5561d-140x141.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 39: docker](https://cdn.sanity.io/images/w77i7m8x/production/fd5ace20704ee1d1d3c7473da3acf37ebfb68c87-140x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 40: duolingo](https://cdn.sanity.io/images/w77i7m8x/production/f4b2bfcd48f641a22e730f56b3765bff3da95f9a-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 41: pi](https://cdn.sanity.io/images/w77i7m8x/production/84e489c54a18b9181288defb3baa52596a4fe31d-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 42: logo](https://cdn.sanity.io/images/w77i7m8x/production/a0f70705d8af722299490b8c32b19fe65faa8afb-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 43: logo](https://cdn.sanity.io/images/w77i7m8x/production/040a7fa9084571d9180dc0859ae8811dcf538a3f-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 44: mac os](https://cdn.sanity.io/images/w77i7m8x/production/73caae2d6b96ebcdaad6c832c75937afa93c1a17-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 45: synology](https://cdn.sanity.io/images/w77i7m8x/production/b874dfeb68a63d08282a12c7de4a5bbb487face2-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 46: android](https://cdn.sanity.io/images/w77i7m8x/production/4a4487a99a1409efc76acbd2b56dc3094621f5e4-140x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 47: logo](https://cdn.sanity.io/images/w77i7m8x/production/7429e3ada9a6a8bfb7c86fd39d76e0761ec1fbcf-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 48: logo](https://cdn.sanity.io/images/w77i7m8x/production/624220f941f37ebb8df84fcb33cc54c49894030a-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 49: logo](https://cdn.sanity.io/images/w77i7m8x/production/48a861b5427f501ef828283d4e557ec07aa7f9ff-140x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 50: github](https://cdn.sanity.io/images/w77i7m8x/production/38611ffd97c4bc3c4356ea5204165c4f60b63de0-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 51: meta mask](https://cdn.sanity.io/images/w77i7m8x/production/acb02cdab82fe85fc5cd9b1701e3360485d5944e-139x140.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 52: windows](https://cdn.sanity.io/images/w77i7m8x/production/4b164d99596fff05ec355459e5260254fa0b5c87-140x140.svg?w=384&q=75&fit=clip&auto=format)
+
+[Operating systems](https://tailscale.com/integrations?category=operating-systems-(os))[Identity providers](https://tailscale.com/integrations?category=identity-providers#identity-providers)[Get started with AWS](https://aws.amazon.com/marketplace/pp/prodview-jvxfapco43wr4?trk=41156f33-2a52-4124-8993-f9cde0e7aaab&sc_channel=el&source=tailscale)
+
+Homelab
+-------
+
+### Your home away from home
+
+Access your homelab, personal devices, and dev environments wherever you are — for free.
+
+[Download for free](https://login.tailscale.com/start)[Learn more](https://tailscale.com/use-cases/homelab)
+
+#### Developer approved
+
+![Image 53: Sharath Patali](https://cdn.sanity.io/images/w77i7m8x/production/c30e887711dca094036b0af041ad73e37834f169-399x399.jpg?w=828&q=75&fit=clip&auto=format)
+
+@sharathpatali
+
+Sharath Patali
+
+Setting up a mesh VPN on all my devices was so damn easy thanks to @Tailscale. A tightly sealed network of remote devices with almost no configuration and also ease of adding a new device to the mesh is just what I wanted. Amazing work @Tailscale!
+
+Reply
+
+Share
+
+...
+
+![Image 54: Dan Peterson](https://cdn.sanity.io/images/w77i7m8x/production/bc5a3d60fc60059dcb367261d021c67dba5e0d7c-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@danp128
+
+Dan Peterson
+
+Set up @Tailscale across a few home and cloud devices in a few minutes. Magical! ✨
+
+Reply
+
+Share
+
+...
+
+![Image 55: Simon Willison](https://cdn.sanity.io/images/w77i7m8x/production/d6eba57465b53fcbdb6c4e05d090ef3b5c17b6e0-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@simonw
+
+Simon Willison
+
+OK yeah @tailscale is good. This morning I got it running on my iPhone and a Linux server JUST using my phone (and Prompt by Panic) and they're now in a mesh network together. Just got it running on my Mac too, so now it's a three-device network. Completely free, took minutes.
+
+Reply
+
+Share
+
+...
+
+![Image 56: Cole Kennedy](https://cdn.sanity.io/images/w77i7m8x/production/667e7bb7044b0620e4fcee00b7cdc1ff7497f4a6-200x200.jpg?w=640&q=75&fit=clip&auto=format)
+
+@colek42c
+
+Cole Kennedy
+
+I am amazed at how easy @tailscale made it for me to create zero-trust multi-cloud environment for my customer. I have a ton of use cases going through my head. @bradfitz @NicolasChaillan
+
+Reply
+
+Share
+
+...
+
+@tlesher
+
+Tim Lesher
+
+So I decided to reserve this morning to read up on @tailscale and get it set up on my various machines at home. That took a hot 30 minutes and I have to find something else to do. 🤷‍♂️
+
+Reply
+
+Share
+
+...
+
+@tessalau
+
+Tessa Lau
+
+Just paid for @Tailscale. Installed it on our robots; so far so good. Compared to OpenVPN: \* Serverless \* Always on \* Same config in office & field \* Scales to large # devices \* GUI-based ACL w/SSO \* Fixed IPs, DNS-friendly \* Dead simple config+use
+
+Reply
+
+Share
+
+...
+
+![Image 57: Michael P.](https://cdn.sanity.io/images/w77i7m8x/production/9814cf6ff0e3fcb99b91522a22c62a07b13d7592-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@moderat10n
+
+Michael P.
+
+After installing @Tailscale on a bunch of machines on my home network (Linux x86 + aarch64, MacOS, Windows) I've just ventured out. Had to restart the process but holy moly, just SSH'ed into my boxes, building code and pushing configs around like I'm home. Amazing. Converted
+
+Reply
+
+Share
+
+...
+
+![Image 58: Morgan Gallant](https://cdn.sanity.io/images/w77i7m8x/production/ef46b8df2a49b866ddbd790e525d4fe017da7808-247x247.jpg?w=640&q=75&fit=clip&auto=format)
+
+@morgallant
+
+Morgan Gallant
+
+The beauty of @Tailscale is that they enable people to make their own personal internet, for free in most cases. It’s this weird paradigm shift, since you have to actively work to make applications insecure rather than the other way around.
+
+Reply
+
+Share
+
+...
+
+![Image 59: John Lynch](https://cdn.sanity.io/images/w77i7m8x/production/40c1d528c878e8a2617ec2e2822587ca2408f651-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@johnrlynch
+
+John Lynch
+
+If you deal with servers in any way drop everything and get this. VPN nirvana. @Tailscale https://tailscale.com
+
+Reply
+
+Share
+
+...
+
+![Image 60: Michael R.](https://cdn.sanity.io/images/w77i7m8x/production/3a0fb88ac6fdfc10fa3e4048590243ffcca69b5d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@devilmonastery
+
+Michael R.
+
+@Tailscale busts double nat (travel router -\> plane wifi) and connects me to my home server so I can silence a prometheus humidity alert (can’t really add water to the humidifier from here).
+
+Reply
+
+Share
+
+...
+
+![Image 61: Oddur Magnusson](https://cdn.sanity.io/images/w77i7m8x/production/befcefa7a496fb1bff8767a9ff5cc6bf91459e78-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@oddur
+
+Oddur Magnusson
+
+Sometimes you come across a tool that changes how you see things, @Tailscale is one of those. Thinking in terms of point 2 point VPN tunnels seems so outdated once you have seen that lights.
+
+Reply
+
+Share
+
+...
+
+![Image 62: Sharath Patali](https://cdn.sanity.io/images/w77i7m8x/production/c30e887711dca094036b0af041ad73e37834f169-399x399.jpg?w=828&q=75&fit=clip&auto=format)
+
+@sharathpatali
+
+Sharath Patali
+
+Setting up a mesh VPN on all my devices was so damn easy thanks to @Tailscale. A tightly sealed network of remote devices with almost no configuration and also ease of adding a new device to the mesh is just what I wanted. Amazing work @Tailscale!
+
+Reply
+
+Share
+
+...
+
+![Image 63: Dan Peterson](https://cdn.sanity.io/images/w77i7m8x/production/bc5a3d60fc60059dcb367261d021c67dba5e0d7c-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@danp128
+
+Dan Peterson
+
+Set up @Tailscale across a few home and cloud devices in a few minutes. Magical! ✨
+
+Reply
+
+Share
+
+...
+
+![Image 64: Simon Willison](https://cdn.sanity.io/images/w77i7m8x/production/d6eba57465b53fcbdb6c4e05d090ef3b5c17b6e0-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@simonw
+
+Simon Willison
+
+OK yeah @tailscale is good. This morning I got it running on my iPhone and a Linux server JUST using my phone (and Prompt by Panic) and they're now in a mesh network together. Just got it running on my Mac too, so now it's a three-device network. Completely free, took minutes.
+
+Reply
+
+Share
+
+...
+
+![Image 65: Cole Kennedy](https://cdn.sanity.io/images/w77i7m8x/production/667e7bb7044b0620e4fcee00b7cdc1ff7497f4a6-200x200.jpg?w=640&q=75&fit=clip&auto=format)
+
+@colek42c
+
+Cole Kennedy
+
+I am amazed at how easy @tailscale made it for me to create zero-trust multi-cloud environment for my customer. I have a ton of use cases going through my head. @bradfitz @NicolasChaillan
+
+Reply
+
+Share
+
+...
+
+@tlesher
+
+Tim Lesher
+
+So I decided to reserve this morning to read up on @tailscale and get it set up on my various machines at home. That took a hot 30 minutes and I have to find something else to do. 🤷‍♂️
+
+Reply
+
+Share
+
+...
+
+@tessalau
+
+Tessa Lau
+
+Just paid for @Tailscale. Installed it on our robots; so far so good. Compared to OpenVPN: \* Serverless \* Always on \* Same config in office & field \* Scales to large # devices \* GUI-based ACL w/SSO \* Fixed IPs, DNS-friendly \* Dead simple config+use
+
+Reply
+
+Share
+
+...
+
+![Image 66: Michael P.](https://cdn.sanity.io/images/w77i7m8x/production/9814cf6ff0e3fcb99b91522a22c62a07b13d7592-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@moderat10n
+
+Michael P.
+
+After installing @Tailscale on a bunch of machines on my home network (Linux x86 + aarch64, MacOS, Windows) I've just ventured out. Had to restart the process but holy moly, just SSH'ed into my boxes, building code and pushing configs around like I'm home. Amazing. Converted
+
+Reply
+
+Share
+
+...
+
+![Image 67: Morgan Gallant](https://cdn.sanity.io/images/w77i7m8x/production/ef46b8df2a49b866ddbd790e525d4fe017da7808-247x247.jpg?w=640&q=75&fit=clip&auto=format)
+
+@morgallant
+
+Morgan Gallant
+
+The beauty of @Tailscale is that they enable people to make their own personal internet, for free in most cases. It’s this weird paradigm shift, since you have to actively work to make applications insecure rather than the other way around.
+
+Reply
+
+Share
+
+...
+
+![Image 68: John Lynch](https://cdn.sanity.io/images/w77i7m8x/production/40c1d528c878e8a2617ec2e2822587ca2408f651-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@johnrlynch
+
+John Lynch
+
+If you deal with servers in any way drop everything and get this. VPN nirvana. @Tailscale https://tailscale.com
+
+Reply
+
+Share
+
+...
+
+![Image 69: Michael R.](https://cdn.sanity.io/images/w77i7m8x/production/3a0fb88ac6fdfc10fa3e4048590243ffcca69b5d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@devilmonastery
+
+Michael R.
+
+@Tailscale busts double nat (travel router -\> plane wifi) and connects me to my home server so I can silence a prometheus humidity alert (can’t really add water to the humidifier from here).
+
+Reply
+
+Share
+
+...
+
+![Image 70: Oddur Magnusson](https://cdn.sanity.io/images/w77i7m8x/production/befcefa7a496fb1bff8767a9ff5cc6bf91459e78-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@oddur
+
+Oddur Magnusson
+
+Sometimes you come across a tool that changes how you see things, @Tailscale is one of those. Thinking in terms of point 2 point VPN tunnels seems so outdated once you have seen that lights.
+
+Reply
+
+Share
+
+...
+
+![Image 71: Sharath Patali](https://cdn.sanity.io/images/w77i7m8x/production/c30e887711dca094036b0af041ad73e37834f169-399x399.jpg?w=828&q=75&fit=clip&auto=format)
+
+@sharathpatali
+
+Sharath Patali
+
+Setting up a mesh VPN on all my devices was so damn easy thanks to @Tailscale. A tightly sealed network of remote devices with almost no configuration and also ease of adding a new device to the mesh is just what I wanted. Amazing work @Tailscale!
+
+Reply
+
+Share
+
+...
+
+![Image 72: Dan Peterson](https://cdn.sanity.io/images/w77i7m8x/production/bc5a3d60fc60059dcb367261d021c67dba5e0d7c-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@danp128
+
+Dan Peterson
+
+Set up @Tailscale across a few home and cloud devices in a few minutes. Magical! ✨
+
+Reply
+
+Share
+
+...
+
+![Image 73: Simon Willison](https://cdn.sanity.io/images/w77i7m8x/production/d6eba57465b53fcbdb6c4e05d090ef3b5c17b6e0-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@simonw
+
+Simon Willison
+
+OK yeah @tailscale is good. This morning I got it running on my iPhone and a Linux server JUST using my phone (and Prompt by Panic) and they're now in a mesh network together. Just got it running on my Mac too, so now it's a three-device network. Completely free, took minutes.
+
+Reply
+
+Share
+
+...
+
+![Image 74: Cole Kennedy](https://cdn.sanity.io/images/w77i7m8x/production/667e7bb7044b0620e4fcee00b7cdc1ff7497f4a6-200x200.jpg?w=640&q=75&fit=clip&auto=format)
+
+@colek42c
+
+Cole Kennedy
+
+I am amazed at how easy @tailscale made it for me to create zero-trust multi-cloud environment for my customer. I have a ton of use cases going through my head. @bradfitz @NicolasChaillan
+
+Reply
+
+Share
+
+...
+
+@tlesher
+
+Tim Lesher
+
+So I decided to reserve this morning to read up on @tailscale and get it set up on my various machines at home. That took a hot 30 minutes and I have to find something else to do. 🤷‍♂️
+
+Reply
+
+Share
+
+...
+
+@tessalau
+
+Tessa Lau
+
+Just paid for @Tailscale. Installed it on our robots; so far so good. Compared to OpenVPN: \* Serverless \* Always on \* Same config in office & field \* Scales to large # devices \* GUI-based ACL w/SSO \* Fixed IPs, DNS-friendly \* Dead simple config+use
+
+Reply
+
+Share
+
+...
+
+![Image 75: Michael P.](https://cdn.sanity.io/images/w77i7m8x/production/9814cf6ff0e3fcb99b91522a22c62a07b13d7592-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@moderat10n
+
+Michael P.
+
+After installing @Tailscale on a bunch of machines on my home network (Linux x86 + aarch64, MacOS, Windows) I've just ventured out. Had to restart the process but holy moly, just SSH'ed into my boxes, building code and pushing configs around like I'm home. Amazing. Converted
+
+Reply
+
+Share
+
+...
+
+![Image 76: Morgan Gallant](https://cdn.sanity.io/images/w77i7m8x/production/ef46b8df2a49b866ddbd790e525d4fe017da7808-247x247.jpg?w=640&q=75&fit=clip&auto=format)
+
+@morgallant
+
+Morgan Gallant
+
+The beauty of @Tailscale is that they enable people to make their own personal internet, for free in most cases. It’s this weird paradigm shift, since you have to actively work to make applications insecure rather than the other way around.
+
+Reply
+
+Share
+
+...
+
+![Image 77: John Lynch](https://cdn.sanity.io/images/w77i7m8x/production/40c1d528c878e8a2617ec2e2822587ca2408f651-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@johnrlynch
+
+John Lynch
+
+If you deal with servers in any way drop everything and get this. VPN nirvana. @Tailscale https://tailscale.com
+
+Reply
+
+Share
+
+...
+
+![Image 78: Michael R.](https://cdn.sanity.io/images/w77i7m8x/production/3a0fb88ac6fdfc10fa3e4048590243ffcca69b5d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@devilmonastery
+
+Michael R.
+
+@Tailscale busts double nat (travel router -\> plane wifi) and connects me to my home server so I can silence a prometheus humidity alert (can’t really add water to the humidifier from here).
+
+Reply
+
+Share
+
+...
+
+![Image 79: Oddur Magnusson](https://cdn.sanity.io/images/w77i7m8x/production/befcefa7a496fb1bff8767a9ff5cc6bf91459e78-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@oddur
+
+Oddur Magnusson
+
+Sometimes you come across a tool that changes how you see things, @Tailscale is one of those. Thinking in terms of point 2 point VPN tunnels seems so outdated once you have seen that lights.
+
+Reply
+
+Share
+
+...
+
+![Image 80: Sharath Patali](https://cdn.sanity.io/images/w77i7m8x/production/c30e887711dca094036b0af041ad73e37834f169-399x399.jpg?w=828&q=75&fit=clip&auto=format)
+
+@sharathpatali
+
+Sharath Patali
+
+Setting up a mesh VPN on all my devices was so damn easy thanks to @Tailscale. A tightly sealed network of remote devices with almost no configuration and also ease of adding a new device to the mesh is just what I wanted. Amazing work @Tailscale!
+
+Reply
+
+Share
+
+...
+
+![Image 81: Dan Peterson](https://cdn.sanity.io/images/w77i7m8x/production/bc5a3d60fc60059dcb367261d021c67dba5e0d7c-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@danp128
+
+Dan Peterson
+
+Set up @Tailscale across a few home and cloud devices in a few minutes. Magical! ✨
+
+Reply
+
+Share
+
+...
+
+![Image 82: Simon Willison](https://cdn.sanity.io/images/w77i7m8x/production/d6eba57465b53fcbdb6c4e05d090ef3b5c17b6e0-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@simonw
+
+Simon Willison
+
+OK yeah @tailscale is good. This morning I got it running on my iPhone and a Linux server JUST using my phone (and Prompt by Panic) and they're now in a mesh network together. Just got it running on my Mac too, so now it's a three-device network. Completely free, took minutes.
+
+Reply
+
+Share
+
+...
+
+![Image 83: Cole Kennedy](https://cdn.sanity.io/images/w77i7m8x/production/667e7bb7044b0620e4fcee00b7cdc1ff7497f4a6-200x200.jpg?w=640&q=75&fit=clip&auto=format)
+
+@colek42c
+
+Cole Kennedy
+
+I am amazed at how easy @tailscale made it for me to create zero-trust multi-cloud environment for my customer. I have a ton of use cases going through my head. @bradfitz @NicolasChaillan
+
+Reply
+
+Share
+
+...
+
+@tlesher
+
+Tim Lesher
+
+So I decided to reserve this morning to read up on @tailscale and get it set up on my various machines at home. That took a hot 30 minutes and I have to find something else to do. 🤷‍♂️
+
+Reply
+
+Share
+
+...
+
+@tessalau
+
+Tessa Lau
+
+Just paid for @Tailscale. Installed it on our robots; so far so good. Compared to OpenVPN: \* Serverless \* Always on \* Same config in office & field \* Scales to large # devices \* GUI-based ACL w/SSO \* Fixed IPs, DNS-friendly \* Dead simple config+use
+
+Reply
+
+Share
+
+...
+
+![Image 84: Michael P.](https://cdn.sanity.io/images/w77i7m8x/production/9814cf6ff0e3fcb99b91522a22c62a07b13d7592-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@moderat10n
+
+Michael P.
+
+After installing @Tailscale on a bunch of machines on my home network (Linux x86 + aarch64, MacOS, Windows) I've just ventured out. Had to restart the process but holy moly, just SSH'ed into my boxes, building code and pushing configs around like I'm home. Amazing. Converted
+
+Reply
+
+Share
+
+...
+
+![Image 85: Morgan Gallant](https://cdn.sanity.io/images/w77i7m8x/production/ef46b8df2a49b866ddbd790e525d4fe017da7808-247x247.jpg?w=640&q=75&fit=clip&auto=format)
+
+@morgallant
+
+Morgan Gallant
+
+The beauty of @Tailscale is that they enable people to make their own personal internet, for free in most cases. It’s this weird paradigm shift, since you have to actively work to make applications insecure rather than the other way around.
+
+Reply
+
+Share
+
+...
+
+![Image 86: John Lynch](https://cdn.sanity.io/images/w77i7m8x/production/40c1d528c878e8a2617ec2e2822587ca2408f651-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@johnrlynch
+
+John Lynch
+
+If you deal with servers in any way drop everything and get this. VPN nirvana. @Tailscale https://tailscale.com
+
+Reply
+
+Share
+
+...
+
+![Image 87: Michael R.](https://cdn.sanity.io/images/w77i7m8x/production/3a0fb88ac6fdfc10fa3e4048590243ffcca69b5d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@devilmonastery
+
+Michael R.
+
+@Tailscale busts double nat (travel router -\> plane wifi) and connects me to my home server so I can silence a prometheus humidity alert (can’t really add water to the humidifier from here).
+
+Reply
+
+Share
+
+...
+
+![Image 88: Oddur Magnusson](https://cdn.sanity.io/images/w77i7m8x/production/befcefa7a496fb1bff8767a9ff5cc6bf91459e78-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@oddur
+
+Oddur Magnusson
+
+Sometimes you come across a tool that changes how you see things, @Tailscale is one of those. Thinking in terms of point 2 point VPN tunnels seems so outdated once you have seen that lights.
+
+Reply
+
+Share
+
+...
+
+![Image 89: J. Gavin Ray](https://cdn.sanity.io/images/w77i7m8x/production/0cc0a8b2d3d85e8ecb1c17ada174103f4a14f8a1-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jgavinray
+
+J. Gavin Ray
+
+Been using @Tailscale for a while at work and personally. Who would have thought networking could be... easy?!
+
+Reply
+
+Share
+
+...
+
+![Image 90: big jim](https://cdn.sanity.io/images/w77i7m8x/production/5cd5ff7a02b6f7e820c83a3e009f90c224795481-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@dixdotdev
+
+big jim
+
+The campus WiFi also prevented my original Wireguard VPN. Multiple NATs, blocked ports... Tailscale just figures it all out. There's honestly dozens of other reasons, but for me it just helps me to be portable. I run pihole too. I'd be lost without it now!
+
+Reply
+
+Share
+
+...
+
+![Image 91: Theo Salvo](https://cdn.sanity.io/images/w77i7m8x/production/1853ad560cb86e4e7914758279032df9f8ae231c-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@TheodoreJSalvo
+
+Theo Salvo
+
+Oh @Tailscale, I’ve put you off for so long not knowing what I was missing. In advance of #KubeCon I now can manage my home NAS and my home k8s cluster…from my phone! Thank you!
+
+Reply
+
+Share
+
+...
+
+![Image 92: llia](https://cdn.sanity.io/images/w77i7m8x/production/09cc48c4ece77ef6306620d7fd697a058cf96e1f-400x400.png?w=828&q=75&fit=clip&auto=format)
+
+@falsefalse
+
+llia
+
+Thanks to @Tailscale being available as a package for @Synology I was able to renew @letsencrypt certificate on my home NAS while being 8000 kilometers away from it. Amazing piece of tech 🥹
+
+Reply
+
+Share
+
+...
+
+![Image 93: Benson Kalahar](https://cdn.sanity.io/images/w77i7m8x/production/a088fd39d0bd7b6895a856dc73b5222469fb4f2f-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@bensonk42
+
+Benson Kalahar
+
+No joke, some of the best software I've ever used. Between machines that are on the tail scale network, everything is encrypted by default. If you use it for all the machines you want to have talking, you install it and never think about it again.
+
+Reply
+
+Share
+
+...
+
+![Image 94: @qmacro@hachyderm.io](https://cdn.sanity.io/images/w77i7m8x/production/f205e0110c4b47e29bb396274bb4138b48829e9d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@qmacro
+
+@qmacro@hachyderm.io
+
+The hardest thing to understand about @tailscale is that there are no hard things to understand about @tailscale and it just works.
+
+Reply
+
+Share
+
+...
+
+![Image 95: Zack Allen](https://cdn.sanity.io/images/w77i7m8x/production/2741d59e4a69a546a901094fdce259c645592f15-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@techyteachme
+
+Zack Allen
+
+Just setup @Tailscale and my mind is BLOWN.
+
+Reply
+
+Share
+
+...
+
+![Image 96: Simon Vans-Colina](https://cdn.sanity.io/images/w77i7m8x/production/699b217a40783e1c54dc8b3aadb451ec072f38aa-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@simonvc
+
+Simon Vans-Colina
+
+@Tailscale is so good it makes me angry it didn't exist since the beginning of the internet. It's basically the upgrade the internet needed. Fully-Routable (+firewall) -\> NAT'd (+STUN) -\> Encrypted Personal Mesh.
+
+Reply
+
+Share
+
+...
+
+![Image 97: Matthew V Rabinowitz](https://cdn.sanity.io/images/w77i7m8x/production/2d371bca087e746a525c5722ba6321414f3d160d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@mrabino1
+
+Matthew V Rabinowitz
+
+I am not an investor in, @tailscale (though, I wish I were). From my lens they will change how we all use the internet. Just a question of when, not if. #privacy
+
+Reply
+
+Share
+
+...
+
+![Image 98: Scott Hanselman](https://cdn.sanity.io/images/w77i7m8x/production/c587f7a1d48cfbedaf086a00ab8ecd6bf3bc5ab1-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@shanselman
+
+Scott Hanselman
+
+Just Remote Desktop’ed into my machine at home using my iPhone, @Tailscale, and the excellent Remote Desktop iPhone app. I needed to edit a JSON file using Azure Storage Explorer for my podcast while on vacation. Did it over LTE on a train in Switzerland. AMAZING
+
+Reply
+
+Share
+
+...
+
+![Image 99: Elliott Davis](https://cdn.sanity.io/images/w77i7m8x/production/30acb0cd8aa21edb1b4170b8a02a7481af0c5d87-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@libsysguy
+
+Elliott Davis
+
+I tried @Tailscale for the first time last night. Holy smokes what a delightfully well thought out product
+
+Reply
+
+Share
+
+...
+
+![Image 100: J. Gavin Ray](https://cdn.sanity.io/images/w77i7m8x/production/0cc0a8b2d3d85e8ecb1c17ada174103f4a14f8a1-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jgavinray
+
+J. Gavin Ray
+
+Been using @Tailscale for a while at work and personally. Who would have thought networking could be... easy?!
+
+Reply
+
+Share
+
+...
+
+![Image 101: big jim](https://cdn.sanity.io/images/w77i7m8x/production/5cd5ff7a02b6f7e820c83a3e009f90c224795481-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@dixdotdev
+
+big jim
+
+The campus WiFi also prevented my original Wireguard VPN. Multiple NATs, blocked ports... Tailscale just figures it all out. There's honestly dozens of other reasons, but for me it just helps me to be portable. I run pihole too. I'd be lost without it now!
+
+Reply
+
+Share
+
+...
+
+![Image 102: Theo Salvo](https://cdn.sanity.io/images/w77i7m8x/production/1853ad560cb86e4e7914758279032df9f8ae231c-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@TheodoreJSalvo
+
+Theo Salvo
+
+Oh @Tailscale, I’ve put you off for so long not knowing what I was missing. In advance of #KubeCon I now can manage my home NAS and my home k8s cluster…from my phone! Thank you!
+
+Reply
+
+Share
+
+...
+
+![Image 103: llia](https://cdn.sanity.io/images/w77i7m8x/production/09cc48c4ece77ef6306620d7fd697a058cf96e1f-400x400.png?w=828&q=75&fit=clip&auto=format)
+
+@falsefalse
+
+llia
+
+Thanks to @Tailscale being available as a package for @Synology I was able to renew @letsencrypt certificate on my home NAS while being 8000 kilometers away from it. Amazing piece of tech 🥹
+
+Reply
+
+Share
+
+...
+
+![Image 104: Benson Kalahar](https://cdn.sanity.io/images/w77i7m8x/production/a088fd39d0bd7b6895a856dc73b5222469fb4f2f-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@bensonk42
+
+Benson Kalahar
+
+No joke, some of the best software I've ever used. Between machines that are on the tail scale network, everything is encrypted by default. If you use it for all the machines you want to have talking, you install it and never think about it again.
+
+Reply
+
+Share
+
+...
+
+![Image 105: @qmacro@hachyderm.io](https://cdn.sanity.io/images/w77i7m8x/production/f205e0110c4b47e29bb396274bb4138b48829e9d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@qmacro
+
+@qmacro@hachyderm.io
+
+The hardest thing to understand about @tailscale is that there are no hard things to understand about @tailscale and it just works.
+
+Reply
+
+Share
+
+...
+
+![Image 106: Zack Allen](https://cdn.sanity.io/images/w77i7m8x/production/2741d59e4a69a546a901094fdce259c645592f15-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@techyteachme
+
+Zack Allen
+
+Just setup @Tailscale and my mind is BLOWN.
+
+Reply
+
+Share
+
+...
+
+![Image 107: Simon Vans-Colina](https://cdn.sanity.io/images/w77i7m8x/production/699b217a40783e1c54dc8b3aadb451ec072f38aa-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@simonvc
+
+Simon Vans-Colina
+
+@Tailscale is so good it makes me angry it didn't exist since the beginning of the internet. It's basically the upgrade the internet needed. Fully-Routable (+firewall) -\> NAT'd (+STUN) -\> Encrypted Personal Mesh.
+
+Reply
+
+Share
+
+...
+
+![Image 108: Matthew V Rabinowitz](https://cdn.sanity.io/images/w77i7m8x/production/2d371bca087e746a525c5722ba6321414f3d160d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@mrabino1
+
+Matthew V Rabinowitz
+
+I am not an investor in, @tailscale (though, I wish I were). From my lens they will change how we all use the internet. Just a question of when, not if. #privacy
+
+Reply
+
+Share
+
+...
+
+![Image 109: Scott Hanselman](https://cdn.sanity.io/images/w77i7m8x/production/c587f7a1d48cfbedaf086a00ab8ecd6bf3bc5ab1-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@shanselman
+
+Scott Hanselman
+
+Just Remote Desktop’ed into my machine at home using my iPhone, @Tailscale, and the excellent Remote Desktop iPhone app. I needed to edit a JSON file using Azure Storage Explorer for my podcast while on vacation. Did it over LTE on a train in Switzerland. AMAZING
+
+Reply
+
+Share
+
+...
+
+![Image 110: Elliott Davis](https://cdn.sanity.io/images/w77i7m8x/production/30acb0cd8aa21edb1b4170b8a02a7481af0c5d87-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@libsysguy
+
+Elliott Davis
+
+I tried @Tailscale for the first time last night. Holy smokes what a delightfully well thought out product
+
+Reply
+
+Share
+
+...
+
+![Image 111: J. Gavin Ray](https://cdn.sanity.io/images/w77i7m8x/production/0cc0a8b2d3d85e8ecb1c17ada174103f4a14f8a1-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jgavinray
+
+J. Gavin Ray
+
+Been using @Tailscale for a while at work and personally. Who would have thought networking could be... easy?!
+
+Reply
+
+Share
+
+...
+
+![Image 112: big jim](https://cdn.sanity.io/images/w77i7m8x/production/5cd5ff7a02b6f7e820c83a3e009f90c224795481-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@dixdotdev
+
+big jim
+
+The campus WiFi also prevented my original Wireguard VPN. Multiple NATs, blocked ports... Tailscale just figures it all out. There's honestly dozens of other reasons, but for me it just helps me to be portable. I run pihole too. I'd be lost without it now!
+
+Reply
+
+Share
+
+...
+
+![Image 113: Theo Salvo](https://cdn.sanity.io/images/w77i7m8x/production/1853ad560cb86e4e7914758279032df9f8ae231c-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@TheodoreJSalvo
+
+Theo Salvo
+
+Oh @Tailscale, I’ve put you off for so long not knowing what I was missing. In advance of #KubeCon I now can manage my home NAS and my home k8s cluster…from my phone! Thank you!
+
+Reply
+
+Share
+
+...
+
+![Image 114: llia](https://cdn.sanity.io/images/w77i7m8x/production/09cc48c4ece77ef6306620d7fd697a058cf96e1f-400x400.png?w=828&q=75&fit=clip&auto=format)
+
+@falsefalse
+
+llia
+
+Thanks to @Tailscale being available as a package for @Synology I was able to renew @letsencrypt certificate on my home NAS while being 8000 kilometers away from it. Amazing piece of tech 🥹
+
+Reply
+
+Share
+
+...
+
+![Image 115: Benson Kalahar](https://cdn.sanity.io/images/w77i7m8x/production/a088fd39d0bd7b6895a856dc73b5222469fb4f2f-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@bensonk42
+
+Benson Kalahar
+
+No joke, some of the best software I've ever used. Between machines that are on the tail scale network, everything is encrypted by default. If you use it for all the machines you want to have talking, you install it and never think about it again.
+
+Reply
+
+Share
+
+...
+
+![Image 116: @qmacro@hachyderm.io](https://cdn.sanity.io/images/w77i7m8x/production/f205e0110c4b47e29bb396274bb4138b48829e9d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@qmacro
+
+@qmacro@hachyderm.io
+
+The hardest thing to understand about @tailscale is that there are no hard things to understand about @tailscale and it just works.
+
+Reply
+
+Share
+
+...
+
+![Image 117: Zack Allen](https://cdn.sanity.io/images/w77i7m8x/production/2741d59e4a69a546a901094fdce259c645592f15-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@techyteachme
+
+Zack Allen
+
+Just setup @Tailscale and my mind is BLOWN.
+
+Reply
+
+Share
+
+...
+
+![Image 118: Simon Vans-Colina](https://cdn.sanity.io/images/w77i7m8x/production/699b217a40783e1c54dc8b3aadb451ec072f38aa-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@simonvc
+
+Simon Vans-Colina
+
+@Tailscale is so good it makes me angry it didn't exist since the beginning of the internet. It's basically the upgrade the internet needed. Fully-Routable (+firewall) -\> NAT'd (+STUN) -\> Encrypted Personal Mesh.
+
+Reply
+
+Share
+
+...
+
+![Image 119: Matthew V Rabinowitz](https://cdn.sanity.io/images/w77i7m8x/production/2d371bca087e746a525c5722ba6321414f3d160d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@mrabino1
+
+Matthew V Rabinowitz
+
+I am not an investor in, @tailscale (though, I wish I were). From my lens they will change how we all use the internet. Just a question of when, not if. #privacy
+
+Reply
+
+Share
+
+...
+
+![Image 120: Scott Hanselman](https://cdn.sanity.io/images/w77i7m8x/production/c587f7a1d48cfbedaf086a00ab8ecd6bf3bc5ab1-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@shanselman
+
+Scott Hanselman
+
+Just Remote Desktop’ed into my machine at home using my iPhone, @Tailscale, and the excellent Remote Desktop iPhone app. I needed to edit a JSON file using Azure Storage Explorer for my podcast while on vacation. Did it over LTE on a train in Switzerland. AMAZING
+
+Reply
+
+Share
+
+...
+
+![Image 121: Elliott Davis](https://cdn.sanity.io/images/w77i7m8x/production/30acb0cd8aa21edb1b4170b8a02a7481af0c5d87-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@libsysguy
+
+Elliott Davis
+
+I tried @Tailscale for the first time last night. Holy smokes what a delightfully well thought out product
+
+Reply
+
+Share
+
+...
+
+![Image 122: J. Gavin Ray](https://cdn.sanity.io/images/w77i7m8x/production/0cc0a8b2d3d85e8ecb1c17ada174103f4a14f8a1-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jgavinray
+
+J. Gavin Ray
+
+Been using @Tailscale for a while at work and personally. Who would have thought networking could be... easy?!
+
+Reply
+
+Share
+
+...
+
+![Image 123: big jim](https://cdn.sanity.io/images/w77i7m8x/production/5cd5ff7a02b6f7e820c83a3e009f90c224795481-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@dixdotdev
+
+big jim
+
+The campus WiFi also prevented my original Wireguard VPN. Multiple NATs, blocked ports... Tailscale just figures it all out. There's honestly dozens of other reasons, but for me it just helps me to be portable. I run pihole too. I'd be lost without it now!
+
+Reply
+
+Share
+
+...
+
+![Image 124: Theo Salvo](https://cdn.sanity.io/images/w77i7m8x/production/1853ad560cb86e4e7914758279032df9f8ae231c-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@TheodoreJSalvo
+
+Theo Salvo
+
+Oh @Tailscale, I’ve put you off for so long not knowing what I was missing. In advance of #KubeCon I now can manage my home NAS and my home k8s cluster…from my phone! Thank you!
+
+Reply
+
+Share
+
+...
+
+![Image 125: llia](https://cdn.sanity.io/images/w77i7m8x/production/09cc48c4ece77ef6306620d7fd697a058cf96e1f-400x400.png?w=828&q=75&fit=clip&auto=format)
+
+@falsefalse
+
+llia
+
+Thanks to @Tailscale being available as a package for @Synology I was able to renew @letsencrypt certificate on my home NAS while being 8000 kilometers away from it. Amazing piece of tech 🥹
+
+Reply
+
+Share
+
+...
+
+![Image 126: Benson Kalahar](https://cdn.sanity.io/images/w77i7m8x/production/a088fd39d0bd7b6895a856dc73b5222469fb4f2f-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@bensonk42
+
+Benson Kalahar
+
+No joke, some of the best software I've ever used. Between machines that are on the tail scale network, everything is encrypted by default. If you use it for all the machines you want to have talking, you install it and never think about it again.
+
+Reply
+
+Share
+
+...
+
+![Image 127: @qmacro@hachyderm.io](https://cdn.sanity.io/images/w77i7m8x/production/f205e0110c4b47e29bb396274bb4138b48829e9d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@qmacro
+
+@qmacro@hachyderm.io
+
+The hardest thing to understand about @tailscale is that there are no hard things to understand about @tailscale and it just works.
+
+Reply
+
+Share
+
+...
+
+![Image 128: Zack Allen](https://cdn.sanity.io/images/w77i7m8x/production/2741d59e4a69a546a901094fdce259c645592f15-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@techyteachme
+
+Zack Allen
+
+Just setup @Tailscale and my mind is BLOWN.
+
+Reply
+
+Share
+
+...
+
+![Image 129: Simon Vans-Colina](https://cdn.sanity.io/images/w77i7m8x/production/699b217a40783e1c54dc8b3aadb451ec072f38aa-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@simonvc
+
+Simon Vans-Colina
+
+@Tailscale is so good it makes me angry it didn't exist since the beginning of the internet. It's basically the upgrade the internet needed. Fully-Routable (+firewall) -\> NAT'd (+STUN) -\> Encrypted Personal Mesh.
+
+Reply
+
+Share
+
+...
+
+![Image 130: Matthew V Rabinowitz](https://cdn.sanity.io/images/w77i7m8x/production/2d371bca087e746a525c5722ba6321414f3d160d-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@mrabino1
+
+Matthew V Rabinowitz
+
+I am not an investor in, @tailscale (though, I wish I were). From my lens they will change how we all use the internet. Just a question of when, not if. #privacy
+
+Reply
+
+Share
+
+...
+
+![Image 131: Scott Hanselman](https://cdn.sanity.io/images/w77i7m8x/production/c587f7a1d48cfbedaf086a00ab8ecd6bf3bc5ab1-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@shanselman
+
+Scott Hanselman
+
+Just Remote Desktop’ed into my machine at home using my iPhone, @Tailscale, and the excellent Remote Desktop iPhone app. I needed to edit a JSON file using Azure Storage Explorer for my podcast while on vacation. Did it over LTE on a train in Switzerland. AMAZING
+
+Reply
+
+Share
+
+...
+
+![Image 132: Elliott Davis](https://cdn.sanity.io/images/w77i7m8x/production/30acb0cd8aa21edb1b4170b8a02a7481af0c5d87-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@libsysguy
+
+Elliott Davis
+
+I tried @Tailscale for the first time last night. Holy smokes what a delightfully well thought out product
+
+Reply
+
+Share
+
+...
+
+![Image 133: Justin Morris](https://cdn.sanity.io/images/w77i7m8x/production/893cbf119ed77eb46519490d440a4dbef2e95ab4-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@plasticine
+
+Justin Morris
+
+Geez @Tailscale is just flat-out good technology 😍 The implications for improving and uplifts so many thing from developer and operator experience dramatically. The more I play with it the more impressed I am. Excellent tooling.
+
+Reply
+
+Share
+
+...
+
+![Image 134: Jashank Jeremy](https://cdn.sanity.io/images/w77i7m8x/production/715a14f6c54bedf31d85e69e26036a0ca758eac8-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jashankj
+
+Jashank Jeremy
+
+I've run my own VPN for ages (since 2015, I think?) — and I'm now seriously considering turning it off, because @Tailscale seems to do everything I want ... and has stuff I never quite got to behave right. No muss, no fuss; excellent.
+
+Reply
+
+Share
+
+...
+
+![Image 135: Liam Keegan](https://cdn.sanity.io/images/w77i7m8x/production/46050f1c19bfefdb091abddca162b8f2e510163a-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@LiamJKeegan
+
+Liam Keegan
+
+Uhh this is sweet! Redirecting SSL authentication to Tailscale to handle it for you eliminates the need to manage PKI at scale, or go through the nightmare of changing keys out when someone leaves. And, EVERYTHING is protected, regardless of where the workload loves. AWESOME!
+
+Reply
+
+Share
+
+...
+
+![Image 136: Martin Lucina](https://cdn.sanity.io/images/w77i7m8x/production/05a03e8d2de22c1fa1a9bd04d9cec22a501be22f-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@matolucina
+
+Martin Lucina
+
+Install @Tailscale. Click "Share node". Send link. 2 minutes later, someone who's never used Tailscale before reports "I can connect to the machine, this works like magic!"
+
+Reply
+
+Share
+
+...
+
+![Image 137: Sümer Cip](https://cdn.sanity.io/images/w77i7m8x/production/0b295eee21960a80835521c44021ab524cd5dda3-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@sumercip
+
+Sümer Cip
+
+I don't like ranting about software. But I will make an exception: @Tailscale is really AMAZING! I have managed to set it up for my personal use WITHOUT reading a single line of documentation.
+
+Reply
+
+Share
+
+...
+
+![Image 138: James Brooks](https://cdn.sanity.io/images/w77i7m8x/production/69b2250303fb47ee233410ecd6f328797534ebba-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jbrooksuk
+
+James Brooks
+
+I've been using @Tailscale for a few weeks now and it's so good. I can't believe it's free for personal use. I love that I can access my local network from anywhere.
+
+Reply
+
+Share
+
+...
+
+![Image 139: Mason Egger](https://cdn.sanity.io/images/w77i7m8x/production/2528193c3795e7834d24f547daab358290558244-384x384.jpg?w=828&q=75&fit=clip&auto=format)
+
+@masonegger
+
+Mason Egger
+
+Another tool that I absolutely LOVE using is @Tailscale. You never realize you need a VPN until you do. Shady hotel wifi, no match. The absolute ease of use Tailscale brings is legit inspiring me to reconsider starting up a home lab again. Bravo Tailscale team.
+
+Reply
+
+Share
+
+...
+
+![Image 140: Michael Tiller](https://cdn.sanity.io/images/w77i7m8x/production/8f98cf6351000f64a12a9077000487cb0b0b787a-400x400.png?w=828&q=75&fit=clip&auto=format)
+
+@mtiller
+
+Michael Tiller
+
+A few days ago, I said I hadn’t had any experience with @tailscale. Well, now I have and all I can say is WOW! I’ve now configured two private networks and it was SO easy to use and did everything I needed. Installation on Linux, Mac and Windows was a snap. KUDOS!
+
+Reply
+
+Share
+
+...
+
+![Image 141: Rory McCune](https://cdn.sanity.io/images/w77i7m8x/production/e79e69c33d9bbd12834c61944d5437e6ed0cecd4-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@raesene
+
+Rory McCune
+
+Gotta say, @Tailscale is really good stuff. Easy to configure, flexible, fast. Wanted to route my traffic via home while travelling, SSH into a VM at home setup an exit node, done!
+
+Reply
+
+Share
+
+...
+
+![Image 142: Justin Morris](https://cdn.sanity.io/images/w77i7m8x/production/893cbf119ed77eb46519490d440a4dbef2e95ab4-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@plasticine
+
+Justin Morris
+
+Geez @Tailscale is just flat-out good technology 😍 The implications for improving and uplifts so many thing from developer and operator experience dramatically. The more I play with it the more impressed I am. Excellent tooling.
+
+Reply
+
+Share
+
+...
+
+![Image 143: Jashank Jeremy](https://cdn.sanity.io/images/w77i7m8x/production/715a14f6c54bedf31d85e69e26036a0ca758eac8-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jashankj
+
+Jashank Jeremy
+
+I've run my own VPN for ages (since 2015, I think?) — and I'm now seriously considering turning it off, because @Tailscale seems to do everything I want ... and has stuff I never quite got to behave right. No muss, no fuss; excellent.
+
+Reply
+
+Share
+
+...
+
+![Image 144: Liam Keegan](https://cdn.sanity.io/images/w77i7m8x/production/46050f1c19bfefdb091abddca162b8f2e510163a-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@LiamJKeegan
+
+Liam Keegan
+
+Uhh this is sweet! Redirecting SSL authentication to Tailscale to handle it for you eliminates the need to manage PKI at scale, or go through the nightmare of changing keys out when someone leaves. And, EVERYTHING is protected, regardless of where the workload loves. AWESOME!
+
+Reply
+
+Share
+
+...
+
+![Image 145: Martin Lucina](https://cdn.sanity.io/images/w77i7m8x/production/05a03e8d2de22c1fa1a9bd04d9cec22a501be22f-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@matolucina
+
+Martin Lucina
+
+Install @Tailscale. Click "Share node". Send link. 2 minutes later, someone who's never used Tailscale before reports "I can connect to the machine, this works like magic!"
+
+Reply
+
+Share
+
+...
+
+![Image 146: Sümer Cip](https://cdn.sanity.io/images/w77i7m8x/production/0b295eee21960a80835521c44021ab524cd5dda3-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@sumercip
+
+Sümer Cip
+
+I don't like ranting about software. But I will make an exception: @Tailscale is really AMAZING! I have managed to set it up for my personal use WITHOUT reading a single line of documentation.
+
+Reply
+
+Share
+
+...
+
+![Image 147: James Brooks](https://cdn.sanity.io/images/w77i7m8x/production/69b2250303fb47ee233410ecd6f328797534ebba-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jbrooksuk
+
+James Brooks
+
+I've been using @Tailscale for a few weeks now and it's so good. I can't believe it's free for personal use. I love that I can access my local network from anywhere.
+
+Reply
+
+Share
+
+...
+
+![Image 148: Mason Egger](https://cdn.sanity.io/images/w77i7m8x/production/2528193c3795e7834d24f547daab358290558244-384x384.jpg?w=828&q=75&fit=clip&auto=format)
+
+@masonegger
+
+Mason Egger
+
+Another tool that I absolutely LOVE using is @Tailscale. You never realize you need a VPN until you do. Shady hotel wifi, no match. The absolute ease of use Tailscale brings is legit inspiring me to reconsider starting up a home lab again. Bravo Tailscale team.
+
+Reply
+
+Share
+
+...
+
+![Image 149: Michael Tiller](https://cdn.sanity.io/images/w77i7m8x/production/8f98cf6351000f64a12a9077000487cb0b0b787a-400x400.png?w=828&q=75&fit=clip&auto=format)
+
+@mtiller
+
+Michael Tiller
+
+A few days ago, I said I hadn’t had any experience with @tailscale. Well, now I have and all I can say is WOW! I’ve now configured two private networks and it was SO easy to use and did everything I needed. Installation on Linux, Mac and Windows was a snap. KUDOS!
+
+Reply
+
+Share
+
+...
+
+![Image 150: Rory McCune](https://cdn.sanity.io/images/w77i7m8x/production/e79e69c33d9bbd12834c61944d5437e6ed0cecd4-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@raesene
+
+Rory McCune
+
+Gotta say, @Tailscale is really good stuff. Easy to configure, flexible, fast. Wanted to route my traffic via home while travelling, SSH into a VM at home setup an exit node, done!
+
+Reply
+
+Share
+
+...
+
+![Image 151: Justin Morris](https://cdn.sanity.io/images/w77i7m8x/production/893cbf119ed77eb46519490d440a4dbef2e95ab4-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@plasticine
+
+Justin Morris
+
+Geez @Tailscale is just flat-out good technology 😍 The implications for improving and uplifts so many thing from developer and operator experience dramatically. The more I play with it the more impressed I am. Excellent tooling.
+
+Reply
+
+Share
+
+...
+
+![Image 152: Jashank Jeremy](https://cdn.sanity.io/images/w77i7m8x/production/715a14f6c54bedf31d85e69e26036a0ca758eac8-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jashankj
+
+Jashank Jeremy
+
+I've run my own VPN for ages (since 2015, I think?) — and I'm now seriously considering turning it off, because @Tailscale seems to do everything I want ... and has stuff I never quite got to behave right. No muss, no fuss; excellent.
+
+Reply
+
+Share
+
+...
+
+![Image 153: Liam Keegan](https://cdn.sanity.io/images/w77i7m8x/production/46050f1c19bfefdb091abddca162b8f2e510163a-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@LiamJKeegan
+
+Liam Keegan
+
+Uhh this is sweet! Redirecting SSL authentication to Tailscale to handle it for you eliminates the need to manage PKI at scale, or go through the nightmare of changing keys out when someone leaves. And, EVERYTHING is protected, regardless of where the workload loves. AWESOME!
+
+Reply
+
+Share
+
+...
+
+![Image 154: Martin Lucina](https://cdn.sanity.io/images/w77i7m8x/production/05a03e8d2de22c1fa1a9bd04d9cec22a501be22f-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@matolucina
+
+Martin Lucina
+
+Install @Tailscale. Click "Share node". Send link. 2 minutes later, someone who's never used Tailscale before reports "I can connect to the machine, this works like magic!"
+
+Reply
+
+Share
+
+...
+
+![Image 155: Sümer Cip](https://cdn.sanity.io/images/w77i7m8x/production/0b295eee21960a80835521c44021ab524cd5dda3-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@sumercip
+
+Sümer Cip
+
+I don't like ranting about software. But I will make an exception: @Tailscale is really AMAZING! I have managed to set it up for my personal use WITHOUT reading a single line of documentation.
+
+Reply
+
+Share
+
+...
+
+![Image 156: James Brooks](https://cdn.sanity.io/images/w77i7m8x/production/69b2250303fb47ee233410ecd6f328797534ebba-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jbrooksuk
+
+James Brooks
+
+I've been using @Tailscale for a few weeks now and it's so good. I can't believe it's free for personal use. I love that I can access my local network from anywhere.
+
+Reply
+
+Share
+
+...
+
+![Image 157: Mason Egger](https://cdn.sanity.io/images/w77i7m8x/production/2528193c3795e7834d24f547daab358290558244-384x384.jpg?w=828&q=75&fit=clip&auto=format)
+
+@masonegger
+
+Mason Egger
+
+Another tool that I absolutely LOVE using is @Tailscale. You never realize you need a VPN until you do. Shady hotel wifi, no match. The absolute ease of use Tailscale brings is legit inspiring me to reconsider starting up a home lab again. Bravo Tailscale team.
+
+Reply
+
+Share
+
+...
+
+![Image 158: Michael Tiller](https://cdn.sanity.io/images/w77i7m8x/production/8f98cf6351000f64a12a9077000487cb0b0b787a-400x400.png?w=828&q=75&fit=clip&auto=format)
+
+@mtiller
+
+Michael Tiller
+
+A few days ago, I said I hadn’t had any experience with @tailscale. Well, now I have and all I can say is WOW! I’ve now configured two private networks and it was SO easy to use and did everything I needed. Installation on Linux, Mac and Windows was a snap. KUDOS!
+
+Reply
+
+Share
+
+...
+
+![Image 159: Rory McCune](https://cdn.sanity.io/images/w77i7m8x/production/e79e69c33d9bbd12834c61944d5437e6ed0cecd4-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@raesene
+
+Rory McCune
+
+Gotta say, @Tailscale is really good stuff. Easy to configure, flexible, fast. Wanted to route my traffic via home while travelling, SSH into a VM at home setup an exit node, done!
+
+Reply
+
+Share
+
+...
+
+![Image 160: Justin Morris](https://cdn.sanity.io/images/w77i7m8x/production/893cbf119ed77eb46519490d440a4dbef2e95ab4-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@plasticine
+
+Justin Morris
+
+Geez @Tailscale is just flat-out good technology 😍 The implications for improving and uplifts so many thing from developer and operator experience dramatically. The more I play with it the more impressed I am. Excellent tooling.
+
+Reply
+
+Share
+
+...
+
+![Image 161: Jashank Jeremy](https://cdn.sanity.io/images/w77i7m8x/production/715a14f6c54bedf31d85e69e26036a0ca758eac8-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jashankj
+
+Jashank Jeremy
+
+I've run my own VPN for ages (since 2015, I think?) — and I'm now seriously considering turning it off, because @Tailscale seems to do everything I want ... and has stuff I never quite got to behave right. No muss, no fuss; excellent.
+
+Reply
+
+Share
+
+...
+
+![Image 162: Liam Keegan](https://cdn.sanity.io/images/w77i7m8x/production/46050f1c19bfefdb091abddca162b8f2e510163a-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@LiamJKeegan
+
+Liam Keegan
+
+Uhh this is sweet! Redirecting SSL authentication to Tailscale to handle it for you eliminates the need to manage PKI at scale, or go through the nightmare of changing keys out when someone leaves. And, EVERYTHING is protected, regardless of where the workload loves. AWESOME!
+
+Reply
+
+Share
+
+...
+
+![Image 163: Martin Lucina](https://cdn.sanity.io/images/w77i7m8x/production/05a03e8d2de22c1fa1a9bd04d9cec22a501be22f-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@matolucina
+
+Martin Lucina
+
+Install @Tailscale. Click "Share node". Send link. 2 minutes later, someone who's never used Tailscale before reports "I can connect to the machine, this works like magic!"
+
+Reply
+
+Share
+
+...
+
+![Image 164: Sümer Cip](https://cdn.sanity.io/images/w77i7m8x/production/0b295eee21960a80835521c44021ab524cd5dda3-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@sumercip
+
+Sümer Cip
+
+I don't like ranting about software. But I will make an exception: @Tailscale is really AMAZING! I have managed to set it up for my personal use WITHOUT reading a single line of documentation.
+
+Reply
+
+Share
+
+...
+
+![Image 165: James Brooks](https://cdn.sanity.io/images/w77i7m8x/production/69b2250303fb47ee233410ecd6f328797534ebba-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@jbrooksuk
+
+James Brooks
+
+I've been using @Tailscale for a few weeks now and it's so good. I can't believe it's free for personal use. I love that I can access my local network from anywhere.
+
+Reply
+
+Share
+
+...
+
+![Image 166: Mason Egger](https://cdn.sanity.io/images/w77i7m8x/production/2528193c3795e7834d24f547daab358290558244-384x384.jpg?w=828&q=75&fit=clip&auto=format)
+
+@masonegger
+
+Mason Egger
+
+Another tool that I absolutely LOVE using is @Tailscale. You never realize you need a VPN until you do. Shady hotel wifi, no match. The absolute ease of use Tailscale brings is legit inspiring me to reconsider starting up a home lab again. Bravo Tailscale team.
+
+Reply
+
+Share
+
+...
+
+![Image 167: Michael Tiller](https://cdn.sanity.io/images/w77i7m8x/production/8f98cf6351000f64a12a9077000487cb0b0b787a-400x400.png?w=828&q=75&fit=clip&auto=format)
+
+@mtiller
+
+Michael Tiller
+
+A few days ago, I said I hadn’t had any experience with @tailscale. Well, now I have and all I can say is WOW! I’ve now configured two private networks and it was SO easy to use and did everything I needed. Installation on Linux, Mac and Windows was a snap. KUDOS!
+
+Reply
+
+Share
+
+...
+
+![Image 168: Rory McCune](https://cdn.sanity.io/images/w77i7m8x/production/e79e69c33d9bbd12834c61944d5437e6ed0cecd4-400x400.jpg?w=828&q=75&fit=clip&auto=format)
+
+@raesene
+
+Rory McCune
+
+Gotta say, @Tailscale is really good stuff. Easy to configure, flexible, fast. Wanted to route my traffic via home while travelling, SSH into a VM at home setup an exit node, done!
+
+Reply
+
+Share
+
+...
+
+Simple, powerful, and reliable
+------------------------------
+
+[![Image 169: quick deployment](https://cdn.sanity.io/images/w77i7m8x/production/71f614d92af4821e1c55ec43e61d0df7df305424-138x103.svg?w=384&q=75&fit=clip&auto=format) #### Quick deployment Establish private networks in minutes and push out Tailscale to users without having to configure every device.](https://tailscale.com/why-tailscale#streamlined-setup)[![Image 170: Infrastructure agnostic](https://cdn.sanity.io/images/w77i7m8x/production/c4d3b72947b9f9359f2a3c2bbc20b3ae3ebed0bf-138x103.svg?w=384&q=75&fit=clip&auto=format) #### Infrastructure agnostic Tailscale works wherever you do, on any platform, service, or runtime, anywhere.](https://tailscale.com/why-tailscale#infrastructure-agnostic)[![Image 171: Secure by default](https://cdn.sanity.io/images/w77i7m8x/production/53da8fed443bccea69db6b8d3bf98126cd5d80d0-138x103.svg?w=384&q=75&fit=clip&auto=format) #### Secure by default Authorize which resources are accessible to users, roles, or groups with Access Control Lists (ACLs).](https://tailscale.com/why-tailscale#secure-and-private)
+
+#### 3 mins
+
+to set up your network
+
+#### 2.5m
+
+devices connected
+
+#### 10k+
+
+companies running Tailscale
+
+Our commitment to security
+--------------------------
+
+We are committed to always safeguarding your data. Every connection is encrypted end-to-end using WireGuard®, a modern VPN protocol designed for usability, performance, and security. Stay up-to-date on updates via our security bulletin below.
+
+[Learn more](https://tailscale.com/security)[Security bulletins](https://tailscale.com/security-bulletins)
+
+![Image 172: sso](https://cdn.sanity.io/images/w77i7m8x/production/91e48b4514e8c5beb3583fb6810d214c040fd350-180x211.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 173: access control list](https://cdn.sanity.io/images/w77i7m8x/production/6d6337bac55bab4d05b49b4dcc40c6b11e8c5907-180x212.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 174: end to end encrypted](https://cdn.sanity.io/images/w77i7m8x/production/eccd917b4275e52b4acbac120c8e25e4b3869063-180x212.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 175: soc 2](https://cdn.sanity.io/images/w77i7m8x/production/f45caa9b380058aabbd7be47c484eb94888ff36c-180x211.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 176: latacora audits](https://cdn.sanity.io/images/w77i7m8x/production/7c081b956070e21ef707e825da90793c43d3d76d-180x212.svg?w=384&q=75&fit=clip&auto=format)
+
+![Image 177: security bulletins](https://cdn.sanity.io/images/w77i7m8x/production/48f907c3c098142c7f979757e64a94fb405c5ce4-180x212.svg?w=384&q=75&fit=clip&auto=format)
+
+### Fits into your preferred workflow
+
+With 100+ integrations, Tailscale works with all your favorite tools. Provision resources that automatically join the tailnet using Terraform or Pulumi. Integrate ACL management into your existing GitOps workflow. Our docs will help you get started on building your tailnet today. 
+
+[See docs](https://tailscale.com/kb/)
+
+![Image 178: docs](https://cdn.sanity.io/images/w77i7m8x/production/527b93e1e1c9b63f0f7b90a8ac60886f462f0794-790x215.svg?w=1920&q=75&fit=clip&auto=format)
+
+[![Image 179: quickstart guides](https://cdn.sanity.io/images/w77i7m8x/production/1356c41503382f05f78366329d62b84d62e4fb75-400x430.svg?w=828&q=75&fit=clip&auto=format) GUIDES ### Tailscale quickstart guide Read guide](https://tailscale.com/kb/1017/install/)
+
+Try Tailscale for free
+----------------------
+
+[Get started](https://login.tailscale.com/start)
+
+Schedule a demo
+
+[Contact sales](https://tailscale.com/contact/sales)
+
+![Image 180: cta phone](https://cdn.sanity.io/images/w77i7m8x/production/b715b4ca5e2577da60f0d529a4a9bc2ad4cadf59-362x567.svg?w=750&q=75&fit=clip&auto=format)
+
+![Image 181: mercury](https://cdn.sanity.io/images/w77i7m8x/production/459a7a8492910eeb22f22bb8d4c0f864b0bae25f-199x81.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 182: instacrt](https://cdn.sanity.io/images/w77i7m8x/production/7d127f4bb62a408b056328349f291857df6251b3-199x81.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 183: Retool](https://cdn.sanity.io/images/w77i7m8x/production/e9579b00087d7896e9cb750f4eb39f2c11ed11b8-199x82.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 184: duolingo](https://cdn.sanity.io/images/w77i7m8x/production/7958bf3d43a30e661ca74cf0510f250d9b99ecef-199x81.svg?w=640&q=75&fit=clip&auto=format)
+
+![Image 185: Hugging Face](https://cdn.sanity.io/images/w77i7m8x/production/68e2e5024898bcd6f6d142e0306dc7564787e1d7-199x82.svg?w=640&q=75&fit=clip&auto=format)
+
+Product
+
+[How it works](https://tailscale.com/blog/how-tailscale-works)[Pricing](https://tailscale.com/pricing)[Integrations](https://tailscale.com/integrations)[Features](https://tailscale.com/features)[Compare Tailscale](https://tailscale.com/compare)
+
+Use Cases
+
+[Business VPN](https://tailscale.com/use-cases/business-vpn)[Remote Access](https://tailscale.com/use-cases/remote-access)[Site-to-Site Networking](https://tailscale.com/use-cases/site-to-site-networking)[Homelab](https://tailscale.com/use-cases/homelab)[Enterprise](https://tailscale.com/enterprise)
+
+Resources
+
+[Blog](https://tailscale.com/blog)[Events & Webinars](https://tailscale.com/events-webinars)[Partnerships](https://tailscale.com/partnerships)
+
+Company
+
+[Company](https://tailscale.com/company)[Careers](https://tailscale.com/careers)[Press](https://tailscale.com/press)
+
+Help & Support
+
+[Support](https://tailscale.com/contact/support)[Sales](https://tailscale.com/contact/sales)[Security](https://tailscale.com/security)[Legal](https://tailscale.com/legal)[Open Source](https://tailscale.com/opensource)[Changelog](https://tailscale.com/changelog)
+
+Learn
+
+[SSH keys](https://tailscale.com/learn/generate-ssh-keys)[Docker SSH](https://tailscale.com/learn/ssh-into-docker-container)[DevSecOps](https://tailscale.com/learn/devsecops)[Multicloud](https://tailscale.com/learn/multicloud)[NAT Traversal](https://tailscale.com/blog/how-nat-traversal-works)[MagicDNS](https://tailscale.com/blog/2021-09-private-dns-with-magicdns)[PAM](https://tailscale.com/learn/privileged-access-management)[PoLP](https://tailscale.com/learn/principle-of-least-privilege)[All articles](https://tailscale.com/learn)
+
+[](https://tailscale.com/ "Homepage")
+
+[Terms of Service](https://tailscale.com/terms)[Privacy Policy](https://tailscale.com/privacy-policy)
+
+WireGuard is a registered trademark of Jason A. Donenfeld.
+
+[](https://twitter.com/tailscale)[](https://www.facebook.com/tailscale/)[](https://www.linkedin.com/company/tailscale)[](https://hachyderm.io/@tailscale)[](https://www.youtube.com/@Tailscale)
+
+© 2025 Tailscale Inc. All rights reserved. Tailscale is a registered trademark of Tailscale Inc.
+
+![Image 186](https://bat.bing.com/action/0?ti=17188063&Ver=2&mid=e84c39fb-57d9-4d82-a35d-dcd722e9467c&bo=1&sid=8e36e220fcab11ef8a9383be9145083a&vid=8e36fa40fcab11efa7bb0981736046b0&vids=1&msclkid=N&pi=918639831&lg=en-US&sw=800&sh=600&sc=24&nwd=1&tl=Tailscale%20%C2%B7%20Best%20VPN%20Service%20for%20Secure%20Networks&p=https%3A%2F%2Ftailscale.com%2F&r=&lt=2400&evt=pageLoad&sv=1&cdb=AQAQ&rn=290640)
+
+Links/Buttons:
+- [Just-in-time Network Access: Demo and Q&ASign up now](https://tailscale.com/events-webinars/jit-network-access)
+- [](https://www.youtube.com/@Tailscale)
+- [Enterprise](https://tailscale.com/enterprise)
+- [Customers](https://tailscale.com/customers)
+- [Docs](https://tailscale.com/kb/1017/install)
+- [Blog](https://tailscale.com/blog)
+- [Pricing](https://tailscale.com/pricing)
+- [Download](https://tailscale.com/download)
+- [Log in](https://login.tailscale.com/welcome)
+- [Get started - it's free!](https://login.tailscale.com/start)
+- [How it works](https://tailscale.com/blog/how-tailscale-works)
+- [Why Tailscale](https://tailscale.com/why-tailscale)
+- [WireGuard® for Enterprises](https://tailscale.com/wireguard-vpn)
+- [Bring Tailscale to Work](https://tailscale.com/bring-tailscale-to-work)
+- [Integrations](https://tailscale.com/integrations)
+- [Features](https://tailscale.com/features)
+- [Compare Tailscale](https://tailscale.com/compare)
+- [Partnerships](https://tailscale.com/partnerships)
+- [Remote Access](https://tailscale.com/use-cases/remote-access)
+- [Site-to-site Networking](https://tailscale.com/use-cases/site-to-site-networking)
+- [Multi-Cloud Networking](https://tailscale.com/use-cases/multi-cloud-networking)
+- [Kubernetes Networking](https://tailscale.com/use-cases/kubernetes)
+- [Edge & IoT Deployments](https://tailscale.com/use-cases/iot)
+- [Zero Trust Networking](https://tailscale.com/use-cases/zero-trust-networking)
+- [AI Workloads](https://tailscale.com/use-cases/ai)
+- [Secure SaaS](https://tailscale.com/use-cases/secure-saas)
+- [Business VPN](https://tailscale.com/use-cases/business-vpn)
+- [Homelab](https://tailscale.com/use-cases/homelab)
+- [DevOps](https://tailscale.com/solutions/devops)
+- [IT](https://tailscale.com/solutions/it)
+- [Security](https://tailscale.com/solutions/security)
+- [Terms of Service](https://tailscale.com/terms)
+- [Privacy Policy](https://tailscale.com/privacy-policy)
+- [Contact Sales](https://tailscale.com/contact/sales)
+- [Operating systems](https://tailscale.com/integrations?category=operating-systems-(os))
+- [Identity providers](https://tailscale.com/integrations?category=identity-providers#identity-providers)
+- [Get started with AWS](https://aws.amazon.com/marketplace/pp/prodview-jvxfapco43wr4?trk=41156f33-2a52-4124-8993-f9cde0e7aaab&sc_channel=el&source=tailscale)
+- [Quick deploymentEstablish private networks in minutes and push out Tailscale to users without having to configure every device.](https://tailscale.com/why-tailscale#streamlined-setup)
+- [Infrastructure agnosticTailscale works wherever you do, on any platform, service, or runtime, anywhere.](https://tailscale.com/why-tailscale#infrastructure-agnostic)
+- [Secure by defaultAuthorize which resources are accessible to users, roles, or groups with Access Control Lists (ACLs).](https://tailscale.com/why-tailscale#secure-and-private)
+- [Learn more](https://tailscale.com/security)
+- [Security bulletins](https://tailscale.com/security-bulletins)
+- [See docs](https://tailscale.com/kb/)
+- [GUIDESTailscale quickstart guideRead guide](https://tailscale.com/kb/1017/install/)
+- [Events & Webinars](https://tailscale.com/events-webinars)
+- [Company](https://tailscale.com/company)
+- [Careers](https://tailscale.com/careers)
+- [Press](https://tailscale.com/press)
+- [Support](https://tailscale.com/contact/support)
+- [Legal](https://tailscale.com/legal)
+- [Open Source](https://tailscale.com/opensource)
+- [Changelog](https://tailscale.com/changelog)
+- [SSH keys](https://tailscale.com/learn/generate-ssh-keys)
+- [Docker SSH](https://tailscale.com/learn/ssh-into-docker-container)
+- [DevSecOps](https://tailscale.com/learn/devsecops)
+- [Multicloud](https://tailscale.com/learn/multicloud)
+- [NAT Traversal](https://tailscale.com/blog/how-nat-traversal-works)
+- [MagicDNS](https://tailscale.com/blog/2021-09-private-dns-with-magicdns)
+- [PAM](https://tailscale.com/learn/privileged-access-management)
+- [PoLP](https://tailscale.com/learn/principle-of-least-privilege)
+- [All articles](https://tailscale.com/learn)

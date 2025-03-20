@@ -3,12 +3,17 @@ import TagChip from "./TagChip.astro";
 
 interface Props {
   tags: string[];
-  tagFrequencies: Record<string, number>;
+  tagFrequencies?: Record<string, number>;
   visibleTagRowLimit?: number;
   maxWidth?: string;
 }
 
-const { tags = [], tagFrequencies = {}, visibleTagRowLimit = 4, maxWidth = "100%" } = Astro.props;
+const {
+  tags = [],
+  tagFrequencies = {},
+  visibleTagRowLimit = 4,
+  maxWidth = "100%",
+} = Astro.props;
 
 // Calculate approximate row height based on tag chip height + gap
 const rowHeight = 26; // Tag height (22px) + gap (6px)
@@ -16,15 +21,19 @@ const maxHeight = visibleTagRowLimit * rowHeight;
 ---
 
 <div class="tool-cloud">
-  <div class="tool-tags" style={`max-height: ${maxHeight}px; max-width: ${maxWidth};`}>
-    {tags.length > 0 && 
-      tags.map((tag) => (
-        <TagChip 
-          tag={tag}
-          count={tagFrequencies[tag] || 0}
-          includeCount={true}
-        />
-      ))
+  <div
+    class="tool-tags"
+    style={`max-height: ${maxHeight}px; max-width: ${maxWidth};`}
+  >
+    {
+      tags.length > 0 &&
+        tags.map((tag) => (
+          <TagChip
+            tag={tag}
+            count={tagFrequencies[tag] || 0}
+            includeCount={true}
+          />
+        ))
     }
   </div>
 </div>
@@ -33,7 +42,7 @@ const maxHeight = visibleTagRowLimit * rowHeight;
   .tool-cloud {
     display: flex;
     flex-wrap: wrap;
-    gap: .6em;
+    gap: 0.6em;
     width: 100%;
     justify-content: space-between;
   }
@@ -44,7 +53,7 @@ const maxHeight = visibleTagRowLimit * rowHeight;
     gap: 0.5em;
     width: 100%;
     overflow-y: hidden;
-    padding: .6em 1em;
+    padding: 0.6em 1em;
     justify-content: space-between; /* Add space for potential scrollbar */
   }
 

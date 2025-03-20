@@ -1,3 +1,18 @@
+---
+site_uuid: ddfb4fd8-fc00-40de-a64d-10ea42dcf771
+title: Synthetic Customers
+tags:
+  - AI-Toolkit
+  - Explainers
+site_visibility: public
+site_uuid: b8d2324c-5cd2-4399-801d-09877efcabdc
+site_uuid: b7f0a9d5-ad9f-4842-b732-c383d270a662
+site_uuid: b4394eb7-809a-4632-9080-a8d7c683e0e1
+site_uuid: ad8b885a-0530-420d-8165-adde3b7143d6
+site_uuid: 6296ae2e-b3dc-40e7-8536-4559f0147adc
+site_uuid: a3fb1465-515d-4f2a-9fb1-00bb3f1099e7
+---
+
 A [[RAG]] or [[Knowledge Augmented Generation|KAG]] technique on customer data that can create [[Synthetic Data]], and then use [[Generative AI]] to create [[Synthetic Customers]], which may behave like your existing customer personas.  
 
 > [!NOTE] AI Explains

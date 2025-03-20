@@ -1,0 +1,21 @@
+
+:root {
+   --bastille: #19141D;
+   --cyan-aqua--brightest: rgb(4, 229, 229);
+   --white-catskill: hsla(184, 35%, 92%, 1.00);
+   --purple-heart: hsla(272, 73%, 55%, 1.00);
+
+   --clr-lossless-primary-dark: var(--bastille);
+   --clr-lossless-accent--brightest: var(--cyan-aqua--brightest);
+   --clr-lossless-primary-light: var(--white-catskill);
+   --clr-lossless-primary-glass: hsla(184, 35%, 92%, .40);
+   --clr-lossless-primary-glass--lighter: hsla(184, 35%, 92%, .60);
+   --clr-lossless-primary-glass-gr--90-10p: var(--gr-white--90-10p);
+   --clr-lossless-primary-glass-gr--80-20p: var(--gr-white--80-20p);
+   --clr-lossless-primary-glass-gr--80-40p: var(--gr-white--80-40p);
+   --clr-lossless-primary-glass-gr--70-30p: var(--gr-white--70-30p);
+   --clr-lossless-primary-glass-gr--60-40p: var(--gr-white--60-40p);
+   --clr-lossless-attn-action: var(--purple-heart);
+   --clr-lossless-ui-btn-border: var(--clr-lossless-primary-light);
+   --grd--lossless-eastern-crimson: linear-gradient(107deg, #22A6B5 5.36%, #9138E0 23.14%, #D9233B 47.56%, #F59C49 72.33%);
+}

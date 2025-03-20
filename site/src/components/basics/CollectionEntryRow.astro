@@ -1,0 +1,70 @@
+---
+/**
+ * CollectionEntryRow.astro
+ * Base component for rendering a single row in a collection list
+ * 
+ * @component
+ * @example
+ * ```astro
+ * <CollectionEntryRow>
+ *   <h2>Entry Title</h2>
+ *   <p>Entry content...</p>
+ * </CollectionEntryRow>
+ * ```
+ */
+
+interface Props {
+  /**
+   * Optional CSS classes to apply to the row
+   */
+  class?: string;
+  
+  /**
+   * Optional highlight state for the row
+   */
+  isHighlighted?: boolean;
+}
+
+const { class: className, isHighlighted = false } = Astro.props;
+---
+
+<div class:list={["collection-entry-row", className, { highlighted: isHighlighted }]}>
+  <slot />
+</div>
+
+<style>
+  .collection-entry-row {
+    /* Structure */
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    
+    /* Colors and Effects */
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 90%
+    );
+    border: 1px solid var(--clr-lossless-ui-btn-border);
+    
+    /* Transitions */
+    transition: all 0.2s ease-in-out;
+  }
+
+  .collection-entry-row:hover {
+    background: color-mix(
+      in oklab,
+      var(--clr-lossless-primary-glass),
+      var(--clr-lossless-primary-dark) 20%
+    );
+    transform: translateY(-2px);
+  }
+
+  .collection-entry-row.highlighted {
+    border-color: var(--clr-lossless-accent--brightest);
+    box-shadow: 0 0 10px var(--clr-lossless-accent--brightest);
+  }
+</style>
