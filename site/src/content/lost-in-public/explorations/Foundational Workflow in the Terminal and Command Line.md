@@ -1,6 +1,6 @@
 ---
 date_created: 2025-03-19
-date_modified: 2025-03-19
+date_modified: 2025-03-21
 ---
 
   
@@ -204,7 +204,7 @@ sudo apt install ca-certificates curl gnupg
 > When I install a software package on the command line, it shows me it is installing dependencies, and then lists suggested packages. Is there an argument I can add that will install suggestions too?
 
 
->[!LLM Reponse] [[Warp]] explains installation arguments
+>[!LLM Reponse] [[Tooling/AI-Toolkit/Generative AI/Code Generators/Warp|Warp]] explains installation arguments
 >For apt (the package manager in Debian-based Linux distributions like Ubuntu), you can install suggested packages automatically by using the --install-suggests option with apt-get. Here are the relevant options:
 >•  --install-suggests: Install all suggested packages
 >•  --install-recommends: Install recommended packages (this is the default behavior)

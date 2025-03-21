@@ -1,9 +1,9 @@
 ---
 date_created: 2024-11-01
-date_modified: 2025-03-20
+date_modified: 2025-03-21
 ---
 
-|>>update_start::2025-03-19T19:25:22.108Z
+|>update_start::2025-03-19T19:25:22.108Z
 #### Backlinks should be set to Absolute Path 
 
 [[Backlinks]] default to only including the file name.  Obsidian's app has a really smooth, fast way of keeping an index of the location of files, so Obsidian is self-aware, clearly has some kind of observer.
@@ -15,7 +15,7 @@ Unfortunately, I've been using Obsidian for about five months and I only figured
 
 However, apparently there is not a built in way to then automatically convert pre-created backlinks into 
 
-|>>update_end::2025-03-19T19:25:22.108Z
+|>update_end::2025-03-19T19:25:22.108Z
 
 # Stealing Flavoured Syntax from anywhere
 
@@ -94,7 +94,20 @@ I've always wanted to keep an "evolving" textbook of everything I'm learning. I 
 
 #### Standardizing strings inside Callouts
 
-TIPS, Q, A, @SPEAKS::
+TIPS, 
+```
+[!@Q&A] [--Q|'Michael', --A|'George']--[--Source|'[[Stack Overflow]]]
+[!--Q%01] How would you refactor this?
+[!--A%01] I recommend setting user options up top
+```
+
+@SPEAKS::
+
+# Using YAML Frontmatter
+Mapped to [[YAML]], [[Emergent-Innovation/Standards/Markdown|Markdown]]
+
+
+
 
 
 
