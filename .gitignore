@@ -31,6 +31,7 @@ package-lock.json
 .env.mcp
 
 # macOS-specific files
+.DS_Store
 */.DS_Store
 
 # jetbrains setting folder
