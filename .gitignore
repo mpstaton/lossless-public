@@ -1,6 +1,11 @@
 flake.lock
 result*
 
+# nested submodule git repos
+*/.git
+
+content
+
 docs/node_modules
 docs/.astro/
 docs/dist/
@@ -33,6 +38,8 @@ package-lock.json
 # macOS-specific files
 .DS_Store
 */.DS_Store
+DS_Store
+*DS_Store
 
 # jetbrains setting folder
 */.idea/
