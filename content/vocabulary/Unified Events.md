@@ -1,0 +1,2 @@
+
+a functionality of [[Azure]] 
